@@ -1,0 +1,31 @@
+﻿@model AzPodcastTranscriber.Shared.TranscriptionResult
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Title</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <audio class="audio-player" ontimeupdate="playTranscript(false)" onseeked="offset = -1; playTranscript(false);" controls>
+            <source src="@Model.PodcastURL" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="transcription-container">
+            @foreach (var segment in Model.TranscriptionSegments)
+            {
+                var offSetInMins = TimeSpan.FromSeconds(segment.Offset);
+                var DurationInMins = TimeSpan.FromSeconds(segment.Duration);
+
+                <div class="transcription-segment mb-3" data-offset="@segment.Offset">
+                    <span style="font-weight:600;color:darkblue; background-color:inherit;">
+                        @offSetInMins.ToString() - @((offSetInMins + DurationInMins).ToString())
+                    </span>
+                    <pre class="transcription-text" style="background-color:inherit;">@segment.Sentence</pre>
+                </div>
+            }
+        </div>
+    </div>
+</div>

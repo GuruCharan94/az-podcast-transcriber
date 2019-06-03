@@ -1,0 +1,45 @@
+﻿@model AzPodcastTranscriber.Shared.TranscriptionResult
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4>@Model.Title</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <audio class="audio-player" ontimeupdate="playTranscript(false)" onseeked="offset = -1; playTranscript(false);" controls>
+            <source src="@Model.PodcastURL" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <form asp-controller="Home" asp-action="Edit" method="post">
+            <div id="transcription-container" style="height:300px;">
+                @*https://haacked.com/archive/2008/10/23/model-binding-to-a-list.aspx/*@
+
+                @for (int i = 0; i < Model.TranscriptionSegments.Count; i++)
+                {
+                    var offSetInMins = TimeSpan.FromSeconds(Model.TranscriptionSegments[i].Offset);
+                    var DurationInMins = TimeSpan.FromSeconds(Model.TranscriptionSegments[i].Duration);
+
+                    <div class="transcription-segment form-group" data-offset="@Model.TranscriptionSegments[i].Offset">
+                        <span style="font-weight:600; background-color:inherit;">@offSetInMins.ToString() - @((offSetInMins + DurationInMins).ToString())</span>
+                        <textarea asp-for="@Model.TranscriptionSegments[i].Sentence" class="form-control" style="margin-bottom:5px; background-color:inherit;" rows="5" cols="140">
+                        </textarea>
+                        <input type="hidden" asp-for="TranscriptionSegments[i].Duration">
+                        <input type="hidden" asp-for="TranscriptionSegments[i].Offset">
+                    </div>
+                }
+                <input type="hidden" asp-for="Id">
+                <input type="hidden" asp-for="PodcastURL">
+                <input type="hidden" asp-for="Title">
+            </div>
+            <div class="btn-group mt-3" role="group" aria-label="Save Button">
+                <input type="submit" value="Save" class="disabled btn btn-success mr-3 mb-3" />
+            </div>
+        </form>
+
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

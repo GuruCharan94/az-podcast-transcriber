@@ -1,0 +1,13 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<Connection String of Storage Account Backing the Azure Function>",
+    "AzureWebJobsDashboard": "<Connection String of Storage Account Backing the Azure Function>",
+    "CosmosDBEndpoint": "<Cosmos db endpoint>",
+    "CosmosDBAuthKey": "<Cosmos Db Auth Key>",
+    "CosmosDBDatabaseName": "transcriptionDB",
+    "CosmosDBCollectionName": "transcriptionCollection",
+    "SpeechAPISubscriptionKey": "<My-Subscription-Key>",
+    "SpeechAPIEndpoint": "https://westus.cris.ai"
+  }
+}

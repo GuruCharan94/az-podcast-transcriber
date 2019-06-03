@@ -16,7 +16,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\HanselMinutesWithTranscriptions.Shared\AzPodcastTranscriber.Shared.csproj" />
+    <ProjectReference Include="..\AzPodcastTranscriber.Shared\AzPodcastTranscriber.Shared.csproj" />
   </ItemGroup>
 
 </Project>

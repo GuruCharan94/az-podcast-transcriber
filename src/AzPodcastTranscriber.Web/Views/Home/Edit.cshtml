@@ -5,6 +5,9 @@
 }
 <h4>@Model.Title</h4>
 <hr />
+<div class="alert alert-primary" role="alert">
+    Try editing the transcript, play with the seekbar and see if you like it. Please send in feature requests <a href="https://github.com/GuruCharan94/az-podcast-transcriber/issues">here</a>
+</div>
 <div class="row">
     <div class="col-md-12">
         <audio class="audio-player" ontimeupdate="playTranscript(false)" onseeked="offset = -1; playTranscript(false);" controls>
@@ -36,10 +39,8 @@
             <div class="btn-group mt-3" role="group" aria-label="Save Button">
                 <input type="submit" value="Save" class="disabled btn btn-success mr-3 mb-3" />
             </div>
+            This save button does nothing.
         </form>
 
     </div>
-</div>
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>

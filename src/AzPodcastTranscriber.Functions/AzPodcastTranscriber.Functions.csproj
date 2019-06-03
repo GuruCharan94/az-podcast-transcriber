@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.28" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HanselMinutesWithTranscriptions.Shared\AzPodcastTranscriber.Shared.csproj" />
+    <ProjectReference Include="..\AzPodcastTranscriber.Shared\AzPodcastTranscriber.Shared.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

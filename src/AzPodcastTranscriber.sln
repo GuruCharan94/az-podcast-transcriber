@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Functions", "HanselMinutesWithTranscriptions.Functions\AzPodcastTranscriber.Functions.csproj", "{987EDE2B-A384-4DD1-A992-E1A3999D9E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Functions", "AzPodcastTranscriber.Functions\AzPodcastTranscriber.Functions.csproj", "{987EDE2B-A384-4DD1-A992-E1A3999D9E0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Web", "HanselMinutesWithTranscriptions.Web\AzPodcastTranscriber.Web.csproj", "{FA388998-7437-4781-9E57-E8E85E8EF014}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Web", "AzPodcastTranscriber.Web\AzPodcastTranscriber.Web.csproj", "{FA388998-7437-4781-9E57-E8E85E8EF014}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Shared", "HanselMinutesWithTranscriptions.Shared\AzPodcastTranscriber.Shared.csproj", "{A2CC95AF-4AAC-4996-89AC-F91FB4D40DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzPodcastTranscriber.Shared", "AzPodcastTranscriber.Shared\AzPodcastTranscriber.Shared.csproj", "{A2CC95AF-4AAC-4996-89AC-F91FB4D40DBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2651E63C-BF20-45B4-ADB1-D928B5DBCA7E}"
 	ProjectSection(SolutionItems) = preProject

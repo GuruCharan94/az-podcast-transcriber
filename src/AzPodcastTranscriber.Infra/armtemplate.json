@@ -1,0 +1,169 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        
+    },
+    "variables": {
+        "resourceSuffix": "[concat(substring(uniquestring(resourceGroup().id), 0, 3))]",
+        "speechServicesName": "[concat('az-pod-scribe-speech', variables('resourceSuffix'))]",
+        "cosmosDBName": "[concat('az-pod-scribe-cosmos', variables('resourceSuffix'))]",
+        "functionAppName": "[concat('az-pod-scribe-function', variables('resourceSuffix'))]",
+        "hostingPlanName": "[concat('az-pod-scribe-plan', variables('resourceSuffix'))]",
+        "applicationInsightsName": "[concat('az-pod-scribe-ai', variables('resourceSuffix'))]",
+        "storageAccountName": "[concat('azpodscribestore', variables('resourceSuffix'))]",
+        "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2016-02-01-preview",
+            "name": "[variables('speechServicesName')]",
+            "location": "westus",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "SpeechServices",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "name": "[variables('storageAccountName')]",
+            "apiVersion": "2016-12-01",
+            "location": "westus",
+            "kind": "Storage",
+            "sku": {
+                "name": "Standard_LRS"
+            }
+        },
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "apiVersion": "2018-02-01",
+            "name": "[variables('hostingPlanName')]",
+            "location": "westus",
+            "sku": {
+                "name": "Y1",
+                "tier": "Dynamic"
+            },
+            "properties": {
+                "name": "[variables('hostingPlanName')]",
+                "computeMode": "Dynamic"
+            }
+        },
+        {
+            "apiVersion": "2015-08-01",
+            "type": "Microsoft.Web/sites",
+            "name": "[variables('functionAppName')]",
+            "location": "westus",
+            "kind": "functionapp",
+            "dependsOn": [
+                "[variables('hostingPlanName')]",
+                "[variables('storageAccountName')]",
+                "[variables('speechServicesName')]",
+                "[variables('cosmosDBName')]",
+                "[variables('applicationInsightsName')]"
+            ],
+            "properties": {
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]",
+                "siteConfig": {
+                    "appSettings": [
+                        {
+                            "name": "AzureWebJobsDashboard",
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]"
+                        },
+                        {
+                            "name": "AzureWebJobsStorage",
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]"
+                        },
+                        {
+                            "name": "FUNCTIONS_EXTENSION_VERSION",
+                            "value": "~2"
+                        },
+                        {
+                            "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+                            "value": "[reference(resourceId('microsoft.insights/components/', variables('applicationInsightsName')), '2015-05-01').InstrumentationKey]"
+                        },
+                        {
+                            "name": "FUNCTIONS_WORKER_RUNTIME",
+                            "value": "dotnet"
+                        },
+                        {
+                            "name": "WEBSITE_MAX_DYNAMIC_APPLICATION_SCALE_OUT",
+                            "value": "2"
+                        },
+                        {
+                            "name": "CosmosDBAuthKey",
+                            "value": "[listKeys(variables('cosmosDBName'),'2015-04-08').primaryMasterKey]"
+                        },
+                        {
+                            "name": "CosmosDBCollectionName",
+                            "value": "transcriptionCollection"
+                        },
+                        {
+                            "name": "CosmosDBDatabaseName",
+                            "value": "transcriptionDB"
+                        },
+                        {
+                            "name": "CosmosDBEndpoint",
+                            "value": "[concat('https://',variables('cosmosDBName'),'.documents.azure.com:443/')]"
+                        },
+                        {
+                            "name": "MSDEPLOY_RENAME_LOCKED_FILES",
+                            "value": "1"
+                        },
+                        {
+                            "name": "SpeechAPIEndpoint",
+                            "value": "https://westus.cris.ai"
+                        },
+                        {
+                            "name": "SpeechAPISubscriptionKey",
+                            "value": "[listkeys(variables('speechServicesName'),'2017-04-18').key1]"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "apiVersion": "2018-05-01-preview",
+            "name": "[variables('applicationInsightsName')]",
+            "type": "microsoft.insights/components",
+            "location": "westus",
+            "tags": {
+                "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('applicationInsightsName'))]": "Resource"
+            },
+            "properties": {
+                "ApplicationId": "[variables('applicationInsightsName')]",
+                "Request_Source": "IbizaWebAppExtensionCreate"
+            }
+        },
+        {
+            "type": "Microsoft.DocumentDB/databaseAccounts",
+            "apiVersion": "2015-04-08",
+            "name": "[variables('cosmosDBName')]",
+            "location": "West US",
+            "tags": {
+                "defaultExperience": "Core (SQL)"
+            },
+            "kind": "GlobalDocumentDB",
+            "properties": {
+                "enableAutomaticFailover": false,
+                "enableMultipleWriteLocations": false,
+                "isVirtualNetworkFilterEnabled": false,
+                "virtualNetworkRules": [],
+                "databaseAccountOfferType": "Standard",
+                "consistencyPolicy": {
+                    "defaultConsistencyLevel": "Session",
+                    "maxIntervalInSeconds": 5,
+                    "maxStalenessPrefix": 100
+                },
+                "locations": [
+                    {
+                        "locationName": "West US",
+                        "failoverPriority": 0
+                    }
+                ],
+                "capabilities": []
+            }
+        }
+    ]
+}

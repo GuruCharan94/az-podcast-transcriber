@@ -219,5 +219,15 @@
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', variables('webAppPlanName'))]"
             }
         }
-    ]
+    ],
+    "outputs": {
+        "speechServicesName": {
+          "type": "string",
+          "value": "[variables('speechServicesName')]"
+        },
+        "functionAppWebhookURL":{
+            "type": "string",
+            "value": "[concat('https://', variables('functionAppName'), '.azurewebsites.net/api/OnTranscriptionCompleted')]"
+        }
+      }
 }

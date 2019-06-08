@@ -20,46 +20,72 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+- Familiarize yourself with [Azure Batch Transcription Concepts](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription)
 - You will need an active Azure Subscription.
 - Ensure you have dotnet core 2.2 or higher version on your machine.
-- You will need Visual Studio 2017 or higher and ensure you have dotnet core and Azure workloads for Visual Studio installed.
+- You will need Visual Studio 2017 or higher with the dotnet core and Azure workloads.
+- Use [Azure Shell](https://shell.azure.com/) that has the Azure CLI and Powershell tools installed.
 
-### Running the solution
+### Deploying Azure Infrastructure
 
-- Clone the repository.
-- **Run the below commands to ignore changes to prevent accidentally committing your config secrets.** This is a temporary solution until Key Vault is implemented.Read more about the command [here](https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree#)
-  - `git update-index --skip-worktree ./src/AzPodcastTranscriber.Functions/local.settings.json`
-  - `git update-index --skip-worktree ./src/AzPodcastTranscriber.Web/appsettings.json`
+- Login in to Azure Shell and clone the repo.
+- Run the below commands to deploy required infrastructure on Azure.
+- **TIP:** If you don't have the Azure Powershell and CLI tools installed, run the script from [Azure Shell](https://shell.azure.com/).
+- The deployment scripts are idempotent.  
+  
+  ```powershell
+  cd src/AzPodcastTranscriber.Infra
+  ./deploy.ps1 - SubscriptionName "<Sub Name>" - ResourceGroupName "<RG Name>"
+  ```
 
+### Deploy Code to Azure
 
-- Open the solution in Visual Studio.
-- Restore packages and build solution.
-
-- Create an Azure function, a Speech Service Instance on Azure in **S0 plan** and a Cosmos DB instance on Azure. Update relevant details in the [settings file of AzPodcastTranscriber.Functions project](https://github.com/GuruCharan94/az-podcast-transcriber/blob/master/src/AzPodcastTranscriber.Functions/local.settings.json)
-
-- Register a webhook as explained [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/webhooks)
-
-- You can setup the Azure Functions project as startup project and run it locally by pressing F5. Make a HTTP Post request to `OnRSSFeedUpdated` function with payload structure as below running on http://localhost:port/api/OnRSSFeedUpdated
-
-``` json
-{
-        "Title": "Your favourite podcast episode",
-        "PrimaryLink": "https://www.my-epidosde-link.mp3",
-        "PublishDate": "2019-05-30T00:00:00"
-}
-```
-
-- Once your webhook recieves a POST request from Azure Speech, make the same request to the `OnTranscriptionCompleted` function running locally on `http://localhost:port/api/OnTranscriptionCompleted.`
-
-- Update relevant Cosmos DB Details in the [settings file of AzPodcastTranscriber.Web project](https://github.com/GuruCharan94/az-podcast-transcriber/blob/master/src/AzPodcastTranscriber.Functions/local.settings.json)
-
-- You can setup the AzPodcastTranscriber.Web project as startup project and run it. You will be able to see any completed transcriptions in the web page.
-
-### Deploy to Azure
-
-Unfortunately, right click publish is the only way to deploy this to azure right now.
-
+- Clone the repository on your machine.
+- Restore Nuget Packages and Build the solution.
 - Right click --> Publish the Functions.
-- Right click --> Publish the Web Project to a new Azure Web App.
+- Right click --> Publish the Web Project to Azure Web App.
 - Delete the previously registered webhook as explained [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/webhooks#other-webhook-operations) and register `https://<my-azure-function.com>/api/OnTranscriptionCompleted` as a new webhook.
 - Make a HTTP Post request to `OnRSSFeedUpdated` function with payload structure as below running on `http://<my-azure-function.com>:port/api/OnRSSFeedUpdated`
+  
+  ``` json
+  {
+    "title": "Your favourite podcast episode",
+    "primaryLink": "https://www.my-epidosde-link.mp3",
+    "publishDate": "2019-05-30T00:00:00"
+  }
+  ```
+
+### Running the Azure Functions locally
+
+- **Run the below commands to ignore changes to prevent accidentally committing your config secrets.** Read more about the command [here](https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree#).
+  
+  ``` bash
+  git update-index --skip-worktree ./src/AzPodcastTranscriber.Functions/local.settings.json
+  git update-index --skip-worktree ./src/AzPodcastTranscriber.Web/appsettings.json
+  ```
+
+- **Copy Relevant settings to `local.settings.json` file from Azure.**
+- Set the Azure Functions as startup project and run it locally by pressing F5. Make a HTTP Post request to `OnRSSFeedUpdated` function with payload structure as below running on `http://localhost:port/api/OnRSSFeedUpdated`
+
+  ``` json
+  {
+    "title": "Your favourite podcast episode",
+    "primaryLink": "https://www.my-epidosde-link.mp3",
+    "publishDate": "2019-05-30T00:00:00"
+  }
+  ```
+
+- You can check if the audio file is uploaded to storage account.
+- Testing the transcription webhook is tricky because the `localhost` URL is not publicly accessible.
+- Once a transcription is completed, make a request to the `OnTranscriptionCompleted` function running locally on `http://localhost:port/api/OnTranscriptionCompleted.` with below payload.
+
+  ``` json
+  {
+        "id": "GUID-That-you-can-get-from-transcription-api",
+  }
+  ```
+
+### Running the Web App locally
+
+- Update relevant Cosmos DB Details in the `appsettings.json` file of the Web Project.
+- Set the `AzPodcastTranscriber.Web` project as startup project and run it. You will be able to see completed transcriptions.

@@ -169,7 +169,7 @@
             "apiVersion": "2014-06-01",
             "name": "[variables('webAppPlanName')]",
             "type": "Microsoft.Web/serverfarms",
-            "location": "[resourceGroup().location]",
+            "location": "westus",
             "sku": {
                 "name": "B1",
                 "capacity": 1
@@ -182,10 +182,10 @@
             }
         },
         {
-            "apiVersion": "2018-01-01",
+            "apiVersion": "2018-11-01",
             "name": "[variables('webAppName')]",
             "type": "Microsoft.Web/sites",
-            "location": "[resourceGroup().location]",
+            "location": "westus",
             "tags": {
                 "displayName": "[variables('webAppName')]"
             },

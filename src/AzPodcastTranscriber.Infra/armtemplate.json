@@ -4,14 +4,14 @@
     "parameters": {},
     "variables": {
         "resourceSuffix": "[concat(substring(uniquestring(resourceGroup().id), 0, 3))]",
-        "speechServicesName": "[concat('az-pod-scribe-speech-', variables('resourceSuffix'))]",
-        "cosmosDBName": "[concat('az-pod-scribe-cosmos-', variables('resourceSuffix'))]",
-        "functionAppName": "[concat('az-pod-scribe-function-', variables('resourceSuffix'))]",
-        "functionAppPlanName": "[concat('az-pod-scribe-plan-', variables('resourceSuffix'))]",
-        "webAppName": "[concat('az-pod-scribe-web-', variables('resourceSuffix'))]",
-        "webAppPlanName": "[concat('az-pod-scribe-web-plan-', variables('resourceSuffix'))]",
-        "applicationInsightsName": "[concat('az-pod-scribe-ai-', variables('resourceSuffix'))]",
-        "storageAccountName": "[concat('azpodscribestore-', variables('resourceSuffix'))]",
+        "speechServicesName": "[concat('az-pod-scribe-speech', variables('resourceSuffix'))]",
+        "cosmosDBName": "[concat('az-pod-scribe-cosmos', variables('resourceSuffix'))]",
+        "functionAppName": "[concat('az-pod-scribe-function', variables('resourceSuffix'))]",
+        "functionAppPlanName": "[concat('az-pod-scribe-plan', variables('resourceSuffix'))]",
+        "webAppName": "[concat('az-pod-scribe-web', variables('resourceSuffix'))]",
+        "webAppPlanName": "[concat('az-pod-scribe-web-plan', variables('resourceSuffix'))]",
+        "applicationInsightsName": "[concat('az-pod-scribe-ai', variables('resourceSuffix'))]",
+        "storageAccountName": "[concat('azpodscribestore', variables('resourceSuffix'))]",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
     },
     "resources": [

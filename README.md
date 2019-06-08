@@ -2,6 +2,8 @@
 
 A podcast transcription service built on Azure that transcribes any new episode of your podcast and displays synchronized transcripts alongside your audio making your podcast more accessible. Read this [blog post](https://www.gurucharan.in/azure/accessibility-ai-and-abstractions-how-i-built-a-podcast-transcription-service-on-azure-in-a-week/) to learn more.
 
+![Overview](https://www.gurucharan.in/assets/images/hanselminutes-clone/v1.jpg)
+
 ## Contributing
 
 Please read [the contribution guidlines](./CONTRIBUTING.md) for details on submitting pull requests.
@@ -30,8 +32,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Login in to Azure Shell and clone the repo.
 - Run the below commands to deploy required infrastructure on Azure.
-- **TIP:** If you don't have the Azure Powershell and CLI tools installed, run the script from [Azure Shell](https://shell.azure.com/).
-- The deployment scripts are idempotent.  
   
   ```powershell
   cd src/AzPodcastTranscriber.Infra
@@ -44,16 +44,6 @@ These instructions will get you a copy of the project up and running on your loc
 - Restore Nuget Packages and Build the solution.
 - Right click --> Publish the Functions.
 - Right click --> Publish the Web Project to Azure Web App.
-- Delete the previously registered webhook as explained [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/webhooks#other-webhook-operations) and register `https://<my-azure-function.com>/api/OnTranscriptionCompleted` as a new webhook.
-- Make a HTTP Post request to `OnRSSFeedUpdated` function with payload structure as below running on `http://<my-azure-function.com>:port/api/OnRSSFeedUpdated`
-  
-  ``` json
-  {
-    "title": "Your favourite podcast episode",
-    "primaryLink": "https://www.my-epidosde-link.mp3",
-    "publishDate": "2019-05-30T00:00:00"
-  }
-  ```
 
 ### Running the Azure Functions locally
 

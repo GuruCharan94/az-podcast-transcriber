@@ -1,15 +1,15 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        
-    },
+    "parameters": {},
     "variables": {
         "resourceSuffix": "[concat(substring(uniquestring(resourceGroup().id), 0, 3))]",
         "speechServicesName": "[concat('az-pod-scribe-speech-', variables('resourceSuffix'))]",
         "cosmosDBName": "[concat('az-pod-scribe-cosmos-', variables('resourceSuffix'))]",
         "functionAppName": "[concat('az-pod-scribe-function-', variables('resourceSuffix'))]",
-        "hostingPlanName": "[concat('az-pod-scribe-plan-', variables('resourceSuffix'))]",
+        "functionAppPlanName": "[concat('az-pod-scribe-plan-', variables('resourceSuffix'))]",
+        "webAppName": "[concat('az-pod-scribe-web-', variables('resourceSuffix'))]",
+        "webAppPlanName": "[concat('az-pod-scribe-web-plan-', variables('resourceSuffix'))]",
         "applicationInsightsName": "[concat('az-pod-scribe-ai-', variables('resourceSuffix'))]",
         "storageAccountName": "[concat('azpodscribestore-', variables('resourceSuffix'))]",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
@@ -39,14 +39,14 @@
         {
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
-            "name": "[variables('hostingPlanName')]",
+            "name": "[variables('functionAppPlanName')]",
             "location": "westus",
             "sku": {
                 "name": "Y1",
                 "tier": "Dynamic"
             },
             "properties": {
-                "name": "[variables('hostingPlanName')]",
+                "name": "[variables('functionAppPlanName')]",
                 "computeMode": "Dynamic"
             }
         },
@@ -57,14 +57,14 @@
             "location": "westus",
             "kind": "functionapp",
             "dependsOn": [
-                "[variables('hostingPlanName')]",
+                "[variables('functionAppPlanName')]",
                 "[variables('storageAccountName')]",
                 "[variables('speechServicesName')]",
                 "[variables('cosmosDBName')]",
                 "[variables('applicationInsightsName')]"
             ],
             "properties": {
-                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('functionAppPlanName'))]",
                 "siteConfig": {
                     "appSettings": [
                         {
@@ -163,6 +163,60 @@
                     }
                 ],
                 "capabilities": []
+            }
+        },
+        {
+            "apiVersion": "2014-06-01",
+            "name": "[variables('webAppPlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[resourceGroup().location]",
+            "sku": {
+                "name": "B1",
+                "capacity": 1
+            },
+            "tags": {
+                "displayName": "[variables('webAppPlanName')]"
+            },
+            "properties": {
+                "name": "[variables('webAppPlanName')]"
+            }
+        },
+        {
+            "apiVersion": "2018-01-01",
+            "name": "[variables('webAppName')]",
+            "type": "Microsoft.Web/sites",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "[variables('webAppName')]"
+            },
+            "dependsOn": [
+                "[variables('webAppPlanName')]",
+                "[variables('cosmosDBName')]"
+            ],
+            "properties": {
+                "appSettings": [
+                    {
+                        "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+                        "value": "[reference(resourceId('microsoft.insights/components/', variables('applicationInsightsName')), '2015-05-01').InstrumentationKey]"
+                    },
+                    {
+                        "name": "CosmosDBAuthKey",
+                        "value": "[listKeys(variables('cosmosDBName'),'2015-04-08').primaryMasterKey]"
+                    },
+                    {
+                        "name": "CosmosDBCollectionName",
+                        "value": "transcriptionCollection"
+                    },
+                    {
+                        "name": "CosmosDBDatabaseName",
+                        "value": "transcriptionDB"
+                    },
+                    {
+                        "name": "CosmosDBEndpoint",
+                        "value": "[concat('https://',variables('cosmosDBName'),'.documents.azure.com:443/')]"
+                    }
+                ],
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', variables('webAppPlanName'))]"
             }
         }
     ]

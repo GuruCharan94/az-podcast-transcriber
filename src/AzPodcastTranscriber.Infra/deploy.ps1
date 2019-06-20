@@ -4,7 +4,7 @@ param
     [string]$ResourceGroupName
 )
 
-$URI = "https://.cris.ai/api/speechtotext/v2.1/transcriptions/hooks"
+$URI = "https://westus.cris.ai/api/speechtotext/v2.1/transcriptions/hooks"
 
 Set-AzContext -SubscriptionName $SubscriptionName
 Get-AzResourceGroup -Name $ResourceGroupName ` -ErrorAction SilentlyContinue ` -ErrorVariable rgError

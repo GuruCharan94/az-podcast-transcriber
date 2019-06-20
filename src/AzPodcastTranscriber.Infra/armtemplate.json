@@ -194,28 +194,30 @@
                 "[variables('cosmosDBName')]"
             ],
             "properties": {
-                "appSettings": [
-                    {
-                        "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-                        "value": "[reference(resourceId('microsoft.insights/components/', variables('applicationInsightsName')), '2015-05-01').InstrumentationKey]"
-                    },
-                    {
-                        "name": "CosmosDBAuthKey",
-                        "value": "[listKeys(variables('cosmosDBName'),'2015-04-08').primaryMasterKey]"
-                    },
-                    {
-                        "name": "CosmosDBCollectionName",
-                        "value": "transcriptionCollection"
-                    },
-                    {
-                        "name": "CosmosDBDatabaseName",
-                        "value": "transcriptionDB"
-                    },
-                    {
-                        "name": "CosmosDBEndpoint",
-                        "value": "[concat('https://',variables('cosmosDBName'),'.documents.azure.com:443/')]"
-                    }
-                ],
+                "siteConfig": {
+                    "appSettings": [
+                        {
+                            "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+                            "value": "[reference(resourceId('microsoft.insights/components/', variables('applicationInsightsName')), '2015-05-01').InstrumentationKey]"
+                        },
+                        {
+                            "name": "CosmosDBAuthKey",
+                            "value": "[listKeys(variables('cosmosDBName'),'2015-04-08').primaryMasterKey]"
+                        },
+                        {
+                            "name": "CosmosDBCollectionName",
+                            "value": "transcriptionCollection"
+                        },
+                        {
+                            "name": "CosmosDBDatabaseName",
+                            "value": "transcriptionDB"
+                        },
+                        {
+                            "name": "CosmosDBEndpoint",
+                            "value": "[concat('https://',variables('cosmosDBName'),'.documents.azure.com:443/')]"
+                        }
+                    ]
+                },
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', variables('webAppPlanName'))]"
             }
         }

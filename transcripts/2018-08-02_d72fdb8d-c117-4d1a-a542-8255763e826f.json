@@ -1,0 +1,388 @@
+{
+  "id": "d72fdb8d-c117-4d1a-a542-8255763e826f",
+  "Title": "Learning how to be a Wizard Programmer with Julia Evans",
+  "PublishDate": "2018-08-02",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/15daaec1.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends I just want to thank our sponsor next. Moe next moment in API platform that allows developers to integrate communications features like voice and SMS into their projects.",
+      "Duration": 10,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Next most comprehensive set of tools includes powerful APIs libraries and SDK's that allow developers to build and iterate quickly in the language of their choice whether it'SC sharp node PHP. Java python and more visit developer dot nextMO.com that'SNEXMO.com slash Hansel to learn more about next mode. That's developer dot nextmode.com slash Hansal HANSEL to learn more.",
+      "Duration": 33,
+      "Offset": 12
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes in today. I'm talking with Juliet Evans. She is a infrastructure engineer at stripe and a famous Zine Creator. I love your zines and I'm excited every time I see one go by on my timeline thanks. Actually, having to be on the show. Yeah, absolutely so you make zines. They are kind of hard to define how would you call? What is a Zine from your perspective? I think a lot of the time people confuse the word like Xenan Comic.",
+      "Duration": 30,
+      "Offset": 54
+    },
+    {
+      "Sentence": "So what I think of as an is it's like usually a handmade 20 page. Ish thing that you make and you either like give away or sell to people is like it's something which is usually independently published. It's not like the production values are not usually that high right like when I make scenes. I like print them on my home printer and like give them cheerful or sell them to people sometimes I go to my local print shop and I'll print like 200 but it's like it's like an independent undertaking where you write like a small booklet about something that you love.",
+      "Duration": 30,
+      "Offset": 86
+    },
+    {
+      "Sentence": "I think more people should know that this makes me makes me feel like I was like in the 80s. When I was in school, I would print out like I couldn't afford like trading cards or like garbage pail kids or whatever, so we just make our own like and cut them out. With scissors and give them to our friends and they're all black and white and if you could find someones copy machine where you didn't have to pay 5 cents a page like all the better. Yeah, I think that's the that's the aesthetic and then make scenes, which are collections of comics.",
+      "Duration": 30,
+      "Offset": 117
+    },
+    {
+      "Sentence": "And sometimes you will refer to those comics is IANS, but dizziness like it has multiple pages like a thing and some of them are have a lot of text like there's some of your Lennox Comics. You have a really cool. 24 Page Zine of Comics Lennox and sometimes there will be like in a whole page with like one stick figure. But then you'll do other ones like you have a whole xenon tcpdump.",
+      "Duration": 25,
+      "Offset": 148
+    },
+    {
+      "Sentence": "It is like a totally different art style and it's very, very sophisticated your art style seems to scale with the topic.",
+      "Duration": 5,
+      "Offset": 174
+    },
+    {
+      "Sentence": "Uh is that true I think that those 2 are the same, like their covers. The cover of the tcpdump scene is different but OK so the cover has a different style than the insides. Yeah, because I hire illustrators to do. The covers but I did everything in sight to myself, and I only know how to draw stick figures. OK, I was wondering because I would I saw that kind of your most famous one. You want to be so you want to be a wizard.",
+      "Duration": 22,
+      "Offset": 180
+    },
+    {
+      "Sentence": "Like I'm like wow, she can draw stick figures and this, this like totally comic front front end so that's cool. So the cover art is by another person, yeah, I can only draw stick figures actually.",
+      "Duration": 10,
+      "Offset": 203
+    },
+    {
+      "Sentence": "But you're still a successful Zine artist doing only stick figures. D do them on the computer or is it like an iPad pencil or something. I did a lot of the Apple pencil again. Yeah, I'm looking at one for example, and I'm thinking to myself OK. Let's say how does DNS work. It's like 4 frames of a comic and it's got a minimal amount of text and some stick figures if I copied it as a PowerPoint.",
+      "Duration": 27,
+      "Offset": 215
+    },
+    {
+      "Sentence": "I have a feeling it would not go viral and no one would care.",
+      "Duration": 2,
+      "Offset": 243
+    },
+    {
+      "Sentence": "That probably wouldn't teach anyone, but it's so fun in the style like? Why does a Zine work when a PowerPoint doesn't so one thing that actually think is really important in magazines? Is kind of like the physical nature of them like I definitely have them on the Internet and like I love people read them on the Internet and you can read it on your screen. Of course, but the reason I started writing that was going to a conference. I was going to pycon actually and I was going to talk up icon which was a big deal.",
+      "Duration": 31,
+      "Offset": 246
+    },
+    {
+      "Sentence": "Excited and I decided to bring a Zine along and handed out to everyone in the audience right. So I went with a friend shopping like, pay $200 like printed a few 100 zines, then I give them out to everyone and like people have told me they like oh. I still have that scene and I still like look at it like 4 years later right and of course, it's never going to happen with the PowerPoint or they'll say, Oh, I saw yours. Ian like someone gave it to me or I saw it in someone's office and I picked it up and then I learn something and I think that the fact that it's like an artifact in the world that you can like.",
+      "Duration": 31,
+      "Offset": 278
+    },
+    {
+      "Sentence": "And it gets your friends makes it something that I think is a lot easier to learn from interesting that it does it's interesting because you want it to seem small and personal but if it scales like if you became super famous Zine person? How would you make them all small and personal for a million people look good question. But I feel like I've read a lot of books, which did feel like small and personal to me. That makes sense. Sometimes, when you read a book. It feels like the person is just speaking to you.",
+      "Duration": 31,
+      "Offset": 310
+    },
+    {
+      "Sentence": "And you're like oh this is like this book was written for me. How did you know, and I think that's kind of the feeling? I want it in part is like? Hello, I wrote this for you. Yeah, that's really cool and I think that's like the amazing thing about print right about writing do you even this started out and you put it out for 200 people but do you do like thousand print runs and like it's become a big thing? Yeah, so I spoke at deconstruct recently? Which is this conference in Seattle and we printed 2000 scenes.",
+      "Duration": 30,
+      "Offset": 342
+    },
+    {
+      "Sentence": "Is really fun? Yeah, we like we printed copies like? Maybe 300 copies of all of all of magazines? Do you consciously try to make them like in forgive the way I'm phrasing this like not polished like for example, if Isin is like photo copy it and then slightly askew. It just means it has personality. But if you did, like an actual print run for like a New York Times best selling something and it was Askew people would lose their minds.",
+      "Duration": 25,
+      "Offset": 374
+    },
+    {
+      "Sentence": "Yeah, it will do it is it intentional well, I mean, it's kind of a matter of like I'm not at extremely good designer or artist right like so I think there's kind of like an upper limit to like the metal polish. I'm practically sufficient going to produce especially because I do it in my spare time right like I do it. After work so I think it's just not going to happen like maybe at some point that will make things that are more polished. But I think people really like it, too, like I think I mean, something handwritten is a huge deal in.",
+      "Duration": 32,
+      "Offset": 400
+    },
+    {
+      "Sentence": "Like I think that part of a part of it is like people are like Oh, you took the time to write all this information down by hand. It must be important. Oh, that's interesting you think that people are like ascribing depth to something that's not consciously not deep because it was handwritten.",
+      "Duration": 17,
+      "Offset": 434
+    },
+    {
+      "Sentence": "Thanks, like well 'cause I think if you resident by hand. It does make it more important right 'cause. It takes me. Like 5 times longer to write something by hand, which type it.",
+      "Duration": 8,
+      "Offset": 452
+    },
+    {
+      "Sentence": "How many times do you have to do these before you know that you got it right because it's not just like you? Didn't just scribble you like there is structure and thought because there is a learning style where you ask a question you present a problem and then you make a helpful you walk someone through it like there's a linear ization to this that is important, yeah, so one hard thing is let's say like you're writing a comic about some important concept, like I don't know virtual memory right like.",
+      "Duration": 30,
+      "Offset": 461
+    },
+    {
+      "Sentence": "Especially in these 6 panel comics. I do all often only write something like 50 words. In them right. So you have this huge topic and you need to describe it. In 50 words and how do you do that and So what I do a lot of time? Is it like sit on my couch with this like paint. Look on my face. It won't be like? What can I say like? What are 5 words that I can say that are true about this topic. It's really hard right 'cause like making statements that are like, at least like 90% true better short and that are understandable.",
+      "Duration": 31,
+      "Offset": 492
+    },
+    {
+      "Sentence": "Is so hard but it's possible right and then once? I do people like Oh wow. I understand this now and so maybe like so nice little. Take me an hour to write like a 10 word sentence. But like usually I can come up with something better than that, but not all, you got like I'm looking for example, with the memory allocation. One like we've all read like entire books on memory allocation.",
+      "Duration": 20,
+      "Offset": 524
+    },
+    {
+      "Sentence": "But you're getting, it down to the essence and it's clear that you didn't just like bang that out. In 5 minutes that one save and well. It says at any given time. Your program has a fixed amount of memory and then it shows like kind of a defragmentation kind of a thing where it shows pieces of memory. Some of which is used in some which is free and then it says. And you can ask the OS for more memory and then you've got like this happy figure. That represents Google Chrome taking 2 gigabytes of your ram, which I thought was funny.",
+      "Duration": 27,
+      "Offset": 545
+    },
+    {
+      "Sentence": "Uhm and then it has like a person who's allocating inside oh? Can I allocate some and then you basically show pieces of memory being Malik tte and then you talk about different alternatives to Malik with Facebook people having different metrics right. This thing where you can ask your offerings in for more memory is.",
+      "Duration": 19,
+      "Offset": 573
+    },
+    {
+      "Sentence": "Like it's like not a trivial piece of information right. It's not obvious that like this. This interaction where you're like, Hey, offering system can you have? Can I have more memory is something that?",
+      "Duration": 9,
+      "Offset": 593
+    },
+    {
+      "Sentence": "Your program is Jenny, but then like when you explain it, like that. It seems simple and I think it's cool that you always have the little people, having a conversation with the computer, which somehow makes the computer more approachable. But I think is interesting is that since you are an infrastructure engineer and your back end engineer. An your low level, Lennox engineer. You're talking about like Syscalls, which for a lot of people that is a scary thing.",
+      "Duration": 27,
+      "Offset": 603
+    },
+    {
+      "Sentence": "Right we have these happy little people, making sis called him like Oh, well is that all this just call it. It's not as scary as I thought it was right. Because this thing is like when we ask for more memory. You're either using like the Berklich PRK Cisco or using the Nmap Syscall.",
+      "Duration": 14,
+      "Offset": 631
+    },
+    {
+      "Sentence": "It's not like I mean, I guess if you if you like you could write it in a way that sounds really unapproachable, but really like computers are just communicating all the time and so I think comics are really good way to show that because you're always doing networking right like your program is talking to your operating system your programs are talking to each other and So what I'd like to do is kind of like breakdown? What the interfaces are like the system call interface and then just like show that with the comic heroes piece, wine and here's piece 2 and then here's like the interface where they talk to each other and then here's what they're saying.",
+      "Duration": 30,
+      "Offset": 645
+    },
+    {
+      "Sentence": "It's just what happens on computers, right like that's how I think about. It is you just have these different components interacting and I think trying to explain it with comics makes it seem a lot.",
+      "Duration": 8,
+      "Offset": 677
+    },
+    {
+      "Sentence": "Is it makes it a lot more straightforward? Yeah. I like also that some of the comments are kind of unapologetic about stuff, so for example, you've got one on the OS. I model for networking like Oh, she's going to explain like all the layers right layer 70 well layer 5 and 6. No one ever talks about these like you just like we're not going to talk about those 2 layers because they suck yeah. I thought that was awesome. Layers, 5 and 6 are trash, we wouldn't speak with him again, yeah, yeah.",
+      "Duration": 31,
+      "Offset": 686
+    },
+    {
+      "Sentence": "Yeah, well. One thing that I kind of think is important is I try not to use metaphors. 'cause I don't understand metaphors like I try to make things simple, but I don't try to be like oh this is like this other thing 'cause often it's like not.",
+      "Duration": 9,
+      "Offset": 718
+    },
+    {
+      "Sentence": "How many people use metaphors and like I don't understand what you mean that's really interesting because, like I think of myself as a teacher and all, I have is metaphors, so that's very interesting. So here we are 2 people presenting information in 2 different ways. And sometimes it's effective and sometimes it's not yeah, yeah. I mean, obviously other people use networks effectively, but I don't understand how to use them at all, so I just tried to simplify things and then like the simplest version of the truth that I can come up with and then I just say that this is a tough question, but Have you ever had a Zine that was just a huge fail.",
+      "Duration": 30,
+      "Offset": 728
+    },
+    {
+      "Sentence": "There and nobody got it and no one understood and then you just like made that seem disappear. And we did it. I don't think so. Well, I don't know I mean, I've ever done like seventeens right, but you rent. Hundreds 100 comics. Everything a lot of comics. I mean, 7, some of the comments are of course bad. Let me back, it up so not misused by see. I actually did what you warming too. I misused zines are collections of comics have you done an individual comic that just didn't land the way you wanted to land. I can't remember.",
+      "Duration": 30,
+      "Offset": 760
+    },
+    {
+      "Sentence": "That I thought.",
+      "Duration": 0,
+      "Offset": 791
+    },
+    {
+      "Sentence": "OK. Here's like this is more of a blog post, maybe there are all these lyrics tracing systems which let you basically trace what your operating system is doing so like there's like F Trehus and there are a little bit obscur. I guess I like. Most people don't know about them. And it was really upset that I could find like a summary of like what all the living space insulation systems were so I wrote this really long blog posts kind of summarizing like at a high level like what all these systems do and I thought I think that it would be everyone would be really excited about it and when I forgot is that like.",
+      "Duration": 32,
+      "Offset": 792
+    },
+    {
+      "Sentence": "Both people really care about Lennox tracing systems. It's mostly just me, yeah, I mean, people do like I mean, my partner will be other day, he was like oh. I saw someone like link your blog post on this mailing list, saying that it was really useful and I was like oh cool like somebody did care. But like I think I forgot? How many super topic. It was in a way, which which is which is fine like I like to write about things that aren't topics because I guess 'cause I think those things, often end up being really underserved.",
+      "Duration": 30,
+      "Offset": 825
+    },
+    {
+      "Sentence": "They are right about that, then write about something like Jason is like well. People understand Jason like I don't. I don't need to explain Jason there's a lot of material out there, I'd rather write about Lennox tracing systems and explain what's going on with like F trace its interest kind of frustrating, though like I've been talking for a long time and I'll feel like all spend a week on a blog was like sample code and charts and graphs and tables and like timings and I get no comments and no one cares and you get like 10 likes but then you write a blog post about like carriage return line feed and get.",
+      "Duration": 31,
+      "Offset": 856
+    },
+    {
+      "Sentence": "Internet loses their mind, yeah, I tried to this sort of time box? How much time I spend on it on any given thing like this is part of why I like to post like individual pages on Twitter as I go to sort of like see what the reaction is just like get a sense of what people think about it and I still find mistakes. Also, which is great. It's very helpful. But yeah, for any individual comic. I think I try not to spend more than a couple of hours on it. That's cool and you're publishing these, though now like you started making these and you would just like put them out.",
+      "Duration": 32,
+      "Offset": 888
+    },
+    {
+      "Sentence": "People like a couple 100, here you print them all yourself, but I can go up now. An I can buy these like get the print version. If I like do they get the print version? Do you want me to print this out or should? I buy it from? Can I buy it from Amazon or you selling them. You can't buy a printed version right now that's a project that I need to discover an extra few dozens of hours get to happen. I haven't figured out how to do it yet, but yeah, so right now. If you buy. It you can print it out there feel like it.",
+      "Duration": 30,
+      "Offset": 921
+    },
+    {
+      "Sentence": "This year, though like I could go and get like T shirts of zines and comics.",
+      "Duration": 4,
+      "Offset": 952
+    },
+    {
+      "Sentence": "I don't know so I'm like I feel like apparel is exciting people of apparel but I'm really excited about selling like printed stuff and like educational material because I feel like there's a huge need for it and like I guess so I've been writing for free for a long time and that's been great and I love doing it, but I've kind of realized I think there's sort of like an upper bound like how much you can do for free actually really like well because.",
+      "Duration": 30,
+      "Offset": 957
+    },
+    {
+      "Sentence": "Something really good in some time on it, yeah, and there's like only so much time I think that it's possible to send doing things for free.",
+      "Duration": 8,
+      "Offset": 988
+    },
+    {
+      "Sentence": "Does it make sense like I've been thinking about like like sometimes? I go to conferences and I feel like frustrated with the talks. But what I realized is like people don't get paid to give talks right. Some people like this, I guess. There's like there are paid like famous people that get money. I guess, yeah, right like the incentives are sort of misaligned like people aren't being paid to give educational talks. And like I mean to the extent that people at tech conferences do get paid to give talks, they're getting paid.",
+      "Duration": 30,
+      "Offset": 997
+    },
+    {
+      "Sentence": "That's a good point that's a good point but the fast people, all have a book to sell or whatever. Yeah, and so I've been thinking it's sort of like? How can you structure like a business so that the incentives are correctly aligned so that you can actually like focus on education, which I feel like is it really true in the publishing industry. Right now because if you publish a book with like a mainstream tech publisher you're not going to make that much money and so like it's like your financial incentives are not actually set up to really focus on education right.",
+      "Duration": 30,
+      "Offset": 1029
+    },
+    {
+      "Sentence": "Go and sell dead trees and they'll sell the dead tree for like $40 to a teacher who can't afford it and you'll get a dollar or 2 and then there next year. They're going to want you to update all of your stuff with the latest version and they can sell more dead. Trees yeah, and part of the reason things are exciting is that they're pretty fast to produce and because, like technology is always moving you can write something like fairly quickly about something maybe even relatively recent. I mean, I don't do this right, I write about things like Esther I start like 10 years old.",
+      "Duration": 30,
+      "Offset": 1059
+    },
+    {
+      "Sentence": "I actually right about extremely relatively old stuff, most of the time that hasn't changed, and probably isn't going to change, but you can write and I think it's a lot easier to write something short and then people will actually read short things. Unlike books, which I think they both mostly won't read lots of good point, though, because, like I've had. I have memorized like every single line to Hamilton and the audio book. Can I follow the guy on Twitter that I've been sitting on the actual book of Hamilton, like the one that he based the musical on it's like.",
+      "Duration": 30,
+      "Offset": 1090
+    },
+    {
+      "Sentence": "Pages it's been moving around my house, but it's never actually been read, which is stressing me out. I feel like Twitter has ruined my ability to read long form stuff but I'll read your zines there. 'cause they're not 600 pages, yeah, and I think even 7. My favorite tech books. I've only read like 2 chapters of that code complete. Steve McConnell code complete right and some of the chapters are really good like there aren't bad books, Yeah, but I've been thinking about like well.",
+      "Duration": 30,
+      "Offset": 1121
+    },
+    {
+      "Sentence": "Not smart things and like really focus on me like what, if we just make 20 pages that make those 20 pages. So good make them like really what you need to know. Yeah, like some of it like I could read an entire chapter on like how the Lennox Proc Directory works. But I read your Zine and I feel like I pretty much get it. And there's probably 100 words. On the entire thing. Yeah, yeah, exactly and then you can always go to the man page right like if you want to know more exactly how you folks Intel as a sponsor this week and I welcome them.",
+      "Duration": 30,
+      "Offset": 1152
+    },
+    {
+      "Sentence": "Bringing some high performance developer tools for all of us check out Intel's parallel studio EXE I've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C plus plus python or even 4, Tran but is your code building in such a way, and written in such a way that it uses the latest techniques for vectorization multi threading multi node parallelization or memory optimization.",
+      "Duration": 31,
+      "Offset": 1183
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 26,
+      "Offset": 1215
+    },
+    {
+      "Sentence": "So you're somewhat senior would you call yourself an intermediate developer him? How long have you been in developing?",
+      "Duration": 6,
+      "Offset": 1242
+    },
+    {
+      "Sentence": "Telling so I learned from 15 years ago, so do you feel like there's a special place for like that 10:15 year intermediate developer learning? Where we want to learn more a certain way. I think I feel like there's so much material for beginners right now like if you want to learn a programming language. There's like these like learn python. The hard way, which I've heard really good things that there's so little material. I think for for intermediate.",
+      "Duration": 30,
+      "Offset": 1250
+    },
+    {
+      "Sentence": "Maybe advanced developers I think I had this really sort of formative experience, 5 years ago, or someone told me about estres, which is this tool that traces system calls on Lenox and I didn't know. I didn't know that system calls existed like I didn't know how programs talk to the operating system at all, and I didn't know that you could trace them with Astra's I think at that point. I've been programming for 10 years and I felt kind of like angry almost like I was like why didn't anyone to help you before like where was I supposed to learn this and I realize that for a lot of things there's sort of no way.",
+      "Duration": 32,
+      "Offset": 1281
+    },
+    {
+      "Sentence": "First, like someone could have told me right like it's possible that I guess I could have met someone who totally invited. But I didn't write so I was like wait? How am I supposed to learn these straight like how are we supposed to learn new things that are pretty fundamental right like the fact that like system calls or how your program talks your operating system is like a pretty fundamental fact about how computers work and of course, like you could say like Oh, well. Julia you should have taken the operating systems class in the University instead of not taking it right, but University classes or not.",
+      "Duration": 30,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "The solutions like ongoing developer education right like once you graduate from University will have learned some things. But like no matter what University went to your still going. I'm not learned. Some, like important fundamental things anyway. And so it's like well. How do you? How does it happen that you learn those things right? Well, like I was talking to my spouse couple days ago and it turns out that she doesn't know how to change your oil now. Here's a person who's been driving for 20 years I could so she's a senior.",
+      "Duration": 30,
+      "Offset": 1345
+    },
+    {
+      "Sentence": "Engineer Yeah, who am I to say how do you not know how to change your oil but that seems to be the way that community approaches stuff like that, like how do you not know that she also doesn't know how to drive a stick shift I could lose my mind and like I don't know stick shift to shame her for not knowing how to drive a stick. But at the same time shouldn't I be happy that automatic shift cars work and they work great, so much so that she doesn't need to know that so then the question is, is an intermediate developer. What am I supposed to know and what's a waste.",
+      "Duration": 30,
+      "Offset": 1376
+    },
+    {
+      "Sentence": "Can I change my own oil or do I just hire someone to do that? Yeah, right so it's like? How do you figure out what? What you do need to know an like once you decide you want to know those things like? What are the resources you're going to use to learn that yeah? Yeah, there's not like you wouldn't go and find python for intermediate people. There's not like that book doesn't exist. Yeah, I think I was reading. This C plus plus programming book a little bit 'cause. I want to learn a little bit of C plus plus and it was like oh. Here's what a variable is and I was like what? What is this book I'm not reading this?",
+      "Duration": 30,
+      "Offset": 1407
+    },
+    {
+      "Sentence": "I have not really except unlike explain to you what a function is for 10 pages. Like I want to learn like what I need to know about C plus plus is someone who knows like these like 8 other programming languages already but I don't know C plus plus right like their their lessons like tricky things about C plus plus that are really surprising someone coming from another language, but, yeah, I don't know I was like this is really hard feels weird. Like I learned that I was mispronouncing a word for the last 40 years of my life like yesterday now.",
+      "Duration": 30,
+      "Offset": 1437
+    },
+    {
+      "Sentence": "Is not you know she's like? How did you make it this far so if that's happening to me as a native English speaker like imagine? How much computer science or software engineering that I've gotten wrong that I'm like walking around thinking. I know X and it's actually why it's going to blow my mind, and there's not only where do I go to learn it and where do I learn to fix that, but also like as a community. We should be able to be public and be comfortable to say, Oh, I never learned how to do that. But if you told someone you didn't do a bubble sort you probably lose your job.",
+      "Duration": 30,
+      "Offset": 1468
+    },
+    {
+      "Sentence": "That's interesting and I feel we should be more kind of supportive of people in their learning and I always appreciate you on Twitter because I know you know what you're talking about it's clear in your writing you have a great blog. Anna mediums, and all of your jeans are fantastic, but at the same time, I feel like you're very enthusiastic about learning stuff and I wonder if people are ever like you should have known that Juliet? How did you get this far I hate it when people do that kind of stuff 'cause I'm always learning new hotkeys and New Syscalls.",
+      "Duration": 30,
+      "Offset": 1499
+    },
+    {
+      "Sentence": "Yeah, like I guess so I think I think I've spent a lot of time getting better at learning. I think it's really exciting to come up with like questions of things that I don't know it's like to me. It's exciting to learn new things right like it's not exciting to say that, like oh. I know everything already. 'cause, like that's not true and also it's pretty boring like if I knew everything in programming. I would probably quit like I don't know like it sounds awful. I would much rather be learning new things.",
+      "Duration": 31,
+      "Offset": 1530
+    },
+    {
+      "Sentence": "So, like I think the idea that it's like even desirable to know everything is something that I don't believe and like I mean, sometimes like maybe someone on hacker news that would be like. Oh, like I can't believe he didn't know like such and such for hacker news accent just kind of silly right like I like a lot of people don't know a lot of things and like it like an exciting opportunity to learn that thing right you're like oh great today is the day that.",
+      "Duration": 31,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "Yeah, today is the day that I guess looking that thing and that's fine exactly and that's that's the way we all should be we should be positive about that stuff because not everyone has like we may all have 10 or 15 years experience, but not everyone has the same years. Yeah, we're doing different stuff. What were you doing before you were an infrastructure engineer's damage in their name in their name to doing infrastructure engineering 2 years ago, like machine learning like the new hotness that everyone is talking about so you're doing, it before it was the hotness well. It was also the hotness 2 years ago, I don't have a sense of my mind.",
+      "Duration": 35,
+      "Offset": 1594
+    },
+    {
+      "Sentence": "Started being amazing, I think I think I think we should be using cool for a minute of my bad my bad, so you also do a lot of open source and you actually took a sabbatical from work to write a profiler? How did you do that? I actually is sort of don't do a lot of answers I took a sabbatical from work today. Open source for 3 months. But the reason I did that was that I don't do open source in my spare time at all really. That's how I do a lot of writing in my spare time so if I also programmed in my spare time.",
+      "Duration": 30,
+      "Offset": 1630
+    },
+    {
+      "Sentence": "Would I think it would not be healthy? Yeah. I think would be too much. But yeah, so I have this profiler. I want to write and I was like well. I wanted this programming project and it realistically speaking. I'm not going to do in my spare time so I applied for a fellowship and they gave me the fellowship and then I took 3 months off work and wrote this profile. It was that stressful no that's great. That's a good thing. Amazing how much we got something that only Canadians could do because I don't know if I could get health care if I took out 3 months off work? Yeah. That's true. I don't know.",
+      "Duration": 32,
+      "Offset": 1662
+    },
+    {
+      "Sentence": "So it actually did it go did you get healthcare sabbatical and I was like I have no idea. I didn't think about that at all and other whole podcast right there. I was like Oh my goodness 3 months of particle to work on like something I want to work on that would be amazing, yeah, yeah. I just asked my manager for permission like 6 months in advance. Oh really OK. So you like pause your job and came back to the same job, yeah, yeah exactly. That's amazing that's amazing so you made. RB spy and people can go in Google for RV's by or go to Arby's by dot GitHub dot IO.",
+      "Duration": 30,
+      "Offset": 1694
+    },
+    {
+      "Sentence": "Other people got involved with this profiler 'cause. It's got lots of lots of Forks and stars but are people you get in digging it.",
+      "Duration": 6,
+      "Offset": 1725
+    },
+    {
+      "Sentence": "People are using it, yeah, they've told one person left this really delightful comment. That made me happy where they said that they had this like really bad performance problem and every program and then they used RV slide and then they found out was wrong right away and they fixed it and their boss out that they were a genius, which is exactly become a wizard programmer like they've done exactly what you told him they could do what you want. But I feel like it's like it's exciting to build tools, which help people be better and like make them feel like.",
+      "Duration": 28,
+      "Offset": 1733
+    },
+    {
+      "Sentence": "I don't know like he wanted to feel like they can do anything right and it was, it was it a problem that have existed before like was just no good profiling for Ruby right now is a good profiler, but doesn't work, the same way that Arby's fireworks so the way RV's fireworks is you can just like attach it to any running Ruby program. No matter what and the other profilers that already existed. You need to edit your program source code answer being able to just like put something that's already running be like? What are you doing? Is something that wasn't possible before that's cool and I understand that it's just sampling profilers, so you can actually run.",
+      "Duration": 32,
+      "Offset": 1762
+    },
+    {
+      "Sentence": "Without fear, yeah that's right that's pretty sweet and are you continuing work on it or do you have you developed a community in a team around it or is it just you?",
+      "Duration": 7,
+      "Offset": 1796
+    },
+    {
+      "Sentence": "It's mostly it's really just me, I'm still working on it, a little bit and I understood that you were trying to do some flame graphs as well like it produces like information that you can then use to go and visualize. Yeah, yeah, so it produces visualizations by default, which was an early important design decision I made actually because I think like a lot of profilers will require you to like extra work to get a visualization and I thought well it doesn't really work for people 'cause. I think people who are profiling. Usually, like if they're doing profiling. They probably haven't done it for like.",
+      "Duration": 31,
+      "Offset": 1804
+    },
+    {
+      "Sentence": "Right like they've just said, OK, today is day that I'm going to do profiling and I don't know how to do this? What's going on so you really like want to give them like you want to make the experience is easy for them as possible, because profiling is something that will just do some frequently right so I thought it was really important to create the visualization by default and people have said they're like, Oh wow. I didn't know that you could make this kind of visualization and so I think they would have thought to do it themselves. Because they didn't know that it existed right, yeah, and if you have to go into a bunch of set up just because you want to ask answer and ask a question.",
+      "Duration": 30,
+      "Offset": 1835
+    },
+    {
+      "Sentence": "We won't bother doing it, so the flame graph comes out of the box, yeah that's cool.",
+      "Duration": 4,
+      "Offset": 1866
+    },
+    {
+      "Sentence": "Awesome and that you did, that in just 3 months have you been working out before or did you do it all beginning to end in 3 months? I built a prototype before awesome. So I kind of had an idea that it was possible which is what kind of gave me the confidence. To actually take their butts off work to work on it right and when you did. The grad like do you have to then go to the ground people and say look? I did a thing? Yeah, I mean? I said, like I think I've been blogging about it, so they obviously knew that I've been working on it, and so I think at the end. I didn't have anyone's OK. I did the thing keeps me.",
+      "Duration": 30,
+      "Offset": 1872
+    },
+    {
+      "Sentence": "It was pretty simple. There are really great to work with that's awesome. That's really cool. I didn't even realize that one could ask for a grant and get it, and do something like that, and that's inspirational to know that you can do that. Yeah, yeah, the program was called the segment open source fellowship. There's this analytics company called segment that ran it pretty cool, so people can check out your jeans should they just go to JVNS dot CA or is there a better home page for usines. Yeah, they can go there cool so you can just Google for Julia Evans Eansor everywhere and follow you on Twitter and your.",
+      "Duration": 32,
+      "Offset": 1902
+    },
+    {
+      "Sentence": "In comics all the time and I follow you on Twitter and see, those things go by, and RB spy. Of course, is Arby's by dot GitHub Dot. IO thanks so much for chatting with me. Today thanks and this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 14,
+      "Offset": 1935
+    }
+  ]
+}

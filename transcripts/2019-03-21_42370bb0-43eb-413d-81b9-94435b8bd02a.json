@@ -1,0 +1,518 @@
+{
+  "id": "42370bb0-43eb-413d-81b9-94435b8bd02a",
+  "Title": "Inside a Tribe of Hackers with cryptographer Marcus J Carey",
+  "PublishDate": "2019-03-21",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/999d918f.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi friends today's show is brought you by data dog a full stack monitoring platform for dynamic infrastructure and applications with 250 plus integrations. Customizable dashboards and algorithmic alerts. Datadog empowers your team to visualize and optimize every layer of your stack start a free 14 day trial and ate a dog will send you one of their T-shirts visit bitLY.com slash DATA dog shirt to get started that's bitLY.com.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ugh shirt.",
+      "Duration": 4,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Marcus. Kerry is renowned in the cyber security industry. He owns threatcare.com and just write a book with Jennifer Jen called the tribe of hackers. How are you Sir? I'm doing great thanks for having me? Yeah, thanks for hanging out now you understand that you started your career in the US Navy but were you hacking before that, I've also hacking computers. I was very curious and taking apart things and building stuff with my hands so the US Navy gave me access to.",
+      "Duration": 31,
+      "Offset": 45
+    },
+    {
+      "Sentence": "When were computers, though, and how long ago was that 'cause I understand you have a Masters degree in network security.",
+      "Duration": 6,
+      "Offset": 77
+    },
+    {
+      "Sentence": "Yeah, so it'll be in probably 24 years ago, I'm 43. Uh I joined the military. When I was 18. The military did good interest exam. So I got into a technical feel called cryptography and ever since then. I've been super technical and so you just take a test and then they say, Alright You'll be on the top of the boat. You'll be on the bottom of the ship. You'll be this. Crypto person like how they direct you into cryptography or did you have an interest in that already.",
+      "Duration": 32,
+      "Offset": 85
+    },
+    {
+      "Sentence": "Went to the Navy. I just wanted to work with computers and you take a test and interest taken interest exam. An they use that interest exam to see what career feels that you're most likely going to be successful in and so that ended up being cryptography for me. That's pretty amazing. I mean, now you're raising what $5,000,000 in venture capital.",
+      "Duration": 23,
+      "Offset": 118
+    },
+    {
+      "Sentence": "Yeah, so we've forthright care, we've raised over $4 Million in funding.",
+      "Duration": 4,
+      "Offset": 142
+    },
+    {
+      "Sentence": "Text fantastic, it is so interesting to hear about how people come up because, like for me. I tell the story about how my fifth grade teacher loan me an Apple 2 because I was getting into trouble when she tried to keep me inside other than causing trouble on the streets and so she told me this Apple, too if that had not happened.",
+      "Duration": 18,
+      "Offset": 147
+    },
+    {
+      "Sentence": "I wouldn't be doing this, I wouldn't be talking to you like I would have it like it be like that. You know, those movies where like someone's life splits in half and they're doing something entirely different. If you hadn't taken that test or that tested told you I told the Navy that you'd be good at something else.",
+      "Duration": 13,
+      "Offset": 166
+    },
+    {
+      "Sentence": "He would have been a whole different person.",
+      "Duration": 1,
+      "Offset": 180
+    },
+    {
+      "Sentence": "Yeah, certainly but you know how I look at the world and life is nothing happens on accident. So everything that Mets to be is meant to be so I was meant to be in the military. You know all the good stuff and bad stuff. Even I think there was meant to be so it's just the way my script was written does fantastic. So now you work at threat care you own it, you founder and CEO of threat care and you are.",
+      "Duration": 30,
+      "Offset": 183
+    },
+    {
+      "Sentence": "Getting intrusions on networks.",
+      "Duration": 1,
+      "Offset": 214
+    },
+    {
+      "Sentence": "Yeah, so uh, yeah, definitely a imitating intrusions, Essentia Lee. We imitate Black Hat hackers on networks in order for our customers to find out where they need to improve their cyber security in the cool thing about it is that we've automated that process. So anybody can use our software and look like that there's some kind of awesome hacker.",
+      "Duration": 25,
+      "Offset": 217
+    },
+    {
+      "Sentence": "Interesting OK, so I'm not a hacker like I break stuff occasionally but I've never really felt like I was hacking so the thing I find interesting is how people like they enter infosec and then it's they're always looking at everything with a secure perspective. You know they're always thinking about how to break stuff and does this software allows me to think like or is it thinking for me like like a hacker.",
+      "Duration": 23,
+      "Offset": 243
+    },
+    {
+      "Sentence": "What the software lays out different?",
+      "Duration": 4,
+      "Offset": 268
+    },
+    {
+      "Sentence": "Different steps in a methodology that a hacker would take as funny because you can actually you know Have. You ever did a multiple choice test where you have to select on a computer? Where you have to drag and drop the answers. So we allow people to drag and drop a text. It push play essentially and you can do an attack. So we let you kind of like pick from from one ingredients and then you can build your attack step by step in that attack. It could be like the first thing that happens is you know they're stealing.",
+      "Duration": 32,
+      "Offset": 273
+    },
+    {
+      "Sentence": "And then they moved to this computer and then they still credit cards and then he sent him across the network and all those different things. So you can script it out in a scenario interesting. It's like an orchestrator. Yep, definitely you can orchestrate.",
+      "Duration": 14,
+      "Offset": 306
+    },
+    {
+      "Sentence": "The cyberattacks, yeah, yeah that's pretty cool, so you also want to put a book together that now. I've just seen is on Amazon now called tribe of hackers and it's basically cyber security advice from the best actors in the world. As of us talking right now is number one release in computer hacking. You put this together with Jennifer gin, yeah, so we release that book 3 weeks ago. It's pretty much been number. One book is been viral. We've sold thousands of copies in the book all the proceeds go to charity, too by the way.",
+      "Duration": 32,
+      "Offset": 322
+    },
+    {
+      "Sentence": "Right and uh so uh Jennifer Jen is actually my head of communications at thread care, so she actually helped me put that together and manage the project course.",
+      "Duration": 9,
+      "Offset": 354
+    },
+    {
+      "Sentence": "OK and you actually went and talked to a bunch of hackers and cyber security experts. Some of which are people that we know their names that are famous and some there may be up and coming that we might have heard of.",
+      "Duration": 10,
+      "Offset": 365
+    },
+    {
+      "Sentence": "Yeah, absolutely it was important to get a good blend. I see in life. Sometimes you could actually talk to people that are like.",
+      "Duration": 8,
+      "Offset": 377
+    },
+    {
+      "Sentence": "Have some all these accolades and sometimes you can relate to him as much so sometimes in life. You need a mentor. They just a little bit further down the street. Then you are. You know the road should you should say basically they accomplish this a little bit more than you have sometimes that advice is the best advice. You can get while you're shooting for the stars so we took some pretty balanced approach where some of the people are famous. I'm using air quotes here because.",
+      "Duration": 30,
+      "Offset": 385
+    },
+    {
+      "Sentence": "Nerd so you know, I don't know if there's such things that famous dirt, but yeah, so we put them back together and funny enough some of the people that weren't real well known have have hit me up and now they're getting invited to speak at conferences and stuff, so it's been great for their careers as well. Yeah, that's great. I feel that way, sometimes about this podcast. There's folks that I've talked to while they were on the come up that are now amazing huge people and it's like I feel like.",
+      "Duration": 30,
+      "Offset": 416
+    },
+    {
+      "Sentence": "Was a step on the on the stairs. Uh as a part of their come up and then I hear like Oh, so and so is doing this, or doing that and said Oh I had them on the show 5 years ago. That's great to lift people up like that.",
+      "Duration": 10,
+      "Offset": 447
+    },
+    {
+      "Sentence": "Of 100% and that's why I encourage people if you have an opportunity from a business perspective to pitch in to pitch compositions. The more and more name in your brand is out there, it all comes back around and they say that there is no such thing as an overnight success right so somebody might just see you think oh you just came up. But even at this for 10 years 20 years 30 years right so there's no such thing as an overnight success.",
+      "Duration": 32,
+      "Offset": 458
+    },
+    {
+      "Sentence": "It should be part of other people's uh you know journey along the way and it just makes you feel good inside. I think God actually created us to be a blessing to other people. So we can fill that that feeling that that gives you you can't get that any other thing. I appreciate that I appreciate that so you modeled the book tribe of hackers on this idea that Timothy Ferriss had this tribe of mentors, where you would come up with a solid group of questions and you would add ask a huge number of people those questions so you put down.",
+      "Duration": 31,
+      "Offset": 491
+    },
+    {
+      "Sentence": "Questions around cybersecurity almost like a fact but then you found like 70 different people who were all like notable hackers and ask them. Those 14 questions in that that resulted in a really great of course, edited and curated book.",
+      "Duration": 13,
+      "Offset": 524
+    },
+    {
+      "Sentence": "You're certainly I'm a big fan of a Tim Ferriss funny enough, he moved to Austin. I've been following mera since the 4 hour work week and and that's what I'm saying like these kind of podcasts your podcasts. It can be used to inspire people. You know there might be somebody. You know come 5 years later and says all men are her third podcasts. You know that you were on and so, yeah, so I love the fact that people act infers. I'm also kind of.",
+      "Duration": 30,
+      "Offset": 538
+    },
+    {
+      "Sentence": "Then it's Gary Vainer. Chuck those guys been put in their work for so many years and then you see that they finally have some kind of come up and inspire other people to do similar things. Yeah, this show will probably be somewhere in the 676 100. Show 680, I had Timothy Ferriss on this show in June of 2007, 12 years ago, he was shown number 70 well so check that out.",
+      "Duration": 30,
+      "Offset": 569
+    },
+    {
+      "Sentence": "Still, and like yeah, so that's what I'm talking about. I mean that that shows that like you been put in that work too, so that's why you have such a big following well. I don't have that I don't have that Gary Vainer. Chuck money but I would keep grinding, though, because we have fun here on the show love it. So you said also that entrepreneurship is a big part of your life and that you've worked on an sponsored pitch contest. What do you think pitching is so important for people who are doing startups?",
+      "Duration": 31,
+      "Offset": 600
+    },
+    {
+      "Sentence": "I think uh I tell people that lives are pitch. You always pitch into people you always put into people that could be your future employees like people that you know they know they know you they know your brand. They notice your bunch of business. You also pitching to investors 'cause like even though that first time you might not get an investment what they're looking at you they're looking at. You long term. Overtime and as you pigeon you pitch and you're out there to hear your story.",
+      "Duration": 30,
+      "Offset": 632
+    },
+    {
+      "Sentence": "Christian they're going to invest someday and then you so you are also pushing to customer so people are listening. Those customers are also listening to your story and so pitching allows you to be able to sell essentially yourself to all those 3 different people and so it's good to keep that.",
+      "Duration": 23,
+      "Offset": 663
+    },
+    {
+      "Sentence": "To keep tight and always be able to tell your story.",
+      "Duration": 3,
+      "Offset": 687
+    },
+    {
+      "Sentence": "One of the things that we've actually both worked on this idea of pitch black which was a pitch contest for people of color. There was one in Portland. There was one in in Austin, where you are located. You think it's important for underrepresented folks to make sure that they're getting their faces out in front of people that look like them, but also people who don't.",
+      "Duration": 21,
+      "Offset": 692
+    },
+    {
+      "Sentence": "Yeah, 100%. Uhm yeah, it's a great opportunity to get out there and be inspirational. So the the first pitch black that they had in Austin. I was a judge and I got to give feedback and I've actually meant certain had like you know, coffee with some of those founders and and still associate with those founders even though I'm not a billionaire yet. I'm able to pass on the stuff that I do know, and so also sponsor hackathons as well.",
+      "Duration": 30,
+      "Offset": 714
+    },
+    {
+      "Sentence": "And uh you know just like anything that I can do to act on the response are is at Houston. Tillotson, which is historically black college in Austin, Texas. So I talked there sponsored their hackathon. I would judge their hackathon. I've helped mincer kids, there through different programs so the only the only way that people.",
+      "Duration": 29,
+      "Offset": 745
+    },
+    {
+      "Sentence": "No, that looked like me are going to come up is if people start investing more in that and I mean, people that look more like them, either best in time. If you don't have money to invest but I'm I'm just blessed that I can actually violence hurt. I'm an an money when I can. Yeah, I think that people don't realize that the investing of time is so important like simply showing up showing up to a hackathon showing up to a college or University not everybody has the money that they can donate, but simply being present.",
+      "Duration": 31,
+      "Offset": 775
+    },
+    {
+      "Sentence": "Important thing showing solidarity.",
+      "Duration": 1,
+      "Offset": 807
+    },
+    {
+      "Sentence": "You are 100% I tell this everyone, especially investors. I wish investors showed up more to those events because even if they're not making an investment. They definitely can give some game show their show their presents and also showed the investors are just normal. People just like everybody else at the end of the day.",
+      "Duration": 25,
+      "Offset": 810
+    },
+    {
+      "Sentence": "I just want to show people that you're human you know that ferment investor perspective from a entrepreneur perspective from a developer perspective. There's no magic going on here and sometimes the kids that come from where I'm from they think is all magic.",
+      "Duration": 17,
+      "Offset": 837
+    },
+    {
+      "Sentence": "Yeah, I feel like we don't sometimes teach the kids how to interact socially like the importance that you go to a conference that's 1 thing, but you spend time in the hallway conference. The conference outside the conference. If you're not able to have those interactions. You can have less of a good time and you'll be less likely to network with people.",
+      "Duration": 19,
+      "Offset": 856
+    },
+    {
+      "Sentence": "Yeah, 100% what I tried to tell kids to do most of all, though definitely important to interact but I like.",
+      "Duration": 9,
+      "Offset": 877
+    },
+    {
+      "Sentence": "I like for them to be comfortable in our own scan.",
+      "Duration": 3,
+      "Offset": 887
+    },
+    {
+      "Sentence": "And B&B themselves and be authentic because a lot of times. I see people trying to be somebody else they might see a temper. Zora Gary Bailey Chuck or whatever and what they do is they'll try to imitate that person swag or if they see a famous black person or whatever that may be.",
+      "Duration": 22,
+      "Offset": 891
+    },
+    {
+      "Sentence": "You were made to be special everybody special in their own way, and just be yourself at all times. And that's the best way to interact 'cause? What happens is if you're not being authentic and those hallways like you're talking about people going to think you fake they can tell you can tell when somebody is acting or put it on a front then you can tell when somebody's been genuine.",
+      "Duration": 23,
+      "Offset": 914
+    },
+    {
+      "Sentence": "And the people that are genuine.",
+      "Duration": 1,
+      "Offset": 938
+    },
+    {
+      "Sentence": "Always have the most up-to-date as far as like getting what they want to accomplish. I think that's just because of the rise of social media and particularly things like Instagram, which I'm now convinced that Instagram is just to make me feel bad about myself in Mycareer, everybody Instagram is getting our private jet. And I'm like sitting at subway sandwiches. While I'm scrolling through Instagram looking at all these people on their jets and I'm thinking to myself, there's so many people out there kicking butt that how can I possibly kick butt?",
+      "Duration": 30,
+      "Offset": 941
+    },
+    {
+      "Sentence": "I try to keep my kids from looking at stuff like that, but it just very interesting way to think about it like? How can one be unique and be themselves? When we have we now have the ability to see everybody?",
+      "Duration": 12,
+      "Offset": 972
+    },
+    {
+      "Sentence": "You know out there doing stuff and not find it overwhelming like if I'm already established I can look at these things that I can say, well, good for them You know, I'm doing fine. They're doing them cool. But if I'm on the come up seeing your success might stress me out.",
+      "Duration": 15,
+      "Offset": 985
+    },
+    {
+      "Sentence": "Yes, certainly the thing that I tell people is just all saying it's attributed to Benjamin Franklin, where they say believe half of what you see and none of what you hear.",
+      "Duration": 16,
+      "Offset": 1003
+    },
+    {
+      "Sentence": "So when I see people on stuff. I just believe half of it and even when an adventure game when you heard somebody raising a lot of money that doesn't mean that they are actually operating a successful business, or a profitable business in this game.",
+      "Duration": 18,
+      "Offset": 1020
+    },
+    {
+      "Sentence": "In venture capital using when you raise money, you have a 12 to 18 months to prove it. And so in a solid experiment. So what you'll see is easy. Somebody raised 1020, $30 Million and then 12 to 18 months later. There flopping supply. Opery so I would encourage people to don't believe the hype Public Enemy song.",
+      "Duration": 25,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "But yeah, so you're going to see people, you're going to see people do that. It don't don't pay attention at all because half of his fake and then like on the hearsay like in the second half of that, saying is believe none of what you hear you're going to hear rumors and all that stuff, all the time about how somebody is doing this, or doing that just I don't believe it. I think that's an important thing to remember that flex like if you're flexing if you have that much time to flex on social media are you actually doing the work because most of the people. I know that are really successful in doing well.",
+      "Duration": 35,
+      "Offset": 1065
+    },
+    {
+      "Sentence": "Doing well because they're doing the work and you don't you don't see them. They're not that is visible and you won't see them on social media You'll see them at hackathons or you see them at local events.",
+      "Duration": 8,
+      "Offset": 1101
+    },
+    {
+      "Sentence": "Yes, certainly and I like what you said there a local events in hackathons are great ways to network with people if you know, people. Follow me on Twitter. I'm always encourage ING and trying to help people out and it's another form of networking. So how are you contributing to make another people's life better and so in business you either going to save people time or money. So those are the things that you have that you have to do and I will tell you if you're helping people.",
+      "Duration": 30,
+      "Offset": 1111
+    },
+    {
+      "Sentence": "Then you gonna be more successful it's more about cultivating. Those relationships and building good relationships. So those are the people that are going to win the people that are promoting themselves.",
+      "Duration": 11,
+      "Offset": 1142
+    },
+    {
+      "Sentence": "There, there, there all about me me me and most of the time those people. They're not going to win, you got a very good developer probably.",
+      "Duration": 10,
+      "Offset": 1154
+    },
+    {
+      "Sentence": "Regardless, you write bugs and that's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time, see the severity and scope of the error get immediate access to the stack trace connect the problem to the commit that cause it and fix it without delay century, a name that's so common. We have to include our top level domain in our advertising to make sure you remember them century dot IO that's century.",
+      "Duration": 30,
+      "Offset": 1165
+    },
+    {
+      "Sentence": "Are Y dot IO? Open source full stack web apps native apps mobile games. Smart oven mitts. If you can program it century can make it far easier to fix any errors. You encounter with it. Let's fix broken code together visit century dot. IO someone told me something that was interesting about avoiding being a transactional network are they were getting into the software community going to events and stuff, and they were interacting with people who seem to keep score.",
+      "Duration": 32,
+      "Offset": 1197
+    },
+    {
+      "Sentence": "Things that they were routing like you would route someone to another person, you see yeah, you should talk to so and so.",
+      "Duration": 4,
+      "Offset": 1229
+    },
+    {
+      "Sentence": "Which is great that you should do that you should say Hey Marcus you should meet so and so and and then boom. But if if I'm keeping score and then I call you later. And I say, Hey, you know, I've referred you to 6 different people or Hey, you know, I've let you know, I've been basically keeping score about all the different things. And then suddenly, calling in a favor that's what they called transactional networking. And it's definitely unhealthy. I wonder if you've ever bumped into that because it sounds like you give freely of your time.",
+      "Duration": 27,
+      "Offset": 1234
+    },
+    {
+      "Sentence": "Yeah, an?",
+      "Duration": 0,
+      "Offset": 1263
+    },
+    {
+      "Sentence": "It totally uh. I love what you're talking about here.",
+      "Duration": 3,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "And the thing that I've also noticed the thing that bugs me about some of those things is.",
+      "Duration": 6,
+      "Offset": 1269
+    },
+    {
+      "Sentence": "I like why aren't you helping the person really because this is what I see?",
+      "Duration": 4,
+      "Offset": 1276
+    },
+    {
+      "Sentence": "Um definitely in the?",
+      "Duration": 1,
+      "Offset": 1281
+    },
+    {
+      "Sentence": "You know 'cause I'm black right.",
+      "Duration": 1,
+      "Offset": 1284
+    },
+    {
+      "Sentence": "So I see that in different places. There's there's 1 or 2 black people that they prefer all the black people too. And so in Austin. There's 1 or 2 people that you need to be such and such or like since I'm in cyber security there's 1 black guy that everybody tells me have you talked to session sets? Do you know this person and I like their routing all the black people to that one person?",
+      "Duration": 27,
+      "Offset": 1286
+    },
+    {
+      "Sentence": "And so that person is cool, but why aren't you helping like it blows that blows my mind and then at the end of the day the black person that their routing people to even without VC or Angel or a successful entrepreneur. They don't have the bandwidth to answer every black person's question that they're getting routed to 4 is that makes sense. Yeah, well, I think that there's a myth.",
+      "Duration": 30,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "Any group that there can be only one so for my friends like I'm a type one diabetic and I have a pump and I'm very visible about that, like this is something that you know you can't hide being black, but I could certainly hide being diabetic. I don't need to tell people about it, but I think that young diabetic kids need to see people that are successful and healthy and living. So then I invisible about that. So then I become the one that everyone sends their diabetic friends to like like 56 times a week. Hey can you have coffee with someone so Hey? Can you have lunch with this person?",
+      "Duration": 30,
+      "Offset": 1345
+    },
+    {
+      "Sentence": "It became diabetic their kid just became diabetic, but there's lots of other people who can step up and help out and I don't want to be salty about that. So it's this balance, where you want to represent but at the same time, there's a huge community. Why is it just kind of got to be me? Yeah, you kind of We think about that a little bit, but yeah, so I definitely think that I think that anybody can help so I would say like.",
+      "Duration": 24,
+      "Offset": 1376
+    },
+    {
+      "Sentence": "See what you can do for that person before passing them on because a lot of times. There's everybody has a unique skill set you know what I'm saying and so.",
+      "Duration": 10,
+      "Offset": 1402
+    },
+    {
+      "Sentence": "You know what can you do to help that person out you know, and that's what that's what I'm talking about. I think people see like we're talking. We're talking about Tim Ferriss and Gary and just paint things like that. They see folks like that, and they think well. There's so successful. They have these blogs and the whole media behind it. How can I help like I'm just trying to get people to blog and podcast and they'll say things like well? What can I offer?",
+      "Duration": 23,
+      "Offset": 1413
+    },
+    {
+      "Sentence": "And what you can offer your story right you can offer how you got there. That's interesting and it's unique to you. We shouldn't 2nd guess ourselves and say, I have nothing to offer because you know, I'm not as far ahead as Marcus and Infosec.",
+      "Duration": 15,
+      "Offset": 1438
+    },
+    {
+      "Sentence": "Are you been here you're preaching man? You landana sermons like everybody's an expert at something you're experts yourself probably you're probably the expert background, the food. The culture wherever you come from you probably know more about that, than 99% of the people and somebody out there is going to find that that's super interesting.",
+      "Duration": 26,
+      "Offset": 1455
+    },
+    {
+      "Sentence": "And I think I.",
+      "Duration": 1,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "The number one thing that I do when I meant for people.",
+      "Duration": 3,
+      "Offset": 1484
+    },
+    {
+      "Sentence": "Is that make them to believe that they're b******* just like look man?",
+      "Duration": 4,
+      "Offset": 1489
+    },
+    {
+      "Sentence": "You know look so still look brother. This is what you have that nobody else has.",
+      "Duration": 6,
+      "Offset": 1494
+    },
+    {
+      "Sentence": "And everybody has a superpower and I encourage them to use whatever that superpower is for good is just like if you watch Marvel people have all these different powers.",
+      "Duration": 10,
+      "Offset": 1501
+    },
+    {
+      "Sentence": "I encouraged him the phone or superpower and use that forgot. Yeah, it's funny it. I love that you're saying, These things because I say the same thing like we just met now doing this podcast, but I have, like productivity talks and talks that I've given where I literally have on the slide. Everyone is an expert at something like find your superpower. I tell my kids, I've got an 11 year old in a 13 year old, they haven't figured out what their superpowers are yet, but will figure it out like it could be storytelling. It could be speaking. It could be being in a play it could be.",
+      "Duration": 30,
+      "Offset": 1512
+    },
+    {
+      "Sentence": "We don't know, but once they find it there going to be unstoppable.",
+      "Duration": 2,
+      "Offset": 1543
+    },
+    {
+      "Sentence": "Yeah, 100%, so that's why I'm actually a fan of the incredibles because you watch that movie the kids are actually figuring out how they fit in with their superpowers and how they complement each other as a family in a team and all that stuff, so that's all that is if you haven't found that superpower. You know, sometimes your superpower other people see it, but you don't see it.",
+      "Duration": 29,
+      "Offset": 1548
+    },
+    {
+      "Sentence": "Like my wife is the best listener. I've ever seen and people randomly even wear out somewhere randomly. People were poured their heart out to her and she just listens so that's a form of empathy where she just listens and the people are delighted that somebody listened to them, so that's that's a superpower because not everybody has time to listen to somebody it could be as simple as that you know what I'm saying.",
+      "Duration": 30,
+      "Offset": 1578
+    },
+    {
+      "Sentence": "But sometimes like I see that when I look at my wife and I like men's crazy, but my wife think that's just normal so Superman. He believes he is natural for Superman to be super strong super fast or whatever. That's no big deal to him, but the onlookers can all see like G** **** that dude has all those powers right so sometimes you have to ask people. What am I really good at and then they can help you out.",
+      "Duration": 30,
+      "Offset": 1609
+    },
+    {
+      "Sentence": "My one of the things that I'm trying to learn about is like how to be really empathetic II'm a fixer right. I want to fix everything my wife isn't listener so she will. Tell me, she says. This thing in her culture called cry with the crying someone will call they have a problem.",
+      "Duration": 15,
+      "Offset": 1640
+    },
+    {
+      "Sentence": "I'm like alright let's break it down. Let's breakdown. The problem will fix it. That's not really healthy because this is a person who called to cry. So let's let the crying happened. First, like listening in that case is her superpower and letting that person get that get that process that they didn't call to fix it. They called to have an outlet to have a place to talk about it. They'll fix it in a minute, but let them have their moment and I've learned that from her. Yeah, man II couldn't I could not agree more empathy is all about listening and not trying to fix it.",
+      "Duration": 32,
+      "Offset": 1656
+    },
+    {
+      "Sentence": "There's this really good book. Uh there's 2 books that II kind of recommend that you probably heard about so you want to talk about race you see in that book.",
+      "Duration": 8,
+      "Offset": 1689
+    },
+    {
+      "Sentence": "Absolutely never on the show actually man that book blew my mind because that it actually called out privilege and there's a lot of things that I actually didn't know that I was privileged. But that was the first person is like look that made me think about how previous up like crazy. Stuff like I was in the military. I work for NSA. I had access to all these computers. All these different things that training my Masters degree born in the US so.",
+      "Duration": 29,
+      "Offset": 1698
+    },
+    {
+      "Sentence": "Yeah, so but that book also talks about empathy and how important it is to just sometimes it's listen and I'll try to fix it because if you're trying to fix it. You can listen while you can't do. You you can't do 2 things at the same time? Yeah, I'm going to make sure that their links in the show. Notes to that book so you want to talk about race by each. Oma Lucio as well as your book. Of course was your other recommendation so the next one is dare to lead.",
+      "Duration": 30,
+      "Offset": 1729
+    },
+    {
+      "Sentence": "There to lead yeah by Brené Brown, absolutely amazing because she also talks about empathy. You know something that I figured out by reading. Those books is like men and women write books differently because in this is going to be somewhat of a general statement. This is what I've learned and seeing myself women women right women white super well about all kind of business stuff.",
+      "Duration": 30,
+      "Offset": 1760
+    },
+    {
+      "Sentence": "The tone of how they they talk about stuff is totally different. For instance, like crazy, Scott Adams has a couple of books, Scott Adams. He actually the writer Dilbert but his his tone and how he talks about stuff is like mail and very masculine probably even chauvinistic tones and then when I listen to a book written by some of the women is like a Super Empathetic.",
+      "Duration": 30,
+      "Offset": 1791
+    },
+    {
+      "Sentence": "Tones and even a subject matter talking about empathy.",
+      "Duration": 4,
+      "Offset": 1822
+    },
+    {
+      "Sentence": "'cause if you talk about Union Yang Enerji, like II believe that that men they bring that that Dark Energy, a lot. And so women bring the opposite in many cases and I know I'm speaking little bit general her, but what I found out is like is good to take in books from women and men to have some kind of balance. 'cause a lot of business leaders are men. And if you listen to that you're just going to be like like hardcore like that over type.",
+      "Duration": 30,
+      "Offset": 1827
+    },
+    {
+      "Sentence": "You know sales sales sales, you know, whatever but if you take in both that's what I'm trying to do with my company is build a culture that accommodates both the union Yang? What is also interesting to?",
+      "Duration": 12,
+      "Offset": 1858
+    },
+    {
+      "Sentence": "To think about why we think of those things as being male and how we as men can reclaim empathy and it can be a people thing like why can't men be empathetic? Why does that need to be thought of as a feminine thing like you look at like people like the rock? Who are both very masculine in his presentation, but also extremely thoughtful Terry Crews. These are very, very empathetic. Men like we can reclaim that as men. I could not agree with you.",
+      "Duration": 30,
+      "Offset": 1871
+    },
+    {
+      "Sentence": "More so in English, we would say email feminine and masculine in different languages. They have different ways to describe this and it's not necessarily related to gender and all that stuff, so absolutely 100% agree. If you listen to some, like some of the African culture. Some of the Far East Culture Indian culture. They have way more ways to describe what I'm trying to talk about here, then we do.",
+      "Duration": 30,
+      "Offset": 1902
+    },
+    {
+      "Sentence": "But in in America for sure. The masculinity and not wanting to have any softness about a man man can cry all that stuff is definitely a problem.",
+      "Duration": 13,
+      "Offset": 1933
+    },
+    {
+      "Sentence": "Well, man, gender is a spectrum right like we once we figure that out will be a lot better. Oh, for sure. I mean, so like one of my best. Friends is from hydra bod rather die brother. He's from India in our culture. They they do. Stuff like hold hands with their friends like 2. Mills can walk down the street and it's totally totally innocent totally nothing hug like in like if American saw that.",
+      "Duration": 30,
+      "Offset": 1948
+    },
+    {
+      "Sentence": "You know, even what's going on there man you know if my friend tried to grab it Americans man hand it would be a problem. There was a really great viral video that went on Twitter couple days ago, where a gentleman was testing out to see whether men were basically he was running around complementing men. So we'd walk up to a man on the street and say, Hey, nice nice butt or you look nice today or whatever and he had no idea whether those gentlemen were gay or not, and some of the reactions and this is now in 2019.",
+      "Duration": 31,
+      "Offset": 1979
+    },
+    {
+      "Sentence": "For positive because the people who were complementing weren't gay but they said. Oh man that is very nice. Thank you, you made. My day like it's OK to take a compliment. It's OK to say man. I appreciate you. Thank you like and then there was one little gift that ended up being the man who walked away after the compliment. Even though it was a gay men, giving a compliment to a straight man, he had a little swagger in his step so you were clear that it legitimately made this. Dude's Day and he like was like. Hey, you know, somebody found me attractive they weren't.",
+      "Duration": 30,
+      "Offset": 2010
+    },
+    {
+      "Sentence": "My preferred person, but Hey, then, he just had a little swagger little attitude for the rest of the day and he must have felt pretty good about himself. Getting that compliment. Live is so awesome, dude. I love it. Yeah, man well. I really appreciate you chatting with me today. People can check you out at threatcare.com. They can sign up for the PDF of tribe of hackers and it's also now of course, a best seller on Amazon so they should check that out. Thank you so much. Mark is Kerry for talking to me. I appreciate your time. Thanks for having me this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 32,
+      "Offset": 2041
+    }
+  ]
+}

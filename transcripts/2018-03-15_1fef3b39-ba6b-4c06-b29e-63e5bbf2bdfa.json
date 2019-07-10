@@ -1,0 +1,488 @@
+{
+  "id": "1fef3b39-ba6b-4c06-b29e-63e5bbf2bdfa",
+  "Title": "Demystifying Serverless with Cecil Phillip",
+  "PublishDate": "2018-03-15",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/7dcb1c5f.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by Datadog to cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "It's to identify anomalies and collaborate with your team to troubleshoot and fix issues fast. I'd like you to try. It yourself by starting a free 14 day trial. Today listeners of this podcast will also get a free data dog T-shirt get started at bitLY.com slash DATA dog shirt. That's bitLY.com slash DATA dog shirt.",
+      "Duration": 22,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Cecil Phillip. He is the host of the away from the keyboard podcast at away from thekeyboard.com and he works on server list at Microsoft. How are you Sir doing pretty good Scott? How you been I'm chilling I'm chilling there's no more snow so I'm feeling good about that. We had a lot of snow and we were stuck in the house for a week last week, but it is all good now well actually not last week by the time This has aired but.",
+      "Duration": 30,
+      "Offset": 63
+    },
+    {
+      "Sentence": "This week by the time we recorded it so let me. Let me tell you a funny story that so all of my life. I never seen snow up until January of this year, January 2018 lion. No so think about it. I grew up in an island so it obviously doesn't snow there and then I live in Florida.",
+      "Duration": 17,
+      "Offset": 94
+    },
+    {
+      "Sentence": "Does it snow here either so the first time? I saw snow again in January? We are my family went over to Denver and I took my son. I have a 5 year old and I took him skating. We went on the Hills and went sledding and all this type of stuff and when we opened the car door like he runs out that he runs all the car and goes like face first into snow and he's like making snow Angels and he's playing around and then I'm kind of just like I don't know about this snow stuff man, but",
+      "Duration": 30,
+      "Offset": 112
+    },
+    {
+      "Sentence": "What is that like this is totally another topic of this podcast but?",
+      "Duration": 3,
+      "Offset": 143
+    },
+    {
+      "Sentence": "You intellectualize snow you've seen a thousand movies. You've seen people stuck in the snow and you know, everyone lands. You know, there's a car. There's a plane crash and they all are trapped in the snow and then somebody has to eat somebody else like you've seen all that, Yeah, but when you're in your thirties or whatever and you intellectualize.",
+      "Duration": 15,
+      "Offset": 148
+    },
+    {
+      "Sentence": "Do you sit there like pick the snow up and look at it and like look at it close and try to register.",
+      "Duration": 4,
+      "Offset": 164
+    },
+    {
+      "Sentence": "Did you just like nonchalance jump out of the car at like? Yes, no first time, but whatever you know, in certain animals in the animal Kingdom. See something that's far into their environment and it kind of look at it from a distance and then they like slowly start to edge towards it's like OK. I think this is OK. I could play with it like that. This is very much a lot of that, so it's it. Definitely wasn't as bad as I thought it was going to be. I thought I was going to be like frozen head to toe. But we did OK interesting well, some cultures have multiple words for snow.",
+      "Duration": 30,
+      "Offset": 169
+    },
+    {
+      "Sentence": "No in Portland is not snow in Canada, is not snow in Maine, so I don't know if you were in Denver on a mountain. Maybe you got soft powdery snow and not mean angry ice balls. No yeah, it definitely wasn't like 23 feet of snow or anything like that. It was very small fluffy artery type type snow. That's awesome. My 10 year old. I just literally last last day yesterday opened up the freezer to get some ice cream and there was a snowball that my 10 year old apparently was saving.",
+      "Duration": 30,
+      "Offset": 200
+    },
+    {
+      "Sentence": "Is in our freezer so then he pulls it out and he throws it at his brother but you're probably familiar with how these laws of thermodynamics things go. It turned into an ice ball. I mean, and then frankly. I'm lucky. He didn't put it right through the TV set so that was not my gosh. That's crazy, not cool enough of this we're wasting peoples times. I wanted to talk to you about Serverless and everyone is using it as a buzzword first it was microservices then it was containers. Now it's serverless and I've been reading articles about it and a bunch of these articles are.",
+      "Duration": 31,
+      "Offset": 231
+    },
+    {
+      "Sentence": "Saying Serverless slash FAS&I know what I as is infrastructure as a service. I'm pretty sure. I know what platform as a service is but now I feel like people are taking serverless functions in a server functions as a service, implying that the same thing. Then there's back end, as a service very confused so I called you.",
+      "Duration": 19,
+      "Offset": 263
+    },
+    {
+      "Sentence": "Sure, so when most people talk about service kinda like what you said they assume that we're talking about functions as a service, which is which bin which means that. Hey, I'm going to write some code. I'm going to give it to somebody. They gotta run it for me and I don't have to think about anything else is happening in the background right from from a high perspective, that's really what service does veer right like it allows you to build. These applications without having to worry about servers without having to worry about you know machine updates or anything of that nature.",
+      "Duration": 30,
+      "Offset": 283
+    },
+    {
+      "Sentence": "Talk about fast or fas what we're talking about is service compute right so again. I'm going to run my python script. I'm going to run my Java, like whatever type of app that I'm building. I'm gonna send it over to AWSI'm going to send it to Google Cloud. Whoever is actually running back code for me and they're just going to run it.",
+      "Duration": 21,
+      "Offset": 314
+    },
+    {
+      "Sentence": "Now, some of the other things that we get inside a server lists is also we also have service databases. For instance, so let's say you're talking about something like Cosmos, DB or even Dynamo DB because at the end of the day like whenever I provision. This database right. The only thing that I'm going to say is Hey, just create this thing for Maine.",
+      "Duration": 17,
+      "Offset": 336
+    },
+    {
+      "Sentence": "I don't care where it lives very much. I don't care. You know how big it is, you know the scale will just kind of expand from you that needed to be, but I just want you to create something that I'll just use and that's pretty much how it goes. It seems like there's a major shift in the industry right now where we are simultaneously excited about.",
+      "Duration": 20,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Server listen back end, as a service, but then with the rise of Kubernetes, you see Cooper Netes.",
+      "Duration": 6,
+      "Offset": 376
+    },
+    {
+      "Sentence": "People and smart people online talking about you know internals of processes and how they fork in Lenox and so it's like well. We are in the growing pains of server list were all running H top.",
+      "Duration": 12,
+      "Offset": 384
+    },
+    {
+      "Sentence": "Which seems ironic right so when we talk about kubernetes C*** is a little bit different right because so kubernetes itself is what we call an orchestrator and in the world of Docker containers. So kubernetes will take your docker container or your docker image and it'll orchestrated in a way that you say. Hey, I want to have like 5 of these things or I want to have 4 of these things and it will just kind of make sure that environment is is in the desired state is kind of what we call these things like desired state configuration.",
+      "Duration": 31,
+      "Offset": 397
+    },
+    {
+      "Sentence": "Desired state that you needed to be in now. This is a little bit different from the serverless pieces right because again with serverless. I don't. I don't think about anything other than writing code and sending it off. You know somewhere for it to be run right. I don't really care too much about the region. I don't care very much about like where it's being run, but I do care that someone is managing that infrastructure for me when we talk about Kubernetes. Not like even though it's kind of doing some of that orchestration for containers verse.",
+      "Duration": 30,
+      "Offset": 429
+    },
+    {
+      "Sentence": "To manage that right like we still have to provision servers. We've selected provision memory and ram like the right amount of resources. That's going to be able to run that for us, so even though it does make things a little bit easier from orchestration perspective and again managing multiples of these multiples of these container images like we still have to think about and again, depending on what you're doing, and depending on depending on the type of app that you're building that might be something that you might want to have like that might be like, you're right level of abstraction.",
+      "Duration": 30,
+      "Offset": 461
+    },
+    {
+      "Sentence": "For Serverless people is more Hey, I got a really cool idea but I don't want to spend like I don't know an hour or 2 hours, setting up machines and picking skews or anything like that, like I just want to like let me just write this code really quickly, and then just put it out there right and So what you get with service again is faster time to market. Where are kinda just saying Hey? Here's some code just running from me?",
+      "Duration": 23,
+      "Offset": 492
+    },
+    {
+      "Sentence": "No.",
+      "Duration": 0,
+      "Offset": 516
+    },
+    {
+      "Sentence": "Now on top of that we do get some additional features from serverless right, so we also get like. The per second billing, which is a big thing for a lot of folks so when we talk about again like running VMS or platform as a service offerings in the cloud.",
+      "Duration": 14,
+      "Offset": 519
+    },
+    {
+      "Sentence": "Like regardless of whether you're using these things are not that you still have to pay for them. So I get. I go up when I spit up like something on heroku or on elastic Beanstalk at AWS.",
+      "Duration": 11,
+      "Offset": 533
+    },
+    {
+      "Sentence": "Regardless of whether I published the app or not, Rios if whether somebody is actually using it or not. I'm going to get continuously charge, whatever it is that my fee is per month.",
+      "Duration": 8,
+      "Offset": 545
+    },
+    {
+      "Sentence": "With Serverless, now we only get billed per usage. You know whether that's permitted or per second based on you know whoever your host happens to be, but now I only have to worry about computes or these resources like's utility so let's say imagine. It's like your electric bill like if you don't use so much electricity. Then you only could it be built so much right so it's a very dynamic way of kind of managing those resources.",
+      "Duration": 24,
+      "Offset": 555
+    },
+    {
+      "Sentence": "It seems like a lot of people, though, are doing things like running serverless things on kubernetes so they want to simultaneously think about things at the low level, but also provide a service to their customers with their customers might be other people in the same company.",
+      "Duration": 16,
+      "Offset": 580
+    },
+    {
+      "Sentence": "You know, I mean, so I think they use they used current is for its orchestration and for its management an for its auto scale and then they'll run a serverless runtime on top of it, so they kind of get the best of both worlds. They effectively use their infrastructure better. They have full and complete control down to the smallest text file, but then there are customer like if I was your customer and we work at the same company doesn't have to think about it.",
+      "Duration": 26,
+      "Offset": 598
+    },
+    {
+      "Sentence": "And that's that's a use case. Where are usage scenario that we see a lot of folks doing so again I as a developer like I just want to be able to publish code really quickly, and try it out like in an environment where I don't have to think too much about and I'm setting up Apache or I'm setting up engine. XRIS just to kind of run. These things basically when you're in the early stages and you're doing like pee oh sees when you're doing like you just want to prototype really quick ideas. You know, I just want to write this code push it out and let me see what's actually happening.",
+      "Duration": 31,
+      "Offset": 625
+    },
+    {
+      "Sentence": "Another perspective from a productivity perspective like your productivity goes up so much higher because you're not worried about some of these additional concerns. Obviously, if it's inside of your company like your DevOps folks or your infrastructure folks are going to have to be managing that for you. But even from that perspective now again your productivity is so much higher, as a developer because that that development model just allows you to iterate that much faster right right now going to hold the whole point is to put the persons.",
+      "Duration": 30,
+      "Offset": 656
+    },
+    {
+      "Sentence": "This could get the person's business problem solved so that random line developer isn't FTP ING stuff or thinking about production and thinking about DevOps right, the goal is check code. In have code run in scale without having to think about anything like basically freeing my mental cycles exactly actually remember when I first heard about this quote Unquote Cloud thing right.",
+      "Duration": 29,
+      "Offset": 687
+    },
+    {
+      "Sentence": "And when that first came out. This is exactly what I thought it was going to be. I thought it was going to be. Hey, I'm just going to have some application and I'm going to send it somewhere is going to run. I'm going to get a bill at the end of the month. It's going to be like, Oh, OK, you use this much disk space and use this much bandwidth. You know like again, the software being billed as a utility versus like some static resource like a virtual machine, or or something of that nature and so it's kind of good to see that we have this stuff now and I think going forward. We're going to see that just kind of continue to improve with more and more features.",
+      "Duration": 32,
+      "Offset": 718
+    },
+    {
+      "Sentence": "The functions as a service being able to take like a do it written in any language and then scale. It is interesting, but then I also CC back end, as a service, baz where it's like you know like I know that Azure had one of those, and fire base is one of those right where it's like. More than serverless. It's really like almost software as a service, but it's like I want to rest API to handles everything for my mobile app. Yeah, we definitely see a lot of that inside of the mobile space so I can you talk about?",
+      "Duration": 34,
+      "Offset": 751
+    },
+    {
+      "Sentence": "Since so fire base today, I believe you can actually execute service functions again. So you could write some code and you can send to fire base and they will run it, but again, the top of that you get the authentication. You get the ties into to Google Cloud Drive. You get mobile notifications you get tons of obviously get the database storage to their real time database. So you almost get like it's like this package deal. You know it's like Hey. Give me some of the base basic things that I need for an application regardless of whether it's desktop mobile.",
+      "Duration": 31,
+      "Offset": 786
+    },
+    {
+      "Sentence": "Here's some basic things that I need let's package it up and kind of give it to you as you as a service. But you get billed for it every month, you get billed for usage or how much memory bandwidth to use but now your developers your company. You don't need to worry about you know How do I set up this Facebook app and set up these auth keys or How do I? How do I authenticate with slack to send it to send it messages. All you have to do is just say OK Hey. Give me this thing.",
+      "Duration": 28,
+      "Offset": 818
+    },
+    {
+      "Sentence": "Right I'm going to call your APIs and then you know, depending on how much ever work that I do or how much ever. How many ever request that I sent every month. That's what you got to build before, but now Meazza say. I'm a health company or I'm working on insurance or marketing or whatever. The case is I could focus on just doing whatever it is that my business is good at and I don't have to worry about like well. I'd have to worry as much about security or disk space or any of these types of things right. I could just go and get to work, which I think I know I brought up kubernetes an you set me straight about.",
+      "Duration": 31,
+      "Offset": 847
+    },
+    {
+      "Sentence": "Does versus what like traditional service means but when you look at a system a large system that used a lot of different.",
+      "Duration": 7,
+      "Offset": 879
+    },
+    {
+      "Sentence": "Uh services as a serverless architecture, you get your browser, but it's going to end up calling an authentication service and some API gateway and then in number of functions. The functions are at one functions as a service plays the authentication service might be Azure or Amazon or off zero. The database might be Cosmos or Mongo in the cloud. Another database might be somewhere else. Suddenly I've outsourced my things, either to one vendor or a dozen.",
+      "Duration": 30,
+      "Offset": 887
+    },
+    {
+      "Sentence": "Which could potentially go down? Which then gets me thinking back to orchestrators like like service fabric and kubernetes where I could still do that exact same architecture. I could still pretend that there are no computers.",
+      "Duration": 13,
+      "Offset": 918
+    },
+    {
+      "Sentence": "But but ultimately if I needed to, I could get to them by you know, I could get into the dashboard. If I needed to. Yeah, exactly and essentially what we're talking about now is again. I have these different slots of functionality that are kind of spread around the place and how How do I compose them together to create whatever my solution? Is this kind of we start talking about like Micro Services and things of that nature right and again. Microsoft is from a from a very high level definition.",
+      "Duration": 30,
+      "Offset": 932
+    },
+    {
+      "Sentence": "Very specific units of functionality that have been separated, but now I could kind of bring them together to make. I don't know. Whatever my solution happens to be at this particular point in time, yeah, yeah.",
+      "Duration": 10,
+      "Offset": 963
+    },
+    {
+      "Sentence": "And So what you see is it's very easy for us to kind of bring all of these concepts together right so I could create a serverless application and then kind of create it in a very microservices type type manner right because I might have different functions that have different concerns. I might have one that's concerned for logging am I have one that's concern for sending email or sending text messages by are some third party service and what I could do in the front end of that in front of my.",
+      "Duration": 30,
+      "Offset": 974
+    },
+    {
+      "Sentence": "Service I can have something like like a API gateway. API proxy or something of that nature so it kind of kind of.",
+      "Duration": 7,
+      "Offset": 1005
+    },
+    {
+      "Sentence": "They kind of groups together that functionality a little bit so like I don't have to worry about kicking off to so many different end points. I could kind of look at one URL A one location and then in the background. And he kind of fork off to you know, I need to go to the service over here or the servers over here. That service over there for my applications perspective. I'm just going to one place. Yeah, in like traditionally if you had like a shopping cart service. An you add something to the shopping cart. The UI calls the business logic calls the service, etc, etc.",
+      "Duration": 32,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "With these more.",
+      "Duration": 1,
+      "Offset": 1046
+    },
+    {
+      "Sentence": "These more distributed applications. It's like you almost have DNS and load balancing at every possible level so every single.",
+      "Duration": 7,
+      "Offset": 1048
+    },
+    {
+      "Sentence": "Color is sitting in front of a load balancer and every single thing that can get called can potentially scale in dependently.",
+      "Duration": 7,
+      "Offset": 1055
+    },
+    {
+      "Sentence": "No exactly and again that's another good thing about building in a server. List model right is that I don't have to worry about the load balancing of some of these types of things because the platform should be able to scale for me dynamically right 'cause I get I'm not managing the server right like my holster my provider. Whoever they happened to be there managing that for me, so whenever my load goes up like they should be able to detect that increase in traffic and say OK well sessile needs like 5 more machines or 2 more machines.",
+      "Duration": 30,
+      "Offset": 1063
+    },
+    {
+      "Sentence": "I could say Hey this is, after Christmas you know the big shopping season is done.",
+      "Duration": 4,
+      "Offset": 1095
+    },
+    {
+      "Sentence": "We provision these service room before we can kind of take them down 'cause. He's not really using this much compute power anymore, which is really interesting so if you give a little historical context to something that I experienced I used to work at a company called 8hundred.com. This is back. When you could actually buy a 3 letter domain and it eventually got bought by Best Buy and kind of this is pre. Amazon right and 8hundred.com do this crazy thing you can actually go and search for it, it was.",
+      "Duration": 30,
+      "Offset": 1100
+    },
+    {
+      "Sentence": "For a dollar this is right when DVD's are coming out and do these are expensive, and we wanted to surprise everyone as what was going to become Black Friday started so we said 3 DVD's for a Buck and it completely changed the way our site scaled because we went from everyone basically browsing and running around are read only part of our site to everyone's trying to put stuff in the shopping cart, which is the right part of our site and we ended up basically making subdomains.",
+      "Duration": 30,
+      "Offset": 1131
+    },
+    {
+      "Sentence": "Images dot 800 common shopping cart dotin.com and I didn't we didn't actually we didn't know we were doing it. At the time, but it's this kind of classic problem where we solved it with commodity load balancing it's just that the load balancing was seen by the user because they saw you know shopping cart dotwhatever.com and then we had a shopping cart farm that was independent from the images farm and the product catalog farm, but we did it all manually.",
+      "Duration": 30,
+      "Offset": 1162
+    },
+    {
+      "Sentence": "Exactly what you just described but we still ended up doing it on our own.",
+      "Duration": 3,
+      "Offset": 1193
+    },
+    {
+      "Sentence": "When you when you really think about the time, the effort. The research you know the trial and errors that you had to go through to do that. All of that can kind of be almost lessened or even completely go away if you just like OK. Here's my code just run this from Maine. Let me know when it's done, I could get my response back right right. It's almost like the best practices of our grand mothers and father's is now a checkbox. We've extracted away all of the best practices. I like to joke that like the second page of my resume is now completely just a check box.",
+      "Duration": 33,
+      "Offset": 1198
+    },
+    {
+      "Sentence": "Yeah, a lot of that operational type of work is really just been automated based on you know, some of the things that we're doing today inside a cloud. I also hear Serverless and functions being compared to what are called 12 factor applications and I'll put a link to the concept of 12 factor applications but these are basically all of the best practices. It's 12 factors that describe best practices. Like one code base. And lots of deploys and your dependencies are isolated, etc, but Adrian Cockcroft.",
+      "Duration": 31,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "Used to be the Joint Wanna chief architect at Netflix talks about how quickly you can. Bring up your app like if you can bring it up in milliseconds. The entire application and then throw it away. Then he says. You can call it serverless which I thought was a very bold statement. I'm not sure I necessarily agree with that.",
+      "Duration": 19,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "So so when we talk about again like just being able to push your code and let's say you want a prototype an idea like you want to do that, really quickly right so again think about.",
+      "Duration": 11,
+      "Offset": 1285
+    },
+    {
+      "Sentence": "Think about what it used to take when you're working on your first job or you know when you first companies and Hey, I need a server to go run this code.",
+      "Duration": 8,
+      "Offset": 1298
+    },
+    {
+      "Sentence": "I remember for me that used to take me like 2 weeks right you physically buy it. Yeah, to physically buy it or you know, I had to wait for an admin to provision like a virtual machine, or something of that nature. There's a lot of time that has to go by right because again, you're controlling this infrastructure right so you have to create it provision. It plug it in install whatever updates plug it into the network and so all this time is kind of going on and kind of moving forward for you. When we talk about doing that stuff in the cloud.",
+      "Duration": 31,
+      "Offset": 1307
+    },
+    {
+      "Sentence": "Mission is there and it's a lot faster.",
+      "Duration": 1,
+      "Offset": 1339
+    },
+    {
+      "Sentence": "But again like anytime that you doing, something like pass for instance.",
+      "Duration": 3,
+      "Offset": 1341
+    },
+    {
+      "Sentence": "When your when your logos up like.",
+      "Duration": 2,
+      "Offset": 1346
+    },
+    {
+      "Sentence": "You still have to provision another VM right and you're not doing it. But like the framework is still doing it for you and so obviously with that, like there's a time to you know for that provision to be complete and so within that time you're still getting load. You're still getting request coming in people are still visiting your application until OK. This servers on and it's hot. Now it's like OK. I could work off some of my requests and they'll go over to that machine.",
+      "Duration": 27,
+      "Offset": 1349
+    },
+    {
+      "Sentence": "And So what you see with the server list environment? What one of the ways that we kind of and wheezing like the industry kind of resolve. This is kind of just having like a pool of servers that are already available for you so when you send your requests over and you need to quickly you know. Hey, I need to give Scott like 5 more machines. Typically, like these are pool that I could just reach into that pool and grab out 23 machines fire machines. Whatever the cases and so now you don't have to wait as long for that to happen. So that's kind of how you get that dynamic scale a little bit.",
+      "Duration": 32,
+      "Offset": 1377
+    },
+    {
+      "Sentence": "Provision environments and you know they might have you know? Whatever they need to have install them them. All that needs to happen now is that your application just gets copied over there, you install underrun side and now you know, these requests could start forking off these different places right so that's the way that you know the latency or the time too. I guess the time to scale can it helps reduce a little bit. We're talking about like building in the server list environment.",
+      "Duration": 25,
+      "Offset": 1410
+    },
+    {
+      "Sentence": "When interesting point, there was also made was if you are providing this as a service or if you are using a cloud that provides this kind of stuff as a service that the argument would be the time that it takes to spin up. These things or get your container or your function or your whatever set up an running should not be charged for that. You should only charge for the time that your function executes.",
+      "Duration": 24,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "Yeah, yeah, exactly so again depending on who your provider is like they'll usually have like per second billing or per minute building and again. It's the utility right so the more you use the more you pay, the less use less cheaper right? Yeah, the idea that the outer loop of the set up in the getting getting the thing ready to go is free and the Inner Loop wouldn't be pay for it would be pretty cool. So then it's like you start paying for CPU cycles.",
+      "Duration": 26,
+      "Offset": 1462
+    },
+    {
+      "Sentence": "Yeah, that's that's pretty much with CPU cycles, memory bandwidth. So if we use the example of S 3 on Amazon. That's a pretty common service. A lot of people use. I just want to say OK store. These files for me. I'm going to create a bucket container for me to store this information.",
+      "Duration": 19,
+      "Offset": 1490
+    },
+    {
+      "Sentence": "And I'm going to give you some stuff to store now. If I create this bucket and I don't put anything in there, then I'm going to charge for it right because the buckets, there, but I'm not actually using it to do anything when I start using it to do stuff. I start taking up space or using bandwidth or anything of that sort that's when the billing starts so how much space am I taking up how often am I accessing it. You know how often am I making requests here and then you build accordingly for the usage, but not the provisioning of the reception.",
+      "Duration": 30,
+      "Offset": 1509
+    },
+    {
+      "Sentence": "If you could hide as much of the billing and as possible like your listing out this stuff that one could potentially bill would be nice. It would be nice. If you could remove as many of those things as possible. Like I'm thinking of Azure Container Service, which the management VM S the cluster management.",
+      "Duration": 20,
+      "Offset": 1541
+    },
+    {
+      "Sentence": "Do you don't pay for that right so you do pay for the VMS that your things your containers are running on.",
+      "Duration": 4,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "So that's on you and you pay for those as kind of as virtual machines. But if you could hide the management. If you could hide as much of the bandwidth is possible if you could hide as much of the storage as possible.",
+      "Duration": 9,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "That be cool.",
+      "Duration": 0,
+      "Offset": 1578
+    },
+    {
+      "Sentence": "Yeah, and they actually do this very similar thing with the Azure Container Service. The Azure Community service like again. They just the management stuff. You have to worry about all I need to worry about is Hey. Let me push this push this image right and then they worry about Provisioning. Some of that stuff for you so that works out really good, yeah, so do you think that a year from now 2 years from now there will be a generation of people who don't think about Kubernetes. They don't think about VMS. They just check a box or pull a slider bar Ann.",
+      "Duration": 32,
+      "Offset": 1580
+    },
+    {
+      "Sentence": "Is up somewhere and then there's the DevOps people are the only ones that know or understand?",
+      "Duration": 4,
+      "Offset": 1612
+    },
+    {
+      "Sentence": "So I definitely spoke into a few companies that they're like 100% surplus so for instance. I know that's their few when you call him video hosting websites like educational learning through hosted video and things of that nature and a lot of them are completely. Serverless now so again. They have service, storage so to speak their applications are built on service APIs and then their front ends are just.",
+      "Duration": 30,
+      "Offset": 1618
+    },
+    {
+      "Sentence": "Your clients that are calling these service APIs in the background. So I get no servers. No machines to worry about no VM updates and that's essentially how they run and it works, great for them because now they they again. They only pay for what they use so I don't have to be OK. This is going to be a very heavy sale season for me. I have to expand and by additional servers like the platforms automatically scales up on scales down.",
+      "Duration": 30,
+      "Offset": 1650
+    },
+    {
+      "Sentence": "Really well from a cost perspective.",
+      "Duration": 2,
+      "Offset": 1681
+    },
+    {
+      "Sentence": "And do you do you see this taking over like the all of computing 'cause I feel like when I teach people? When I teach people software and I assume you do the same either started functions or I start at websites and then I try to find a website that I can throw up as quickly as possible so that people feel happy and comfortable which is usually platform as a service do you think that will be hidden from new learners entirely?",
+      "Duration": 28,
+      "Offset": 1684
+    },
+    {
+      "Sentence": "I don't think so. I think you know, kind of like computing in general is the kind of way that I look at it is.",
+      "Duration": 6,
+      "Offset": 1713
+    },
+    {
+      "Sentence": "We all operate at a different level of abstraction and as you build your solution. You have to find out the level of abstraction that makes sense for you. We still have tons of people that are running virtual machines and that makes sense for them because they need to have that level of control over their environment, then you have again. The platform as a service type offering where well. I don't really worry about the VM in terms of managing it. But I do say. Hey, I want it to be this big of this fast like I want this much ram. I want this much CPU.",
+      "Duration": 30,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "Scale based on some predefined rules that you set up.",
+      "Duration": 2,
+      "Offset": 1752
+    },
+    {
+      "Sentence": "But at the end of the day like that. That level of abstraction works for them, so several snows like a higher level of abstraction is the level of abstraction where we just say. Here's the code. Let me know how much money I have for you.",
+      "Duration": 12,
+      "Offset": 1755
+    },
+    {
+      "Sentence": "Because I don't really care about worrying about some of these other things is it is it their comfort level, though.",
+      "Duration": 5,
+      "Offset": 1768
+    },
+    {
+      "Sentence": "Or is it like are people picking VMS 'cause. They're comfortable with it or using that they actually have a business reason to care about the VM. I think is a little bit of both right sorry for some people definitely do have a business reason for that right because again depending on the type of industry or in you might have certain requirements particular when it comes to compliance and things of that nature that you need to have some level of like a deeper level of control again and we talk about auditing and things of that nature like you might need to do that.",
+      "Duration": 30,
+      "Offset": 1775
+    },
+    {
+      "Sentence": "But also to from a comfort level when you think about on boarding you developers and getting people into the crowd really quickly. Imagine you have a new developer that starts today and you say Hey? Could you I will need to go look at this API? It's server listen? It's running it's running in the cloud. I need to update this code.",
+      "Duration": 17,
+      "Offset": 1806
+    },
+    {
+      "Sentence": "Well, you know what they could do they could go they could check out the code they can update and they could push it and then you know it probably in a couple of seconds. They could actually see like the results for that change like in a real environment right exactly right right versus being like OK. I need to set up this virtual machine locally on my laptop. I'd have to get all the settings right. The configurations right. I gotta get the right dependencies and DLL is installed and all this type of stuff.",
+      "Duration": 24,
+      "Offset": 1824
+    },
+    {
+      "Sentence": "And then I still may not even get it right because I gotta you know, there's a lot of there's a lot of tweaking and changing that needs to happen at least with service, you have a little more consistent environment right so we talk about time to change when we talk about the increase in level of productivity that for you might be like an acceptable level of abstraction to be at for those particular games.",
+      "Duration": 21,
+      "Offset": 1849
+    },
+    {
+      "Sentence": "Nice so you as I said, before are the host of away from the keyboard to podcast is at a tech podcast or is it is a people podcast. It's a little bit of both right so at the show what we do is we talked to mainly different folks in the technology industry, but we talked to them about not technology right so again if your work on company XYZ and you're into this compiler that programming language that's great kudos to you.",
+      "Duration": 29,
+      "Offset": 1871
+    },
+    {
+      "Sentence": "We don't really want to talk about that.",
+      "Duration": 1,
+      "Offset": 1902
+    },
+    {
+      "Sentence": "Well, we do want to talk about is you know what do you actually doing you know like? What really motivates you? It really pushes you like? What are the things that really gets you going as an individual and I think those are important stories as hell because now you can kind of get to see you know.",
+      "Duration": 15,
+      "Offset": 1904
+    },
+    {
+      "Sentence": "What's the journey this person kind of took to be where they are today like? What are some of the hurdles. They had to cross or you know what are some of the things that they do to kind of distress when they're not working and now you get to see let's say Scott right like we get to see Scott's a person right. We have to see sessile as a person and not just somebody on YouTube or an element of book that you happen to pick up in the bookstore.",
+      "Duration": 22,
+      "Offset": 1920
+    },
+    {
+      "Sentence": "Very cool well. Thank you for coming on my podcast and will be sure to check out yours.",
+      "Duration": 3,
+      "Offset": 1944
+    },
+    {
+      "Sentence": "Thank you so much God the bit of pleasure.",
+      "Duration": 1,
+      "Offset": 1948
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 1951
+    }
+  ]
+}

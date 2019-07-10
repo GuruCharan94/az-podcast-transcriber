@@ -1,0 +1,438 @@
+{
+  "id": "c98181a0-1df7-451e-9e14-3413b9d74b69",
+  "Title": "A new life for old software - DasBlog Core with Mark Downie",
+  "PublishDate": "2018-06-01",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/6a1077fa.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott and I've got a word from a new sponsor and a really cool sponsor. In fact that I use myself. They're seek that'SSEQ when you can check them out at getseek.net that'SGETSEQ.net seek is the easiest way for your team to capture and search and visualize structured log events, you probably do logging. Maybe you have a node app or anASP.net core app move beyond text files check out structured logging it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which individual property values as well as the text it's associated with each event and they get sent across the network to seek which then displays them and makes them searchable. It's really easy to get started. You can probably instrument your application. If you're already using logging in just minutes just gotta get seek that'SGETSEQ.net you install the seek server. It's a Windows Service and then it listens and handles all the logging whether you're using node JS and the bunion logging library or maybe you use Cera Logon.net?",
+      "Duration": 31,
+      "Offset": 31
+    },
+    {
+      "Sentence": "P.net core is built in logging seek is there for whatever you want to usewetherby.net or node or python or Java. It's a really great product and I encourage you to check them out and support them, the way that they support us here at Hansel minutes.",
+      "Duration": 21,
+      "Offset": 63
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Mark Downey. He happens to be a senior software engineer at Fieser, but we're talking about side work and fun things that we do on the side, so you and I both run dos blog, which is up logging engin. It's kind of old very old. Yes, so I started using dust blog probably in 2006 and before then. I was using life spaces and that kind of stuff so.",
+      "Duration": 30,
+      "Offset": 90
+    },
+    {
+      "Sentence": "Docblock 'cause I wanted to basically own more of my experience life spaces was probably at that point, a year or so from closing down and you know, I was shocked by the fact that my online identity could go away, so quickly and so does blood. I think I was choosing between a couple of platforms dust blog and subtext without their dust blood kind of Appeal to me because the files were in XML. So when everybody was talking about XML back then. And it just seemed like a format that I could easily archive.",
+      "Duration": 30,
+      "Offset": 121
+    },
+    {
+      "Sentence": "To perpetuate in different format, so, so kind of a pic dos blog years ago for that reason, yeah, the database is no database. It's just a file system is like one file per day right exactly exactly is kind of a unique statements on how blogging is supposed to be a kind of liked it. Yeah, I don't know if it's more secure. I can't say I haven't had any issues with security probably threw up security. But it is comforting somehow to back up a bunch of text files and just know that you've backed up your entire system.",
+      "Duration": 30,
+      "Offset": 152
+    },
+    {
+      "Sentence": "Exactly yeah, so it's XML and it was based on if I remember correctly when we started Clemens Vasters started in 2001 or 2002 and then Omar Shaheen and I took over with a team of people, 20034 5. We got it up to net 11 and then 20.",
+      "Duration": 20,
+      "Offset": 184
+    },
+    {
+      "Sentence": "And we stayed at 20 for a very long time when it was, it, you and I that took it to 4.0. Yes yes that's adept at some point, a few years back. I think we decided that it had begun to offer long enough and that there were lots of features. We could well, just for maintenance of the fact that we needed to maintain it for a little bit longer. And so for all was just an obvious move trying to that point where I decided that I kind of wanted to do some work in public. 'cause I felt it was if there's anybody using dust plug out there.",
+      "Duration": 32,
+      "Offset": 205
+    },
+    {
+      "Sentence": "The work that I did could be useful to them, so and it's interesting because more and more. We've been looking at this as a legacy project is like here is some legacy code. We inherited because I've been using it now for the better part of 15 years and even using it for similarly long time. Why don't we just go to WordPress for me it was about that was kind of a crossover between the company I was working for in the kind of work, they were doing.",
+      "Duration": 31,
+      "Offset": 238
+    },
+    {
+      "Sentence": "And the the work that I got to do so all the time I was trying to flesh out my understanding of the of theASP.net space and so having a platform that I was sitting on that was, I was using it were kind of gave me an opportunity to kind of look below the covers occasionally and so that kind of Appeal to me, having that measure of control, whereas if I went to WordPress. I'm certainly not PHP developer and whatever is going on under the cover I'm trusting somebody else.",
+      "Duration": 32,
+      "Offset": 270
+    },
+    {
+      "Sentence": "I talked for me, it was kind of more about control and about understanding the technology and then using that as an opportunity to maybe learn some things as well.",
+      "Duration": 7,
+      "Offset": 303
+    },
+    {
+      "Sentence": "Yeah, the The thing for me that is always bothered me is the URLs I always knew I wanted to control my own URL. I didn't want to go to medium as attractive medium is I never liked the URLs in live spaces like I feel like live spaces. Almost didn't succeed simply based on the fact that it's URLs were ugly. Yet very much. So yeah, yeah. That's horrible thing to say that I must admit that maybe in one of the things that have been difficult about moving dots.",
+      "Duration": 30,
+      "Offset": 311
+    },
+    {
+      "Sentence": "URLs kind of Tyhurst publicly to a particular time and space with theSP.net and they don't look great and so I looked at several solutions within the blog original code on how to do that and it just there was just a lot of legacy to get through to make any kind of meaningful change to that code base. So it was difficult to really dive into web forms and make that change in a really succinct way so yeah, the URLs.",
+      "Duration": 30,
+      "Offset": 342
+    },
+    {
+      "Sentence": "Well, I will get into hacker news or Slashdot or somewhere popular like read it and I'll say something declarative about the Internet. Right just like you know the Internet blah blah blah or web technologies blah blah blah and someone will say this from a guy who's got dot ASPX in his URL right right. Yeah, it kind of kind of tells everybody something and it's that information that I kind of want to keep to myself about what it is and what our blog is and the technology stack. It sits on the kind of don't need to.",
+      "Duration": 31,
+      "Offset": 374
+    },
+    {
+      "Sentence": "You URL so yeah, I agree which is always been something I've struggled with. But hopefully I can do something about it in the future well. It seems like the Internet has decided that lower case with hyphens is the way we do URLs when they're when they have titles so basically do it. Stackoverflow does have an ID and then a slash and then a title right exactly, yeah, and then if you can avoid having your technology have an extension that shows like don't you can use PHP but don't let people know that you're using PHP exactly so.",
+      "Duration": 30,
+      "Offset": 406
+    },
+    {
+      "Sentence": "Is by a year or 2 goes by? I really only? Do updates occasionally but then you started adding some really interesting stuff and that's what got me like excited and where I officially switched over to like the mark. Downey dust blog code base and it was your social stuff like we learned about open graph Twitter cards.",
+      "Duration": 18,
+      "Offset": 436
+    },
+    {
+      "Sentence": "Exactly so we started so I started I know back with this publisher 2006 and so the web wasn't what it is today 2018. So we 12 years later and the web had no idea about Twitter and Facebook and these other things. Other social kind of inflection points for that a developer could use so for me. It felt like my blog wasn't keeping up and that was getting frustrating 'cause you have things like Twitter cards that are available that so if you share your stuff on Twitter. You can see a little nice little picture and it will give a kind of a digest of.",
+      "Duration": 35,
+      "Offset": 456
+    },
+    {
+      "Sentence": "Post is about if you've implemented implemented Twitter cards, but we never did. And at this point. I have the open. I got a chance to look at it and it became actually a relatively simple process and then I started to kind of ping. You and say, Hey, I think I've figured this portion out do you want it for your for your blog as well? Yeah, and you had mentioned that it was running on webforms? Which was amazing at the time, but is now become somewhat of a legacy technology.",
+      "Duration": 30,
+      "Offset": 492
+    },
+    {
+      "Sentence": "Lot slower from an innovation perspective than things like MVC yes lifecycle of Webforms, the way that webforms work that made it difficult for us to make some of the changes that we wanted to make exactly so you kind of tight into a world of and especially when they started so this was prior to master pages. This was prior to generic sprayer to nullable types. This is prior to all those things that made webforms easy. Those were part of the actual code base because there is a version of dust blogs.",
+      "Duration": 32,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Which is there is a version of various things that we now take for granted when we're developing the web in MVC for example, not only do they not exist? When dust plug was being created that's now another layer that is unique to dust blog that we have to maintain in some kind of way, so there's a kind of Bloat to the UI layer that even for a normal webforms project probably wouldn't exist and then.",
+      "Duration": 30,
+      "Offset": 556
+    },
+    {
+      "Sentence": "And then becomes do you want to do we want to work on web forms first to do. We want to work on dust. Blogs version of webform second and so you kind of have to kind of put in a series of hacks that you know you may or may not have to pay for it in the end and what? What does that look flight for your codebase going forward. So yeah, the fact that dash blog old as it was all those it is was somewhat well factored in that the templating engine was.",
+      "Duration": 30,
+      "Offset": 586
+    },
+    {
+      "Sentence": "And the runtime or the database abstraction was somewhat of a service factory that those things were separate.",
+      "Duration": 7,
+      "Offset": 617
+    },
+    {
+      "Sentence": "Enabled you to swap pieces out and not swap other pieces up. Oh, yeah, so yeah, so I mean, the fact is it was well designed but it was, it was be spoke. It was just a somebody's invention, so there was no real real kind of comparison to maybe what must've pages ended up being but as you say we then able to say OK. We can put a layer at all over all the business logic.",
+      "Duration": 30,
+      "Offset": 626
+    },
+    {
+      "Sentence": "They exist in the dust blog code and we can then talk to a more modern MVC type player if we want to.",
+      "Duration": 8,
+      "Offset": 657
+    },
+    {
+      "Sentence": "Because basically all the all the grunge all the really old stuff all the I guess at that point we were using collections for for for dealing with array type objects. Those things you don't necessarily have to know about now because just with a simple layer abstraction. We can kind of push that away from ever having to think about it, but yet that code that is working very well. That doesn't break that has been working I've never had an issue with this blog ever.",
+      "Duration": 30,
+      "Offset": 666
+    },
+    {
+      "Sentence": "A consistent cold still gets used, but we kind of get to reinvent the UI layer.",
+      "Duration": 4,
+      "Offset": 698
+    },
+    {
+      "Sentence": "And the UI layer is one thing that we should talk about and take into but it's also worth pointing out that there was a time when dust blog was created before C sharp generics so he didn't have a list of.",
+      "Duration": 11,
+      "Offset": 703
+    },
+    {
+      "Sentence": "Blog post or a list of entries right. You literally have like an entry collection that was generated. We used to have to manually generate strongly typed collections right right? Yeah. That's it was interesting kind of trip down hit the memory. Lane really because that is literally everywhere in the code. But if somebody comes in and decides they want to work on it today. You kind of basically decided in the manager layer and I'm using that in the cloak your sense. It's just a layer a couple of classes that deal with.",
+      "Duration": 34,
+      "Offset": 715
+    },
+    {
+      "Sentence": "What the control is asking before and I know how to interpret that for the business layers of dust blocked so you don't really have to worry about collections now and that's kind of made easy by certain changes that Microsoft been implementing with with standards across the board.",
+      "Duration": 17,
+      "Offset": 750
+    },
+    {
+      "Sentence": "Well, a couple of times I had made an attempt to go in the direction that you were going. But I have to admit, I failed. You succeeded when others failed. I felt like I didn't have enough code coverage to make the kind of changes. I wanted to make particular round collections. I was too fearful of the code base and I feel like if I had a robust.",
+      "Duration": 19,
+      "Offset": 768
+    },
+    {
+      "Sentence": "Series of unit test I could have refactored with impunity, but I just didn't right. Yeah, it's it's.",
+      "Duration": 7,
+      "Offset": 788
+    },
+    {
+      "Sentence": "I think it's made a little bit easier. I think I guess. The thing that makes it a little bit easier. These days is that I didn't have to kind of completely get rid of all the existing code. I've kind of at some point, said I'm willing to, I'm happy for it to stay the same at a certain layer because that doesn't. Give me any value to change it at this point, so I kind of focused less on changing things and more on how can we consistently use it in a way that's going to be?",
+      "Duration": 31,
+      "Offset": 796
+    },
+    {
+      "Sentence": "It's the kind of performance and reliability that we've relied on all this time. So when we first started trying to think about the future of dust blog. It was just moving it. Forward inthe.net framework time frame, but I think both of us had this dream that we could maybe one day run it on Lenox or running a cheap Linux host where the PHP people live or maybe in a docker container.",
+      "Duration": 23,
+      "Offset": 829
+    },
+    {
+      "Sentence": "We tried if I remember some attemptswith.net core one point X, but it wasn't amazing. It was an amazing experience. What was it that made you come back and try to do thisin.net core 2.0. So yeah, so the original version of the net standard, which I think is 1.1, didn't have enough API coverage and I assume that's a function of time and release dates, but with the releaseof.net standard 2 we got a really high level of API coverage so.",
+      "Duration": 35,
+      "Offset": 852
+    },
+    {
+      "Sentence": "From a kind of overview standpoint what kind of meant to me is that I could now focus on a standard rather than a platform so I didn't really care that it was net as long as I could could upgrade the projects to to a particular versionof.net which I think is force 5. I think if I remember correctly. But as long as I could upgrade all the projects to that and be successful. I knew that net standard 2 would cover cover that there's a kind of a matrix of what does what various?",
+      "Duration": 32,
+      "Offset": 888
+    },
+    {
+      "Sentence": "Standard is $4 standard 2 and so on, and so forth so I was able to upgrade the projects and then.",
+      "Duration": 8,
+      "Offset": 922
+    },
+    {
+      "Sentence": "Core became an opportunity for me in a possibility and then I started thinking well because it's This is called and as you say Linux becomes in arms reach at that point because essentially it's able to core is multiplatform so so.",
+      "Duration": 19,
+      "Offset": 931
+    },
+    {
+      "Sentence": "Getting that standard and getting a broader coverage of APIs was just the point at which I realized not only can I bring this project forward I can bring this project forward on any platform and that was really just an eye opener really, really cool idea.",
+      "Duration": 15,
+      "Offset": 951
+    },
+    {
+      "Sentence": "What were the things that weren't there before like I know we have a lot of regular expressions and I know that we have a lot of text manipulation system dot. XML was probably the biggest one. Yeah, there was a lot of stuff with XML that wasn't there serialization deserialization, which wasn't there, but to be honest. What I tried to do was upgrade. The projects to a version of the net standard 1.1 and literally nothing worked it was.",
+      "Duration": 30,
+      "Offset": 967
+    },
+    {
+      "Sentence": "That.",
+      "Duration": 1,
+      "Offset": 998
+    },
+    {
+      "Sentence": "That was going to be difficult to convert thiswhen.net standard 2 came out what they brought out was a series of tools that helped you detect which APIs would and would not be covered, so I was able to use those and I was able to also and are literally just started up as soon as you hit F 5. It was going. I was able to completely go with the project so it was kind of.",
+      "Duration": 24,
+      "Offset": 1000
+    },
+    {
+      "Sentence": "This is doable 'cause it at that point, I was actually running a webforms projectin.net. Standard 2 after upgrading and it was happy so I knew that converting this and getting an MVC project as the new UI was definitely doable.",
+      "Duration": 16,
+      "Offset": 1026
+    },
+    {
+      "Sentence": "What was it that made it possible to go from web forms to MVC it was the fact that it was already MVC ish or was it just that it had a decent separation between UI and.",
+      "Duration": 14,
+      "Offset": 1043
+    },
+    {
+      "Sentence": "NNN runtime souichi yeah those are very good separation already in place there was a set of services that are inside dust blog that kind of do the bulk of the work the bulk of retreiving a set of blog posts for a given time. the idea of saving blog posts from a web page was all separated out webforms is a massive project it has a lot of coding it but it's a lot of code for the reasons we kind of discuss the idea that we kind of had to invent the framework for developping the web.",
+      "Duration": 31,
+      "Offset": 1058
+    },
+    {
+      "Sentence": "Melting the web this was obviously your time rather than my time and So what if you actually ended up doing is reducing the number of lines, you're actually dealing with by converting to MVC because the frameworks for developingASP.net is MVC is much more succinct much more much more capable with fewer lines of code to be Frank.",
+      "Duration": 24,
+      "Offset": 1091
+    },
+    {
+      "Sentence": "Yeah, it's interesting when we were doing these things you know early on. There was a feeling that we didn't have any tools. We didn't have the things we wanted to do what we wanted. I don't know if it was simply that we do now have abstraction layers that are what we need or if just our understanding of the Internet.",
+      "Duration": 19,
+      "Offset": 1116
+    },
+    {
+      "Sentence": "We changed because it feels like we spent so much time in the early 00s trying to hide HTTP from ourselves and now we just don't and that's OK actually came from my kind of coding. Linneage starts before see with VB 6 right and for me, it was.",
+      "Duration": 22,
+      "Offset": 1137
+    },
+    {
+      "Sentence": "Drop an object click it and an event set something off so I was kind of doing the same kind of thing I needed the on ramp of web forms to get into web development because of that point and click idea was something I was used to it worked. It got me upgraded to the web, but then understanding the monocular of the Web is really what actually having gas block kind of help. Me do because the idea of a get and post wasn't there for me in the kind of desktop world so web forms.",
+      "Duration": 31,
+      "Offset": 1160
+    },
+    {
+      "Sentence": "But it's certainly it was helping a particular problem that I don't think exists today.",
+      "Duration": 5,
+      "Offset": 1192
+    },
+    {
+      "Sentence": "Hey folks, I want to take a moment to thank our sponsors and remind you that when you support them You're supporting Hansel minutes because they make this show possible.",
+      "Duration": 8,
+      "Offset": 1198
+    },
+    {
+      "Sentence": "Innovative developers help improve the lives of millions of small businesses in accounts that use QuickBooks worldwide. Your app could make the difference that helps them work smarter an put more money in their pocket enter into it developer from tech tools to growing your customer base to helping you get funding into it developer helps you rap go from concept to company. Find out more at into it. Dot me slash code that'SINTU it dot me.",
+      "Duration": 31,
+      "Offset": 1207
+    },
+    {
+      "Sentence": "So since we started in this and you you did your initial spike and now quite a competentspike.net core. We've reimagined or renamed it dust blog core and it's also been moved fromgithub.com a** hanselman to github.com slash Papa POPPA string. Papa string you're a string instrument player. Yeah, basically in a little bit of pizza so I thought and again, I feel like I'm.",
+      "Duration": 32,
+      "Offset": 1240
+    },
+    {
+      "Sentence": "When you were minimizing you in some way that you would hold it. There is a hobby, but somehow issues started showing up and pull request started showing up? How did this go from being a side project where you and I just keep our blogs alive are ancient silly blogs to being a complete reimagination to now being something that's actually got pull requests. It's actually quite surprising to be honest. So I've always been a developer who who kind of develops at work exclusively and never in public.",
+      "Duration": 31,
+      "Offset": 1273
+    },
+    {
+      "Sentence": "Used blogging as a way to learn a kind of the idea of explaining something but I never did open source before I just did a few pull request. I did one pull request of live writer and then everything else was essentially dust blog. And this idea that I needed to push my blog forward so it was kind of surprising that I kind of realized it's at one point that. Hey, I'm actually an open source developer and, technically, a project manager here.",
+      "Duration": 30,
+      "Offset": 1305
+    },
+    {
+      "Sentence": "Oh, I was accepting polar so I have to learn a lot of things right. So I come from a subversion. Linneage and the idea of Git was kind of still still something I'm learning.",
+      "Duration": 13,
+      "Offset": 1336
+    },
+    {
+      "Sentence": "So yeah, I had to get up to speed relatively quickly on how to manage a project in public how to vet somebody's pull requests and how to set up issues or receive issues or validate issues. So it was a very interesting experience that the thing that I did want to make sure I did from the beginning was make sure that I had an environment that was welcoming to people that were so I immediately started thinking about low hanging fruit.",
+      "Duration": 32,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "That kind of helped with people coming to the projects. 'cause they saw that I was happy to set up relatively small and relatively accessible tasks and then I was willing to help people with those tasks and set up examples and then to the more complicated stuff where folks were just generously giving of their time and their skills and kind of adding really important parts that we just gotta pull request, the other day.",
+      "Duration": 31,
+      "Offset": 1383
+    },
+    {
+      "Sentence": "2 security which you know solve 95% of the security related questions. I had simply didn't know how to do it and I was able to kind of just finish off the remaining 5%. So it's been both. I've been set up set it up to make sure that people can do it successfully but then people have been generously, giving their time.",
+      "Duration": 20,
+      "Offset": 1415
+    },
+    {
+      "Sentence": "How close is dos blog core to being you know something you could switch your blog over 2 or have you already done that. I haven't done it yet? I've got a test that I'm hosting up on Azure. That has been critical to this as well. But I've got a version that I'm hosting up with Azure. Right now that I'm doing some testing on I think I kind of in my project manager had to kind of set milestones as the kind of MVP thing and the last thing that I really want to do is comments.",
+      "Duration": 30,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "All right kind of unleashed on my my particular my actual blog and replace it. So I've got several open issues related to comments that I want to make sure then.",
+      "Duration": 11,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "You know my school set release and E why but I've got to do some I'm going to make sure that the UI kind of looks the way I was hoping it's a look, but I'm maybe weeks away from from switching over rather than by weeks. I mean spare time weeks, which is several hours and evening several hours a week, so that would be 2 or 3 weeks. But in fact, 18 hours or something like that? How many pieces of it ended up being pure quote Unquote Pure.",
+      "Duration": 31,
+      "Offset": 1479
+    },
+    {
+      "Sentence": "Net core Internet Standard and how many are still being built with the older Ms build and kind of you're using a xim to get what you want so right now there is officially there is a.",
+      "Duration": 12,
+      "Offset": 1511
+    },
+    {
+      "Sentence": "Just block there was a MVC core project there is a standard project as well. And there is a core project and all the rest are kind of old kind of .2 dot in some kind of versionof.net project and then maybe 5 projects that are going to probably live on and maybe another 3 or 4 that we can get rid of So so there's still quite a few projects that are relatedto.net but.",
+      "Duration": 31,
+      "Offset": 1525
+    },
+    {
+      "Sentence": "I think that's going to kind of prevent present a challenge with building across platform. But um certainly for for deploying to other platforms. I think we'll be fine. But that's still going to be a bit of a challenge there. I think I see you're calling out the difference between building on windows and deploying on Lennox versus building anywhere exactly exactly. I'm not sure we can solve that problem to be honest, so well. Some of the things that it depends on are really, really old there's a pop 3.",
+      "Duration": 30,
+      "Offset": 1557
+    },
+    {
+      "Sentence": "Thing that was written by Powell listen to ski in like 1999 kind of thing you know the question is then.",
+      "Duration": 7,
+      "Offset": 1588
+    },
+    {
+      "Sentence": "We used to have features in dos blog, where you could basically email your blog post, and then we would use pop 3 to retrieve the blog post, and then post it, which was quite revolutionary for the time. One solution might be just to remove that functionality and then you toss that entire library right. It precisely so yeah, there are quite a few features even right now that Tyus either to a project that we don't necessarily need anymore or to a technology that.",
+      "Duration": 30,
+      "Offset": 1596
+    },
+    {
+      "Sentence": "After having tire projects dedicated or entire series of classes that's dedicated to and as you mentioned pop 3 is one of those projects that we should be looking for a new get package to kind of replace we have whole projects dedicated to things like capture and I think we can do. There's better solutions that are kind of open and that are probably a better fit at this .1 of the big ones that I'm looking forward to fixing actually there's a custom implementation of time time is managed and time zones.",
+      "Duration": 31,
+      "Offset": 1626
+    },
+    {
+      "Sentence": "It was interesting because this one ties has itself has ties to things like accessing the registry, which obviously is accurately windows thing. It uses the registry. I think to pull out all the possible variations of time zones out there and they would have no doubt changed without changing the last 18 years or so, but this is an antiquated system. There's things like Notre time we could use so I'm kind of looking at.",
+      "Duration": 30,
+      "Offset": 1658
+    },
+    {
+      "Sentence": "Take out portions of the project and replace them with standards that are obviously available to to every developer. So yeah, indeed if we could remove change the capture for modern techniques right like the capture generated capture on the server side with system dot drawing and made a GIF and sent it across the wire that can be recaptured right. You're exactly we could toss pop 3. It's funny if you go back and look it's almost.",
+      "Duration": 30,
+      "Offset": 1689
+    },
+    {
+      "Sentence": "Will project thinking about how we used to blog like Pingbacks and Trackbacks.",
+      "Duration": 5,
+      "Offset": 1720
+    },
+    {
+      "Sentence": "They're probably not needed either. You could refactor via subtraction exactly which is again. You know a lot of this stuff you're mentioning here were handlers HTTP handlers and HTTP modules that existed that were part of the old system dot web way of thinking and so part of what I've been trying to do is look at conversion points, so that's 1 right there, so there's a direct connection between something like middleware and HTTP handlers and modules you can kind of almost.",
+      "Duration": 32,
+      "Offset": 1727
+    },
+    {
+      "Sentence": "Jim mental gymnastics and say, and figure out how to convert a module into a middleware, which is much more in line with net. MVC and Corso since since aSP.net razor pages, which is still ultimately MVC came out. Have you thought about whether you want to keep this as an MVC very kind of model. View controller or more page focused with the template potentially being a razor page. I've",
+      "Duration": 30,
+      "Offset": 1760
+    },
+    {
+      "Sentence": "Since it's very much the MVC model of it where you can call bits of views and have them, then make up a bigger view, especially when it comes to that kind of home page. View with multiple blog posts in it. So I've stayed away from single pages mostly because of no MVC a little bit better and it was a better fit to the patent of.",
+      "Duration": 27,
+      "Offset": 1791
+    },
+    {
+      "Sentence": "Collecting a series of objects and then converting them to a series of views so presently at kind of more the embassy pan.",
+      "Duration": 5,
+      "Offset": 1819
+    },
+    {
+      "Sentence": "And did you use view locator or how do you swap out the entire theme is one of the things does blog did that was so great was not just swapping out CSS S themes, but entire physicality like the fundamental markup theme was swappable right exactly so there's this interface called I view location expander, which allows you to define which location you want to go to for your for some set of views and so I've kind of use that as a mechanism.",
+      "Duration": 30,
+      "Offset": 1826
+    },
+    {
+      "Sentence": "I want you to look in this location based on this series of settings coming from this file from this XML file or from this JSON file. I forget which one it is, but so that I've location expanded kind of just gets injected with information from configuration file and then I'm pointing to another location. I'm going to kind of flesh that out, a little bit more. But right now, it works, and I do have a theme folder that this thing this whole thing kind of points to.",
+      "Duration": 28,
+      "Offset": 1857
+    },
+    {
+      "Sentence": "One of the last things that I wanted to kind of comment on an ask you about is I've personally recently rewrote my podcast site that I've been talking to folks about so when you go to hanselminutes.com it'srunning.net core and I've added testing in unit testing and integration testing. I've added Twitter card support and I've done. All this different stuff and ultimately created a bunch of really great blog posts because I'm working on something that I'm excited about that. I'm passionate about that effects me personally and.",
+      "Duration": 30,
+      "Offset": 1886
+    },
+    {
+      "Sentence": "Go to Papa string com I'm just looking for example, at your blog post, avoiding threading issues. InASP.net core you've got like 10 or 11 really great nice technical solid blog posts.",
+      "Duration": 12,
+      "Offset": 1916
+    },
+    {
+      "Sentence": "So you're practicing what you preach like you're not just learning, but your pudding what you learned into blog posts curious if working on dust blog and getting involved more an open source as a not 9 to 5 developer has got the blogging juices going again. You definitely it's it was about it gave me a lot of material to think about so the way I basically learn is I pick a topic I tried to explain it as simply as I can then try to figure out if I've made any gaps in that kind of explanation and then I review and.",
+      "Duration": 30,
+      "Offset": 1929
+    },
+    {
+      "Sentence": "In that kind of way of processing it and so seeing howASP.net has gone from its system webASP.net system web has gone from where it's at to where it is today as kind of proof presented me with tons of deltas to kind of talk about so almost all of the blog posts kind of look back and then kind of look at what the direction we're going 'cause. It feels to me like core was the chance. We have if we if we could do it all again. This is the way we do it right.",
+      "Duration": 30,
+      "Offset": 1961
+    },
+    {
+      "Sentence": "But then understanding what it was kind of presents you with a really good arc to kind of discuss and see how it's improved and then kind of understanding to the really deeper level, so that's been very helpful for my blogging just something new.",
+      "Duration": 15,
+      "Offset": 1992
+    },
+    {
+      "Sentence": "Well, I'm looking forward to helping you more on it, and working on it, and hopefully at some point moving my blog.",
+      "Duration": 5,
+      "Offset": 2008
+    },
+    {
+      "Sentence": "Forward, which is going to make me feel still a little bit. Like its legacy. But it's also a new legacy that we're building on a new platform and I assume that you noticed something interesting happened online a couple of weeks ago, where the folks at Corgi bites. This is a company that is dedicated to dealing with legacy code and teaching people how to deal with, and move forward legacy code projects picked dos blog to do some mob programming on definitely got a half dozen people in the room to brainstorm about.",
+      "Duration": 31,
+      "Offset": 2015
+    },
+    {
+      "Sentence": "Will refactor an make the code base more modern? Which is pretty exciting. Yeah, that's very cool. That's a very good idea to do something like that. Yeah, it is, and people can go and check out my YouTube channel and you and I spent 2 or 3 long somewhat sloppy hours pair programming. Not quite Twitch live programming. We still we had fun hacking on dust blog and I assume you would still look for volunteers. If people are interested in helping out you absolutely if people are interested in helping out there a lot of issues, various levels. I'm on Twitter, a lot, so if you.",
+      "Duration": 32,
+      "Offset": 2046
+    },
+    {
+      "Sentence": "Into an issue and you get stuck or you just looking to get a couple of issues that are for beginners. There are lots out there and I'm happy to help.",
+      "Duration": 9,
+      "Offset": 2079
+    },
+    {
+      "Sentence": "Fantastic well thanks so much for talking with me. Today, thank you. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 12,
+      "Offset": 2089
+    }
+  ]
+}

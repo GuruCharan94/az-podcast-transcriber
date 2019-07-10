@@ -1,0 +1,388 @@
+{
+  "id": "56890579-7690-4fb8-977a-55dccb9b6235",
+  "Title": "Analog Computing and the Computer of the Tides with Charles Petzold",
+  "PublishDate": "2018-10-04",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/bb4f57cd.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we have a new sponsor today and I want to make sure that you support them because they make Hansel minutes possible. Raven DB it's a document database. That's non relational and fully transactional. It's available for Windows Anne Lennox with official client. APIs for net. The JVM go. Ruby node JS and python. Raven DB is designed for high performance handling tens of thousands of requests. Even on a single node now. Raven DB is capable of on the fly optimization.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Indexes and much more. It is a fully loaded GUI, which means it's simply to operate and you don't need arcane incantations on the command line. It just works. It's fast and it's right. Download your free community edition at ravenDB.net that'SRAVENDB.net. Hope you check it out.",
+      "Duration": 20,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Charles Petzold. How are you Sir good good I taught number of your books? I was taught by your books and taught one of your books in school a particularly my favorite book was code that you wrote. I love that book. Thank you. Thank you. It's such a joy. The hidden language of computer hardware and software and I understand that you're working on a new book, and who knows? How long it will take you to finish it.",
+      "Duration": 30,
+      "Offset": 65
+    },
+    {
+      "Sentence": "Book is I've been working on it off and on for 15 years, so uh. It's as I've been thinking about it and put it off. It's gotten more complicated. A lot more reference material for it. And so each each chapter is like a couple of book shelves full of reference material it's just.",
+      "Duration": 21,
+      "Offset": 97
+    },
+    {
+      "Sentence": "An enormous task that I've set up for myself when your pudding together a book that explores like you know, historical foundations of computing, the cultural context of computing? How do you make sure you don't accidentally write like 10000 pages and take over a shelf it's hard I have this particular book plot it out pretty well in my head and I know what there is going to be 10 or 11 chapters and I know what each chapter has to cover but I'm going to really have to restrain myself to keep.",
+      "Duration": 32,
+      "Offset": 119
+    },
+    {
+      "Sentence": "The individual chapters to about maybe 35 pages apiece. So the book comes in at about 350 pages on the other hand, there, I don't think this particular book is going to appeal to a whole lot of people so in one sense. I'm writing it for myself. And so I'm thinking I could just make the chapters as long as I want it becomes into thousand pages. I don't care. I don't know we'll see.",
+      "Duration": 30,
+      "Offset": 152
+    },
+    {
+      "Sentence": "It's it's a work in progress do you write books for yourself or do you write them for mass audience? I mean I read code almost 20 years ago and now 18 years ago and I think of it as being a book that it's kind of like the missing Tetris piece for my computer science education that piece that they didn't teach me in school, yeah, yeah. I certainly wrote that for an audience. The audience that I had in mind were our parents.",
+      "Duration": 30,
+      "Offset": 183
+    },
+    {
+      "Sentence": "Many of my contemporaries, who worked in the computer industry complain that their that their parents didn't know what they did for a living and they would try to explain it, and of course, the parents would go glassy eyed and for younger people now their parents actually do know a lot more about computers. But for my generation. They did not so I thought of it as a book for our parents to show them what digital technologies were all about.",
+      "Duration": 31,
+      "Offset": 214
+    },
+    {
+      "Sentence": "I had these crazy ideas that maybe like actual politicians might read it to understand the computer revolution. I don't think that came about but but I did have I did have an audience in mind. I always have an audience in mind? How important is it for like new people. I talk about boot camps in self taught learners a nontraditional learners and even now, computer scientists that have degrees degreed computer scientists and software engineers.",
+      "Duration": 31,
+      "Offset": 246
+    },
+    {
+      "Sentence": "I'm out without understanding the historical foundations of computers before I don't know 1940 and without understanding. The context within which these computers sit. Yeah, it's hard to know how much this effects their perspective what I was.",
+      "Duration": 16,
+      "Offset": 278
+    },
+    {
+      "Sentence": "Became disturbed about was people were people who who seemed to be very fluent in high level languages, but had no idea what was going on underneath at least in C plus plus and see. We had pointers and so and to use a pointer. You had to really know the architecture of the underlying computer. But once once computer language is pretty much abandoned pointers as C Sharp does too large extent, even though you can use pointers when C sharp.",
+      "Duration": 31,
+      "Offset": 295
+    },
+    {
+      "Sentence": "It seemed as if the programmers didn't really know that stuff, so I hear from a lot of people who have been programming. For years and sometimes decades, who say Oh, I read code and now I finally understand how computers work and that's really gratifying. We always talk about how we stand on the shoulders of Giants, and we think about each additional layer of abstraction is indistinguishable from magic. But at what point do you need to understand those layers of abstraction like you wrote another book called the annotated turing where you guide people through.",
+      "Duration": 31,
+      "Offset": 326
+    },
+    {
+      "Sentence": "Brings paper on computer ability.",
+      "Duration": 1,
+      "Offset": 358
+    },
+    {
+      "Sentence": "But does a JavaScript programmer need to know that or maybe they just want to know if they want to understand the why but it doesn't really make their job any easier. Yeah, I got those questions. A lot with annotated turing? How does this help the the average programmer and I really have to say not much except that there is this common presumption and it's even in the movie about touring title of which escapes me at the moment, The Imitation Game where someone describes touring.",
+      "Duration": 31,
+      "Offset": 361
+    },
+    {
+      "Sentence": "Is showing that any problem can be solved by a computer and that's exactly? What Turing's paper does not show Turing's paper shows the opposite of that there are problems. In mathematical logic that cannot be solved by a computer in particular, the big one is the really big. One is that you can't write a computer program that will debug other computer programs. You can get close as the people in Microsoft Research. You've done but you can't.",
+      "Duration": 30,
+      "Offset": 392
+    },
+    {
+      "Sentence": "Guarantee that a program is debug entirely that's a scary thought that there is no way to guarantee that a program is entirely. D bugged so that makes that should make us a little humble and it should if somebody gets a particular assignment from a boss that involves unsolvable problems that they can set you know, computers can't do everything, including this problem? Where did turing exist.",
+      "Duration": 31,
+      "Offset": 423
+    },
+    {
+      "Sentence": "Spectrum of kind of mathematical computation analog computers digital computers when he was thinking about this in 1936. What was a computer in his mind now, that we've categorized them in Rs that's hard to say he was really kind of invented. It was really an intellectual tool tool of the mind that a machine that would do something very methodically involving numbers and would would read symbols off of paper tape and write symbols.",
+      "Duration": 31,
+      "Offset": 455
+    },
+    {
+      "Sentence": "Paper tape and so he was really more of trying to formalize what an algorithm is.",
+      "Duration": 7,
+      "Offset": 487
+    },
+    {
+      "Sentence": "Where there is no intuition it's just a matter of of recipe steps so turing knew of no working computers around the same time, there were a couple people pudding together? What later became digital computers, but Turing did not know about them, he knew about Charles Babbage.",
+      "Duration": 18,
+      "Offset": 496
+    },
+    {
+      "Sentence": "So the idea, a lot of people knew about Charles Babbage and so the idea of that a machine could be doing calculations wasn't entirely fanciful from what I could understand I don't think Turing knew anything about analog computing, which had been around the pending on how you define it. Analog computing could go back to the slide rule. Maybe that's the 17th century but.",
+      "Duration": 30,
+      "Offset": 515
+    },
+    {
+      "Sentence": "The analog computer is that interest to me. One is from the 18 70s. This is the subject of the book. I'm working on this is a tide predicting machine invented by Scottish physicist William Thompson also known as Lord Kelvin. The other big one is Vannevar. Bush is differential analyzer, which he built in the 1920s at MIT and that solves differential equations. Both these machines. I think are very clever and.",
+      "Duration": 31,
+      "Offset": 546
+    },
+    {
+      "Sentence": "Why why they they interest me and and yanala computing is really a forgotten chapter in the history of computing when we say computer. We mean digital computer and the history. Likewise is all digital even though there are people still alive who cut their teeth on doing working on analog computers. So it's not that distant in the past sort of puts us into kind of a little bit of historical context. For some of the names that we dropped for people who are listening who may not.",
+      "Duration": 30,
+      "Offset": 577
+    },
+    {
+      "Sentence": "So touring conceived of an imaginary computer in 1936, while Babbage kind of invented the concept of a computer and was active in the 18 50s so even a little before that. In 80 years 90 years. Previous Lord Kelvin built his tide predicting machine. In 1872, so you said in 2018 that analog computers are largely forgotten part of computing here we have touring in 1936.",
+      "Duration": 30,
+      "Offset": 609
+    },
+    {
+      "Sentence": "Thinking about an analog computer that was created almost a century. Previous it was just it was a chapter that wasn't even in his mind while he was thinking about computing. Yeah, primarily because he was attacking problems in mathematical logic, whereas the analog computers, particularly like the differential analyzer solve differential equations if he was if Turing was interested in solving differential equations. You would have probably learned about the differential analyzer, but that wasn't what he was doing.",
+      "Duration": 31,
+      "Offset": 640
+    },
+    {
+      "Sentence": "Really uh it shows it actually shows some of the divide the big Gulf between analog computing and digital computing that there used for 2 different jobs, so analog computers are computers that use physical phenomena things that are mechanical or maybe hydraulic or electrical to solve a problem. This is wonderful picture that I'll try to put up on on the show. Notes of this piece of hardware wood and brass that is Lord Kelvins Machine. Maybe you could talk about what that does it doesn't look like a computer but it computes?",
+      "Duration": 32,
+      "Offset": 672
+    },
+    {
+      "Sentence": "Any 18 60s Lord Kelvin, who was then known as William Thompson got interested in the tides and he developed a new process for analyzing the tides and predicting the tides and what you do is you stick a tide gauge at some support, and this measures how that I how the water is rise and fall over the course of the day. An you take a reading every hour these tide gauges actually.",
+      "Duration": 31,
+      "Offset": 705
+    },
+    {
+      "Sentence": "Height at the tides on a roll of paper but you take like readings every hour for a year or so, maybe a couple years and then you apply for your analysis to it. An you breakdown. The erratic up and down at the tides into sine curves.",
+      "Duration": 16,
+      "Offset": 737
+    },
+    {
+      "Sentence": "And these sine curves will have recognizable periods, they'll have periods of 12 hours, which is the effect of the sun on the tides. They'll have periods of 12 hours, 25 minutes, which reflects the effect of the moon on the tides and they'll have other periods as well for residents factors and all, so you apply for your analysis to it, you breakdown. The pattern of the ties into separate sign curves say about 10 of them and then the tide predicting machine.",
+      "Duration": 31,
+      "Offset": 754
+    },
+    {
+      "Sentence": "Has separate wheels for each of these sine curves. Each of these components a wheel employees. A mechanism called a scosche yolk, which which translates the revolution of the wheel to an up and down movement that is designed in the cosine of the wheel angle and by these wheels. You can adjust a frequency an with gears. You can just the frequency of each of these wheels and you can just the amplitude and where it starts.",
+      "Duration": 30,
+      "Offset": 786
+    },
+    {
+      "Sentence": "Then so you have 10 of these wheels, popping up and down in sinusoidal patterns and you run a cable around them to sum it all up and that's what you plot out on the paper and the tide predicting machine. If you see the picture of it when you turn the crank all these wheels. Bob up and down and there's a pen, sketching out the rise and fall of the tides into the future because the future is based on the summation of these sine curves that you derive from your historical data.",
+      "Duration": 30,
+      "Offset": 817
+    },
+    {
+      "Sentence": "Machine invented in the 18 70s is doing a summation of 10 sign curves and that to me is fairly sophisticated in terms of analog analog hardware hardware that doesn't seem to be calculating it anyway. Is this as you turn this crank or you affectively and forgive me. If this is inappropriate Dominion Ization of this amazing invention is this is basically a function wrapped in a for loop.",
+      "Duration": 31,
+      "Offset": 848
+    },
+    {
+      "Sentence": "Basically, yes, not really uh use TA 4 loop is digital OK because you're doing discrete numbers. That's a good that's a very, very important, and significant difference. This is how our minds have been so imbued with with digital concepts forgive me.",
+      "Duration": 24,
+      "Offset": 880
+    },
+    {
+      "Sentence": "As you turn the crank it is more like if you think of of the sine curves as mathematical functions. It's increasing the value of T.",
+      "Duration": 8,
+      "Offset": 905
+    },
+    {
+      "Sentence": "Time to apply to the the sine curves inorganic during the continuous fashion. It's doing it continuously and that's 1 of the things that is so interesting about analog computers to me be cause think about what it takes to calculate a sine curve.",
+      "Duration": 20,
+      "Offset": 914
+    },
+    {
+      "Sentence": "In in a program we set up a for loop right with angles. Let's say zero to 360 degrees.",
+      "Duration": 8,
+      "Offset": 935
+    },
+    {
+      "Sentence": "And we pass those angles. We converted to radians and pass them to the.net math at sign function.",
+      "Duration": 5,
+      "Offset": 944
+    },
+    {
+      "Sentence": "OK, now, what's the math at sign function doing well internally. It is using the math coprocessor that's in your machine?",
+      "Duration": 9,
+      "Offset": 950
+    },
+    {
+      "Sentence": "And the math coprocessor to calculate each value is doing a summation of of a bunch of terms involving factorials and exponents and all this. It's really a lot of number crunching that goes on to get a single sign value.",
+      "Duration": 16,
+      "Offset": 960
+    },
+    {
+      "Sentence": "And to plot out a sine curve. You need a bunch of these and take them altogether, whereas in an analog computer. You're getting a sine curve continuous sine curve with a fairly simple mechanism.",
+      "Duration": 13,
+      "Offset": 977
+    },
+    {
+      "Sentence": "Now someone curves are found throughout nature, they are one of the fundamental rhythms of the natural world, and the reason why is is that if you know differential equations. Anytime you have a differential equation where a force is the inverse of displacement assigned curve results, like a spring, if you stretch out a spring that more you stretch it out more force. You need to stretch it out as you compress it the further you compress it.",
+      "Duration": 30,
+      "Offset": 992
+    },
+    {
+      "Sentence": "We need to compress it the fourth is to force that you need to compress it and the force that it's exerting out is inverse to the displacement so if you stretch out that spring and let it go. It'll go bouncing back and forth like a sine curve anything that it's elastic has this tip. Typical sine curve a pattern so that's why when you start looking at analog computers, getting signed curves is fairly.",
+      "Duration": 30,
+      "Offset": 1024
+    },
+    {
+      "Sentence": "Whereas in digital computers, the only reason we think it's easy is because we have this math dot sign function and it happens. Almost instantaneously, but internally. It's doing a lot of number crunching which leads me to think of analog computing's as a more natural representation of real world phenomenon and digital computers, as a kludge. It has to approximate this real world process.",
+      "Duration": 30,
+      "Offset": 1055
+    },
+    {
+      "Sentence": "Artificial calculations.",
+      "Duration": 2,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "Hey friends, just wanna take a moment to thank our sponsors because they make Hansel minutes possible are you struggling to reproduce problems in your code base well successful software starts with Reagan Reagan provides application performance monitoring. Unlike anything you've experienced before it offers greater clarity around how your software is performing for your customers more than any other APM provider. I use it myself, You can easily detect and diagnose issues impacting end users you can monitor every part of your stack in one place.",
+      "Duration": 30,
+      "Offset": 1089
+    },
+    {
+      "Sentence": "Active building great software instead of fighting it start your journey to better software quality try Ray Gun Free at Reagan that'SRAYGUN.com today?",
+      "Duration": 10,
+      "Offset": 1120
+    },
+    {
+      "Sentence": "It's interesting if you if you think the direction that we're heading where we said. We were busy sitting on top of the shoulders of Giants were building. All of these layers of abstraction on digital foundations in order to simulate reality, which is fundamentally in analog thing and now as we possibly hit the edge of what digital computers can do. We consider maybe quantum computers in the right way here. We are again a quantum computer is almost a kind of analog computer in that it is using the physical characteristics of reality itself.",
+      "Duration": 31,
+      "Offset": 1131
+    },
+    {
+      "Sentence": "Think about reality on the other hand, quantum computers use a process that Richard Feynman famously pointed out nobody really understands.",
+      "Duration": 10,
+      "Offset": 1163
+    },
+    {
+      "Sentence": "So that's scary to Maine. It's we seem to be getting more and more divorced from our common experience. There's there's a lot of.",
+      "Duration": 15,
+      "Offset": 1176
+    },
+    {
+      "Sentence": "Analog Devices and means of recording sound and pictures. I'll give you an example before I get off into abstractions. Let me give you an example.",
+      "Duration": 11,
+      "Offset": 1194
+    },
+    {
+      "Sentence": "I don't know II don't know your exact age or if you grew up with Phonograph Records.",
+      "Duration": 5,
+      "Offset": 1207
+    },
+    {
+      "Sentence": "I did, but if the groups in a photograph record if you look at them closely if you apply a microscope to them You'll see this little bumps in there and those are exactly analogous to the wave forms of the air.",
+      "Duration": 12,
+      "Offset": 1213
+    },
+    {
+      "Sentence": "OK so you can see oh the little needles moving up and down in the groove and this is translated to electrical pulse and this electrical pulses, then your insight into a speaker vibrating back and forth and we can hear the sound. We're hearing, an exact analogue of little bumps in the record groove, whereas nowadays. What are we hearing we're hearing away form that is reconstituted from a bunch of numbers?",
+      "Duration": 29,
+      "Offset": 1227
+    },
+    {
+      "Sentence": "And I'm not saying I'm not saying This Is This is inferior and I'm not saying I'm certainly not saying that we should start using analog computers replace digital computers. 'cause there are digital computers. You know they had this big advantage. They have this major advantage that there fast and they're extremely accurate and their cheap and there are tiny and so it doesn't make any sense to do anything else. You know, I listen to CDs and I listen to Spotify. That's how I get my music. I'm not one of these people who still have a turntable and.",
+      "Duration": 31,
+      "Offset": 1257
+    },
+    {
+      "Sentence": "Words on and put the needle down on them. I was immersed in this stuff as anybody, but there's still something.",
+      "Duration": 7,
+      "Offset": 1289
+    },
+    {
+      "Sentence": "Missing were getting more divorced from the actual phenomenon, and I wonder if at some point. These abstractions are going to leak. The amount of work. It's the amount of work. That's required for digital computer to do something to represent reality is out of control. It's amazing. I just saw that they are now releasing an NVIDIA GPU that has the strength to do. Ray tracing and I remember doing Ray tracing would start the right race and you get a single frame the following.",
+      "Duration": 30,
+      "Offset": 1298
+    },
+    {
+      "Sentence": "Gay and now they're doing 120 frames a second 4 K full Ray tracing but again trying to represent how light behaves an works.",
+      "Duration": 9,
+      "Offset": 1329
+    },
+    {
+      "Sentence": "Using digital abstractions, so you're working on this book for 15 years and you maybe have a few years to go do you think this warrants a whole book it will see I started off 15 years ago an I thought I knew how to write this book and I thought it was going to be a mix of a little history and some physics and math and all and as I wrote a couple chapters and started doing the math in there and I was extremely unsatisfied with it, it just didn't.",
+      "Duration": 30,
+      "Offset": 1339
+    },
+    {
+      "Sentence": "Slow right and to me.",
+      "Duration": 1,
+      "Offset": 1370
+    },
+    {
+      "Sentence": "Math is, is laziness intern when you're writing is if you want to put an equation into your pros and you equation is very clear itself because it's math. There's no ambiguity about it. But on the other hand on the other hand, lot of people can't read that and so I got lazy doing that and I decided eventually decided that the book would have no math in it, and that I would need to explain a lot of these things and I would need to get to a point.",
+      "Duration": 34,
+      "Offset": 1372
+    },
+    {
+      "Sentence": "The reader intuitively understood why sine curves are so prevalent in the natural world, and get to a point where they could see this machine and know what it did.",
+      "Duration": 12,
+      "Offset": 1407
+    },
+    {
+      "Sentence": "So that's going to be harder. I also read one of the most influential books. I read for myself for my own writing came out a few years ago, the author is Richard homes and the books called the age of wonder and it's about science during the late 17th century 18th century early 19th century, which they called the romantic age and there's not there's no mapping it all. There's no hard science in it, but this guy cover is the science.",
+      "Duration": 30,
+      "Offset": 1421
+    },
+    {
+      "Sentence": "Literature and poetry and art and politics and all that it's it's all connected and I thought This Is This is what I want to do. I want to have a good cultural context. For this stuff, so that's what's forcing me to really do it really forcing me to not be lazy to really do a good job on this.",
+      "Duration": 26,
+      "Offset": 1451
+    },
+    {
+      "Sentence": "The other thing is that this machine and the reasons why it was built, which is another.",
+      "Duration": 5,
+      "Offset": 1479
+    },
+    {
+      "Sentence": "Each why Lord Kelvin built this machine why he got him interested in the tides related was related to his opposition to Darwin's theory of evolution.",
+      "Duration": 10,
+      "Offset": 1485
+    },
+    {
+      "Sentence": "That to me that this was part of the Darwin Wars. This machine this one of these an early computer makes the subject very sexy to me.",
+      "Duration": 10,
+      "Offset": 1496
+    },
+    {
+      "Sentence": "Because you get into a lot of juicy stuff and so there's a lot of other pieces of science that fall into it. There's the astronomy because tides are based on the movement of the moon in the sun and there's analysis during the French enlightenment of vibrating strings and there's the Fourier part of it and then there's geology because eventually Kelvin tried to figure out the age of the earth and he came up with something like 100000000 years and he didn't think that was long enough for evolution to occur.",
+      "Duration": 33,
+      "Offset": 1507
+    },
+    {
+      "Sentence": "Big geological component of of this story. So it's a lot of different pieces of scientific history that come together in this one machine and that is just if it's going to take me the rest of my life to write this book, so be it.",
+      "Duration": 19,
+      "Offset": 1541
+    },
+    {
+      "Sentence": "Let me ask you let me ask you this is I have a 10 and 12 year old entering middle school and soon high school. Where would they learn this, where would I fit a book like this into their curriculum. If you've got geology and history and technology and history of computing. The political and social economic context of the 16 hundreds and where would the Darwin Awards be taught. I mean, everybody has this sense that Darwin was controversial at the time that origin of species was published.",
+      "Duration": 30,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "Good Lord, it's it's in some circles. It's still controversial as we know a lot of his stuff is really academic books about the conflicts during that period. I'm trying to make this book be as popular as possible. I'm not putting any math into it that's a.",
+      "Duration": 20,
+      "Offset": 1593
+    },
+    {
+      "Sentence": "That's a That's a That's something so I don't know right now. I'm not sure what would be a good book for young kids to learn the history of science.",
+      "Duration": 10,
+      "Offset": 1615
+    },
+    {
+      "Sentence": "Let me think about that I will I will let you know 'cause your kids. Your kids seem so inquisitive and it's just great. It's about your kids. It's like it's often hilarious, but they must be amazing. Well, hopefully well if they continue to to absorb good information like this and I was fortunately able to read the first chapter of your work in progress and I must admit after gone.",
+      "Duration": 30,
+      "Offset": 1626
+    },
+    {
+      "Sentence": "678 pages, I'm thinking to myself here comes the equation that's going to make me feel not clever and there, you go. There's a triangle with a circle and arc being drawn in a pencil and I said Oh is not accessable and then I gotta couple more pages in and like well. There's a picture of the earth and I must say I felt like I was reading something that was a smart person book but I didn't feel like I was being expected to understand Latin symbols for summation, which is a nice feeling I appreciate that.",
+      "Duration": 32,
+      "Offset": 1657
+    },
+    {
+      "Sentence": "So if you're writing this book are we just going to follow you, at charlespetzold.com and then watch and learn as this comes to A to life. We just wait until it comes out, yeah, I hope to post chapters. I'm not sure about posting every chapter in progress that may be a little anti climactic when the actual book comes out if it does come out, but yeah, I'm going to be posting more on Facebook as the book develops on Facebook in my blog.",
+      "Duration": 30,
+      "Offset": 1691
+    },
+    {
+      "Sentence": "Charlespetzold.com, it's not AI really need to meet do a major upheaval on the website. But that'll be. I mean, as well, no worries. I really appreciate you coming on the show and the working title is computer of the tides and I just have to say. I love that title. I think that's just a wonderful title for this book cool. Thank you well thanks. So much for talking with me today about all these things. I want to include links an show notes so that you can go and explore analog computers and Babbage and touring and of course, go to Amazon and search for Charles Petzold to check out.",
+      "Duration": 32,
+      "Offset": 1722
+    },
+    {
+      "Sentence": "Years of great books all recommended so much.",
+      "Duration": 2,
+      "Offset": 1755
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 1759
+    }
+  ]
+}

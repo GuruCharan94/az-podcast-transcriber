@@ -1,0 +1,448 @@
+{
+  "id": "7bfa7ff5-1acd-4fcc-954f-b3a3b1d6a8ee",
+  "Title": "Regine Gilbert on the Essence of Accessibility",
+  "PublishDate": "2019-01-03",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/13cef36a.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi I want to take a moment to thank our sponsor, Telerik Dev craft by progress there. The most comprehensive developer Toolkit for building modern apps on the market today with more than 1100 telerik.net an kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps and chat Bots. The tools that includes reporting solutions. Automated testing and productivity tools and it comes with a range of support options. Thousands of demos free online training and more.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Software is amongst the new corporate sponsors ofthe.net foundation and they recently allows support for Visual Studio 2019 now in preview and thenew.net Core 3.0, so you can use their tools with all the latest great software from Microsoft for more information visit. Telerik that'STYLERIK.com slash Hansel minutes that'stelerik.com slash Hansel minutes.",
+      "Duration": 30,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Jean Gilbert. She is a senior user experience designer. The Gilbert Consulting Group, an adjunct professor at New York University instructor at General Assembly. You were in a user experience lead. It Ralph Lauren. I mean, you're doing some really cool stuff. Thank you. Thank you for having me on the show. So I saw a video of yours on YouTube where you were talking about the value of user experience and you've pointed out in a lot of the things that you've talked about online that you're really excited not just about user experience.",
+      "Duration": 31,
+      "Offset": 69
+    },
+    {
+      "Sentence": "What about iaccessible user experience inclusive user experience user experience for everybody?",
+      "Duration": 5,
+      "Offset": 102
+    },
+    {
+      "Sentence": "Yes, I am very excited about well user experiences. I love it. I have been working in it for the last 5 years. An I have enjoyed every moment of it. An I got into Accessibility around the time I got into UX. Ann I didn't really know I literally woke up one day and I said to myself, I want to make the world more accessible place and I didn't know what that meant.",
+      "Duration": 24,
+      "Offset": 107
+    },
+    {
+      "Sentence": "Except I think I Googled Accessibility, an I found an Accessibility meet up here in New York City and I went to the meet up an at this meet up. I met people of all kinds. I it was amazing. I met a woman who is blind. She wasn't born blind, but she was blind and I told her what I did, I said, I'm a user experience designer, she said. What is that and I said well we make websites and mobile products usable for people.",
+      "Duration": 31,
+      "Offset": 133
+    },
+    {
+      "Sentence": "Me a question and it always stuck with me. She asked me do people like you designers think about people like me.",
+      "Duration": 8,
+      "Offset": 165
+    },
+    {
+      "Sentence": "Huh.",
+      "Duration": 0,
+      "Offset": 174
+    },
+    {
+      "Sentence": "Anne I sat there for a moment thinking. I don't think I've heard people like other designers really talk about.",
+      "Duration": 7,
+      "Offset": 176
+    },
+    {
+      "Sentence": "And again I was new in the field, but I didn't really hear anybody talking about Accessibility or making things for people who are blind and II said in all honesty, no, but I will make sure they they they they think about it. When I talk about it, so from there in some ways, I made a promise to make sure that whatever I worked on whatever I taught I would include Accessibility, and making sure that websites an other digital products were.",
+      "Duration": 30,
+      "Offset": 184
+    },
+    {
+      "Sentence": "For everyone or a majority of people isn't it so powerful, though like it sounds, silly when you think about it. It sounds, silly in retrospect. When you say, Oh, I have a blank friend. But when you meet someone at a person who isn't who you are blind disabled diabetic black, white whatever that personal connection reminds you that. That person exists and then you want to meet as many different kinds of people as you possibly can to meet people from all over.",
+      "Duration": 31,
+      "Offset": 214
+    },
+    {
+      "Sentence": "And then I want to make products that make them all happy and that they are all able to use. Yeah, II tell my students. This all the time and I have to remind myself of it that we think about ourselves, the most.",
+      "Duration": 14,
+      "Offset": 247
+    },
+    {
+      "Sentence": "And so when we are making products for other people. It's hard for us and especially in UX. A big part of it is empathy and getting get an understanding of other people. So it's getting out of your own head and actually thinking about someone else is a challenge for a lot of people. But the minute you can do that? What what an amazing thing. It is I mean, the first time I experienced it.",
+      "Duration": 26,
+      "Offset": 262
+    },
+    {
+      "Sentence": "Truly was a during my undergraduate degree. I went to Arizona State University. Ann I studied human behavior specifically intercultural an organizational behaviors and one of my professors had this assignment. So I'm an African American woman and I went to a primarily white school. Ann this particular class on intercultural communication was primarily white and so the assignment that was given to a majority of the students in the class from my recollection.",
+      "Duration": 32,
+      "Offset": 289
+    },
+    {
+      "Sentence": "They had to think about what it would be like if the next day, they woke up and they were black and when they came back like a week later or something their minds were just so open because they had never, ever thought about being anybody. Other than who they were, and so that was my first taste of of empathy. I guess in in a lot of Ways and getting to think about someone else in seeing how they reacted because I had no idea me, I think about being black.",
+      "Duration": 32,
+      "Offset": 322
+    },
+    {
+      "Sentence": "But for some people they just they they literally wake up and they don't think about you know something out unless something happens to you physically or you know you break an arm or you break a leg. You generally don't think about anyone else. Other than yourself. It's funny that you mentioned that you do have those moments, though just before we got on the show here. I went and picked up some teriyaki and when I was walking to the car.",
+      "Duration": 30,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Moment as I was walking across the parking lot. I just like.",
+      "Duration": 3,
+      "Offset": 386
+    },
+    {
+      "Sentence": "I'm walking I'm working pretty well my back doesn't hurt. I'm vertical. I'm mobile. I'm ambulatory and I'm walking to my car and I'm gonna get in my car without pain and the reason that I think that is because I spent 2 years with really nontrivial back issues to the point where you're hurting so much you forgotten? What not hurting feels like. And that every once in awhile. Maybe I would say a couple times a month.",
+      "Duration": 25,
+      "Offset": 390
+    },
+    {
+      "Sentence": "I'll just have a moment where I'm like Oh, you know, my back is OK. What a blessing that is, and that is one example. That is an opportunity in my life or thing that has happened that made me I think hopefully more empathetic towards people who are perhaps less mobile.",
+      "Duration": 15,
+      "Offset": 415
+    },
+    {
+      "Sentence": "Yeah, it makes you think very stuff, yeah, it really does, I was teasing a coworker about bringing cake to work because I'm also a type one diabetic and they're like, Oh would you like some cake and I was like no but thanks for that painful reminder of my life long struggle with diabetes and then you know is all in good fun right here. Like you mentioned after Brazil. Like I never thought about that. I'll make you a man every carbohydrate every Cookie.",
+      "Duration": 22,
+      "Offset": 432
+    },
+    {
+      "Sentence": "Enjoy 'cause you don't think about it and I'm counting it and I've got the charts to prove it. I have a nut allergy, and people like Oh, you can have almonds and I was like absolutely not. I can't have any of that. Yeah, exactly so do is the answer to empathy and designed to expose as many people as possible to as many other people. I think that's part of it and I think another part of it is being woke.",
+      "Duration": 25,
+      "Offset": 455
+    },
+    {
+      "Sentence": "And when I say woke I don't mean it in the sense that's in the nudes and what's out there and what people say, but my definition and what's not mine, but I found it somewhere is that you need to watch observe question and explore.",
+      "Duration": 16,
+      "Offset": 481
+    },
+    {
+      "Sentence": "Woke an that mean yeah, with AQ woke with AQ so that means you know.",
+      "Duration": 6,
+      "Offset": 498
+    },
+    {
+      "Sentence": "Not only watching things outside of you, but watching yourself. How are you reacting to others? What are you you know what? Are you doing with others like? What do you question the things that you do and then looking at the outside world and going well. Why doesn't this thing work for me? Why doesn't this product work from? What is wrong with this damn form? Why can I fill it out that kind of stuff, especially from a design perspective?",
+      "Duration": 30,
+      "Offset": 506
+    },
+    {
+      "Sentence": "Designer self problems right in the world and in the way you do that is not by being stuck in looking at your phone. The whole time, it's by looking out in the world and seeing what can be made better.",
+      "Duration": 11,
+      "Offset": 538
+    },
+    {
+      "Sentence": "I was going through a door an my wife always goes and pushes on the door near the hinge side and she said. What's wrong with me? Why do I keep doing that and like it's got nothing to do with you beat yourself up that door has a design problem because you can't tell by looking at the push bar which side the hinges on yeah, we've all had that experience with the door. That's a classic UX example usability.",
+      "Duration": 29,
+      "Offset": 551
+    },
+    {
+      "Sentence": "Can you do you have the handles on the outside? Do you pull it?",
+      "Duration": 3,
+      "Offset": 581
+    },
+    {
+      "Sentence": "But you don't know I mean, it's it's always we've all had a cheap blame herself because we we always blame ourselves for bad design. It's not it's not us. It's it's really thinking about who they think if you put a handle on something for me, I want to pull it.",
+      "Duration": 19,
+      "Offset": 585
+    },
+    {
+      "Sentence": "But I don't know really yeah, but you know again. My my first reaction is like what's wrong with you?",
+      "Duration": 7,
+      "Offset": 606
+    },
+    {
+      "Sentence": "I mean, I'm looking at a door right now, it has a handle on both sides.",
+      "Duration": 3,
+      "Offset": 613
+    },
+    {
+      "Sentence": "Yeah, and I would need to pull it in order to open it. I don't know. Everybody is different, though I might be backwards. I don't know or left handed or right handed or you know, whatever the opposite is when I was doing online banking, many, many years ago we needed to make our site 508 compliant or section 508 compliant, which everyone thought just meant pudding all tags on pictures, but really it meant making it so the blind could bank right.",
+      "Duration": 30,
+      "Offset": 618
+    },
+    {
+      "Sentence": "And they had us install jaws which was a popular screen reader at the time and we had to turn off our monitors and work for a day and that was an extreme example of forcing empathy made you think wow. Did I code that the right way. Did I design that the right way, I can't get to the next thing.",
+      "Duration": 24,
+      "Offset": 649
+    },
+    {
+      "Sentence": "I don't know how to get to the next thing when you don't know how to go about it if if no one designs or develops it in the right way, either way. Other ways to force that without necessarily making everyone code blind for a day or a week. Yeah, I like to tell people see if you can go through a website just using the keyboard alone.",
+      "Duration": 24,
+      "Offset": 674
+    },
+    {
+      "Sentence": "Because not everyone can use a mouse. I actually have a friend, too, had a traumatic stress injury to his hands and so he was no longer able to use the mouse because he couldn't hold the mouse so he had to learn how to maneuver with the keyboard and only using the keyboard. So it's a great test to see if something is iaccessible just by using the keyboard. I mean back in the day when the web first came out, people use the keyboard.",
+      "Duration": 30,
+      "Offset": 699
+    },
+    {
+      "Sentence": "People actually still use the keyboard because the shortcuts are much faster for them. Yeah, that's I've actually had that happen where I thought something was iaccessible, but then you get to the end of the process and the OK button can't be pressed or I can't tab my way to add or cancel or they expect me to memorize a hot key or a hot key. I did memorize it doesn't actually work like escape doesn't do it, you expect or enter doesn't do what you expect I think we all experience at all the time. We assume that the tab is going to take it to the next thing and when it doesn't.",
+      "Duration": 31,
+      "Offset": 730
+    },
+    {
+      "Sentence": "Yeah, exactly and how do you unlearn those things or how do you and how do you teach those things.",
+      "Duration": 5,
+      "Offset": 763
+    },
+    {
+      "Sentence": "It's it's really thinking about the hierarchy, too. I think from a design perspective. And when I teach my students. What is the hierarchy of this page? Where are people going to go first and when I do see sites that are done well for Accessibility at the very, very top. It'll say skip to content. That's exactly what I need. I need to skip to content. I need to skip all this stuff.",
+      "Duration": 22,
+      "Offset": 769
+    },
+    {
+      "Sentence": "Weather if I'm using a screen writer or if I'm just using the keyboard. What what a gift. It is to skip all this crap that I don't need.",
+      "Duration": 7,
+      "Offset": 793
+    },
+    {
+      "Sentence": "And just get to the content that I do see. Now I'm feeling you're making me feel bad about my own site. And I'm wondering if I need to go and run. Some tools on my own site. If you add skip to content and you bring it straight to the content that's always a nice a nice little bonus, I think.",
+      "Duration": 16,
+      "Offset": 801
+    },
+    {
+      "Sentence": "Hey folks, I hope you're enjoying this podcast. You know, I've done over 650 podcast. So I must enjoy doing it. And I hope you enjoy listening. But if you enjoy stories about the people behind the technology you use you should also check out the greater than code podcast. They focus on the human side of software development. They've got stories of inclusivity in Accessibility from the people. You don't normally hear from search for greater than code in your favorite podcast app or check out greater thancode.com so.",
+      "Duration": 30,
+      "Offset": 818
+    },
+    {
+      "Sentence": "Visual aspect of things and talked about somewhat you know motor abilities, but there's also more subtle things like not everyone is necessarily have perfect vision or has no vision. There's a gray area no no pun intended. Yeah, well. I think I mean, a lot of people use Instagram. I use Instagram and what I have seen is there's a lot of content out there video content that does not have any captioning.",
+      "Duration": 27,
+      "Offset": 849
+    },
+    {
+      "Sentence": "Anna majority of users who use Instagram actually just scroll through.",
+      "Duration": 4,
+      "Offset": 877
+    },
+    {
+      "Sentence": "I don't have the sound on because one, it's a little jarring when you have the sound on and just different people have different kind of very loud or boisterous things you know happening on their Instagram. But when you can see the close captioning. When you can see what someone is saying right on the screen. You don't need to turn on the sound you can read it.",
+      "Duration": 20,
+      "Offset": 882
+    },
+    {
+      "Sentence": "And that's that's a nice thing to have it. It's just for me. I'm I'm a closed caption person when I watch TV.",
+      "Duration": 7,
+      "Offset": 904
+    },
+    {
+      "Sentence": "I have a friend who, at Netflix, just added recently. I believe audio.",
+      "Duration": 6,
+      "Offset": 913
+    },
+    {
+      "Sentence": "So audio description and she she is fully sighted, but she if she's cooking something she likes to use the audio description, so she can still know what's going on an although the audio descriptions are for people who are visually impaired. It's something that could really benefit. All of us when we might be doing something else but we still want to know what's going on and the cool thing. I think about Accessibility and making things, successful is a really benefit. All of us so many things we all text today because that was actually made for people who are deaf.",
+      "Duration": 33,
+      "Offset": 919
+    },
+    {
+      "Sentence": "It's these little things that can make a big difference. You just made me realize that I sometimes. I listen to audio books on the way you know when I drive from Portland. Up to Seattle to my job. And there's about 4 hours, there, so it's an opportunity to listen to audio books, I could.",
+      "Duration": 16,
+      "Offset": 953
+    },
+    {
+      "Sentence": "Quote Unquote watch Netflix in the car by.",
+      "Duration": 3,
+      "Offset": 971
+    },
+    {
+      "Sentence": "Just listening to the audio description and that's just another example where these things are for everybody. They make everyone's life. Yeah, I mean that's how cool is that that you could be like well, I watched that movie on my drive? What did you do exactly? Yeah. I just I'll just I'll put the I'll put the phone in the trunk and I'll hook. The Bluetooth up and all this into the audio the audio background that's pretty slick.",
+      "Duration": 25,
+      "Offset": 974
+    },
+    {
+      "Sentence": "Yeah, so there is also colour contrast, I've talked about this before my boss is red, green colorblind. But there's a whole whole bunch of color blindness. It's more subtle than just one or the other. I think there's 4 different types an example. I often like to give is it was 2015. It was color rush game for the NFL. It was the Buffalo Bills.",
+      "Duration": 24,
+      "Offset": 1001
+    },
+    {
+      "Sentence": "And the New York Jets. The Buffalo Bills were wearing all red. The New York Jets am I getting this right.",
+      "Duration": 7,
+      "Offset": 1026
+    },
+    {
+      "Sentence": "We're wearing all green and they were playing on a Greenfield.",
+      "Duration": 6,
+      "Offset": 1034
+    },
+    {
+      "Sentence": "So you had Red Green.",
+      "Duration": 2,
+      "Offset": 1041
+    },
+    {
+      "Sentence": "And a green field and about. I think 13000000 people in the US have red, green color. Blindness alot of a men and I just remember Twitter people on Twitter being mad. 'cause Twitter in sports are just so entertaining together but people were mad because they could not tell if you know picture, a red team team wearing red, a team or in Green, Anna Greenfield and red and green look great to you.",
+      "Duration": 30,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "2 teams.",
+      "Duration": 1,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "Which you can't distinguish their their uniforms on a field that looks like the uniforms. They're wearing it? Was it was a big deal, so the NFL actually came out and said you know, we forgot to incorporate color. Blind people in our testing of this and then the next year in 2016.",
+      "Duration": 21,
+      "Offset": 1078
+    },
+    {
+      "Sentence": "They came out with white uniforms because you could distinguish people who have color blindness can distinguish between white and another color. So I think they still to this day. Do color rush annual see even different team. I think NBA it does. This color where they all were one color, but they will wear one team or wear white and the other chemo wire color.",
+      "Duration": 23,
+      "Offset": 1099
+    },
+    {
+      "Sentence": "Yeah, yeah that was meant to be a big moment. The color rush campaign is November of 2015 and they say 8% of men are colorblind. So apparently 8% of them got on Twitter and express their distaste that they weren't happy at all. But like this game is the name here. I can't tell which team is my team is really hard for people to see when these things happen. We always ask ourselves like? How did they not know how to this whatever this?",
+      "Duration": 31,
+      "Offset": 1124
+    },
+    {
+      "Sentence": "Crisis of the day is happened. We someone should have known someone should have asked someone. It comes down to a failure of testing and a failure of asking people to test.",
+      "Duration": 10,
+      "Offset": 1156
+    },
+    {
+      "Sentence": "Yeah, and even this, this past summer because you know when you think about Accessibility. You know, people think about people who are blind. There's cognitive issues. There's mobility issues and there's hearing. And so this past summer. The movie The Incredibles came out a few weeks. I think maybe one week or 2 after the movie came out a warning came out.",
+      "Duration": 24,
+      "Offset": 1167
+    },
+    {
+      "Sentence": "And the warning was that the movie included some flashes because when people went to the movies. They were having seizures.",
+      "Duration": 8,
+      "Offset": 1193
+    },
+    {
+      "Sentence": "Yeah, that was a bad because it was a big deal. It I mean, it was, it wasn't. It wasn't up to me. This is it's 2018 and we're still making things that aren't only you know their annoying to people who may not have that reaction of having a seizure, but anything too. Flashy I don't like it and I don't have that reaction but to me to have such a big movie had that happen that that's a pretty big deal right.",
+      "Duration": 30,
+      "Offset": 1202
+    },
+    {
+      "Sentence": "So yeah, it's also worth pointing out that after that, that happened, not only did they add the warning but they also change the film itself for the digital release. There was an overlay right of strobing and they stroked it without stroking it. They toned it down for the DVD right, yeah, so this. I mean that could have been potentially prevented if it had been run through certain testing.",
+      "Duration": 31,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "You need to think about this, I mean, there was a case. I think the Pokemon's years ago in Japan where like 700 kids had seizures because of a Pokémon episode really yeah 'cause of the flash and then they replayed it on the news removing this stuff doesn't. It isn't it's not it doesn't hurt anyone to think about inclusivity in this way like it didn't make the movie. The DVD that we saw the less than the theater version just because we remove some strokes.",
+      "Duration": 32,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "So everyone can see it exactly exactly. So where are some tools that I can go to like run on my website to make sure that I am accessible?",
+      "Duration": 10,
+      "Offset": 1298
+    },
+    {
+      "Sentence": "I'm a huge fan of webaim.org they have a great color contrast tool. There's also so much information they've broken down the web content. Accessibility guidelines in a way that is easily digestible if you go and look at the week week. It's called Week AG. But if you go look at the website. You might be overwhelmed. But I think Webaim does a really good job of looking?",
+      "Duration": 30,
+      "Offset": 1309
+    },
+    {
+      "Sentence": "Things down for people and they also have a Chrome plugin. You could use another suggestion. I have would be taking a look at equal entry their agency out of New York City. But they have wonderful blog posts. The the owner of the company is a man named Thomas Logan, who also runs the Accessibility meet up in NYC. They also have a ton of information if you're wanting to get to know more.",
+      "Duration": 30,
+      "Offset": 1340
+    },
+    {
+      "Sentence": "Accessibility or digital products and Accessibility. There also a great great source of information as well. So you can run the tools and get kind of a sense of what's wrong. You can get a score or a number, but then you could also potentially hire an expert to do like an actual audit of your material. Yeah, I think if you're working with a company you'll want someone a professional to come in an audit, but it's a good first pass to go through your website using the web aim tool.",
+      "Duration": 30,
+      "Offset": 1371
+    },
+    {
+      "Sentence": "One of the things that I found really interesting at the web aim website was a survey that they did on visual impairment and this kind of speaks to what we talked about before that there is a gradient from completely unable to see very poor vision up to moderate. There's glare. Sensitivity contrast sensitivity field of vision issues and color blindness. It isn't just an honor off it's not a bit.",
+      "Duration": 26,
+      "Offset": 1401
+    },
+    {
+      "Sentence": "Right I think we've all had the glare issue with our phones. Even with the iPads. You know different things. So yeah, so but also had told me that they did not realize what their website would look like once that blue light. Those blue light blockers. People have been using and they with their website became very unflattering when it had this the Orange filter.",
+      "Duration": 24,
+      "Offset": 1429
+    },
+    {
+      "Sentence": "Applied to it, I hadn't even thought about that one, I used to filter all the time because I actually have a sensitivity to very bright things so my yeah, my I keep it on all day all day. It's on with that tent and people like what's wrong with your phone. I said nothing is wrong with your phone and your phone is way too bright for me to look at you turn it down. I can't stand a bright screen. I don't know what it is interesting. It's so interesting and speaking of color contrast, I was actually watching.",
+      "Duration": 31,
+      "Offset": 1454
+    },
+    {
+      "Sentence": "With Golden State so I like sports. Obviously, I was watching a game with Golden State with my partner and we were looking at trying to see the score, but they had yellow and white so basically the background was yellow and the score was white and I said, I can't see the score. I'm going to tweet at them and I deleted so I tweet it out. I think I tweeted at ESPN, I tweeted at NBA. I # 811? Why # Accessibility is like.",
+      "Duration": 32,
+      "Offset": 1485
+    },
+    {
+      "Sentence": "Photo of it and I said, I cannot see the score. You need to check your contrast and you need to check your says I don't know what I said, You need to check your Accessibility and within 10 minutes. They changed it and my partner, he tells me he say you did, that you changed it and I go. I did not. I don't think I did, but a couple people did retweet it and I said, I don't think they're looking at Twitter. I think somebody said. Hey, we can't see the score, but you know, even that kind of thing it's just a constant.",
+      "Duration": 30,
+      "Offset": 1518
+    },
+    {
+      "Sentence": "Just for people with disabilities, thinking about it's really for all of us all of us have a different things in there. Certain things that we can see better than others. I was telling my children recently. Everybody's got something and you might not be able to see it not every disability has a wheelchair.",
+      "Duration": 17,
+      "Offset": 1550
+    },
+    {
+      "Sentence": "Yeah, yeah, I think that a lot of people think, 'cause I've had people come up to me after I've done talks and say, I told you know, I have Ms an nobody knows it. So I'm glad so glad you did this and some people have.",
+      "Duration": 16,
+      "Offset": 1568
+    },
+    {
+      "Sentence": "You know shame talking about about their disability and then there. They don't want to talk about it, but there are others who do when you know, so hopefully.",
+      "Duration": 10,
+      "Offset": 1586
+    },
+    {
+      "Sentence": "People will will start thinking about themselves right when they get older. I like to throw out the statistic that in the year 2035 in the United States. We will have more old people than young.",
+      "Duration": 14,
+      "Offset": 1597
+    },
+    {
+      "Sentence": "And if we are not creating products for our older selves, then what are we doing you know that is a really interesting one I don't know, but I don't know about you. But I tend to run smaller fonts right. You've seen all the people who like to show their text editors with like their 8 point fonts but inevitably. I'll be on an airplane next to someone who's on a Kindle an older person or on an iPhone and they've got that 24 that 30 point font and I'll kind of chuckle.",
+      "Duration": 30,
+      "Offset": 1613
+    },
+    {
+      "Sentence": "Do small fonts well now you know, large fonts. I don't have it yet, but it's going to sneak up on me and that fonts going to ever so slowly get bigger and bigger.",
+      "Duration": 8,
+      "Offset": 1644
+    },
+    {
+      "Sentence": "And again that's that's me with the big pot. I have big bottle bit. Font dim screen. Yeah, this is why is why these different tools while you're building the tools. I like to play around with the Accessibility on my phone. I have so much to learn.",
+      "Duration": 32,
+      "Offset": 1653
+    },
+    {
+      "Sentence": "Because it's there, so many different uhm.",
+      "Duration": 3,
+      "Offset": 1687
+    },
+    {
+      "Sentence": "Things to learn out there. There's there's there's just a lot and so I love. The thing that I love about design and the thing that I love about Accessibility is that I'm constantly learning. I learned from my friends with disabilities. I learn from myself. I you know, there's a big, big, saying in the in the disability community is nothing about us without us. An I made a point to I'm writing a book.",
+      "Duration": 28,
+      "Offset": 1690
+    },
+    {
+      "Sentence": "And there's there's going to be code in the book and so my technical reviewer of my book is actually deaf and I am learning so much from her about how she navigates how she told me the story of how she wanted to listen to this podcast because she heard so much about it, but she can't hear and there were no transcripts available and so she actually wrote. The person and this is very popular podcast. I can't remember the name of it, but",
+      "Duration": 30,
+      "Offset": 1720
+    },
+    {
+      "Sentence": "Mention that I think in the book and she wrote. The person and the person said. Oh my goodness. I'll definitely transcribe that episode. You're looking for an I'm going to go back and transcribe all my episodes because I feel like I'm missing out on a whole audience, which is so true that one hits home because I actually when I first started couple of 100 episodes. I had a court reporter make me PD FS and then I had a formal transcription service and then I had to start up that was using AI to make transcriptions.",
+      "Duration": 32,
+      "Offset": 1751
+    },
+    {
+      "Sentence": "Here's the sad part we buy ran into money.",
+      "Duration": 2,
+      "Offset": 1784
+    },
+    {
+      "Sentence": "You know it was a couple Bucks, a minute to do the subscriptions and you're doing 2 or 3 hours of shows every month. You know you're looking at $700 to go and do that. So here I am as spouse. Zing Accessibility, but I don't think the last 30 or 40 shows. In fact don't have transcriptions because it's just very, very difficult. I'd love to have someone maybe who's listening sponsor the transcriptions and I'll go back and we can I've got 300 hours?",
+      "Duration": 30,
+      "Offset": 1787
+    },
+    {
+      "Sentence": "Cause we could go and re transcribe the entire thing and make it searchable that be amazing. You put it out there, so now it's going to happen. I hope so that the thing. Though you put it into the universe to manifest. It yeah, you put it out there, so that's going to happen. Transcription is coming coming back. I appreciate all of the stuff that you've manifested in your career as a user experience designer as an educator and now your international public speaker and people can check you out on your website. Thank you so much for having me on this show.",
+      "Duration": 31,
+      "Offset": 1818
+    },
+    {
+      "Sentence": "Stick we've been talking with Rejean Gilbert and this has been another episode of Hansel minutes will see you again next week.",
+      "Duration": 10,
+      "Offset": 1850
+    }
+  ]
+}

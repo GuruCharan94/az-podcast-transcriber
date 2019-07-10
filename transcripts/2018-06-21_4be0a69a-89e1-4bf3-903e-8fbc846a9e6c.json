@@ -1,0 +1,603 @@
+{
+  "id": "4be0a69a-89e1-4bf3-903e-8fbc846a9e6c",
+  "Title": "Is a Programming Bootcamp right for you? with Kristen Leake",
+  "PublishDate": "2018-06-21",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/2d52b2c0.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 8
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users.",
+      "Duration": 10,
+      "Offset": 40
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes today. I'm talking with Kristen leak. She's a UX researcher empowered Anna Youtuber? How are you? Hey, I'm great Scott thanks for having me thanks for coming on the show I found you while I was frankly googling around and learning about boot camps because I'm interested in how people find their way into tech and it looks like you already had a well established YouTube channel. So were you a techie before you went to a boot camp, not at all.",
+      "Duration": 30,
+      "Offset": 58
+    },
+    {
+      "Sentence": "I would say a little bit from school. I have AI have a Masters in journalism from San Jose State so being in Silicon Valley to journalism program incorporated some app development. We did some video Agra fee. So I dabbled in that. But for the most part now. I did not have a solid foundation.",
+      "Duration": 21,
+      "Offset": 89
+    },
+    {
+      "Sentence": "It does kind of raised the question of what is a techie like is it someone who can find a file on the disk? Is like constantly. I'm always having a nontechnical family members say I've lost this file and it's like Oh, well. They put it in documents instead of download or it's on the desktop and then there amazed if I find the file.",
+      "Duration": 16,
+      "Offset": 111
+    },
+    {
+      "Sentence": "And I'm like Oh, you're a techie you found that file likely? What is the what is the base like? How technical is technical? Yeah, that's true it seems like a buzzword today for anyone? Who knows anything that is.",
+      "Duration": 10,
+      "Offset": 129
+    },
+    {
+      "Sentence": "Electronic base will now is configuring your own router like going to going to Best Buy buying a router setting it up is that techie or is it just following instructions well.",
+      "Duration": 9,
+      "Offset": 140
+    },
+    {
+      "Sentence": "And I think there's also like.",
+      "Duration": 2,
+      "Offset": 151
+    },
+    {
+      "Sentence": "Point where there's a certain amount of nerdiness within that a key you know, there's like the hip techie people and then more people who nerd out more. I don't know. Yeah, well and then there's like you were saying that you've done like media creation like there's the Adobe Creative Cloud level of necking asset management in rendering and then there's the coding techie.",
+      "Duration": 20,
+      "Offset": 154
+    },
+    {
+      "Sentence": "Definitely so you had a Masters degree already that's an advanced degree. That's a graduate degree. That's more than a lot of people were you not interested in being a journalist why go to a boot camp and not do a Masters in computer science.",
+      "Duration": 13,
+      "Offset": 175
+    },
+    {
+      "Sentence": "II didn't know I wanted to work in tact to be honest, I.",
+      "Duration": 4,
+      "Offset": 190
+    },
+    {
+      "Sentence": "Going to do what I don't recommend those people doing an which is going back to school when you're still trying to figure out what you want to do is that does not solve the answer at all but that's pretty much what I did after.",
+      "Duration": 13,
+      "Offset": 194
+    },
+    {
+      "Sentence": "After changing my career path from physical therapy. I decided to just go for journalism 'cause it seemed to just.",
+      "Duration": 8,
+      "Offset": 209
+    },
+    {
+      "Sentence": "Be something that you can apply to any industry, which I guess is partially true from my experience, but that's pretty much the reason why I got the Masters and.",
+      "Duration": 8,
+      "Offset": 219
+    },
+    {
+      "Sentence": "Not really need it, I think if you go to coding bootcamp, especially nowadays is more common that's absolutely fine.",
+      "Duration": 8,
+      "Offset": 228
+    },
+    {
+      "Sentence": "Really 'cause that brings up an interesting question about how to position. These things because you know currently as of the time of this recording the US is at about 4% unemployment and people would like to say. Yeah, anyone with any tech ability at all can just throw a rock and get a job as a techie do you think that having boot camp on your resume is more important than having Masters degree on your resume?",
+      "Duration": 24,
+      "Offset": 238
+    },
+    {
+      "Sentence": "I think it depends on the type of job position that you want to have and.",
+      "Duration": 7,
+      "Offset": 263
+    },
+    {
+      "Sentence": "I often tell people that getting a job after Boot Camp is a lot different than actually.",
+      "Duration": 5,
+      "Offset": 272
+    },
+    {
+      "Sentence": "Studying and going through coding bootcamp, they're both like 2 huge Stephen Journeys.",
+      "Duration": 6,
+      "Offset": 279
+    },
+    {
+      "Sentence": "Well let's breakdown the wire boot camp and the going through the process and will follow up with how we go and get a job after boot camp so you went and got a human kind of went to a boot camp. How did you pick that boot camp and how? Did you know that they were going to succeed in teaching you what you wanted to learn.",
+      "Duration": 16,
+      "Offset": 285
+    },
+    {
+      "Sentence": "So.",
+      "Duration": 1,
+      "Offset": 303
+    },
+    {
+      "Sentence": "For picking the boot camp. It was overwhelming like mean people I did a Google search. I looked at reviews, which don't help you at all 'cause you always hear the good and the bad and typically it's more bad than good.",
+      "Duration": 12,
+      "Offset": 305
+    },
+    {
+      "Sentence": "And I ended up Nehring down what I wanted to do so. I thought I wanted to do more front end development. So I focus on the boot camps that do that an today. There's a Brazilian types of Boot Camp series big data. There's DevOps. Now there's design boot camps, so that's the number one thing you need to do for us is decide where.",
+      "Duration": 25,
+      "Offset": 318
+    },
+    {
+      "Sentence": "Decide what you want to do after Boot Camp, An.",
+      "Duration": 3,
+      "Offset": 344
+    },
+    {
+      "Sentence": "We're choosing I chose Tech talent South they're local uhm.",
+      "Duration": 5,
+      "Offset": 349
+    },
+    {
+      "Sentence": "I am trying to go back so I was trying to decide between tech talent South, another local boot camp and an on line boot camp because it just seemed convenient to still do my full time job and go to school but.",
+      "Duration": 17,
+      "Offset": 355
+    },
+    {
+      "Sentence": "I next that idea because knowing myself and how I learn. I need to be in a classroom setting.",
+      "Duration": 7,
+      "Offset": 373
+    },
+    {
+      "Sentence": "NF I just go ahead. I'm sorry. I was going to say it seems like if you are a person who's trying to get into tech and someone says do an online bootcamp. The assumption is you're already what they call a digital native right. You're already super comfortable online. But to the point about before you could get stuck and then you're all alone. You're online and you are stuck on exercise and now you have to go and the only way you can get help's email. Somebody yeah, definitely and they have mentors I know some.",
+      "Duration": 28,
+      "Offset": 382
+    },
+    {
+      "Sentence": "Have they do uh like Skype with your mentor once a week or something but I having my teacher in person and then being able to work with my classmates after class like we would get together.",
+      "Duration": 13,
+      "Offset": 411
+    },
+    {
+      "Sentence": "An work on our projects over dinner. We just call are text each other. Women got stuck on homework. Having that community around me made it much more bearable 'cause. It is stressful. It's not easy at all to go through boot camp. So it just made it easier to learn into Commisary and everything now when people go to college. We know that, like right now in the United States. Like top tier. Private universities are super expensive even a public University is going to cost you.",
+      "Duration": 30,
+      "Offset": 425
+    },
+    {
+      "Sentence": "Tens of thousands of dollars, but a boot camp isn't cheap either like people could spend 8 to 12 weeks and they could spend $10000 for this unaccredited unknown.",
+      "Duration": 10,
+      "Offset": 456
+    },
+    {
+      "Sentence": "Unregulated thing.",
+      "Duration": 1,
+      "Offset": 467
+    },
+    {
+      "Sentence": "Yeah, that's the scary thing about and that's why you have to do your research. I recommend talking to the teachers and just going in and just seeing where the school takes place and just meeting. Everyone who who works there, and also talking to former students and seeing where they are today because there. There are some scammy boot cams. I can't say as far as today since I've been out for 2 years now.",
+      "Duration": 30,
+      "Offset": 469
+    },
+    {
+      "Sentence": "Definitely need to dig in and make sure it's you know it's actually a company that wants to help you, you know, and that's that's why I left my community so much. They say that compared to self study that a bootcamp. It gives you that motivation like you said. You have a community of people around you. But you're effectively investing this $10000 or some huge amount of money and I assume this isn't a 40 hour week thing you don't just show up at night and leave at 5, you're basically.",
+      "Duration": 29,
+      "Offset": 500
+    },
+    {
+      "Sentence": "You know, not sleeping for 10 weeks as you immerse yourself in the boot camp, yeah, and you need try not to not sleep because I quickly learned that getting 34 hours of sleep, a night it. It definitely hurts you next day when you're trying to",
+      "Duration": 18,
+      "Offset": 529
+    },
+    {
+      "Sentence": "Trying to follow the teacher because.",
+      "Duration": 2,
+      "Offset": 549
+    },
+    {
+      "Sentence": "They go so freaking fast and doesn't matter how many cups of coffee, you drink. If you don't have the rest. It's going to be hard to follow and retain everything.",
+      "Duration": 10,
+      "Offset": 551
+    },
+    {
+      "Sentence": "That's interesting because people are saying that boot camps could be a way to get more women and more people of color into kind of the pipeline and encourage people that maybe our high school only high school. Educated person or older people, or former teachers like it's a way to get they call nontraditional folks into this, but now you're saying it goes really fast doesn't that mean that people are going to get left behind if they can't keep up.",
+      "Duration": 25,
+      "Offset": 563
+    },
+    {
+      "Sentence": "It depends on the program and how advanced it is, but you are completely right. It does help people. One of my friends. My close friends from boot camp only has a high school diploma and now he has an awesome jobs doing DevOps.",
+      "Duration": 15,
+      "Offset": 590
+    },
+    {
+      "Sentence": "Oh, wow, OK, but did he was. He set up for success in that he knew something already like I'm realizing that my 10 and 12 year old boys. My sons are getting a 10 year Head Start because they have iPads and they have laptops while someone who maybe comes in from like a farming environment or rural environment. They may not actually have cut their first computer until they're 20 is that 10 years of.",
+      "Duration": 25,
+      "Offset": 606
+    },
+    {
+      "Sentence": "Being around computers, a giving my kids, a leg up against someone else that's a good point.",
+      "Duration": 8,
+      "Offset": 632
+    },
+    {
+      "Sentence": "I yeah, I think that could definitely have something to do with it. Will you always around computers growing up? Yes, yes, I remember being in middle school an being one of the few people who actually used AOL.",
+      "Duration": 16,
+      "Offset": 641
+    },
+    {
+      "Sentence": "See so you as interesting. So you are not only your digital native as they like to say right you were online before everybody else? Yeah.",
+      "Duration": 8,
+      "Offset": 658
+    },
+    {
+      "Sentence": "Do you think that that made you go into a boot camp, saying oh? Well, this is just something I need to learn like it's knowable as opposed to that sense that you get you know, I'm sure you have this when you're hanging out with non technical family members at Christmas or it's like. Oh, yeah, Christians Techie. That's not for me, I don't know anything about those things.",
+      "Duration": 17,
+      "Offset": 667
+    },
+    {
+      "Sentence": "To me, I thought of it as Noble without because in grad school. I had AI think it was a project management class an art teacher pretty much just how does teach ourselves? How to code? How to use WordPress then go in on the back end and to make some changes so I thought well. I had to watch all these Linda videos. I can just go to codeacademy.com and to make sure that I even like this stuff and then.",
+      "Duration": 30,
+      "Offset": 685
+    },
+    {
+      "Sentence": "Yes, I did, I enrolled in coding boot camps ago while I like it and I can learn to myself, so why not?",
+      "Duration": 5,
+      "Offset": 716
+    },
+    {
+      "Sentence": "So it wasn't threatening I guess is what I'm saying now. I wasn't threatening I mean, not to say. I wasn't nervous about the boot camp. Yeah, I'm trying to get a sense or to understand like? What separates people that want to like and I've talked about this before on the show who wants to take apart. The toaster when it's broken versus who's like an forget it. I'm going to buy a new toaster. I don't know why it doesn't work.",
+      "Duration": 23,
+      "Offset": 722
+    },
+    {
+      "Sentence": "That is a good question there, I will say there were people, maybe let's see.",
+      "Duration": 5,
+      "Offset": 747
+    },
+    {
+      "Sentence": "No there's only one person who dropped out of my cohort when I went through.",
+      "Duration": 5,
+      "Offset": 753
+    },
+    {
+      "Sentence": "So it's tough enough for everybody. I think it's yeah, depending on people's expectations. I know some people just are doing it for the money and think they can just learn it all in the boot camp. But you're right. You need to have some type of background or at least study on your own before enrolling to ensure that you know you have success in this so you were on AOL before you had a computer before she had like it was in your life. You are familiar with computers, but how far down the stack. Did you go? I have?",
+      "Duration": 30,
+      "Offset": 759
+    },
+    {
+      "Sentence": "On my team and I was trying to teach her something low level because when I grew up in the computer world. I learned like assembler and we would say I went from the metal up like from the processor up. But she said. When she learned she went from like the screen or the glass of the monitor back. They learned in like F 12 tools in Chrome and JavaScript is the new metal when you're in a boot camp, where they talking about computer science techniques like virtual memory and memory allocation along kind of stuff or they really talking about.",
+      "Duration": 30,
+      "Offset": 791
+    },
+    {
+      "Sentence": "And in his Chrome the computer.",
+      "Duration": 2,
+      "Offset": 822
+    },
+    {
+      "Sentence": "During my program, we focused on web development. We did a lot of Web apps. So we did a little bit of the foundation. HTML CSS S and then foundation of JavaScript and then we started focusing more on on NBC, an making things with Ruby on Rails.",
+      "Duration": 20,
+      "Offset": 826
+    },
+    {
+      "Sentence": "How do you feel about that it's almost like when you learn to drive a car do you learn an automatic or do you learn a stick shift automatic for sure so that's really cool, though, because I think that's interesting and that's I think teaching people who are maybe over 40 that you don't need to know a stick shift to be an effective driver do you like you know it's cool that you could if you were interested in that but it's not required. We're just making websites here do you think there's a reason to go any deeper?",
+      "Duration": 31,
+      "Offset": 847
+    },
+    {
+      "Sentence": "Or people being elitist when they say, Well, you really need to learn how to drive a stick shift. If you're going to be an effective driver? That's interesting I.",
+      "Duration": 7,
+      "Offset": 878
+    },
+    {
+      "Sentence": "I honestly I can't say, but I always hear people, especially newbies say that they want to learn how to build things from scratch and I just think.",
+      "Duration": 10,
+      "Offset": 887
+    },
+    {
+      "Sentence": "I just I personally don't think is necessary. I mean, as someone who did freelance web design. An my current company never has anyone done things from scratch because it's just not sufficient. You know, see why do you think that because of?",
+      "Duration": 16,
+      "Offset": 899
+    },
+    {
+      "Sentence": "Trying to learn everything but what developer really knows everything like starting off you know in the first couple of years of learning. That's a good point. Thank them self up for disappointment, yeah, and also I think as someone who myself who wants to bring more people into tech if I'm trying to go and shove 20 or 30 years of computer science into someone's head in a month.",
+      "Duration": 24,
+      "Offset": 917
+    },
+    {
+      "Sentence": "That's just going to push them away from tech entirely definitely yeah. So, your focus is on getting stuff done and what do you do then if you're at boot camp and you hit some low level thing like you know it just brainstorming here, an SSL certificate expires or there's a cookie that somehow being truncated by something you know, these are you now you're into F 12 tools and you're learning. What's going on at the TCP in the HTTP level do that is just like well ask somebody and get help.",
+      "Duration": 30,
+      "Offset": 942
+    },
+    {
+      "Sentence": "Dive into how you know, let's talk about how the Internet itself works.",
+      "Duration": 4,
+      "Offset": 973
+    },
+    {
+      "Sentence": "Definitely in boot camp, you ask someone and which is really hard to do because we all don't want to admit that we can't solve something ourselves and so we end up not be able to move forward. 'cause, like I said the program goes by so quickly. You don't want to be stuck for 2 days on something so the idea that you're trying to figure out what the right level to learn is and what's too low? What's too high and then if you do ask, though, you're going to feel.",
+      "Duration": 30,
+      "Offset": 979
+    },
+    {
+      "Sentence": "Oh, Gosh error if I have, I have, I let on that I don't belong here?",
+      "Duration": 3,
+      "Offset": 1010
+    },
+    {
+      "Sentence": "Yeah, and everyone feels that way when you're in boot camp. You think you're to dumb as person in class but but everyone's just as lost interesting so it was not lonely. It was that there was a good community because we're all clueless together. Oh my gosh. Yes, button at the beginning. No one no one knows that so you're sitting there on day one just looking around going on what have I done that was me and we had a title is community organizer who would do checkins with us every few weeks.",
+      "Duration": 32,
+      "Offset": 1015
+    },
+    {
+      "Sentence": "And so we would vent to him and less than how we're doing, and that's how I found out that I wasn't the dumbest person in class.",
+      "Duration": 7,
+      "Offset": 1048
+    },
+    {
+      "Sentence": "It's not that we're keeping score to be clear in respect to the other people of varying levels of Dumbness. Yeah, I remember we had a meeting and he said. Kristen the person I just met with 30 months ago. Literally said the same thing and feel the same way you do right now and so just knowing that I wasn't alone and that kind of also put your guard down as well, and I think that helps with.",
+      "Duration": 30,
+      "Offset": 1056
+    },
+    {
+      "Sentence": "Feeling it is really hard, though, to express that you don't know something and then when you're told that way. You should be blogging and you should maybe consider speaking at conferences. You should get your name out there. That's asking a lot of anyone to go talk about doing something because at any moment. Some random Internet person could go and say you have no idea what you're talking about and look. Here's a link to your blog where I know for a fact you have no idea what you're talking about look right there see what you wrote that was dumb.",
+      "Duration": 27,
+      "Offset": 1087
+    },
+    {
+      "Sentence": "I actually get scared about that, about my YouTube channel. Sometimes yeah, yeah. I mean, you hear so many different opinions about things on line and everyone has an opinion so it's kind of hard. It's yeah. It's really stressful literally before I got on the call with you here. I went and wrote a blog post. That's actually a follow up to another blog post, I wrote this blog post, all about caching.",
+      "Duration": 30,
+      "Offset": 1116
+    },
+    {
+      "Sentence": "Fishing in web applications and like the first comment was like this is a bad idea. I was like. Oh, no, I'm reading this. I'm like I'm looking at this comment right now, it's like you may get away with it if it basically is like this works, but it's working because you're lucky and it's a bad practice and you basically suck he was super nice about it, but I'm just like Oh, we'll do I? Delete the blog post now or do I just? What do I do like? How do I? Where do I emotionally put that.",
+      "Duration": 30,
+      "Offset": 1147
+    },
+    {
+      "Sentence": "This sucks so it kind of messed me up for a day and then I ended up doing the research and I wrote a follow-up blog post linked the first one to the follow up and then set. Yeah, this is wrong, and here's why I kind of like it seems obvious in hindsight, but this is good and thank you so much for the comment. It wasn't a troll. It was like a genuinely nice person trying to help out. But that takes a lot of emotional fortitude to be able to go through like the whole process there.",
+      "Duration": 30,
+      "Offset": 1178
+    },
+    {
+      "Sentence": "Mentally and as II've shared my coding journey and just getting an attack journey on YouTube.",
+      "Duration": 7,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "That stuff, only happened to me a number of times an.",
+      "Duration": 3,
+      "Offset": 1216
+    },
+    {
+      "Sentence": "I have learned that I mean, yeah, sometimes I am wrong, but also there are many times when you can.",
+      "Duration": 6,
+      "Offset": 1221
+    },
+    {
+      "Sentence": "Have the same result by doing something different.",
+      "Duration": 4,
+      "Offset": 1228
+    },
+    {
+      "Sentence": "Did it do you find YouTube to be a friendly or not friendly environment like you go and talk about going through boot camp and the trolls show up or people pretty positive.",
+      "Duration": 10,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "People have been pretty positive.",
+      "Duration": 2,
+      "Offset": 1244
+    },
+    {
+      "Sentence": "I've gotten a few marriage proposals.",
+      "Duration": 3,
+      "Offset": 1247
+    },
+    {
+      "Sentence": "I have not I wonder why you have received marriage proposals and I have known do you find that being a woman in tech is just half marriage proposals and have people telling you that you're dumb.",
+      "Duration": 12,
+      "Offset": 1251
+    },
+    {
+      "Sentence": "Now, now, I think there's a lot of people rooting for me and a lot of people who who view me as.",
+      "Duration": 9,
+      "Offset": 1264
+    },
+    {
+      "Sentence": "You know an example that look she did it so I can do it, too, which is why I kept going with my YouTube channel. That's good. It's important for all of us to do that. I mean, even though I'm 1820 years ahead of you in Mycareer. I hope when I write a blog post, where I say yeah. I was totally wrong. That was a mistake and I'm cool about it an pleasant about it makes it clear that it's about.",
+      "Duration": 24,
+      "Offset": 1275
+    },
+    {
+      "Sentence": "It's about the journey and it's not about some theoretical end where like yes and now I know everything. Thank you. I've made it. Yeah, that would that would not be very exciting and you know you kind of just reminded me of this graph. I saw about you know when you first start learning code and how you just feel like you don't know anything and then there's a phase where you feel like a God he know everything and something else happens and just back and forth.",
+      "Duration": 30,
+      "Offset": 1300
+    },
+    {
+      "Sentence": "This keeps going like even after 20 years that graph says like you still have that those moments, where you don't feel like you know everything that I love that you said that because you literally nailed like my last 3 blog posts like the first one like I'm learning all about caching and how to do things correctly and like look at this code is the most elegant 12 lines ever and then of course, the you're doing, it entirely wrong comment happen and then I'm like OK and I learned I learn like Oh my God? What was I thinking? That was the worst 12 lines.",
+      "Duration": 30,
+      "Offset": 1331
+    },
+    {
+      "Sentence": "Came 3 lines, you know, and now I'm thinking, I might be able get it down to 2.",
+      "Duration": 3,
+      "Offset": 1362
+    },
+    {
+      "Sentence": "Yeah, and that's something we don't realize when you when you come into this industry.",
+      "Duration": 5,
+      "Offset": 1366
+    },
+    {
+      "Sentence": "We are constantly learning and you still have your bad days, isn't it funny. How they tell you that, but you still don't really internalize it like you don't really.",
+      "Duration": 10,
+      "Offset": 1373
+    },
+    {
+      "Sentence": "Get like Oh, yeah, you're always learning know you really like really seriously. You're always learning like what's it. Going to take you understand that you will be learned like your degree. It means nothing like I went to school in the late 90s. It means nothing. It's all changed the whole Internet's different.",
+      "Duration": 16,
+      "Offset": 1384
+    },
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 1402
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 1411
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users that kind of reminds me of impostor syndrome as well because I had many people warned me that once I start working full time I'm going to get impostor syndrome after boot camp.",
+      "Duration": 13,
+      "Offset": 1443
+    },
+    {
+      "Sentence": "And it wasn't until I was venting to a more senior friends when he pointed out that was impostor syndrome was like this? Is it this feeling depressed and being afraid my boss is going to fire me and that brings up these issues of privilege that I've talked about before on the show, which is.",
+      "Duration": 22,
+      "Offset": 1458
+    },
+    {
+      "Sentence": "Who has the ability to have impostor syndrome publicly and who just sneaks home and notices no one like maybe no one will notice that I'm an impostor and definitely as someone who's older and have been in Tech, I can go in, in a meeting.",
+      "Duration": 15,
+      "Offset": 1480
+    },
+    {
+      "Sentence": "I can say what is that acronym mean and people probably won't flip the bozo bit on me and go Oh man handsome and he has no idea what he's talking about. But if you've only been at the company 2 weeks and you're like? What does this mean? Maybe people will be like wow Christian should know that?",
+      "Duration": 16,
+      "Offset": 1497
+    },
+    {
+      "Sentence": "Uh-huh Yeah, I've I've definitely felt that so how instrumental was having done this code camp to getting your job like did you have? Is there any stigma attached to having boot camp on your resume? I did not experience that or at least I?",
+      "Duration": 17,
+      "Offset": 1515
+    },
+    {
+      "Sentence": "Identity sense any stigmatism where that uhm.",
+      "Duration": 3,
+      "Offset": 1533
+    },
+    {
+      "Sentence": "Coding Boot Camp definitely is the reason why I got my amazing job trying to go back to think about stigmas, but now I can't think of any do you think? Let me ask you this? Did your tech resume the resume you hand it around say Masters degree on it, and do you think that people cared like Oh wow master because I always like I didn't. I don't have a Masters degree. So I'm always like who graduate school when I see a resume that has graduate school.",
+      "Duration": 27,
+      "Offset": 1538
+    },
+    {
+      "Sentence": "No actually.",
+      "Duration": 1,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "I got more I got a bigger response about doing freelance web design after boot camp, not many people acknowledge my Masters degree.",
+      "Duration": 10,
+      "Offset": 1569
+    },
+    {
+      "Sentence": "Is it at the bottom of the resume or is on page 2? I think it's at the bottom? I rearranged it recently right now is at the bottom so I mean that could be it. But my boot camps at the bottom as well are boot camps given a grade do you have any idea who came out at the top of the class or who really did well or is it about the portfolio that you're building. While you're doing the boot camp. It's definitely in portfolio portfolio driven we didn't greet anything, honestly, you would.",
+      "Duration": 27,
+      "Offset": 1580
+    },
+    {
+      "Sentence": "They would come back to class with our assignment and go over them and.",
+      "Duration": 4,
+      "Offset": 1609
+    },
+    {
+      "Sentence": "You know discuss any problems. Everyone had with it, but now we didn't greed and it wasn't certificate either. You have a video that I linked to in the show notes and that's again. How I found you which is you know how to get a job after after boot camp and how it went and you basically call out 3 things that you think people need to focus on when they are coming out of a boot camp to get a job Oh, yeah, definitely so especially in my experience an?",
+      "Duration": 28,
+      "Offset": 1614
+    },
+    {
+      "Sentence": "About every one of my cohort my cohort was about 12 people. We landed jobs through networking. Oh my gosh, and speaking of which one of my friends.",
+      "Duration": 13,
+      "Offset": 1643
+    },
+    {
+      "Sentence": "Has now accepted her second job after boot camp at Microsoft and she made that connection. Anna meet up group ran interesting alright well, I will have to say hi.",
+      "Duration": 10,
+      "Offset": 1657
+    },
+    {
+      "Sentence": "Yeah, so I always talk highly of meet up group San.",
+      "Duration": 4,
+      "Offset": 1667
+    },
+    {
+      "Sentence": "Just not just being up front and saying Oh I just got a boot camp. I'm looking for a job are you hiring. But just just getting to know that person and what they do, and you just getting to know them and maybe viewing them as more of a mentor in the future. Not sure it up, saying we be my mentor, but just staying connected, adding them on LinkedIn and following up a week or 2 later. Yeah, what's that quote that luck is what happens when preparation meets opportunity.",
+      "Duration": 32,
+      "Offset": 1673
+    },
+    {
+      "Sentence": "I love that quote Meetups are really an opportunity for you to make opportunity like you show up and if you go to 2 or 3 if you can if you can go to a couple of meetups a week and be visible. People will start saying oh there's a new person in the community. I like that. You said be visible because going to meet up not talking to someone and going home. That's not going to benefit you at all. You need to at least raise your hand ask a questionnaire to or if you don't.",
+      "Duration": 30,
+      "Offset": 1706
+    },
+    {
+      "Sentence": "We have so many people seeing or hearing you speak go up to the speaker afterwards and introduce yourself and just say you liked through presentation. You know that's that's a great start. So it sounds like like did they teach you to go to meetups like does the Boot Camp say OK good good job. See and then they kick you out the door or do you do they say all right now? It's time to learn about how to network and how to be confident in how to shake hands and look people in the eye.",
+      "Duration": 26,
+      "Offset": 1737
+    },
+    {
+      "Sentence": "They did recommend meetups a lot, but no one really explained networking an how to do it properly and that is something I wish they would touch on Morris to confidence because.",
+      "Duration": 14,
+      "Offset": 1764
+    },
+    {
+      "Sentence": "That's probably the hardest thing after boot camp, yeah, being a techie being a coder is really more about communication that anyone ever realized like you can be by yourself, you can get the job via email. You can do the job and then send them. The code via email, but being an effective team member being is about networking. It's about being good in your group. It's about Whiteboarding. It's about explaining yourself about advocating for yourself, it's hard.",
+      "Duration": 26,
+      "Offset": 1780
+    },
+    {
+      "Sentence": "Definitely so let me ask you this as we as we get towards the end here, like where do you see techie ending encoder or programmer starting?",
+      "Duration": 8,
+      "Offset": 1807
+    },
+    {
+      "Sentence": "And on that gradient is that we were talking about. When do you say Alright, you know I could actually write a nap? I'm I'm a coder now? I'm I'm a member of the community. So you're asking when someone can say whether or not there a coder versus being Kentucky or is that even an appropriate label. I don't know OK first. I was thinking. You could call yourself a coder when you're doing, it professionally. But I know so many great developers who do it in their free time for fun.",
+      "Duration": 30,
+      "Offset": 1817
+    },
+    {
+      "Sentence": "They are not doing it in their jobs like from Iraq's correct.",
+      "Duration": 3,
+      "Offset": 1848
+    },
+    {
+      "Sentence": "They aren't doing their jobs.",
+      "Duration": 1,
+      "Offset": 1852
+    },
+    {
+      "Sentence": "It's a good question because no one says like no one, said that this is a requirement that you have to get paid if you did your churches website or you did your kids Little League.",
+      "Duration": 8,
+      "Offset": 1854
+    },
+    {
+      "Sentence": "Definitely.",
+      "Duration": 1,
+      "Offset": 1864
+    },
+    {
+      "Sentence": "And then I also wonder about skill level, too 'cause. When I hear tucci I'm not really.",
+      "Duration": 5,
+      "Offset": 1866
+    },
+    {
+      "Sentence": "Like that could be beginner that could I don't know I could be anything. Well, this gets down to like what do we tell our family members at Thanksgiving? I just say computer person seems to be like the generic? I'm not going to fix your computer. But yes, I know how to if I needed to, and ultimately I'm going to end up fixing your computer anyway. The funny thing is even though I know some front end then WordPress and now UX.",
+      "Duration": 28,
+      "Offset": 1872
+    },
+    {
+      "Sentence": "People ask me questions about servers and other things that go way over my head. I'm like OK just because I can design a website doesn't mean I know what to do when the Wi-Fi isn't working, yeah well. But fortunately you do know how to learn now and you know how to learn text so if you chose to be a server person. You know what to do that is true very cool will thanks so much for chatting with me today.",
+      "Duration": 27,
+      "Offset": 1902
+    },
+    {
+      "Sentence": "Thanks for having me this was fun. Make sure that you check out the show. Notes I'm going to have links to Christians YouTube channel and the coding boot. Camp video that got me in touch with her.",
+      "Duration": 10,
+      "Offset": 1930
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 1940
+    }
+  ]
+}

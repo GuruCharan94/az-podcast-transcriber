@@ -1,0 +1,403 @@
+{
+  "id": "8017a863-c6e6-415b-9cd8-51b9e6bacfb0",
+  "Title": "Building Web Applications for the next Billion Users with Ire Aderinokun",
+  "PublishDate": "2018-05-04",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/cfd946d1.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we appreciate you the listener and I hope you appreciate our sponsors because they make Hansel minutes possible. Today's 1st sponsor is Melissa? Are you looking to build real time contact data validation enrichment into your applications try melisses developer portal. You'll gain easy access to flexible APIs for global address verification phone IP address email and property and business data sample code and get post methods, plus technical documentation are all included quick online payment makes rapid application development easy.",
+      "Duration": 32,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Is itmelissa.com slash developer or call 1 800 Melissa?",
+      "Duration": 9,
+      "Offset": 33
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Illaya Dario. C*** she's calling in from Legos, Nigeria. How are you I'm really great?",
+      "Duration": 10,
+      "Offset": 52
+    },
+    {
+      "Sentence": "So you are a front end developer you're a UX. UI designer, you work for IO out of Legos. But you also have degrees in experimental psychology and law? Did you become a lawyer and then become a developer or? How did that happen? Yeah, this is something people always ask me? I actually never practiced either psychology or low? I study psychology as my undergrad. Then I wasn't ready for the real world, so I decided OK. Let me do another degree and.",
+      "Duration": 30,
+      "Offset": 64
+    },
+    {
+      "Sentence": "Side to do low 'cause I found it interesting and um while I was doing was kind of what I discovered that programming and like front end development was an actual real job that people do so. I was like wow. This is something I kind of have to pursue 'cause. I had been doing it kind of as a hobby. Since I was a teenager. So I just decided once I graduate. I'm going to try and go for it. So I never actually practiced but I'd like to call myself psychologist slash lawyer or slash.",
+      "Duration": 32,
+      "Offset": 95
+    },
+    {
+      "Sentence": "That's pretty amazing and I would think, though, that being a UX and UI focused developer that understanding psychology would be a helpful helpful thing, yeah, when people ask I usually say, Oh, I don't think it actually helps me at all but the more I've thought about it. I think it actually does kind of help, especially just being able to empathize a bit more with the user and just kind of the whole concept of.",
+      "Duration": 30,
+      "Offset": 128
+    },
+    {
+      "Sentence": "Search and just trying to kind of understand the user's perspective, a bit more. I think it's helped because I know how to do studies with other human beings. I've done that kind of thing before so I think that aspect has helped me the soft skills and the hard skills. Yeah, exactly so one of the things that I wanted to talk to you about is this concept that I'm seeing a lot of online. I'm hearing about the next billion users and I want to understand what exactly that means.",
+      "Duration": 31,
+      "Offset": 160
+    },
+    {
+      "Sentence": "So uhm the next billion users is a term I heard. I think it was at Google. IO last year for the first time so it was essentially as far as I know coined by Google and if you think of a company like Google for example, like over the last. I don't know 20 years. However long the Internet has been a real thing. The users of any major products like Google or whatever products were available.",
+      "Duration": 25,
+      "Offset": 191
+    },
+    {
+      "Sentence": "Where mainly just people many people in like Western countries and people who were rich enough to have access to a computer and access to the Internet. So if you think about. That kind of user base as compared to now, it's completely different because it was a very, very narrow user base. But like I said if you compare that to now, it's almost a completely different story. You have so many more people coming on line from so many different.",
+      "Duration": 30,
+      "Offset": 218
+    },
+    {
+      "Sentence": "So many difference just walks of life, essentially so I think the whole next billion users concept is kind of acknowledging this shift in user base, and acknowledging that there's a whole new set of people who are just coming online or just really getting comfortable online that are going to be using these products that were previously pretty much only built for that previous narrow user base, so it's just about.",
+      "Duration": 30,
+      "Offset": 248
+    },
+    {
+      "Sentence": "Remind set San thinking about who your users actually are because.",
+      "Duration": 3,
+      "Offset": 280
+    },
+    {
+      "Sentence": "Chances are if you built a products 510 years ago, you're building it for a completely different user base than exist today. Yeah, the first billion users. I guess there's about 3,000,000,000 people. That like have smartphones, but the first billion people probably were like like me, they got online 20, plus years ago. We got on via AOL America online or dial up and the next billion.",
+      "Duration": 30,
+      "Offset": 284
+    },
+    {
+      "Sentence": "Maybe not in Portland or New York or in London. But in in South America or in Southeast Asia are in Africa and they'll be on a smart phone won't. They yeah that's actually a really good point. The whole shift in mobile versus desktop as well. Like even 5 years ago. It was pretty much when you're building a sites or building anything, it's mainly for people sitting down at a desk. But now you have to build for people who are on the Co or people who are just managing their entire lives.",
+      "Duration": 31,
+      "Offset": 315
+    },
+    {
+      "Sentence": "A 4 inch screen or however, big their smart phone is so it's really it's like a huge shift really in the way that we have to think about how we're building our products so the blog post about the next billion users that on Google says that these billion users are already starting to change the Internet and you point out this mobile only mindset. They don't have computers at their at their home. They don't have a laptop of any kind. I don't know if I can say they don't have a computer but.",
+      "Duration": 30,
+      "Offset": 347
+    },
+    {
+      "Sentence": "Think of my experience of seeing a lot people here in Nigeria. Long people I personally see their main device is there mobile device. So maybe they have a tablets, but their main devices that mobile device and one of the main reasons for that is because.",
+      "Duration": 17,
+      "Offset": 378
+    },
+    {
+      "Sentence": "We struggle a lot, especially Nigeria because we have a lot of government issues. We struggle a lot with power, so.",
+      "Duration": 8,
+      "Offset": 397
+    },
+    {
+      "Sentence": "Having something like a laptop that is.",
+      "Duration": 1,
+      "Offset": 407
+    },
+    {
+      "Sentence": "I mean, compared to mobile phone or a tablet is much more dependent on like a power source is a lot more unreliable than just having a mobile phone that you can carry around with you and it lasts for longer than a laptop or a desktop would like you have and use the desktop because it would be too reliant on power, so I think that's 1 of the reasons why a lot of people tend to.",
+      "Duration": 25,
+      "Offset": 409
+    },
+    {
+      "Sentence": "Focus on mobile devices, but obviously another reason is that it's a lot cheaper and for the things that the average person wants to do someone. That's not like a developer like myself that is trying to do something that's really, really heavy on processing another fat.",
+      "Duration": 16,
+      "Offset": 436
+    },
+    {
+      "Sentence": "So the average president I just want emails and Facebook and WhatsApp. There's no need to have a whole computer in can just do all of that from your phone, so that's why I think that allow for a lot of people there first device and maybe there, only device is going to be a mobile device so even if they do have a laptop. It probably wouldn't be their primary device unless they are like a working professional that needs that as their primary device.",
+      "Duration": 28,
+      "Offset": 453
+    },
+    {
+      "Sentence": "Interesting that's a really interesting way to put it, it's not that they don't necessarily have a laptop or have access to a computer. It's not their primary device and it's funny that you say that because even though I'm sitting here and we're both chatting to each other on computers. I probably spend as much time if not more on my phone, so one could argue that my phone is my primary device. Yeah, that's already a really good point. I didn't think of it. That way because I mean, if you ask me to do 24 hours without my phone or 24 hours without my laptop it would probably.",
+      "Duration": 33,
+      "Offset": 483
+    },
+    {
+      "Sentence": "With my phone, so I think for a lot of people. It is their phone their phone is the primary device. Even if like like you or me, they primarily work on their laptop. So it's actually it's actually you're right. It's not that.",
+      "Duration": 16,
+      "Offset": 516
+    },
+    {
+      "Sentence": "Specific to the next billion users that their mobile devices. The primary device and if you think about it, you're doing more and more things on your phone like previously I mean?",
+      "Duration": 11,
+      "Offset": 533
+    },
+    {
+      "Sentence": "You won't have even imagine doing things like email on your phone because it might have been too difficult to type in or something like that, but now I think we all do things more and more important things on these like smaller mobile devices.",
+      "Duration": 14,
+      "Offset": 545
+    },
+    {
+      "Sentence": "Which is interesting because I still don't see in at least in the on the websites that I go to a mobile first mindset. We've been hearing mobile first now for quite a few years, but you know if I go visit like my favorite news site for Tech, which is the verge. It's like 7 or 8 megabytes just for the home page. In most of its JavaScript and fat PNG's.",
+      "Duration": 23,
+      "Offset": 561
+    },
+    {
+      "Sentence": "Yeah, and I mean, I think I am definitely still a bit like guilty of this myself. It's almost as if us as the developers that people making all of this online contents like almost like we're in denial about about the fact that most people are now kind of shifting to mobile and we just kind of want to preserve this desktop feel, and like I said, I'm definitely a bit guilty of this myself. I mean when I'm trying to design something I loved designing.",
+      "Duration": 31,
+      "Offset": 585
+    },
+    {
+      "Sentence": "First even though I know that, Mobile is probably going to be the most important in a lot of situations, but I think every people are becoming more and more aware and the whole mobile first thing is definitely has taken as really taken off and more people are even though they might not be putting as much weights on mobile as it deserves. There definitely putting a lot more than they used to.",
+      "Duration": 25,
+      "Offset": 617
+    },
+    {
+      "Sentence": "It seems like it is an exercise in empathy like I would assume given that I'm here on the West coast of the US and I have a nice, big computer in a fast bandwidth that you Irri in Nigeria would be seeing people living a mobile first lifestyle, so that you would naturally design that way. But you also have fast Internet and a nice, big computer and nice, big monitor so you can catch yourself.",
+      "Duration": 27,
+      "Offset": 644
+    },
+    {
+      "Sentence": "Being desktop first being high bandwidth first even though you are closer to the next billion users. Yeah, exactly I think it's actually more because.",
+      "Duration": 11,
+      "Offset": 672
+    },
+    {
+      "Sentence": "Obviously, as a developer most of my world is still online like.",
+      "Duration": 5,
+      "Offset": 684
+    },
+    {
+      "Sentence": "But I'm talking about so my colleagues or people I interact with in my working environments. They're mostly people, all around the world. So it can be easy to think in their mind sets rather than think in the mindset of oh. I'm building a product specifically for people in this country and I dealt a lot with this in my previous job where I work with the media company here based in Nigeria and I think the biggest shock for me when I was working there was when I realized that.",
+      "Duration": 31,
+      "Offset": 690
+    },
+    {
+      "Sentence": "A significant percentage of people were using opera mini browser, so that really like freaked me out because if like for people that don't know opera mini is very is a very strict back browser. So there are so many things like JavaScript or CSS S features that just basically don't work. So I mean? What I would suggest to everyone is kind of just download opera mini on their phone and just open up. Whatever site there currently working on in that browser and I see you.",
+      "Duration": 30,
+      "Offset": 721
+    },
+    {
+      "Sentence": "Gasp 'cause I definitely did I was like whoa and that was kind of.",
+      "Duration": 5,
+      "Offset": 752
+    },
+    {
+      "Sentence": "Kind of a shock for me and it kind of just shocked me back into reality and realizing or I can't just be building for people who have the phone that I have. I need to think more about the actual users and that's kind of where their whole empathy thing?",
+      "Duration": 17,
+      "Offset": 759
+    },
+    {
+      "Sentence": "Yeah, opera mini is that's funny, you bring that up because that's something that I have not thought about in many, many years, but I think it's worth both of us, pointing out that the next billion users. It's not necessarily a euphemism for oh they'll be a billion Africans or billion. Asians or billions South American suddenly online and the western people should start thinking about it. There are a billion new users coming on that are from all over the world. My brother as an example lives in rural Oregon.",
+      "Duration": 30,
+      "Offset": 777
+    },
+    {
+      "Sentence": "He just recently got Internet there because he can't get fiber. There's no cable there. So he actually has a cell phone connection. That's sitting on top of his roof on his barn.",
+      "Duration": 10,
+      "Offset": 807
+    },
+    {
+      "Sentence": "And that puts Wi-Fi out, but he only has 3 gigabytes a month bandwidth, Oh wow. So I asked him what browser. He was using and he was using opera mini because apparently they compress.",
+      "Duration": 12,
+      "Offset": 819
+    },
+    {
+      "Sentence": "Images an pages a second time and he found that it saved him on bandwidth. So here's someone 35 miles South of me.",
+      "Duration": 8,
+      "Offset": 832
+    },
+    {
+      "Sentence": "Who is the living? What most most connected Americans would think is a primitive lifestyle. But in fact? There's a lot of people like that in your country. Whoever you are listening to this podcast that are not as connected as you are yeah. That's a really good point, 'cause whenever people say next billion users like you said people tend to think of our just Africans or something coming online. They've never seen anything so they tend to, I mean, I know that it can.",
+      "Duration": 31,
+      "Offset": 842
+    },
+    {
+      "Sentence": "To have that mindset that these are people who live in very, very rural areas of people who like I don't know living hots or something which is typically what people tend to think when they think of like the average poor African person. But the whole next billion users thing isn't just about that. I mean that is obviously one aspect of their people.",
+      "Duration": 21,
+      "Offset": 874
+    },
+    {
+      "Sentence": "Who couldn't come online before because of like financial issues or things like that? But there are many, many many different other people that own.",
+      "Duration": 9,
+      "Offset": 897
+    },
+    {
+      "Sentence": "This whole next billion users concept covers so you have things from.",
+      "Duration": 4,
+      "Offset": 907
+    },
+    {
+      "Sentence": "Like you said people who live in western or festival door, however you want to quite that countries who just couldn't come online for I don't know logistical reasons like your brother. For example, and you could also have people who couldn't come online because of Accessibility reasons. For example, so there are a lot of things a lot of assistive technology which is coming up now, so screen readers are getting so much better and that's enabling people who couldn't come online because maybe they have visual impairments or.",
+      "Duration": 31,
+      "Offset": 912
+    },
+    {
+      "Sentence": "Form of difficulties like that, and that isn't what you might think when you think of next billion users. But that is that is like a category of people who are just being able to come online now because technology has gotten so much better, so when I think of next billion users. I try not to restrict it to just the people that are just around me that I might be immediately concerned about but it's more about just taking a global view of who your users can be and no longer just thinking that it could be the small subset of people.",
+      "Duration": 34,
+      "Offset": 945
+    },
+    {
+      "Sentence": "Open your mind more and think about all the different people that exists in the world because pretty much all of those people are going to be able to come online very soon exactly and if we assume that everyone if we did. Not assume but if we agree that everyone deserves to be online. Then, if there's small things that we can do to make their lives. Easier then we should do those things for example, I started. I had met a number of blind software developers at Microsoft and for the last several years I always include.",
+      "Duration": 31,
+      "Offset": 980
+    },
+    {
+      "Sentence": "Eggs on my images on my blog and even Twitter. Now let's you put an alternative tag on images when you post them because I saw someone tweet that as a blind person. They just scroll past those things like if I can't see your image and you didn't bother to describe it. I'm just going to ignore your content entirely and it doesn't take 10 seconds for me to fix it.",
+      "Duration": 20,
+      "Offset": 1012
+    },
+    {
+      "Sentence": "Yeah, that's why uhm like we both said the empathy thing is an important aspect of it is just about putting yourself in the position of someone who isn't having the exact same experience that you are. I've had similar experiences like us. Well, like realizing oh you can output all text in your Twitter images without something that I've tried to do now as well. And I always include all texts in when I'm writing like my blog articles.",
+      "Duration": 29,
+      "Offset": 1033
+    },
+    {
+      "Sentence": "Yeah, that's that's a small thing so I've heard Accessibility is important. What about local languages. How important is internationalization. When we're thinking about the next billion.",
+      "Duration": 11,
+      "Offset": 1063
+    },
+    {
+      "Sentence": "Hey folks, I want to take a moment to thank our sponsors and remind you that when you support them You're supporting Hansel minutes because they make this show possible.",
+      "Duration": 8,
+      "Offset": 1074
+    },
+    {
+      "Sentence": "Innovative developers help improve the lives of millions of small businesses in accounts that use QuickBooks worldwide. Your app could make the difference that helps them work smarter an put more money in their pocket enter into it developer from tech tools to growing your customer base to helping you get funding into it developer helps you rap go from concept to company. Find out more at into it. Dot me slash code that'SINTU it dot me.",
+      "Duration": 31,
+      "Offset": 1083
+    },
+    {
+      "Sentence": "Internationalization is also a really important thing when I'm thinking about like building on the global scale because as someone from a primarily English speaking place. It can be very easy to just think that the whole world speaks English and especially when like the US is an English speaking place on the US tends to dominate a lot of things online as well. But particularly through working at IO. I've kind of had my eyes opened a bit more to that.",
+      "Duration": 30,
+      "Offset": 1116
+    },
+    {
+      "Sentence": "Of the Web sites that we do are all translated and it just made me think and made me much more aware of things that I typically may not have thought of like something, as simple as making sure that the side kind of work at the language is left to right and right to left. Those are things that I mean, I probably haven't really tested ever before. But now I'm getting more aware of it and it doesn't have to be as big or as much work as making your site work both directions.",
+      "Duration": 30,
+      "Offset": 1147
+    },
+    {
+      "Sentence": "Well, that's just in the document title, adding what language the documents in goes like a long, long way, so they're very simple things that you can do to improve the site for someone who isn't like from an English speaking country and it doesn't have to necessarily be as it doesn't have to be that big there are little things to big things that you can do. Why is the company that you're working at now doing it things localized more than we'd work previously?",
+      "Duration": 29,
+      "Offset": 1178
+    },
+    {
+      "Sentence": "I'm well because it's more about the target so the company. I worked with previously that I said, was a media company in Nigeria. The content was all English so we didn't necessarily need to think about people viewing from different countries and obviously like if the company had gotten bigger than that would be more more of a pressing issue. But for the company. I work for now, which their main product is Adblock plus and it's used by millions of users so.",
+      "Duration": 30,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "Only English speaking users that are are users of our product, so we have to think much more globally OK. How important we've talked about performance. We talked about Accessibility. We talked about internationalization. But how important is another kind of diversity that we haven't talked about which is device diversity. I have an iPhone do you have an iPhone? Why shouldn't we just divine design only for iPhones well I mean that would be easier if everyone used the same if everyone used the same device.",
+      "Duration": 33,
+      "Offset": 1240
+    },
+    {
+      "Sentence": "And that's just not the reality and what we're not building iOS. Applications were building websites. And if we're going to build something for the web, then we have to build it to work across different devices.",
+      "Duration": 12,
+      "Offset": 1274
+    },
+    {
+      "Sentence": "That's just kind of like the facts of the web. It's always been open and hopefully always will be. And if you're going to build a website. I think it's just the responsibility to build it to work across various devices. 'cause, like I said if you didn't want to do that, then that's where you can just put like a native application. Yeah, my brother. Just upgraded from a flip phone with Internet to a low end. I think it's $19 Android I don't even know the brand.",
+      "Duration": 30,
+      "Offset": 1287
+    },
+    {
+      "Sentence": "Like just the cheapest Android he could get because when he wants to watch YouTube. He goes to the local cafe and uses their Internet or it goes to McDonald's, and uses their inner 'cause you won't want to use his 3 gigabytes of data and use it. So he doesn't doesn't watch videos. Even on his phone. So I wonder if he could even look at my podcast site. I have to check to see if I've designed for his devices lower end device. Yeah, that's a good point. I mean, it isn't actually that much work to make sites.",
+      "Duration": 31,
+      "Offset": 1319
+    },
+    {
+      "Sentence": "Lower end devices because that's kind of how things work out of the box. It's more things that we do that change those things so if you are building just like a plain static website, then you won't really need to worry about all of these things but because obviously trying to build more and more complex. Things are using like JavaScript frameworks, and all these new technologies and that's kind of why we need to kind of walk back and think oh happen. We actually get back to where we started.",
+      "Duration": 30,
+      "Offset": 1351
+    },
+    {
+      "Sentence": "A simple document.",
+      "Duration": 2,
+      "Offset": 1382
+    },
+    {
+      "Sentence": "Ah that's interesting what you know, one thing that I actually found that that you might be interested in about my podcasts. I changed it recently to relatively static site but when you click on episodes and look at the archives. In fact, you get 600 episodes. 'cause there's been a lot of episodes and those episodes have a face for all 600 even though you don't look at all 600 faces when you hit the page. I was loading every single one of them so that page weight was 10 megabytes.",
+      "Duration": 31,
+      "Offset": 1385
+    },
+    {
+      "Sentence": "Whoa that is a lot.",
+      "Duration": 3,
+      "Offset": 1417
+    },
+    {
+      "Sentence": "It was it seemed like a good idea at the time, but then I ended up hooking up a tool called application insights and you know, there's all different kinds of tools that will do this and it basically test your website all over the earth and it said that people in Bangladesh. It takes almost 30 seconds to load this page. So I went and I did. The did the research. It turned out all I needed to do was put in some some JavaScript that would load those faces.",
+      "Duration": 30,
+      "Offset": 1421
+    },
+    {
+      "Sentence": "We enter the viewport so when someone scrolls down, then I open it made a huge difference. But I never would have known unless I either. Ask someone with low bandwidth or had a tool. Tell me that it was a problem.",
+      "Duration": 14,
+      "Offset": 1453
+    },
+    {
+      "Sentence": "Yeah, exactly and it's actually just really simple. It's really easy to do those things that result in really large page sizes and that's kind of Why?",
+      "Duration": 13,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "I don't know we have a lot of power with the web to do all these things but we also have to try as much as possible to think about what we're doing, and think about if we're doing things the right way, which is what is kind of difficult right 'cause. We have to go and research and make sure we're not just like writing nonsense that could I don't know cause everything to explode. So yeah, yeah, Yeah, but like you said there are lots of really great tools out there that will help you along this road like you don't have to necessarily know everything yourself.",
+      "Duration": 32,
+      "Offset": 1481
+    },
+    {
+      "Sentence": "You had mentioned that's really good is lighthouse, which is now built into Chrome. I think if you just open your dev tools. You can just run a quick analysis of your page and it will bring up any things that are major that are wrong with your site in terms of like performance Accessibility. All of that stuff, so you don't necessarily have to know all this stuff yourself as long as you have a few tools that you could use to just know if you're on the right track, then that's good enough.",
+      "Duration": 30,
+      "Offset": 1515
+    },
+    {
+      "Sentence": "And it is so I just went into my podcast. I hit F 12 in Chrome and I clicked on audits.",
+      "Duration": 6,
+      "Offset": 1546
+    },
+    {
+      "Sentence": "AUDIT and there's a picture of a lighthouse and now it says lighthouses looking to see what your websites like on a 3 G connection and it's doing a whole thing it's like a?",
+      "Duration": 10,
+      "Offset": 1553
+    },
+    {
+      "Sentence": "A 32nd long process, yeah, it's actually really amazing uhm. It was initially built to kind of test progressive web apps in particular 'cause. It also test things like if there's a service worker there. It tests if your application or your website rather works when there's no connection at all, so it tested you have, like, some kind of caching strategy. But it's also good like I said, for the other things like just performance and making sure you're not doing anything that's really, really going to be detrimental.",
+      "Duration": 30,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "Really suggest for any site, you have just try it out. I mean, it's free. It's in Chrome and you can just have a general idea of where your site is this is amazing. So it just finished and it is telling me that my SCO is good and then my best practices are good. But then underperformance. It says it took almost 3 seconds for the first meaningful paint.",
+      "Duration": 22,
+      "Offset": 1595
+    },
+    {
+      "Sentence": "And it took 5 seconds before it was consistently interactive so I have some blocking scripts that I didn't even know about yeah, exactly so there are many things that you might not even be aware of that always like whenever I do that, or something always comes up that maybe would have tested before and I didn't test this time, so I will definitely bring up things that you might not have even thought of as well. Yeah, this is great. It also points out, Progressive Web apps, which I know that you're an expert in that is a way of making my.",
+      "Duration": 30,
+      "Offset": 1618
+    },
+    {
+      "Sentence": "Site feel more like a Web app and it's giving me all sorts of tips about you know make changing the address bar and having a splash screen and prompting the user to maybe even add the Web app to their home screen. I had no idea this existed. Yeah, it's really amazing right and because progressive web apps are getting so powerful. There are so many more things you could do like you mentioned things like almost embodying or having a similar experience to what a mobile or mobile application is going to be like.",
+      "Duration": 30,
+      "Offset": 1649
+    },
+    {
+      "Sentence": "Splash screen and also what I mentioned about having some kind of offline first strategy. So those things. It will also bring up and like suggest like all these are things you can do and it's actually surprisingly really easy to set up these things like just having the splash screen or you need like a single file which is called like a manifest file and all you have to do is to some icons that you create and just say, Oh, you want it to be full screen. So you want to hide the address bar when the user launches the app and all of a sudden you have what?",
+      "Duration": 33,
+      "Offset": 1681
+    },
+    {
+      "Sentence": "Completely native application this looks like something that I could spend just maybe a few hours on or maybe a weekend an I could take all of these scores up into the green 'cause right now, it looks like 3 out of 5 or orange, which looks like almost failing grade. No, it's not failing until it's rent OK well. I barely I'm orange, then I'm almost failing but this is a way for me to hit the next billion users. I want to make sure that when someone hits my site anywhere.",
+      "Duration": 30,
+      "Offset": 1715
+    },
+    {
+      "Sentence": "World on any device they have a great experience. Yeah, exactly and why I also want to say is that it doesn't have to be like 100% perfect site that works for everybody in every single situation like I don't know how many sites. They are that actually hits, 100 out of 100 on that lighthouse score, but necessarily have to get 800. You should just make a little improvement everyday and that's what I also say about Accessibility because people tend to get demoralised or I'm not sure what the word is like when they hear that oh they want to make a site.",
+      "Duration": 34,
+      "Offset": 1746
+    },
+    {
+      "Sentence": "For screen reader users and they think oh they have to do this. They have to do that. But one thing that I always say is that you don't have to make it perfect. You just have to make like a little improvement. And if someone who like is using a screen reader couldn't like read anything on your sites yesterday, but then today. You added some image all text and all of a sudden a few things are more accessible to them and that is still a really worthwhile improvement to make an is the same thing for performance and internationalization.",
+      "Duration": 31,
+      "Offset": 1781
+    },
+    {
+      "Sentence": "Things you do really do make a difference, so you shouldn't get discouraged from the guy. You need to have like 100% score. You just need to kind of I don't know get one score up everyday very true very true well. That gives you just giving me a task that I'm going to spend the rest of my afternoon, fixing and I appreciate that great, fantastic, thanks so much for chatting with me. Today, no problem. Thanks for inviting me erea dairy. Okun you can find her online on Twitter and on her blog. This has been another episode of Hansel minutes.",
+      "Duration": 30,
+      "Offset": 1813
+    },
+    {
+      "Sentence": "You again next week.",
+      "Duration": 4,
+      "Offset": 1844
+    }
+  ]
+}

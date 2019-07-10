@@ -1,0 +1,528 @@
+{
+  "id": "745ebd22-e38e-4b0f-942e-9e6ce56b64e4",
+  "Title": "Jessica Rose and the Worst Advice Ever",
+  "PublishDate": "2018-02-23",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/dea177f5.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I've got a special show for you. I've got Jessica Rose, who is the host of the pursuit podcast and a tech education activist and we're trying something new. Jessica had a great idea that we would do a podcasting crossover show. Thanks for having that idea. And for including me, I was actually pretty sure it was your idea but if we just want to go back and forth and complement each other. It'll be an infection spend at least 2030 minutes compliment each other so somehow we spontaneously simultaneously had this idea.",
+      "Duration": 34,
+      "Offset": 41
+    },
+    {
+      "Sentence": "But we did that we would ask people for what the worst tech industry advice that they never received was and people got some really horrible advice. People are telling tech workers just awful things.",
+      "Duration": 12,
+      "Offset": 76
+    },
+    {
+      "Sentence": "It's almost like almost everyone gives that advice in the funny thing about advice is that the greatest advice. I ever received was that you don't need to take advice. Oh, I always preface. When I give someone advice. A well before I tell you this keep in mind that everybody is just a big bundle of biases and I really think that when you give someone advice. Most people are just they're not telling you what you should do. They're telling you what they wish. They would do in the same situation or even worse? What they wish, they would have done in the past.",
+      "Duration": 31,
+      "Offset": 90
+    },
+    {
+      "Sentence": "Much all of my advice is just like no go move to a new country. Start over. Yes, that's interesting. I'm starting to find and I'm not even that old, but I'm finding my advice is becoming old man advice.",
+      "Duration": 11,
+      "Offset": 122
+    },
+    {
+      "Sentence": "Which is like oh well young person? Let me tell you the vast the vast amount of my experience? Which is really not that much because there's so many people that have 2030 years. More than I do and it doesn't seem to me. That being old necessarily means being qualified. It just means old.",
+      "Duration": 18,
+      "Offset": 134
+    },
+    {
+      "Sentence": "II think that your may be in the minority of people who like to give advice if you're if you're smart enough, not to connect experience well length of time on the world in the world with the experience and wisdom.",
+      "Duration": 11,
+      "Offset": 153
+    },
+    {
+      "Sentence": "Yeah, well. I think that II may have incorrectly believed that there was a direct correlation. But I started interacting with people at a few jobs ago, where they had 20 years experience, but then I figured out. It was the same year 20 times. Oh, that's absolutely something. I'm going to steal and drop into a conversation sort of at the pub is though. I thought of that myself. You don't find that to be the case, though, that I mean, it really is about growth mindset.",
+      "Duration": 29,
+      "Offset": 165
+    },
+    {
+      "Sentence": "Uhm I think that might be really true II'm always a little bit more comfortable criticizing myself and other people, so if I was looking back at my experience would be like well. I've got 30. Mumble Mumble years. But there's a big chunk of my twenties. It doesn't count for much oh interesting and why would you dismiss that part of your career? Was it because you weren't you know your brainstem wasn't attached that's my excuse well. It's difficult because a lot of the things I was doing at the time I was working in education, I was working.",
+      "Duration": 31,
+      "Offset": 195
+    },
+    {
+      "Sentence": "What country and culture some of that was really valuable but sort of the going to work part like being in an office when I was working in an office of Ressies wasn't especially helpful. I don't feel like I got a lot of that. That makes sense. I didn't feel super amazing about my work experiences before my thirties. 'cause I didn't feel like I was emotionally engaged in the work as much as maybe I could have been. That's really interesting as well. I also think maybe I'm being a bit unkind to 20 something Jess.",
+      "Duration": 30,
+      "Offset": 228
+    },
+    {
+      "Sentence": "I was just a bit of a jerk in my early twenties and wasn't that helpful well. I've met a lot of very nice people in their twenties, but I would have to admit as well that I was not super awesome. Until I was probably in my mid thirties. But here we are too too. Old people complaining about young people. I think young people do have great advice, so nice. They give great advice now because I think they're paying attention more than perhaps we were.",
+      "Duration": 22,
+      "Offset": 259
+    },
+    {
+      "Sentence": "I'm consistently impressed and hopeful when I talk to the young inns.",
+      "Duration": 4,
+      "Offset": 283
+    },
+    {
+      "Sentence": "So we asked folks online to give us their worse advice and some of them were kind enough to send an actual audio files.",
+      "Duration": 7,
+      "Offset": 288
+    },
+    {
+      "Sentence": "So we've got some of those audio files that will play and then we're going to do is a 2 part show so sometimes people complain that my show is too short. They say 30 minutes isn't long enough so this is part. One and then we're going to have you go over to pursuit dot tech HTTP wack. Wack pursuit dot TECH and listen to part 2 on Jessica's podcast, which is I think a great idea. And I'm going to be adding this tomorrow, so you've got a whole day to wait until you get more delicious content.",
+      "Duration": 31,
+      "Offset": 296
+    },
+    {
+      "Sentence": "So we have folks from Twitter and the Internet's who have made us wave files and flac files of their bad advice and will play a few on my show and will play a few on your show and we will discuss them. So I've got a couple of different folks here that responded and we thank them very much for letting us use their their audio files.",
+      "Duration": 20,
+      "Offset": 328
+    },
+    {
+      "Sentence": "The first one, I've got here was from Don Akana Ho Khana. I want to play that right now that's OK.",
+      "Duration": 6,
+      "Offset": 350
+    },
+    {
+      "Sentence": "The worst industry advice, I've received wars.",
+      "Duration": 3,
+      "Offset": 358
+    },
+    {
+      "Sentence": "People seem to believe what you tell them You should work in sales.",
+      "Duration": 3,
+      "Offset": 363
+    },
+    {
+      "Sentence": "This was after a project where we had done some deep user research and produced a supporting interactive prototype to prove our hypothesis.",
+      "Duration": 12,
+      "Offset": 368
+    },
+    {
+      "Sentence": "OK, so that was not very kind or helpful advice. What did you think about that? Am I allowed to swear? I would rather that you not work blue? Oh my you would believe the actual gold to be like, Oh Hi Don Don. It completely, ignoring it. The hard work. She put in all of her research. The fact that she's a skilled professional be like, Oh wow. Peep people seem to believe what you're saying. Yeah, I've actually had another person that I work with Microsoft.",
+      "Duration": 30,
+      "Offset": 381
+    },
+    {
+      "Sentence": "People believe what you say, and you look like a salesperson?",
+      "Duration": 4,
+      "Offset": 412
+    },
+    {
+      "Sentence": "And are you wearing it like a polo. It wasn't me but it was actually a very, very stylish. Young New Yorker, who is into fashion and also a talented technologist and apparently looking put together or looking in some way competent from a fashion perspective immediately means that you should be in sales, which I think is really bad advice was this another female technologist. She did happen to be a female technologist.",
+      "Duration": 30,
+      "Offset": 417
+    },
+    {
+      "Sentence": "New York, you know you probably spend some time in New York as I have has more fashionable people in my experience than the West Coast does particularly Manhattan proper.",
+      "Duration": 8,
+      "Offset": 449
+    },
+    {
+      "Sentence": "And there seems to be a uniform you know the people that I worked with in New York, who wore suits if they were men they were in finance.",
+      "Duration": 7,
+      "Offset": 458
+    },
+    {
+      "Sentence": "And but here's a technologist to his fashionable fashionable young woman and a programmer. They put her right into a box.",
+      "Duration": 8,
+      "Offset": 466
+    },
+    {
+      "Sentence": "Yeah, I found that a couple times at conferences, I like to.",
+      "Duration": 4,
+      "Offset": 477
+    },
+    {
+      "Sentence": "I've got the job, I want so I don't dress for the job. I want but I dress for if someone's taking my picture that I don't feel bad about it in 5 years. That's actually very good advice. But a lot of times if I put on a very nice dress at an event I've had people come up and be like oh hi. Where's your booth? Where can I do like now now?",
+      "Duration": 19,
+      "Offset": 481
+    },
+    {
+      "Sentence": "So I wonder if there's not sort of some kind of desire it be like, Oh your dress will it really well miss clearly you're in sales or in some kind of non technical role 'cause you're not slouchy enough. I'm trying to remember the last time I went to a conference and saw a man dressed full on student. I like going to a wedding type.",
+      "Duration": 21,
+      "Offset": 502
+    },
+    {
+      "Sentence": "Level or going to a fashion show and it's been some time. But I would admit that I just would think that they were a fashionable young young man. I wouldn't necessarily assume that they were sales. But if I saw a fashionable young woman I might internally think marketing, which is my own personal flaw. I would think and I think that might be. I don't want to explain what happened in Don's case because really it's just white hot rage.",
+      "Duration": 27,
+      "Offset": 524
+    },
+    {
+      "Sentence": "Um.",
+      "Duration": 1,
+      "Offset": 552
+    },
+    {
+      "Sentence": "But how she managed to hear this and I assume respond politely and not punch someone in the face like wow. Not only accomplished and skilled and for some reason, people believe her, but also the incredible restrained.",
+      "Duration": 17,
+      "Offset": 554
+    },
+    {
+      "Sentence": "I think that having restraint, though, is a big part of being a technologist at this point right there's so many people that are jockeying for position that are assuming that you either know or don't know what you're talking about. There's like interactions in tech for all people are just a Thumb War of who's on top.",
+      "Duration": 19,
+      "Offset": 573
+    },
+    {
+      "Sentence": "As we struggle to communicate effectively with each other and just how exhausting it is exhausting and I would say it's even even though there's a lot of discussion around the term mansplaining and how men interact with women. There is difficult interactions with all kinds of personalities. Older man to younger man. Technical person to non technical person or vice president or super high, up non technical person who controls your job.",
+      "Duration": 31,
+      "Offset": 592
+    },
+    {
+      "Sentence": "It seems like communication is as much what technology is about as it is about writing the code right. Oh, I'd see created this Congress. Not that I wasn't before super into this conversation before I get to detect I was a teacher, but I was a language teacher and linguist.",
+      "Duration": 15,
+      "Offset": 624
+    },
+    {
+      "Sentence": "And so, yeah, positional language, the way we communicate with each other. And when it is either hierarchical or largely based on gender or position or race. It's also interesting and also messy.",
+      "Duration": 12,
+      "Offset": 640
+    },
+    {
+      "Sentence": "An you know, yeah, without diving deeper into it. It's complicated discourse analysis is something I think technologists would be really into.",
+      "Duration": 8,
+      "Offset": 654
+    },
+    {
+      "Sentence": "And so sort of looking at conversations and looking at language as though it's.",
+      "Duration": 6,
+      "Offset": 664
+    },
+    {
+      "Sentence": "A pile of data to pick apart. It's really fun well. If you don't mind. Let's dive a little bit into that because I think that's valuable there might be someone who is listening to this show who might let's just say dismiss or downplay or minimize? What dawn felt and say, Oh, well. That was just a compliment. Don could simply say, Oh, well. Thank you. But I'm not in sales. I'm a technologist and I like my job. No disrespect to sales people and then move on. How do we? Why do some people take things like that and say, Oh, I'm going to be filled with white hot rage.",
+      "Duration": 32,
+      "Offset": 671
+    },
+    {
+      "Sentence": "This might say Oh, you know well that's your opinion. Thank you but no thank you.",
+      "Duration": 4,
+      "Offset": 704
+    },
+    {
+      "Sentence": "So I think the big one is just the frequency with which you get those messages. So while it might sound like a compliment like. Hey, wow, completely ignoring the work. You've put in these people believe you like first off? Why would that why would that be a surprise? Why are you?",
+      "Duration": 15,
+      "Offset": 709
+    },
+    {
+      "Sentence": "Telling me that that's very strange interesting that's like. Oh, your code compiled isn't that nice for you. Yeah, you got good good job. You're you're you've met the baseline for competence have a cookie and following that up with Hey? Why don't you work in this job?",
+      "Duration": 15,
+      "Offset": 725
+    },
+    {
+      "Sentence": "Which while it's killed has a different skill set in his is often not given the amount of respect and which is a separate issue and something I also think needs to be looked at but it's not really given the same amount of respect or looked at the same way Mount with prestige as the technical rolled on occupies.",
+      "Duration": 18,
+      "Offset": 742
+    },
+    {
+      "Sentence": "You know that's another interest that's an interesting point. Let's pick that apart for a second because.",
+      "Duration": 4,
+      "Offset": 761
+    },
+    {
+      "Sentence": "Like there are those that believe that the word politically correct means to be overly dancing around words like it seems like it seems like I might be right now, but other people say being politically correct is to simply be kind to other humans and treat them the way that they would like to be treated. So when you say that my first impression is like? Well, I don't want to downplay sales because I know sales is nothing I could do like I've worked with sales people that had that magic whatever.",
+      "Duration": 31,
+      "Offset": 766
+    },
+    {
+      "Sentence": "That I did not have and I do not have an I'll never understand it. It is it is black, magic as far as I'm concerned sales is.",
+      "Duration": 7,
+      "Offset": 799
+    },
+    {
+      "Sentence": "But I can admit though, to feeling that same way that if you tell someone who is highly technical that they should be something that is perceived as not highly technical they'll immediately kind of like recoil and, like no. It's like saying to a surgeon, you should probably be the front desk person that takes peoples information because you're so nice. When you were saying, this, I was actually thinking about a dear friend of mine who is an orthopedic surgeon and she's tiny and cute and just an absolute joy and smarter than.",
+      "Duration": 31,
+      "Offset": 807
+    },
+    {
+      "Sentence": "Definitely smarter than me, I don't want to say smarter than most people. I know, but she's an orthopedic surgeon, which is lots of.",
+      "Duration": 6,
+      "Offset": 839
+    },
+    {
+      "Sentence": "I'm going to get this wrong, but cleansing together big bones joints and bits right. Lots of hips. Apparently, like please. Please Sawyer Sawyer drive ice, but because she warms wide. I don't mean to ascribe motives for some reason whatever reason, lots of times on her way in-n-out of work in medical settings. People say, Oh, wow because she looks quite young as well. Oh, you should absolutely get into medicine. Oh, if you thought of becoming a nurse.",
+      "Duration": 32,
+      "Offset": 847
+    },
+    {
+      "Sentence": "On a good day be like, Oh, you'd be such a great pediatrician.",
+      "Duration": 3,
+      "Offset": 880
+    },
+    {
+      "Sentence": "Oh, well, see the nurse one, I could see because it's an implied it kind of diminutive, but the be a pediatrician one that one kind of gets into a gray area where they're basically saying, You're so nice here is a place where we need more nice people. I wonder if that's what they're saying, though I think it's.",
+      "Duration": 19,
+      "Offset": 884
+    },
+    {
+      "Sentence": "Young lady, oh dear you should ascribe to a medical profession someday? What about these 2 commonly accepted paths.",
+      "Duration": 6,
+      "Offset": 905
+    },
+    {
+      "Sentence": "Word You seem like you fit in here. Let's put you someplace that I imagine where you fit interesting so that brings up. I think the root of this advice and why. We think that was lousy advice is we should avoid trying to put people into a slot. We should let people find their own slot.",
+      "Duration": 19,
+      "Offset": 912
+    },
+    {
+      "Sentence": "Well, I think that if I could with this a bit meta. If I can give advice on a show about giving advice mind to you, dear listener at would be that if you're in a technical space. Just assume everyone there is technical.",
+      "Duration": 14,
+      "Offset": 932
+    },
+    {
+      "Sentence": "Like sometimes you're going to be wrong, but nobody is going to get that grumpy about it. That is fantastic advice that mirrors some advice that I recently gave someone at a tech conference where I said assume that whoever you're talking to at the booth is the CTO until they tell you that they're not.",
+      "Duration": 18,
+      "Offset": 948
+    },
+    {
+      "Sentence": "At one thing I also really enjoyed from teaching it so the great thing about teaching is you get a lot of applicable skills to carry with you.",
+      "Duration": 8,
+      "Offset": 967
+    },
+    {
+      "Sentence": "So, in teaching you get told again and again don't ask yes or no questions to check for understanding 'cause If I say it to you like oh. Here's this thing it does this, it does, that do you understand?",
+      "Duration": 10,
+      "Offset": 976
+    },
+    {
+      "Sentence": "90% of the time just out of social convention. I'm going to say. Yes, I don't want to sound dumb yes, I understand.",
+      "Duration": 5,
+      "Offset": 988
+    },
+    {
+      "Sentence": "And whereas if you want to actually check for comprehension and especially if you're talking to someone in a technical space and you don't know what they do you don't know their background? Don't say do you understand this or but actually asks 00 Hey? Do you know what? I'm working on this new project? What kind of experience do you have with react?",
+      "Duration": 21,
+      "Offset": 994
+    },
+    {
+      "Sentence": "People might say none but that still let's them off dinner out.",
+      "Duration": 3,
+      "Offset": 1017
+    },
+    {
+      "Sentence": "That is a really good and very UM concrete something that we can all apply like today at work. We can stop this podcast and the next time we have an interaction with someone do you understand this? Yes, or no very bad?",
+      "Duration": 14,
+      "Offset": 1022
+    },
+    {
+      "Sentence": "But to ask I love that I'm going to really put that together. That's very helpful. Thank you well. I've really enjoyed it because a lot of times. I don't expect someone has a lot of experience with this, or that and asking that question like what kind of experience you have with front end web work.",
+      "Duration": 14,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "Unexpected people would just pop out and say like oh. I actually did these courses or you know, I used to work as a web dev back in the day.",
+      "Duration": 6,
+      "Offset": 1053
+    },
+    {
+      "Sentence": "Or of course, with the people on the Internet that you interact with you might just have them say, Oh, yeah. I invented that yeah. I am the creator. But I think we might have one or 2 more clips of folks getting terrible advice.",
+      "Duration": 13,
+      "Offset": 1060
+    },
+    {
+      "Sentence": "Yes, so the next one is Haley Anderson and thank you. Haley for letting us use your horrible into industry advice. Let's see what folks said to Haley.",
+      "Duration": 8,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "I'm Haley Anderson and the worst industry advice. I got was asked for a lower salary from at least 3 different career advisers on a couple of recruiters each time I still got that salary and later found out I was underpaid.",
+      "Duration": 12,
+      "Offset": 1084
+    },
+    {
+      "Sentence": "Asking for a lower salary. I have heard people give that advice before and I've never quite understood it. Why would you downplay yourself? Are you trying not to offend an organization?",
+      "Duration": 9,
+      "Offset": 1098
+    },
+    {
+      "Sentence": "II was absolutely baffled when I heard this advice and I don't know if there is a one term description for like confused and angry that I was that and I do a lot of one on one work with people getting the technology and junior technologists and this is advice tons of people get.",
+      "Duration": 19,
+      "Offset": 1108
+    },
+    {
+      "Sentence": "I feel like sometimes when I was getting started people would tell me to ask for a lower salary so that less would be expected of me.",
+      "Duration": 9,
+      "Offset": 1128
+    },
+    {
+      "Sentence": "But it still doesn't justify like I'd I still don't get to the why I was going to say. In my experience I have found the less people pay you the less they respect your value.",
+      "Duration": 12,
+      "Offset": 1138
+    },
+    {
+      "Sentence": "Oh, so coming on board when I was freelancing when I was doing some consulting work when I lowballed the pitch or when I delivered a really, really modest quote I found that people were less likely to pick it Up 'cause. It looked less valuable, but also when they did pick pick up some work that they were a lot less likely to take on my advice.",
+      "Duration": 23,
+      "Offset": 1152
+    },
+    {
+      "Sentence": "And getting paid a little bit more which is just glorious for lots of reasons. I could say to someone well. You're paying me, this amount of money for this advice. You don't have to take it but that some money.",
+      "Duration": 11,
+      "Offset": 1176
+    },
+    {
+      "Sentence": "Do you believe that it's true that if someone comes in at a certain level at a job at a technical job that it makes it that much harder for them to get like a correction like if they start behind they'll always be behind.",
+      "Duration": 11,
+      "Offset": 1188
+    },
+    {
+      "Sentence": "Uhm I think it depends on their comfort with lying and and who people in this situation should absolutely be willing and able to lie.",
+      "Duration": 9,
+      "Offset": 1200
+    },
+    {
+      "Sentence": "Real God you lie about your salary is this good advice or not add. How do I feel about this adviser giving usually don't give this advice on the air?",
+      "Duration": 8,
+      "Offset": 1211
+    },
+    {
+      "Sentence": "Why should we lie and what do you mean but you've been chronically underpaid?",
+      "Duration": 4,
+      "Offset": 1220
+    },
+    {
+      "Sentence": "And someone comes in an asks Inonu Inonu, potential role. Oh, what are you getting paid don't directly lie don't say I was making 60,000 year? Let's say euros don't say I was making €60,000. You don't want to lie directly that you can say like Well, you know for a roll like this. I'm looking in the neighborhood of 65 to 70,000. Oh, I see so your saying avoid that direct how much were you making so that because they're asking how much were you making so that they can pay you.",
+      "Duration": 31,
+      "Offset": 1226
+    },
+    {
+      "Sentence": "Mount or slightly slightly more yeah, II would say that if they press you use your good judgment but still sometimes lie the things I'm comfortable with people lying about their salary history? Feel free to inflate that I think almost everyone does if you take time out to have kid or for family reasons. Make sure you're doing a little bit of paid or unpaid contract work around that and then just go ahead and say, I took some time off to do some freelance work.",
+      "Duration": 31,
+      "Offset": 1257
+    },
+    {
+      "Sentence": "Only encourage people to lie when they want to to stretch the truth if there's a social cost.",
+      "Duration": 7,
+      "Offset": 1289
+    },
+    {
+      "Sentence": "So if you've been traditionally underpaid, especially if you're from an underrepresented group.",
+      "Duration": 4,
+      "Offset": 1297
+    },
+    {
+      "Sentence": "Broadcasting I was making this much here's how I was being held back just encourages people to like you, said create a cycle where they perpetuate that.",
+      "Duration": 9,
+      "Offset": 1304
+    },
+    {
+      "Sentence": "The one about I took time off is a definite challenge. I've seen people take time off to have kids my wife took time off to have kids and paid the price for that and then if one takes time off to for lack of a better word find themselves that seems to be at least in America frowned apon like taking time off for a what I would call a mental health break like I needed 6 months off or whatever in the US is very much frowned upon, and people will think you're.",
+      "Duration": 33,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "Foolish for doing that and then you'll pay the price and you'll never catch up with the cool thing is, we have tons and tons of data around this like folks who do organizational studies folks who work in Management Studies. We have a lot of data about what taking time off to have a kid or to go back to school or write a book. We know what kind of costs these have.",
+      "Duration": 21,
+      "Offset": 1348
+    },
+    {
+      "Sentence": "And when I encourage people to stretch the truth around that or to make sure they're doing a little bit of contract ING to say.",
+      "Duration": 5,
+      "Offset": 1370
+    },
+    {
+      "Sentence": "That instead of I had a baby. I'm really mostly concerned about women have taken time off for family reasons. 'cause they do tend to get punished for that quite a bit more.",
+      "Duration": 10,
+      "Offset": 1376
+    },
+    {
+      "Sentence": "Yeah, but my wife did some volunteer work and the intent here is to avoid large gaps or large unexplainable gaps where someone sees clearly on your resume April 20:17 to March 2015. Nothing yeah, and I always try and remind people that if you're doing unpaid work. If you're volunteering if you're helping people with stuff if you're doing web design for your friends unpaid work is still word that is, it that is good advice. I think that that is a really good reminder even if you're.",
+      "Duration": 30,
+      "Offset": 1388
+    },
+    {
+      "Sentence": "Near churches website all of those things can be expressed for lack of a better word. Even spun as work 'cause. It was and when I say lie that sounds very serious. I'd say go ahead and put your best foot forward picture. Well, like lots of times. Employers aren't always as direct and honest with you as a potential applicant or a potential employee.",
+      "Duration": 24,
+      "Offset": 1420
+    },
+    {
+      "Sentence": "And you kind of expect that on some level. Nobody is going to say, Oh, wow. We've got a lot of financial problems right now, so we're really going to lowball you on this salary.",
+      "Duration": 10,
+      "Offset": 1445
+    },
+    {
+      "Sentence": "You know that one is it that is so interesting. I had someone reach out to me recently because they were going to take a job at a large company. They had 10 years in the business and they wanted the title. Senior and the company was giving them an offer that was one notch below senior.",
+      "Duration": 18,
+      "Offset": 1456
+    },
+    {
+      "Sentence": "And that they took it as a kind of a personal affront and in digging around. It turned out that that was a standard thing that that company did to allow people to hit the ground running and then they promote you to senior within 6 months or a year but that wasn't information that the person was able to receive from the recruiter that was inside industry information that they had to go and dig out from a person on the inside had. They not known that they would have simply left the offer and said.",
+      "Duration": 30,
+      "Offset": 1475
+    },
+    {
+      "Sentence": "Forget you people.",
+      "Duration": 0,
+      "Offset": 1505
+    },
+    {
+      "Sentence": "And I'm always maybe maybe I'm a suspicious old lady from a little bit suspicious of companies where they like Hey come on in on these terms and then you know what we absolutely swear in 6 months. We will sort you out, and will do right by you. Yeah, unless it's on paper, it probably never happened wouldn't you say? Yeah, well get everything in paper and even when you've got it in paper?",
+      "Duration": 21,
+      "Offset": 1507
+    },
+    {
+      "Sentence": "Go in with some gentle trepidation, coupled with your hope bite reputation you mean a healthy dose of skepticism and suspicion just a touch. I think that's good advice. So I'm hearing us say that we want to help people avoid getting into slots. Whether that slot be liked on where someone in wanted them to be in sales. Even though that was not appropriate or with someone like Haley, someone was gently nudging them towards a lower pay job maybe a junior position as well.",
+      "Duration": 31,
+      "Offset": 1529
+    },
+    {
+      "Sentence": "Take advice from people who can't recognize or don't value your skill set.",
+      "Duration": 4,
+      "Offset": 1561
+    },
+    {
+      "Sentence": "Uh with Don the only thing they advice giver heard the only thing they could process was wow. People believe you they weren't able to see the full body of her work. Her knowledge and experience and with Haley. They just could not appropriately value her skills in the workplace. Oh, just ask for a bit less and we fine who do you think we should ask advice of because I feel like sometimes if you would ask advice of your family there too close. But if you ask advice of acquaintances or God forbid the random Internet not the Internet.",
+      "Duration": 35,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "So far, so somewhat is the ideal sweet spot for advice asking.",
+      "Duration": 4,
+      "Offset": 1602
+    },
+    {
+      "Sentence": "So I always like to ask at least 3 people had something important, and I try and ask people who have backgrounds somewhat similar to mine if possible, and this gets a lot more difficult if you are from a group traditionally underrepresented in Tech and doubly hard again. If you're from one of these groups and you're in a really special needs like you might be the only person very much like you in this space.",
+      "Duration": 25,
+      "Offset": 1607
+    },
+    {
+      "Sentence": "Uh-huh.",
+      "Duration": 0,
+      "Offset": 1633
+    },
+    {
+      "Sentence": "Yeah, that is a very good point. I think that if you can find those people. You should hold on to them and that you should make them a part of your street team or your personal board of directors, Yeah and.",
+      "Duration": 11,
+      "Offset": 1634
+    },
+    {
+      "Sentence": "Big if there's very few of you in that space supporting each other is going to be even more valuable.",
+      "Duration": 5,
+      "Offset": 1647
+    },
+    {
+      "Sentence": "Definitely I wrote a blog post a while back and made a website to support it called life's board of directors and I commented how people will take the time to sit down and write a business plan for their business, or their startup. But so rarely do. We sit down and write a business plan for ourselves and our personal career and even less likely? Are we to make a board of directors to support that that venture. But if you are a venture? Why shouldn't you have a board of directors supporting it.",
+      "Duration": 27,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "I think that's a really like really, really lovely way to look at it.",
+      "Duration": 3,
+      "Offset": 1681
+    },
+    {
+      "Sentence": "As well, I always try and remind people that when you're asking for advice. Make sure that you have someone to go to or make sure you have perspectives outside your company. So when I manage people, especially junior people. I always like to ask OK do you have someone else someone external to the company? Who is not necessarily a formal mentor but someone who could give you advice someone you can run things past.",
+      "Duration": 22,
+      "Offset": 1685
+    },
+    {
+      "Sentence": "Um nobody's completely disinterested, but trying to find people who have as much of your best interests at heart. Yeah, with his few conflict's interests as possible is always a nice idea very true very true so that is going to be the end of part. One of our worst advice show series. We're going to ask you now tomorrow or today, if it's the future to go over to pursuit dot tech PURSU it dot TCH.",
+      "Duration": 30,
+      "Offset": 1709
+    },
+    {
+      "Sentence": "Listen to Jessica and I on part 2 on the pursuit. Podcast thanks so much for having this idea, Jessica. Thank you so much for Co heading this idea. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 18,
+      "Offset": 1740
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "id": "80bc1f67-34ce-44ce-956e-693cf54c68bd",
+  "Title": "Inside Linux on Windows with WSL and Tara Raj",
+  "PublishDate": "2018-08-23",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/d8eac657.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by Datadog, a cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "It's to identify anomalies and collaborate with your team to troubleshoot and fix issues fast. I'd like you to try it yourself by starting a free 14 day trial today.",
+      "Duration": 9,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Listeners of this podcast will also get a free data dog T-shirt get started at bitLY.com slash DATA dog shirt.",
+      "Duration": 8,
+      "Offset": 41
+    },
+    {
+      "Sentence": "That's bitLY.com slash DATA dog shirt.",
+      "Duration": 2,
+      "Offset": 51
+    },
+    {
+      "Sentence": "Weather.",
+      "Duration": 1,
+      "Offset": 59
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of cancel minutes and today I'm talking with Terra Raj. She is a program manager at Microsoft and she owns the windows subsystem for Lennox how's it going. Hey Scott, thanks for having main? Yeah. Thanks for talking about this? Like I'm a huge fan of this feature. This is the feature that I like to go and think if I talk to a group of people and I say who here knows you can run like Lennox natively on windows and like one hand goes up, but the rest of the paper like what and then I go to the windows store and search for Lennox and then it's like right there, I think you can.",
+      "Duration": 30,
+      "Offset": 67
+    },
+    {
+      "Sentence": "The Windows store and then all of the like like the 12 levels of grief like people like denial and then acceptance and it's great to see when people go through. That process right in front of you. Oh yeah, and they're like, I don't want this to be true but also I need it to be true? How do I feel about this? What should I do about this? Yeah, it really is something else and that's what makes working on this product so much fun so break it down? How long is this been out.",
+      "Duration": 32,
+      "Offset": 99
+    },
+    {
+      "Sentence": "There's a beta for awhile. I talked to some people who say I tried it a minute ago. I didn't do what I wanted to do or I thought it was a beta break break it down from where is this feature and How do I get it? Yeah, so basically this was called in its first generation bash on windows and that was released in May 2016 at Microsoft build.",
+      "Duration": 21,
+      "Offset": 132
+    },
+    {
+      "Sentence": "And that's when it was first announced and since then. It's evolved quite a bit. The beta tag came off about a year later and now this is a fully supported feature so you can actually install a distro from the windows store. We have a variety of flavors of Lennox that you can get ranging from Kubuntu to Debian to Souza.",
+      "Duration": 25,
+      "Offset": 153
+    },
+    {
+      "Sentence": "And.",
+      "Duration": 0,
+      "Offset": 179
+    },
+    {
+      "Sentence": "You install that from the Microsoft Store and to actually get the underlying technology that let's you run. These Lennox binaries on windows. You enable an optional windows feature called the windows subsystem for Lennox once you go. You enable that you then install your favorite distro from the store and then you're good to go to start using this command line environment do. I need to, like turn on hyper V or do I need pro?",
+      "Duration": 30,
+      "Offset": 181
+    },
+    {
+      "Sentence": "Is windows home? Can she run this?",
+      "Duration": 1,
+      "Offset": 211
+    },
+    {
+      "Sentence": "Yeah, you can run this on any windows. Q and as long as it's the Windows 10 anniversary update or later. You're good to go. You don't need to enable hyper V or other optional features just that Windows subsystem for Lennox or as we call it WSL for short since that's a bit of a mouthful once enable that you're good to go so WSL is anywhere, and that means it's on my wife surface laptop or any doesn't matter. The age of the machine. It's just simply if you have windows.",
+      "Duration": 33,
+      "Offset": 214
+    },
+    {
+      "Sentence": "History or up or later, so if you basically if you're running Windows Update on the regular or it's getting run on the regular you probably have this already.",
+      "Duration": 7,
+      "Offset": 248
+    },
+    {
+      "Sentence": "That's right and you said that it doesn't need hyper V so when it's running like if I go run. This if I type start menu. And I type bash and I hit enter and I type like vim and I'm now. I'm running them. It's not in a virtual machine, but it's still Lennox.",
+      "Duration": 16,
+      "Offset": 257
+    },
+    {
+      "Sentence": "That's right and that's where really the Magic of WSL comes in so this is a lightweight command line environment. It actually doesn't require the overhead of a virtual machine, so really the way to think about. WSL is this underlying translation layer where we're taking Lennox user mode and that's the app that you're getting from the store and then we take those syscalls and we translate them over into basically away the windows kernel can understand it.",
+      "Duration": 30,
+      "Offset": 274
+    },
+    {
+      "Sentence": "WSL does is it allows for that translation OK, so I'm trying to translate this in my brain and paraphrase. An also like come to terms so I'm going to watch me go through the 12 levels of whatever during this podcast, which is cool and I appreciate you guiding me through that my acceptance that ultimately I will accept WSL is being a thing that I want OK, so if I write some code.",
+      "Duration": 30,
+      "Offset": 305
+    },
+    {
+      "Sentence": "Never C sharp or Java or C&I. Save file dot open at some point, someone's gotta go to the actual disk and look for the file that open the file right so there's all these layers of abstraction. An I know Windows 32 or what they call win 32 development has the win 32 and then ultimately the kernel underneath it. So there is a file open that everybody uses to go and open files and that's what they call the win 32 API. That's a call into the system now you use the term syscall SYS?",
+      "Duration": 33,
+      "Offset": 336
+    },
+    {
+      "Sentence": "Yep, and that's that's a Lennox thing or that's an operating system thing. So this is more of an operating system thing. So what we're doing is Lennox expects the underlying operating system architecture to be that.",
+      "Duration": 15,
+      "Offset": 370
+    },
+    {
+      "Sentence": "Of Lennox were pudding this translation layer where one in user mode. You're trying to call the Lennox operating system. Now this kernel component, will actually take those syscalls and translate them into what the Windows operating system can understand so then we can dig into your file system. IO and include that so if I say I want to do a file read syscall that is going to ultimately get called go get the work is going to get done by the kernel.",
+      "Duration": 33,
+      "Offset": 386
+    },
+    {
+      "Sentence": "Case it's all Lennox all the way down except for the actual kernel. Windows does the work that's correct and so we actually use a technology that is called Pico processes so we take each of those syscalls and we kind of packet them up and what we call a pico process, which then the WSL layer of the kernel can translate into a Windows system call and it's actually kind of interesting.",
+      "Duration": 31,
+      "Offset": 420
+    },
+    {
+      "Sentence": "She was created by Microsoft research and it's a project called drawbridge, which essentially bridges. The gap between the Lennox an Windows Kernels. Anet powers many technologies that we use here at Microsoft, including SQL server on Lenox and so we are also using this technology to make it possible to essentially take Lennox and run it on windows OK. This is interesting select all of the neurons are starting to like.",
+      "Duration": 31,
+      "Offset": 452
+    },
+    {
+      "Sentence": "I'm attaching different things like you're probably familiar with the very old wine project, where people have without looking at the windows source code made it so some Windows applications can run on Lenox. The acronym wine WINE actually means wine is not an emulator and then when someone calls a win 32 call.",
+      "Duration": 24,
+      "Offset": 484
+    },
+    {
+      "Sentence": "Mine will translate that into a Posix call or an underlying operating system call so when I go and say.",
+      "Duration": 7,
+      "Offset": 508
+    },
+    {
+      "Sentence": "Open you know like a syscall 2. Sis underscore open you see it, you see it going by and you stop it before it gets to the windows kernel and you just let the you stop it before it gets to the Linux kernel in windows handles it and there's really no Lennox kernel at all like you didn't install the Linux kernel on the system. Did you that's right there is no Linux Kernel on the system, where it just translating those calls as they come in right on the fly. Well, that makes me think then if I were maybe opening a file in the Lennox in the WSL world.",
+      "Duration": 32,
+      "Offset": 516
+    },
+    {
+      "Sentence": "Running in the windows world, the same time, like let's say it was on my desktop.",
+      "Duration": 3,
+      "Offset": 550
+    },
+    {
+      "Sentence": "Then because the kernel is ultimately the one that does the file opening both Linux and windows could be told that that file was already open right? Which seems like a good thing.",
+      "Duration": 8,
+      "Offset": 554
+    },
+    {
+      "Sentence": "And you can communicate between the Linux world or the WSL environment that you're running as well as the windows world. So let's say you want to open up one of the projects that you're working on let's say a note application.",
+      "Duration": 15,
+      "Offset": 564
+    },
+    {
+      "Sentence": "In windows on your VS code environment in windows. You say code dot from WSL in that area path and we actually open up that project for you?",
+      "Duration": 11,
+      "Offset": 580
+    },
+    {
+      "Sentence": "Envious code on windows, but it's your Lennox Project, Oh OK. So then that's interesting so if I type code. Dot whatever that means that you in the Linux World in the WSL world have kind of added. Uh kind of a path and when you see Lennox attempt. You and presumably fail to run a Windows Executable. You just pass that work off to windows itself.",
+      "Duration": 24,
+      "Offset": 592
+    },
+    {
+      "Sentence": "Yeah, that's I mean that's fundamentally what we're looking at here and we call this interrupt like that's the term that we've been using where you can go back and forth between your windows annual Onyx Environment and that's what makes us.",
+      "Duration": 11,
+      "Offset": 618
+    },
+    {
+      "Sentence": "A little bit interesting where we're talking about virtualization. We think about virtual machines and containers and I think the way you can think about. WSL is somewhere in between the 2 where you get this environment that is kind of container like but at the same time, it's not sandboxed you can go and reach outside of that container you can go and look inside. Your windows files or your Lennox files have executables going back and forth so you can say from WSL notepad dot EXE.",
+      "Duration": 33,
+      "Offset": 630
+    },
+    {
+      "Sentence": "A file in notepad that's actually.",
+      "Duration": 2,
+      "Offset": 665
+    },
+    {
+      "Sentence": "What Windows version of notepad me this is interesting and I think I want to back up a minute because when we talked about like the files as an example. Let's not think about opening files as an example. Let's think about opening a port.",
+      "Duration": 12,
+      "Offset": 668
+    },
+    {
+      "Sentence": "If I opened up something in node on WSL on let's say localhost port 8080.",
+      "Duration": 5,
+      "Offset": 681
+    },
+    {
+      "Sentence": "And then I'm go out into windows and I open up PowerShell and I try to open up port 8080 with like C Sharp.",
+      "Duration": 6,
+      "Offset": 688
+    },
+    {
+      "Sentence": "That because the kernel ultimately is always the windows kernel. I would assume that Lennox or WSL rather got their first therefore, it's it owns deport.",
+      "Duration": 9,
+      "Offset": 695
+    },
+    {
+      "Sentence": "Yeah, that's correct so it owns the port at that point, so really you would only be able to open up that first application from WSL.",
+      "Duration": 9,
+      "Offset": 706
+    },
+    {
+      "Sentence": "Which is kinda cool actually the more that I realized that this is exactly what I would want I would want to be able to go and run. My note app. NWSL open port 8080, then windows open up. My browser and go to localhost 8080 and I would expect it to just work because this is the part where it's kind of weird localhost in that context is my computer. I don't think of WSL as its own computer, even though it's it's own operating system.",
+      "Duration": 24,
+      "Offset": 716
+    },
+    {
+      "Sentence": "Right and that's why I was saying it's a little bit different than a virtual machine because you're really you're sharing your IP address you're looking at the same operating system at its core and something that's really interesting here is talking about opening up a note application in Port 8080 when you do that. It will not say you're envious code on windows. You're actually targeting a Lennox version of node so if you have a production environment.",
+      "Duration": 31,
+      "Offset": 742
+    },
+    {
+      "Sentence": "That runs Lennox you can actually test your application against that same Lennox environment while still being on your windows machine. Oh interesting OK. So then if I were using nodeor.net in my case. I would need to maintain my installations of nodein.net and python, etc. In 2 places and I might want to make sure that I know about the versions that are in 2 places, I might have one version of node in windows and one in WSL. So I just need to be conscious of that. That's right, yeah, you should be conscious of.",
+      "Duration": 30,
+      "Offset": 774
+    },
+    {
+      "Sentence": "Versions, but what you have installed so WSL really is a separate environment. So it's not like all your NPM packages are going to follow. Follow you between windows and WSL. We do have some tools to help you with that. We have AWSLENV environment variable where you can create that in windows, so that you can do some sharing between the 2 but that is defined by you.",
+      "Duration": 25,
+      "Offset": 805
+    },
+    {
+      "Sentence": "Yeah, I've got myself into you know lower case T trouble. A couple of times where I had versionof.net like 2.1 in the windows world and I was working on something on my desktop and then I went into WSL and my desktop or specifically my C drive is available at Mount see stars like oh. I'll just keep working in Lenox and it went down, Slash Mouse Slash C users got desktop, but I didn'thave.net 2.1.",
+      "Duration": 29,
+      "Offset": 832
+    },
+    {
+      "Sentence": "In a in a WSL world and I got all kinds of weird errors and it took me a minute, 45 seconds to go. I forgot to install the packages that I needed in this universe for this user land. I guess would probably be the best way to put it.",
+      "Duration": 15,
+      "Offset": 862
+    },
+    {
+      "Sentence": "Yeah, I think that's great that you bring that up so considering let's backtrack a little bit that you had to say Mount Slash C guessing see was your system drive. WSL really sees Windows as a mounted drive.",
+      "Duration": 16,
+      "Offset": 878
+    },
+    {
+      "Sentence": "On top of this one X user mode right and so that's why you have to go and say slash Mount Slash C.",
+      "Duration": 7,
+      "Offset": 896
+    },
+    {
+      "Sentence": "And then In addition to that you're going into the windows file system at that point.",
+      "Duration": 5,
+      "Offset": 904
+    },
+    {
+      "Sentence": "Then there is a reason why we deliberately do less as well as.",
+      "Duration": 5,
+      "Offset": 910
+    },
+    {
+      "Sentence": "The way that the metadata of Lennox files looks like and that of windows files is rather different and so we're kind of taking out the need for you to consciously consider metadata or case sensitivity for example, by making it easy for you to create files on the windows side of your file system and access those from WSL. It's",
+      "Duration": 26,
+      "Offset": 916
+    },
+    {
+      "Sentence": "A little bit more difficult to go from the windows side and access your WS all files because of that metadata difference and we want to make sure that we help customers and prevent you from corrupting files for example, OK so it sounds like you're saying.",
+      "Duration": 18,
+      "Offset": 943
+    },
+    {
+      "Sentence": "Because I'm on a Windows machine ultimately because it's the windows kernel that ultimately does the work I should spend most of my time from a file system perspective in my data files my code whatever all on windows like I can do that. I can put files and do stuff and put files over and in the WSL world. But if I really want to share them. They need to stay on quote Unquote C drive and not inside the Linux file system, yeah, preferably on that side of things and.",
+      "Duration": 31,
+      "Offset": 963
+    },
+    {
+      "Sentence": "Be able to do what I mentioned before like targeting a Lennox version of node even if your project is on the windows side of things OK. Well, that doesn't sound too complicated. I can just have as many Mount points as I want then. Yeah, yeah, so we have the ability. If you want to Mount USB for example, you can do that, too? What about like network drives like Sambhar SMB.",
+      "Duration": 26,
+      "Offset": 995
+    },
+    {
+      "Sentence": "Yeah, so many of those are possible. There is a little bit of a can of worms that you open when you try to use something like Samba, but for the most part, those are available.",
+      "Duration": 10,
+      "Offset": 1022
+    },
+    {
+      "Sentence": "Is it a can of worms? That's worth interesting like we should talk about it or is it like a can of worms like it's complicated or can of worms like it doesn't work. It's",
+      "Duration": 7,
+      "Offset": 1033
+    },
+    {
+      "Sentence": "The combination of the latter 2, where parts of it don't work, and then it is also a bit complicated. Well, that brings up an interesting topic, then so let's talk about like what works and what doesn't there are a whole list of syscalls but I assume that someone could do some analysis like file open is the one we used an example airport open, but then I assume that there's more obscur. Syscalls weather like how many syscalls are there in Lenox or we talk about hundreds or thousands?",
+      "Duration": 28,
+      "Offset": 1042
+    },
+    {
+      "Sentence": "So I'm not entirely sure how many syscalls. There are in total, but from a compatibility perspective we're at about 85% coverage in WSL and the reason for that goes back into our conversation about the translation and these pico processes. We've had to go. One by one and enable very assist calls, especially those that are not a straightforward want to one translation.",
+      "Duration": 28,
+      "Offset": 1071
+    },
+    {
+      "Sentence": "So what we've done is we take the user feedback that we get and we see which of these asks for Syscalls comes to the top of the user voice asks or our GitHub repo where files issues have been filed.",
+      "Duration": 16,
+      "Offset": 1100
+    },
+    {
+      "Sentence": "And so we go through those asks and then based on how many people are asking for a specific. Syscall then we go and implement that so for example, one that is a recent ask that has really gained a lot of interest is for?",
+      "Duration": 18,
+      "Offset": 1117
+    },
+    {
+      "Sentence": "MSG get or message yet and let's just call that we don't have implemented yet, but because we have so many customers and their companies that rely on the messaging service syscall. We're going to go and put in the work to implement that and it's definitely not a straightforward implementation, so that's why we hadn't had it before, but now that we have enough asks for it. We're sending our developer team out to go and help make that happen.",
+      "Duration": 30,
+      "Offset": 1136
+    },
+    {
+      "Sentence": "I see OK so when you say 85%.",
+      "Duration": 3,
+      "Offset": 1168
+    },
+    {
+      "Sentence": "That doesn't make me like that number doesn't seem super high, but at the same time, everything I've tried has worked so that makes me think that the 85% that you did pick covers alot like it feels as a user of WSL 90 + 95 percent. Plus, like I literally. I literally never tried anything and had it fail, which means I must be using the top 85% of Cisco is not the more obscure. One so the last 15% seems like it's long tail, perhaps more obscure stuff.",
+      "Duration": 30,
+      "Offset": 1171
+    },
+    {
+      "Sentence": "Yeah, and based on the user feedback that we've getting I think that's a pretty accurate perception. But it is more on the long tail there, we have.",
+      "Duration": 7,
+      "Offset": 1203
+    },
+    {
+      "Sentence": "Couple of customers have asked for things here and there, but if we haven't implemented it chances are there haven't been a ton of asks for it. But I'm over here at github.com slash Microsoft slash WSL an I went as you were talking and looked up. MSG get and I can see that yeah, someone raised an issue, there's discussion about it. This is interesting. Someone said reopening this issue. Since this is the only piece of these system 5 family of system calls it is still unimplemented.",
+      "Duration": 33,
+      "Offset": 1211
+    },
+    {
+      "Sentence": "Have interesting discussion where they're saying yeah. I'm going to use Posix message queues. There's justifications about it. Someone rolls in and says, yeah, we haven't quite done. Q support, but like you're saying and here's you just literally a month ago, saying Yep. We're doing. Sis calls in a per need basis and now we're seeing more and more people are asking for this so how do you implement these is this something that I get with my regular windows updates?",
+      "Duration": 25,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "Yeah, so basically we have various rings of updates the fastest of which is the insiders fast ring. So the windows insiders program allows you to get updates. A little bit quicker than the regular RTM. Update we push our changes to windows insiders. We look for quick customer feedback and as you can see from our GitHub repo. It's super active so we have a ton of customer is giving us feedback and based on that feedback we iterate on the changes we've made.",
+      "Duration": 31,
+      "Offset": 1273
+    },
+    {
+      "Sentence": "Roll it out to RTM.",
+      "Duration": 1,
+      "Offset": 1305
+    },
+    {
+      "Sentence": "OK, so do I have to update my Lennox to get that update or I just have to just keep my windows going and then like some Cisco. I want it will just show up one day and there, it is yeah, so you don't actually need to specifically update your distro app. For example, it comes in through the windows updates, so WSL is tide to the operating system here. So when windows updates. We update the WSL layer. Now let's say Canonical has an update.",
+      "Duration": 31,
+      "Offset": 1307
+    },
+    {
+      "Sentence": "Ubuntu's app in the store then you would need to go and update your apps separately so really the store application or your flavor of Lennox and WSL or 2 separate things have them working together. But they have 2 different upgrade and update paths OK. So then when I'm downloading like when I'm quote Unquote Downloading Lennox from the store. I'm just getting the Userland. I'm getting the zip file or a tar file or a gzip or whatever.",
+      "Duration": 34,
+      "Offset": 1339
+    },
+    {
+      "Sentence": "I have of Canonicals Aboon 2 or whatever Lennox I decided to get.",
+      "Duration": 5,
+      "Offset": 1374
+    },
+    {
+      "Sentence": "I downloaded it unfolds you know into the file system somewhere right then WSL the subsystem underneath it handles the things for me.",
+      "Duration": 9,
+      "Offset": 1379
+    },
+    {
+      "Sentence": "But if I go back to the store. Later, Anne. I see that that that app has updated that and imputing app in air quotes right the app.",
+      "Duration": 7,
+      "Offset": 1389
+    },
+    {
+      "Sentence": "I've already got Lennox installed like you can't really touch. My Lennox from the store. Can you what am I updating yeah, so we don't touch your links from the store we have you manually go and upgrade that because we know that you have various files and?",
+      "Duration": 16,
+      "Offset": 1397
+    },
+    {
+      "Sentence": "Configuration settings that you want to keep.",
+      "Duration": 2,
+      "Offset": 1415
+    },
+    {
+      "Sentence": "So if you do want to go and update your application. We have a way in which you can unregister your current version and then go and install that version and this is through a command line tool we have called WSL config.",
+      "Duration": 16,
+      "Offset": 1419
+    },
+    {
+      "Sentence": "OK and I actually I've got a machine where I installed all the Lennox is just to see 'cause. I want to see if it was possible. It's kind of cool. I've actually got room 21604 and.",
+      "Duration": 11,
+      "Offset": 1437
+    },
+    {
+      "Sentence": "1804 on the same machine and then I get to go and type. WSL config slash list. And then set default in a set default was really interesting because did that control what happens when I Type Bash.",
+      "Duration": 12,
+      "Offset": 1449
+    },
+    {
+      "Sentence": "Yeah, that does so that actually controls what you do when you type bash in the sense that when you say bash? Let's say CMD you say bash?",
+      "Duration": 10,
+      "Offset": 1463
+    },
+    {
+      "Sentence": "Sudo apt get cow say that will actually install cow say on your default distro.",
+      "Duration": 7,
+      "Offset": 1474
+    },
+    {
+      "Sentence": "And that's what you've said as your default using that WSL config tool and you can change that default at anytime specially. Let's say you're using Ubuntu for work. But Debbie ends your favorite distro for personal projects. You can easily flip back and forth between those 2 as your default.",
+      "Duration": 19,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "Oh, OK, so it is not it's not a harmful thing in any way to run. WSL config and switch defaults. Nope, it's just a configuration setting and it doesn't change either of those systems in any way.",
+      "Duration": 13,
+      "Offset": 1502
+    },
+    {
+      "Sentence": "Hey friends this is Scott you know, listening to podcasts is a great way to keep up to date on technology since we're always learning is software people and you can also find a job or listening to a podcast. You check out our new sponsorhired.com that'SHIRED.com slash Hansel minutes on higher.com software. Engineers can get interview requests from companies that want to hire you each offer will have the salary in the equity up front, you can view those interview requests and accept reject change the offer before even talking to a company. It's a great way to find out what's out there.",
+      "Duration": 32,
+      "Offset": 1516
+    },
+    {
+      "Sentence": "Remove there working with over 6000 companies from startups to large companies from 14 major tech hubs throughout North America and Europe. What's great about this? Is it's totally free for software engineers and if you get a job throughhigher.com that ordinarily give you with 300. Thank you bonus. But if you use our special link they'll double that bonus you will actually get paid $600 when you accept that job now if you're not looking for a job. But you know, someone who is refer them to hire.com slash Hansel minutes and they'll give you elite bonus or 1000.",
+      "Duration": 32,
+      "Offset": 1549
+    },
+    {
+      "Sentence": "$7 bonus when they accept a job so check him out at hired.com slash Hansel minutes.",
+      "Duration": 6,
+      "Offset": 1581
+    },
+    {
+      "Sentence": "One of the things that was interesting when I gave a presentation recently to a bunch of for lack of a better word will column oldies people near beyond retirement age that are still computer enthusiasts. I was talking to them about how Windows 10 supported Lennox with WSL and they were like well, I've already use Cygwin.",
+      "Duration": 21,
+      "Offset": 1589
+    },
+    {
+      "Sentence": "Right CYGWIN and the way I explained it maybe you can. Tell me if I did it correctly was that Cygwin was a bunch of canoe utilities that were re compiled for windows using that code but they are ultimately on top of Windows. They're not updated as often. They're not unix. Their utilities that have been portably compiled but with with WSL I can actually be are in Dawson quote unquote.",
+      "Duration": 30,
+      "Offset": 1612
+    },
+    {
+      "Sentence": "And they pipe.",
+      "Duration": 1,
+      "Offset": 1643
+    },
+    {
+      "Sentence": "And then say bash and run it through grep can't I and I can pipe to and from Lenox and that seemed like a good reason to stop using Cygwin Yeah, absolutely. I think there are 2 main advantages every cygwin here. The first of which is just the user experience using WSL is just so much simpler the way that you can figure things and when you want to install a package you use the native package manager so in a bun, 2, you're using apt and the other side of this is what you're saying where.",
+      "Duration": 30,
+      "Offset": 1645
+    },
+    {
+      "Sentence": "These different utilities and tools and applications haven't been re compiled for windows and they haven't been recreated in anyway. These are actual native Linux binaries that you're running on windows.",
+      "Duration": 12,
+      "Offset": 1676
+    },
+    {
+      "Sentence": "So that means like I want to be really crisp here are you, saying that.",
+      "Duration": 5,
+      "Offset": 1690
+    },
+    {
+      "Sentence": "You didn't change over and when you put it into the store or did you even put in the store does Canonical put in the store Canonical puts it in the store so we work directly with them to get it, there and it hasn't been changed at all for the most part and we have a project that's open source. It's called the WSL distro launcher and it's a template to allow our district partners to take a Lennox user mode image essentially?",
+      "Duration": 30,
+      "Offset": 1696
+    },
+    {
+      "Sentence": "Each that up as a tarball that can then be distributed through the store. An let's say there is a version of Lennox. Some sort of distro that you don't see in the store. You can actually use that template in the project too, slight side load your own custom distro.",
+      "Duration": 16,
+      "Offset": 1727
+    },
+    {
+      "Sentence": "On your machine.",
+      "Duration": 0,
+      "Offset": 1745
+    },
+    {
+      "Sentence": "So if you want Alpine Lennox for example, you can go ahead and do that.",
+      "Duration": 4,
+      "Offset": 1747
+    },
+    {
+      "Sentence": "Very interesting so I could make an Alpine WSL. I could give it to like people at my job.",
+      "Duration": 4,
+      "Offset": 1753
+    },
+    {
+      "Sentence": "Yeah, absolutely all you need to do is have developer mode enabled so that you can sideload applications and you can distribute that like on your own. It's not official through the store or you can put that just on your personal machine for yourself to use.",
+      "Duration": 16,
+      "Offset": 1758
+    },
+    {
+      "Sentence": "Huh Alright Well, let me ask you this, then this is a little bit of a defensive question then why wouldn't. I just use Docker and then bring up my aboon. Two's in my Alpine Zanmai. Whatever's in a docker thing like why use WSL and not and not docker.",
+      "Duration": 17,
+      "Offset": 1775
+    },
+    {
+      "Sentence": "Yeah, I think that's a good question in the main advantages. Here are that you get the interrupt between your Lennox Annuar. Windows environment and that's something that you won't be able to do with a docker image.",
+      "Duration": 15,
+      "Offset": 1794
+    },
+    {
+      "Sentence": "Yeah, so it's kind of like when I'm in a virtual machine like I haven't opened 2 virtual machine that I fire up with with hyper V and to be Frank. I'm forever trying to figure out how to copy files in-n-out of it and I end up just either FTP or SFTP ING things into it or there's you know, there's different secure copy ways, but it isn't a drag and drop kind of a situation to get stuff that you want into the virtual machine and you always have that sense of alright? What's my IP address? What's my computer name? What's my host name here and inside and outside.",
+      "Duration": 30,
+      "Offset": 1811
+    },
+    {
+      "Sentence": "Start using W sell it really is quite seamless.",
+      "Duration": 2,
+      "Offset": 1843
+    },
+    {
+      "Sentence": "Yeah, it's super smooth and it's well integrated between the 2 sides and kind of a context thing here is that the.",
+      "Duration": 8,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "Actual Windows console is the shell around WSL. So when you pull up your Ubuntu image. It's going to look a lot like.",
+      "Duration": 9,
+      "Offset": 1855
+    },
+    {
+      "Sentence": "The command prompt and that's because the rendering and the actual shell itself is the windows console were just using all of the WSL Virtualization Stack.",
+      "Duration": 11,
+      "Offset": 1866
+    },
+    {
+      "Sentence": "Underneath that.",
+      "Duration": 1,
+      "Offset": 1878
+    },
+    {
+      "Sentence": "Ah, OK, so if I go and put in bash I put in power shell. I put in CMD dot E xe. They're all the same thing. So when I click in the corner and say properties and I see that options font. Layout dialog that I always see with colors and stuff. It's the same across all of those, 3 command prompts. Yeah, exactly and we did. That pretty purposefully as well to make the user experience between these pretty seamless, something that's kind of fun that I like to show with demos is that you can go into CMD.",
+      "Duration": 30,
+      "Offset": 1879
+    },
+    {
+      "Sentence": "Hey.",
+      "Duration": 0,
+      "Offset": 1911
+    },
+    {
+      "Sentence": "Ubuntu.",
+      "Duration": 0,
+      "Offset": 1912
+    },
+    {
+      "Sentence": "And then you look and see that your colors will change a bit and you see.",
+      "Duration": 5,
+      "Offset": 1913
+    },
+    {
+      "Sentence": "That you're actually in WSL, but the shell itself is the CMD one and it says like your Kubuntu username at home or whatever. You're setting is and you can go back and forth between CMD&WSL in less same console window. That's cool. So then there was a version of windows fast. The insiders fast that I was using that feature called sets.",
+      "Duration": 30,
+      "Offset": 1920
+    },
+    {
+      "Sentence": "This sets is coming sometime in the future, but basically it made windows get like tabs and then suddenly, I could do tabs like all like Ubuntu and power Shell and OS. All got tabs for free because it's all the same Chrome for lack of a better word. The The Box. The console host is the same across everything.",
+      "Duration": 22,
+      "Offset": 1951
+    },
+    {
+      "Sentence": "Yeah, that's right and we're working with the tab set steam to make sure that this experience going between the various consoles is one that's friendly.",
+      "Duration": 10,
+      "Offset": 1974
+    },
+    {
+      "Sentence": "Cool so people can get this today, it is not in beta. It is, but it is in constant development. You can check it out. The issues at GitHub slash Microsoft Slash WSL, an folks can find you on Twitter and ask you WSL questions. Yep, that's correct so you can find me on Twitter. Terra underscore MSFT and feel free to tweet any questions.",
+      "Duration": 26,
+      "Offset": 1986
+    },
+    {
+      "Sentence": "Feedback if you run into any issues.",
+      "Duration": 2,
+      "Offset": 2013
+    },
+    {
+      "Sentence": "And you can find installation instructions at.",
+      "Duration": 3,
+      "Offset": 2016
+    },
+    {
+      "Sentence": "Our docs page on docs dotmicrosoft.com and you can get to layer by saying AKA Dot, Ms Slash WSL.",
+      "Duration": 10,
+      "Offset": 2021
+    },
+    {
+      "Sentence": "Fantastic well thanks so much for chatting with me today.",
+      "Duration": 2,
+      "Offset": 2032
+    },
+    {
+      "Sentence": "Thanks for having me it was great to see you go through the 12 steps and accept the fact that you can run Lennox Tools on windows. I'm loving it and I'm doing it every day and I'm telling I'm talking to random strangers on the train and telling them that they should do it as well, which is a little weird. But it's also fun to watch them go through the process as well. That's great to hear thanks for having me Scott.",
+      "Duration": 22,
+      "Offset": 2035
+    },
+    {
+      "Sentence": "And this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 2058
+    }
+  ]
+}

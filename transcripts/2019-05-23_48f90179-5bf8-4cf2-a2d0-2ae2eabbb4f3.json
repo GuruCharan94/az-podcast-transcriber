@@ -1,0 +1,338 @@
+{
+  "id": "48f90179-5bf8-4cf2-a2d0-2ae2eabbb4f3",
+  "Title": "Solving real problems with software and the Human Utility with Tiffani Ashley Bell",
+  "PublishDate": "2019-05-23",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/ee754a50.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "As a software engineer chances are you've crossed paths with mongo DB at some point with your building an app for millions of users or just figuring out your side hustle. It's the most popular non relational database. Mongo DB is intuitive and incredibly easy for development teams to use now with Mongo. DB Atlas you can take advantage of Mongo. DB's flexible document data model as a fully automated cloud service. Mongo DB Atlas handles all the costly database operations in admin test that you'd rather not spend time on.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Purity high availability data recovery monitoring and elastic scaling try Mongo. DB Atlas for free today visit. WWW dot mongoDB.com slash cloud to learn more that's mongoDB.com slash cloud.",
+      "Duration": 25,
+      "Offset": 30
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another example cancel minutes and today I'm talking with Tiffany Ashley Bell with the founder and executive director of the human utility platform to bring people together from around the world help people in Detroit, Baltimore with their water bills and you've helped by thousand families now. Yes, that's that's correct. That's amazing and what does this mean you're AY combinator backed not for profit. I thought Y Combinator wanted to make the next Facebook billionaire and but you're a nonprofit right, I mean, they they want to.",
+      "Duration": 31,
+      "Offset": 61
+    },
+    {
+      "Sentence": "So recognize that there's an opportunity to use some of the learnings that they've had from for profits like you know drop box and air BNB and others that they can use to like help nonprofits. Basically, especially like having like a metrics based way of operating and that kind of thing and you went to went to Howard in computer science and you worked in Ruby on Rails in iOS and I bumped into you online along time ago, just coding and doing stuff and moving away around the world, but then you were what's called a code for America fellow? What does that mean?",
+      "Duration": 32,
+      "Offset": 92
+    },
+    {
+      "Sentence": "You're both a programmer, but you're also kind of politically involved. Yeah, I mean, so code for America is an organization that again like, this, funny a lot of things that I've done over the last probably going on 10 years now have happened a lot because of Twitter and so I ran another startup before code for American but forward the human utility called pencil you in. We did an appointment scheduling, but that didn't do so well so at a certain point that needed to be shut down and I was looking for something else to do basically.",
+      "Duration": 30,
+      "Offset": 125
+    },
+    {
+      "Sentence": "The code for America literally followed me on Twitter and it was kind of like Oh, you know this is kind of interesting say yearlong fellowship basically or at least the way it was structured previously. They've changed their programs at this point but the way of a structure when I was there in 2014.",
+      "Duration": 14,
+      "Offset": 156
+    },
+    {
+      "Sentence": "They took teams of 3 technologies, so it each team was composed of a designer developer and a person who did user interface and user experience research and they put this team into at the time, 10 different cities in the United States and I think there may have an international team, but 10 different cities in the United States. At least in your goal was to go into the city and help people and see government discovers some problem or some problems that you could use technology to help citizens with so.",
+      "Duration": 33,
+      "Offset": 171
+    },
+    {
+      "Sentence": "Team Atlanta and our team end up working on a couple of things or a few things one was improving the situation around? What happens when you get a ticket in Atlanta for something because the way that it used to work was that in Atlanta really stood still works that way probably but anytime you get a ticket in Atlanta. You have to go to court to deal with that matter so if you had like a broken tail light that you got a ticket for had to go to court for that. But people were missing their court dates because you didn't get your court date assignment. The same day that you got the ticket. It would come up some other time.",
+      "Duration": 30,
+      "Offset": 205
+    },
+    {
+      "Sentence": "Really had like City Council members who have been arrested because they had not shown up in court basically over small things or whatnot 'cause. They never knew when to get in right like they would tell you but it wouldn't be consistent. You'd have to go to some website or something or call and figure out when so the team built something that would text you when your court date was supposed to be another thing we worked on was like designing a new website for the procurement Department because you know the city of Atlanta is is really popular city to do business with.",
+      "Duration": 30,
+      "Offset": 236
+    },
+    {
+      "Sentence": "We have a good way of like publishing opportunities and like giving you a sense of what they've also offered in the past things to do business with them through so we built the new website for that kind of thing or what not and that's pretty much what all the teams did. They all went into different cities and picked out different problems that needed or could be helped by some kind of like really quick cleverly implemented technology solution to help citizens out you know it's interesting to think about how of course. We all want to use technology to improve lives to help people.",
+      "Duration": 30,
+      "Offset": 267
+    },
+    {
+      "Sentence": "You start poking around in local government. You know, small scale things. Some you know with all due respect to all of our hard working people in government and local government. The solutions that they have in the technology. They have in the gaps can be filled by pretty straightforward bits of Workflow, not not rocket science. We don't need machine learning to make it easier for someone to find out when to come and pay their parking ticket exactly you don't you're totally right. But I think one thing that I saw.",
+      "Duration": 31,
+      "Offset": 298
+    },
+    {
+      "Sentence": "That's tent and partially before 2 previous experience working with the federal government contractor there are a lot of people in government. who know how to buy an look for solutions like you know what people like listening to this podcast and you and I would know how to find you get these situations where cities have these multimillion dollar contracts to really large corporations that make databases when they could be using probably something a lot simpler in a lot of different places.",
+      "Duration": 30,
+      "Offset": 329
+    },
+    {
+      "Sentence": "Some sales person came in convinced a person who did know how to buy these things or didn't know that they could just go somewhere and perhaps you know download something and still get support because I think a lot of people. They want a phone number to call so they're used to like these big enterprise companies coming in and offering all that sort of stuff at great expense, but they don't realize that it doesn't take all these heavy solutions to do simple things for citizens and that lack of know how isn't there in a lot of situations?",
+      "Duration": 30,
+      "Offset": 360
+    },
+    {
+      "Sentence": "I was seeing in Atlanta that's what I was saying, You know the work that we do it. Other different cities. Now, with the water project or whatnot that expertise just isn't there and so you get people kind of being taken advantage of trickles down to what citizens experience. The idea that they might be taken for a ride when something that straightforward or open source or readily available could solve the problem, but then they have to deal with not just the technology issues. But the speed of government as well as procurement and things like that, you can really hamstring people.",
+      "Duration": 30,
+      "Offset": 391
+    },
+    {
+      "Sentence": "I think also one thing that I saw Atlanta not to not to bad mouth him, but just like people don't want to get in trouble for the things that they buy like what's the old saying like you never get in fired or whatever for buying IBM. It's that kind of sort of thinking because everything that you do is public and so people scrutinize every decision that you make and people don't want to get caught out having paid for something that didn't work. You know you've used 30 K in taxpayer dollars to pay for something that you didn't even need.",
+      "Duration": 31,
+      "Offset": 422
+    },
+    {
+      "Sentence": "So what's safe but that also translates to being expensive in a lot of cases so it's that kind of situation. So you spent that time at code for America. You're solving problems at the small scale, but then how did you come up on the problem around running water in Detroit and determine that it was on you and your cohorts to fix that. Yeah, I mean, so the situation with the water was just literally something I read about on Twitter like, at that time and I still do this like every morning when I wake up I spend at least an hours scrolling through Twitter.",
+      "Duration": 32,
+      "Offset": 454
+    },
+    {
+      "Sentence": "People are talking about a news postings and stuff, and Whatnot and actually. I don't do it as much since our political situation is changing is kind of depressing the kinds of things that you see nowadays, but back then. I saw an article in the Atlantic that talked about how 100,000 people in Detroit. We're about to have to live without running water. Most of them because they couldn't afford the water bills and I thought that was crazy because I'm thinking to myself like I'm literally in the middle of my code for America Fellowship at that time and I was just thinking to myself like OK.",
+      "Duration": 30,
+      "Offset": 487
+    },
+    {
+      "Sentence": "Have been privy to a lot of how City Hall in Atlanta works like we got to walk around the mayor in different stuff and Whatnot. So you see all these decisions being made, and how people are thinking. So it made me kind of wonder when I saw that story, where they're literally turning off the water. People who like I've been to peoples houses. They don't have anything so they're not taking the money and going shopping. They just literally don't have it, but it's like? What kind of decisions in City Hall had to be made where you determine that yes, we have this woman who.",
+      "Duration": 31,
+      "Offset": 518
+    },
+    {
+      "Sentence": "On Social Security 700 Bucks, a month. We don't care, we're still going to turn water off because she owes the city money for the past 3 months because of water bill and it just made me kind of wonder and I thought it was bad. But it was really, really, and I'm being polite by saying bad. I thought was really crappy that that was going on inside tweeted about just seeing that. I just asked does anybody know anybody who's living in this sort of situation and it turned into my cofounder, Kristy Tillman. We talked about like.",
+      "Duration": 31,
+      "Offset": 550
+    },
+    {
+      "Sentence": "The impact this sort of situation in our thing was you could go to San Francisco in San Francisco and spend $100 on a bad restaurant in a weekend. So why not take that money and like find people who needed help with their water bills and so in the mean time, like I was poking around in the water company site in Detroit and I found this 400 page. PDF that had a listing of all of their customers who they could not deliver their water. Bills to the mail so for some reason they threw all of their information.",
+      "Duration": 30,
+      "Offset": 582
+    },
+    {
+      "Sentence": "A PDF and posted to the site is the only thing only thing that was missing was names in arts in for our purposes stories. And so we on heroku through GitHub and just using Google Docs in Google sheets and bootstrap tape together a website and through that up in a few hours that afternoon to find the people who needed help with their water bills and get their stories because again that PDF had hundreds of people but we didn't know what the stories were.",
+      "Duration": 31,
+      "Offset": 613
+    },
+    {
+      "Sentence": "You know put that website up and we kind of just waited we put the website up on a Thursday and we spent that whole weekend like wondering OK. We've done this thing. Where are the people but in the mean time we were tweeting about what we were doing so it was turning into this thing where people were writing us, saying Hey. We want to give to this effort. If you find people who need the help and so it turned into us having to like you know the whole lean startup thing having to quickly re purpose based off what users are doing.",
+      "Duration": 30,
+      "Offset": 645
+    },
+    {
+      "Sentence": "In the website to accommodate donors and then pudding at link somewhere else, saying that if you need help with your bill go here and so that was a Google form that would certainly quick application that we use to find people and so someone made a posting on Facebook an that Monday morning. We woke up to like 40 people who had applied for help. And it's been going ever since, and these are folks who are going to be on disability, they might get one person who was written up in National Geographic in an article about.",
+      "Duration": 30,
+      "Offset": 676
+    },
+    {
+      "Sentence": "Ability, which was originally named the Detroit water project had a $672 check that was her monthly check but her rent was $600. So she had $72 left at the end of the month and slowly slowly slowly a little bit at a time got a 500 overdue water bill so they came to her house and they turned off the water and this happened to tens of thousands of people in Detroit because they've got about $90 Million in bad debt and shut offs were being called in for anyone who owed.",
+      "Duration": 31,
+      "Offset": 707
+    },
+    {
+      "Sentence": "Cars or more and it seems like for some people that's a crushingly huge amount of money and for other people like you said it's a bad meal for 4 in the Bay, yeah exactly. I mean, people are as developers were used to fairly healthy salaries, depending on where you work, and what you do, but there are people that that's their monthly salary 700 bucks from Social Security that supposed to pay for rent, food transportation.",
+      "Duration": 30,
+      "Offset": 739
+    },
+    {
+      "Sentence": "Seeing you know hygiene all of your basic necessities, including water and electricity bills and that mathematically just doesn't add up for a lot of people so they're doing things like literally like Wednesday literally. But like robbing Peter to pay Paul where one of the stories. I think about from when we first start. It was a woman who I think her name was Marni and she was she had 3 kids. And she was skimping on her heart medication to stretch out her doses. I think she was cutting your pills in half or something.",
+      "Duration": 30,
+      "Offset": 771
+    },
+    {
+      "Sentence": "We're trying to stretch out that to be able to have the money to pay her water bills and that's people all over this country actually it's not just a problem in Detroit and Baltimore is kind of one of these like Loki, not well talked about problems that people are having where basic water services, not affordable, and again. People are doing some of the worst things imaginable to get by so you have literally Detroit one of historically the United States, one of the greatest cities in this country.",
+      "Duration": 31,
+      "Offset": 802
+    },
+    {
+      "Sentence": "'cause of his contributions and just the people and people in general, but you have people living there who are in houses that you know, there are nice houses by all accounts, they've got infrastructure to do run water and Whatnot, but again, they don't have water and I've talked to people who have been living in their house like I said with pipes and everything else for over a year with no water and so they've been doing things like using the bathroom in their backyards dig a hole like there in some developing country or something.",
+      "Duration": 30,
+      "Offset": 833
+    },
+    {
+      "Sentence": "Is the United States? The suppose it wealthiest country in the world and this is? What people are doing and so again our work is to use crowdfunding to round up the dollars that people need to be able to go into the water company and restore dignity to themselves in a very basic sense like if you've got the infrastructure. You should not be using the bathroom in your backyard. You should not be doing things like I mean, we had a dialysis patient who was trying to do things with her neighbors water hose.",
+      "Duration": 31,
+      "Offset": 864
+    },
+    {
+      "Sentence": "And obviously that was not helping some people there walking several blocks to relatives houses in Detroit to take showers everyday other folks buying cases of water and Whatnot and so also I'll say this a lot of people know about the situation in Flint with just the water being undrinkable. But the situation. Detroit's kind of related because Flens originally. The deal was to get the water from Detroit. Detroit was kind of expensive price tag wise and so they tried to find another source.",
+      "Duration": 31,
+      "Offset": 896
+    },
+    {
+      "Sentence": "And that source was polluted so all this other stuff happened and what not but again like Flint. You can't drink the water. Detroit you can drink it but it's expensive and you know it's just a total terrible situation even though the all that fresh water is right, there in Michigan. It's pretty crazy right. It's coming. All the way up to their their sidewalk and it just can't make it the last 30 yards because they haven't paid a bill and when you're living at that level when you're living on effectively on the margins. Financially, it can be one month where you just had a lousy month, you hurt yourself, you, twisted your ankle or whatever and then suddenly.",
+      "Duration": 35,
+      "Offset": 929
+    },
+    {
+      "Sentence": "Bill and then you know you had a couple of more months of bad luck. Are you intending to pay their water bill forever or you intending to smooth that that bump that life hiccup that caused them to not be able to pay their their water bill. So now the intention is not for most people to pay their water bills forever. We make it pretty clear that like you get assistance. Once every 18 months. Unless there's some really extenuating circumstances that make it where we have to continue to help you like.",
+      "Duration": 28,
+      "Offset": 964
+    },
+    {
+      "Sentence": "One of our funders as GitHub and they did a video with us. Um back in the fall. We went and talked to an 87 year old woman named Helen and she you know, she's 87 she's not exactly a frail. But she's 87. Like I don't want to seem terrible. People aren't hiring 87 year olds and so she would have difficulty.",
+      "Duration": 19,
+      "Offset": 994
+    },
+    {
+      "Sentence": "Doing something to support herself a lot to ask for her to be a Walmart greeter or whatever. She's 87 exactly and so like we, we continue to check in on her and we pay her bill. You know every once in awhile if her family can't pitch in or what not but you know that's a rare situation 'cause. It's not supposed to be that were like.",
+      "Duration": 18,
+      "Offset": 1014
+    },
+    {
+      "Sentence": "It's like some people like to say promoting dependency is just a one time situation 'cause. Most people like you said. You know you break your ankle, some crazy health situation comes along like some people like you know, I had to bury my mother and that kind of thing or whatever and she didn't have insurance. So it drained me. That kind of thing or other situations, too, is not just like unfortunate situations in that regard like we have a lot of people who work and maybe their hours have been cut or you know they've been laid off because they had something to do with whatever remaining manufacture.",
+      "Duration": 35,
+      "Offset": 1034
+    },
+    {
+      "Sentence": "Is in Detroit and those people downsize again and just take the moment it takes a hiccup and then your life actually a big. Thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 14,
+      "Offset": 1069
+    },
+    {
+      "Sentence": "Progress software is the creator the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tools that also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 1084
+    },
+    {
+      "Sentence": "Instrumentation and a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial. Today, at telerik.com slash hanselman that'STLERIK.com. Hanselman now that you've changed the name from the Detroit water project, which people can go and search and find all kinds of great articles 4 and 5 years ago about the project. Now you're calling it the human utility is the intention to stay focused on water or other.",
+      "Duration": 31,
+      "Offset": 1118
+    },
+    {
+      "Sentence": "Rules for things that we were considered to be fundamental to a developed country like electricity. No so the focus is staying on water at this point because it's in the United States. At least it's the only utility that isn't protected in a federal sense like so for example, the senses does a survey every year. I think it's called the American community survey where they ask families of different social economic backgrounds like have been able to do things like, pay bills and how do you get your kids to school and that kind of thing or whatever but they ask about your ability to pay?",
+      "Duration": 31,
+      "Offset": 1150
+    },
+    {
+      "Sentence": "Please and they break, it out by gas and electric. I think those 2 are separate and then there's phone bills. There's 1 other one, but water isn't explicitly included as a thing that they ask you about affording so the reason why you know that's 1 of the things I want to talk about changing at some point is because if you're not measuring it, you're not fixing it. And when it comes to that kind of information in a federal sense. That's federal money that's not getting appropriate for that purpose, so that's something that's not being solved basically.",
+      "Duration": 31,
+      "Offset": 1182
+    },
+    {
+      "Sentence": "You know it's issues like that, we want to focus on water began because everything else. There's programs for it and well. Actually, I'll go back and I'll say this like water is protected if its tide to heating. But if it's not tide to heating then you're on your own basically so I think water needs its own sort of advocacy. I notice also when I visit the site, the human utility and I say I want to help or I want to get involved. I can say give monthly in some places. I see that you use technologies like air table?",
+      "Duration": 31,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "Like stripe when you're building a site like this did you think, to yourself. I'm going to go and use things like air table there. Google sheets like you said. You started out early on, I see a tweet here. In fact, I'll put in the show. Notes from 2014 when you were just trying to figure out how to make this thing how much were you thinking, I'm going to do this with entirely custom code and write it from scratch and rails versus there's no reason for the human utility to build a big giant infrastructure. We've got all these other great software as a service solutions out there right so.",
+      "Duration": 30,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "At the beginning at least was just this was never supposed to be like an actual long-term thing we were just putting something up in a weekend and if it worked out, great and you know if not OK. We can just leave. All this stuff hanging. But as we kept seeing people giving and applying for help. We needed to continue to build things so especially if I'm getting accepted to Y Combinator. I ended up taking my rails development skills and building out more of the crowd funding platform, so that's where.",
+      "Duration": 30,
+      "Offset": 1276
+    },
+    {
+      "Sentence": "Then were hosted on Amazon EC 2? What else is in there. We have twillie oh that we use for notifying people. Once they get accepted as far as getting help? What else is there. There's mail chimp that handles things like donor communications and Whatnot. So some of this also building custom stuff just came from how we used to work like we used to do like a direct match as far as how the money worked so.",
+      "Duration": 29,
+      "Offset": 1308
+    },
+    {
+      "Sentence": "The system would like it still does this in some ways, but like not the way it used to it. It would match people. You know in terms of like. Hey, you gave $5. Here's the person should go to and Whatnot. So now it's more of a pool of funds basically but the way it used to work. It wasn't explicit match and so that wasn't something that you could buy basically so we built that on our own and so that was just in there like a relic plus also like go fund me. There's nothing wrong with them as a platform despite.",
+      "Duration": 32,
+      "Offset": 1338
+    },
+    {
+      "Sentence": "Into a healthcare platform really, but like.",
+      "Duration": 3,
+      "Offset": 1371
+    },
+    {
+      "Sentence": "There were a bunch of other scattered sort of crowdfunding efforts for water bills, but there was nothing that had a critical mass of support behind it, plus also you had to kind of at that time wait till your campaign got to a certain size to withdraw the money and when people come to us like they need the money ASAP basically so we're able to collect donations through stripe. We payout bills pretty much every single day and.",
+      "Duration": 30,
+      "Offset": 1375
+    },
+    {
+      "Sentence": "Forest basically and also it allows us again to like manage our own sort of donor communication systems and that kind of thing and then also we built our own case management system because that's another thing that you could buy off the shelf. But everything that was seeing was just like aggressively bad so like we have our own case management system, not aggressively bad. Yeah, I Mean II have a thing about like ugly software and it was all ugly. So it's just we both our own thing that again sits on top of EC 2. We've got Elasticsearch behind it.",
+      "Duration": 32,
+      "Offset": 1406
+    },
+    {
+      "Sentence": "So there's all these like different engineering technologies that are in there that you know, we used to roll into this thing that helps people well so there's a lot of people on the Internet, though, that are looking for a Buck? How do you make sure that someone doesn't abuse your platform and make sure that they do send people out to confirm that there who they are. How do you make sure they're not using this for inappropriate use? Yeah, so there's a couple of different checks we run so one is that when you apply you have to submit your pay stubs to us if you have some kind of income.",
+      "Duration": 31,
+      "Offset": 1439
+    },
+    {
+      "Sentence": "Or like your Social Security letters and that kind of thing you also have to send us your picture ID, so you do that. I'll just say this your picture ID and you're also your lease or your deed for your property and your leaves. We look for things like are you actually responsible for the utility Bill 'cause, a lot of cases like some people their landlord was supposed to pay the bills, so that's that's not a situation that we handle but we ask people to submit that information and they do that by texting it to us through Twilio.",
+      "Duration": 30,
+      "Offset": 1471
+    },
+    {
+      "Sentence": "Then we receive it through hello fax, and it gets in our system that way or whatnot, but again like in building your own case management system that is all custom through twilio or you can text your photo ID. It shows up on your profile 'cause. It's matched by the phone number that you give on your application and what not but then we use. All that an we have a liaison at the water Department that we confer with and we say what's This person's history with you all? What do they actually oh?",
+      "Duration": 30,
+      "Offset": 1502
+    },
+    {
+      "Sentence": "Told the truth in terms of them being shut off and that kind of thing and if anything seems fishy. We either won't help or will delay helping until we get more information about each case, basically and we ever pretty thorough process for checking on people that we've had some people get through in the past, but that's because we didn't have thorough vetting process. I like the idea that you have was impressed that you just said. You have a liaison at the water Department so you've made a big enough move here that they know you.",
+      "Duration": 30,
+      "Offset": 1533
+    },
+    {
+      "Sentence": "When you call they wanted the water Department knows it's y'all and can work with you so then the process that extends out to the municipal organization, yeah, exactly and that's so we work with at least 15 or 16 different cities. Most of those in Michigan, but we have a liaison. All of them or not all of them. But like for most of them. If we have a problem. We need some information about a case our customer service person can just email them or call them. Even in to say. Hey, I need this information. Can you send it to me and that also?",
+      "Duration": 30,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "Things quicker as far as helping people 'cause. There's no point in like having all this like software that we've built in this whole like so much stream somewhat streamlined process for helping people if people become the stumbling block in the process. And so we did the whole liaison thinks I used to have to call Detroit and sit on the customer service line for 45 minutes at a time and you know, even though we were paying a thousand dollars worth of bills at a time when we did that, but you know, there was no person the call at that time, but I was.",
+      "Duration": 31,
+      "Offset": 1595
+    },
+    {
+      "Sentence": "What I'm doing that so I you know got on the horn and an found some people actually through code for America. I got linked to the city of Detroit. CIO and she referred me to some people in the water Department that became champions for us and got us. That person to work with or whatnot, so that's really cool. Because you say you write all this custom software. You you're trying to automate? What you're trying to scale a system and it certainly then it hits a remote procedure call that takes 45 minutes, which is different on the phone.",
+      "Duration": 30,
+      "Offset": 1627
+    },
+    {
+      "Sentence": "Why did I write all this software and now I have to send on set on hold exactly and so that's not a thing anymore. Fortunately and you're paying the water company like to be clear people aren't like rolling into your offices and they don't get a check you literally pay their bills. So the bill goes away for their their issue with their problem as opposed to you paying a check personally to them right right and so the way it's designed so we've had an interesting sort of situation as far as being.",
+      "Duration": 30,
+      "Offset": 1658
+    },
+    {
+      "Sentence": "Or banking, you set up but the way our system is actually designed by using something called synapse pay. We were able to just like write software again that if I press a button, I can wire money to Detroit or wire money to Baltimore, but most of the time, like we don't engage that it just ends up being like a credit card payment or something that's more like for chunking bits of money and then there's telling them like. Hey, wires, coming through for $10000 for these people, but again, though we don't you can send it.",
+      "Duration": 30,
+      "Offset": 1689
+    },
+    {
+      "Sentence": "And say here's the batch and then they can do the accounting as opposed to little amounts here and there, exactly exactly so that ends up being like more efficient. But we also just you know if someone comes to us. They've got all the information together in the case is pretty easy. We can just pay it on the fly with a credit card forum, so and it's really interesting to read the stories. You can go up to the website and check this out. Some of the stories are really interesting because you might be listening and you might be saying as a listener of the podcast like well. People shouldn't get in these situations or how did this even happen? Why did you just pay your bill?",
+      "Duration": 31,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "The interesting story here where a gentleman was mailed in out standing water bill, he had thought when he rented the House as we've all seen before. I've rented houses where the water in the sewage and the utilities were included. It turns out, everything was included except water and he didn't find out that the water wasn't included until the water got shut off. I've had that happen where I thought the cable was included and suddenly the cable shuts off course and it wasn't the water, but it can totally happen, and then you're on you're retired.",
+      "Duration": 30,
+      "Offset": 1753
+    },
+    {
+      "Sentence": "Disability this gentleman had cancer and you just can't spend. These can spare the 250 bucks to pay your water bill exactly and that happens every day to people, yeah, and then when you fix that hiccup then those monthly manageable bills go down to maybe a range of $40 that someone potentially can manage and it all started with you on Twitter apparently, saying This is a problem. There must be a way to solve this with software, yeah, exactly I mean, we started off with like I said.",
+      "Duration": 32,
+      "Offset": 1784
+    },
+    {
+      "Sentence": "He ugly website there was taped together with I mean, even the donor form to say how much you were going to give was literally just.",
+      "Duration": 7,
+      "Offset": 1817
+    },
+    {
+      "Sentence": "Appease design with bootstrap that was connected to a Google spreadsheet. So we just like hacked the variables. Whatever the form variables to send it to the spreadsheet and that that was our database originally because we don't have time like me and Christy had entirely different jobs. We can have time to like do all this infrastructure at first. We even collect money from people originally. We just would give you instructions on how to pay and you were send us. The confirmation number and we would send that to the person that got the help.",
+      "Duration": 31,
+      "Offset": 1825
+    },
+    {
+      "Sentence": "It was designed to just be like a thing that if it worked great. But if it didn't. You know, we could just everything would just go away, and forget about it, so what's so impressive is that you saw a problem. You solve the problem. You were doing a whole. Other job a whole. Other life and Fast, forward 5 years later. You're still doing it. The human utility is grown has hired as multiple people working with you and you use software to make people's lives better and I really appreciate that.",
+      "Duration": 30,
+      "Offset": 1857
+    },
+    {
+      "Sentence": "Yeah, I didn't think I'd be doing this 5 years later, but you know it's a problem that's you know on going.",
+      "Duration": 5,
+      "Offset": 1888
+    },
+    {
+      "Sentence": "Many millions of people have problems affording their water bills and utility bills. In general in the United States and the thing that needs to keep going as long as we can help with folks so.",
+      "Duration": 9,
+      "Offset": 1894
+    },
+    {
+      "Sentence": "Well people can follow you, at twitter.com slash Tiffany with an I and they can check out the human utility at humanutility.org. Thank you so much. Tiffany Ashley Bell for chatting with me today. Thank you for having me. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 20,
+      "Offset": 1904
+    }
+  ]
+}

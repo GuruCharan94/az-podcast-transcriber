@@ -1,0 +1,403 @@
+{
+  "id": "64a56819-eb6c-463b-8e4b-6525f3de1282",
+  "Title": "Avalonia is a cross platform XAML Framework for .NET Framework, .NET Core and Mono with Steven Kirk",
+  "PublishDate": "2019-05-16",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/7a39a3f4.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends I want to thank our sponsor, Reagan are you struggling to replicate the bugs and performance issues that your customers are reporting plug Ray gun into your web and mobile applications right now and diagnose problems. In minutes rather than hours. Kiss goodbye having to dig through log files and relying on frustrated users to report issues make your software development life so much easier using rayguns error crash in performance monitoring tools. Every software team can create flawless software experiences for their customers with Reagan try it free.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Reagan.com that'SRAYGUN.com.",
+      "Duration": 11,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman, similar server cancel minutes and today I'm trying with Stephen Curt. Former GitHub employee and now working on Avalonia across platforms. XAML framework are you doing this full time in your funemployment. I well almost full time kind of half time. It's not really paying yet so I've got paid work going on. Yeah, a lot more than I was when I had a full time job. Let's say all right now when people look at Avalonia at Avalonia UI.",
+      "Duration": 30,
+      "Offset": 48
+    },
+    {
+      "Sentence": "They might say Oh, well. This is a this is a cross platform. WPF you know, Steven and friends have reimplemented WPF. The Windows Presentation Foundation. But it's different than that. Yeah, it's a little bit different. I'll give you some background. Originally, I was trying to Reimplement WPF and make it cross platform, but I got a few months into that and I was like I'm not having fun here, I got to. I think list collection view, which is if you train.",
+      "Duration": 30,
+      "Offset": 80
+    },
+    {
+      "Sentence": "Engineer that class, you won't have fun and so I kind of decided the world doesn't need another UI framework, but no one's going to use this you know it's just it's but it's fun. So I just kind of started re implementing it how I wanted to do it, taking bits from WPF bits from UWP. It's from CSS S speech from HTML, but mostly it's kind of based on WPF. It's broadly similar so it might be rather than a re implementation. It's a reimagining.",
+      "Duration": 30,
+      "Offset": 111
+    },
+    {
+      "Sentence": "Yeah, kind of I mean, I wish I could go back in time and kind of make changes. Some changes that I made just for the sake of it back, then incompatibilities with WPF. I kind of wish that I could go back in time and and do those and just follow the WPF API, a little bit more closely. But as I said, I didn't know it was going to be used when I started with this weather is the thing that was all open source projects. I mean, I don't think that the people that made node thought it would become node.",
+      "Duration": 30,
+      "Offset": 142
+    },
+    {
+      "Sentence": "So you shouldn't feel bad about that. Yeah, I mean, nothing else, I'd written before in my life is having really been used by anyone more than any more than a handful of people at least so, so WPF itself. But the way that WPF Works is kind of different than how people usually expect things, to work like with with winforms. I'm familiar with wind farms. It's a very thin layer over the windows. API's so when you say put a button?",
+      "Duration": 30,
+      "Offset": 173
+    },
+    {
+      "Sentence": "Green and you know with Windows Forms. It's a real windows button that they could it's just a layer over win 32, but it does WPF an abalone a try to hide the underlying operating system is it a similar thought. Yeah, well. I mean, it doesn't try to hide it so much as it completely ignores it. The controls are all client client drawn so they completely luckless as well, which means you can provide your own themes.",
+      "Duration": 28,
+      "Offset": 205
+    },
+    {
+      "Sentence": "So it's not OS controls at all is completely is completely user draw. I mean, I OS controls libraries that expose as controls are useful as well. There's at oh forms, which does that really well, but it depends what you're looking for. I think there are valid use cases for both an at the heart of WPF is this thing called XAML and Avalonia uses ammo, but the way you phrase it is it's a XAML.",
+      "Duration": 29,
+      "Offset": 234
+    },
+    {
+      "Sentence": "What do you mean by dialect well it's?",
+      "Duration": 3,
+      "Offset": 265
+    },
+    {
+      "Sentence": "I mean to be pure half is is Apple dialect as well. Right WPF&UWP don't use the same. Saml exactly there are slight differences with it. XAML is kind of the low level mapping of XML onto.",
+      "Duration": 16,
+      "Offset": 269
+    },
+    {
+      "Sentence": "Thought that objects so if you have adifferent.net object model you will have a different sample dialect essentially.",
+      "Duration": 8,
+      "Offset": 286
+    },
+    {
+      "Sentence": "Ah, OK, so when you say like an XML element window and then within that scoped a child element button. You are instantiating an object tree exactly. Yeah, that's purely what it's doing at least recently since people have started using's started using the other loan. We've tried to follow. WPF, a little bit more when there's no good reason to break away from it, we try to follow it.",
+      "Duration": 28,
+      "Offset": 295
+    },
+    {
+      "Sentence": "Uh yeah, so it's kind of about 75% the same. I'd say, 25% different. The main thing that differs is our styling system, which is more like CSS S so the intent isn't that I go and dig up some 10 year old. WPF app and then just swap out some references and hit F 5 and then go look. It's on Lenox. Unfortunately, now, I mean that would be really cool. I don't think it would ever be that easy.",
+      "Duration": 30,
+      "Offset": 325
+    },
+    {
+      "Sentence": "A lot of people have been asking about making WPF cross platform and.",
+      "Duration": 4,
+      "Offset": 356
+    },
+    {
+      "Sentence": "I don't think it would be that easy a lot of WPF is very tight to win 32. I mean, there is a possibility that people are our project of talks about this of taking kind of abalone are back end, the stuff actually draws the stuff on the screen, and opens the windows, which is cross platform and porting that to WPF because the APIs are very, very similar so it might be possible that we can actually take part.",
+      "Duration": 30,
+      "Offset": 361
+    },
+    {
+      "Sentence": "And put that into WPF and make them PF at least cross platform in some ways. Let me let me. Let me back up a little bit and ask you this, if I were to write a calculator in WPF and then write the same calculator in Avalonia and I put them on the screen. Let's just start with Windows would they look pretty much the same. Yeah, kind of similar our default theme looks more like UWP at the moment, whereas to BPS default theme is kind of.",
+      "Duration": 30,
+      "Offset": 391
+    },
+    {
+      "Sentence": "This trash OK, so then Avallone might look a little bit more. Modern Yeah, a little bit more minimal like UWPEWP. Of course, the universal Windows platform and it's going to be confusing to people? How would you explain all of that you got Windows Forms you've got WPF you get UWP but ultimately it's all just windows. This is all just different ways to put buttons on screens. Yeah, like Winforms was like a follow on from VB.",
+      "Duration": 28,
+      "Offset": 423
+    },
+    {
+      "Sentence": "DB 6 and then they threw everything away and made the BPF and then they threw most about half of the beauty of PF away and made silver light and then they threw so right away and kind of took most of silver light and it turned into the UWP but there all incompatible in different ways, which is I guess one of the reasons that I don't feel that bad that I've alone. You're is incompatible with Microsoft Saml frameworks. 'cause that all incompatible with each other anyway so.",
+      "Duration": 31,
+      "Offset": 452
+    },
+    {
+      "Sentence": "But to the original point. These are XAML dialect, so well, we can say well. This was thrown away and that was thrown away. XAML has been there since. WPF first started so that I assume a comfortable familiarity with it would be like speaking Spanish and going to Italy or going to Portugal and going in this isn't the language. I'm used to. But I can model along and yeah, yeah, something like that. I'd say, I'd say living in Italy. I'd say, I'm going to Spain. I'd say.",
+      "Duration": 30,
+      "Offset": 484
+    },
+    {
+      "Sentence": "A little bit more than that, you know you can understand more of Avalonia knowing WPF. Then he could knowing Italian and going to such good. Avalonia is easier than Italian to you. Of course I'm going to get letters from our Italian listeners. But that's good OK. So then familiarity with WPF for UWP is going to make someone feel comfortable in every loan. You're going to be able to pick it right up and you even got great documentation where you say.",
+      "Duration": 30,
+      "Offset": 515
+    },
+    {
+      "Sentence": "Your dog I'm looking at Avalonia 4. WPF developers where you literally say alright welcome your WPF developer. Here's what's different right? Yeah, I wouldn't say our documentation is great. I mean that's the number one complaint. If you could give us but you know, we're purely open source project is almost always the case that your documentation isn't the best. Yeah, we do have documentation from moving from moving from WWPF to have alone. Yeah, I think as with most open source.",
+      "Duration": 30,
+      "Offset": 546
+    },
+    {
+      "Sentence": "Modest I think you're dictation is good, but again that's an opportunity for anyone who's listening who is excited about a cross platform. UI framework, taking maybe get involved and help out with the documentation, please please. Please we got quite a few contributors. Now I'm very happy with the amount of contributors. We have and things are starting to move really fast, but no one wants to do documentation ironic because it's it's like the core thing if you want your project to be successful. You need good docs and.",
+      "Duration": 30,
+      "Offset": 577
+    },
+    {
+      "Sentence": "Or maybe not a hardcore coder, but you're listening to the show here and you want to have not only on your on your resume. But in your GitHub contributions. Some really interesting work. It can be as simple as fixing a broken image link or fixing spelling or making sure that the samples compile right. Yeah, I mean documentation is definitely the place where you can have the most impact right now. I mean, I've spent, the last 2 days. I think trying to improve our website and the documentation a little bit, but.",
+      "Duration": 30,
+      "Offset": 608
+    },
+    {
+      "Sentence": "Space I'm thinking, but I could be fixing bugs. That's a good point well because you want to focus on what's important so there's a formal call you heard it here first on Hansel minutes. Avalonia would definitely love help with their docs. Yes, we would OK so it's a XAML dialect. It will feel familiar for anyone is using WPF for UWP or Xamarin forms and you support Windows Linux and OS X and is it true that you're actually looking for even mobile support.",
+      "Duration": 27,
+      "Offset": 639
+    },
+    {
+      "Sentence": "Yeah, Windows Linux and OS X OS X Skews me are the main platforms platforms. We support we also have very, very experimental support for iOS and Android but that's kind of not really maintained that, well and it it kind of needs things that were not ready for at the moment as well so that's kind of kind of be a host one point, not feature really mobile support, yeah, I called platforms.",
+      "Duration": 30,
+      "Offset": 667
+    },
+    {
+      "Sentence": "X&OSX, which should work reasonably well, OK, so this is an opportunity for someone to create a desktop UI that works anywhere, and there's something interesting. I'm noticing it saysfor.net framework.net core an mono you're basically runtime agnostic any of the Nets can run Avalonia Yeah whereit.net standardlibrary.net standard 2.0.",
+      "Duration": 24,
+      "Offset": 698
+    },
+    {
+      "Sentence": "That's pretty cool now? How does it talk to a back end like you said it is what we call owner draw you draw the buttons yourself, but you have win 32 windowing backends GTK for Lennox and Monomakh. How do these things plug in is just like when I write a standard library that talks to any database and I just plug in a database driver. I'm just plugging in a UI driver. Yeah, I think the Ducks. You're reading or actually a little bit out of date.",
+      "Duration": 30,
+      "Offset": 723
+    },
+    {
+      "Sentence": "Essentially, there are 2 types of backends there're window in back end. There's a window in back end and the drawing back end for the window in back end, we have win 32. We have native OS X Library. That's implemented via com and then there's a CC.",
+      "Duration": 20,
+      "Offset": 754
+    },
+    {
+      "Sentence": "Native thing I don't know I have not been involved in that much. I don't have a Mac. And then and then there is an X 11 back end.",
+      "Duration": 10,
+      "Offset": 775
+    },
+    {
+      "Sentence": "So that that those are the windowing black their hands. We used to go via GTK. But we found that that caused problems and because we just basically need to show a window. It was easier just to implement these kinds of things direct on the platform and there's also talk of there being a Wayland back end.",
+      "Duration": 18,
+      "Offset": 786
+    },
+    {
+      "Sentence": "What is that well Wayland is kind of the successor to X 11 it's still I think mostly in development?",
+      "Duration": 10,
+      "Offset": 805
+    },
+    {
+      "Sentence": "Why not used it that much but yeah, I think it's intended to be the kind of successor to X 11. But we don't have a back end for that at the moment, so I'm Wayland. Our apps couldn't really actually runners X 11 apps, but it's interesting that I mentioned GTK 3 and you're like well. Now we're not using that we're trying excellent then you're saying we're trying. Wayland what it sounds like it's very nicely factor that you can. In fact do this you're swapping out windowing backends to pick the right one for the job.",
+      "Duration": 31,
+      "Offset": 816
+    },
+    {
+      "Sentence": "Exactly yeah, it was written with that in mind, and a window in back end. These is not actually that big you know you just need things to show a window notify you when you're resizing it. So it's not actually that big but then there's the other part of it, which is the rendering back end.",
+      "Duration": 19,
+      "Offset": 847
+    },
+    {
+      "Sentence": "So the rendering back end, we currently have 2 the original one was the original ones were direct 2 D on windows and Cairo on Linux and other platforms. We've actually moved away from that, and I think we're going to have just one rendering back end, which is going to be scared. That's from Google. Yeah, yeah, because skier is cross platform anyway, so but we used to have this direct to the back end.",
+      "Duration": 30,
+      "Offset": 867
+    },
+    {
+      "Sentence": "Shop the axe, which is just.",
+      "Duration": 2,
+      "Offset": 899
+    },
+    {
+      "Sentence": "Like a now gone into maintenance mode. It's no longer going to be developed. So where are we thinking whether we want to keep that back end around other unsupported library?",
+      "Duration": 11,
+      "Offset": 901
+    },
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 5,
+      "Offset": 914
+    },
+    {
+      "Sentence": "Progress software is the creator the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tools that also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 920
+    },
+    {
+      "Sentence": "Instrumentation and a full assortment of Visual Studio templates. You'll be up and running with the progress Telerik and kendo. UI controls in no time download a free 30 day trial. Today, at telerik.com slash hanselman that'STLERIK.com, Hanselmann. So then if you have a window in back end, that creates the window and tells you when it's being resized. It basically manage is the top level window and then he pop up windows and then you have the rendering engine which is the.",
+      "Duration": 30,
+      "Offset": 954
+    },
+    {
+      "Sentence": "We get dots on this thing you know like Are we are, we a game. Are we are, we using direct 2 D are using skier using whatever there's things to think about like now. DPI and 4. K displays so there's this scaling of that thing. There's also Accessibility when you owner draw a button.",
+      "Duration": 21,
+      "Offset": 985
+    },
+    {
+      "Sentence": "From the perspective of the operating system or a screen reader, it might not exist. It might be invisible. How do you solve that and put up by invisible I mean? It doesn't exist in a Dom that can be accessed programmatically. Yeah, acsu bit Accessibility is probably the biggest feature that we missing before we get to 1.0. Assuming that will I mean? It's needed. It's definitely needed. But basically non overs. Working on the core project right now and know much about it, so we're going to have to.",
+      "Duration": 30,
+      "Offset": 1006
+    },
+    {
+      "Sentence": "They all wait for someone to come in and be able to implement that for us, but there's another maintaining security see every one of these things is an opportunity for someone in open source to jump in so you would need to implement Accessibility, APIs and basically present Adom 2 Windows at document object model to windows that expressed what was on the screen, so that someone who couldn't see could see it.",
+      "Duration": 27,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "Yeah, and Linux and OS XI don't know that there may well be a cross platform framework for doing that I have no idea.",
+      "Duration": 7,
+      "Offset": 1066
+    },
+    {
+      "Sentence": "OK, yeah, we do, we definitely need that so how does Avalonia, though compare to something like electron like if someone is listening and they made it as far and they're like, Yeah, but why don't I just use electron other than the fact that it's kind of big and has a lot of baggage that comes along with it right, yeah, I mean, I'm actually quite a big fund of electron. I think it's a great technology. I know there are a lot of people who don't feel that way. But the main difference is it's rainingon.net.",
+      "Duration": 30,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "You have access to everythingthat.net has access to so with running an electron you might you have to use you got the front end and the back end. That's in nodes and then you might have to write libraries, so actually interface with the operating system. You might just want to write see it does get a little bit messy. If it's a big a big hybrid. Yeah, exactly, Yeah, but you know, I like electron and people say it's the Binary is a huge and everything but.",
+      "Duration": 31,
+      "Offset": 1105
+    },
+    {
+      "Sentence": "Just looking at a couple of apps if you look at GitHub desktop for example, which it's quite it doesn't use that much memory so.",
+      "Duration": 8,
+      "Offset": 1138
+    },
+    {
+      "Sentence": "I think election definitely has a place but basically I'd say, you would use Avalonia when you wanted to make a cross platform app. In C Sharp and XAML rather than in JS and HTML so if you're unapologetic leeA.net person in Avallone. It would be your best bet for a cross platform app and there's more than enough room. It's not a competition in this case.",
+      "Duration": 22,
+      "Offset": 1147
+    },
+    {
+      "Sentence": "No, I don't see it as a competition. Now I think this room for different frameworks in different languages, definitely well. There are other frameworks. There's like platform is it platform. You know, and I think that Frank Krueger had a thing called we there seems to be other lots of people are thinking about what would Jamil Dialects will look like and how would we get buttons on screens.",
+      "Duration": 25,
+      "Offset": 1171
+    },
+    {
+      "Sentence": "Yeah, platform. Uno some interesting one because it actually targets. The Web, which is something that we don't do. We could potentially do with wasm but is something that we're not targeting at the moment and people are often asking us where we're going to do it, so that's an interesting one, but that doesn't target desktop applications. It's not it doesn't create an EXE or DLL that you can run on your machine, which is what we're doing, yeah, so they have a thing that takes its basically they call it UWP bridge.",
+      "Duration": 31,
+      "Offset": 1197
+    },
+    {
+      "Sentence": "Stickley Bridget into web assembly, so they're kind of betting on on Web Assembly and then you're writing XAML and that's presenting itself in in the in the runtime and then drawing with canvas, which is different from something like blazer, which uses the Dom Dom itself to draw exactly. Yeah, it's a really interesting space right now there's a lot of stuff going on and I guess. None of this would have been possible if if Microsoft had been slapping open source projects.",
+      "Duration": 31,
+      "Offset": 1229
+    },
+    {
+      "Sentence": "You know like open sourcing stuff must have made it easier for you, yeah, I don't think open sourcing thought that call was definitely a big step for us, it, but I don't think we're actually using much Microsoft.",
+      "Duration": 11,
+      "Offset": 1261
+    },
+    {
+      "Sentence": "Open source technology yet when when more of WPF is open sourced. We will definitely be able to take parts of that and I would be very happy to be able to take parts of that. But I think the XAML engine. We're using is portable that XAML, which is re implementation of systems ammo, yeah, I don't think other than the actual net. I don't think we're using much Microsoft technology here. I see so the core runtime being open source was helpful.",
+      "Duration": 30,
+      "Offset": 1273
+    },
+    {
+      "Sentence": "Mono of course, you have support but you're not using much of like the recent open sourcing of system dot. Samil you have your own sample, yeah, and someone is actually working on the XAML Compiler, which Nikita on our project is actually working on the XAML Compiler, which will hopefully means that XAML will be compiled down to IL. So it will be just as there will be no parsing of XML, XAML, it would just compile down to IL.",
+      "Duration": 31,
+      "Offset": 1304
+    },
+    {
+      "Sentence": "Oh wow would that help WPF is that something from open source that could then go back over it and make. Yeah, this sensor. This is open source and II. Guess I think I'm pretty sure it could be used by WPF itself as well. So you know, we were all about sharing, although all of these things being open source mean everything improves you know you were saying earlier that there's a lot of movement in this space and it feels like. There was no movement. In this space for a long time, so it's really good to see a lot of movement.",
+      "Duration": 30,
+      "Offset": 1336
+    },
+    {
+      "Sentence": "It's",
+      "Duration": 0,
+      "Offset": 1367
+    },
+    {
+      "Sentence": "Rather than seeing as you know like a uh.",
+      "Duration": 2,
+      "Offset": 1368
+    },
+    {
+      "Sentence": "As competition, I think it's great that there's things are starting to move here again. Yeah, I've heard the term coopertition where we're all having fun cooperating and competing at the same time, but it's not a kind of violent competition as it may have been in the past, yeah, yeah. I've never had that same but maybe I'll start using it so let me ask you. This someone's listening and they're thinking. Hey, I want to rewrite TurboTax or QuickBooks or not Microsoft Word But.",
+      "Duration": 30,
+      "Offset": 1372
+    },
+    {
+      "Sentence": "Word and you know, I want to bet my company on Avalonia is this is this production ready or people shipping apps with this, or am I taking a risk, you are taking a risk? I mean, it's not 1.0. Yet it has currently no commercial backing. It's purely volunteers, so you know you're taking a risk, but then you're taking a risk adopting only technology using node. I would suppose I mean companies that support it. So maybe you shouldn't sell yourself short.",
+      "Duration": 27,
+      "Offset": 1403
+    },
+    {
+      "Sentence": "Yeah, I mean, people took her wrists writing their programs on Silverlight, which was discontinued so.",
+      "Duration": 8,
+      "Offset": 1431
+    },
+    {
+      "Sentence": "You're taking a risk yet and we're not 1.0 yet so there will be breaking changes. We try to keep the breaking changes for easel is small. There are people writing applications on it, and they're going pretty well. I'm constantly surprised by the things people have managed to do with it because you know for it to go. I was obviously there, I wrote it, the first commits you know which was like wow. I've got, I've got a rectangle on the screen to see it go from.",
+      "Duration": 31,
+      "Offset": 1440
+    },
+    {
+      "Sentence": "To have a rectangle on screen to 2 people actually writing full applications IDs drawing packages on that there's pretty amazing. How would I know if I maybe I haven't Avalonia app on my machine. I didn't even know it. Is there a particular favorite or an app. You can mention that's using it.",
+      "Duration": 14,
+      "Offset": 1473
+    },
+    {
+      "Sentence": "Well, I could probably the most well known one will be wishabi wallet, which is a bit coin wallet. That's doing pretty well. I think others are Avalon Studio, which is an IDE than these core 2 D which is a drawing package. I'm sure I know I'm forgetting some people I'm sorry. Everyone I'm sorry, no no no worries at all.",
+      "Duration": 25,
+      "Offset": 1488
+    },
+    {
+      "Sentence": "I'm sure there are others as well. I know there are people working on a kind of I am client. There are definitely this as well. Hopefully you wouldn't know that it was another lonely application. I mean that would be the idea right like I think that would be a time when you could tell you could kind of smell electron and you'd go ahead. This just feels weird this electron.",
+      "Duration": 19,
+      "Offset": 1515
+    },
+    {
+      "Sentence": "I'm actually looking at Wishabi wallet right now went through the install pops right up looks like an app. It's very attractive app. I couldn't really tell it was anything other than a Windows app. 'cause I'm on windows. It is responsive and fast and operates about as an app should which is exactly what you would want and I said, I assume it's exactly the same on a Mac or on Lenox. It should yeah because. Yeah, I mean, there are a few things that give it away at the moment like I say we're still in beta and we're not feature complete we have.",
+      "Duration": 30,
+      "Offset": 1535
+    },
+    {
+      "Sentence": "And so there are certain things that give's away at the moment but the point that we hope to move towards is that you won't be able to tell you know it'll be just a framework. You can make it look. We'd like to have an OS X theme with a bun, 2 theme so it could even look different on different platforms. If she wanted to that would be really nice.",
+      "Duration": 21,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "Yeah, just getting there interesting OK that reminds me of like my time doing cross platform. UI in Java. The thing about Java when you try to write an app that ran anywhere, is it ended up looking like Java, everywhere or if you wrote something in Delphi, you find that certain button with the Big Green check box and you like up, I seen that before that smells like?",
+      "Duration": 22,
+      "Offset": 1589
+    },
+    {
+      "Sentence": "Which is actually getting more common now with things using more things using electron and not using the native windows toolkit? It's kind of more usual that an app will look the same across platforms than an app looking like it, fits on the platform. Yeah, there seems to be a philosophy there that some people feel that you should look as much like a native app as possible and other ones have their own style and they're kind of unapologetic. Lee their own style 'cause if you have a visual style for your.",
+      "Duration": 30,
+      "Offset": 1612
+    },
+    {
+      "Sentence": "Here for your company or whatever there's no reason that your app can't look like a website or use the same fonts and colors that your users are used to.",
+      "Duration": 9,
+      "Offset": 1644
+    },
+    {
+      "Sentence": "Yeah, exactly I think it depends on where you're coming from whether your coming from the Web or whether you coming from. You know like writing separate applications for each platform and like you said they see it. These styles the way that you do styles and everything is different from WPF and it kind of borrows concepts from CSS S so I suppose that people could make whatever styles make them happy. Yeah, I mean method of steam in controls is broadly, the same is WPF and UWP in that we use control templates.",
+      "Duration": 31,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "Totally, the same but our styles with that little bit more powerful. I always found the styling system in the BPF to be a little lacking so kind of took some ideas from CSS S there. Hopefully the good ideas from CSS S and not the ones that make you pull your hair out take the hopefully a few ideas from CSS S that makes life a little bit a little bit easier for that. I was noticing also that you've got Avalonia for Visual Studio so you've got project templates Anna UI.",
+      "Duration": 31,
+      "Offset": 1686
+    },
+    {
+      "Sentence": "And it's currently set to work in 2017 and 2019 versions of Visual Studio. I assume that that is the best way to get started is to install that that plug in from the visual studio marketplace.",
+      "Duration": 11,
+      "Offset": 1718
+    },
+    {
+      "Sentence": "Yeah, definitely that's the best way to get started. We still need to kind of provide plugins for other ideas as well. But Visual Studio's the only one we support out of the box while the out of the box. But you know that we have official support for at the moment and then from there, you can go and basically file new project and get started right away and it will go and bring down the appropriate new get packages and then set you up for success.",
+      "Duration": 26,
+      "Offset": 1731
+    },
+    {
+      "Sentence": "Yeah, we alsohave.net templates iswhat.net core template sorry so that you can just scuffle to new projectin.net core as well. But you won't get the designer but you don't actually need the designer. You know you can really work without designer OK. So that'sjust.net new Avalonia dot app. So kind of file new project from the command line. Exactly yeah, and then you've got 2 templates there at the command line. You've got Avalonia dot app and then you've got Avalonia dot app dot mvma so you're kind of using that set reactive UI pattern.",
+      "Duration": 32,
+      "Offset": 1758
+    },
+    {
+      "Sentence": "The MITM application uses reactive UI, which is a great library for model model. Viewmodel view whatever it's called if you spell it out. So yeah, we use reactive UI for that by default. We shipper version of reactive UI which is kind of tailored to our our framework, so you've got an active GitHub repository. You're working on this half time you're looking for help, but you also have a lot of contributors.",
+      "Duration": 31,
+      "Offset": 1791
+    },
+    {
+      "Sentence": "On the page there at the bottom there's a lot of faces a lot of people have been involved, yeah, yeah, we've got.",
+      "Duration": 6,
+      "Offset": 1823
+    },
+    {
+      "Sentence": "A huge amount of contributors, you know, and that's that's actually we've got so many contributors that I can't keep up with Boo request so another way. People can help like reviewing Boo requests because yeah, we're getting a lot of them and now we mostly hang out and get a there's a guitar room, which is very, very active as well. So if anyone's interested check out get a room drop in and say, Hi Yeah, it looks like you've got a thousand plus closed pull request. But you've got 24 open right now, so there's another opportunity and some of those go back a while so.",
+      "Duration": 33,
+      "Offset": 1830
+    },
+    {
+      "Sentence": "Yeah, huge opportunity here I always tell people find a great project that's on the come up and get involved. Weather be writing docs or helping out. So where can people get ahold of you and the team gets is the best way gets the IM stroke of alone here? I think is the URL I will make sure that that's in the show. Notes It's Gator dot am slash Avalonia UI Slash Avalonia. I'll make sure that the links to the GitHub repository and the gitter channel are all in the show notes so people can get involved.",
+      "Duration": 31,
+      "Offset": 1864
+    },
+    {
+      "Sentence": "Thank you very much Steven Curt for chatting with me today about Avalonia across platforms. XAML frameworkfor.net thank you. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 10,
+      "Offset": 1896
+    }
+  ]
+}

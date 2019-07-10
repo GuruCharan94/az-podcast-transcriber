@@ -1,0 +1,393 @@
+{
+  "id": "ef9adf51-aa90-4647-82d5-7d57e41d4c10",
+  "Title": "Forge Your Future with Open Source and VM Brasseur",
+  "PublishDate": "2018-09-13",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/c28afac2.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we have a new sponsor today and I want to make sure that you support them because they make Hansel minutes possible. Raven DB it's a document database. That's non relational and fully transactional. It's available for Windows Anne Lennox with official client. APIs for net. The JVM go. Ruby node JS and python. Raven DB is designed for high performance handling tens of thousands of requests. Even on a single node now. Raven DB is capable of on the fly optimization.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Indexes and much more. It is a fully loaded GUI, which means it's simply to operate and you don't need arcane incantations on the command line. It just works. It's fast and it's right. Download your free community edition at ravenDB.net that'SRAVENDB.net. I hope you check it out.",
+      "Duration": 20,
+      "Offset": 31
+    },
+    {
+      "Sentence": "I am Scott Hanselman This is another episode of cancel minutes and today I'm talking with VM. Ware sure she is the vice president of the open source initiative and she's got 20 years in the business of software. In 30 years with free and open source software and currently in open source policy and strategy freelancer who just wrote a fantastic book called forge your future with open source that I was very happy to do a little quote about a little blurb to hopefully support your book. Thanks for chatting with me today. Thanks for having me and thank you so much for the blurb. I do appreciate that it takes.",
+      "Duration": 32,
+      "Offset": 65
+    },
+    {
+      "Sentence": "Time to do those sorts of things well, it's also nice for me because I got, I get to read a book because the publisher will email you and say, Hey, this great book is coming out and this happens. A lot, where someone says there's a great book coming out and we all say. Yeah, sure there is, but they'll give you a PDF of it and then you go. There's a topic oh there is it in the next thing you know, I've read the book. It's funny. How those things work. So I'm thrilled to have gotten a free book and I will now have to. But when it comes out, I'll go and buy a copy as well.",
+      "Duration": 30,
+      "Offset": 98
+    },
+    {
+      "Sentence": "Feel like there's a a book that is as clear and concise and as prescriptive as your book when it comes to open source as it relates to one's future ones own karere. That's because there isn't a book about this at all. This is as far as we can tell and we've done some pretty extensive searches now and I obviously would have known about it professionally. This is the first and only book on how to contribute to free and open source software and it was very important for me.",
+      "Duration": 31,
+      "Offset": 129
+    },
+    {
+      "Sentence": "To be the mechanics because let's face it, you can read it document an learn how mechanically?",
+      "Duration": 6,
+      "Offset": 161
+    },
+    {
+      "Sentence": "To contribute to a free and open source software project, but why do you want to do that and how do you do it in a way that best benefits you and your karere and the entire community all at the same time, it's very important that we cover all of those because you gotta get something out of this beyond just warm fuzzies, an interesting that you use the word the mechanics of it because, like you said there are certainly like here's how you do a pull request. You know that's been written a thousand times and I recently had April Wenzel on the show and we talked about.",
+      "Duration": 32,
+      "Offset": 167
+    },
+    {
+      "Sentence": "What is sometimes called soft skills or squishy skills and she said well these those are not a good way to phrase it. Those are not terms that we should use there's the practical. Realities of how to interact with the community. There's no reason to call it softap. It certainly as hard as anything interacting with community well, what I found is that the technical stuff is actually the easiest part because the technical stuff doesn't really come from quite as entrenched a place of.",
+      "Duration": 30,
+      "Offset": 200
+    },
+    {
+      "Sentence": "And History and background and personalities. I mean, obviously that's reflected in the technical part in any community. But it's the people side of things that's very, very difficult. I can't like drop a dockerfile into a team and have it instantly perform. Like the team. I had on my other Department. It doesn't work that way. People are different, and so you have to learn how to interact with the people and that's very complicated.",
+      "Duration": 31,
+      "Offset": 231
+    },
+    {
+      "Sentence": "Fish communities an open source people any different than than any other thing like a committee to do something around your neighborhood or sometimes. It feels like it's just harder is it because we're all engineers and we all like our things to compile and humans. Just don't well. Humans definitely don't compile every group is going to be different so that extent. The answer is going to be yes. Each free and open source community will be its own special thing.",
+      "Duration": 30,
+      "Offset": 263
+    },
+    {
+      "Sentence": "Which things differently from another free and open source community but on the other hand, they are all composed of people and because of that. You have to respect the humanity of each individual so regardless of whether you're working with your PTA group whether you're working with say a karate class or whether it working with free and open source software. You have to respect the individual aliti of each of those people and learn to work with them on their terms, but they obviously.",
+      "Duration": 30,
+      "Offset": 294
+    },
+    {
+      "Sentence": "In the same thing in the other direction for all of the other community members that doesn't always happen obviously because you know, people and things are difficult, but that's the best case situation. I like how practical this is I'm looking at Chapter 7, which talks about you're giving a contribution and now, what and there's even there's even a section where you say like what to do while you wait. You've done your PR and I've seen people do a pull request and then.",
+      "Duration": 30,
+      "Offset": 325
+    },
+    {
+      "Sentence": "Now I'd like to check it. They looked at my pull request. Have you reviewed this again. We get this done like? What do you do? Maybe your contribution? Isn't accepted? It's very realistic this book? Well, I think one of the things that not just free and open source software. But humans in general, but I'll just scope it down to technologists. We're very bad at setting up expectations.",
+      "Duration": 23,
+      "Offset": 356
+    },
+    {
+      "Sentence": "And because of that we set up technological methods around that so we don't have to set up expectations. You can just go out of your weigh yourself to go check over here for status. You go check on status. We're not going to tell you when it might change. So setting up expectations for people in advance and saying well. Yes, it might be declined. And here are some reasons. Why Yes, it might take awhile and here are some reasons why will really help, too. I think diminish some of the anxiety.",
+      "Duration": 31,
+      "Offset": 380
+    },
+    {
+      "Sentence": "Have from being a first time contributor.",
+      "Duration": 2,
+      "Offset": 412
+    },
+    {
+      "Sentence": "And just where we really excited when we contribute and landing your first Patch feels so good so if we can get it. People to understand that you will learn your first land your first Patch, but it might take a little while so be patient. And here's why it will take a little while. I think that can help keep some of the excitement of.",
+      "Duration": 20,
+      "Offset": 415
+    },
+    {
+      "Sentence": "And we really would love to maintain that that momentum of positive emotion when contributing to an accepting open source contributions. Yeah, there's a whole section about when you're participating in discussions. You call out that in the free and open source software contribution process communication is where the unwritten rules hide there's no there's no document. Those documents that tell you how your pull request should be formatted, but there isn't one that says how you should interact with the community.",
+      "Duration": 31,
+      "Offset": 436
+    },
+    {
+      "Sentence": "That those habits and those expectations vary from community to community.",
+      "Duration": 3,
+      "Offset": 469
+    },
+    {
+      "Sentence": "Yeah, the expectations will vary and that's why it's always important when you are contributing to read the contributor guide. It's there for a reason. Please don't just go your own way so read the contributor guide listen on whatever chat rooms. People have and see how they interact know lurk on the chat rooms lurk on the mailing list and see how people interact to try to understand the cultural Moraes of that particular community because otherwise you might just.",
+      "Duration": 30,
+      "Offset": 473
+    },
+    {
+      "Sentence": "There, like a bull in a China shop expecting that the way you were interacting in one community will work, the same. At another community and there is not a direct mapping there. It just doesn't work, yeah, and you call out important things that I think once you've said them. I think are obvious but they need to be said like you say comprehend then act rather than react. It seems like on the Internet. There's so many people who are waiting for their turn to speak, which is different than listening.",
+      "Duration": 30,
+      "Offset": 505
+    },
+    {
+      "Sentence": "The whatever psychological reasons, which will be individual. But as a culture, we seem to be very reactionary right now. We want to be heard and there's a lot of value in wanting to be heard and particularly in being hurt itself. But there's even more value in listening and understanding what people are looking for what people would like to hear how you can interact with them in a way that will benefit both you in trying to land your Patch, but also the community.",
+      "Duration": 30,
+      "Offset": 536
+    },
+    {
+      "Sentence": "Bull in a China shop.",
+      "Duration": 1,
+      "Offset": 567
+    },
+    {
+      "Sentence": "Might be fun for the bowl, but not for anyone else.",
+      "Duration": 3,
+      "Offset": 569
+    },
+    {
+      "Sentence": "Yeah, and it's also interesting to me that we are contributing source code, which is text, which compiles and does exactly what it's supposed to, if we wrote it correctly, but then we choose to communicate in text, which is like of all the communication mediums. The one that offers the least context. It's like the great equalizer. But I can't see your tone. I can't see your subtle face movements to tell if you're joking or not. I mean sarcasm and text don't often go side-by-side what a challenge to communicate both with code and with pros.",
+      "Duration": 30,
+      "Offset": 574
+    },
+    {
+      "Sentence": "Text is maybe not the right one for for the communication part. It can be very difficult, which is why I do mention that sometimes you have to get together. Sometimes you have to be in the same place sometimes you just everyone hop on Skype or Google Hangouts or something just so you can get slightly more high definition communication. But it's also worth noting that code isn't the only way to contribute and this book is not purely for programmers it.",
+      "Duration": 30,
+      "Offset": 605
+    },
+    {
+      "Sentence": "Some examples that use code contributions, but it also has examples using documentation and marketing and just lot there. Lots of different ways to contribute to free and open source software so if you don't feel like you are a strong programmer. Yet it's OK. We need you anyway. I really appreciate that you said that and I appreciate that there is in fact, an entire chapter on making a difference without making a pull request because people seem to think that.",
+      "Duration": 30,
+      "Offset": 636
+    },
+    {
+      "Sentence": "All about, you know the most complicated change. You could make the most sophisticated code but designers and documentation and community building. All of these things have huge value, particularly documentation. Documentation is that force multiplier of any software, but particularly free and open source software projects. I can keep this information in my head, but I don't scale whereas a well. Formatted piece of documentation does scale now documentation is slightly problematic because a lot of people suggested.",
+      "Duration": 32,
+      "Offset": 667
+    },
+    {
+      "Sentence": "Your first free and open source software contribution and for some people that could be good. And if the contribution is very small say Typo or something like that that can be good, but the problem with documentation is to make it good to make it effective for the end user. You have to know a lot about the project itself, so often documentation is not the best place for you to start unless you are already familiar with the project because you use it at work or you use it in your own?",
+      "Duration": 30,
+      "Offset": 700
+    },
+    {
+      "Sentence": "Hobbies or something like that, but documentation is not always going to be the best place for everyone to start when contributing to free and open source software you call it a couple of places for starting for new programmers that I didn't see coming for example, you had a comment section here. Rather, about code reviews where you say that I love this you don't have to be a Rockstar ninja 10 X unicord diva programmer with years of experience to have valuable insights and I never thought about that. I would assume that the code reviewer should be the most experienced people, but it's not always the case. It's not always the case, I mean?",
+      "Duration": 33,
+      "Offset": 731
+    },
+    {
+      "Sentence": "Complicated issues or for the more nuanced issues of we didn't do it. That way over in that module so we have to do it in this module. You know, those obviously require a great deal of experience with the code base and with the project. But just anyone can look at a piece of code and go. Huh these don't line up properly or huh? I'm a new programmer and I can't figure out what you're doing here. If a new programmer. It can't understand what's happening in a method it's probably too complicate it.",
+      "Duration": 32,
+      "Offset": 766
+    },
+    {
+      "Sentence": "Asking questions is a great way to provide feedback because something that somebody does not understand is not very maintainable. So you can learn a great deal about the project about programming. Even if you don't know a lot about programming just by reviewing the contributions now. Obviously you won't be able to merge them because you don't have the access for that, but your comments still have value, but don't do it if the project doesn't want you to do it.",
+      "Duration": 31,
+      "Offset": 798
+    },
+    {
+      "Sentence": "Projects such as open stack for instance, one of the first things, new contributors would do would be to review issues as they come in and.",
+      "Duration": 8,
+      "Offset": 830
+    },
+    {
+      "Sentence": "To review patches and that was encouraged, but it's not encouraged in all projects so check before you do it, and we talk about testing and we talk about Docs. But you also call out testing. The Docs, which is another great opportunity for someone to come in as a new developer to come in with fresh eyes and see if they can get started.",
+      "Duration": 22,
+      "Offset": 839
+    },
+    {
+      "Sentence": "So this is something I would encourage with all of my knew developers up prior to going freelance. I lead software engineering department's at the director and VP level and when I would have new people come in as part of their on boarding if you find anything wrong with the documentation.",
+      "Duration": 16,
+      "Offset": 862
+    },
+    {
+      "Sentence": "Let us know and or if the process is were there to support that fix it. You make it better for the people going forward because it's only with really fresh eyes that you can see whether the documentation is affective so if you're setting up your new developer environment and the docs don't mention that you require a certain dependency. That's really valuable information. And if you find that an update the docs or opening an issue for it, you will have saved several people, many hours of work.",
+      "Duration": 30,
+      "Offset": 879
+    },
+    {
+      "Sentence": "That problem, so you yourself become a force multiplier and saving other peoples time just by fixing a document that idea that you're saving people time that you're helping other people that empathy that one develops whether it be testing our reading. Docs it all comes down to the reminder that that it's humans behind all of this we did make this software for people to use and for people to experience empathy is a very it's becoming a buzzword. Lately, which is a great but be. I'm afraid people might get.",
+      "Duration": 31,
+      "Offset": 911
+    },
+    {
+      "Sentence": "Do it and start glossing over it so empathy is very important in everything we do in your day-to-day life in your professional life and in contributing to free and open source software so being aware of the circumstances that other people might be going through actually using open source as well. So if you need a fix. And if you currently aren't at a place where you're able to make that fix an so you open a bug about it.",
+      "Duration": 28,
+      "Offset": 943
+    },
+    {
+      "Sentence": "Don't go fashion on the poor maintainer because they don't get back to you in a day a week, a month. They have lives there trying to do their own thing. They're trying to raise a family to get through University so being aware of the fact that other people.",
+      "Duration": 16,
+      "Offset": 973
+    },
+    {
+      "Sentence": "Are involved and that they have complicated issues just like you have complicated issues and being sensitive to that? Is very important for really accomplishing what you want. Yeah, it is tough there, I can hear what you're saying that the word empathy. Sometimes it gets used so much. It's you hit people over the head with it. But in all things to just remember that, you're a person in front of a keyboard talking to another person in front of a keyboard so for example, you talk about triage issues and figuring out whether or not? Why isn't my pull request happening and why isn't this issue?",
+      "Duration": 32,
+      "Offset": 990
+    },
+    {
+      "Sentence": "Because it might be crucially important to you, but you may also not have visibility into the release cycle of this particular project. We have issues on our project where people are mad and they don't understand that, like well. We're not actually writing code right now. We're in the testing phase or we're in a different part of the Sprint and not ready for you.",
+      "Duration": 18,
+      "Offset": 1024
+    },
+    {
+      "Sentence": "Yeah, and that's why I do recommend I mean, I would love it. If project maintainers read this book, as well. So they could get a better sense of what are the contributors even expecting because if that you know what your contributors are expecting then you can anticipate that a little better and maybe make the entire process more pleasant for everyone, but I do recommend that they published some sort of road map and put that in there contributor guide and say, Hey, please check this because that can set up expectations within the contributor.",
+      "Duration": 30,
+      "Offset": 1042
+    },
+    {
+      "Sentence": "Oh wait they can't look at my bug right now because of that.",
+      "Duration": 3,
+      "Offset": 1074
+    },
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 6,
+      "Offset": 1079
+    },
+    {
+      "Sentence": "Progress software is the creator of the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "Comprehensive documentation and a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 1119
+    },
+    {
+      "Sentence": "Pivoting a little bit to more of the Karere side because this book really is about forging your future as well as helping the community. It's not just a book about how to contribute to open source. You point out that every project has tedious tasks that no one likes doing with every day to clean up everything that repetitive things it could be scripted and you point out that those are opportunities for someone to jump in and move their career forward is a good opportunity for someone who's new to a free and open source project.",
+      "Duration": 29,
+      "Offset": 1139
+    },
+    {
+      "Sentence": "Absolutely and we all want to do these things if we're a maintainer free and open source software project, but because we do have so many pools on our time we don't get the chance to follow through.",
+      "Duration": 12,
+      "Offset": 1169
+    },
+    {
+      "Sentence": "So you know just.",
+      "Duration": 1,
+      "Offset": 1182
+    },
+    {
+      "Sentence": "Changing a variable so it's standardized across the way updating tests updating documentation. You know, reformatting the docs to be safe from ASCII doctor mark down. These are things that for one reason or another, a project might have on its road map. But it just doesn't get to do because it's a real pain in the butt and it's just a lot of tedious work. But if you jump in there and you start doing just little things here and there, people will learn that you're reliable.",
+      "Duration": 31,
+      "Offset": 1184
+    },
+    {
+      "Sentence": "That you care about the project and you will learn a great deal about the projects. So you will be able to level up within the project. A lot more quickly. You'll be super helpful to the entire community. Not just the project. But all the users and you yourself will gain a lot out of it and that visibility that idea that software is as much showing up as it is writing and contributing code that visibility is going to help your career as well. People know you are that.",
+      "Duration": 30,
+      "Offset": 1216
+    },
+    {
+      "Sentence": "Finally shows up and tries to move the ball forward.",
+      "Duration": 2,
+      "Offset": 1247
+    },
+    {
+      "Sentence": "Yeah, it just showing up showing up is one of the biggest things being reliable, making promises an following through on them. That's how you learn that's how you earn trust is by showing up and being reliable and following through on your promises and then once you earn trust people will start to trust you with larger projects or with leading teams with leading features but you have to earn the trust before you get to that stage. You can't just jump in no matter how great of a programmer you are.",
+      "Duration": 32,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "Have to earn the trust of the community and you actually show a hierarchy kind of experience and responsibilities that you represent multiple times in the book as an onion so a series of concentric circles with users on the outside and then moving inward into smaller circles users new contributors contributors core contributors or then founders an leadership and you really can't leapfrog any of those steps.",
+      "Duration": 29,
+      "Offset": 1283
+    },
+    {
+      "Sentence": "You really can't a man I forget exactly which which academic came up with the onion model. Their work is referenced in the book but I don't keep it off the top of my head, but what I do keep on the top my head is thanking us age, sharp of outreach tree. They and I had coffee several months ago and they asked. Hey do you cover this in your book and I was like well gosh? I don't? But that's just because it never occurred to me. It's just been so obvious to me that I wouldn't have thought to ask that.",
+      "Duration": 30,
+      "Offset": 1313
+    },
+    {
+      "Sentence": "Did because they hear it all the time from all of their mentors an meant ease in the outreach program. They don't know that there's a hierarchy they don't know that.",
+      "Duration": 9,
+      "Offset": 1344
+    },
+    {
+      "Sentence": "Well, not in all projects, but almost every project has a hierarchy so I was really grateful to them for suggesting that I include that in the book. Thank you sage? Absolutely sage has been very thoughtful and giving me feedback on how interactions with the community can be made better and the academics that you're referring to are Walt Scacchi and YE&K Kushida and you reference that and there's a lot of actually really good references even beyond the book. You've done your homework and you've got footnotes and endnotes to the point where I can go off and find other.",
+      "Duration": 31,
+      "Offset": 1354
+    },
+    {
+      "Sentence": "Which is to learn about well? I'm glad you like that because footnotes are not really part of the standard style guide for my publisher, Yeah, but this is bibliography with like you go through a review of general psychology like there's psychology behind being successful and open source absolutely because there's psychology around being successful in life in work in just about anything you accomplish really studying some basic psychology.",
+      "Duration": 30,
+      "Offset": 1387
+    },
+    {
+      "Sentence": "Dynamics can help you a great deal in your career and it does work. Just as well in free and open source software. You also talk about the difference between free and open source software, or Foss and OSS and a little bit about about licensing licensing. Yes, so the very first thing most people consider when we talk about free and open source software is licensing and frankly. I believe it's the very last thing we should consider an I do.",
+      "Duration": 30,
+      "Offset": 1417
+    },
+    {
+      "Sentence": "But there is a chapter in the book on how to release your open source project. 'cause a lot of people. Just don't know really there's a better book on that by Karl Fogel am and that is referenced in my book but it was not proper for me not to even address it and the very last thing I cover is licensing because there's so many other things, you have to get right. Frankly, the license usually does not impact the success of your free and open source project everything before that, the documentation the contributor.",
+      "Duration": 30,
+      "Offset": 1448
+    },
+    {
+      "Sentence": "Conduct now all of that that matters. But the license pick one that's OS. I approved an meets your specific case. You know, and you're fine. That's a great point. I've actually had an interesting situation happened recently with a license, where a large company with a name that everyone would recognize.",
+      "Duration": 20,
+      "Offset": 1479
+    },
+    {
+      "Sentence": "Copied a bunch of code from a smaller company of 2 or 3 people. That was built on top of some open source software. You know how people built consultancy's on top of their open source software and if you look at the commits. It's basically a copy paste a rename of a bunch of namespace and the removal of A.",
+      "Duration": 19,
+      "Offset": 1501
+    },
+    {
+      "Sentence": "Of a Copyright and we thought it was going to be a lot of what we call mustache. Twirling, like there was an evil villain in the background somewhere, but it turned out, it was just someone who is not not really educated and even though it might look malicious. It was just a matter of for lack of a better word junior engineer is learning. The process, but it was really difficult to have the community, not see evil versus seeing misunderstanding.",
+      "Duration": 25,
+      "Offset": 1521
+    },
+    {
+      "Sentence": "Yeah, the first thing you should always do in any sort of situation where you feel. Some sort of a front is to always assume ignorance not malice start with ignorance it, particularly where Copyright an intellectual property law is concerned. I mean, I am not a lawyer. I'll just get that out, there right now, but I have spent a lot of time around.",
+      "Duration": 23,
+      "Offset": 1547
+    },
+    {
+      "Sentence": "Athe lawyers intellectual property lawyers, but also free and open source software and what you have to remember is that Copyright is so important, it if you mess with Copyright at all. You are very likely to get yourself into a world of legal hurt that will cost you endless hours months days years of your life and more money than you care to consider so think about Copyright before you go changing it and I respect the Watt the desire.",
+      "Duration": 29,
+      "Offset": 1571
+    },
+    {
+      "Sentence": "To quote clean up the code, but you can't do that because that Copyright shows who owns well that Copyright statement shows who owns the Copyright over that particular piece of software if you develop software. You instantly have Copyright over it in the vast majority of countries in the world. Anything that any country that is a signatory to what is called the berne convention? They all do Copyright pretty much the same so.",
+      "Duration": 30,
+      "Offset": 1601
+    },
+    {
+      "Sentence": "Not to mess with it and I talk about Copyright and intellectual property law several times throughout the book because it is important that you understand the basics. You don't have to be a lawyer. But you have to understand the basics of Copyright of licensing and of not messing with that sort of stuff because.",
+      "Duration": 19,
+      "Offset": 1632
+    },
+    {
+      "Sentence": "Get you in a lot of trouble and even worse. It'll get your company in trouble and then you get fired that's not good for your future and speaking of your company you have a whole chapter as well on contributing to open source software while you are employed so looking at your employment agreement. What are your company's policies? Is your employer support free and open source software? Do they have their own software? What about moonlighting and all of those things, the potential pitfalls that you could bump into if you decided to be an open source person and perhaps not working for an open source company.",
+      "Duration": 31,
+      "Offset": 1652
+    },
+    {
+      "Sentence": "It gets pretty complicated because if you're working for a company the work. You do that Copyright belongs to your company right if you're working on their machine on their network and you're sitting in their chair on their time you made it for them. You made it for them and there are some companies where your employment agreement will say that even if you're not on company time. If you're on your own time it doesn't matter. We own your stuff if you're on your own time.",
+      "Duration": 29,
+      "Offset": 1684
+    },
+    {
+      "Sentence": "And on your own computer OK. That's yours. But if you're doing, it on our computer. Then it's our stuff, so it there is.",
+      "Duration": 6,
+      "Offset": 1714
+    },
+    {
+      "Sentence": "Various permutations of this an it's important to be aware of that before you just casually toss off a contribution to a free and open source software project that there are plenty of situations where you don't have the right to give that contribution to our project because it belongs to your company and you have to get their approval, so thinking about that in advance will save you so many headaches, yeah, we ended up encouraging this particular company and this young developer too.",
+      "Duration": 30,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "Narien and use the library as a binary rather than trying to bring the source in and you know. Ultimately, the crisis was averted. But it would have been nice to have a book like this to to share with the young people and make it a part of the larger companies open source education process.",
+      "Duration": 17,
+      "Offset": 1752
+    },
+    {
+      "Sentence": "Yeah, that would be very nice just to get people a little more aware of it. I mean in a perfect world. I can wish for companies to educate their employees on basic matters of of Copyright and intellectual property. But you know in a perfect world. I can also ask for a pony, but that doesn't mean I'm going to get it. Indeed, the last thing I wanted to say that I really appreciate about the book is that you actually have an appendix. That's not cause not called Glossary you called it jargon.",
+      "Duration": 30,
+      "Offset": 1770
+    },
+    {
+      "Sentence": "But in all the jargon that one drops in its pages and pages and pages when when people throw things out phrases. That might might not understand you make sure that we all understood that and that was really cool.",
+      "Duration": 12,
+      "Offset": 1801
+    },
+    {
+      "Sentence": "If you've ever done any traveling even just to the other side of the country your own country. You'll find lots of terms that people are using and you don't understand it like you go to Pennsylvania and what even is a Scrabble you know, there's lots of things like that, and it's very uncomfortable so learning the language of the new environment, you are going to participate in is one of the best ways for you to feel comfortable and then you will perform better annual give much better contributions and.",
+      "Duration": 30,
+      "Offset": 1814
+    },
+    {
+      "Sentence": "Like you better because you're speaking their language well your book is called forge your future with open source and it's under the pragmatic programmers imprint and folks can go up to the pragmatic programmers and purchase that right? Yes, it's available in early release beta right now, it's available in print in mid October. It's we're going through all the pre publication. Sort of hoops right now, but if you order. It now in a early release beta.",
+      "Duration": 30,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "Does come out and print you get an email saying Hey? Would you like to buy the print copy at a significant discount so I do encourage you to go out and get it and and there's an errata section in the book where if you find any bugs you know this is free and open source software. Please let me know what to fix and that we can work on it in the next version very cool well congratulations. To you and thank you for letting me read your book and I hope that the folks that are listening will check it out. I will include a link in the shownotes so you can pick that up and you can connect with VM on.",
+      "Duration": 31,
+      "Offset": 1877
+    },
+    {
+      "Sentence": "I'll put a link there as well. Thanks so much for chatting with me. This is been great, thanks so much for taking the time. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 13,
+      "Offset": 1909
+    }
+  ]
+}

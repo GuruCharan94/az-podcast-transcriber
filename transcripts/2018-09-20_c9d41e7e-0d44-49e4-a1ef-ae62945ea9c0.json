@@ -1,0 +1,353 @@
+{
+  "id": "c9d41e7e-0d44-49e4-a1ef-ae62945ea9c0",
+  "Title": ".NET Core Global Tools for Developers with Mark Rendle",
+  "PublishDate": "2018-09-20",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/9de0e8d5.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we have a new sponsor today and I want to make sure that you support them because they make Hansel minutes possible. Raven DB it's a document database. That's non relational and fully transactional. It's available for Windows Anne Lennox with official client. APIs for net. The JVM go. Ruby node JS and python. Raven DB is designed for high performance handling tens of thousands of requests. Even on a single node now. Raven DB is capable of on the fly optimization.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Indexes and much more. It is a fully loaded GUI, which means it's simply to operate and you don't need arcane incantations on the command line. It just works. It's fast and it's right. Download your free community edition at ravenDB.net that'SRAVENDB.net. Hope you check it out.",
+      "Duration": 28,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott hanselman this is a matter of hansel minutes today I'm talking with mark rendall we're talking about the rise of global developer tools how are you Sir I'm very well thank you for asking sitting here looking at a drop box folder that I made many many many years ago and it's called utils and it used to be C: backslash utils and now it's equal and drop box utils and it's just full of a bunch of crap that I've been carrying around with me for many many years I put it.",
+      "Duration": 30,
+      "Offset": 65
+    },
+    {
+      "Sentence": "Yes, and it's all of my developer, Utilities and I thought I was quite clever.",
+      "Duration": 4,
+      "Offset": 96
+    },
+    {
+      "Sentence": "Yeah, I'm I'm really old so I remember back in the day working on Unix systems and you would have been folder in your user directory in your home directory and you would add that to your path and then anything that you found yourself doing a lot. You just write a quick Korn Shell script back in those days to repeat that for you.",
+      "Duration": 23,
+      "Offset": 101
+    },
+    {
+      "Sentence": "Um.",
+      "Duration": 0,
+      "Offset": 126
+    },
+    {
+      "Sentence": "So it sounds like I've got history. I've got history to back me up at this was a good idea for a period of time as a developer? Absolutely. It was very kind of clunky sticks and sell a tape and string way of building your own toolkit and carrying it around with you well now. I've got Ubuntu on Windows 10 and I just do like apt get install or if I'm running other operating systems. It might say Yum or on windows. I could also use the chocolaty tool.",
+      "Duration": 30,
+      "Offset": 127
+    },
+    {
+      "Sentence": "These aren't really for developer tools per say right? Why are we separating developer tools from operating system installation stuff so writing something to go on a PT get or young or homebrew or any of those things or submitting something to chocolate is quite complicated and you've got to distribute something that is executable and something that's executable everybody system so most of those things.",
+      "Duration": 31,
+      "Offset": 158
+    },
+    {
+      "Sentence": "Are written in C or C plus plus or rust? Or maybe go these days?",
+      "Duration": 5,
+      "Offset": 189
+    },
+    {
+      "Sentence": "You can assume when developers are looking to use your tools. If I'm writing a tool for node. Then it seems fairly safe to assume that the developers that are going to be using that I've got load installed so you can just target node and deploy an NPM package and then they can use that you don't have to worry about runtimes and execute ability and all that sort of stuff OK. So are you, saying that in node developer in the course of their natural development of whatever they happen to be writing.",
+      "Duration": 32,
+      "Offset": 195
+    },
+    {
+      "Sentence": "Something that will support their development process and since we already know that they're using node and really that they can't use anything else because they're going to be using the node package installation process will just support them by allowing them to arbitrarily bring in other kind of like sidecar tools that can sit alongside their their development process, yeah, I mean, type script typescript has grown way beyond.",
+      "Duration": 30,
+      "Offset": 228
+    },
+    {
+      "Sentence": "Often way beyond being a visual Studio Plugin, so the primary way that typescript is distributed is an NPM package and you do NPM install minus G typescript and it puts the typescript compiler onto your system and that's a TSC command line tool that you can then use in any directory and compile your typescript and there's that's just one example. There are hundreds of these things.",
+      "Duration": 31,
+      "Offset": 259
+    },
+    {
+      "Sentence": "Webpack and sass and Uglify all sorts of things distributed all through NPM JS.",
+      "Duration": 7,
+      "Offset": 291
+    },
+    {
+      "Sentence": "I said that's amazing, though, that that using node is an example that NPM is become such a.",
+      "Duration": 5,
+      "Offset": 299
+    },
+    {
+      "Sentence": "I mean, it's it's own like you, said after a PT get of its own and we're looking at numbers that are unconscionable of typescript is getting 3000000 weekly downloads 12000000 a month. Yes, that's amazing. It is nuts and the really nice thing. With that is the people who are writing software using node and who think I need a utility to do something they can write that utility using the language that they know.",
+      "Duration": 32,
+      "Offset": 306
+    },
+    {
+      "Sentence": "I have to learn something else they don't have to go off and learn C plus plus or rust. 'cause learning rust takes a long time. Trust me, I'm learning in and they can just use the tools that they already know and they can build something helpful and then it's really easy to create a package and upload it to NPM and they can share it around and other people can contribute back to it.",
+      "Duration": 20,
+      "Offset": 339
+    },
+    {
+      "Sentence": "Is this is this a potential place for us to install viruses or to have mean people put mean stuff in and I accidentally install something bad and then since it's in my path. It's easy to run it totally is a very good way to do that which is.",
+      "Duration": 15,
+      "Offset": 360
+    },
+    {
+      "Sentence": "Makes it a good thing that I think pretty much everything that's on NPM JS is open source and you can go and have a quick look at the source and I don't know if they've got any kind of built in security review or anything like that, it seems like the kind of thing that would hit. All the tech news sites. If somebody discovered that left pad was mining cryptocurrency on your machine every time you run it.",
+      "Duration": 25,
+      "Offset": 376
+    },
+    {
+      "Sentence": "But it does allow you to break stuff really quickly, like using left pad as an example. Yes, you can take things off the MPM repository. Although I think they have done something to ameliorate that now.",
+      "Duration": 13,
+      "Offset": 402
+    },
+    {
+      "Sentence": "But as far as global tools are concerned once you've got that installed on your machine. It's there. It's not going back to NPM. The reason that left pan broke the world was because people's continuous integration process is doing. NPM install to pull down all the packages that are being used and when left pad went away. The NPM install failed and everybody's build started failing and that's a problem, though, that it's a human problem and it's always going to be.",
+      "Duration": 32,
+      "Offset": 416
+    },
+    {
+      "Sentence": "Work on like you can go up to NPM's blog and read about their concerns. Around malware and they're looking for packages with names that are close to existing packages so that's where mine install something evil by default on accident like off by one character. You know they can do. Static analysis on the tools, but ultimately humans are going to do the best they can to make sure that registry stay secure an evil tools don't show up on our machines, yeah, it has to be uh.",
+      "Duration": 30,
+      "Offset": 449
+    },
+    {
+      "Sentence": "The people being careful and placing things and calling it out if they notice something is doing something dodgy now. You said that you're learning, rust, but you and I know each other. Fromthe.net community and for the longest time we were all excited about and trying to advocatefor.net global tools. So we'd have the net equivalent of NPM Dash G and it's finally it's finally happening it haswith.net core 2.1 it's become.",
+      "Duration": 30,
+      "Offset": 480
+    },
+    {
+      "Sentence": "Thing so if you'vegot.net core SDK 2.1, .3, 100.",
+      "Duration": 6,
+      "Offset": 511
+    },
+    {
+      "Sentence": "Uh although you should have 2.1, .4, 100, 'cause That's the current version. That's the LTS release. But Yes, you know havea.net tool sub command and you cansay.net tool install dash dash global and then give it a new get package name and it'll go off and get that new get package and then add it to your path with the name that the package publisher chose for it. Now, if I go to the command line right now and itape.net.",
+      "Duration": 31,
+      "Offset": 518
+    },
+    {
+      "Sentence": "Please mark.",
+      "Duration": 1,
+      "Offset": 550
+    },
+    {
+      "Sentence": "It will say you know can't run net hyphen. Mark asif.net hyphen. Mark dot E xe was a thing, yeah, so that's the 1st way that it tries to find something when you say dot let and the command. You can add subcommandsonto.net byepudding.net dash? Whatever you want it to be and it has a set of directories that will automatically scan to see if you can find that and it will go and look through.",
+      "Duration": 30,
+      "Offset": 552
+    },
+    {
+      "Sentence": "CS project files and find the thing that's being invoked and then see if it can find it in your library cash and so on. But.net tool.net global tools goes a bit beyond that, OK, so it's not as simple as put an executablecalled.net hyphen. Scott in the path. It's more sophisticated now. It is more sophisticated so when you publish your new get package with your global to limit you add a few extra parameters.",
+      "Duration": 31,
+      "Offset": 583
+    },
+    {
+      "Sentence": "And you",
+      "Duration": 1,
+      "Offset": 615
+    },
+    {
+      "Sentence": "Decide what what it wants to be invoked as in you set a thing to say this is a parameter and thenthe.net tool installer which goes off to new get a few extra things when it pulls that package down.",
+      "Duration": 15,
+      "Offset": 618
+    },
+    {
+      "Sentence": "OK, do, we need to think about versioning is therea.net tool update yet or is this just the beginning. There is adult let tool update, which updates to the latest stable version by stable version. I mean, it doesn't have dash preview or dash beta or anything on the end of itso.net tool updates. I have lifecycle have net to a list install uninstall an update and I'm treating them like their new get packages because they are in fact, new get packages.",
+      "Duration": 32,
+      "Offset": 634
+    },
+    {
+      "Sentence": "The name that you give the tool is the name of the package on on the new get repository. It sounds like there would probably be a bit of a gold rush to try to get people to jump in and get this short commands like if iwant.net tool mark. I want to grab that before some other mark. Does yes, it seems to be sort of picking up slowly and there's not a huge number of tools up there just yet, but I can see people wanting to.",
+      "Duration": 30,
+      "Offset": 667
+    },
+    {
+      "Sentence": "With something if they've got a funky short name and actually while we're at it in your sort of other job as PM. Whenever you are on the ASP net team could you get them to shorten the nameof.net ASP net code generator because I type that a lot and it's very long word.",
+      "Duration": 23,
+      "Offset": 699
+    },
+    {
+      "Sentence": "Well, that's an interesting pointso.net hyphen as being at hyphen code generator is really long and that is the new get package name right. It is also coincidentally the short name, which is ironic because it's not short at all, and that's something that I think we as a community are still trying to figure out like another example would be the cake build system, which would be cake dot tool. And Unfortunately they made their short name.",
+      "Duration": 31,
+      "Offset": 723
+    },
+    {
+      "Sentence": "I've been cake should just be regular just cake. Yeah, I don't think there was anything already called cake on most people systems. 'cause obviously that's not just competing against. Everybody else on the.net global tools. You're competing against. Everything that's already available over a PT and anything else that can install command line commands onto your system?",
+      "Duration": 23,
+      "Offset": 755
+    },
+    {
+      "Sentence": "Yeah, it's a tough one like if you go and pick a word like hash or script or dependes. You could potentially squash other people that care about that and that could be an issue, yeah, and you have to be aware of what's available on different systems as well. So Linux boxes tend to come out of the box with the base 64 command, so if you trying to publisher.net core global tool for doing base 64 things you would probably clash with that and then it just comes down to which comes first in the path as to which ones getting invoked.",
+      "Duration": 32,
+      "Offset": 779
+    },
+    {
+      "Sentence": "You need to be quite careful when you pick. These names OK, so it but it does sound like it's a little bit of a Wild West right now, but at the same time, we don't want a lot of regulation at this point because it will slope it would slow people down. Yeah, you want to have people get out there and I actually had someone asked me the other day. If I could pass over a new get package name to them because they've got a new package that does something completely different and it's a really nice name is flux, which.",
+      "Duration": 30,
+      "Offset": 812
+    },
+    {
+      "Sentence": "Well way back back in the old windows and yeah, he wants to publish something called flux and I need to get back to him and say yes. Of course, you can have that. That's nice. Just an experimental thing right so you work as a community. You have these conversations. Yeah, that's it. People can get in touch with you through new get as a way of saying contact owner.",
+      "Duration": 23,
+      "Offset": 843
+    },
+    {
+      "Sentence": "And he click that button and sent me a very nice polite message and I have very rudely not reply to it yet, but I will.",
+      "Duration": 7,
+      "Offset": 867
+    },
+    {
+      "Sentence": "Hey folks, Intel as a sponsor this week and I welcome them because they're bringing some high performance developer tools for all of us. Check out Intel's parallel studio XEI've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C plus plus python or even 4, Tran but is your code building in such a way, and written in such a way that it uses the latest techniques for vectorization.",
+      "Duration": 31,
+      "Offset": 875
+    },
+    {
+      "Sentence": "Bing multi node parallelization or memory optimization.",
+      "Duration": 3,
+      "Offset": 907
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 26,
+      "Offset": 911
+    },
+    {
+      "Sentence": "So we have thisin.net global tools. We had this in node, but it was something that happened in the development community. Even before this would you say it was gems and Ruby that started this global tools concept I would I think I might be risking the wrath of the python crowd's place and had easy install and pip but I think the first thing that I saw myself that did this was Ruby Gems and you would say Jim Install Global.",
+      "Duration": 30,
+      "Offset": 939
+    },
+    {
+      "Sentence": "For example, and then that actually added I think it was just our or you aliased it or something. But yeah, you would just say rails generate or RG and then generate a controller or view or active active record model or whatever. People were typing very, very long commands with complete model declarations in them. But yes and sass as another example. That was originally written in Ruby and distributed as a gem.",
+      "Duration": 34,
+      "Offset": 971
+    },
+    {
+      "Sentence": "That was a global tool so why would I want a global tool and not a project level tool? Why wouldn't. I want all my projects to have their own separate tools and then have everything scoped that way. So I don't worry about breaking global paths and everything would just be held with the project that I would give you the project and you would get the tools that my project cared about so that's still available that still an option and it's perfectly decent option. There are things so for example.",
+      "Duration": 30,
+      "Offset": 1005
+    },
+    {
+      "Sentence": "All tool that I created and published is called Unpackage UNPKG.",
+      "Duration": 5,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "And I started out before it was a global told it was a project level tool and you actually have to open up the CSS praj file and adda.net CLI tool reference rather than a package reference and there's no simple commandline way. There's no simple visual studio or ride a way of addinga.net. CLI tool reference to a project you have to go in and edit it so that makes things slightly difficult and then you've got that that only works in that one.",
+      "Duration": 31,
+      "Offset": 1043
+    },
+    {
+      "Sentence": "You have to type.net space and then unpackage and then the rest of the things so as soon as global tools actually became something it was literally the day after they went RTMwith.net core 2.1. My published an updated version of the package, which put it in as a global tool, which means whatever project. I mean, I don't have to install anything I can just say Unpackage and JQuery and it does everything for me. So it's just a lot more convenient than having to do the same thing.",
+      "Duration": 31,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "What if you gave me your project though and maybe it had some associated scripts with it and then I don't have those tools. What's the best way for me to get up to speed as quickly as possible, probably something in the readme, saying run. This There isn't antype.net build and this project depends on these 5 tools go and get them. I would say it would be a bad idea to put things into your build scripts into your targets files or you'll see S project files or anything.",
+      "Duration": 32,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "Relyon.net global tools to run so again talking about package when it was a local tool build step to do the restore was just execute this shell command and Itwas.net Unpackage restore once I changed it to being a global tool. I didn't want people to have to have that global tool installed but I still wanted the restore on build functionality and so I created another.",
+      "Duration": 30,
+      "Offset": 1140
+    },
+    {
+      "Sentence": "Called Randall Labs dot unpackaged up build which is a bill time package. That does the restore published that and then added a command line option to unpackage to say add bill time restore so if you clone my repository. An it's gotten package dot Jason file in it, and build it will do the restore because it's using a package reference rather thana.net CLI tool reference to handle that.",
+      "Duration": 30,
+      "Offset": 1171
+    },
+    {
+      "Sentence": "Would you call that a best practices that something that other people should emulate or would you just call that something you've figured out in or not quite sure if it's a best practice. Yet II suspect. It's the best practice. It's certainly anymore tools that I create that require some kind of build time process. I will be doing the same thing and I will be doing it now by copying and pasting from my package dot build script. The first time I did it, I copied and pasted from something Mads Christensen Foods.",
+      "Duration": 32,
+      "Offset": 1203
+    },
+    {
+      "Sentence": "Because writing build packages is really complicated and not well documented. So I had fun with that it does sound like a best practice stuff because I think we all agree that someone needs to be able to go and Clone, a repository and type net build and have it be successful without a lot of initial setup in ceremony.",
+      "Duration": 19,
+      "Offset": 1236
+    },
+    {
+      "Sentence": "And we saw this happen with node and NPM as well so typescript when typescript 1.0 came out. You would install it globally and it would have to be installed globally for the Bills to run so you had to put in things, saying, You have to install typescript before you can build this project and because there are a lot of these build time things likely got typescript and sass and Webpack and looking for you and all these other things going on.",
+      "Duration": 31,
+      "Offset": 1256
+    },
+    {
+      "Sentence": "Now NPM provides similar to the old styleof.net tool. You can install typescript as a dependency within the project. So it gets restored and then you can say NPMTS or there's an MPXTSC now. I think which let's you run commands that are installed in the project locally, so it'SA kind of weird. Reversething.net Core 2.1 added a feature that node it had for ages an node.",
+      "Duration": 30,
+      "Offset": 1288
+    },
+    {
+      "Sentence": "Recently added a featurethat.net had out of thebox.net core had anyway do you think that this is something that is going to fundamentallychange.net for the better do you think this is like the beginning of something big? Or is this just a small feature that we're enjoying right now. I really hope it's going to make a difference and encourage people to build more command line tools. I'm working on a set of video training courses at the momentfor.net core.",
+      "Duration": 30,
+      "Offset": 1319
+    },
+    {
+      "Sentence": "Microservices and all sorts by the stuff and that is going to start with a thing, saying I've written some tools that will make this easier for you to follow along with so why don't you go and install those and it's going to be a very command line and visual studio code focused way ofbuilding.net core applications. So I want to make it as easy as possible to do things from the command line and there's quite a lot of repetitive stuff.",
+      "Duration": 30,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "Example I want to do something that makes it easy to upgradeA.net core 2.1 templated project to use bootstrap 4 instead of bootstrap 3 to go through and rip through your layout dot. CSS HTML and so forth. Stratford tedious like that should not be tedious. No, it shouldn'T&I don't want people to be doing my video training course which is supposed to be fun and interesting and entertaining and have me go right, so delete all these script references from your.",
+      "Duration": 32,
+      "Offset": 1381
+    },
+    {
+      "Sentence": "File and then replace them with these ones here, which you can't even copy and paste because this is a video when you know it's hideous so just say download this global tall and then just run it in your project directory. There is a list of global tools at Nate Macmasters GitHub. Nate measures works on global tools and he's building quite a list of several dozen extremely useful tools. Yeah, I've got a couple of that, so on packages on there. It's questionable whether Unpackage is going to continue because the lip.",
+      "Duration": 31,
+      "Offset": 1414
+    },
+    {
+      "Sentence": "Better Microsoft tool is providing a lot of the same functionality now, but I always like it. A lot of people get upset when Microsoft come along and do a version of something that they were doing and I can understand that for bigger things where you know, maybe you're building a business around it and it's an important part of that. But for me personally with a lot of these things that I do to scratch my edge. If Microsoft then come along and go here. We've done the same thing I'll go cool.",
+      "Duration": 30,
+      "Offset": 1446
+    },
+    {
+      "Sentence": "Not using that now you have to worry about yours. Exactly I've got many, many things that I want to be working on so anyone doing other stuff. Other versions of it is great, but the other one. I've got. And this is the nice thing. The thing I think is really nice about this. I use jetbrains rider and install it through the Jetbrains Toolbox and I have a nightly build that updates itself every single day and I want to be able to start it from the command. I want to be able to say rider.",
+      "Duration": 30,
+      "Offset": 1477
+    },
+    {
+      "Sentence": "SLNJ and on Linux and Mac for some reason there's a tools option in the menu to say create command line and you just click that and then you can run Ryder from the command line. It doesn't work on windows. It's not there and so I just wrote this very, very quick console application and all it does is it looks in your toolbox folder and it finds the most recent version of rider and it runs it with the SLN file so to put it differently. They have a bug on adding themselves to the path on windows and you got tired of waiting.",
+      "Duration": 33,
+      "Offset": 1509
+    },
+    {
+      "Sentence": "Tool for it. Yes, that's awesome. And it was really quick and it's it's only had like a few dozen downloads. I think I don't care. It's for me and I made it 'cause I wanted it and I published until you get an so anytime. I sit by get a new machine, or want to do something on the new machine that I can just say that tool IG rider and it brings it down and put it on the machine for me and that's a good reminder to us.",
+      "Duration": 34,
+      "Offset": 1543
+    },
+    {
+      "Sentence": "Thing that we can write these tools as well for people who are excited about open source. Certainly, this is a way to get involved. But there's no requirement for someone to go and make these things public. They could be on your private nougat and they could be used at your company absolutely and I know a lot of companies are doing that where they've got sort of paid hosted my get feed. So they're running something like artifactory internally and they're using that to publish and share tools around the place as well.",
+      "Duration": 30,
+      "Offset": 1577
+    },
+    {
+      "Sentence": "An I think the thing that I would really want to say to people who were thinking about doing this is going to look on my Rendell Labs GitHub organization and find the rider thing in there. It's tiny. It's like I think it's 50 lines of code and most of those are navigating directories and checking that things where there supposed to be to be fair. I was looking at the code and it could have been 20. It's just that you were being extremely clean about it, you looked inappropriate folder is you even supported.",
+      "Duration": 30,
+      "Offset": 1609
+    },
+    {
+      "Sentence": "Rating systems just to be sure you know it's pretty it's a pretty great example of a good starting place for a simple tool. Yes, I think the first version, probably was about 20 lines 'cause in that GitHub repository. You can see issues from people going. I put in an error message that said something can't be done. If this makes you sad and then had a link to my issues page and so I got lots of people opening issues going. This makes me sad, but the point is it's so easy to do this so you literally.",
+      "Duration": 30,
+      "Offset": 1640
+    },
+    {
+      "Sentence": "And the sort of having to put package ID and description and license acceptance and everything else. You need to add 2 properties to your CSS profile. There's a Packers tool true? Which you have to put in and then a tool command name attribute which is what people will type to invoke it. So it's really absolutely minimum effort and it doesn't have to be this big long complicated thinglike.net itself or like get.",
+      "Duration": 30,
+      "Offset": 1671
+    },
+    {
+      "Sentence": "Thing where it supports a dozen subcommands on each of those has got another dozen subcommands. It can just be something that does one thing and you thought I'm so fed up with typing. These 3 commands every time I do something. Just wrapping it up and put it ina.net tool and then if it gets traction and people like using it, then go back and make dash dash help work 'cause That's all business. But in the short term, you do one thing and you do it well? Absolutely.",
+      "Duration": 30,
+      "Offset": 1701
+    },
+    {
+      "Sentence": "Believe was the Unix philosophy, it is, isn't it well, fantastic, I'm excited that people will hopefully start to learn about an create their own net global tools and hopefully they'll check yours out and we can go to rendelllabs.com. I'll put a link in the Shownotes and people can learn about your course where that's coming up soon. Yes, thank you. That be great. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 26,
+      "Offset": 1732
+    },
+    {
+      "Sentence": "I.",
+      "Duration": 1,
+      "Offset": 1760
+    }
+  ]
+}

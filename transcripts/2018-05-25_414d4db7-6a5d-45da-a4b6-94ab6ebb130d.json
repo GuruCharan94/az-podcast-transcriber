@@ -1,0 +1,543 @@
+{
+  "id": "414d4db7-6a5d-45da-a4b6-94ab6ebb130d",
+  "Title": "Do you need to speak English to Code? Noor - An Arabic Programming Language with Ahmed Abdalla",
+  "PublishDate": "2018-05-25",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/d3978d23.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott and I've got a word from a new sponsor and a really cool sponsor. In fact that I use myself. They're seek that'SSEQ when you can check them out at getseek.net that'SGETSEQ.net seek is the easiest way for your team to capture and search and visualize structured log events, you probably do logging. Maybe you have a node app or anASP.net core app move beyond text files check out structured logging it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which individual property values as well as the text it's associated with each event they get sent across the network to seek which then displays them and makes them searchable. It's really easy to get started. You can probably instrument your application. If you're already using logging in just minutes just gotta get seek that'SGETSEQ.net you install the seek server. It's a Windows service and then it listens and handles all the logging whether you're using node JS and the bunion logging library or maybe you use Cera log on?",
+      "Duration": 30,
+      "Offset": 30
+    },
+    {
+      "Sentence": "JustASP.net core's built-in logging seek is there for whatever you want to usewetherby.net or node or python or Java. It's a really great product and I encourage you to check them out and support them, the way that they support us here at Hansel minutes.",
+      "Duration": 22,
+      "Offset": 62
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Ahmed Abdallah from New York? How are you Sir doing pretty well can't complain? How are you very well and happy to be chatting with you so you're a software engineer working software engineering you've been a software engineer for many years, but I bumped into you online when I saw you teaching a new programming language to kids and what's interesting about it is. It is called nor and it is written in Arabic.",
+      "Duration": 30,
+      "Offset": 89
+    },
+    {
+      "Sentence": "You speak at home, yes, so I was born in Sudan in Africa and I moved to the US when I was 9 years old. So my first language is actually Arabic. Sudan is one is one of the few African maybe not. The few African countries. One of some set of African countries where people speak Arabic. As the primary language and when we move to the United States, you know, my parents.",
+      "Duration": 23,
+      "Offset": 121
+    },
+    {
+      "Sentence": "Spoke Arabic as their stronger language, so we end up speaking a lot of Arabic at home, so good meeting. For us going to their parents. You know it's very interesting is that our parents also didn't want us to lose our ability to speak Arabic. But it's something that's inevitable when you move from one country to another where you're not going to be speaking speaking a different language. And so as we are getting older. We started to get much, much me and my siblings started to get much, much better in speaking Arabic, speaking English in the Arabic just started Twitter.",
+      "Duration": 30,
+      "Offset": 144
+    },
+    {
+      "Sentence": "Parents started.",
+      "Duration": 0,
+      "Offset": 176
+    },
+    {
+      "Sentence": "Ordering the textbooks for Arabic's school back home and haven't shipped here, so they can like teach us.",
+      "Duration": 7,
+      "Offset": 177
+    },
+    {
+      "Sentence": "So.",
+      "Duration": 1,
+      "Offset": 185
+    },
+    {
+      "Sentence": "You know they've been fighting hard to maintain it and it's something now as an adult. I'm kind of really glad to have.",
+      "Duration": 4,
+      "Offset": 187
+    },
+    {
+      "Sentence": "Yeah would you say you're fluent or other levels of fluency?",
+      "Duration": 3,
+      "Offset": 192
+    },
+    {
+      "Sentence": "I would say I'm pretty fluent in speaking orally. I think my reading and writing can definitely use. Some improvement and I think it's a result of having gone to part of elementary, middle school high school, college here and it was all in English and I never took an Arabic class because I knew I knew a lot of the basic step where taught in Arabic courses. I think one thing that is definitely an area of.",
+      "Duration": 25,
+      "Offset": 196
+    },
+    {
+      "Sentence": "That could improve at is like certainly my classical Arabic and modern standard Arabic.",
+      "Duration": 3,
+      "Offset": 222
+    },
+    {
+      "Sentence": "But like if you got like a copy of the Martian in Arabic would be like no problem. You can read the whole novel. It depends on how the Martian is rain if it's if it's like modern stand Arabic. It might be a little bit difficult, but it would be think I'll be able to get through it. So now you're a programmer and what are the languages that you program in your kind of day job so right now? I primarily use Java Java Java script. Before that, I used a lot of python and JavaScript so those are 23 languages. I've worked a lot with.",
+      "Duration": 31,
+      "Offset": 227
+    },
+    {
+      "Sentence": "And at what point did you have an inspiration to say that I want to see what a programming language looks like that? Doesn't use standard English or standard. Latin characters, so this happened about several years ago. There's a programmer in Brooklyn, released in Arabic programming language called club or pronounced in his dialogue is called L and so the name of the language means heart and I saw the language on Hacker News. It was posted that day and I thought it was just super cool and I was like whoa. Somebody created in Arabic programming language and I never thought that would be possible.",
+      "Duration": 31,
+      "Offset": 259
+    },
+    {
+      "Sentence": "I was like well this is the first every programming language ever and then at the time. One thing about that language was it was a functional Lisp style. Arabic programming language that I've been doing a lot of python programming and before that, even a little bit of Java programming. And so I was fully like in this object oriented imperative procedural sort of world and I was like looking at cloud minnows like like I think this is a great idea. And I think it would be like super great if flight.",
+      "Duration": 27,
+      "Offset": 291
+    },
+    {
+      "Sentence": "Arabic speaking kids could have access to an Arabic programming language to learn the fundamentals of computer science, but this thing is it's a Lisp and I didn't feel that the functionalist languages or so intuitive and of course, that was my ignorance at a time because the time I hadn't like gone deep into working with functional programming languages and one of the things I would go about and creating new are my Arabic programming languages.",
+      "Duration": 25,
+      "Offset": 320
+    },
+    {
+      "Sentence": "I would end up studying functional programming language understand that, but before that, I was just like.",
+      "Duration": 4,
+      "Offset": 346
+    },
+    {
+      "Sentence": "This ignorance about functional programming, especially like this. Lisp style was Wilson. I want to take a different approach to this, I think this idea really has some serious potential to it, and some of the things that really motivated me was. I think at around 2013 number around that time. There's just like this huge surge for let's get everybody to learn how to code programming super accessible. I think maybe about a year or 2 before that is one Corsair on Udacity or created so like this whole revolution of let's jump.",
+      "Duration": 30,
+      "Offset": 352
+    },
+    {
+      "Sentence": "You are learning computer science online and for free just really started picking up and I want to things that sort of struck me is that to learn computer programming. You basically have to know how to speak in English and you have to be pretty fluent. I think one of the things at the time is a lot of the teaching material is in English. A lot of documentation in English. You know if you're running a compiler for language and you get an error that you know that error in that stack traces all in English is like it takes a pretty serious amount of fluency in English to be able to.",
+      "Duration": 31,
+      "Offset": 382
+    },
+    {
+      "Sentence": "Bing to read Docs in like bootstrap yourself and remember like you know, there were these businesses like Code Academy and others that were trying to make learning programming super easy for folks and they would make it interactive and it was on the web. So you don't have to download install anything is sort of struck me that, like maybe everybody who can speak English will be able to learn how to program except for the people that don't know how to speak English and personally. I was born in a village in those like really poor so like not in, not in like the downtown.",
+      "Duration": 30,
+      "Offset": 414
+    },
+    {
+      "Sentence": "Oh God, no so like in my village in Sudan. It was probably when I was like 6 years old that we got electricity and the same village's like around the year 2000 that they got landlines and phones. So it's like part of this village is like mud houses and Rose and the other part is like brick. I think there was maybe one person in the town he might have had a toilet so something always had this like attach attachment. It's kind of like my early upbringing is just this really poor environment.",
+      "Duration": 30,
+      "Offset": 446
+    },
+    {
+      "Sentence": "Support until I moved to the US with my parents. I was like whoa. This is heaven. But before then. That was my life and so growing up, I sort of like thought back through this.",
+      "Duration": 9,
+      "Offset": 476
+    },
+    {
+      "Sentence": "The people I came from the people who don't have those opportunities and when I think of English specifically. I think just about and I don't want to say every country, but I can certainly say for Sudan that teaching English is like is like one of the most important skills in the educational system and I think like.",
+      "Duration": 18,
+      "Offset": 486
+    },
+    {
+      "Sentence": "And my village it was like around fifth grade, they would attempt to teach people English, but it was like not very good and can you know the curriculum is already terrible and it's not a lot of funding if you went to an English or American school instead and you would come with their super solid understanding of the English language you probably come speak English without an accent. There's just like it's like a very immersive experience into a language that has a lot. Quite frankly a lot of opportunity opportunity for professional development for University education abroad.",
+      "Duration": 31,
+      "Offset": 505
+    },
+    {
+      "Sentence": "So.",
+      "Duration": 0,
+      "Offset": 537
+    },
+    {
+      "Sentence": "As I start to think about it when cloud came out is.",
+      "Duration": 2,
+      "Offset": 538
+    },
+    {
+      "Sentence": "Also, the language English is the language you need to get into programming and so when I saw quite of course at the time I didn't know how to create a programming language. I've never attempted to create programs and I myself. I'm a self taught developer so not a lot of things I picked up where relevant to the job and my work that so then one day I decided to apply to the Recurse Center, which is a.",
+      "Duration": 22,
+      "Offset": 541
+    },
+    {
+      "Sentence": "Place here in New York City is like a writers retreat for programmers and basically people take take about 3 months off from their work and they come and work on any project. They want and so of course in my head. I was like Ah that Arabic programming language ID. I really wanted to work on, I think this might be a good place to do it and.",
+      "Duration": 18,
+      "Offset": 563
+    },
+    {
+      "Sentence": "So I came to the record center and of course. I have zero background, creating programming languages didn't know where to start and I bumped into a re cursor at the time.",
+      "Duration": 11,
+      "Offset": 583
+    },
+    {
+      "Sentence": "Ken Pratt really good friend of mine he?",
+      "Duration": 3,
+      "Offset": 594
+    },
+    {
+      "Sentence": "Pointing me to this really good book called create your own programming language and I can give you a link to the book later on, and so I read this book and it talks about how it gives you this like the understanding. You need to build a programming language and I think this is also this is the same book that help Jeremy Ashkenaz create coffeescript so I'm like oh this book must be legit. 'cause Jeremy Ashkenazi was inspired to create coffee script after reading this book, it will totally help me an picking up all the fundamentals, so between this book and a few other programming language book side piece together what I needed to know.",
+      "Duration": 31,
+      "Offset": 598
+    },
+    {
+      "Sentence": "Programming languages work in terms of you know you have a grammar file and you have a parser and lexer and you have.",
+      "Duration": 5,
+      "Offset": 630
+    },
+    {
+      "Sentence": "Interpreter compiler, all these like no degree things you need to build up programming language and I started off.",
+      "Duration": 6,
+      "Offset": 637
+    },
+    {
+      "Sentence": "At the time by after I finished reading. This book and a few other books as I told myself, I'm going to write my own lexer write my own parser. I don't need to use any tools. You aklex none of these things like that's a little bold right there. When do you think?",
+      "Duration": 14,
+      "Offset": 644
+    },
+    {
+      "Sentence": "Yeah, I mean, it's not just saying like I let me. Let me rephrase I apologize. I mean, more like lexer parser like that's the least fun part of tuning a programming language that coming up with the keywords in the structure during the actual fight for bite parsing that's no fun.",
+      "Duration": 15,
+      "Offset": 659
+    },
+    {
+      "Sentence": "Right and also for me, I was like look. I need to be able to control every aspect of this because you know, I'm dealing with Arabic text and I don't know what issues will come up, but I will have control of that is a very good point. There's a lot of times where you might assume that the text is going to be parsed a certain way. And, of course, programming languages in lexor. Jakers often think about things byte for byte, but Arabic not only right to left, but the byte arrays are UTF 8. Yes, and actually even before I attempted to create my own like parser and lexer.",
+      "Duration": 33,
+      "Offset": 675
+    },
+    {
+      "Sentence": "Experiments I did is I thought well. Maybe I can just convert an existing English programming language to Arabic and maybe that would just solve the job and of course, you know, I wanted like a language to be like al goal based imperative and so I went with python and so clone python. Locally went into the grammar file and I added Arabic keywords to the grammar file compiled it ran my interpreter and I punched my every keywords in the rebel and I didn't get didn't register.",
+      "Duration": 30,
+      "Offset": 710
+    },
+    {
+      "Sentence": "Yeah, evaluate anything and so I tried different English keywords for.",
+      "Duration": 6,
+      "Offset": 741
+    },
+    {
+      "Sentence": "The same python grammar file and those different keyboards work just fine. So I knew that if I edited the grammar file compiled language. You know everything is smooth and just after a little more research. I basically came to realize that the lexer parser for.",
+      "Duration": 12,
+      "Offset": 748
+    },
+    {
+      "Sentence": "Python doesn't support the parsing of non ASCII characters and so while the language. It's at the top like does support. This have support for UTF 8 and Unicode in the grammar file. I couldn't get it. And I think it's probably perhaps they really old technology. Perhaps it wasn't an idea that was thought overtime or needed.",
+      "Duration": 22,
+      "Offset": 762
+    },
+    {
+      "Sentence": "So I didn't show and even if I had been able to get it and even if there was just something I missed it, maybe it really is doable.",
+      "Duration": 6,
+      "Offset": 785
+    },
+    {
+      "Sentence": "It raised there's another level of concern ahead, which is you know python. The structure of it still goes from left to right and if I write an Arabic keyword like death. If I write that from error in Arabic and it goes from right to left. Then the next word is going to have it to be to the right of that, so it's like you have certain keywords going from right to left, but the language flow is still from left to right and I thought that just like converting a few keywords here and there might, not really do it.",
+      "Duration": 30,
+      "Offset": 792
+    },
+    {
+      "Sentence": "It might might just have like start from scratch and go from there and so of course, you know after either book like any program? Are you think why I can do anything. Now I read this book and I know how this works.",
+      "Duration": 12,
+      "Offset": 823
+    },
+    {
+      "Sentence": "And let's just say like about after a week or 2 of running my own parser and lexer. It was just I was just like oh this is just too much is just too many bugs and off by one errors. I just don't want to deal with this when I really started to think about like maybe. I really should use something else to do this and I started looking into various tools that I had read about but none of them really think the one that appealed to me the most of the time was peg JS parser, especially in grammar for.",
+      "Duration": 30,
+      "Offset": 836
+    },
+    {
+      "Sentence": "Implemented in JavaScript and pegs are these these like grammar formalism. I don't really know how to describe it. That well it's basically like a tool that generates compilers for you So what you do is you give it your grammar file and it's similar to the way Lex and Yacc works. You basically are writing in your peg you go to pegJS.org slash online. You can see it actually in place where you write the grammar. You say this is an expression and that's a factor and that's an integer and this is a term and you're using their language.",
+      "Duration": 30,
+      "Offset": 868
+    },
+    {
+      "Sentence": "Code in your language right and the grammars like an E BNF grammar of you have, like, these recursive definitions of the.",
+      "Duration": 8,
+      "Offset": 899
+    },
+    {
+      "Sentence": "How your grammar is broken down into like the base atoms?",
+      "Duration": 2,
+      "Offset": 908
+    },
+    {
+      "Sentence": "And so I started off by creating if I may just before you get move on to be sure, he just said EBNF. That means extended bukas now are form and it's part of a Meta Family Medicine. Text family of notations. It's a very, very old grammar that's standard so peg JS is using that E BNF grammar style correct yes.",
+      "Duration": 24,
+      "Offset": 912
+    },
+    {
+      "Sentence": "Just want to give the context is not everybody knows what that acronym means.",
+      "Duration": 3,
+      "Offset": 937
+    },
+    {
+      "Sentence": "No definitely thank you for that course, so I started creating my grammar file and and as I add different rules and to the grammar file out, then run it through peg JS and I would get an abstract syntax tree pet. Jess would generate the compiler and then you take your language source code and you run it through the compiler and what you get out of it is the abstract syntax tree and then it's up to the developer to take that abstract syntax tree. Tan evaluate it interpreted as they wish and so.",
+      "Duration": 31,
+      "Offset": 941
+    },
+    {
+      "Sentence": "We implemented in JavaScript I would just take the different nodes.",
+      "Duration": 3,
+      "Offset": 973
+    },
+    {
+      "Sentence": "In this abstract syntax tree and like you know this was a function invocation, then that means. This is the part of the language where somebody's trying to call a function and so I would do the necessary parts of.",
+      "Duration": 11,
+      "Offset": 977
+    },
+    {
+      "Sentence": "Calling a function if I had to look up variables from the stack. I'm at this point just slight gets into like the details of implementing an interpreter or language, I think one of the things that was also an option from the time was too perhaps compile my language to another language like JavaScript itself and have like JavaScript run. The JavaScript code. VA door node JavaScript code basically chance piling my language to another language, but I wasn't the choice ahead.",
+      "Duration": 28,
+      "Offset": 989
+    },
+    {
+      "Sentence": "Chosen to do at the time so there's like a lot of options. But I think using tool like peg. JS was just super helpful and I think now there's another tool that came across called home and had to go back out special look into ohm. Ohm is also tag based compiler generator. That's has a lot of a lot of utilities to help you like debug and introspect the language in the grammar that you're generating and building.",
+      "Duration": 23,
+      "Offset": 1018
+    },
+    {
+      "Sentence": "Hey folks, Intel as a sponsor this week and I welcome them because they're bringing some high performance developer tools for all of us. Check out Intel's parallel studio EXE I've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C python or even 4, Tran but is your code building in such a way, and written in such a way that it uses the latest techniques for vectorization.",
+      "Duration": 31,
+      "Offset": 1043
+    },
+    {
+      "Sentence": "Having multi node parallelization or memory optimization.",
+      "Duration": 3,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 26,
+      "Offset": 1079
+    },
+    {
+      "Sentence": "When you did this, the first time were you thinking, it would be entirely Arabic, including Arabic equivalents for numbers even though we're all using the Arabic numeral system like you want the whole thing to be as Arabic as possible and stay in the Arabic typefaces in Arabic style or do you have anything we use switch into like if you use like numbers are using the Arabic numerals or you going to put in like 4?",
+      "Duration": 26,
+      "Offset": 1106
+    },
+    {
+      "Sentence": "So I didn't get into the part of supporting the numbers.",
+      "Duration": 3,
+      "Offset": 1133
+    },
+    {
+      "Sentence": "In like that, like the Arabic numerals to clarify the Arabic numerals as you mentioned earlier, the ones we use and.",
+      "Duration": 7,
+      "Offset": 1138
+    },
+    {
+      "Sentence": "Numerals used often times in the Arabic world are like where called like the Indian numerals.",
+      "Duration": 5,
+      "Offset": 1145
+    },
+    {
+      "Sentence": "And so it uses the Indian numerals as.",
+      "Duration": 4,
+      "Offset": 1152
+    },
+    {
+      "Sentence": "The numbers in the language if you want to.",
+      "Duration": 2,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "I didn't get get around to adding support flight. English numerals or average do you think those kind of things matter like I understand that there's lots of languages where they have a great language like Ethiopian America's when I'm very familiar with their numeral system, though, is so goofy that a lot of Ethiopians are just like forget it. Will just use like American numerals or standard English numerals. It's just easier or do you think when doing a language that is not English? There's value in kind of pushing aside all of the?",
+      "Duration": 31,
+      "Offset": 1159
+    },
+    {
+      "Sentence": "Things and trying to see if you can do it, the whole way in that local language.",
+      "Duration": 3,
+      "Offset": 1191
+    },
+    {
+      "Sentence": "So I think for me a lot of things are regretting my decisions. A lot of values where how would I want to how would I have learned to use this language. If I was a little kid with this language have taught me as a learning Journey's learning journey. That's really what I was trying to answer as I was making different decisions and when it comes to the numerals. I first start off with supporting the Indian numerals, which were used back when I grow up when I grew up that was one of the common.",
+      "Duration": 30,
+      "Offset": 1196
+    },
+    {
+      "Sentence": "Systems, but I also did understand.",
+      "Duration": 2,
+      "Offset": 1228
+    },
+    {
+      "Sentence": "Yeah, you know the Arabic numerals that we use here today, common in the US and so.",
+      "Duration": 4,
+      "Offset": 1231
+    },
+    {
+      "Sentence": "They were like further away but they weren't like I would never have this because that has to be this way or it needs to be that way. But it was more like from the first person view of me as a little kid? What was familiar to me at the time and the idea that like a computer understands me.",
+      "Duration": 16,
+      "Offset": 1236
+    },
+    {
+      "Sentence": "Connect people who speak only English or listening should use this as an opportunity to think outside their box and think, to themselves. What if computers and the Internet and the thing that is taking over the World Tech.",
+      "Duration": 11,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "Didn't speak my language like? What does that feel like 'cause a lot IA lot of people and I wrote an article about this 10 years ago, called do you have to know English to be a programmer? It's become the lingua franca? Which is funny 'cause that's French of the Internet, but is that?",
+      "Duration": 15,
+      "Offset": 1266
+    },
+    {
+      "Sentence": "Is that OK 'cause it is such a barrier? It really isn't just a matter of learning 10 keywords? Is yeah, and I think relative to the way I grew up in Sudan to be fluent in English. You basically have to be wealthy. There's a lot of people in Sudan that don't have access to like Great American schools. English schools international schools where you can come with a really strong English background.",
+      "Duration": 24,
+      "Offset": 1282
+    },
+    {
+      "Sentence": "And.",
+      "Duration": 0,
+      "Offset": 1308
+    },
+    {
+      "Sentence": "So for me, it was just sort of thinking like.",
+      "Duration": 1,
+      "Offset": 1309
+    },
+    {
+      "Sentence": "No, I was too poor, I grew up, too, poor to have been able to learn programming by myself. If I had come to be a teenager and I was interested in it, and I thought a lot of the concepts in Computer Science, looping functions arithmetic in all these different concepts are.",
+      "Duration": 17,
+      "Offset": 1311
+    },
+    {
+      "Sentence": "Pretty language agnostic, they're just algorithms that you can learn in regardless of the medium.",
+      "Duration": 5,
+      "Offset": 1329
+    },
+    {
+      "Sentence": "One is able to learn them and I knew that even if I had like created the perfect language experience. You would still need to learn English to be able to build anything significant because the whole stack in a computer is based on you need to know in English. There's no way around it. But I think to get people started. Yeah, go ahead. I'm sorry. I do want to dig in a couple of other things before we run out of time thinking about some of the criticisms that were very valid and interesting online, but I was looking through the source code.",
+      "Duration": 31,
+      "Offset": 1336
+    },
+    {
+      "Sentence": "Get into that and I notice something interesting where you made a change when you describing a function or a worker you have both the male and the feminine masculine and feminine in English. We don't really think about nouns or things having gender, but virtually every other language in the world does have this idea of like a TV is a man and a pen is woman and you have 2 key words then to describe a function or worker.",
+      "Duration": 26,
+      "Offset": 1367
+    },
+    {
+      "Sentence": "Yes, that's something I would think about is you know if you were a little kid with a little boy and little girl.",
+      "Duration": 7,
+      "Offset": 1395
+    },
+    {
+      "Sentence": "Now, how would it impact with you if everything was done from the perspective of like these masculine objects and I just wasn't sure that's kinda. Yeah, I could have a go. Either way, and so when I think of like the way to define function. It's I'm trying to describe it in like kid like talk or toy talk, which is I said instruct a worker. I'm trying to think is this worker a male worker or a female worker and I'm like well. It's a grammar file. I can update it to have both and I'll figure that out later.",
+      "Duration": 31,
+      "Offset": 1403
+    },
+    {
+      "Sentence": "I deal with that idea was this even a necessary debate and so I don't have the final answer to that as I just wanted I wanted it to be inclusive.",
+      "Duration": 6,
+      "Offset": 1435
+    },
+    {
+      "Sentence": "Yeah, and that is interesting because it does as we are saying before if you're experiencing computer. The first time and they are things that are inherently English that's going to make you feel some kind of way an if you introduce you got introduced to a language as a young Arabic speaking girl and then everything is a male noun. You might feel some kind of way we don't know what that is, but.",
+      "Duration": 22,
+      "Offset": 1443
+    },
+    {
+      "Sentence": "It closes the door just a little bit.",
+      "Duration": 2,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "Close a little bit tighter.",
+      "Duration": 1,
+      "Offset": 1470
+    },
+    {
+      "Sentence": "Definitely and I think also on the point of criticism regarding the grammar and the keywords. A lot of the grammar choices had made were from the perspective of my own Sudanese dialect and whereas I had learned to speak for people, not familiar with the Arabic language in Arabic. Arabic speaking countries is that normally there's like a local dialect to a given country so like sit down. We have our own dialect in Syria. They have their own dialect in Egypt. They have their own dialect Gulf Arabic countries like Saudi Arabia.",
+      "Duration": 32,
+      "Offset": 1472
+    },
+    {
+      "Sentence": "Come on Dubai UAE in general. They all have their own like pretty similar yet different Arabic dialects and these are dialects that are just local to those countries in those groups and then you have? What's known as modern standard Arabic? Which is like level is a form of Arabic that Arabic that's more formal Arabic is the one you would use in the news is the one you write and publish books in essays and it's the one you would go to cordon draft contracts with.",
+      "Duration": 30,
+      "Offset": 1505
+    },
+    {
+      "Sentence": "Local Arabic, which is like this really, really old Arabic. You can sort of think of it as like Shakespearean English. It's still very important very rich, but it's also not something he will use not help people chat on the street right and so in general in the Arabic world when you create a piece of work and you want it to be transferable. You would sort of do it from probably choose modern standard Arabic because there's just something people in all the different countries will get taught or can get taught they have access to.",
+      "Duration": 30,
+      "Offset": 1536
+    },
+    {
+      "Sentence": "Somewhere, like I as an American go and I write something and I used like elevator, an apartment and then I sent it off to England and they're like. No, it should be lifted flat or is it more is it more than that. It's very similar to that it can be more than that in that there's a lot of Arabic. Speaking countries and sometimes local dialects diverge really heavily so for example, like I can understand Egyptian Arabic pretty well, I understand.",
+      "Duration": 30,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "Korean or Levantine or you know that area is called a sham. I can actually understand pretty well. I can start golf. Eric pretty well. But I absolutely cannot understand Moroccan Arabic Algerian or because it's just so heavily like mixed with French is just got their own take on a lot of different words that's just not something.",
+      "Duration": 19,
+      "Offset": 1599
+    },
+    {
+      "Sentence": "I'm at all familiar with well as someone whose families from schottland. I feel the same way about my Scottish uncles, and aunts. And they're all speaking they tell me they're speaking English, but who knows?",
+      "Duration": 8,
+      "Offset": 1619
+    },
+    {
+      "Sentence": "Now, one thing that was interesting is we put this out on Twitter and it turned into a very, very interesting conversation because a lot of my followers on Twitter from Arabic speaking countries and even just now as we're speaking. I put an article out and asked a couple of questions and I have one gentleman from Sudan was talking about the first. The language language that was your inspiration called and he was saying how funny he thought it was that the gentleman who created Kolb wrote the word Lambda rather than writing it as Lambda, he wrote it.",
+      "Duration": 30,
+      "Offset": 1629
+    },
+    {
+      "Sentence": "Alliterated Arabic, which isn't a word, it spells out Lambda. So someone who could read Arabic would go Lambda. But you still have to know what that is which seems so funny to me given that Arabs created algebra, yeah, so a lot of words that are like in use today. In a lot of different Sciences in math. I don't want to say that there isn't an Arabic equivalent is just maybe one that we haven't come across and I think one of the tricky thing is like if you come across like an iPhone like what is an iPhone?",
+      "Duration": 30,
+      "Offset": 1660
+    },
+    {
+      "Sentence": "Sort of makes sense the letter, I meaning me word phone and like do you transliterate that into here's a funny? Here's a funny like random thing so my wife? Speaks Zulu dialect called Enda Valley at home and if you spell iPhone it before the iPhone existed. It says if one which means the phone. So if I was sitting with her and I would say hand me the phone. I would say.",
+      "Duration": 30,
+      "Offset": 1691
+    },
+    {
+      "Sentence": "Phone telephone and now.",
+      "Duration": 2,
+      "Offset": 1722
+    },
+    {
+      "Sentence": "It's like literally I've iPhone so now. I like do we put 2 eyes? Is it II phone like? What do you? How do we say this now because they've a word that was meant something now mean something else? Yeah, definitely, but you brought up a very interesting point, which is one of the last parts that I'm doing. I want to do more research and is what are the common math terms Arabic to a lot of different things that we use today in programming such as Lambda? What's the Arabic equivalent of that.",
+      "Duration": 31,
+      "Offset": 1726
+    },
+    {
+      "Sentence": "Or the ways because this one thing I can just take English programming language terms and transliterate them and say now you have to understand them is just written in your alphabet. It's still just have any inherent, meaning and so then I think one thing that stumped me is I didn't learn calc and pre. Calc and algebra one and trig and differential equations in Arabic. I learned in English or some part of my issue is that I'm coming to it from an English perspective.",
+      "Duration": 30,
+      "Offset": 1758
+    },
+    {
+      "Sentence": "If I could find textbooks. If somebody one of your listeners has like resources. I'd love to see and get like immersed in this myself from the Eric productive because right now, you're right like doing a one to one mapping of a keyword to a keyword is one way to design a language and doing a but doing idiomatic.",
+      "Duration": 22,
+      "Offset": 1789
+    },
+    {
+      "Sentence": "You know at Arabic at its heart.",
+      "Duration": 2,
+      "Offset": 1812
+    },
+    {
+      "Sentence": "Without without knowing in English language first might have a different result. Yeah, one of the things I was also thinking about is as I was creating this language. Some of the things that I was like debating between where How do I go about implementing packages and modules? How do I go about doing this and that and I was like looking at taking a lot of different inspiration from the programming languages. I used to work with what are the best ways to teach computer science and that's when I started to think about you know it's not just text based needs to be like graphical and visual.",
+      "Duration": 31,
+      "Offset": 1815
+    },
+    {
+      "Sentence": "Related and oriented into the mechanism, so there's a lot of things to solve here were so far in the future here. We know we have virtual reality and pocket supercomputers. Why is it still vim and text that we're doing all of our talking to the computer with?",
+      "Duration": 18,
+      "Offset": 1847
+    },
+    {
+      "Sentence": "And I don't have the answer, either, yeah, and so I think that to make it more palatable and easier to learn to add things like time travel and the visual visual feedback. I think Khan Academy does a really good job of this the way they teach computer science programming they use you can write a function to draw a rectangle and then you can like.",
+      "Duration": 20,
+      "Offset": 1867
+    },
+    {
+      "Sentence": "Alter the arguments that rectangle and watch it resize on the right hand side of the screen.",
+      "Duration": 4,
+      "Offset": 1888
+    },
+    {
+      "Sentence": "Yeah, yeah, things like the swift playground or zamarin workbooks where you're typing and the code is running is always running.",
+      "Duration": 7,
+      "Offset": 1893
+    },
+    {
+      "Sentence": "Is is definitely a better experience than the whole compile hit? Refresh experience that we're having today cool? Well this is great and thank you so much for talking to me and would you encourage other people try to write their own programming language definitely absolutely I think once you get started I personally tend to be really addicting and I think it's a great way to increase your programming skills as well.",
+      "Duration": 21,
+      "Offset": 1901
+    },
+    {
+      "Sentence": "You're fantastic well, I'm going to send put in links in the show. Notes to nor to call it to my article on do you need annoying the programmer as well as paying JS in the other resources, including the book create your own programming language that we talked about thanks so much for chatting with me today. Thank you for having me.",
+      "Duration": 16,
+      "Offset": 1923
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 8,
+      "Offset": 1940
+    }
+  ]
+}

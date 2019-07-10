@@ -1,0 +1,393 @@
+{
+  "id": "5cbe7c4d-a30e-4808-9caa-f23a0c12739b",
+  "Title": "Exploring Algorithms of Oppression with Dr. Safiya Noble",
+  "PublishDate": "2019-02-01",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/b30a02bc.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks, you're a very good developer probably regardless you do right bugs. That's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that costed and fix it without delay century. It's a name so common that they have to include the top level domain in their advertising to make sure you remember it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Free dot IO that century dot IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix it together visits entry dot IO.",
+      "Duration": 27,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another sort of Hansel minutes and today I'm talking with doctor Sophie and Noble. She's professor at the University of Southern California Annenberg School for communication as well as at UCLA's Graduate School of Education Information Studies. And I found you because I read your book algorithms of oppression, which is a book that you wrote with over 6 years of academic research on Google search algorithms. Thanks so much for talking to me today great to be here. So this is not the first book. You've written but it's definitely a book that has got a lot of people talking.",
+      "Duration": 30,
+      "Offset": 63
+    },
+    {
+      "Sentence": "You went and did research into the power of the algorithms that we use everyday to for something simple just find a picture or find pizza locally. I did you know? I was drawn to this work because I was kind of serendipitously. I guess you could say looking for information that might be of interest to my bonus daughter and my niece is an it really started. This study started, with a simple search on the keywords black girls.",
+      "Duration": 30,
+      "Offset": 94
+    },
+    {
+      "Sentence": "2010 and I was stunned to find that pornography and hyper sexualized content was the primary way that these 2. Key words together surfaced up content and that launched me into multi year study in looking at all of the ways in which a whole host of things that I think we might not have ever thought about before particularly when it comes to vulnerable people like children.",
+      "Duration": 30,
+      "Offset": 125
+    },
+    {
+      "Sentence": "People of color, sometimes women in our society in the US are misrepresented and I was thinking about this in the context of.",
+      "Duration": 10,
+      "Offset": 157
+    },
+    {
+      "Sentence": "Other types of information institutions like libraries and schools and the prominence. That search engines are starting to take kind of a bit in their place. An why we might want to pay more attention to what happens in search engines when it comes to representing people communities and concepts and it seems like there's a lot of lots of different kinds of people with different educational backgrounds. A lot of different people have different perspectives on what happens when you type a word into a search engine.",
+      "Duration": 32,
+      "Offset": 167
+    },
+    {
+      "Sentence": "Some people might think that it's curated that is a real person. Some people understand the algorithm and are forgiving of it and others have no idea it's just magic.",
+      "Duration": 9,
+      "Offset": 201
+    },
+    {
+      "Sentence": "It's true at one of the things we know for example, is that from the Pew Research on search engine users is that many people think that the things they find in a search engine, especially on the first page are reliable or credible trustworthy and I think that's mostly because when we look for banal information like where is the closest Starbucks for example, or some other kind of?",
+      "Duration": 31,
+      "Offset": 212
+    },
+    {
+      "Sentence": "That's not disputed search engines can often give us the right answers, so that bolsters our trust and for a lot of things. They are reliable, but when you start getting to more nuanced complicated contested information when you start thinking about identity and the way in which misinformation or disinformation can be easily manipulated or kind of gained to the top of the?",
+      "Duration": 31,
+      "Offset": 244
+    },
+    {
+      "Sentence": "Mission I think that's where I'm really interested in thinking about what's at stake an in what ways might that undermine the public really having good reliable trustworthy information?",
+      "Duration": 14,
+      "Offset": 276
+    },
+    {
+      "Sentence": "And it makes me wonder also what the correct result would be like, we all have a subjective perspective on when these when we search for something what we expect to get we're delighted if it's correct and we're upset if it's not do you solve that by making better algorithms building different teams or do you solve it through curation? It's true I mean? I'll tell you one of the things that I was thinking about for the years that I was finding pornography as the primary representation of black girls.",
+      "Duration": 30,
+      "Offset": 292
+    },
+    {
+      "Sentence": "Asian girls is that I don't think that's the way those communities those people. Those groups of people would represent themselves and of course. These are you know in this case of those examples. We're talking about children adolescents who don't have alot of money who don't understand that Google search is primarily an advertising engine right. It's those who have a lot of capital and there's a lot of research to kind of bear this out, people with.",
+      "Duration": 31,
+      "Offset": 323
+    },
+    {
+      "Sentence": "Patients with the most money are often able to take advantage of let's say AdWords and helping to make their content more visible and in the case of the pornography industry. You know you didn't really even have to add the words sex or porn or pornography to make black girls Asian girls Latina girls synonymous with porn and so those are the kinds of things that I think people are less aware of as part of the way in which?",
+      "Duration": 31,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Industries and organizations really have a lot more ability to have their version of black girls represented. Maybe then African American or black or Latina girls themselves and those are the kinds of power dynamics that I'm really interested in studying do these now. This is the focus of your book and it's called algorithms of oppression. Using this search term as an example for under represented groups does this apply to any results.",
+      "Duration": 30,
+      "Offset": 387
+    },
+    {
+      "Sentence": "That has an undesirable result any term that I might search for that whether it be like I might search for I don't have no idea I haven't searched for it yet, but like Americans and Google says are dumb or so and so after that, I might like is and then it starts to auto complete is an idiot is whatever one of these things correct and when did they not and when are they problematic and when are they not?",
+      "Duration": 23,
+      "Offset": 418
+    },
+    {
+      "Sentence": "Well, I think you know this has been one of the issues that's been in the headlines here. Quite recently for example, you know how Google Autosuggest certain ideas. You know whether the word idiot. Let's say gets paired up with a politician or someone in the White House so that kind of thing and these are of course, the knew conversations that we're having our about particular types of bias whether there's certain kinds of political bias.",
+      "Duration": 31,
+      "Offset": 442
+    },
+    {
+      "Sentence": "Ground search engine results and I think that you know this is a new opening that heretofore there was a high degree of trust, not even a questioning of whether there was a particular slant or bias happening in search. Now I think certainly with my book. Another investigative journalists and people like yourself who are opening up the conversation. It's allowing us to say, well, what are the primary influences?",
+      "Duration": 30,
+      "Offset": 475
+    },
+    {
+      "Sentence": "Search engine what's at stake and how is that different for different people and certainly. I think that celebrities and political figures. You know there's a long history of having their names kind of associated with unfavorable content. But those are people who have a lot of power in our societies, celebrities and politicians. I think much more is at stake for people who are vulnerable who don't have influence who aren't millionaires who don't have.",
+      "Duration": 30,
+      "Offset": 505
+    },
+    {
+      "Sentence": "For example, to affect public policy? What's happening for them and what kind of biases in place and we see this for example, around immigration. You know, there's kind of negative South of the border types of conversations that come up and kind of dominate and search engines about a word like that, so there's certainly kind of a set of politics that you might say that are popular and that circulate.",
+      "Duration": 30,
+      "Offset": 536
+    },
+    {
+      "Sentence": "Means I think what's a challenge is that the public relates to search engines as a bit of a truth teller, like that? It will give them facts and it's less the public is less likely to understand that there are all are all kinds of influences happening around what they may see and those are the things that I think are worth talking about.",
+      "Duration": 20,
+      "Offset": 567
+    },
+    {
+      "Sentence": "One of the phrases that you use in the book that I really like and I think I'm going to start using all the time? Is this concept of algorithmically literacy.",
+      "Duration": 7,
+      "Offset": 589
+    },
+    {
+      "Sentence": "I didn't think that anyone needed that but do you think that this is something that should be taught that the idea that one should be conscious of an algorithm know what it is that it exists and that it may not necessarily give them what they want.",
+      "Duration": 11,
+      "Offset": 598
+    },
+    {
+      "Sentence": "Well, I definitely think that we are moving into an era in our kind of society where people may not understand the very complex mathematical formulations that undergird the algorithms that they're engaging with every day. In all kinds of different let's say apps that they're using on their phones or at work and at play. They may not understand the math of it and in many cases, the algorithm.",
+      "Duration": 31,
+      "Offset": 609
+    },
+    {
+      "Sentence": "You know it's black box. You can't see it. It's proprietary. It's a trade secret. But they certainly should understand how to evaluate the output of these systems and what they might mean rather than I think blindly trusting that there are no power dynamics or no affects that could be manipulated in a way to get a whole host of answers or solutions and ultimately I think with many of the algorithms that were engaging with.",
+      "Duration": 31,
+      "Offset": 641
+    },
+    {
+      "Sentence": "First motivation is a profit motive and so whether it's collecting data on us. As we use. These applications and these algorithms or whether it's feeding back a very consumeristic set of propositions for us, our literacy is really important, and I think one of the things that I try to stress in my work is that the more we let algorithms make decisions for us, rather than using kind of our own critical thinking.",
+      "Duration": 31,
+      "Offset": 673
+    },
+    {
+      "Sentence": "Ideas our own kind of human subjectivities. I think the more we lose a sense of being able to participate in our own decision. Making that affects ourselves our families and our communities. Yeah, I think that's a really significant point that you're making and I'm seeing it in my young sons that I'm raising that they are taking things for granted, and they're taking auto complete as gospel for mix my metaphors a little bit.",
+      "Duration": 31,
+      "Offset": 705
+    },
+    {
+      "Sentence": "My 13 year old, was like Hey, I've got this thing in the back of my head is it cancer or whatever and he had been looking you know something, he typed in like brain or head or something and it was like might be cancer. Auto complete or something and it was like well. No use your critical thinking. Let's windows and Google know all these things will know your common sense is as important or more so than anything. Google could give you and it was really surprising. Yes, yeah, well. You know, I work in a University and I teach I've been teaching University students now for some time and I will tell you that.",
+      "Duration": 31,
+      "Offset": 737
+    },
+    {
+      "Sentence": "Students say they could never graduate from college without Google Googles. The 1st place. They go to help them write papers through ideas and one of the ways I challenge them as I say listen. You've gone through 12 years of Education K through 12. Now you're going to use University for a few years and there are many vantage points that you could take up looking at any particular phenomenon or object.",
+      "Duration": 31,
+      "Offset": 769
+    },
+    {
+      "Sentence": "Spend time years cultivating a complex way of thinking not all questions can be answered. In .03 seconds. In fact, there are many forms of knowledge and ideas that are heavily contested have been contested for thousands of years, So what we seed in our own acculturation to algorithms is this idea of an instant answer that everything can be known that it's fixed.",
+      "Duration": 30,
+      "Offset": 801
+    },
+    {
+      "Sentence": "I have to say that you know the machine is dictating to us what the answer is and I think that you know that is not the way you want to educate people in a democracy. You want people to have high levels of literacy be very well educated and not just kind of function as a dumb box where the machine gives you an answer. And I think we're losing, something we're putting something at stake in our human education.",
+      "Duration": 30,
+      "Offset": 832
+    },
+    {
+      "Sentence": "Move to these new processes. Yeah, it, it seems that the Heat gets turned up on the stove a little bit at a time. My wife noticed recently that I'm using the GPS for basically everything even places that I know darn well? How to get to and she always chastises me for trusting the GPS and not trusting my own common sense.",
+      "Duration": 19,
+      "Offset": 863
+    },
+    {
+      "Sentence": "Well, you know this is certainly important and some of the things that we know for example, about mapping Technologies is that often.",
+      "Duration": 10,
+      "Offset": 883
+    },
+    {
+      "Sentence": "Maps will route us through certain neighborhoods, not route us through other neighborhoods. I think there was recently. Some stories about Uber drivers for example, going through affluent neighborhoods and people not liking apps like Waze, taking them through affluent again neighborhoods that don't want to see a lot of traffic down their streets, but also Conversely not going into certain neighborhoods that maybe have been programmed or deemed somehow.",
+      "Duration": 31,
+      "Offset": 895
+    },
+    {
+      "Sentence": "Algorithm to be quote Unquote bad neighborhoods, so you know, these things are really interesting to me and I think they, I find it fascinating to sit and think about these things to research them and to talk about them. And when I talk to other people. They often scratch their head in there like you know, I never really thought about that and yeah. Maybe I should rethink my over reliance upon where I'm being directed an I think it again.",
+      "Duration": 30,
+      "Offset": 927
+    },
+    {
+      "Sentence": "Really interesting to think about what might be at stake in Concretizing and making even more real. These ideas that some neighborhoods. Which of course we often, or like neighborhoods where a lot of people of color live or poor communities are quote unquote the bad places and not the good places and I think people are studying how apps are reinforcing some of these ideas, too.",
+      "Duration": 24,
+      "Offset": 957
+    },
+    {
+      "Sentence": "This episode is sponsored by stackoverflow for teams a private secure home for your teams questions and answers is everything that you love about Stackoverflow. Now, for your company and get instant reliable answers from your coworkers without disrupting them. Unlike documentation or wikis long email threads are distracting instant messages. Kewene mimics the way that we naturally share and find information introduce stackoverflow for teams to your company and start building products faster and better visit S dot.",
+      "Duration": 30,
+      "Offset": 983
+    },
+    {
+      "Sentence": "Hansel minutes to get your first month, free that'SS dot TK slash Hansel minutes.",
+      "Duration": 7,
+      "Offset": 1014
+    },
+    {
+      "Sentence": "What do you say for people who might be listening and might be thinking that oh gosh you know she's making this all about color all about politics. I don't want color in my neutral computerized artificial intelligence. I wanted to simply be neutral well. You know, there's such a strong set of ideas in our society that technology is neutral and this is I'm not the first person to kind of question whether that's true or not. I will say that I've had a lot of computer scientists.",
+      "Duration": 32,
+      "Offset": 1023
+    },
+    {
+      "Sentence": "Students in my classes.",
+      "Duration": 1,
+      "Offset": 1056
+    },
+    {
+      "Sentence": "And one of the things that I find interesting is that after 3 or 4 or 5 years of an engineering education. I mean, these are very smart students. Many of whom have AP tested in high school out of English out of their humanities courses. They're not taking history or the any social science or humanities courses at the University level there in strict kind of map in engineering education and I often say to them. How much confidence do you feel about designing technology for society?",
+      "Duration": 31,
+      "Offset": 1058
+    },
+    {
+      "Sentence": "We have not studied society at the University level now and often. I find that the kinds of books and articles that I ask them to read about the impact of technology and society, are things they've never been exposed to and they find themselves. You know in some ways. I think feeling ill. Prepared an incredibly responsible for the kinds of products. They're going to be designing for people and they really have never.",
+      "Duration": 30,
+      "Offset": 1090
+    },
+    {
+      "Sentence": "Any adverse affects so you know.",
+      "Duration": 3,
+      "Offset": 1121
+    },
+    {
+      "Sentence": "I often say, and I say in the book that an interdisciplinary well, rounded kind of preparation for engineering. Students is really crucial because I think that there's always kind of a set of intended outcomes and there are often a set of unintended outcomes and the more you know about history and society and people. The more you can kind of be prepared to address some of the unintended consequences and.",
+      "Duration": 31,
+      "Offset": 1125
+    },
+    {
+      "Sentence": "Valley executives now will often see that they are thinking about ethics now thinking about the desperate impact of their product's, but I think it's been people like myself and others who have raised some criticisms that have helped the industry rethink some of its practices and I think overall that's a great thing. One of the things that I appreciated particular about your book was that you stated something very simply that search results are more than simply what is popular?",
+      "Duration": 30,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "We're using objective and neutral and you're using it as a synonym for popular.",
+      "Duration": 6,
+      "Offset": 1188
+    },
+    {
+      "Sentence": "Yes, well, you know you can find something that's popular in society and it may or may not be true. So we know this right irrespective of whether we're using technology or not, that many things that are popular are not positive for society or are miss representative stereo types for example, about all kinds of groups can be wildly popular. It doesn't actually mean their true or helpful in terms of having kind of A.",
+      "Duration": 30,
+      "Offset": 1196
+    },
+    {
+      "Sentence": "You know Fair Society and maybe that we want to have for everyone. So I think you know, many times. The challenge here is that people use search engines as if there. Let's say an online library right and so the kinds of things you might find in a library would be a big context. And I'll tell you I give this exercise to my students will say you know go to a library database and look up any topic you care about anyone it doesn't matter.",
+      "Duration": 30,
+      "Offset": 1226
+    },
+    {
+      "Sentence": "Something and then go to the stacks of books and find that book that you're looking for and then tell come back and tell me something about the context within which he found it and so they often find like wow. You know this subject. I was looking for let's say you know they were looking for something about LGBTQ identity, but they find it in a big context of books about sexual Deviants and that tells them something about the way in which?",
+      "Duration": 30,
+      "Offset": 1257
+    },
+    {
+      "Sentence": "Time we've seen sexual identity right in this very scientific clinical psychological sense. An then they see that. That's a POV kind of a subjective POV that has a long history, but that there's a lot more to it now in a search engine. You're not going to find a context for finding that those things that come to the front page. You're not going to be able to see what's influencing the subjective nature of the thing that you're looking for and so even in the book, I propose kind of other metaphors in other ways.",
+      "Duration": 32,
+      "Offset": 1288
+    },
+    {
+      "Sentence": "Information context much more available and visible to us again rather than just assuming that the things we find are an absolute truth. I think we need to know more about the things we're looking for an and what might be influencing why we're finding them. It seems like early versions of the Google Algorithm Cree 2007 were a lot more well understood than the giant black box. It was quite a less sophisticated.",
+      "Duration": 31,
+      "Offset": 1321
+    },
+    {
+      "Sentence": "Asked and there was this notion of Google bombing where you could get enough people to quote something and you could basically prank the Internet. So you go in search for French military victories and you click. I'm feeling lucky and suddenly you'd find yourself on a fake version of Google that says did you mean French military defeats and that's that's cute up to a point until you realize you can entirely game. The system and put falsities in front of searches for truth.",
+      "Duration": 27,
+      "Offset": 1354
+    },
+    {
+      "Sentence": "Well, we know this happens quite a bit and you know in the early days when I get on the Internet for a long time and you know, we used to have the how we found information was we had a lot of expert communities who might organize bodies of information you could go into parts kind of bulletin board system of the Internet and find people ask for expertise there might have been people who really were teachers or experts.",
+      "Duration": 31,
+      "Offset": 1382
+    },
+    {
+      "Sentence": "Area.",
+      "Duration": 1,
+      "Offset": 1414
+    },
+    {
+      "Sentence": "Now we when we moved to this kind of white opaque page where you could put in a search term and then kind of trust that the mechanics are the logic behind it. We're going to give you the best thing, we removed a layer of kind of again understanding that there might be many points of view, and many experts involved in helping us. Find what we're looking for so now we have a whole generation of people who have never experienced.",
+      "Duration": 31,
+      "Offset": 1416
+    },
+    {
+      "Sentence": "Library ask type of search and have moved to this rather opaque type of search and I think you know, we know that there are people and organizations who often try to game, the system. There were the great story and by great. I mean, terrible story in the Guardian. A few months ago about how White Nationalists had taken over boasian anthropology and of course, we've seen white power white pride.",
+      "Duration": 30,
+      "Offset": 1449
+    },
+    {
+      "Sentence": "Patients take over different kinds of keywords that would lead people to Holocaust denial sites right just flat out. Dis information sites and I think those are the kinds of things that have get are very difficult to see you really don't know that's happening in every once in awhile. The news media will pick up for example, stories about students writing papers on Doctor King and providing a lot of really.",
+      "Duration": 31,
+      "Offset": 1480
+    },
+    {
+      "Sentence": "Misinformation disinformation about Doctor King you know, and what they find is that storm front and other organizations have been able to Co opt doctor. King's name on the Internet and basically try to discredit civil rights and the civil rights movement. So I think those are the kinds of things. These are very like I think it's fairly uncontested in our modern democracy in 2019 that the civil rights movement was probably a good thing for our society.",
+      "Duration": 32,
+      "Offset": 1512
+    },
+    {
+      "Sentence": "But we still find people who fall into these crevices of the Web, where their lead to really harmful hateful anti. Democratic information and I think those are things we should you know, we should definitely care about especially as our kids are engaging with this content often quite unsupervised in your book. You talk about since you work in academia and you think about things in a scholarly way with other scholars. You talk about the importance of citations and I spent all those years in school and college with foot notes for everything in citing papers.",
+      "Duration": 35,
+      "Offset": 1545
+    },
+    {
+      "Sentence": "You had a web of trust, but that web of trust doesn't seem to scale to the actual web well. You know in the early days of Google in particular, but I don't think just Google. You know this idea of hyperlinking to other sites was a way of signaling credibility and trustworthiness in search and so, if I had a site and a lot of people were linking to it, and pointing to it, and saying, You should go to suffering and Noble site then.",
+      "Duration": 31,
+      "Offset": 1580
+    },
+    {
+      "Sentence": "That's something you can trust that was something that was available to us as a kind of practice if citation that was quite frankly borrowed from the field of library and information science. You know what scholars do now. You have other kinds of imperatives like purchasing keywords and trying to optimize content and we have a huge great industry of search engine optimization and advertising companies that are spend millions and millions of dollars trying to optimize their content to the first page.",
+      "Duration": 33,
+      "Offset": 1612
+    },
+    {
+      "Sentence": "Most people don't go past the first page when they're using search engines. So what lands there is incredibly important and Google and big commercial search engine platforms are always trying to keep their own algorithms from being kind of subverted by this. SCO industry so now you have according to Google's own search lab over 200 different factors that go into helping kind of their AI.",
+      "Duration": 32,
+      "Offset": 1646
+    },
+    {
+      "Sentence": "You know what to bring to the first page and often times, one of the things you'll find is that large advertisers large clients of theirs are show up on the first page. That's why when we look for certain for example, news. We're probably going to be LED till very large news organizations rather than say a teeny local campus, University Campus newspaper, or some very small community paper right. We're going to find the large.",
+      "Duration": 30,
+      "Offset": 1679
+    },
+    {
+      "Sentence": "So that kind of you know, same with you know for years of you know you're looking for women's clothing. You're going to be LED mostly to large companies that spend a lot of money to be made visible around women's clothing, so ultimately, it's advertising that is driving search engines, not necessarily a quest for truth or curated cited trustworthy information, which might be something that you find more so in a library.",
+      "Duration": 31,
+      "Offset": 1710
+    },
+    {
+      "Sentence": "I think Google search is excellent for commercial content. You know when you're looking to buy products and services is very good for that or if you're looking for certain types of undisputed facts, you know it might send you to wika pedia first. But in many cases, it's can be quite deceiving whether you should trust advertising as a primary source of information for making good decisions.",
+      "Duration": 30,
+      "Offset": 1742
+    },
+    {
+      "Sentence": "About something very interesting that I think children should understand is that they think that Google and that search engines are part of the Internet. They are synonymous for the Internet and they're treated almost as a public utility.",
+      "Duration": 13,
+      "Offset": 1772
+    },
+    {
+      "Sentence": "But they have interests they are a company that need to keep the lights on so as such, you need to kind of take those. Google results and put them in context, and that's asking a lot 'cause. We search dozens of times a day.",
+      "Duration": 12,
+      "Offset": 1786
+    },
+    {
+      "Sentence": "It's true and you know, even with my own family, you know, I find my second grader, saying mom. When are we just Google, it and you know? Of course, he doesn't know his mom is just kind of really written. This book offering that but a set of alternatives to just googling it all the time and I said well. Why don't you instead if you're interested in that topic? Why don't you talk to your librarian at school or why don't you ask your teacher about it? Why don't you call your grandparents you know? Why don't you get multiple points of eating your grandparents might know something about that. 'cause they were alive during that time or they were young during.",
+      "Duration": 35,
+      "Offset": 1800
+    },
+    {
+      "Sentence": "You know like even in my own home. I have to you know try to teach my son out of some of those habits because I want him to kind of learn that there are other ways of knowing besides just going to a search engine and I think that you know again. A lot is to be learned and society and ideas, they are complex and.",
+      "Duration": 24,
+      "Offset": 1835
+    },
+    {
+      "Sentence": "You know one of the things that I offer up as a in the conclusion of the book is that you know, I don't think the answer is getting rid of Google. I actually think more competition. More search engines more investment in public libraries. Public media public education public universities is really kind of serves as the right way to bolster our democracy. It's not that commercial search engines don't have a role to play that can be helpful.",
+      "Duration": 34,
+      "Offset": 1861
+    },
+    {
+      "Sentence": "A lot of what's on the Internet, but I think, to seed so much of our educational space in our knowledge space to advertising platforms is probably not in the best interest of having a well informed democracy and so those are the kinds of things that I really try to argue for is that you know it's not just enough to have public policy, and regulation around big tech firms social media artificial intelligence firms.",
+      "Duration": 30,
+      "Offset": 1896
+    },
+    {
+      "Sentence": "Will have to bolster that with deeper investments in more Democratic knowledge institutions like libraries, so as we reach the conclusion of this show. Let me ask you one final somewhat loaded question now that it's 2019 and if we go to Google. Images and we search for black girls or white girls or Asian girls. We see largely positive representations that appear to me to be from the rise of positive iti and user generated content. There's a lot of very enthusiastic.",
+      "Duration": 33,
+      "Offset": 1927
+    },
+    {
+      "Sentence": "Bloggers and people blogging about you know pretty pretty this and beauty that and positive this and these people. Rock and those people rock? Are we affecting Google did we did. We the community of positive? Iti affect them, or did they change their algorithm?",
+      "Duration": 14,
+      "Offset": 1961
+    },
+    {
+      "Sentence": "Or, both. I think it's both I think I can tell you that as I've seen kind of my own critiques get more traction invisibility and other scholars who are and people on social media and journalists are saying, Hey Wait, a minute. Big tech companies. These aren't fair representations. Just like other mass media of the past television an radio kind of demands for better representation.",
+      "Duration": 31,
+      "Offset": 1977
+    },
+    {
+      "Sentence": "The tech companies responding quietly in their own ways to tweaking their algorithms and pudding more people kind of on the case of caring about these things and so I think it's a bit of a symbiotic relationship between the public and critics and also people who work in those companies. I know a lot of people who work in tech companies who care deeply about these issues and who are also inside those companies.",
+      "Duration": 30,
+      "Offset": 2009
+    },
+    {
+      "Sentence": "We need to do better. We need to care about miss representative information in the search engine. We need to care about dis information and hate information and hate speech in social media and I think there are where at a point now where we can be in more open conversations finally about what's at stake. When we aren't having the conversations and I see that as progress for sure.",
+      "Duration": 30,
+      "Offset": 2040
+    },
+    {
+      "Sentence": "Fantastic will thank you so much for chatting with me today. You're welcome. Thanks for the invitation. You can learn all about Sofie's work at Sofia You Noble. I'll put a link in the Shownotes and you can read her book as well as her other books and other expertise in research. As we explore these topics. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 23,
+      "Offset": 2071
+    }
+  ]
+}

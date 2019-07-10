@@ -1,0 +1,363 @@
+{
+  "id": "2b6525ee-e582-4b5a-9092-b1e8b28173e7",
+  "Title": "Cloth Simulation for Computer Graphics with Tuur Stuyck",
+  "PublishDate": "2019-03-01",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/41883ead.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks, you're a very good developer probably regardless you do right bugs. That's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that caused it and fix it without delay century. It's a name so common that they have to include the top level domain in their advertising to make sure you remember it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Free dot IO that century dot IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix it together visit century dot IO.",
+      "Duration": 26,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Add.",
+      "Duration": 4,
+      "Offset": 59
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with tourists took is a postdoctoral research scientist at Facebook reality labs. He's worked at Pixar and he's written a great new book, called cloth simulation for computer graphics? How are you hi? I'm good? How are you? I'm very well I'm happy to be talking to you. I'm trying to learn as much as I can about games and computer graphics and how things are built and I had a gentleman on a couple of weeks ago talking about the game engine behind doom.",
+      "Duration": 30,
+      "Offset": 63
+    },
+    {
+      "Sentence": "But this new book out cloth simulation for computer graphics a little light reading and I'm excited to talk to you about it. This is not necessarily a 500 page book about science. It's really quite accessable isn't it? Yeah. I think that was the main goal that I had is that if you want to try and get into like any type of Simulation. It's usually very, very dense math and very technical terms and I tried to write the book, which is more accessible with a little bit of background story how.",
+      "Duration": 30,
+      "Offset": 95
+    },
+    {
+      "Sentence": "An industry where is where all the algorithms coming from? What does the math actually mean more intuitively so this is like not intending to be an overview of all things happening in this space, but rather an on ramp into the space exactly so it's not covering like the latest years of research. But it gives you a very nice introduction or like the different steps. You would take if you were to get into this type of study so it starts with very simple simulation techniques? Which of course have some many limitations and then it in steadily advanced to more complex techniques.",
+      "Duration": 31,
+      "Offset": 126
+    },
+    {
+      "Sentence": "Really mention a technique that is used in industry today, but of course, there's many other additional. Techniques have been developed sense. So it's definitely not covering the latest and Greatest Research. But if you understand everything in the book. It should be straightforward to go to those research papers that you can find it like Cigna for other conferences now when I hear about what I think as a layperson are highly specialized or highly technical things. I think to myself, oh there's probably 3 people in the world that care about this. But in fact, you say that this is actually a vast amount of people doing research in this space and every year they are creating new literature on cloth.",
+      "Duration": 33,
+      "Offset": 158
+    },
+    {
+      "Sentence": "I wouldn't say fast, but there's definitely a fair amount of people working on. It just because there's a lot of applications at the moment I would say so. It's heavily used in movie production for special effects or like animated features and then also there is the fashion industry, which use maybe virtual prototyping or a virtual fitting rooms. So it definitely has a lot of applications which makes it interesting for people that work in the field and do we only care about cloth simulation for making the guy in Assassin's Creed?",
+      "Duration": 31,
+      "Offset": 193
+    },
+    {
+      "Sentence": "More realistically or whatever other use cases.",
+      "Duration": 2,
+      "Offset": 225
+    },
+    {
+      "Sentence": "Well, that's a great use case of course, but other use cases are well like I said movies so any movie that you go watch if it has special effects like explosions and Whatnot or virtual environments. It probably has some sort of cough simulator 2, maybe for simulating leaves or actual clothing on characters. An obviously for animated movies. All the clothing. Maybe curtain or a flag waving in the background. Those are all simulated materials so that's 1 more of the entertainment industry applications and I think one other big.",
+      "Duration": 30,
+      "Offset": 229
+    },
+    {
+      "Sentence": "It is it's like I said, like fashion for instance, like online retail. I think a lot of companies would love very fast, computer software that can simulate clothing on virtual bodies, so that people can try on clothes virtually before buying them because that would have a lot of economical impact. Of course, wow. That's interesting that would imply that I could potentially I'm just imagining some future world here where I put on my VR headset and some some point I've user scanned myself with a webcam or with my phone.",
+      "Duration": 30,
+      "Offset": 260
+    },
+    {
+      "Sentence": "Stand in a virtual place and try clothes on basically yeah, exactly and then the idea is that you have your own body model that's good estimate of your own body and then you can try on the clothing and then they should represent the actual physical clothing and then you can see if it drapes well on your body if you should go get a size bigger size. Smaller it's like going to a store and actually trying it on right so you can actually see it draped, yeah, and it doesn't feel like we're that far away from it, I noticed recently when my iPhone updated. It has a measurement tool that allows me to basically use it as a virtual ruler.",
+      "Duration": 31,
+      "Offset": 291
+    },
+    {
+      "Sentence": "But in space, it's pretty straightforward to extrapolate to a world in the next couple of years where I could do this? Yeah, I think it's definitely possible. There's a few more engineering things to overcome of course, and make it fast and reliable like like any good application. But it's definitely not far fetched to to have in the next coming years. It's probably not 10 years out. I've read some up the papers that you published and I've looked at different articles as well as some animations that have come out with various papers in the space and it's one of those things where I think when it works.",
+      "Duration": 31,
+      "Offset": 323
+    },
+    {
+      "Sentence": "As the lay people don't think about it, but when it doesn't work. We go wow. That person that virtual person is really awkward looking yeah. That's the difficult thing, especially with people in their faces. It's really hard to convince people but usually for clothing unless you work in clothing like in the simulation of it like you don't typically focus on what people are wearing like our default realistic doesn't collide with the body or does it have like accurate friction models. I think is if you are not typically focused on the face which makes it really hard to recreate the face, but we get away with.",
+      "Duration": 31,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Little bit easier, I have a friend of mine who has a Masters degree in costume design and another degree in something around like English history or English literature and they went to see like Robin Hood or something and she said that she had to walk out because as a person who is an expert in this space. She was like I couldn't couldn't focus because the stitching was wrong and Robin hoods. Sure, like that stitch wasn't invented until whatever whatever I wonder if in your space now that you're doing postdoctoral research.",
+      "Duration": 30,
+      "Offset": 387
+    },
+    {
+      "Sentence": "Going to see a movie and you just I can't watch this because that cloth is completely wrong that flag is totally distracted know nothing. Not that it's wrong. But I definitely do have to watch it twice, once to focus on like the clothing in the simulation instead? How did they do that where that they liked it some manual tweaking and then once for the story of course so it's not like I can't watch 'cause. It's not good definitely not, that's more like out of interest like? How did they pull this effect of how did they do that? That's good so for the most part you're not watching to hate your watching to appreciate and to learn right so for sure, and I read in an article that.",
+      "Duration": 31,
+      "Offset": 419
+    },
+    {
+      "Sentence": "Had challenge with the movie, Coco because the bodies underneath the cloth were not really bodies. They were skeletons. The problem that they had is that skeletons are really pointy and it was hard to make it collide with the clothing without puncturing through the clothing so David did a whole revamp of the simulation engine to fix all of that.",
+      "Duration": 22,
+      "Offset": 450
+    },
+    {
+      "Sentence": "So is that is that an engine like speaking about how you would do this for a movie. I'm imagining that you get it, mostly right and then the director of the movie says everything is great except in this one part where he turns his body. This is wrong, you have to then go back and rebuild your engine and change your equations. It's not necessarily like that low level that you have to change your equations typically we try to find constraints or extra additional elements on top of it, you build on top of it too.",
+      "Duration": 30,
+      "Offset": 473
+    },
+    {
+      "Sentence": "Certain like director comments or anything like that? How does that work maybe you could explain the pipeline a little bit because from the outside? I know that there's the 3 D modelers. But there's also the people who make the tools that make the movies, yeah, so there's there's a lot of people involved of course, but the big picture is that you have the artists and they create the clothing garments and the garments are then uses the initial state for the simulator and then the simulator will take body motion and the environment, such as wind gravity and then it will advance the simulation.",
+      "Duration": 31,
+      "Offset": 504
+    },
+    {
+      "Sentence": "And so you get the moving close on the body and then so then you get your simulation result, which is a video of the clothing and then typically would show it to director and they would say like oh. I like it or like the request. Some changes and then you go the artist will go back and try to change the simulation parameters. Maybe change gravity or the wind. Or maybe have like explicit constraints that you put onto the clothing to make it do certain things and then you kind of iterate over that so you can finally get the result that you want.",
+      "Duration": 29,
+      "Offset": 537
+    },
+    {
+      "Sentence": "Do you think about the state of the cloth in the sense of I mean? I suppose you could model that like the universe. Like the like. The quantum machine that we live in models, it and think about the molecules or you could think about it in another in a more holistic view. I think in graphics since we're not necessarily concerned with the right solution. But more with reliable solution that looks good. We tend to Discretize, just using triangles, 'cause That's the whatever.",
+      "Duration": 30,
+      "Offset": 568
+    },
+    {
+      "Sentence": "Pewter graphics and computer optimize for that, so like the clothing with the divide it into little triangles, and then we would simulate over that.",
+      "Duration": 6,
+      "Offset": 598
+    },
+    {
+      "Sentence": "OK, so then you're thinking about it as a continuous like elastic sheet. So there's read the book to get the fill the different methods. But there's different approaches to it, so one. I would say the most simple approach is probably just like look at it as like a bunch of point masses that are connected by Springs and by doing that you can create something that looks like clothing, but of course, not, very physically accurate right and then more advanced models is where you actually look at.",
+      "Duration": 30,
+      "Offset": 606
+    },
+    {
+      "Sentence": "Sheets of cloth and then you simulate over the triangle so they're not just separate masses that are connected.",
+      "Duration": 4,
+      "Offset": 637
+    },
+    {
+      "Sentence": "And so over the decades of research in the space over the last unit of 4050 years. When people have been thinking about these things when computers are starting to get to that point are these varying ways to express' cloth something that comes out, we use it for awhile and then we get rid of it and we stopped doing it and we now use the new way or is it something where there's a tool box of several ways. And you can really use them on a case by case basis. There's definitely a toolbox. And I guess it depends on your use case like if you want.",
+      "Duration": 31,
+      "Offset": 642
+    },
+    {
+      "Sentence": "You probably wouldn't use the same algorithm for a game as you would, for a movie just because the quality so different but then again, like, one is really fast and one is slower so you kinda have that trade off there.",
+      "Duration": 11,
+      "Offset": 675
+    },
+    {
+      "Sentence": "I think the algorithms are pretty stable but you get these additional research findings, whereas like maybe a better collision model or maybe a better fiction model and you can swap out components or add into worker existing solver. But I don't think it's very typical that people would like write a new solver every every year or every other just because a new technique came out. I see so looking in the overview of the book as you kind of walk through the research from the 80s through the 90s to late 90s as people start to learn what the what is the right way or a way that is going to work?",
+      "Duration": 32,
+      "Offset": 687
+    },
+    {
+      "Sentence": "Triangle based cloth simulations in the late in the late 90s. When did people start thinking about the state of the cloth like burlap is going to move differently than silk and if it's wet. It's going to move differently than if it's trying. Yeah, that's kind of the graphics approach things and then there's also the engineering approach right so there's the textile industry has been different models, which are much more accurate and take the material parameters into account or his graphics is we have different material parameters, but we're mostly interested in.",
+      "Duration": 30,
+      "Offset": 719
+    },
+    {
+      "Sentence": "Look and how does it behave rather than if I apply this most force on it? How much millimeters would like stretch or something like that right, which is a very engineering kind of purpose that you want so people have definitely been interested in because you know you want to simulate different materials and you want to have it behave like the materials, but usually I would say that there's some sort of Library of coefficients that have been developed by an artist or someone that says This Is This is Lynn and this is well. This is leather, but it's not necessarily you don't necessarily have to.",
+      "Duration": 30,
+      "Offset": 751
+    },
+    {
+      "Sentence": "It's tests on a on a mechanical bench and then and get those coefficients. From there 'cause the oldest simulation methods are approximate 2 right so will ultimately they're just picking a number that looks right like for example, I had someone on recently who worked on flight simulators and she would go up in the actual airplane with like physical mechanics, physical equipment an measure. G forces as she spun around in the thing and then come down and make sure that her software.",
+      "Duration": 27,
+      "Offset": 781
+    },
+    {
+      "Sentence": "You know expressed reality which was more interesting to her than what it looked like it had to feel right.",
+      "Duration": 8,
+      "Offset": 810
+    },
+    {
+      "Sentence": "Yeah, I think for graphics were mostly interested, but it looks like. But then of course, if you want to validate your software. There's has to have reasonable results right so you can definitely compare to reality. But it's not that it's like the ultimate test is to get exactly what reality does 'cause. There's so many discretization error. Approximations and like if your triangles are big. It's not the same as having real small triangle. There's like friction models. You're colliding with the world. So you have to like model, the world. Perfectly, too, so it's really hard to create.",
+      "Duration": 30,
+      "Offset": 819
+    },
+    {
+      "Sentence": "Physical world in Assimilation, I would say, and what kind of improvements have happened in is it just.",
+      "Duration": 7,
+      "Offset": 850
+    },
+    {
+      "Sentence": "Algorithmic improvements or is it also the fact that with people, making the algorithm know that processors are 100 or a thousand or 10000 or million times faster than they were when the original algorithms were created, yeah, so there's there's definitely.",
+      "Duration": 12,
+      "Offset": 858
+    },
+    {
+      "Sentence": "The hardware is definitely important uh recently and especially with cheap used becoming really important different types of solvers have also been developed so one thing that comes to mind. This is position based dynamics, which paralyzes really, really well so that would fit really nicely on TG pess. So yeah, there's definitely relation between algorithms and hardware that is used. These days and when thinking about 3 D graphics or a game where you have to do it in real time. I wonder do you have to simulate like for example, someone?",
+      "Duration": 31,
+      "Offset": 871
+    },
+    {
+      "Sentence": "They're wearing a dress do you simulate the totality of the dress both? What can be seen and what isn't seen because? What is a clue did or what is behind the person might affect how the cloth drapes in the front or can you optimize by only draping what can be seen well that's hard of course 'cause? What if the character turns around right like the cough does have needs to have a state.",
+      "Duration": 22,
+      "Offset": 903
+    },
+    {
+      "Sentence": "Like for the whole garment right, I think for game so it typically would be done is you have 2 resolutions of the garment and one is the simulation mesh which is a geometry, which is usually pretty low resolution and then one is the week. All the rendered geometry is which we show to the user, which is what is actually seen on the screen so this is more higher resolution and then we deform the high resolution with the results of our low resolution simulation. So we get these details on the garment, maybe like a bow tie or buttons or like stitches from the scenes.",
+      "Duration": 30,
+      "Offset": 926
+    },
+    {
+      "Sentence": "She simile all that detail by move by the forming the high resolution with the movement of the low resolution. We can kind of fake simulating the whole thing interesting and then I suppose that could be that resolution of the mesh. The resolution of the how the cloth drapes versus the texture of the cross could be on a person by person basis like someone with a big thick dress would need lower resolution than someone who has an only AT shirt like what I'm saying is that you would need higher resolution and more triangles. If the detailed mattered of a close up.",
+      "Duration": 31,
+      "Offset": 957
+    },
+    {
+      "Sentence": "Or the closer the person got you or the thickness of the fabric and you might say yeah well. The wrinkles don't look right because the underlying message to course. Yeah, exactly it's also collisions with the body right like if if your triangle hits the body. You don't want to go inside the body. But if the triangle is really large it might create artifacts 'cause you're pushing the whole triangle out whereas if it's smaller it would be more of a subtle effect. So yeah, there's definitely the trade off between high resolution is better quality, but it's also slower of course, interesting OK. So then that means that the triangle size. The granularity of the mesh and forgive me. If I'm using the wrong terms here.",
+      "Duration": 34,
+      "Offset": 990
+    },
+    {
+      "Sentence": "Change based on where it is on the body if it's in the armpits or on the elbow. It's going to want you want more detail than if it were just draping around the legs. That's something that definitely could be considered as an optimization yeah.",
+      "Duration": 12,
+      "Offset": 1024
+    },
+    {
+      "Sentence": "Yeah, interesting.",
+      "Duration": 0,
+      "Offset": 1038
+    },
+    {
+      "Sentence": "This episode is sponsored by stackoverflow for teams a private secure home for your teams questions and answers is everything that you love about Stackoverflow. Now, for your company and get instant reliable answers from your coworkers without disrupting them. Unlike documentation or wikis long email threads or distracting instant messages. Kewene mimics the way that we naturally share and find information introduce stackoverflow for teams to your company and start building products faster and better visit S dot.",
+      "Duration": 30,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "Slash Hansel minutes to get your first month, free that'SS dot TK slash Hansel minutes.",
+      "Duration": 7,
+      "Offset": 1071
+    },
+    {
+      "Sentence": "At one point if you're making a movie, though does your algorithm get into the face of the art director where it's correct and it looks OK to you, but they want on a frame by frame or a scene by scene way to change things. Yeah, this is actually very common. The simulator will tell you or approximating physics, so the similar will tell you like look. This is what physics would do right. This is what the real world with its approximation of that, but then for movies and especially like animated movies, which can be highly art directed the closing of the characters kind of.",
+      "Duration": 31,
+      "Offset": 1079
+    },
+    {
+      "Sentence": "Way about the character may be the villain in the movie would have like more like pointy clothing or the silhouettes would be more like sharp edges, whereas like if it's someone you're supposed to like in the movie. The clothing will be softer where the folds will be like rounder and not as like Chris so this are these very subtle cues that the director wants to give to you as a viewer to S 2. Like is this going to be a good person in the move. You're a bad person, in the movie, so art is definitely want this control over their simulations where they can specify where. They want faults the forum? How big should these faults be when should they form.",
+      "Duration": 31,
+      "Offset": 1111
+    },
+    {
+      "Sentence": "Only a lot of research and know how that exist in these big studios to create these simulations to adapt them to do exactly what the artist ones, and I think this is typically called art direct ability so this is something that you run on top of your simulation algorithm to enforce but the artist wants so you kind of make it art directed so you follow what the artist says it wants to do, but then you also use physics to have something that looks believable to the viewer so you have to try to find this tradeoff between realism and.",
+      "Duration": 28,
+      "Offset": 1143
+    },
+    {
+      "Sentence": "And these goal states that you're trying to hit it seems like whether it's movies or games that there's definitely this push towards photo realism. Everyone wants it to look hyper realistic. I wonder, though, is that the same movement within cloth. Are you always wanting it to be as realistic as possible or do they ever. Just say well. Forget physics. I wanted to look like this different different things that you're interested in right so one thing is, you wanted to look really realistic and you wanted to be effortless like you just want to press start and you wanted to do what you want.",
+      "Duration": 30,
+      "Offset": 1172
+    },
+    {
+      "Sentence": "Questions this is typically not the case because there's a number of things you have to take into account like the simulation can failed sometimes if you miss a collision. Then you have like a poke true like the body coming like the clothing is penetrating the body which is not creates visual artifacts that you don't want to set the wrong solution to the problem and then other things that you typically have with these numerical algorithm is that they're not always stable, which basically means that if your time step to advance simulation forward in time is too big you can have maybe oscillations or the simulation is giving.",
+      "Duration": 30,
+      "Offset": 1203
+    },
+    {
+      "Sentence": "Behavior or visually disturbing behavior so there's there's things like that that you have to take into account. So I think realism is definitely a big important thing, but then also the stability or reliability of the algorithm is important too. If you run a simulation. That's going to take maybe for a movie. It might take several hours. You kind of want to reliably know that it's worth running. Those 2 hours and not seeing that. Oh, it filled after like 2 frames right? How how different are the tools and implementations that focus on real time.",
+      "Duration": 33,
+      "Offset": 1235
+    },
+    {
+      "Sentence": "Call versus the ones that are offline more like creating a movie. I assume that they don't necessarily render render a movie from Pixar in real time, no definitely not, yeah, I think that.",
+      "Duration": 10,
+      "Offset": 1268
+    },
+    {
+      "Sentence": "One of the things that it's notable in the algorithms is that the more the slower the algorithm. The more accurate usually so they will like model, the real world better breast for games, you're interested in the dynamics and you want something that looks good and is very active to the player movement. So you use something that's maybe more approximate but really fast.",
+      "Duration": 20,
+      "Offset": 1280
+    },
+    {
+      "Sentence": "Are these things being driven by data like? Can you preprocess? How clothing moves? Can you look at it analyze cloth behavior in real time and like store it in some kind of a machine learning model and teach machine how things move or is it always more like Ray tracing now there are definitely like data driven approaches that exist in research. There's been been a lot of papers that been published on this, where you would do a low resolution simulation and then you would try to place wrinkles on top of the clothing based on simulations you've run.",
+      "Duration": 33,
+      "Offset": 1301
+    },
+    {
+      "Sentence": "Client process before that, so you know like oh if I if I make this movement. These wrinkles will form so you can kind of copy over that data onto the geometry and then more recently, there have been more like machine learning. AI techniques where they learn a model that can enhance that can add details. In the UV space in a normal map. So you can have these really fast or you have a low resolution simulation and you can add details based on some machine learning approach, OK interesting so I'm trying to visualize the layers here, there's the potentially the mesh layer that is the.",
+      "Duration": 33,
+      "Offset": 1335
+    },
+    {
+      "Sentence": "Boss in a low resolution group of triangles and then there's the texture over the top of it and then the normal map goes over the top of that, yeah, so the normal maps is how.",
+      "Duration": 11,
+      "Offset": 1369
+    },
+    {
+      "Sentence": "Like this, this, this paper card called deep wrinkles and what they do is they use a normal map to change the normals locally on the surface, so they can they can add a wrinkle detail in the texture like in the viewport.",
+      "Duration": 13,
+      "Offset": 1381
+    },
+    {
+      "Sentence": "Based on some of the lights get slick how they affect the surface and so it's really interesting to be like an arm chair quarterback is you know how you watch football and you go? I can do that, like when I read the deep wrinkles paper beforehand. I was like of course. Of course, that's how you do it like after the fact like I get it now? How often does, that come up in the space of research where someone comes up with an idea and then everyone's like. Oh, yes, it's been out there just waiting for someone to pluck it out of out of obscurity this idea.",
+      "Duration": 30,
+      "Offset": 1395
+    },
+    {
+      "Sentence": "Definitely go up it's not it's of course, a lot of work to first get the idea and then prove that it works, and then validate the model compared to other methods. So I mean, there's definitely times. I could think like oh that's a great idea wish I had a thought of it. But even if your data would still up in a lot of work to actually implement it and prove that it works right so that's a good point because in the space of academia. You can't just have the idea and write a blog post, you have to have the idea. And then write a 20 page. Peer reviewed paper where 19 of the pages are compare appendix there's a lot of work.",
+      "Duration": 30,
+      "Offset": 1427
+    },
+    {
+      "Sentence": "Yeah, for sure does this is this feel like this space that you've chosen to live in the space of cloth simulation does it feel like something that will ever it'll ever be done and it will all be commoditised or will there always be room to improve. I think there will always be room to improve, especially with new applications in virtual reality augmented reality opening up where we want lower energy consumption that we have the hardware is not as good as computers. But we want everything in real-time visualized you have to share the processors with different part of.",
+      "Duration": 31,
+      "Offset": 1458
+    },
+    {
+      "Sentence": "Stuff like that, so it is definitely a lot of stuff that has to be done before where there so it's going to take awhile before we get that there was an amazing thing that I saw in see graph 2008 paper. This is 10 years ago. Now that was simulating knitted cloth at the yarn level, which gets me thinking about like texture. Like I sweater is a very different thing than like a fleece. Yeah, that's really cool work and from Stanford. I think and there's there working on it, working on more recent work on that, too.",
+      "Duration": 31,
+      "Offset": 1490
+    },
+    {
+      "Sentence": "I think to see how they can do like actual yarns and how the individual yarns are colliding or if you pull one how it affects like the whole structure is definitely very cool work, which I think it would be even interesting if you were doing a movie and then in the movie a piece of the yarn gets pulled on and then how does it affect the entire?",
+      "Duration": 17,
+      "Offset": 1522
+    },
+    {
+      "Sentence": "The entire outfit like the yarn in their simulations at least in 2008, was perfect. But when it's not perfect. Then things really get interesting. Now it's interesting also has applications and more like the traditional industries such as like the companies making knitted clothing. Maybe they can do virtual prototypes and and get better understanding of what it will look like or they can optimize over like material user or however. They're going to do their stitches. So they can do the way I understand there's different types of stitches you can do so, maybe they can.",
+      "Duration": 31,
+      "Offset": 1540
+    },
+    {
+      "Sentence": "I'm gonna try this pair of despair, and they can get a really accurate visualization of what it's going to look like and how it's going to drape and move so that would definitely speed up their design process to, if someone is listening to this podcast and they're thinking about either the game or the thing that they are working on or the movie that they're working on in their spare time. Where do they get started. They have to get a PhD and read about this, or do they go and get something like in video clothing or some off the shelf plug in and start there when they're thinking about how clothing in cloth moves within their application well.",
+      "Duration": 30,
+      "Offset": 1573
+    },
+    {
+      "Sentence": "Can write their own simulator? Of course, yeah? Yeah, there's there's a few simulators out there. There's the more research. She math heavy where you can actually get the code and change the algorithm or you can. NVIDIA physics or other solvers that you can try and play with for the ones in the game engines or 3 D engines such as Maya or blender. Yeah, those are all things that you can start open up and and just start playing with different settings. It seems like there's a lot of source code online for this kind of stuff like.",
+      "Duration": 31,
+      "Offset": 1604
+    },
+    {
+      "Sentence": "People I'm sure keep them to themselves an patent them, but it's a surprising amount of people sharing their code. In their algorithms. Freely, yeah, it's a pretty open community, I would say there's definitely a lot of stuff to get started. But it's not of course, not, at the level of something that may be a special effects studio would use right 'cause. They have many years of in-house knowledge. That's built on top of that. But if you want to get like an understanding of how these things work, then codes out there that you can check out.",
+      "Duration": 30,
+      "Offset": 1636
+    },
+    {
+      "Sentence": "Supposes that different that if they use case that doing offline, rendering versus doing real-time game rendering on off the shelf machine like my desktop machine, or even on a mobile device. I'm sure that's mobile cloth is an entirely different way of thinking yeah, it's definitely different approaches to the same problem depending on what what's most important to you, or your application for sure. Now, it's not necessarily cloth. But I did want to point out that you also did a paper on real time oil painting on mobile hardware.",
+      "Duration": 31,
+      "Offset": 1667
+    },
+    {
+      "Sentence": "Bring down a digital oil painting system on something, as resource constraint is an iPad.",
+      "Duration": 5,
+      "Offset": 1699
+    },
+    {
+      "Sentence": "Yeah, that was uh it was interesting project, so the idea was that we can do oil cleaning but really accurate. All painting so we have the actual fluid simulations. We have different colours. That would the pigments that would mix in different ways like the way real color mixes, which is not the RGB way that computers typically do it, so that the challenges that were to get really accurate color models and then simulate everything in real time and then it was interesting 'cause I worked with a lot of artists and then I got their feedback so they were brought into the feedback loop very early on, so they would like.",
+      "Duration": 30,
+      "Offset": 1706
+    },
+    {
+      "Sentence": "Free old is does look real this works well this doesn't work well so that was that was really fun project? Yeah, that sounds so interesting. These are all examples where someone can look at it naively and think Oh, yeah well? How how hard is that when you start thinking about running or diluted paint an having things having the stroke change the paint. An that stroke. You have to have an infinite number of strokes in a really long running painting. How do you optimize all those all those factors? Yeah, then you want it running on like some cheapest hardware you can get right so if there's a.",
+      "Duration": 30,
+      "Offset": 1736
+    },
+    {
+      "Sentence": "Challenges that you wanna you wanna solve their yeah, it sounds like it's a fun space in a space that you're going to hopefully enjoy a very long career in We'll see hopefully.",
+      "Duration": 9,
+      "Offset": 1767
+    },
+    {
+      "Sentence": "You can check out the book that or stroke has written I've got links in the show. Notes It is a short read by 100 pages, but it is a great overview into the space.",
+      "Duration": 10,
+      "Offset": 1777
+    },
+    {
+      "Sentence": "I'll have show notes for all the things we talked about the different papers. Research papers as well as a place where you can buy the book. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 13,
+      "Offset": 1788
+    }
+  ]
+}

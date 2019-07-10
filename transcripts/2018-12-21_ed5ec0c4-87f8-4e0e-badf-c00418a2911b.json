@@ -1,0 +1,418 @@
+{
+  "id": "ed5ec0c4-87f8-4e0e-badf-c00418a2911b",
+  "Title": "test && commit || revert with Kent Beck",
+  "PublishDate": "2018-12-21",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/97f546d8.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "First, a word about net app net app gives developers common tools across any environment and any cloud. If you have a cloud first mandate for your new application. Then you need to know about the new Microsoft service for the Azure Portal built by net app, Azure Net app files is the only Azure offering that let's you build your Linux file share environment in the cloud without needing a specialist to and create the environment for you take control of your world with Azure Net app files to read more including the blog from solution.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Cons go to blog.net app.com that's blog dotNETAPP.com and search for Azure Net app files.",
+      "Duration": 13,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi I'm Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Kent Beck is an original signer of the Agile Manifesto. The author of the whole extreme programming book series and a great keynote speaker that I've seen all over thanks for chatting with me Sir. Thank you very much. Scott it's a pleasure to be here. So you been around in software for a long time and I first learned about you. When I was applying extreme programming concepts to banking like 20 years ago.",
+      "Duration": 30,
+      "Offset": 49
+    },
+    {
+      "Sentence": "You're still you're still keeping it fresh you're coming up with new ways to think about software because you're actually still building software right you're not just talking about it, you're doing it. I do as much of it as I can. I spend a fair amount of my time talking to people who are doing it. But yeah, the I don't figure. I've had my last idea yet. I appreciate that I have find that when I talk to companies that even though it's 2018 and I've been thinking about and applying the concepts that you introduced.",
+      "Duration": 32,
+      "Offset": 80
+    },
+    {
+      "Sentence": "20 years that still people aren't convinced that being agile, iterating doing small commits like all the stuff we take for granted there still debating in the middle part of the 21st century.",
+      "Duration": 13,
+      "Offset": 113
+    },
+    {
+      "Sentence": "Yeah, it's it's a surprise to me and there's even a revival of the waterfall, which really shocked me. I thought we killed that monster once and for all but it turns out that even smart people are seduced by the idea that you just have to figure out exactly what you're going to do and then go do it and then you're done and it still doesn't work for all the same reasons it didn't work before but.",
+      "Duration": 27,
+      "Offset": 128
+    },
+    {
+      "Sentence": "The the attractiveness of that as a model is it hasn't hasn't waned in the fact that it doesn't work doesn't seem to affect that it seems like as we are noticing in the world right now that a lot of things are driven by fear that a lot of things in software are driven by fear of the system right like the whole DevOps movement is well don't anger. The machine it don't bother it like it works, so we should put together systems by which we could fear our software less.",
+      "Duration": 30,
+      "Offset": 156
+    },
+    {
+      "Sentence": "Well, that's a fairly negative way to put it, I would say something like DevOps is aligning authority and responsibility. If you can break it. Then you need to be the one who fixes it. I like that, so empowering. Everyone yes and certainly part of that is the reduction of fear. I may be 10 years back. I figured out look back over my career, So what does all this add up to and I realized that my personal mission is to help geeks?",
+      "Duration": 31,
+      "Offset": 187
+    },
+    {
+      "Sentence": "Safe in the world part of that is actually being safe. That is to say not making changes to software that disrupts other peoples lives and seems to be a challenge, but there are as you said. You listed the techniques that go along way toward reducing the probability that you're going to make one of those errors. I like that. I like the way that you flip? What was a negative way of looking at something fear based.",
+      "Duration": 30,
+      "Offset": 219
+    },
+    {
+      "Sentence": "To a good feeling of one of safety and comfort.",
+      "Duration": 3,
+      "Offset": 250
+    },
+    {
+      "Sentence": "He had to have habit of mine didn't come naturally at first, but I've been practicing that for some time and as you're coming up with these different ways to think about programming in different things ways to think about Workflow. You've got this great article up on medium called test and commit that then became test commit or revert? What's the story there for some time now, I've worked where if my tests pass.",
+      "Duration": 30,
+      "Offset": 253
+    },
+    {
+      "Sentence": "And I want to make a commit because the sunk cost, Fallacy is the programmers. I'm not going to say worst nightmare. But it's definitely in the top 10 where you'll make a change and it doesn't work. So you'll make another change and it still doesn't work, and the more changes. You make the greater the investment. You've made in this initial false change. You made and so you can go days, weeks, sometimes an entire careeer.",
+      "Duration": 30,
+      "Offset": 284
+    },
+    {
+      "Sentence": "Map on that initial mistake, so I want to make it really cheap to get back to a known state to fight against that sunk cost, Fallacy so every time the tests pass. I want to make it commit so if there's ever a problem and I feel myself. The swirling down that drain. I can just revert to that last known. Green state and then I can move move forward again. So I was showing this to group in.",
+      "Duration": 30,
+      "Offset": 315
+    },
+    {
+      "Sentence": "Norway maybe a month, a month and a half ago and Oddman Stroma was one of the students. He said well by symmetry and I'm a sucker for symmetry, he said by symmetry if you commit when the tests pass.",
+      "Duration": 14,
+      "Offset": 346
+    },
+    {
+      "Sentence": "You should just revert your changes, if the tests fail now. I thought that is a stupid idea this. I'm going to eat this because I'm just going to make some little mistake and all the code that I typed is just going to disappear and that it would be horrible. So I hate this idea, so much. I need to try it if you only try good ideas.",
+      "Duration": 23,
+      "Offset": 362
+    },
+    {
+      "Sentence": "You end up not making much progress if you find a bad idea that's cheap to experiment with and it works out, then you've got an awesome idea. 'cause 'cause, nobody stupid enough to compete with you so this was one definitely one of those so we gave it a shot for a week and discovered yes. There is an annoying moment. When you think you've made a brilliant change to your code and then poof it all disappears.",
+      "Duration": 26,
+      "Offset": 386
+    },
+    {
+      "Sentence": "But uh what this test commit revert workflow does is the tests are always green.",
+      "Duration": 6,
+      "Offset": 414
+    },
+    {
+      "Sentence": "And the incentives are to make smaller changes so if I need to change 2. Things I write a new test. I need to change 2 things in order to get that test to pass. I have a strong incentive to figure out some way to make one change first in a stable way, and then another change afterwards also in a stable way.",
+      "Duration": 23,
+      "Offset": 422
+    },
+    {
+      "Sentence": "So TCR this test commit revert workflow pushes me to make'em anymore. Many smaller changes does it push you to make even more more tests than you might ordinarily I wouldn't say more tests. I think I haven't noticed that kind of effect. The main effect is just if I'm going to.",
+      "Duration": 23,
+      "Offset": 446
+    },
+    {
+      "Sentence": "Uh if I'm them make a substantial change like 3 whole lines of code at once. I really want to find some way to change 2 of those lines, first and then one line after that, because if I if I type in 3 whole lines of code and it doesn't pass then poof they disappear and I have to.",
+      "Duration": 19,
+      "Offset": 470
+    },
+    {
+      "Sentence": "Figure out what went wrong and type them in again and I don't like that. So I want to. I'm going to press myself really hard and the surprising thing is it feels so good solving that puzzle.",
+      "Duration": 13,
+      "Offset": 490
+    },
+    {
+      "Sentence": "That not just what should the code look by like but how my going to get to that code in small safe steps that the light bulb where you say, Oh, I see. I changed the third line first and then I change the first 2 lines that's a great feeling and.",
+      "Duration": 19,
+      "Offset": 504
+    },
+    {
+      "Sentence": "I think a lot of programmers are driven by that feeling when there's some pattern. You're looking for and you find it and it just feels fantastic interesting giving back a little bit bit the beginning when you said the sunk cost fallacy like people have this idea that they don't want to waste resources. They don't want to waste code. They want to waste work. It's fundamentally loss aversion. I don't want to work for an hour.",
+      "Duration": 26,
+      "Offset": 524
+    },
+    {
+      "Sentence": "You're saying I shouldn't work for an hour. I should work for minute. So I should think that a lot harder. A second season, yes, and so the thought goes into the sequencing of the changes in a Safeway. There's a greater expense to every step that you take but there's a lower probability that you're going to do a bunch of work and have to throw it away and depending on how that tradeoff comes out that that will or won't pay off.",
+      "Duration": 27,
+      "Offset": 551
+    },
+    {
+      "Sentence": "I wonder if I would find myself in a kind of analysis paralysis. If I continue this all the way through. It's kind of like ridiculous extreme or we should we should just try it out for a little while.",
+      "Duration": 9,
+      "Offset": 579
+    },
+    {
+      "Sentence": "This will find some toy project. I don't know this isn't a challenge to you, but no, I hate the idea. I'm going to have to try it. It's an offer and if you'd like to like we could do a screencast share screen program in this way for an hour and just see how it feels that's a great idea. In fact, I do things like this fun experiments with real software using the website that this podcast is based on which has some tests. Both regular unit tests and all the way up to selenium.",
+      "Duration": 30,
+      "Offset": 589
+    },
+    {
+      "Sentence": "So there's a bit of A.",
+      "Duration": 1,
+      "Offset": 620
+    },
+    {
+      "Sentence": "Of Annette there as well nice.",
+      "Duration": 2,
+      "Offset": 622
+    },
+    {
+      "Sentence": "OK, so testing commit or revert and how does TDD relate to TCR? Is this a an evolution? Is this a partner? Well, it's been a bit of a kerfuffle on Twitter. Lately, about is this just TDD or something something quite different and people seem to be quite upset about it and.",
+      "Duration": 26,
+      "Offset": 626
+    },
+    {
+      "Sentence": "I call it an alternative workflow in the same way that test after is another alternative workflow you can write a bunch of code and then write tests to cover it in bits and pieces. You can write the tests one-at-a-time interleaved with the implementation. That's TDD or you can work in this TCR style where the tests are always green.",
+      "Duration": 26,
+      "Offset": 653
+    },
+    {
+      "Sentence": "And you work hard to keep that true because if there ever not green your whatever changes you made or just going in the bit bucket. I call it an alternative workflow the incentives absolutely change from TDD the way that I am pushed to think in a different direction in the same way that the way I'm pushed to think when I'm working DVD is those incentives are different than the incentives if I'm going to test after.",
+      "Duration": 30,
+      "Offset": 680
+    },
+    {
+      "Sentence": "This makes me think about when people run around and argue about get workflows and someone says Oh. No, you use get flow and like no Linus uses it this way, and they argue about all the little details. The fact is that it is this platform that we have and you're Welcome to whatever workflow that makes you happy and makes you feel productive and makes you feel safe on top of that, but to argue that there is one true workflow seems like a waste of keystrokes. Yeah, absolutely one of the criticisms of TCR is that if you use git?",
+      "Duration": 31,
+      "Offset": 711
+    },
+    {
+      "Sentence": "Version control system your commits look very, very different than the commits that you would write if you were in a TDD style or a test after style. You have these many, many teensy weensy commits. I did the first public workshop on TCR last night in San Francisco and we had a little toy problem. Just a fib annachi and I think the most commits someone had was 25 commits to right.",
+      "Duration": 30,
+      "Offset": 743
+    },
+    {
+      "Sentence": "Maybe 12 lines of code and tests together so that those commits are going to look very different. It doesn't mean it's I would call it even a little bit of an abusive get to do that 'cause you're using it in a style that it's not really intended but it works just fine for it.",
+      "Duration": 18,
+      "Offset": 773
+    },
+    {
+      "Sentence": "But you just going to end up with a different set of commits than you would if if you worked with a different workflow that has different incentives well. It wasn't the whole argument that we can squash commits and pretend that none of that ever happened.",
+      "Duration": 13,
+      "Offset": 793
+    },
+    {
+      "Sentence": "Well, you can't you absolutely can squash commits the next extension of this idea is something I call limbo where if you have a bunch of people working on the same code base and there working in this always green. TCR style and their constantly pushing their changes and then pulling the changes other people have made.",
+      "Duration": 23,
+      "Offset": 807
+    },
+    {
+      "Sentence": "You're going to have interleaved sets of these teensy tiny changes and then the get commenced don't look anything like what they look Indiana code review merge kind of style. Even even with even without branches, but to me. That's not a criticism. It just sell. This was the natural consequences. Change change the incentives you get different results. Yes, to gamification of work and programming itself yes.",
+      "Duration": 30,
+      "Offset": 831
+    },
+    {
+      "Sentence": "You want the diffs to be as small as possible to presumably remove friction around the things that are all implied when someone makes a diff because, like I've got 2 pull requests right now one's a spelling mistake and one is a completely new feature but they both require reviews and approvals and workflow right what I notice that was Facebook for 7 years until early this year. And I watched the engineering team grow from 700 to 5000 people and I posed myself. The question what would it take?",
+      "Duration": 32,
+      "Offset": 863
+    },
+    {
+      "Sentence": "Next order of magnitude of Engineers. I looked at all of the overhead created by this asynchronous blocking code review style. There's pull request. Style and I just don't see the overhead of that grows as the team size grows and I don't see how that works at the same time, everybody acknowledges that small diffs are better, so that's where the name limbo comes from a friend of mine sore of Patrick came up with that name because the limbo song.",
+      "Duration": 31,
+      "Offset": 895
+    },
+    {
+      "Sentence": "How low can you go? How small could we make gifts if you can make diffs TT tiny and safe?",
+      "Duration": 8,
+      "Offset": 927
+    },
+    {
+      "Sentence": "Then you don't have to review them beforehand doesn't mean they don't get reviewed but you don't have to it doesn't have to be a blocker to those diffs being applied. Another developer machines and for that matter in production. If they're if they're truly save. If you can do that. Then you open up a brave new style of software collaboration, where everybody's making a stream of Teensy Tiny Diffs. It wasn't that mean that theoretically if something did go wrong, there would be spend a lot more time kind of figure out like playing whack a mole with all of these disks trying to figure out which one bro.",
+      "Duration": 35,
+      "Offset": 936
+    },
+    {
+      "Sentence": "Yeah, potentially as without all the really powerful ideas. This is clearly an impractical and impossible to do.",
+      "Duration": 8,
+      "Offset": 972
+    },
+    {
+      "Sentence": "Except if you can make it practical then it becomes really interesting well. That's the thing right. It's a totally insane idea until it's like wow. That's a really great idea. We should all be doing that right away. Yes, yes, then then it takes one year, 30 years for people to actually apply it interesting. There's people try to impose flows whether they be on large teams or just myself where someone says I do pull requests to myself and everyone should do pull request to myself well. I don't know about you, but I personally sometimes just.",
+      "Duration": 31,
+      "Offset": 981
+    },
+    {
+      "Sentence": "So I'm going to fix that I'll commit it directly to master my tests pass boom. I'll publish it right away and it's in production and you know if something went wrong. I'll hit the oh crap button and I'll revert it as soon as I notice something went wrong and I don't feel bad about that no nor do I life is life is too short human life is now somewhere in the region of 3,000,000,000 seconds? Is 92 years, so I've already spent 2 thirds of mine and I don't have time to mess around with.",
+      "Duration": 30,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "Head that doesn't create value so you think that someone should should apply this. You said like this small thing you did. The test commit revert as pick up small project. It can't hurt to try right. You think limbo is still to do out there to support something to apply to a large team. I think it would take work and a certain amount of appetite for chaos. You're going to be encountering problems. You've never encountered before and.",
+      "Duration": 30,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "Show up your gonna need to first become aware of the problem and then to be prepared to take a step back and solve the problem at its root cause instead of just trying to Patch over it. But given the experiments that I've done. I think that it's it's an idea that could be applied immediately. If somebody wanted to give it a shot. Hey friends, if you're like me and you love your Nintendo switch for at home or on the go. Gaming and you. Love podcasts, which I assume you do 'cause you're listening to this one right now.",
+      "Duration": 33,
+      "Offset": 1076
+    },
+    {
+      "Sentence": "And I have a podcast recommendation for you check it out. It's Nintendo Dispatch. Nintendo dispatches by my good friend James Montemagno and his longtime friend. Michael there 2. Complete Nintendo fanboys. Now each week. James and Michael they breakdown. The latest Nintendo News. The latest game releases the happenings. The reviews in the world of Nintendo. They review everything that they've been playing to subscribe please. Go search for Nintendo dispatch in your podcast app or go directly to nintendodispatch.com.",
+      "Duration": 32,
+      "Offset": 1110
+    },
+    {
+      "Sentence": "Supporting other podcasts and I would really encourage you to go and support nintendodispatch.com and maybe tweet about it. Why do you think that if we think about will be very first started the opening of this show that there are people in 2018 that are still not sold on what we think our ideas 2, decades in the baking.",
+      "Duration": 21,
+      "Offset": 1143
+    },
+    {
+      "Sentence": "Um what should they do when we're there are thinking about maybe TDD and we're off looking at TCR in limbo and beyond should they just jump over at all or do they have to go in the linear vector and follow us behind? What a great question so one question like this? I'm going to have to fall back on first principles.",
+      "Duration": 20,
+      "Offset": 1165
+    },
+    {
+      "Sentence": "So one of my principles is that everybody's responsible for their own learning.",
+      "Duration": 5,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "So if somebody came to me and said what should I do. I'd say, you're going to have to manage this first? Is there a problem like? Maybe maybe working in the style. You're working now is just fine for you, just fine for your colleagues just fine for your company.",
+      "Duration": 17,
+      "Offset": 1192
+    },
+    {
+      "Sentence": "And you're not one of these crazy people who needs to try the latest and greatest thing in which case don't do anything about it, you like it's not a problem don't solve it.",
+      "Duration": 9,
+      "Offset": 1210
+    },
+    {
+      "Sentence": "Given that you want to try it out. I think there are some steps that consistently help me of being in in as part of a community is helpful teaching other people is always helpful with new skills. The only way to get good at describing an idea is to be bad at describing the idea first and you just go through those iterations.",
+      "Duration": 24,
+      "Offset": 1221
+    },
+    {
+      "Sentence": "With a forgiving audience, and eventually your presentation of it will get much, much smoother the first time I described TCR.",
+      "Duration": 10,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "Took me an hour, I can give you the same information now in 10 minutes. But there was no way to predict which parts of that our were useful in which parts weren't until it actually tried it looked my listener in the I saw where they glazed over saw where I was just wrong figured out which stories are going to be helpful for people when's the right time to jump into that example and just show them? What to do so different people are going to learn that in different ways, but",
+      "Duration": 31,
+      "Offset": 1257
+    },
+    {
+      "Sentence": "Community and teaching and just diving in and doing some stuff but those are the strongest techniques that I know to learn quickly. One of the things that I find most interesting about all of this weather. PTR limbo an beyond is the fun question, but does it scale. We've all had that experience where we had several 100 or several thousand or maybe even more tests and we change. One thing and then we're looking at a screen full of red.",
+      "Duration": 29,
+      "Offset": 1289
+    },
+    {
+      "Sentence": "And then you start thinking about the cartesian product of the number of programmers times the number of tests times a number of failed builds and it just gets overwhelming when we break one test and how they are all dependent on each other. It seems like once I get into a couple of 100 tests. I'm looking at a list of tests but I'm wondering how they are inter related and why one went red and that caused another 100 to go read. It every time I've been in that situation. I didn't really have a testing problem. I had a design problem.",
+      "Duration": 30,
+      "Offset": 1320
+    },
+    {
+      "Sentence": "There was some part of the system that wasn't pulled apart into sub elements in such a way that I could easily compose. The elements to get the to get the right answer. Instead, there was an assumption that was spread around. I make one change. That changes that assumption and if that assumption is embodied in some way by many tests. Then, yeah, I'm going to get a whole bunch of tests breaking but that's not a testing problem. It's a design problem.",
+      "Duration": 31,
+      "Offset": 1351
+    },
+    {
+      "Sentence": "That is really, really helpful. So then if I start bringing more people into that system and they start making tiny changes. They're all going to have that problem as well. I need to solve that design problem before I go and impose a new style of work like limbo on my team or you could use limbo to begin making improvements together on the design. So I see, there's 2 barriers to doing a better job of designing software.",
+      "Duration": 30,
+      "Offset": 1382
+    },
+    {
+      "Sentence": "Lack of skill or idea so.",
+      "Duration": 2,
+      "Offset": 1414
+    },
+    {
+      "Sentence": "I've had design problems in software that they sit there for a year. I mean, I think my record is 12 years where I just didn't like the way that something was designed but I just didn't know what else to do.",
+      "Duration": 13,
+      "Offset": 1417
+    },
+    {
+      "Sentence": "If that's the case, then you do have to find a way of working productively with the design. That's not as good as you wish it was the other part is that habit of rolling your chair back and saying this is changing. One more line of code is not the most effective way to address this problem. I need to say why is this happening?",
+      "Duration": 24,
+      "Offset": 1432
+    },
+    {
+      "Sentence": "What is the design that would make this problem? Just go away entirely? How can I get from where I am now to that new design in small safe steps that allows me to continue delivering functionality all along the way.",
+      "Duration": 15,
+      "Offset": 1457
+    },
+    {
+      "Sentence": "That's a hard problem to solve this a lot of constraints and it can seem overwhelming.",
+      "Duration": 4,
+      "Offset": 1473
+    },
+    {
+      "Sentence": "But at some point, it's better than the alternative of just writing another line of code and another line of code and throwing in another conditional and adding another case statement and making big messes. Even bigger interesting. You know in in animation. They'll draw key frames and they would do a thing called onion skinning where they would do the frame. The interpolation of the frames between the 2 frames and when you said that I'm in a certain state.",
+      "Duration": 30,
+      "Offset": 1478
+    },
+    {
+      "Sentence": "OK and like my software my design is such that it's in this state and then I can come up with one part of the problem, which is alright I know where I need to go.",
+      "Duration": 9,
+      "Offset": 1509
+    },
+    {
+      "Sentence": "The part that I just realized you describe it. So difficult is the onion skinning. It's the OK. I've got 2 keyframes. How do I get from this frame to that frame and have it looked fluid and not hurt anyone and bother the viewer. There is a skill to that and it's not a skill that we teach or that we study. I call it the succession problem. What is the succession of changes that let's us get from point. A to point B one with safety and secondarily as efficiently as possible.",
+      "Duration": 32,
+      "Offset": 1519
+    },
+    {
+      "Sentence": "Tation is just start working on that the second state and we've all seen that. Lowell will replace the whole system and then you have Xenos Project management paradox where the closer you get the more the target system reseeds and you never actually catch up so that's the one that's really hard to pull off compared to all right well what?",
+      "Duration": 30,
+      "Offset": 1552
+    },
+    {
+      "Sentence": "Something can I do now, that's a little bit more like where I want to go then where I am?",
+      "Duration": 5,
+      "Offset": 1583
+    },
+    {
+      "Sentence": "And how can I use the information gained and taking that step to take the next step and the next step and the next step. The result of that is going to be kind of messy. You know, so you're going to be in this awkward halfway in between state where maybe you have the old implementation and the new implementation coexisting at the same time.",
+      "Duration": 19,
+      "Offset": 1589
+    },
+    {
+      "Sentence": "But at least you're making progress towards a state that you know is going to be better. You can continue delivering value as you do it and you don't have this risk that you think that you get.",
+      "Duration": 12,
+      "Offset": 1609
+    },
+    {
+      "Sentence": "To the new state and discover it's not actually what you wanted, I do talks on being a web developer where I sit down and I theorize? What if I were going to teach someone how to become a web developer. Today, with the explicit goal that we ignore the last 20 years and nested tables and one pixel gifts and all the bad things about the web as it grew over the last 20 years. How would you teach us 15 year old or a bunch of high school students.",
+      "Duration": 30,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "How to make software today?",
+      "Duration": 2,
+      "Offset": 1653
+    },
+    {
+      "Sentence": "Would you ignore the history or would you spend a lot of time, giving them historical context?",
+      "Duration": 4,
+      "Offset": 1657
+    },
+    {
+      "Sentence": "That's a That's a good question. I don't think I have any particular skill at teaching beginners. I think I spend up much of my career at Facebook coaching engineers at all levels from fairly junior to some of the most senior engineers of Facebook and I think I have a decent handle on how to help people who are engineers get better, but not the person to walk into a roomful 15 year olds and say.",
+      "Duration": 30,
+      "Offset": 1663
+    },
+    {
+      "Sentence": "OK let's do hello world, Well, the reason I ask is that as I entered the downhill kind of like I passed the hump of my career and going down the other side. I quality accelerating portion of your career is that what we call in right directly into the grave. I'm applying that that positive iti. Here's downhill downhill sounds the negative to me. 3020 people are April, 2nd is also pretty negative who doesn't want to accelerate.",
+      "Duration": 30,
+      "Offset": 1694
+    },
+    {
+      "Sentence": "Now that you're accelerating into your acceleration portion or year cruise OK. So now that I'm in that in the acceleration portion of Mycareer. I'm going back and forth about whether or not. I ignore history and try to teach them fresh perspectives. An modern techniques or whether or not.",
+      "Duration": 15,
+      "Offset": 1725
+    },
+    {
+      "Sentence": "They say you know, those that fail to learn history are doomed to repeat it because you know that you and I will retire and someone will go and invent you know extreme programming.",
+      "Duration": 9,
+      "Offset": 1741
+    },
+    {
+      "Sentence": "Yeah, oh absolutely and and the waterfall over in a quart or scrum. Erfle, which is nice law. Watch your mouth out. It is going to come around.",
+      "Duration": 12,
+      "Offset": 1752
+    },
+    {
+      "Sentence": "I'm old enough to have and I grew up in Silicon Valley and my dad was a programmer. So I'm old enough to have seen some of that history happen, I've always liked knowing the whole stack from the instruction set architecture. All the way up. I have a stack of microprocessor manuals in my library every once in awhile. I'll study a new one and be fascinated in interested in it, even though that's not really like.",
+      "Duration": 31,
+      "Offset": 1765
+    },
+    {
+      "Sentence": "And is actually useful I've done not so much at the same time, I think so. Much of learning is emotional engagement, so if you said. Well before we can let you do you know web animations first we have to study the X 86 instruction set manual you just going to lose a lot of people doesn't seem like that's going to be a very effective strategy definitely well. Thank you so much for spending time with me today. I appreciate it.",
+      "Duration": 30,
+      "Offset": 1797
+    },
+    {
+      "Sentence": "So I've heard your voice for many hours and it's great to get a chance to actually talk to you in person. That's very kind. So folks can check out Kent Beck at kentbeck.com and I'm going to include links to everything that we talked about from Gino's paradox. All the way up, including test commit revert in limbo on the cheap in this show notes or encourage you to check those out. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 25,
+      "Offset": 1828
+    }
+  ]
+}

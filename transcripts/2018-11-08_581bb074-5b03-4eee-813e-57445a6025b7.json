@@ -1,0 +1,543 @@
+{
+  "id": "581bb074-5b03-4eee-813e-57445a6025b7",
+  "Title": "Upgrading GitHub and improving Rails with Eileen Uchitelle",
+  "PublishDate": "2018-11-08",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/8bbaee5a.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 6,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Progress software is the creator of the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and comes with a range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 7
+    },
+    {
+      "Sentence": "Comprehensive documentation and a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 40
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another facility of Hansel minutes and today I'm talking with Eileen. You should tell she's a senior systems engineer at GitHub and a core member of the rails team hi? How are you? I'm good thank you for having me? Yeah, thanks for talking about this? I kind of heard about you and the work that you were doing it. GitHub when I saw this huge tweet that was sent out in August that said that GitHub had upgraded to.",
+      "Duration": 30,
+      "Offset": 68
+    },
+    {
+      "Sentence": "What is 5.2 .1 which by itself isn't an interesting tweet but then it said that it was the culmination of a year and a half of hard work. So it sounds like some big stuff was happening at GitHub and I wanted to talk to you about it was this a minor upgrade or what was going on here well. It wasn't a minor upgrade because we started on rows 32, which is.",
+      "Duration": 23,
+      "Offset": 99
+    },
+    {
+      "Sentence": "2 major versions behind an probably about 6 years behind of where rails 521 is Oh, well so that was a lot pretty far behind to be starting out an upgrade like that.",
+      "Duration": 18,
+      "Offset": 123
+    },
+    {
+      "Sentence": "Is it bad to get behind like that? Is that one of those things were just like Hey life happened and then like life happened in GitHub happened or why does one get so far behind it's hard?",
+      "Duration": 10,
+      "Offset": 142
+    },
+    {
+      "Sentence": "If you don't have someone dedicated to doing the work previously to me starting at GitHub. There someone had started rows 440 but.",
+      "Duration": 9,
+      "Offset": 153
+    },
+    {
+      "Sentence": "There wasn't a dedicated team to working on it or even one dedicated person people would work on it when they felt like it. But that's not a good way to get a major project done like that, so when I started it actually had stopped booting.",
+      "Duration": 12,
+      "Offset": 163
+    },
+    {
+      "Sentence": "Because it had the rails for oh build had progressed, so we had to almost start over. Even though some work had already been done. It also features or sometimes more important so upgrades sort of take a backseat. You don't have a team dedicated to that and it's easy to say, well, we're so far behind. How are we ever going to get up to date so I work withASP.net and that's the web framework that I'm the most familiar with, but I've also done stuff on Django and a little bit of rail stuff.",
+      "Duration": 30,
+      "Offset": 177
+    },
+    {
+      "Sentence": "Around the 30 time frame in every framework feels differently about minor upgrades in major upgrades in the rails world is a major like its major. It's like this was a huge monotonically increasing integer. Therefore we've broken all kinds of things, it sounds like major means major in rails.",
+      "Duration": 17,
+      "Offset": 208
+    },
+    {
+      "Sentence": "Yes, usually we take it as an opportunity to change stuff that has plagued the framework for a long time or stuff that we just really want to redo for example, rail 6 is drastically going to change how configurations and connection management works and we're going to do our best to make sure that it's backwards compatible. But some stuff. We just have to break because there isn't a easy way or even a possible way of making it backwards compatible but the future version is going to be so much better.",
+      "Duration": 31,
+      "Offset": 226
+    },
+    {
+      "Sentence": "In some cases, we feel it's worth breaking.",
+      "Duration": 2,
+      "Offset": 258
+    },
+    {
+      "Sentence": "To have the better performance or easier to use rails.",
+      "Duration": 4,
+      "Offset": 262
+    },
+    {
+      "Sentence": "Current connection management in 52 just can't support multiple databases. You have to do a lot of hacking stuff to do it. And so for us to make rails aware of multiple databases. We have to break the existing functionality.",
+      "Duration": 14,
+      "Offset": 267
+    },
+    {
+      "Sentence": "I see and this idea of multiple databases like not again. I'm coming from a place of ignorance. It seems like are you, saying that one rails app has one connection string to one database and that's just kind of historical.",
+      "Duration": 13,
+      "Offset": 282
+    },
+    {
+      "Sentence": "Yeah, so accurate record bases only aware of one connection per environment, so development has one connection that's how it connects.",
+      "Duration": 8,
+      "Offset": 296
+    },
+    {
+      "Sentence": "And that's it, but in GitHub. We have multiple databases with each of those databases. Having their own replicas. So we need that to work and we wrote a bunch of hockey stuff to make that work and so now we're actually taking some of that stuff out of GitHub, imputing into rails so that we can.",
+      "Duration": 17,
+      "Offset": 305
+    },
+    {
+      "Sentence": "Delete a bunch of code and all of that and that sort of ties into the rails upgrade because we couldn't do that before we were on 52. You know it doesn't make sense to take code out of a 32 rails app and try to put it in a rail 6 framework so upgrading. Let's us know where we are in terms of the framework and then take that code that we that doesn't belong in our app out of the app and put it into rails. That's a good point and all the while, GitHub has to stay up 24 hours a day and move forward in feature work continues. Yep, we can't stop.",
+      "Duration": 31,
+      "Offset": 324
+    },
+    {
+      "Sentence": "To be able to do an upgrade which is part of the reason why we had sort of a small team working on it, it made it so that everyone else could still focus on features and we could focus on the upgrade.",
+      "Duration": 12,
+      "Offset": 356
+    },
+    {
+      "Sentence": "That seems pretty intense you're basically like changing the tires on a car that can't stop driving. Yeah, actually after I did the Ford to upgrade somebody shared somebody acted have shared a GIF on Twitter of someone changing their cars, while tires on a car while it's moving and said that was me.",
+      "Duration": 18,
+      "Offset": 368
+    },
+    {
+      "Sentence": "So that's a good analogy. Also, it seems like an again rails is like time tested an now like a very it's a 10 year old framework. It's very smart. It's in no way mean to disparage rails. It's powerful but is GitHub. One of the larger instances of a thing using rails or is it medium.",
+      "Duration": 20,
+      "Offset": 387
+    },
+    {
+      "Sentence": "I would think it's one of the larger we according to.",
+      "Duration": 3,
+      "Offset": 408
+    },
+    {
+      "Sentence": "Website we are the 40th most most traffic site in the US or maybe that's the world. I can't remember which number is probably should look that up before it's all good. But it's big it's big so and I looked at the list of the ones before those 40 and none of them are using rails so maybe there's 1 that I don't know about. But as far as I know where one of the largest sites using rails, but of course, when GitHub started in rails using rails when it first started out. I assume that the amount of.",
+      "Duration": 31,
+      "Offset": 413
+    },
+    {
+      "Sentence": "Get that big right like no one thought about like will rail scale or will this work will that work. So does that mean that there's a whole bunch of custom stuff that GitHub had to do because it grew big faster than rails grew. I wasn't there so it's hard to say it may be partially. Yeah, rails didn't grow fast enough, but also it was open source. I think they could help is moving so fast that.",
+      "Duration": 22,
+      "Offset": 444
+    },
+    {
+      "Sentence": "They didn't have time or the ability to change rows at the same time, whereas what I'm hoping for going forward is that we change rails, so that Rouses responding to GitHub rather than GitHub responding to rails interesting would that be because GitHub is such a great kind of like practical battle tested production example like why shouldn't GitHub push rails in a certain direction because then everyone who wants to make a giant application on rails and.",
+      "Duration": 32,
+      "Offset": 467
+    },
+    {
+      "Sentence": "Big is GitHub would then benefit.",
+      "Duration": 1,
+      "Offset": 501
+    },
+    {
+      "Sentence": "Yeah, that and really we've scaled rails in a way that not many other apps have had too. And so it makes sense to me to take that out of GitHub because it's not special the GitHub. It's just special scaling and so that we can make rail scale. The way we've made real scale and then we have this way more robust framework. Rella sticks is going to be so, so much more supportive of databases and faster testing and all of that.",
+      "Duration": 30,
+      "Offset": 503
+    },
+    {
+      "Sentence": "You need to support a large application and it seems like the kind of the modern DevOps and the discussion around even that term. DevOps has really matured in the last 10 years and formality behind. It is more mature. It seems like GitHub grew with that and then is not going to push some of those those conventions into rails as well, yeah, definitely that's the goal. I'm looking at a GitHub pull request where you're having conversations 'cause you're on the core team with.",
+      "Duration": 31,
+      "Offset": 534
+    },
+    {
+      "Sentence": "Books and you're talking about how it could help you have 10 plus primary configurations. You like this is a big and complicated thing and you basically layout changes that need to change in rails to support big stuff like this.",
+      "Duration": 13,
+      "Offset": 566
+    },
+    {
+      "Sentence": "Yeah, there's a lot of apps out there that use multiple replicas for their one primary database. One of the things that we have at GitHub, which I think is a little bit. Different is we actually have 10 primaries that each have different tables in them. We don't do sharding so the tables that exist in.",
+      "Duration": 18,
+      "Offset": 581
+    },
+    {
+      "Sentence": "The primary for our first database don't exist in our collab database or contributors database. If I understand what you're saying it's not 10 copies of the same thing and you're not just simply pointing an active record to another connection string and saying keep going. It's",
+      "Duration": 17,
+      "Offset": 600
+    },
+    {
+      "Sentence": "10 totally different things. Yeah, there told totally different machines and clusters and they don't, they can't talk to each other because you can't join a cross separate machines like that, so or you can join a cross completely different connections. So one of the things that we had to do when we split tables off of our databases. Find all the joins in the application and break them into selects.",
+      "Duration": 27,
+      "Offset": 618
+    },
+    {
+      "Sentence": "And then each of those, 10 databases has a replica configuration and then we don't just have one replica. We use a GLB proxy layer? Where to tell the databases, which replica to Route 2.",
+      "Duration": 13,
+      "Offset": 646
+    },
+    {
+      "Sentence": "And just for folks that are listening so GLB globally load balanced and you have a proxy that sits in front of your databases. And that helps you make these decisions. Yes, which is not something that's going to end up in rows because that's a little bit very specific to how you might want to set up your database stuff. But what we can do in rails is make it easy, so that you can switch between the right connections and the read only connections and when you say switch between this is something that you're expressing it at runtime at configuration time currently you would have to do it.",
+      "Duration": 30,
+      "Offset": 660
+    },
+    {
+      "Sentence": "We where are you when inside a request you say OK? Well, this dog needs to be created so I'm going to write to the animals database and then oh well. I have a cat and I don't need to write I just need to read. So then you route that traffic to the replica. So then you're not taking down your primary database while you're writing to it, and you can read from the replica, which helps a lot with performance for one of the things we do it. GitHub, which is probably one of the next things I'm going to work.",
+      "Duration": 30,
+      "Offset": 691
+    },
+    {
+      "Sentence": "The default to the replicas and then we switch to the right database is depending on the uh the request type so if it's a post request. We switch to right if it's get request. We stay on read what we sort of started talking about in the rails core chat whether or not. We want to do that based on SQL statement. We haven't experimented with that, yet so we don't know if that's feasible. But that's 1 way of doing it. So we say, Oh, this is an insert. We're going to default to the right database and if it's a.",
+      "Duration": 30,
+      "Offset": 722
+    },
+    {
+      "Sentence": "Default to the replica and so that way. You don't have to make any decisions in your application. Arouse will make them for you. That's that right there is like really interesting and worth like digging into a little bit because, on its face as someone is reading. Something as all engineers do it's easy to put the word just in front of something especially when you don't understand it. So I'm sure that when these things come out and someone reads very simplistically into they go. You're just doing XYZ you're not just switching connection strings, you're really putting in.",
+      "Duration": 31,
+      "Offset": 753
+    },
+    {
+      "Sentence": "The interesting logic, not just to say. I'm going to connect to this database are connected that database. But you're expressing your intent and then optimizing the read for scale in a very kind of clever and very, very terse way, and I mean, terse in the way that rails and Ruby are so clean in the way they expressed things this connects to API that you've made.",
+      "Duration": 22,
+      "Offset": 785
+    },
+    {
+      "Sentence": "Yep, yeah, so the idea is to make it easy to understand for someone setting up multiple databases is not an easy task and applications starting out for the first time should not be trying to scale before they're ready to but when they are ready. We want it so that you don't have to figure out what API you should write or how you can.",
+      "Duration": 20,
+      "Offset": 809
+    },
+    {
+      "Sentence": "Muck in the private APIs and hacked together, something that works wanted to be very clear and easy about how it works, and what we won't support and what we do support and all of the tools so that instead of spending all this time going well. How do I set up a database that part is easy after that then you're just dealing with well? Where do I put my data? Why do I want to put my data here and that's decisions. You make about your application because that's personal to you were not going to make decisions about what?",
+      "Duration": 30,
+      "Offset": 829
+    },
+    {
+      "Sentence": "You go and what databases.",
+      "Duration": 1,
+      "Offset": 860
+    },
+    {
+      "Sentence": "But we can make decisions about how do you switch that connection and how do you even set that stuff up in the 1st place and if we can make that easy then you don't have to think about the nitty gritty stuff just like you when you build a new rails app. You don't have to think about how to create a database configuration. It just does it automatically for you, you only have to think about it when you decide that you want to change from SQL Lite to post grass and that's a personal decision, so you're trying to give people the building blocks to build something on top of rails that are specific to them.",
+      "Duration": 32,
+      "Offset": 862
+    },
+    {
+      "Sentence": "Descriptive, but you're not being draconian in your prescription on how they shun and how they need to do things right and so even though that connects to API suggests using writing and reading as your modes to switch to you could actually name. Those anything so for example, in rows. We get, how we call it default. So when I port this over to R app, I probably will just change the modes to match what we already have so then we have less code that we have to change, but because of the way it's written it doesn't.",
+      "Duration": 31,
+      "Offset": 895
+    },
+    {
+      "Sentence": "It just matters if you if you're if you tell your app. How to switch interesting and then. Some people will not have a load balancer in front of their database and some people will and then they can decide what those modes and what how much the app knows versus versus how much the physical architecture of the system takes care of things for them.",
+      "Duration": 17,
+      "Offset": 927
+    },
+    {
+      "Sentence": "Any interesting and one of the things that I was, I notice that I would kind of impressed with and I was the just up here on GitHub looking at GitHub Slash Rail slash rails and I'm reading pull requests. A specificity and the quality of the comments as you all talk about this you can see basically the last several months and even comments from a day. It's very precise language. The community is not just chatting here it's actually.",
+      "Duration": 30,
+      "Offset": 947
+    },
+    {
+      "Sentence": "Formal how did that culture build up well so we talk a lot the core team talks a lot in chat so once we get to actually open pull requests. We've sort of hashed out all of the back and forth of what's hard? What's not hard. We want to support. We don't want to support and so at that point were mostly talking about API and implementation, but not talking about.",
+      "Duration": 24,
+      "Offset": 978
+    },
+    {
+      "Sentence": "All of the were not bikeshedding at that point, yeah, you're not arguing about why you're arguing about how yeah?",
+      "Duration": 7,
+      "Offset": 1003
+    },
+    {
+      "Sentence": "So, especially with the that particular API for switching connections. David and I had a conversation separately outside of GitHub about what it should look like because?",
+      "Duration": 11,
+      "Offset": 1011
+    },
+    {
+      "Sentence": "It was in the first PR that I opened it was starting to get hard for me to follow the conversation, so in those cases and things will just pop into a chat and talk about it and so originally it seemed kind of like well. This proposal is a lot of might be a lot of extra work for what I'm trying to accomplish in this one PR so we came to a compromise of We're going to.",
+      "Duration": 23,
+      "Offset": 1024
+    },
+    {
+      "Sentence": "Just focus on the connection switching with this 8 for this PR and then the next PR. We can focus on changing the configuration so that it's a little bit less so they're even more prescriptive than they are now and then move on. From there, so I like to work in a very iterative way where I don't want to fix all of connection management in one pull request. I'd rather do it in 15 or 20 pull requests. So then that way. Each tiny piece can be made slightly better and then we're not trying to bite off.",
+      "Duration": 26,
+      "Offset": 1048
+    },
+    {
+      "Sentence": "More than we can chew in a massive PR for trying to solve all the problems at once. I see so this solves this particular PR that get kind of GitHub in your experience is bringing to rails. It's not going to for example, solve failover wear like a primary fails, and you switch to backup that's something that would be another pull request as you iterate towards a more robust database layer. Yeah, if we decide to support something like that. I'm unsure whether or not failover is something that we want to support in rails because.",
+      "Duration": 30,
+      "Offset": 1076
+    },
+    {
+      "Sentence": "That's again something that's very personal to your application. We don't necessarily know if you've also got a reddest database and another kind of database and another kind of database and like where your code is talking to that that primary and whether or not. We want to support failover now. Maybe we can in a very simplistic kind of way. But again that's something that's way further down the line. We have a lot of stuff to fix before we get to the point where we can even consider whether or not.",
+      "Duration": 30,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "Or something that we can support pay folks today's episode was sponsored by Datadog to cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and.",
+      "Duration": 31,
+      "Offset": 1137
+    },
+    {
+      "Sentence": "Modern apps visualize key metrics set alerts to identify anomalies and collaborate with your team to troubleshoot and fix issues fast. I'd like you to try it yourself by starting a free 14 day trial today.",
+      "Duration": 12,
+      "Offset": 1169
+    },
+    {
+      "Sentence": "In terms of this podcast will also get a free data dog T-shirt get started at bitLY.com data dog shirt.",
+      "Duration": 8,
+      "Offset": 1183
+    },
+    {
+      "Sentence": "That's bitLY.com slash DATA dog shirt.",
+      "Duration": 2,
+      "Offset": 1192
+    },
+    {
+      "Sentence": "I want to back up just one second, too 'cause. Not everyone who's listening necessarily knows all the different terms as well as people who have English as a second language. You said Bikeshedding could you sell? Tell me what bikeshedding is sure so there's this story about when there was a nuclear power plant and they're all talking about how to build it, but they argue about is whether or not what color to paint the bike s*** so the idea is that when all of the bike shedding?",
+      "Duration": 30,
+      "Offset": 1196
+    },
+    {
+      "Sentence": "Did talking about the trivial points about?",
+      "Duration": 2,
+      "Offset": 1227
+    },
+    {
+      "Sentence": "The connection management sort of stuff that we don't necessarily need to be public because we don't want to invite more bikeshedding or or perhaps it's something that is more important to someone else and so you can talk about that stuff, and sort of bike share the little details in private.",
+      "Duration": 19,
+      "Offset": 1230
+    },
+    {
+      "Sentence": "And then when you're done.",
+      "Duration": 1,
+      "Offset": 1251
+    },
+    {
+      "Sentence": "You can then talk about the big details and everyone seemed it's easier for.",
+      "Duration": 6,
+      "Offset": 1253
+    },
+    {
+      "Sentence": "People to follow the polar quest. It's easier for them to follow how stuff sort of evolved, whereas if you've got 55 comments of back and forth on a pull request. It's just too hard to follow and too hard to read and people keep asking the same questions because they're not going to read at 55 comments so hashing that stuff out in chat privately makes it a lot easier to.",
+      "Duration": 24,
+      "Offset": 1260
+    },
+    {
+      "Sentence": "Display good content later on when you're done.",
+      "Duration": 3,
+      "Offset": 1286
+    },
+    {
+      "Sentence": "That that seems like it's one of those things where like once you've said that I'm like wow. That seems like a good best practice for open source? What an obvious thing, but it's not obvious. We all think, to ourselves well. It just be open source. We should have all of this out in the open, but I want to see a bunch of people arguing about variable names in the open. I'd like them to be arguing about the big stuff in the open so that seems like a great best practice that people can take from the rail trails core team and then apply to their open source projects.",
+      "Duration": 26,
+      "Offset": 1291
+    },
+    {
+      "Sentence": "Yeah, I mean, it happened kind of naturally it wasn't so it's not stuff that we discussed were like we're going to talk privately about these things and publicly about these things. But when you're talking about stuff that may or may not be trivial or may or may not be some stuff that's interesting to the rest of the public. It can be easier to do it in chat because it moves faster whereas.",
+      "Duration": 19,
+      "Offset": 1318
+    },
+    {
+      "Sentence": "Sometimes employer question waiting for that person to respond there at work. It's harder to like check your email and then oh OK now. I need to write up us well thought out response. Where is when you're chatting you can just sort of be a little bit more impersonal and I think as far as some other stuff that I've worked on this was not as much bikeshedding as other stuff that I worked on so it seems a little bit unfair to call it bikeshedding because it was all.",
+      "Duration": 26,
+      "Offset": 1338
+    },
+    {
+      "Sentence": "Important stuff but it also did it did help to not debate. The little little or things and timing of other pull requests and stuff in the pull request itself, so.",
+      "Duration": 12,
+      "Offset": 1366
+    },
+    {
+      "Sentence": "That stuff is easier to discuss in chat so popping back off the stack to the up the upgrading your taking things that you identify that GitHub does' S best practices. You're pushing them into rails, so that the world will then get those benefits. But you're kind of slowly but surely upgrading this site are you going. Each minor version and then going live or did you go literally from 32 to like 5 or did you know like? How often did your little team?",
+      "Duration": 30,
+      "Offset": 1379
+    },
+    {
+      "Sentence": "Poke back at production and say, Alright, we're going to upgrade to this we're going to that. One 'cause you're going to chase their feature request their features that there working on while simultaneously upgrading.",
+      "Duration": 9,
+      "Offset": 1410
+    },
+    {
+      "Sentence": "Right so the way that we did it was we decided to deploy 42 an 52 so part of the reason we couldn't deploy 4 or 41 was because those 2 versions were.",
+      "Duration": 14,
+      "Offset": 1420
+    },
+    {
+      "Sentence": "Vulnerable they've been EOL for a long time or their their end of life so they don't get security. Backports Oh, so you went to the long term support versions of these things, yeah, so 32 while officer wasn't supported anymore. We were supporting it. But we hadn't been supporting for Owen 41. So we couldn't deploy those because we didn't know what was in them that might be vulnerable. So we had to go to for to to deploy that so the way we did it was we did each miner.",
+      "Duration": 30,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "2 to 40 and then we would take that and we would make a build required so every single push to GitHub had to pass the main 3 to build and the 40 build and so then we weren't meant to work on 41141 was done. We replaced the 40 build with 41 and then we made that required so every single pull request that went into GitHub had to pass. Those 2 versions of rails and that's how we prevented regressions.",
+      "Duration": 29,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "Interesting that seems like a good best practice as well. Like you could rip the band aid off fast and just say come on, we're all going to 52. Woo but but by fight by doing in this step. Wise fashion to supported and kind of LTS or long term support versions. You're avoiding risk and also learning as you as you move forward.",
+      "Duration": 18,
+      "Offset": 1497
+    },
+    {
+      "Sentence": "Yeah, and it also helped set everyone else up so that they knew what was coming in the next version. So instead of going straight to 52 and just being like well the way you write half of your code is different. It was easier on the rest of the engineers in the organization to do it slowly so they could just sort of get used to things changing having to write stuff 2 different ways. Understanding how rows upgrades work understanding how to condition your code so that it works in multiple versions all of that stuff is.",
+      "Duration": 30,
+      "Offset": 1517
+    },
+    {
+      "Sentence": "Torrential they teams don't get frustrated with an upgrade because you don't want to lose momentum because of?",
+      "Duration": 5,
+      "Offset": 1547
+    },
+    {
+      "Sentence": "Something because you went too fast right going too fast can sometimes Derell. Everyone else and that's just not going to help you get that stuff pushed out faster.",
+      "Duration": 11,
+      "Offset": 1553
+    },
+    {
+      "Sentence": "The the you got a lot of flak you all your team that a lot of flak on in the comments and of course. We all know never read the comments because people kept saying well? Why did it take so long it seems like it took long because there was a surprisingly large amount of work going on here but also detangling you. Called it things that were maybe too, clever that GitHub had done to build custom bits so you are kind of refactoring.",
+      "Duration": 30,
+      "Offset": 1565
+    },
+    {
+      "Sentence": "I'm like oh, we did this, custom, but we don't need to 'cause rails does it now.",
+      "Duration": 2,
+      "Offset": 1596
+    },
+    {
+      "Sentence": "Yeah, so it so it took a long time, one because it started out as a hobby for other people. So didn't really. When I started there hasn't been enough work done to say that 40 is even half done it was.",
+      "Duration": 12,
+      "Offset": 1600
+    },
+    {
+      "Sentence": "Basically, not started there had been worked on it just it still had something like a thousand failures so that's not anywhere near done.",
+      "Duration": 7,
+      "Offset": 1613
+    },
+    {
+      "Sentence": "And for the most part of the first year I was the only full-time engineer on an even I didn't work on a full time because it's too much so. I took a lot of breaks and we had mostly volunteers who fix one or 2 failures. While I mostly did all the deploys and make sure that that code was correct and figured out what the next thing everyone would work on would be when we got to fight when we after we deployed for 2.",
+      "Duration": 30,
+      "Offset": 1621
+    },
+    {
+      "Sentence": "Uh that sort of proved that we could upgrade I think there was a lot of.",
+      "Duration": 4,
+      "Offset": 1652
+    },
+    {
+      "Sentence": "Hesitation about whether or not, it was something that we could do not because it hadn't been done before because.",
+      "Duration": 6,
+      "Offset": 1658
+    },
+    {
+      "Sentence": "23 to 30 was so hard partially because GitHub had at one point decided to stay on 23 on a fork and so untangling that and then untangling and some of that stuff was still left so we had to not just upgrade. But we had to untangle decisions that have been made. We had to figure out if every failure. You have to figure out is this a bug in rows or is this a bug in GitHub.",
+      "Duration": 26,
+      "Offset": 1665
+    },
+    {
+      "Sentence": "And you can't just fix it because you don't know, especially with how old rows was at that point and so when you're on that old of a version you can request changes.",
+      "Duration": 9,
+      "Offset": 1692
+    },
+    {
+      "Sentence": "232 or 4 or 41. You can't ask for a future to be merged into it, so that you can get a new version so you have to have a fork and R Fork had also had stuff added on top so it was hard to figure out is this something that actually should have been back ported is it not and then dealing with all of.",
+      "Duration": 19,
+      "Offset": 1703
+    },
+    {
+      "Sentence": "Desktop and a lot of the people who had done that work. We're no longer at GitHub. So it's not like there's someone you can ask Hey? Why did you do this particular thing this way you have to figure it out and sometimes there aren't answers in pull requests or in commit messages. Yeah, yeah. I think it's so easy when someone is an arm chair quarterback or an arm chair rails comitor that they can look at something and say, well. I don't know why they didn't just upgrade in a weekend to take the 40th largest whatever traffic website that.",
+      "Duration": 31,
+      "Offset": 1723
+    },
+    {
+      "Sentence": "Calls and an upgraded you know is not simple thing not to mention. I assume that there's testing things to think about as well. Like the rails and Ruby community are well known for their love of unit testing, but I don't know if it necessarily had full coverage of all of GitHub right. You could break something indirectly, and cause all kinds of trouble.",
+      "Duration": 18,
+      "Offset": 1755
+    },
+    {
+      "Sentence": "Yeah, we?",
+      "Duration": 1,
+      "Offset": 1775
+    },
+    {
+      "Sentence": "I was surprised at how good our test test actually work when we did do deploys to production buffers to our staging environment and then to production in the staging environment. We found less than 10 knew issues and then go into production. We also found less than 10 new issues. I think total for 421 we found 15.",
+      "Duration": 22,
+      "Offset": 1777
+    },
+    {
+      "Sentence": "On found issues and then 452, I think we found 6 or 7. So it really wasn't. It was pretty well tested. We don't have we didn't have.",
+      "Duration": 11,
+      "Offset": 1800
+    },
+    {
+      "Sentence": "System test or copy barrah tests whenever everyone has different names for them rellas, causing system test. Some people call them acceptance tests where you boot a browser and clicks around and does stuff we don't have those tests. So we were mostly relying on our controller and model tests or unit tests but those were pretty decent considering that we also were using were not using the rails testing framework. We like kind of wrote our own on top of rails which.",
+      "Duration": 30,
+      "Offset": 1813
+    },
+    {
+      "Sentence": "Is he gone now something else that by upgrading? We were able to do that? We couldn't have done before?",
+      "Duration": 5,
+      "Offset": 1843
+    },
+    {
+      "Sentence": "Because that was originally created because rails didn't have the features that we needed.",
+      "Duration": 4,
+      "Offset": 1849
+    },
+    {
+      "Sentence": "And so then once we upgraded rails, how those features we could delete all that code or the majority of it. And so that's sort of like sometimes we were refactoring stuff that's why it took long sometimes. We were just tired of working on it, sometimes I would do stop working on that to do something else. So there was one piece of code that had a couple of test failures in the app and after looking at it, I realized that it was code. That wasn't used so I took a month to remove that code Ann.",
+      "Duration": 31,
+      "Offset": 1854
+    },
+    {
+      "Sentence": "Wanna be like? Why did you want to do that? Well, it was literally everywhere on the code base so we had to slow I had to slowly back out that code.",
+      "Duration": 8,
+      "Offset": 1886
+    },
+    {
+      "Sentence": "Basically reverse engineer.",
+      "Duration": 2,
+      "Offset": 1895
+    },
+    {
+      "Sentence": "Deleting it.",
+      "Duration": 1,
+      "Offset": 1898
+    },
+    {
+      "Sentence": "So then each week, it took 7 pull request to delete all of that code safely so as we close our interview here. Let me ask you this how will you make sure that this doesn't happen again in 10 years? Are you following the main line more closely now, yeah, so right now, we have a build that is hooked up 2 rows master and it runs every evening. We thought about making it required but rails is in such flux right now, I don't want to.",
+      "Duration": 31,
+      "Offset": 1900
+    },
+    {
+      "Sentence": "Derell other teams from getting progress done so we're going to monitor it for awhile and see.",
+      "Duration": 4,
+      "Offset": 1932
+    },
+    {
+      "Sentence": "Are there bugs in Ralls R engineers introducing more regressions or as rows introducing more regressions and once we have a little bit of a idea of how rails master is behaving we may make it required as we get closer to the beta and then that way. We already have upgraded that the test pass on the day that we release. Rella sticks will be that will be my definition of success in this because then the day after we release rella sticks. We can deploy to production very cool. So you're basically taking your last year and a half and automated it yourself.",
+      "Duration": 32,
+      "Offset": 1938
+    },
+    {
+      "Sentence": "Process to ensure that it will allow everyone to upgrade more cleanly and you've got a safety net.",
+      "Duration": 6,
+      "Offset": 1971
+    },
+    {
+      "Sentence": "Yeah, yeah, so once you're on that new version testing against.",
+      "Duration": 4,
+      "Offset": 1979
+    },
+    {
+      "Sentence": "Masters, a lot easier, I mean, it also is a lot easier, especially if you're the person who's breaking rules. You know how to fix your application, but again like, I said, we're going to try really hard not to break applications, too much with rella sticks, fantastic well, thanks so much for chatting with me today.",
+      "Duration": 15,
+      "Offset": 1984
+    },
+    {
+      "Sentence": "Yeah, thanks for having me was great.",
+      "Duration": 1,
+      "Offset": 2001
+    },
+    {
+      "Sentence": "I've been talking with Eileen you should tell senior systems engineer get help, and a rails core team member. This has been another episode of Hansel minutes and will see him again next week.",
+      "Duration": 14,
+      "Offset": 2003
+    }
+  ]
+}

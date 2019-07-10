@@ -1,0 +1,758 @@
+{
+  "id": "8e196ec1-53ac-4d97-8faf-35de1b338da2",
+  "Title": "Type to the world in your language with Keyman and Marc Durdin",
+  "PublishDate": "2018-03-09",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/2b035485.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Mark Durden, who runs the key man project and you can check it out at keyman.com. Where are you calling from Sir? I'm calling from Phnom Penh, Cambodia Alright and but you don't have a Cambodian accent, I must say no, I'm going to Australian working there.",
+      "Duration": 25,
+      "Offset": 40
+    },
+    {
+      "Sentence": "A base running a software team out of Non Ben, and how long has key man been been run. So I wrote the first version of key men back in 1992. I think when I was about 14 years old.",
+      "Duration": 14,
+      "Offset": 67
+    },
+    {
+      "Sentence": "Seriously.",
+      "Duration": 0,
+      "Offset": 82
+    },
+    {
+      "Sentence": "Yes, I was, I was living in Las at that point with my parents and you this is like? What is it now 26 years?",
+      "Duration": 8,
+      "Offset": 84
+    },
+    {
+      "Sentence": "Yes, it's a very long time. Where did you think that this would be an open source project. You would be working on for basically your entire life?",
+      "Duration": 10,
+      "Offset": 93
+    },
+    {
+      "Sentence": "No II didn't have any idea of that at the time.",
+      "Duration": 3,
+      "Offset": 104
+    },
+    {
+      "Sentence": "So the there was a specific need that my father had making night 1992. So it's not long after the release of Windows 3.1 and truetype fonts and this was like magic because we could all of a sudden right the Lao script. If you know anything about the Lao script. So I do not so the Lao script doesn't look very much like Latin script for use in English.",
+      "Duration": 30,
+      "Offset": 108
+    },
+    {
+      "Sentence": "Uh marks vowels ago above and below enter the left and to the right of the base character.",
+      "Duration": 8,
+      "Offset": 139
+    },
+    {
+      "Sentence": "Is it a celebri? It's not it's technically an alphabet becaus everything is written but it's related to a lot of the Indian languages in the way that it's written and in 1982? How would one write this so in 1992. There was really no good way to type Lau in windows, so people had made fonts where they replaced the English characters, with our characters.",
+      "Duration": 27,
+      "Offset": 148
+    },
+    {
+      "Sentence": "So you prestiti key press letter T and instead of coming out with an English that TI would come up with a loud letter. But it would actually be stored as an letter T in your document. Oh, wow, OK, so you would open up a text file and it would just look like a bunch of random Latin letters. But if you applied to fight you'd be looking through it through a different set of lenses, yeah that's correct.",
+      "Duration": 23,
+      "Offset": 176
+    },
+    {
+      "Sentence": "And that kind of works until you want to do you know 2 languages in one text document or text field in a database or anything like that and if you want to do any kind of ligatures or have fonts butt up against each other and attach that becomes challenging if not impossible. You can't do anything smart with the fonts now.",
+      "Duration": 19,
+      "Offset": 200
+    },
+    {
+      "Sentence": "And is this before Unicode kind of got together and made all the different. Unicode names for all the different characters, yeah, so this is still in the days of code pages.",
+      "Duration": 9,
+      "Offset": 220
+    },
+    {
+      "Sentence": "So 256 characters of which about 64 of them are non grata really, and I understand that when Lao's alphabet was added into Unicode. There's even add permanent error in Unicode with regards to 2 different names for characters in wow. Yes, I believe I actually reported that one. So those 2 are the names to the letters had their names swapped.",
+      "Duration": 31,
+      "Offset": 231
+    },
+    {
+      "Sentence": "Come it's",
+      "Duration": 1,
+      "Offset": 264
+    },
+    {
+      "Sentence": "It's a bit awkward, but you can still use the letters. The I assume that there is a hidden from the that I p***** yeah, they don't see it in day-to-day use only the the font geeks. See it when they're trying to do their new fonts and Unicode geeks.",
+      "Duration": 15,
+      "Offset": 266
+    },
+    {
+      "Sentence": "So you're 14 and you want to tie plow so you start writing C&C Plus Plus.",
+      "Duration": 6,
+      "Offset": 283
+    },
+    {
+      "Sentence": "Yeah, so the basic thing we wanted to do is we wanted to shift the Lao alphabet into the upper ASCII section above 128 and in practice above 160 because that range from 1:28 to 159 is dodgy for general use.",
+      "Duration": 19,
+      "Offset": 290
+    },
+    {
+      "Sentence": "So that means we lose lossed the characters that were up there, which were the European extended ASCII with letters with diacritics and some currency symbols and things like that.",
+      "Duration": 13,
+      "Offset": 310
+    },
+    {
+      "Sentence": "But that didn't really impact a lot of what we were doing.",
+      "Duration": 4,
+      "Offset": 324
+    },
+    {
+      "Sentence": "But the problem is that we didn't have a way to actually key those symbols once we actually are move them up there.",
+      "Duration": 7,
+      "Offset": 329
+    },
+    {
+      "Sentence": "So I got hold of windows. SDK we probably shouldn't talk too much about how legitimate that was in those days and didn't have access to any documentation or MSDN CDs or anything like that. So I work from the header files being a 14 year old with lots of time.",
+      "Duration": 24,
+      "Offset": 337
+    },
+    {
+      "Sentence": "And figured out how to create a hook.",
+      "Duration": 4,
+      "Offset": 362
+    },
+    {
+      "Sentence": "Application or hook DLL that would.",
+      "Duration": 2,
+      "Offset": 367
+    },
+    {
+      "Sentence": "Hum capture the key strokes and allow me to spit out, whichever character I wanted.",
+      "Duration": 6,
+      "Offset": 371
+    },
+    {
+      "Sentence": "And were you already a computer person at this point, yeah, so I was highly interested in computers. I think if my parents hadn't restricted me, I probably would have spent most of my wake time playing with the computer.",
+      "Duration": 15,
+      "Offset": 378
+    },
+    {
+      "Sentence": "So this initially was the was the intersection of your interest in language your interest in the country. You're living in and a problem that was then unsolved.",
+      "Duration": 12,
+      "Offset": 394
+    },
+    {
+      "Sentence": "Yeah, you know, I wrote computer games before that, to sleep. Most teenage computer programmers. So you wrote this as as a Windows app itself or did it hook in and look like part of windows. It was a Windows app. And there weren't really any hooks in windows to allay to control the keyboard layout at that point.",
+      "Duration": 25,
+      "Offset": 407
+    },
+    {
+      "Sentence": "So it was a separate app that ran it actually showed little icon in the title Bar of the active application.",
+      "Duration": 7,
+      "Offset": 434
+    },
+    {
+      "Sentence": "And you could click on that icon to switch between English and Lau.",
+      "Duration": 5,
+      "Offset": 443
+    },
+    {
+      "Sentence": "Had you intended that this would be English and then N number of other languages or was it just a matter of solving the problem for allow.",
+      "Duration": 7,
+      "Offset": 449
+    },
+    {
+      "Sentence": "So initially it was just Lau.",
+      "Duration": 1,
+      "Offset": 459
+    },
+    {
+      "Sentence": "It was fairly hard coded and it was fairly Hacky.",
+      "Duration": 3,
+      "Offset": 461
+    },
+    {
+      "Sentence": "But it wasn't very long after we after write the first version. We had some visitors. And they saw this program. That's at all. We can definitely use this for such and such a language in Thailand.",
+      "Duration": 12,
+      "Offset": 465
+    },
+    {
+      "Sentence": "I don't remember what language it was now and so that meant I had to rewrite it to make it so that they could define the table for mapping the keyboard.",
+      "Duration": 11,
+      "Offset": 479
+    },
+    {
+      "Sentence": "So I recommend version 2.",
+      "Duration": 1,
+      "Offset": 491
+    },
+    {
+      "Sentence": "And I took that away and they start using it for a number of languages in in Southeast Asia and this, this, where people with the organization that I work with now which is SIL Summer Institute of linguistics.",
+      "Duration": 15,
+      "Offset": 494
+    },
+    {
+      "Sentence": "And so at that point, it wasn't an open source project. I don't think I'd heard of open source I but it was a free project, so the software was completely free of charge.",
+      "Duration": 13,
+      "Offset": 510
+    },
+    {
+      "Sentence": "And had you thought about this other than just it was a hobby and it was helpful to people and again that you said your teenagers have all the time in the world.",
+      "Duration": 7,
+      "Offset": 524
+    },
+    {
+      "Sentence": "That's right so I was home schooled so I was very flexible on my hours and I just like to make something that help people and at what point, though, did this turn into what is now how many keyboards.",
+      "Duration": 17,
+      "Offset": 533
+    },
+    {
+      "Sentence": "So now we have over 700 different keyboards on the website covering over a thousand different languages wow.",
+      "Duration": 7,
+      "Offset": 550
+    },
+    {
+      "Sentence": "Did did is this something where you were have been working on this kind of more or less full time for the last 26 years or was there any down time where you were doing this and then went off to University and then came back and people were still using it so I read about 1996 I went to University.",
+      "Duration": 21,
+      "Offset": 559
+    },
+    {
+      "Sentence": "Before I left my outside never actually use the Internet. So I had no idea about it Internet was illegal in Laos in those days.",
+      "Duration": 8,
+      "Offset": 581
+    },
+    {
+      "Sentence": "Hello so I came to Tasmania in Australia for University.",
+      "Duration": 6,
+      "Offset": 591
+    },
+    {
+      "Sentence": "And one of the things I discovered when I start University was that I actually needed money to live.",
+      "Duration": 5,
+      "Offset": 598
+    },
+    {
+      "Sentence": "And this is a bit of a shock.",
+      "Duration": 2,
+      "Offset": 604
+    },
+    {
+      "Sentence": "So I had to get some work, and then I realized that I could still licenses of came in and actually make money and actually keep working on it.",
+      "Duration": 12,
+      "Offset": 608
+    },
+    {
+      "Sentence": "So I had it had a challenge for awhile of what can I make enough money to?",
+      "Duration": 3,
+      "Offset": 621
+    },
+    {
+      "Sentence": "To actually work on came in and that was attention, I guess for the until.",
+      "Duration": 5,
+      "Offset": 626
+    },
+    {
+      "Sentence": "2015 or so, so the selling licenses are software.",
+      "Duration": 5,
+      "Offset": 632
+    },
+    {
+      "Sentence": "Is is also did you turn that into your own company or did you license it to a company so I turned it into my own company and I ran it pretty much part time until about 2000.",
+      "Duration": 10,
+      "Offset": 638
+    },
+    {
+      "Sentence": "10 or so.",
+      "Duration": 1,
+      "Offset": 650
+    },
+    {
+      "Sentence": "And then from 2010 through 2015, I was running the company full time.",
+      "Duration": 5,
+      "Offset": 651
+    },
+    {
+      "Sentence": "But the software never made a profit itself.",
+      "Duration": 2,
+      "Offset": 658
+    },
+    {
+      "Sentence": "OK, so this is this is like people who are farming for subsistence. This is subsistence coding at this point.",
+      "Duration": 7,
+      "Offset": 661
+    },
+    {
+      "Sentence": "It is yeah, and and you know you do contract work and that kind of thing and that brings enough money in to do. The thing that you're passionate about and that works, but it does take take a bit out of your life out of your family after awhile, yeah, indeed.",
+      "Duration": 16,
+      "Offset": 669
+    },
+    {
+      "Sentence": "And did when did they start enlisting volunteers in making this pluggable so you went from one keyboard to thousands so that really happened? When I made the keyboard language for designing a keyboard layout.",
+      "Duration": 14,
+      "Offset": 687
+    },
+    {
+      "Sentence": "Back in version 2 of K men exploded at that point and back in 1993 or 1994, so that was all distributed.",
+      "Duration": 9,
+      "Offset": 701
+    },
+    {
+      "Sentence": "Come by flopping at really in Southeast Asia and then threw out into the us. I don't know how it was distributed for the rest of the world.",
+      "Duration": 7,
+      "Offset": 712
+    },
+    {
+      "Sentence": "And by flopping that you're literally, saying enthusia stick people tell their friends and then they meet up and copy floppies in basement somewhere pretty much ISIL did take it on as a project, they wanted to use for very early on back in 1994, 95 and so a lot of they had a distribution of software back in those days when you send out CDs to people.",
+      "Duration": 26,
+      "Offset": 720
+    },
+    {
+      "Sentence": "And so that's it would be on their CDs.",
+      "Duration": 2,
+      "Offset": 748
+    },
+    {
+      "Sentence": "What is SILSIL is Summer Institute of linguistics so or an organization that works in literacy and language development, an Bible translation. So it's a Christian organization and work with minority languages around the world.",
+      "Duration": 18,
+      "Offset": 751
+    },
+    {
+      "Sentence": "So then they made this possible that you went from a free thing that is a hobby to a subsistence company and now you are supported by this nonprofit. Basically, yes, so I sold sold licenses of key man to a large number of organizations people like BBC World Service. They work in a lot of different languages.",
+      "Duration": 25,
+      "Offset": 771
+    },
+    {
+      "Sentence": "Back in 2001 or so they were working in 70 different languages.",
+      "Duration": 4,
+      "Offset": 797
+    },
+    {
+      "Sentence": "So they had a big need for being added control the way they type things and not necessarily using even the system supplied input methods because they have people who are coming from very mixed areas where they didn't actually have consistent knowledge on how to use the computer and people who design their own systems, but they needed a single system in their studios.",
+      "Duration": 26,
+      "Offset": 802
+    },
+    {
+      "Sentence": "And making it available to everyone, though, which is a kind of a game changer because when I was dabbling with different languages, 20 years ago, I was looking at Ethiopic Scripts Americ Degreenia and I would use a tool called does pro. GE apostrophe easy pro and it was like $59 or whatever and there's a whole. For every language. You're interested in there's someone out there who has a product for all these $79 that you could install and then use the language.",
+      "Duration": 32,
+      "Offset": 830
+    },
+    {
+      "Sentence": "That you are interested in.",
+      "Duration": 1,
+      "Offset": 863
+    },
+    {
+      "Sentence": "By making key man available to everyone. It kind of disrupted the industry wouldn't it so the first disruptor of the industry was actually Microsoft keyboard layout creator because that made it possible for anyone to create a Windows keyboard.",
+      "Duration": 15,
+      "Offset": 865
+    },
+    {
+      "Sentence": "Uh for free so at that point. I actually thought are well. This is the end of Kay Mann because there won't be enough money left in affirmative keep working on it.",
+      "Duration": 8,
+      "Offset": 882
+    },
+    {
+      "Sentence": "But the command doesn't number of things that windows keyboards can't do.",
+      "Duration": 5,
+      "Offset": 891
+    },
+    {
+      "Sentence": "And it turns out that for a lot of languages, those things actually really helpful.",
+      "Duration": 3,
+      "Offset": 897
+    },
+    {
+      "Sentence": "So Windows keyboard if you're familiar with how they work if you look at English.",
+      "Duration": 7,
+      "Offset": 902
+    },
+    {
+      "Sentence": "You know you press the tiki and then he comes out, it seems pretty straightforward.",
+      "Duration": 4,
+      "Offset": 910
+    },
+    {
+      "Sentence": "But even there, we've got a whole bunch of things that are hidden from view, so if you look at the key caps on your English keyboard.",
+      "Duration": 6,
+      "Offset": 915
+    },
+    {
+      "Sentence": "You can see it capital T, but you can't see a lower case. T somebody who's not familiar with the Latin script had a great deal of trouble using that cus. I can't actually find the letters that they can see written down if they want to type inmicrosoft.com.",
+      "Duration": 14,
+      "Offset": 922
+    },
+    {
+      "Sentence": "Where's that little line with the dot above it the the I? It's not on the keyboard?",
+      "Duration": 6,
+      "Offset": 937
+    },
+    {
+      "Sentence": "That is really interesting exercise in empathy, yeah, it's actually so hard to actually step into that world of How do I use my language on a computer because we're so surrounded with English speakers by everything?",
+      "Duration": 15,
+      "Offset": 944
+    },
+    {
+      "Sentence": "Being in English, it's like go to the Russian web for a few days and try and get anything done.",
+      "Duration": 8,
+      "Offset": 960
+    },
+    {
+      "Sentence": "We just can't do it, yeah, I'm looking at the I'm looking at the Y and realizing how different a capital. E is from a lower Casey to the point where if you're just learning English. You are effectively completely blocked well so Microsoft keyboard. Layout creator came out in 2007, so a little over the 10 years from now and you realize that well that was a bit of a disruptor. It wasn't a cough a nail in the coffin for key man.",
+      "Duration": 28,
+      "Offset": 969
+    },
+    {
+      "Sentence": "It wasn't and partly because at about the same time, I created a web version of King men so Java scripted with Internet Explorer 6 things about around that time, too, had actually matured enough to the point that you could create a on screen virtual keyboard and do the same things on the web as you were doing on a keyboard programming windows.",
+      "Duration": 26,
+      "Offset": 999
+    },
+    {
+      "Sentence": "And then sold to a number of organizations that were wanting to do web based virtual keyboard.",
+      "Duration": 5,
+      "Offset": 1026
+    },
+    {
+      "Sentence": "In their websites and that kept me going.",
+      "Duration": 3,
+      "Offset": 1033
+    },
+    {
+      "Sentence": "And did did aren't the fonts, though, that you need like not always available. I remember in the last 510 years. It just feels like. Suddenly, the fonts. I need are available while a couple just a couple years back. I was still downloading fonts on a per language basis, yes, it was always difficult so Internet Explorer.",
+      "Duration": 19,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "Kinda solved the embedded font problem in some ways with the embedded opentype EOT font format.",
+      "Duration": 7,
+      "Offset": 1058
+    },
+    {
+      "Sentence": "Bit.",
+      "Duration": 0,
+      "Offset": 1066
+    },
+    {
+      "Sentence": "There was so hamstrung by the all the Copyright issues that they?",
+      "Duration": 4,
+      "Offset": 1067
+    },
+    {
+      "Sentence": "The.",
+      "Duration": 1,
+      "Offset": 1073
+    },
+    {
+      "Sentence": "Format was very locked down so it's very difficult to create A&A goatee font.",
+      "Duration": 4,
+      "Offset": 1074
+    },
+    {
+      "Sentence": "And we only have a working Internet Explorer so you would find that some websites would embed those fonts. Others would just have a if you see square boxes click this button.",
+      "Duration": 8,
+      "Offset": 1080
+    },
+    {
+      "Sentence": "To download a font, IMessage and did this quietly. Just go away because different operating systems woke up or because people started creating open fonts and then we're able to seamlessly download them or get the browsers start embedding them like right now. I'm typing wow in key manweb.com and I don't remember ever installing any of that, so it's a mixture of things. Windows 10 has a very large range of fonts by default for a lot of languages. It's got a single font.",
+      "Duration": 31,
+      "Offset": 1089
+    },
+    {
+      "Sentence": "Large languages, it has a nice collection.",
+      "Duration": 1,
+      "Offset": 1121
+    },
+    {
+      "Sentence": "And so that means that you know if you're using Windows 10, then going to cover a lot of those languages. But if you go to a language like Chuck MA. You're probably going to see square boxes under fire on commandweb.com right? Where is that language from Chuck Myers Asian language Bangladesh I think?",
+      "Duration": 18,
+      "Offset": 1124
+    },
+    {
+      "Sentence": "No, I've got fonts you've got fonts on Windows 10 insiders and it looks very swirly and circle Y Ah, you've got it embedded font and you go? I have so we have searched on the embedded font.",
+      "Duration": 13,
+      "Offset": 1143
+    },
+    {
+      "Sentence": "Oh, lovely so I don't have those fonts but I do because they are embedded in the browser. You can test that by copying and pasting into an iPad. You're right. I just copied it into notepad and I got question marks so that isn't it more for lack of a better word obscure font. It's less recently supported by so it's actually in active development right now.",
+      "Duration": 21,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "Interesting yeah, I want to be respectful of what the right with the right language is to use when referring to these things because we can use words like nice or minority languages. But what does that really mean it just means that there's not millions and millions of people and that have heard of it, but it's still actively used in written languages. Yeah, that's right so I didn't. I actually don't know how many people speak Chakma.",
+      "Duration": 20,
+      "Offset": 1180
+    },
+    {
+      "Sentence": "Just one that I was.",
+      "Duration": 1,
+      "Offset": 1201
+    },
+    {
+      "Sentence": "Building in recent developments of quite aware of it.",
+      "Duration": 3,
+      "Offset": 1203
+    },
+    {
+      "Sentence": "Uh-huh.",
+      "Duration": 0,
+      "Offset": 1208
+    },
+    {
+      "Sentence": "So key man on the web and key man on windows and now also Mac and Android is this sharing the same core engine or is this the same thing written multiple times. It's the same thing written multiple times. There are some s*** there's some shared functionality.",
+      "Duration": 18,
+      "Offset": 1210
+    },
+    {
+      "Sentence": "So the iOS Android and web actually all share the JavaScript engine and that's actually kind of cool. There's a reason for that is that on iOS. You weren't allowed to write an interpreter.",
+      "Duration": 15,
+      "Offset": 1229
+    },
+    {
+      "Sentence": "So the Apple's App Store rules said. You couldn't write a an interpretive and so we figured that given that came in keyboards are effectively a programming language.",
+      "Duration": 9,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "Remember I software program that would be good chance would be half hour.",
+      "Duration": 3,
+      "Offset": 1256
+    },
+    {
+      "Sentence": "At projected at some point if we try to write it and you interpreted for those keyboards. But then when Apple iOS 8, came out where you could have systemwide keyboards. That gives you the opportunity to jump in in a much very in a very legitimate way, and write your own keyboard. But then how do you support fonts for languages that Apple doesn't support? How do you render or something like that so Apple there's 2 hearts to that story, one is the actual letter shapes themselves and the other one is the.",
+      "Duration": 31,
+      "Offset": 1261
+    },
+    {
+      "Sentence": "Bing engine that takes the letter shapes and put them together in the right order and in the right place.",
+      "Duration": 5,
+      "Offset": 1292
+    },
+    {
+      "Sentence": "So the renderer we have very little control over.",
+      "Duration": 2,
+      "Offset": 1298
+    },
+    {
+      "Sentence": "Because it's very deep in the system but we can install fonts.",
+      "Duration": 5,
+      "Offset": 1302
+    },
+    {
+      "Sentence": "So for about probably 90% of the languages that we work with apples renderer already copes with the with the shapes even if they don't supply a font.",
+      "Duration": 9,
+      "Offset": 1308
+    },
+    {
+      "Sentence": "And there is a white because we can install a font. That means we can actually do what we need to use that language on iOS interesting do you have telemetry or ways to tell that people are using this? I'm not there any languages that you support where you legitimately don't know if anyone is even using it but it was important to do because you wanted to do it so.",
+      "Duration": 22,
+      "Offset": 1318
+    },
+    {
+      "Sentence": "Almost every single keyboard that's out there was submitted by somebody else, not by me. So so it's maybe 10% of them were once that I created and never once that I was working with.",
+      "Duration": 11,
+      "Offset": 1341
+    },
+    {
+      "Sentence": "And most of the time those ones were.",
+      "Duration": 2,
+      "Offset": 1353
+    },
+    {
+      "Sentence": "Keyboards where I was working with somebody else who had a need and then I created the keyboard for them.",
+      "Duration": 5,
+      "Offset": 1357
+    },
+    {
+      "Sentence": "There's the keyboard aspect, which is the input there's the rendering of the Cliff. But then for also for languages that have diacritical marks and things where there is multiple keystrokes to get a thing like or do for example, you type something and then hit space and then it fundamentally changes something else that is that swapping Unicode glyphs out for different things is that is there an engine is that's not just.",
+      "Duration": 30,
+      "Offset": 1364
+    },
+    {
+      "Sentence": "Like baby ethnocentric monolingual people. People who speak just English. They are used to typing one key and one thing happens and the only time any kind of courting comes along, is when you hit shift and something else but the idea that you type 345 characters and then hit space and then something totally different happens. There's very lack of a better word for into them. I'm curious what magic is going on there because it's more than just a visual keyboard and it's more than just font rendering.",
+      "Duration": 29,
+      "Offset": 1396
+    },
+    {
+      "Sentence": "That's right, yeah, so that's kind of where came in the power of key bank comes in and where at moves beyond what MSK else can do for example.",
+      "Duration": 8,
+      "Offset": 1426
+    },
+    {
+      "Sentence": "So what we have in common is what we call contextual input. So we look at what's already in the text or or on screen for more visual description.",
+      "Duration": 10,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "And then we combine that along with a keystroke and transform what's already on screen with that keystroke into an output?",
+      "Duration": 8,
+      "Offset": 1447
+    },
+    {
+      "Sentence": "So for instance, if you have an I and then you type. A combining acute mark. It may instead of having 2 characters in a in a combining acute.",
+      "Duration": 9,
+      "Offset": 1457
+    },
+    {
+      "Sentence": "Character actually remove the A from the text door and put in an A with combining acute or a with a cute?",
+      "Duration": 7,
+      "Offset": 1468
+    },
+    {
+      "Sentence": "As a single character you have to keep that stack around, though, because presumably then. When I hit backspace. I don't mean to remove the character. I need to back up. The thing I just did. Yes, an yeah backspace is an interesting one we've had lots of discussions about backspace now that's a good point like I just typed in order to and Type 4 characters to get one then hit backspace and it backed up one.",
+      "Duration": 26,
+      "Offset": 1477
+    },
+    {
+      "Sentence": "Logical step yet rather than removing the one logical character yes.",
+      "Duration": 4,
+      "Offset": 1504
+    },
+    {
+      "Sentence": "And it depends so if you look at Chinese iames if you type backspace after you've committed your character, it actually delete the whole character and you have to re type it OK. So it does really depend on on the language and how it's working. So yes, you do have to maintain a stack or have access to that context and that's also an interesting story. Yeah, I could definitely see how people one person could feel very passionately.",
+      "Duration": 31,
+      "Offset": 1509
+    },
+    {
+      "Sentence": "Should behave this way, and other people might say Oh, no of course not, it's backspace? Is is undo. It's back up a moment, not back up. Everything yeah, so the simple answer. I give to people now is that well if you're not happy, you can create your own keyboard layout.",
+      "Duration": 13,
+      "Offset": 1541
+    },
+    {
+      "Sentence": "Which is which is interesting because that's exactly what people do you've got like you said thousands of keyboard layouts so you said that when Windows keyboard maker came along 10:15 years ago that that was a moment where you thought. Maybe this would stop when Windows 7, then 8 to 10. Of course, you know that little lots of people hundreds. I'm sure people at Microsoft are trying to make as many languages as possible work as well as possible and I know that Windows 10 for example, included a lot of really great new.",
+      "Duration": 31,
+      "Offset": 1556
+    },
+    {
+      "Sentence": "Work for M Herrick degree and gaz based languages, but you there's no reason to stop like you're saying that there is still considerable value that Keenan can offer yeah, so there's 2 different parts that again. One is now that it's multiplatform. That means that if somebody does want to create a layout for a language. They can do it once and it's going to work on the majority of devices out there, not just on windows or not just on Mac.",
+      "Duration": 29,
+      "Offset": 1587
+    },
+    {
+      "Sentence": "And the other one is be cause. It's open source. Now it wasn't. It wasn't originally but is now it means that you've got that freedom, which you don't necessarily have to do what you want with the keyboard not necessary dependent on what Microsoft's design choices are and they might be great design choices, but they might not be the ones you want.",
+      "Duration": 21,
+      "Offset": 1617
+    },
+    {
+      "Sentence": "And it's not at Microsoft in windows itself isn't for lack of a better word actively trying to thwart this kind of thing like it's OK to have different keyboards in different plugins and the ability to use different stuff that's not without of the box. Yeah, I've got a really great relationship with a lot of guys and people at Microsoft to have.",
+      "Duration": 21,
+      "Offset": 1640
+    },
+    {
+      "Sentence": "Supported me in in the past in developing came in.",
+      "Duration": 3,
+      "Offset": 1662
+    },
+    {
+      "Sentence": "And filling that Gap and so I really appreciate the work, they've done.",
+      "Duration": 4,
+      "Offset": 1666
+    },
+    {
+      "Sentence": "In terms of adding all attics for support in Windows 10.",
+      "Duration": 3,
+      "Offset": 1671
+    },
+    {
+      "Sentence": "And then and I don't see that there's a big issue, there in some ways if the need for came and went away because the operating systems did at all. That wouldn't be a bad thing would be a little sad. I think if I had spent 20 years working on it, I might be a little frustrated.",
+      "Duration": 15,
+      "Offset": 1675
+    },
+    {
+      "Sentence": "Yeah, it's not going away anytime soon. But yeah, well. I think that maybe in 10 years, it be ability also to go to focus for example, key manweb then see a keyboard and then drag a button to your bookmarklets toolbar and then suddenly use that keyboard in your web browser is pretty extraordinary.",
+      "Duration": 19,
+      "Offset": 1692
+    },
+    {
+      "Sentence": "Yeah, that's 1 of those interesting ones that was AI. Think I did that on an airplane trip just for fun and then and then I had to support it.",
+      "Duration": 9,
+      "Offset": 1711
+    },
+    {
+      "Sentence": "But it but it did you maybe you didn't think that was the use case but someone said. Oh, this is perfect. This is exactly what I needed. I want to plug you know, I'm doing a blog just for people who speak Amharic. Therefore, I want to make sure that they can comment. All I have a browser addon. Anna plugin for ACMS or web WordPress that will allow anyone to comment. Regardless of operating system or any limitations the computer might have yeah.",
+      "Duration": 25,
+      "Offset": 1722
+    },
+    {
+      "Sentence": "Yeah, and there's a lot of people who have who have done that.",
+      "Duration": 4,
+      "Offset": 1748
+    },
+    {
+      "Sentence": "And I think it web based keyboards also interesting 'cause Google Now have quite a lot available with I think they're virtual keyboard.",
+      "Duration": 7,
+      "Offset": 1754
+    },
+    {
+      "Sentence": "So this is a bit of competition out there for Kim Ann Webb, but there still gets.",
+      "Duration": 5,
+      "Offset": 1763
+    },
+    {
+      "Sentence": "Thousands of daily visitors to the site so seems like so it's not using it. It's free now and people are using it. Thousands and thousands and thousands and people can go to key man KEYman.com or key manweb.com and they can download when they're downloading. It they would be downloading. The keyboard for their language can they download like if they were in Belgium. They could download 3 or 4 keyboards for the 3 or 4 languages, they might speak or is it one per.",
+      "Duration": 30,
+      "Offset": 1769
+    },
+    {
+      "Sentence": "They can so basically there's the engine. The key men app, which they installed first and then they can add as many keyboard layouts as they need.",
+      "Duration": 8,
+      "Offset": 1801
+    },
+    {
+      "Sentence": "So once you've installed the app. You can just go and add additional keyboard layouts with through the app or through package package files on the web.",
+      "Duration": 10,
+      "Offset": 1810
+    },
+    {
+      "Sentence": "And I do understand that you just launched a beta of key man for Mac.",
+      "Duration": 5,
+      "Offset": 1822
+    },
+    {
+      "Sentence": "Yes, yeah, so it's interesting because I feel like we were going through the same journey in undocumented space with came in for Mac as we did with Karen for windows when we start to work in in.",
+      "Duration": 14,
+      "Offset": 1827
+    },
+    {
+      "Sentence": "I for lack of a better word esoteric languages, which operating system. Designers haven't necessarily even imagined and the intersection of that with the lower level, keyboard input, which is usually fairly lightly documented. We run into all sorts of interesting problems and unexpected challenges.",
+      "Duration": 20,
+      "Offset": 1843
+    },
+    {
+      "Sentence": "And consistency issues between applications and how people deal with backspace and whether they try and take over and do their own thing. That kind of thing, but in the short term your goal or maybe the long-term goal is that the keyboards that already exist are operating systems on specific so if I've got a keyboard. I'm developing a keyboard. That's an existing Windows keyboard for the most part I can just bring that keyboard into the Mac version. Yes, for the Mac. That's very much true this, I think 3 or 4 keyboard switch.",
+      "Duration": 30,
+      "Offset": 1865
+    },
+    {
+      "Sentence": "I am a functionality, which prop up user interface, which would have to be rewritten for Mac but.",
+      "Duration": 8,
+      "Offset": 1895
+    },
+    {
+      "Sentence": "Yeah, vast majority of straight over.",
+      "Duration": 1,
+      "Offset": 1904
+    },
+    {
+      "Sentence": "Alright and all of this is on GitHub at github.com slash key man app.",
+      "Duration": 5,
+      "Offset": 1907
+    },
+    {
+      "Sentence": "Correct yes.",
+      "Duration": 1,
+      "Offset": 1913
+    },
+    {
+      "Sentence": "Fantastic and I assume that you would not be you would not turn away good help from smart people who might want to get involved in open source and get involved with key man I would be very, very welcome here. So were small small team as these things always are and can never do all the things we want to do.",
+      "Duration": 18,
+      "Offset": 1915
+    },
+    {
+      "Sentence": "Fantastic well if you speak another language that is not English. I would encourage you to check out keyman.com and of coursegithub.com slash key man app. Thank you so much Mark Durden for chatting with me today. Thank you, it's been pleasure.",
+      "Duration": 12,
+      "Offset": 1934
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 8,
+      "Offset": 1948
+    }
+  ]
+}

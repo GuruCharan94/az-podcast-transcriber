@@ -1,0 +1,438 @@
+{
+  "id": "6d5e5b4c-b66f-4149-af4d-8fc90f810672",
+  "Title": "Functional Programming, F#, and Cloud Containers with Lena Hall",
+  "PublishDate": "2018-01-05",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/3b5a8859.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Alina Hall. She's formally a software engineer at Microsoft Research. She works on Azure and big data and loves functional programming and all kinds of distributed systems and I'm happy to be talking with you today? How are you I'm good thank you Scott? How are you? I'm great we're doing this over the holiday season, which means that we probably need to spend more time not working we are merry Christmas everyone.",
+      "Duration": 30,
+      "Offset": 40
+    },
+    {
+      "Sentence": "You but we have a lot of fun working on this kind of stuff, so you're a lot like me. You just can't Stop 'cause you have so much fun right right. I'm very naturally curious person. So II like to discover new things and learn them during the holiday season. Every time so I'm a big fan of functional programming and distributed systems.",
+      "Duration": 20,
+      "Offset": 72
+    },
+    {
+      "Sentence": "You I met you gosh it's been several years now. But I've always thought of you as a functional person. But I don't did you start out functional? I did not. I think we've metat.net fringe 2015 first in Portland and I was giving a talk about F Sharp and embrace framework, which is a framework for cloud computations in a functional way, and at that point, I was doing functional programming already for a few years.",
+      "Duration": 29,
+      "Offset": 94
+    },
+    {
+      "Sentence": "But I started as a Java and C Sharp Engineers. So I did have to break my mind, and go into functional programming from object oriented background.",
+      "Duration": 12,
+      "Offset": 123
+    },
+    {
+      "Sentence": "But in 2015, you know when you were actually on the board of the F Sharp Software Foundation. You said you were already thinking about functional for a few years when you did your Masters degree were you doing, functional where you writing Haskell and things like that, so Scala and F sharp where my first functional programming languages and I have decided to learn to just understand functional programming. In general because previously I've just been exposed to languages like Java in C Sharp and of course, it definitely broke my mind.",
+      "Duration": 31,
+      "Offset": 137
+    },
+    {
+      "Sentence": "Nothing seemed intuitive for the first few weeks. But as I got through the concept sometimes reading the same article or chapter of the book for 10 times. I came to find that actually some of the concepts are more intuitive than it seemed at first. Yes, they were different from those that I've been used to and that's why it was hard at first to rub my head around them. But in general. They make sense so yeah, I've used them during my Masters 2.",
+      "Duration": 29,
+      "Offset": 168
+    },
+    {
+      "Sentence": "Do you are you familiar of course with a dvorak keyboard? Yeah, I am?",
+      "Duration": 5,
+      "Offset": 199
+    },
+    {
+      "Sentence": "Are you a doric person? I'm not so I feel like I've got a buddy you know? Phil hack, yeah, and he's always telling me that I should switch to Dvorak and he always tells me it will break your mind for a few weeks and then it will be then. It will be this. Glorious wondrous future you will be living in a parallel universe like like Neo in the matrix is functional. Yeah, I have a feeling that this is something similar I have not.",
+      "Duration": 30,
+      "Offset": 205
+    },
+    {
+      "Sentence": "Or that I agree that yes at first when you are exposed to any new concept, like this with previous experience in a different world. It will change your worldview and at first you will try to program using for and while loops and assignments of mutual variables, but mutable variables, but then you realize that OK. This is not how I should think about it, I should think about it as.",
+      "Duration": 30,
+      "Offset": 237
+    },
+    {
+      "Sentence": "Compliance and transformations and not actually assigning something to a variable that having values that then return. Other values and having small set of functions that sometimes you have to use some explicit explicit wrapper around side effects, so that your program knows how to handle them and how to communicate with external world correctly. So yeah, so functional programming is just a different abstraction.",
+      "Duration": 30,
+      "Offset": 267
+    },
+    {
+      "Sentence": "And Asian up and it goes in parallel with this imperative programming world. An Tulsa can be used for general purpose programming? What do you feel about the relationship between and I'll just use these 2 languages see sharp an F sharp? Is it a competition or is it just.",
+      "Duration": 17,
+      "Offset": 298
+    },
+    {
+      "Sentence": "You know brothers and sisters or step brothers like or do you think that there are there F sharp people that just think that F sharp should and I forgive me for using this word should win. I feel like there a preference basically people can prefer one or another. But I feel like C Sharp is slowly taking some of the features of F sharp into itself, so like pattern matching.",
+      "Duration": 30,
+      "Offset": 316
+    },
+    {
+      "Sentence": "You like it slowly taken itself, taking this feature into Lucy Sharp, so F sharp seems cleaner to me. It makes me discover bugs really much more quick than in C Sharp. We basically I can build prototypes in a sharp not depending on what language I finally will implement the production solution with I've heard many stories that people who are using for example, Java for their production.",
+      "Duration": 31,
+      "Offset": 347
+    },
+    {
+      "Sentence": "Still, implement the first initial prototyping of sharp because yes because it's much easier to first build out your logic and specify all the possible outcomes. An basically make sure that your building what you really should be building an interesting do, do you feel that the moved F sharp recently to supportlike.net coreand.net standard afraid my sure that's all a good thing right This is definitely a good thing.",
+      "Duration": 30,
+      "Offset": 380
+    },
+    {
+      "Sentence": "I think this brings of sharp into.",
+      "Duration": 3,
+      "Offset": 410
+    },
+    {
+      "Sentence": "More wide usage compared to previous years because, like right now, I have a Mac. And I'm using F sharp with mono on it, and I can use a sharp and Cooper notice. In my services so I'm working with it like an open source language and basically I can interact with any open source technology with no limitations. So I feellike.net core support is the next step in this process.",
+      "Duration": 30,
+      "Offset": 415
+    },
+    {
+      "Sentence": "And it kind of seems like a natural place for the F sharp community because you know the net. People in C. Sharp people are open source and becoming more open source. But F sharp people feel like they've always been very intensely focused on open source so for the ability for F Sharp to interact with other open source distributed systems is super important and I know there's a bunch of distributed systems and technologies that you're interested in yes, I am currently working with a lot of distributed systems technology.",
+      "Duration": 30,
+      "Offset": 446
+    },
+    {
+      "Sentence": "Dress Park Costco Ann I'm using of sharpen scholar tune direct with these technologies, so yeah.",
+      "Duration": 8,
+      "Offset": 477
+    },
+    {
+      "Sentence": "What are the? What are some of the technologies that you've plugged F sharp into an been surprised that it worked so well. For example, Cassandra simply when you are creating a Cassandra cluster first thing that comes to your mind OK, so you can use Java Scala with Cassandra because there are basically a native support in the Cassandra driver. But as you may discover a sharp is also supported and then I just tried to check how smooth the support and whether.",
+      "Duration": 30,
+      "Offset": 487
+    },
+    {
+      "Sentence": "Fix an I've discovered that is really easy to do that, and it's very smooth, there are no issues.",
+      "Duration": 6,
+      "Offset": 518
+    },
+    {
+      "Sentence": "In my recent demos at cub, corn in December in Austin. I was showing basically how to write F sharp jobs to run on Cassandra to populate your Cassandra cluster that is running on kubernetes with stateful sets sounds really amazing to see that everything works together functional programming distributed systems containers.",
+      "Duration": 24,
+      "Offset": 525
+    },
+    {
+      "Sentence": "A lot of people are watching all of this happen from the outside. They might be working on net 3or.net 4. Maybe their company works a little bit more slowly. They're not thinking about containers and they might be a little bit overwhelmed, frankly and feeling like well. I'll try kubernetes or I'll play with it on the weekend and then I'll play with something else next week and by then it's already changed do you think things are moving too fast they are definitely moving?",
+      "Duration": 31,
+      "Offset": 551
+    },
+    {
+      "Sentence": "Moving fast, but I feel like it's natural evolution of technology and at some point I mean when technology becomes more popular. You have to look at it because it might be the next standard. So I feel like Kubernetes is become in the next standard for services for running distributed systems that you build on top of it, so if your application is based on old standards.",
+      "Duration": 30,
+      "Offset": 583
+    },
+    {
+      "Sentence": "Good it's fine, but if your application needs to be more distributed you should definitely look into carbonate is and see what benefits you can get using it because.",
+      "Duration": 11,
+      "Offset": 615
+    },
+    {
+      "Sentence": "It supports many of the things that previously we needed to think about implementing manually like if you ever have a service that needs to be replicated an always available. You can easily indicate this parameters in your configuration Ann Cooper natives will make sure that your service is scheduled to run exactly this many instances, an recover any failures that can occur in the meat and many other features.",
+      "Duration": 28,
+      "Offset": 627
+    },
+    {
+      "Sentence": "I mean, you probably know that I've been learning about kubernetes over the last year and I've been doing some stuff with Raspberry pis.",
+      "Duration": 7,
+      "Offset": 656
+    },
+    {
+      "Sentence": "In a couple of weeks ago, I had Alex Ellis on, he's a doctor captain and he's a big fan of using communities on on Raspberry. Pis and learning about it kind of in my own little lab, but then I did of course, some stuff in Azure. But one of the things that I realized that a lot of us were doing kind of Hello World Demos and learning about the basics of Kubernetes are doing is we're kind of ignoring the database part because it's tricky because previously just like a year ago we didn't have.",
+      "Duration": 30,
+      "Offset": 664
+    },
+    {
+      "Sentence": "Or sets, which is a concept in Cooper needs that allows you to run stateful applications right now. We have this concept, and it really simplifies how we manage storage with carbonated so we can of course, Mount a persistent volume, but stateful sets help us with automating all of this under underneath an we just define our template with the persistent volume claim an it.",
+      "Duration": 30,
+      "Offset": 695
+    },
+    {
+      "Sentence": "All the mounting automatically and make sure that if something happens, it will remount it an you can specify settings to make sure that let's say if you have multiple instances of the application that none of them are scheduled on the same node because it might be not really reliable so actually in my demo was showing exactly that when I did for Cassandra on Kubernetes and mounted Azure disks.",
+      "Duration": 31,
+      "Offset": 726
+    },
+    {
+      "Sentence": "Disks and showed how if something happens to a container. It restarts and then data is not lost. So basically it helps us to manage this state.",
+      "Duration": 11,
+      "Offset": 758
+    },
+    {
+      "Sentence": "Maybe you could help me better understand stateful sets. I've heard that number of times. You said it a couple of times and I still don't quite.",
+      "Duration": 8,
+      "Offset": 770
+    },
+    {
+      "Sentence": "Understand what why how that relates like which part of my app is supposed to be totally stateless. And to be fired up and shut down instantly, and then whether a stateful said is going to make my site less likely to scale OK. I see what you mean so containers in general when you think about containers their basic lament is stateless services.",
+      "Duration": 24,
+      "Offset": 780
+    },
+    {
+      "Sentence": "When we have some sort of important information that we can't just can't allow to be lost, we must have some sort of persistent storage because if something happens to pod. Everything can happen, it can die. We will lose our state, with usual deployment or replica set in carbonate is so we have to have persistent volumes attached and manage our state.",
+      "Duration": 32,
+      "Offset": 805
+    },
+    {
+      "Sentence": "For data in a stateful way.",
+      "Duration": 1,
+      "Offset": 838
+    },
+    {
+      "Sentence": "So Cooper natives has this concept of storage class that you can choose from. So I know that I played around with us on Azure. And it has managed disks or file storage or some default storage classes. You can choose what type of storage. You can have for your pots and then in the template definition of your service like Cassandra Service.",
+      "Duration": 25,
+      "Offset": 840
+    },
+    {
+      "Sentence": "We have an additional section which is called volume clean templates and there, we indicate that we want each pod to start with a mounted storage of the type of the storage class that we have chosen where also indicating the amount of storage. Some, like one gigabytes or how many gigabytes you want.",
+      "Duration": 25,
+      "Offset": 866
+    },
+    {
+      "Sentence": "And then when each part starts out it request, the storage ways for it to the provisioned an attaches it to the noted resides on so basically if something happens to this container after a while. The volume will be re mounted and data will be still there and not lost.",
+      "Duration": 22,
+      "Offset": 892
+    },
+    {
+      "Sentence": "OK, so let me see if I can repeat some of that back to you and like paraphrases or do you tell me if I got it right so if you're like an administrator or Nike Department? Who is going to make kubernetes make hardware available to kubernetes you have lots of different options are now you can give them storage and the administrator can say. I have different classes of storage different things. And it could be different speeds or different quality of service or different whatever and I can say I've got an Azure disk available.",
+      "Duration": 32,
+      "Offset": 915
+    },
+    {
+      "Sentence": "Stature disconnect little I've got whatever and my app might need different kinds of storage like I might just need temporary storage or I might need super fast storage and I need you to hold on to it, so that if I go away, the storage doesn't go away, so that I describe.",
+      "Duration": 17,
+      "Offset": 949
+    },
+    {
+      "Sentence": "In my basically in my iPod that or in my district. What's it called what's the where am I describing this? How am I making these declarations of file you? Can you can have a yellow file with the definition of are stateful set where you indicate all of this parameters?",
+      "Duration": 18,
+      "Offset": 967
+    },
+    {
+      "Sentence": "Right.",
+      "Duration": 0,
+      "Offset": 986
+    },
+    {
+      "Sentence": "OK, so then I'm describing in there what I want and then persistent volumes can then say well. I need this much space. I need these ways to talk to it. I need this class of storage and I need to Mount it and then I think the term is reclaiming is that right, yeah, yeah, so basically if you look even deeper. What is happening when we perform the command cube citycell create my stateful sets dot yamil we will start noticing that so there is the first part, creating right now.",
+      "Duration": 33,
+      "Offset": 987
+    },
+    {
+      "Sentence": "And when we look into persistent volume claims looking also check them using cube city. L we can do cubes. It you'll get PVC, which is a persistent volume claim we can see that.",
+      "Duration": 11,
+      "Offset": 1021
+    },
+    {
+      "Sentence": "It starts to get created so it's like a request for storage.",
+      "Duration": 4,
+      "Offset": 1033
+    },
+    {
+      "Sentence": "And then after we have the request for storage. We can look into persistent volumes, which is cute citycell get PV and then we will notice that it is also starting to be created as soon as it is done are a pod will start pulling the container image and will be ready and running and then same stuff for the next for the next pod. An one of the good things about stateful set is that all the pods are created in order because for some.",
+      "Duration": 30,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "Systems it's really important like for for Cassandra basically you need the notes to be aware of some existing nodes in the in the cluster because you have to indicate the seed notes which is the way new notes can join the cluster and Discover Discover. Other nodes so simple says help with state and with ordering of creation and deletion and updates so that is very useful.",
+      "Duration": 29,
+      "Offset": 1070
+    },
+    {
+      "Sentence": "When you're creating these systems like this when you're in you're asking for storage classes. You're asking for disks. I found in all clouds. I mean, I know mostly more about Azure. But I've found in every cloud that there's sometimes a lot of latency like you think you're asking for a real disk, but it's not real. It's out there somewhere else on a network and you're talking over HTTP or something else. When you think you're talking to a real disk cannot be a problem with scale usually not because for me my experience that happens.",
+      "Duration": 32,
+      "Offset": 1100
+    },
+    {
+      "Sentence": "And you can watch you can watch that your volumes are creating pretty quick and you can notice them on Azure. For example, in your resource group's actual resource of data disk. So you can always check that their healthy up and running so I haven't seen this issue.",
+      "Duration": 17,
+      "Offset": 1133
+    },
+    {
+      "Sentence": "And the premier date would premium storage. It's quite fast. It feels like it's speedy does. That's what I've tried for my demo.",
+      "Duration": 10,
+      "Offset": 1151
+    },
+    {
+      "Sentence": "Finished cleaning storage.",
+      "Duration": 1,
+      "Offset": 1162
+    },
+    {
+      "Sentence": "And how long did it take you to pick it up you said news Cassandra to get that up and running on carbon 80s on Azure? Well II had previous experience with both Cooper native son Cassandra so.",
+      "Duration": 11,
+      "Offset": 1164
+    },
+    {
+      "Sentence": "It it took me about I think a few hours to get this up and running so yeah.",
+      "Duration": 5,
+      "Offset": 1177
+    },
+    {
+      "Sentence": "It's pretty exciting so does this mean that is this mean and this might be a silly sentence. But can we start using combination for basically anything. Could I take all kinds of apps that don't belong incriminating and put them in criminal be just fine. Well, I would say I've been trying this for development purposes because of course, there will be so when you run a production database. Our production system with state you expect some sort of performance.",
+      "Duration": 30,
+      "Offset": 1183
+    },
+    {
+      "Sentence": "When you run it on bare metal, you will, of course have more speed and you have for more expectations from it. The benefit of doing distributed database on Cooper natives is.",
+      "Duration": 12,
+      "Offset": 1215
+    },
+    {
+      "Sentence": "That you can easily get started with it. You don't have to you can easily remove it, you don't have to pay for the service to be running because it's really hard to create it and delete it. So when you have a bare metal cluster you will just have it for your in development and testing purposes and production. An it's it's hard to do everything with it because it's up and running and you don't want to touch it and it's expensive with turbinatus you have the benefit of.",
+      "Duration": 30,
+      "Offset": 1228
+    },
+    {
+      "Sentence": "In this up quickly being able to be flexible and get rid of it at any moment. You want and then create it very easily. So you don't have to overpay for your resources so you can benefit from it right now for dev and test that with production. I would probably wait a little bit because there are some there might be some issues because the technology is still pretty new and there are still some issues on GitHub regarding some corner cases in edge cases that are now.",
+      "Duration": 31,
+      "Offset": 1259
+    },
+    {
+      "Sentence": "Being worked on.",
+      "Duration": 0,
+      "Offset": 1291
+    },
+    {
+      "Sentence": "Yeah, I think the question that everyone wants to know is when Kubernetes will be kind of like stop moving so fast. 'cause it always feels like there's just a couple of little things that might change from from.",
+      "Duration": 11,
+      "Offset": 1293
+    },
+    {
+      "Sentence": "Minor minor point reminder point, Cooper natives right now is going through its stage of growth because everybody knows is that it is useful and we still don't have the ecosystem and standards in the same way. And in the same quality that we had for VMS and usually not containerized applications. So the community is very vibrant and at group con in December. I was shocked by number of little projects that are.",
+      "Duration": 31,
+      "Offset": 1304
+    },
+    {
+      "Sentence": "So system related to everything observe ability logging distributed tracing machine learning. An this all starts to appear around. Cooper natives and completely agree that it's hard to keep track of it, but it is a necessary stage of development for a tool that will finally probably obtain some sort of stability eventually.",
+      "Duration": 29,
+      "Offset": 1336
+    },
+    {
+      "Sentence": "So if we kind of pop a few things off the stack and go back to F sharp in functional programming in your language of preference when you take Cassandra, which you like Docker Azure Ann Cooper Netes and then you. Add F sharp on top of them does the immutable functional world of F sharp fit really well into the stateless and scalable world of of communities?",
+      "Duration": 24,
+      "Offset": 1366
+    },
+    {
+      "Sentence": "It does fit pretty well incorporated I can mix and match languages that I use on carbonated so I reason multiple languages for my services again use scalo in one service of sharpen another service, so whatever is more suitable for piece of functionality that deploying but I agree that functional programming is really fitting into the distributed systems paradigm as well and it's interesting too.",
+      "Duration": 30,
+      "Offset": 1392
+    },
+    {
+      "Sentence": "Also go deeper in how Cooper need. This is built and see how scheduling is made so if we look into components of Cooper natives ecosystem. There is FCD server, which is like a key value store cluster database and then we have API server that access is SD. We have basically controllers that is like infinite reconciliation loop pattern.",
+      "Duration": 31,
+      "Offset": 1423
+    },
+    {
+      "Sentence": "Checks for our state that is that is, we have currently and the desired state and then compares it and makes our current state. The same as desired state and then scheduling pods and if we look at algorithms that are used underneath in distributed systems. We can see that a lot of them are actually functional for look at distributed distributed commit log that Kafka uses or that spark uses.",
+      "Duration": 30,
+      "Offset": 1455
+    },
+    {
+      "Sentence": "We can see that they're all based in the concept of mutability and how 2 worlds collide together.",
+      "Duration": 7,
+      "Offset": 1486
+    },
+    {
+      "Sentence": "That's an interesting point have you seen. I'm sure you have Julia Evans. Kubernetes zines and comics. Yes, I have? I'm a big fan of her diagrams, I would say.",
+      "Duration": 14,
+      "Offset": 1494
+    },
+    {
+      "Sentence": "Yeah, and where you were I was looking at them, while you were describing how you know at CD and scheduling and all that kind of things work and it definitely. I would recommend it to folks when you're listening to this podcast or when you're learning about companies and distributed systems. Julia Evans as she is learning is drawing a lot of these things up in a very, very clever kind of comic book zines kind of way, which is cool.",
+      "Duration": 23,
+      "Offset": 1510
+    },
+    {
+      "Sentence": "Exactly.",
+      "Duration": 1,
+      "Offset": 1534
+    },
+    {
+      "Sentence": "So I'm thinking about F sharp in the future. I know that we've got F Sharp Road. Maps published from August. We'vegot.net standard 2.0 coming you were saying that functional programming really lends itself to this new world if you think about Micro Services or people are now telling me that they won't even smaller services. Pico services or Nano Service, making a function distributed well, yeah, people are trying to experiment with.",
+      "Duration": 30,
+      "Offset": 1536
+    },
+    {
+      "Sentence": "I want of code they put into services and I see that functions are becoming pretty popular when you want to have some event trigger and trigger an execution of a function like you can use Azure functions, or I Devious Lambda. Anna sharpest supported so it was one of the first languages. That was supported by these tools, so have many options to do that.",
+      "Duration": 24,
+      "Offset": 1566
+    },
+    {
+      "Sentence": "Have you looked at open fast open fas functioned as a service? I have not?",
+      "Duration": 6,
+      "Offset": 1592
+    },
+    {
+      "Sentence": "A couple of weeks ago like I mentioned we had Alex Ellis on and he's basically making like it's like Azure functions, except it's Open. It's it's own his own Azure functions. And then we've also seen Azure functions. Runtime released so you could go and run the Azure functions, runtime on another cloud as a container. If you wanted that sounds cool. I also see a lot of a lot of technologies shift into streaming.",
+      "Duration": 30,
+      "Offset": 1600
+    },
+    {
+      "Sentence": "Game processing so we have IOT devices and various devices that have sensors or anything similar to that and they have a lot of data so I have notice that use of technologies like Kafka and spark streaming increased dramatically in the last few years because there is a need to gather data from various sources and they can come in with different speed.",
+      "Duration": 30,
+      "Offset": 1630
+    },
+    {
+      "Sentence": "Just from different producers and then we have multiple consumers that are independent of each other and we need to somehow manage the 2 parts of this process, producing and consuming we need the in between layer to be durable. Because anything can happen to these events, so I've noticed a big increase of usage in technologies like Kafka and spark streaming where basically so I've tried it on Azure on HD inside.",
+      "Duration": 30,
+      "Offset": 1662
+    },
+    {
+      "Sentence": "Bricks and works amazing and it basically integrates with a lot of existing tools. So just another another trend that appears to be popular. So it's doing something like Kafka and that'SKFK and people can go and check it out of Kafka dotapache.org and we've also got Kafka on Azure. This is much more.",
+      "Duration": 22,
+      "Offset": 1693
+    },
+    {
+      "Sentence": "It's more custom than just what we did in the old days, which was put a bunch of stuff in a SQL server table and then read it from somewhere else like that doesn't scale very much in a distributed system does it. It does not because we have this problem of needing to collect data from different sources. It can be a database or like a database table that populates with different speed or we can have events that come in from various systems, so and we need to somehow.",
+      "Duration": 30,
+      "Offset": 1717
+    },
+    {
+      "Sentence": "Wait these multiple sources an if we do it by writing separate pieces for each of them. It becomes unmanageable and then we have to basically write the same code. For every system on the same but similar code for Charlie Systems and we have to solve problems like durability scalability, where they're all sold in Costco. If you learn how to use it. You'll be able to basically have a reliable scalable.",
+      "Duration": 31,
+      "Offset": 1748
+    },
+    {
+      "Sentence": "Log of events that you don't have to consume right away because it's durable it has a retention. an can have a flexible number of consumers and it solves all the problems that appear in the multiple event multiple data sources problem.",
+      "Duration": 20,
+      "Offset": 1780
+    },
+    {
+      "Sentence": "It seems like and and I'll put some words in your mouth and you. Tell me if this is correct that. You're an advocate in distributed systems of definitely not reinventing the wheel like if there's a problem. You don't need to necessarily right that yourself. There's something that will do it for you. That is true because there are a lot of systems that already solved really hard problems. You can you can try to solve it yourself, but you will notice the pattern that other tools already implement and if you look into the code.",
+      "Duration": 31,
+      "Offset": 1801
+    },
+    {
+      "Sentence": "It is not very trivial, so like when you look at the websites of the most popular databases or distributed systems. You see that they say fault tolerant scalable fast low latency and all of this words are very abstract, so you know that they are good. They mean that your system work cool for real. They mean different things. So, there. There is there's a lot of non triviality in how it is implemented so there is consensus.",
+      "Duration": 31,
+      "Offset": 1833
+    },
+    {
+      "Sentence": "Algorithms to make sure that your events. Next step of your replication or anything that requires coordination is performed in order and there are no conflicts. There is configuration exchange for there are things like gossip and algorithms for metadata exchange. Cassandra cluster uses or reac and there are many other things to ensure that your consistency across the cluster is.",
+      "Duration": 31,
+      "Offset": 1865
+    },
+    {
+      "Sentence": "Because there are mistakes in replication, sometimes we have to fix them. So we need to know about things like him to tend of or read repair or anti entropy repairs, so and when you go and serve through the Internet for how to do this and that you basically are sucked into bunch of distributed system papers that are very formal and hard to read but then you start realize that all of this existing solutions already implement them.",
+      "Duration": 31,
+      "Offset": 1897
+    },
+    {
+      "Sentence": "You know it start noticing patterns and see that this word like fault tolerance actually means these algorithms. So if you create a new distributed systems that does not implement something that is already implemented then you will have to know all of these things.",
+      "Duration": 19,
+      "Offset": 1928
+    },
+    {
+      "Sentence": "That's very well, said I appreciate that.",
+      "Duration": 2,
+      "Offset": 1948
+    },
+    {
+      "Sentence": "Thanks so much for chatting with me today. Thank you folks can check out Lena at twitter.com slash Lena Droid. An Lena Droid Dot. GitHub dot IO. She's got a ton of great information on distributed systems in Azure in large scale and functional programming. An I appreciate you thanks so much. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 22,
+      "Offset": 1951
+    }
+  ]
+}

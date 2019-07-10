@@ -1,0 +1,333 @@
+{
+  "id": "5939043f-71a6-46a6-9a1e-47a7a012332f",
+  "Title": "A history of the Windows 95 Start Button and User Research at Microsoft with Kent Sullivan and Derek Hoiem",
+  "PublishDate": "2018-04-20",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/014442be.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we appreciate you the listener and I hope you appreciate our sponsors because they make Hansel minutes possible. Today's 1st sponsor is Melissa? Are you looking to build real time. Contact data validation enrichment into your applications try melisses developer portal. You'll gain easy access to flexible APIs for global address verification phone. IP address email and property and business data sample code and get post methods, plus technical documentation are all included quick online payment.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Put application development easy, please visitmelissa.com slash developer or call 1, 800, Melissa.",
+      "Duration": 11,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I've got a very special show for you. I'm talking with Kent Sullivan and Eric William. They're user research and UX consultants and they're currently working with bicurious with us great URL be curious with dot US.",
+      "Duration": 17,
+      "Offset": 52
+    },
+    {
+      "Sentence": "They help teams and individuals uh develop capabilities to make great user experiences. But I'm going to talk to you all about history. Thanks for being with me today. Hey great to be on the show. Scott yeah, thanks got so I'm sitting here in front of my windows machine. I'm running Windows 10 and then to my right is my sons, Chrome book and then I'll be on that is an Ubuntu machine and in all instances. There's some button in the corner that I click on for a lot of machines. It's that lower left corner and for other ones they mix it up.",
+      "Duration": 30,
+      "Offset": 70
+    },
+    {
+      "Sentence": "Upper left corner I started realizing that's ubiquitous there's always a start menu. Somewhere so I wanted to figure out where that came from maybe one of you could give me a little background on where to start menu. Come from and where were you when it happened, yeah, so can'T&I were actually so this is Derek. I can'T&I were actually some of the first members of the user research team at Microsoft and so we started in the late 80s and at that time.",
+      "Duration": 31,
+      "Offset": 101
+    },
+    {
+      "Sentence": "In Supreme at least in the PC World. There were some other OS is out and there was other graphical. UX is in development. I should say operating systems with shells is the proper term at the developer turn that were graphical so Microsoft saw that it kind of had work to do to improve what was going to be the future of the operating system and so obviously.",
+      "Duration": 30,
+      "Offset": 133
+    },
+    {
+      "Sentence": "Microsoft had had several versions of windows already in development, Windows 3.0 was in beta when Kent and I started and so we were wondering like where do we start? Where do we take Microsoft? There were various efforts and different kind of user testing. Efforts going on kind of bootstrapping within our group with different product teams, but we knew that the real heart of the battle.",
+      "Duration": 30,
+      "Offset": 164
+    },
+    {
+      "Sentence": "To start to bring some user feedback into the windows development process.",
+      "Duration": 5,
+      "Offset": 195
+    },
+    {
+      "Sentence": "So a man can't you feel free to jump in here at anytime, but we at some point we were like you know what we need to do, we need to start kind of Benchmarking where some of where we're at so we started to put Windows 3.0 and then subsequently Windows 3.1 in front of different users and we tested everybody from kids to grandmas and you have to remember at the time.",
+      "Duration": 30,
+      "Offset": 202
+    },
+    {
+      "Sentence": "Large percentage of the population that had never even used a computer before so we use those people. We used developers. I mean, so we really had the range of capabilities and abilities of people an experience with computers. So we were putting them in front of windows, then we also put them in front of the Mac.",
+      "Duration": 21,
+      "Offset": 233
+    },
+    {
+      "Sentence": "And we started noticing some patterns and one of them was the fact that people generally you know. Obviously, the more advanced. You got in your computer know how you could figure things out or deduct certain things if you're in an unfamiliar environment. But for by and large if you were knew you wouldn't know really where to start an so we would give people a task like Hey open up.",
+      "Duration": 30,
+      "Offset": 254
+    },
+    {
+      "Sentence": "Add or jump in here 'cause you are very familiar with some of the tasks that we were giving people. It was really basic stuff start notepad open. This Microsoft Word document draw a picture in paint really easy stuff Ann.",
+      "Duration": 14,
+      "Offset": 286
+    },
+    {
+      "Sentence": "People were just constantly re learning and would get lossed you know, and have multiple copies of the same application open. It was just way worse than we thought because basically up until that point, the only people using it more or less where people who already had a fair amount of computer knowledge in Hysterics said. We were really interested in broadening who is using computers. That was really not just the mandate for management. Really, the whole companies like. Hey, you know, computers are if we're going to get one on every desktop in every home, we need a lot of work to do.",
+      "Duration": 30,
+      "Offset": 300
+    },
+    {
+      "Sentence": "In Windows 3.0 it came out in 1990, but people were thinking about windowing operating systems. You know long before that, but I think in all of those instances when once a window whether it be mind. Script minesweeper or notepad got to be full screen that took over and it felt like minesweeper was the operating system. You couldn't find your way back and I don't suppose hitting alt tab is very intuitive no ones going to discover that's in the same categories control. Delete Unfortunately, it's just something you pass on by telling your friends right.",
+      "Duration": 32,
+      "Offset": 332
+    },
+    {
+      "Sentence": "To discover ability is something like that is, near zero well. I remember that there was talk when double clicking became a thing that people were concerned that double clicking was a bad idea because it itself was not discoverable. I remember reading a usability study that said a monkey would never intuitively double click, but a monkey would take a mouse see how the mouse is connected to the pointer and would click a single time. If you look at the psychology and human development of all these things the things we call intuitive tend to be the things that we learned when we were so young, we don't remember learning them.",
+      "Duration": 30,
+      "Offset": 365
+    },
+    {
+      "Sentence": "Colleges learned you know think about how many hours baby spend holding objects out in front of them and turning them in their hands and that kind of spatial work. So yeah, double click needs to be learned. It once it's learned it can be remembered same thing with context menus right there was a huge controversy at Microsoft about whether to put commands on that right button menu and today you don't even think about it 'cause that's something that people learn the moment they start using computers, but to begin with, we were very, very careful to only put stuff there that was redundant and that it could be found.",
+      "Duration": 31,
+      "Offset": 396
+    },
+    {
+      "Sentence": "Well, it's visibly 'cause basically hidden right and that's interesting because it makes me think about things like iPads where clearly touching things is intuitive and one doesn't need to learn to like take this magical bright window and put it in your hands and touch it, but now we've got iPhone. X is with 2 finger swipe from the upper right corner type totally undiscoverable. Things that we complain about today tomorrow. They might not be a problem, yeah, and I think there is an assumption right that these gestures like Kent was saying might be.",
+      "Duration": 30,
+      "Offset": 428
+    },
+    {
+      "Sentence": "Did it or something but they aren't for there's always going to be said of people where they aren't and so usually gestures needs some sort of visual cue first and then the gesture can be learned and then used as more of an accelerator, but back to the early days of windows like we were coming from dos windows had already kind of again had several versions. But there was a lot to be done in terms of bringing.",
+      "Duration": 30,
+      "Offset": 459
+    },
+    {
+      "Sentence": "User feedback into the development process, so that's kind of where we came into the picture and actually there was, I think a broad acknowledgement at Microsoft to that windows could be a ton better, so there were several kind of characters that we want to introduce into the story here, one of them was one of the program managers of Windows 3.1. Her name is Liz done. There was another person Mark Malamud, who became one of the lead program managers.",
+      "Duration": 31,
+      "Offset": 490
+    },
+    {
+      "Sentence": "OK was kind of the first true interaction designer at Microsoft and he led a new advanced Windows team that they were going to call win X and then who else was on that team can royal Evian right and so he was a developer on windows as well. And so the 3 of them and I think probably a couple other people have gotten together and started to talk about OK? What could the future of windows look like and they started paying us for?",
+      "Duration": 31,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Just say What do you guys know what? Do we know about windows and then that's when we had I think begun and start you know started to collect data on this week are benchmarking effort.",
+      "Duration": 10,
+      "Offset": 554
+    },
+    {
+      "Sentence": "And we found that you know again. Mac had the same problem that people didn't know where to start in fact, on the Mac. What was interesting is that the Apple menu was the place that people would go repeatedly to say start a program or go. Find a document or something like that. Now, the Apple Menu's gotten a lot better over the years, it's still not perfect, but back then. In the 80s. It was really weird collection of things of which were primary tasks. Yeah, I had the font da mover control panel.",
+      "Duration": 33,
+      "Offset": 566
+    },
+    {
+      "Sentence": "Shut down was always there, setting up your printer. Yeah, printers, yeah, stuff like that. It was really a weird collection and we were like wow. There's a bit of an Achilles heel, there and we were like wow. We could definitely do this better and I think Mark Malan. He and some other people that had done. Some studies of different operating systems. Like obviously they looked at the star system from Xerox Parc, which was the predecessor to the Mac that Steve Jobs had also seen that was documented in the book fumbling the future.",
+      "Duration": 33,
+      "Offset": 600
+    },
+    {
+      "Sentence": "So he saw across these different operating systems that there were kind of a persistent thing in the UI where people could return to witch Windows 30 in Windows 3.0, did not have. There was this thing called file manager and program manager. But if you are unlucky unlucky enough to minimize them and there was no really good animation that told you where these things went. They would just kind of collect at the bottom of the screen under these 2 mysterious icons people would.",
+      "Duration": 30,
+      "Offset": 635
+    },
+    {
+      "Sentence": "We just think they just went away.",
+      "Duration": 1,
+      "Offset": 666
+    },
+    {
+      "Sentence": "And we saw that over and over and over again and can't do you want to give us some anecdotes or anything? From that it was we're not cursing on this show, but it was not pleasant and exposing the developers to windows of that in the Usability lab as a super eye opening for them because of course, it's the same thing. We see today right once you know something, you can't. It's really hard to take the viewpoint of somebody who doesn't know it. So that people were just amazed that ordinary users were having these kind of problems but.",
+      "Duration": 29,
+      "Offset": 668
+    },
+    {
+      "Sentence": "The fact that when you minimize things they just disappear and windows. Unlike most of the other GUI's at that point. The desktop wasn't really usable for anything, it was just a blank space and that was a huge problem big opportunity. That was missed and then within program manager which is where you want to start all your programs. The metaphor was multiple document interface as it was called in those days. So is really, really easy to get lossed inside a program manager screens weren't very big in those days right 640. By 480 and here you were trying to manipulate 3 or 4 Windows at once potentially.",
+      "Duration": 34,
+      "Offset": 699
+    },
+    {
+      "Sentence": "Each other and then if you maximized when you couldn't see the rest of it was just it was really, really bad. Yeah, it would be worth having the listeners check out and go in Google for Xerox Star and Xerox Parc's operating system and you'll note that there is a persistent textbox across the top on a menu is not to start menu. It's not persistent menu bar. It's just basically it's almost like the Cortana text box, but you couldn't minimize things you could move them around, but in the early 1980, 10 years before Windows 3.1.",
+      "Duration": 32,
+      "Offset": 734
+    },
+    {
+      "Sentence": "Stuff on the desktop so I think that your point about that. Being a missed opportunity was significant. One other thing I wanted to point out and see what you thought about was that the science itself of Usability was developing kind of in the late mid to late 70s at IBM and it wasn't until the 80s. Really, that people were doing Usability Studies. So you're only 10 years into this burgeoning science aren't you at this point. Yeah, that's a good point really credit to Bill Gates for having the.",
+      "Duration": 30,
+      "Offset": 766
+    },
+    {
+      "Sentence": "That, he knew he needed to do something and he knew that he needed to bring people in to do it. So he turned to different people in the company and one of the people that really got interested was a guy named Tandy Trower and Tandy studied it and said you know what we need to really think about investing in UX and so he got the charter from bill to start a centralized UX group and he hired designers and researchers me starting with a couple of people that he thought could grow into managers and they did a woman named Virginia Howlett, who grew to be the manager of the design group and woman name.",
+      "Duration": 32,
+      "Offset": 798
+    },
+    {
+      "Sentence": "Who built a user research team and that's who we reported to when we when we first started I know crazy to imagine but there was kind of one team for the entire company at that time. How many people at the company while you're all off, doing this when I started Derek when you and I started about 4000 worldwide wasn't it? Yeah, I would say it was like 2504 thousand somewhere in there. I thought I think it was around 2500, there might have been maybe 4000 on the outside 'cause of international but domestically domestically. There is about 2500 people on my number, but not not.",
+      "Duration": 33,
+      "Offset": 830
+    },
+    {
+      "Sentence": "Impossible to know most people for sure. Yeah, we could we could walk down the halls and bill would block by or Steve Ballmer would walk by and say hi and overtime. You could see them enough that they might recognize your face kind of thing, so that definitely was an interesting time to be at the company and the way we got connected was really that paper that I wrote after Windows 95 was done it was for a UX conference ACM sick.",
+      "Duration": 30,
+      "Offset": 864
+    },
+    {
+      "Sentence": "I was interested I was surprised about the reaction people had was like wow. Microsoft was doing this that long ago and I think that's a really interesting point is that we did make an early investment and then of course, there's lots of criticism. You could lob at Microsoft for kind of falling off the path here in there, you know during its growth and maturation as a company. They're doing great. Now they've got some really great. UX people, but it is true that we really did have things going on way back in 1988, 89, where we really trying to be.",
+      "Duration": 30,
+      "Offset": 895
+    },
+    {
+      "Sentence": "A good design and good research principles. How often would people say no do it. This way because I'm the manager, as opposed to the user experience be darned a lot. I mean, it was like. Yep, that's Fair. It was probably like 80% of the time and that's where we tended to work with teams. We were a central resource within Microsoft and so we would kind of be put on loan to different product teams for periods of time.",
+      "Duration": 30,
+      "Offset": 927
+    },
+    {
+      "Sentence": "Certain teams would go wow. This is such a great resource. We want to keep using them and so we would just kind of build more with those teams, who were more receptive. That's right. I mean overtime. Now it's pervasive right. So it worked. But it definitely took decades. That's right our managers. Mary Virginia Tandy were very explicit like work with the teams that want to work with us and we will build from success 'cause. We knew that the key was having the program managers in the developers talk to each other about the great results. They were getting 'cause. There's",
+      "Duration": 32,
+      "Offset": 958
+    },
+    {
+      "Sentence": "Microsoft has this history of hopefully friendly sometimes not friendly competition between teams and so, if team BCS that E Mays had a great result doing something new, they might be more willing to try it.",
+      "Duration": 11,
+      "Offset": 990
+    },
+    {
+      "Sentence": "Well, that's a good point and it also brings up something we want to underscore is that great design is a team effort. It's not that one of you or one of your bosses was just showed up one day and said here are the designs for the start menu. I did it overnight, but was there a moment, though where someone was like let's use the 4 infinite corners as they refer to the 4 corners of the monitor well. We definitely saw that I mean, it was kind of a convergence of 2 things so the win X program management team that we just talked about.",
+      "Duration": 30,
+      "Offset": 1002
+    },
+    {
+      "Sentence": "We got together and they were like you know, we see this certain pattern across other products and then we in the Usability lab. We're seeing how corners were so important to people. You know that they would like if you just gave them no instruction and a blank screen and a mouse they would go to corners. Like's force of gravity kind of thing, so from a human perception point of view, they're very important. And so then that's when we discovered like Oh wow on the Mac. It's got the Apple Menu and the upper left.",
+      "Duration": 32,
+      "Offset": 1033
+    },
+    {
+      "Sentence": "Mark Melamed's team was like OK well, what we should do is make this persistent space in windows kind of as a part of our trademark essentially be the bottom and then we could put other things down, there and so back to this idea of minimizing windows people would minimize those windows and they would think they were gone and we were like well. One of the primary things that you should be able to do with this persistent space down below is be able to switch task so essentially making alt tab visible.",
+      "Duration": 30,
+      "Offset": 1067
+    },
+    {
+      "Sentence": "The perfect example of using the 2 like using invisible queue and then using an accelerator or AK gesture. If you want to call it that so once you know what the visual cue is you can just use the accelerator once you've learned it. Hey friends, this is Scott and I've got a word from a new sponsor and a really cool sponsor. In fact that I use myself. They are seek that'SSEQ and you can check them out at getseek.net that'SGETS.",
+      "Duration": 30,
+      "Offset": 1098
+    },
+    {
+      "Sentence": "Dot net seek is the easiest way for your team to capture and search and visualize structured log events, you probably do logging. Maybe you have a note app or anASP.net core app move beyond text files check out structured logging. It preserves those individual property values as well as the text. It's associated with each event. They get sent across the network to seek which then displays them and makes them searchable. It's really easy to get started. You can probably instrument your application if you're already using logging.",
+      "Duration": 31,
+      "Offset": 1129
+    },
+    {
+      "Sentence": "Just minutes just gotta get seek that'SGETSEQ.net you install the seek server. It's a Windows service and then it listens and handles all the logging whether you're using node JS and the bunion logging library. Or maybe you use Cera, logon.net or justASP.net core's built-in logging seek is there for whatever you want to use whether itbe.net or node or python or Java. It's a really great product and I encourage you to check them out and support them the way that they support us here.",
+      "Duration": 30,
+      "Offset": 1160
+    },
+    {
+      "Sentence": "When Windows 95 started out for the first time there's this thing that they use internally at Microsoft called the boob. The oobe the out of box experience and it would play a little video and tell you that the start menu. Is a thing and it's over here. I remember one of you, said something that there was a problem with that video people would click on the start menu. Picture in the video. Yeah, we definitely did see that that kind of stuff happens when you're teaching something that's brand new people have a hard time often differentiating the thing from.",
+      "Duration": 30,
+      "Offset": 1191
+    },
+    {
+      "Sentence": "But the thing and that's just something that you like what do you do do you did you solve that problem or do you make a giant arrow like start in the center of the screen, and point down to the corner will in fact? What are the mitigations we did do that got a little bit of laughter. I think from people but it was affective was the bouncing animation that would come out from the right side along the taskbar when you first started in pointing out to start menu. So kind of embedding that in the product rather than having a separate pop up window that might confuse people because there's.",
+      "Duration": 30,
+      "Offset": 1222
+    },
+    {
+      "Sentence": "Do the same thing on the screen or things like that considered poor form or is that appropriate UX. Yeah, I mean, you know great. UX sometimes you Get Lucky and it's just totally obvious and there'S 0 trial, learning and we realized that we were making such a huge change from what people had before that. We were gaming for what I would call one trial learning once you understand what it is, you don't ever forget it. And it makes sense. From then on, and that's really what we were aiming for I see so it's not necessarily.",
+      "Duration": 30,
+      "Offset": 1253
+    },
+    {
+      "Sentence": "The idea is bad design because you have to teach them that once right. It's changing you know everything about how you use windows if you were Windows 3 user everything look different on Windows 95 program manager was gone file manager was transformed into windows. Explorer so for those people. We did the testing right so we saw that for computer novices. For example, trying to find a program in the 1st place and start. It took on average like 11 minutes. It was so incredibly painful and then we got the start button up and running.",
+      "Duration": 31,
+      "Offset": 1284
+    },
+    {
+      "Sentence": "Up the animation depending you know, we ran there's variability. 'cause different people have never used a computer before obviously had some challenges with the mouse potentially things like that. But it was down around 2 and a half minutes to get started the very first time, which we thought was completely reasonable.",
+      "Duration": 14,
+      "Offset": 1316
+    },
+    {
+      "Sentence": "I'm curious culturally is the start menu. On the lower right corner in a right to left language society in Arabic countries. You know, I think it is. It's been a long time since I've looked at a right to left. UI Derek do you remember I don't remember I think it is Scott curious of that scratches your itch and makes you wonder like why that corner because I don't think it's now so ubiquitous that in Windows 10. It's it's always on the lower left corner, but I'm curious if that was something you remember coming up.",
+      "Duration": 31,
+      "Offset": 1331
+    },
+    {
+      "Sentence": "Definitely right to left language did come up maybe more so in the in those days. There was the applications group right? That's how Microsoft is organized. I know they were talking about it extensively in the context of things like word, and Excel you know, one thing I wanted to mention about the corners is we had a really brilliant guy in our user research team guy named Marshall Mclintock and when we started seeing this pattern of the corners. He was very quick to educate us all about Fitts Law FITTS, which talks about the speed to acquire a target.",
+      "Duration": 30,
+      "Offset": 1363
+    },
+    {
+      "Sentence": "What to do with acceleration and seeking and all that sort of stuff but that's where this idea of infinite corners comes from as you can slam the mouse as fast as you want into a corner and you can't overshoot it and so that's another reason why the corners are such powerful places to put things is the accuracy. You have to use to get there is very low and so it doesn't take you out of the flow of whatever else you might be trying to get done interesting. I'm actually I will put some of these things in the show notes, but I'm looking at a screenshot of a Windows XP.",
+      "Duration": 31,
+      "Offset": 1395
+    },
+    {
+      "Sentence": "That is Arabic and in fact, the start menu is in the lower right corner. So now I'm going to have to go and do a little research myself and find out that is still the case in Windows 10, yeah, yeah. That's interesting, yeah, and back to some Microsoft history, too, so about the time that we were working on these issues, particularly with the start menu. Microsoft had kind of formalized this win X mythical product and turned it into a thing called Chirot name and yeah, codenamed Cairo.",
+      "Duration": 31,
+      "Offset": 1427
+    },
+    {
+      "Sentence": "Some very lucky few people at Microsoft probably still have the T shirt and Mark Malamud was the head of the essentially the UX team for Cairo and it was going to essentially merge a bunch of different technologies. So I think at the time that they made a code name for it was going to be based on the windows. NT codebase, which was pretty ambitious given that Microsoft's entire like millions of lines of code was all 16 bit legacy code.",
+      "Duration": 30,
+      "Offset": 1459
+    },
+    {
+      "Sentence": "Then they wanted to build this advance UI on top of it and then also it was going to have some sort of like database as the file system kind of thing, which is even kind of being bandied about these days to like from Oracle and other other companies and anyway, so that was the idea behind Cairo, an so Cairo was going along and doing some really amazing things with regard to the user interface. But as things got scheduled out they saw that the timeline was kind of.",
+      "Duration": 30,
+      "Offset": 1490
+    },
+    {
+      "Sentence": "To be able to keep the pipeline flowing for both revenue and just delivering products that people want and so they created another product called the code name Chicago, which was not as far away and that became went known as Windows 95 and that's where Kent got placed on the Windows 95 team as their main user research guy, then woman named Jill Road, Jack and I got placed on the Cairo team.",
+      "Duration": 31,
+      "Offset": 1521
+    },
+    {
+      "Sentence": "Research people on the Cairo effort, so we were working on 2 parallel essentially code bases, but trying to share some common user interface ideas that had been spearheaded by the Cairo team and the win. X team, so one of the things that became controversial was the word start and whether or not. It was OK to put the word start next to the windows logo because guys on the Cairo team or people on the Cairo team thought that the windows logo should stand on its own right as.",
+      "Duration": 33,
+      "Offset": 1553
+    },
+    {
+      "Sentence": "Station of the brand alright. It looks like the company is start right right. But what we were seeing in the user. Research lab in kind of back to what you guys were talking about about these animations. We were trying different animations to point people to the windows button and sometimes they would get it. Sometimes they would and we couldn't rely on it, so, although it was working. It wasn't perfect and so I was a huge advocate. Honestly, I was the one that was kind of.",
+      "Duration": 31,
+      "Offset": 1587
+    },
+    {
+      "Sentence": "I think every other day how they put the word start on the button. Yet 'cause Chicago was going to ship first so can't do you want to talk about that? Yeah, I mean? It was just really a matter of? What's the priority here and we decided the priority was making sure people could get started like immediately immediately right and just really take that out of the equation where people are having to fumble around. We did want that to be their first experience again thinking about the novices in particular 'cause. We were trying to expand the market and were like So what if it says start it's fine.",
+      "Duration": 31,
+      "Offset": 1619
+    },
+    {
+      "Sentence": "And you see what's happened of course overtime. We've been able to remove that because it's now something people worldwide. Just kind of know what the deal is and it doesn't need to be there as sort of a redundant. Q If you will interesting in this. This actually speaks to something that I think is super important that you mentioned to me before we were preparing for this show, which is really good user research is managing your influence in your job as the user researcher isn't to advocate for the company. It's to be the voice of the user.",
+      "Duration": 31,
+      "Offset": 1651
+    },
+    {
+      "Sentence": "Perfect example where you went up against marketing and branding and everyone to say no it says start doesn't say windows in the corner should say start. Yeah, we had really clear empirical research like we had video evidence and timing data that showed like if we gave this. This task list of things to do with a version of windows that didn't have the words start next to the windows logo and then one that didn't the people that had the word start could do it like I don't know.",
+      "Duration": 30,
+      "Offset": 1683
+    },
+    {
+      "Sentence": "Twice as fast 3 times as fast. I forget the numbers were exactly but it literally was like within 30 seconds. People could find the button. Get started and be on their merry way an complete all the tasks that we had given them and this was the same task list that Kent was using on the Mac and other things. When we saw that repeatedly were like there's undeniable. This is working. If this is science at work, so in the same kind of vain. The whole process of getting finding the start button and then getting that first application launched we notice that.",
+      "Duration": 35,
+      "Offset": 1713
+    },
+    {
+      "Sentence": "The hierarchical menu structure work pretty well it was way better. The program manager 'cause you could see all the folders and it didn't take people long to figure out the Aerosmith. They could scoot to the right and see something more, but people would fall off the menus. 'cause again remember people were brand new to the mouse and so I can't remember if we were able to get the code into the very first shipping version of Windows 95 over. It was like a quick follow-up. We did where we were able to relax how USA the hit target. I guess for the menu, so you can write.",
+      "Duration": 30,
+      "Offset": 1749
+    },
+    {
+      "Sentence": "A little bit in the menu wouldn't close on you anymore, yeah, and so just to clarify some history, too, so Kent was working with a program manager on Windows 95 team. AKA the Chicago team. His name was Danny or an and so, if you do searches on the start button and who created Daniil ran's name really comes up as the main hit target. But the interesting thing is there was a lot of us and I want to give really shout out to mark Malan Mode, who.",
+      "Duration": 31,
+      "Offset": 1781
+    },
+    {
+      "Sentence": "Design came originally from him with influence from the user research team and so there were many people so you can't really point to one person there were many people involved and I think that that's part of the hallmark of arriving to great designs is that you can't just rely on sometimes we call a big brain like a Steve Jobs just pluck it out of thin air and then everybody worships it as the best idea ever like if you really want to repeatedly deliver great product.",
+      "Duration": 33,
+      "Offset": 1813
+    },
+    {
+      "Sentence": "Place it has to be a team effort and be it has to be backed by real user data and that takes a team to really pull that off yeah.",
+      "Duration": 10,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "Definitely well, I really appreciate you both chatting with me today. This was fun. Thanks yeah, this is great. Scott thanks for having us. I'm going to put a lot of these things we talked about in the show. Notes including an article that the verge did on the start menu. In 2016 and I want to make sure that folks checkout be curious with dot US and you can connect with Canton, Derek Alright, Thanks so much. Thank you. Scott thanks this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 30,
+      "Offset": 1858
+    }
+  ]
+}

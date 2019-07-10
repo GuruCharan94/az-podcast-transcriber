@@ -1,0 +1,433 @@
+{
+  "id": "cf4c925c-0c4a-4cdc-8a45-29255a729ccf",
+  "Title": "Quantum Computing detangled with Dr. Krysta Svore",
+  "PublishDate": "2018-02-09",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/da36448d.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with doctor. Krista. Sorry. She is the research manager of the quantum architectures and computation group at Microsoft. How are you? I'm great thanks for having me on the show thanks for coming on the show it's overwhelming to even think about something like quantum computing and I appreciate you being available and being so flexible in talking about this. I've actually been watching all of your videos in YouTube zan reading articles and trying to get my head around this because.",
+      "Duration": 34,
+      "Offset": 40
+    },
+    {
+      "Sentence": "The word quantum is one of those words that I think we the lay people attach a lot of mysterious and mystical things too. So I wanted to talk about it in a very concrete way.",
+      "Duration": 12,
+      "Offset": 75
+    },
+    {
+      "Sentence": "Is there a quantum computer yet?",
+      "Duration": 1,
+      "Offset": 89
+    },
+    {
+      "Sentence": "Well, that's that's a great question. Yes, quantum computers exist today, actually and really they've been around in a very small early form for several years now really our goal now is to see a quantum computer scale up right. So we have these preliminary quantum computers, they can't do anything more powerful than your classical computers.",
+      "Duration": 30,
+      "Offset": 91
+    },
+    {
+      "Sentence": "As we scale them up. You know the promises that on certain problems. They're going to far outperform what we can do with your typical processing your conventional computing. The conventional computing. You have today so some problems that you would want to run and solve using conventional computers. Even if that's a a supercomputer. Some problems will actually take billions and billions of years to find a solution and these.",
+      "Duration": 30,
+      "Offset": 123
+    },
+    {
+      "Sentence": "Problems with a quantum computer, a scaled up quantum computer. You'll actually be able to solve them in a matter of hours hours or days so that's a pretty substantial improvement does that mean that it is again all my questions are going to be ignorant. So just assume I'm saying forgive my ignorance in front of everything that I say there is that because the quantum computer is faster or is it because it's taking shortcuts.",
+      "Duration": 27,
+      "Offset": 153
+    },
+    {
+      "Sentence": "Yeah, that yeah, it's a very nuanced change here. So when we save faster. You know the clock rate of the quantum computer actually isn't necessarily faster than conventional computer clock rate you're looking at something that might be.",
+      "Duration": 17,
+      "Offset": 181
+    },
+    {
+      "Sentence": "Maybe 100 Nanoseconds 10, 100 nanoseconds up to a microsecond for o'clock rate. That's not faster than conventional cock rates. But the key is that when you look at the algorithms right. The applications that you're going to run on a quantum computer. The number of operations in those algorithms or in those applications is so, so much fewer so much less than the number of operations. You would need to do on your conventional computer.",
+      "Duration": 27,
+      "Offset": 199
+    },
+    {
+      "Sentence": "That indeed the ultimate runtime to find the solution is much, much faster.",
+      "Duration": 4,
+      "Offset": 227
+    },
+    {
+      "Sentence": "Interesting OK that makes me feel like maybe a quantum computer isn't a generalized thing. It's more like GPU or a coprocessor for math, yeah, exactly we like to we like to think about quantum computers, really as an accelerator right. So imagine Azure right. I work at Microsoft. So we have Microsoft Azure. We have this amazing cloud computing platform and what do we bring to the cloud. We bring to the cloud. Many different types of processing and compute?",
+      "Duration": 30,
+      "Offset": 233
+    },
+    {
+      "Sentence": "Whether that's GPU FPGA CPU right and another one of those options is going to be your quantum chip your quantum computer your quantum accelerator and so indeed you're not going to run every every problem. You want to solve on a quantum computer. You're really going to target it for a special class of problems or for a subroutine within your algorithm. You're going to design algorithms in a hybrid way you might use your GPU for some data processing and then send that data after that.",
+      "Duration": 33,
+      "Offset": 265
+    },
+    {
+      "Sentence": "Quantum chip right so you can really operate in this hybrid you know this hybrid compute environment.",
+      "Duration": 7,
+      "Offset": 299
+    },
+    {
+      "Sentence": "It seems to me like the industry in the the wired magazines are kind of going nuts because it's just so fun to say quantum. You know it's just one of those mystical words and they're making big statements around how this is going to change everything and because so many of us have been in tech for so long. It feels like every 20 minutes. There's something that's going to change everything whether it be AI or ML or is it going to change everything or do you think the hype machine? Maybe is going too far?",
+      "Duration": 32,
+      "Offset": 309
+    },
+    {
+      "Sentence": "I think it's going to change quite a lot ever everything might be a little little extreme, but I think we will see revolutionary level changes coming from being able to actually quantum compute the types of problems. We're looking at solving with a quantum computer are believe world world. Changing we're looking at solving things that really give us more knowledge.",
+      "Duration": 30,
+      "Offset": 342
+    },
+    {
+      "Sentence": "How to better more efficiently produced food or combat things like global warming you know these are no small scale problems we're looking at problems that were you know with the human race needs to face and solve quantum. Computers can help us. Find solutions to this level of problem. Of course will do it in conjunction with our conventional computing and super computers and everything else. It will be a hybrid style solution but.",
+      "Duration": 30,
+      "Offset": 372
+    },
+    {
+      "Sentence": "It will be a key absolute critical piece to finding solutions for these this scale of problem. There was a time when I would buy a 386 SX that didn't have a coprocessor and L would use it or not use it depending on whether it was there and there was a time when I could buy a voodoo graphics card and get better graphics or not will there be a time that I'll be able to go and buy a card and popped into my machine and it will have a quantum.",
+      "Duration": 30,
+      "Offset": 404
+    },
+    {
+      "Sentence": "Cesar or do you think this is something that's going to be relegated to giant refrigerators in the cloud? Yeah, I think more and more. We're moving to more of a cloud based model. A cross compute more generally right because you're going to have your data stored in the cloud. You have apps and services in the cloud and then you need not by the chip or the card to put into your local PC. You can access an amazing set of resources in the cloud so.",
+      "Duration": 30,
+      "Offset": 436
+    },
+    {
+      "Sentence": "Ultimately, we're seeing a move to broader and broader cloud compute and in that environment. Of course will sit these quantum chips that you will have access to.",
+      "Duration": 11,
+      "Offset": 467
+    },
+    {
+      "Sentence": "It is also the case that a quantum computer at least most of the paths to realizing a quantum computer, including the path. We're taking at Microsoft. Indeed, the quantum computer is operating in a very low temperature environment. Millikelvin temperatures and that means we need it? What's called a deletion refrigerator around it. So popping dilution refrigerator into your local PC. It probably isn't going to happen and that's another reason to the next level, yeah, exactly.",
+      "Duration": 31,
+      "Offset": 479
+    },
+    {
+      "Sentence": "But you know it definitely having access to those devices in the cloud that will make it accessible for everyone. Interesting now you have a PhD but you also worked in machine learning and things like that are quantum computers and machine learning intermingled or is that just your career path well. Yeah, it's pretty remarkable. You know, I did a PhD in quantum computing and then when I joined Microsoft. I studied and did research in machine learning for web ranking for several years.",
+      "Duration": 32,
+      "Offset": 511
+    },
+    {
+      "Sentence": "At that time that was over a decade ago, I didn't yet see the crossing between the 2 the 2 oppurtunity's that I had taken with quantum computing in machine learning and now it's such we're really looking at quantum machine learning. So it was pretty pretty. It was great happenstance that I studied both of these subjects and now we're really diving into what will quantum computing bring.",
+      "Duration": 30,
+      "Offset": 545
+    },
+    {
+      "Sentence": "Lend to machine learning and AI uh? What kind you know what does quantum mechanics bring?",
+      "Duration": 6,
+      "Offset": 576
+    },
+    {
+      "Sentence": "To machine learning? How can we take cues from modeling and computing. You know the type of modeling in computing nature does? How do we take those cues and build better models of vision speech language text data? Can you take something that fundamentally has some quantum mechanical elements to it say a quantum model? Can that quantum model better represent data or bring new insights.",
+      "Duration": 30,
+      "Offset": 583
+    },
+    {
+      "Sentence": "Be fascinating that now with a quantum computer, you have you really have a better glimpse into how nature computes and with that? It's fun to think about the promise that that brings for machine learning. So so indeed now quantum machine learning is.",
+      "Duration": 18,
+      "Offset": 615
+    },
+    {
+      "Sentence": "Is an area that were definitely investigating quite a lot and we see improvements coming from quantum models of data? We see speedups ways to better train deep neural Nets. You can get faster training of models. You can get better approximations of data and so forth so you said something really powerful in the middle there where you said how nature itself computes. I've heard a number of people imply are more than just implies say that.",
+      "Duration": 30,
+      "Offset": 634
+    },
+    {
+      "Sentence": "There is a big computer now. This isn't necessarily the Ellon Musk. We're all in the matrix theory. But the idea that in order for nature to simply be. It has to calculate and it seems like quantum computing is trying to take some of that spare CPU for lack of a better word, and do something with it. Yeah, yeah, so yeah, you can think of Nature's a big computer right clock rate is much, much faster than the quantum computer but indeed.",
+      "Duration": 30,
+      "Offset": 665
+    },
+    {
+      "Sentence": "The quantum computer what you're able to do is really simulate physical systems right at the core. What are we doing we're evolving? What's called Schrodinger's equation right? Which tells us? How state evolves? How these quantum mechanical states evolve overtime and by being able to actually model that an compute make it digital even make it able to be error corrected you know, we're basically getting a step closer to being able to.",
+      "Duration": 30,
+      "Offset": 696
+    },
+    {
+      "Sentence": "The computational you know hammer to some of the problems that nature is solving everyday things like we think about quantum chemistry or materials nature. You go outside you see, things are growing right trees are growing leaves. You have grass and flowers and all of these things are growing right and nature is just doing that now. If we can understand better how we produce? How does nature produce fertilizer?",
+      "Duration": 32,
+      "Offset": 726
+    },
+    {
+      "Sentence": "For once, called nitrogen fixation so efficiently. We don't perform nitrogen fixation in the lab near is sufficiently's nature does it with microbes in the ground, but now with a quantum computer we can begin to actually study these microbes understand? How do these organisms actually produce fertilizer so efficiently and then try to model that mimic it engineer it and then come up with a much better procedure.",
+      "Duration": 30,
+      "Offset": 759
+    },
+    {
+      "Sentence": "Own studying uh what we called nitrogen fixation. The process that we used to produce artificial fertilizer with that, we",
+      "Duration": 8,
+      "Offset": 790
+    },
+    {
+      "Sentence": "We actually could end up saving something like 3% of the world's natural gas. Today we use, something like 3% of the world's natural gas just to produce artificial fertilizer in labs. So if we can make that more efficient. That could be huge so that's an example of modeling nature right with a quantum computer.",
+      "Duration": 18,
+      "Offset": 800
+    },
+    {
+      "Sentence": "Right and looking at like the idea list view of the nitrogen cycle and doing the right thing to make it go effectively as opposed to artificially manufacturing, fertilizer and plugging it into that cycle, yeah, see if we can engineer an artificial system. Actually, a catalyst that really mimics what nature does in. That process you mentioned Schroedinger and as most laymen myself included know about Schrodinger's cat concept where you put the cat in the box. The cat is either alive or dead.",
+      "Duration": 31,
+      "Offset": 819
+    },
+    {
+      "Sentence": "Is that there's a quantum superposition where the for a time the cat is both alive and dead? Is that something that just come into popular culture is that that theory or that concept really model a real problem that quantum computing tries to solve right well. Yes, the cat. Of course, is a very macroscopic object, but indeed the idea behind Schrodinger's cat right. The idea that you have this black box right you have this box and.",
+      "Duration": 32,
+      "Offset": 851
+    },
+    {
+      "Sentence": "Open the box right inside the box. The cat is both alive and dead. But when you open the box. The cat is either alive or dead. The whole idea of this is it's really what's happening at the information level in your quantum computer, so inside your conventional computer. Your classical computer as we call it sometimes orbits binary units of information that can be zero.",
+      "Duration": 30,
+      "Offset": 885
+    },
+    {
+      "Sentence": "Then write your conventional computers like it has switches their honor off now, a quantum computer inside has qubits quantum bits and these quantum bits can take on just as you just said. What's called a superposition of states this alive in dead notion. The superposition of states? What it means is a cubit can be both zero and one simultaneously when it's operating inside the quantum computer.",
+      "Duration": 31,
+      "Offset": 916
+    },
+    {
+      "Sentence": "Now the catch is when I look at my cube it. So I measure my cube it from the outside world from our macroscopic world. I want to get information out of my out of my quantum computer. I measured the state, it becomes zero or one.",
+      "Duration": 15,
+      "Offset": 948
+    },
+    {
+      "Sentence": "And it becomes that with a probability associated what's called the amplitude of the state, which goes into more detail than we probably want to get into on the podcast. But the whole idea. Being it really is inside the quantum computer. It's like having all of these cats. All of these schrodinger cats. Operating together and then at the end of the computation. We measure the system and we get outta state.",
+      "Duration": 22,
+      "Offset": 964
+    },
+    {
+      "Sentence": "So if I had 8 cats or 8 bits all in a row are they alternating between all possible states and all potential 8256 or whatever 8 bits is worth of of states and then at the end by observing them. I forced the force its hand forced the universe is hand and then it gives me a value right so.",
+      "Duration": 25,
+      "Offset": 987
+    },
+    {
+      "Sentence": "It.",
+      "Duration": 0,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "If you remove the word alternating.",
+      "Duration": 2,
+      "Offset": 1014
+    },
+    {
+      "Sentence": "So it's not that it's oscillating or kind of doing a path than another path than another path. It's actually doing it in parallel so inside the quantum computer. You have 8. Let's say 8 cubits. Those 8 cubits as you just said. You have 2 to the 8 actual states, then 256 states and your quantum computers simultaneously operating across all of those, 256 states.",
+      "Duration": 27,
+      "Offset": 1018
+    },
+    {
+      "Sentence": "So all of the answers are.",
+      "Duration": 2,
+      "Offset": 1046
+    },
+    {
+      "Sentence": "Existing at the same time until we forced in again. I'm apologize for using these terms that I'm I'm sure are incorrect, but until we force its hand or we observe it and that is the observation that causes the universe to make the decision exactly so as soon as we measure to observe that we measure the system. And when we measure. It were saying. Give me back out a class one of these states one of the 256 states.",
+      "Duration": 27,
+      "Offset": 1050
+    },
+    {
+      "Sentence": "And it will come back to me in a bit string right no, I get that bit string back. But I get only one of the 256 states back when I measure the system so? How do you know it's the right one if you can all my knowledge of this is entirely entirely based on watching Black Mirror. So maybe I'm not prepared to interview you but it does not mean that there are I have no way of knowing if the answer. I got back is the right one because there could be 255 other doctors for is that are out there.",
+      "Duration": 30,
+      "Offset": 1078
+    },
+    {
+      "Sentence": "Their answer, which is different.",
+      "Duration": 1,
+      "Offset": 1109
+    },
+    {
+      "Sentence": "Right so at the surface, it seems that way right, but it's pretty remarkable is that you can design this algorithm. It's like you know when you create a recipe. The bake a cake right. You could say I'm going through all these ingredients together and I don't know if it's going to come out chocolate or vanilla or but we don't really do that right. We designed the recipes so that we make a chocolate cake right the output and ultimately needs to be the chocolate cake and not the vanilla cake here same thing we're going to design the algorithm just like we design.",
+      "Duration": 32,
+      "Offset": 1111
+    },
+    {
+      "Sentence": "Algorithms just like we design algorithms for conventional computers. We have an idea of exactly what output. We want and so we set up the sequence of operations to optimize for getting that out, put out.",
+      "Duration": 12,
+      "Offset": 1144
+    },
+    {
+      "Sentence": "And we can do that in the quantum computer as well, and what this comes to is an idea of what's called interference.",
+      "Duration": 8,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "Quantum interference what we're really doing is if you think of these states right in the example. You gave 256 states. Right imagine them. Each is a wave in a tidepool and when waves collide.",
+      "Duration": 14,
+      "Offset": 1166
+    },
+    {
+      "Sentence": "They grow right the amplitude increases. Some waves will grow and some waves actually will cancel out and disappear right and so just imagine you know, touching your finger to a tidepool and then touching your finger again and watching these waves collide with some growing some collapsing.",
+      "Duration": 18,
+      "Offset": 1181
+    },
+    {
+      "Sentence": "That's what we actually program is to get some of these waves to increase in amplitude in the height of the wave and some of them to disappear. Now, if you imagine each of these waves is one of these states. That means I can get some of them to disappear out of the computation and some of them to really amplify and as I amplify them. When I measure the system. The most amplified wave has the highest probability of being the state that I measure at the end, so if I can get my solution.",
+      "Duration": 31,
+      "Offset": 1201
+    },
+    {
+      "Sentence": "And that high amplitude wave. I'm I'm pretty. I'm pretty Golden in terms of getting the solution out that I need and every quantum algorithm, then is a probabilistic algorithm so if I didn't get the answer. I wanted or you know, I want to check. I'm going to run the algorithm just a couple of times because, with high probability. I'm going to get the seat out that I want because I've sculpted the solution. The algorithm in a way that this high amplitude wave has the has the right answer in it.",
+      "Duration": 28,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "That's interesting that makes me think about in the context of the many worlds theory that? How do you know that the universe that we're in is the real one because it's the most likely one because we're in it. Yeah, if we, we weren't it wouldn't be the most likely one. Yeah, there, you go now when someone says a cubit. I've heard people say that qubits are 2 states like you said where you can be in a superposition, but then I've also heard other explanations where one bit.",
+      "Duration": 30,
+      "Offset": 1263
+    },
+    {
+      "Sentence": "In multiple dimensions for lack of better words like 24 or more different up down left right and all these kind of things. Can you explain that is that a confusion or an oversimplification? I heard Justin Trudeau explain that once and it didn't quite sound like he did a pretty good job when he was interviewed on quantum quantum computing. I thought, yeah, so indeed so let's go back to this notion of a quantum bit bit is.",
+      "Duration": 30,
+      "Offset": 1293
+    },
+    {
+      "Sentence": "Um base you know 2 level system, a binary system so when we say cubit. We mean it's uh uh a 2 level system. The cube it has 2 possible states, 00 or one, but again those states can be in super position. So it's actually in the state zero and one but it can take any combination.",
+      "Duration": 30,
+      "Offset": 1324
+    },
+    {
+      "Sentence": "Combination of zero and one So what this means visually is think about a sphere like a ball and imagine you know the surface of this ball.",
+      "Duration": 12,
+      "Offset": 1355
+    },
+    {
+      "Sentence": "What it means is if I take this ball say at the North Pole is the state zero at the South pole is the state. One now my CU can take any point on the surface of the sphere. Any point on the surface of the ball that qubit state so it could be just in the zero state. It could be just in the one state or it can be any combination of zero and one meaning it could take any point on this sphere as its state so it's still a 2 level system.",
+      "Duration": 30,
+      "Offset": 1369
+    },
+    {
+      "Sentence": "If you want you know higher level systems, then you could go to a you know, we talk about Turneri. Turneri would be a 3 level system so acute tritt AD level system. You know where D is arbitrary is a queued it. But you know, most the time. We think about just cubits and mapping everything to Binary.",
+      "Duration": 20,
+      "Offset": 1400
+    },
+    {
+      "Sentence": "So simplistically if I looked at a sphere. My intuition might indicate that there would be more degrees of freedom than just those that between zero and one I might think about.",
+      "Duration": 9,
+      "Offset": 1422
+    },
+    {
+      "Sentence": "You know XY and Z but that's not necessarily the case is it well. No. Indeed, you can think about it in more degrees of freedom. In fact, what is the cube it? It's it's it's hard to describe some of these mathematical principles on the podcast but the idea being that let's take some value Alpha and some value beta. My cube it can take the state Alpha times the state zero plus beta times the state one.",
+      "Duration": 30,
+      "Offset": 1432
+    },
+    {
+      "Sentence": "There are complex numbers so we are operating we didn't go into that on this sphere. But they were actually operating in a complex valued space.",
+      "Duration": 10,
+      "Offset": 1463
+    },
+    {
+      "Sentence": "OK and that is difficult not only to explain in 3 dimensions, drawing a picture. It's even more difficult when you consider the fact that we're on a podcast linearly through time itself, so I appreciate your patience.",
+      "Duration": 11,
+      "Offset": 1474
+    },
+    {
+      "Sentence": "Yeah, so these are the elements that we use, but I would not necessarily do all of this work in C sharp. I understand that there is a quantum developers kit that people can download and I can program. You know the problems that I want to with I can think about them outside and see put the quantum appropriate things into the dev kit and I can simulate that even on my laptop. If I wanted too. Yeah, exactly we're really thrilled that we just released the Microsoft Quantum Development Kit and.",
+      "Duration": 30,
+      "Offset": 1486
+    },
+    {
+      "Sentence": "Part of this kit, we've released a brand new quantum focus programming language called Q Sharp and the whole idea. Here is that we need a new language because these principles that we've just been walking through together superposition interference right. This notion of qubits that take on these different states you know, we need a language that allows you to express these things easily an at a high enough level that you can bring together different aspects of quantum computing.",
+      "Duration": 30,
+      "Offset": 1517
+    },
+    {
+      "Sentence": "Together to make a solution for you know for an application that you're interested in doing so, so with the Microsoft Quantum development kit. We've put out this high level very accessible language. Q Sharp which builds on many of the ideas behind languages like C Sharp and F Sharp.",
+      "Duration": 21,
+      "Offset": 1548
+    },
+    {
+      "Sentence": "So it should look very familiar. It's embedded in visual studio, so you get syntax, highlighting debugging you know it feels very familiar to the developer and then with that inside the quantum development kit. We've also released a whole set of samples to torreilles libraries right so you have all these libraries at your fingertips that you can pull together and call on to actually build a quantum application for a quantum solution for an application you're interested in doing.",
+      "Duration": 34,
+      "Offset": 1569
+    },
+    {
+      "Sentence": "Real so if you want to learn. Gosh, how does quantum teleportation work we have a whole sample and it's written in Q Sharp you know the language is well documented. So you can walk through and begin to develop some intuition around quantum computing and the hope is that by making quantum computing accessible to a broad audience were going to see just amazing solutions. Come out of the community in terms of what we do with a quantum computer and what will the key.",
+      "Duration": 31,
+      "Offset": 1604
+    },
+    {
+      "Sentence": "For applications be one of the things that I was a little overwhelmed to here was that if I was going to do local work 30 cubits takes about 16 gigs of ram 31 cubits doubles. The memory right right so what's great. I should also mention in the quantum development. You mentioned this earlier is that it not only comes with the language in the samples but also a target simulator. This simulator allows you to simulate what would happen.",
+      "Duration": 33,
+      "Offset": 1636
+    },
+    {
+      "Sentence": "As you just said 30 cubits in roughly 16 gigs of ram now doubling again going back to the state space one more cube it requires doubling the amount of memory.",
+      "Duration": 13,
+      "Offset": 1669
+    },
+    {
+      "Sentence": "And so.",
+      "Duration": 0,
+      "Offset": 1683
+    },
+    {
+      "Sentence": "Locally, you're looking at you know around 30 cubits for Simulation, which again that's released as part of the kit. But as you go to save 4041, 42 cubits. You know you're looking at running on we've released a state of the art simulator in Azure to allow you to run on that scale because after all, when you get to just 232 150. Cubits you're looking at Skilling.",
+      "Duration": 30,
+      "Offset": 1685
+    },
+    {
+      "Sentence": "Memory than there are particles in the visible universe. So when you think about that 202 150. Cube it sounds so small but the amount of information in 250. Cubits is more information that we could store in particles in the visible universe.",
+      "Duration": 17,
+      "Offset": 1716
+    },
+    {
+      "Sentence": "But you're talking about simulating a quantum computer on a surface book. When I then run my code and move it from local into Azure am, I simply.",
+      "Duration": 11,
+      "Offset": 1734
+    },
+    {
+      "Sentence": "Simulating it in Azure using their classical or standard.",
+      "Duration": 3,
+      "Offset": 1746
+    },
+    {
+      "Sentence": "Computers or is there in fact, a quantum computer in Azure or is it really that we're setting ourselves up for some theoretical future where there is a quantum computer in Azure right. It's really that we're setting ourselves up to take the code that you're writing today. You can simulate it today in Azure. So you're simulating it within a classical computing conventional computing environment using the Azure compute, then that same code when we have a scaled up quantum computer that seem sitting in Azure.",
+      "Duration": 30,
+      "Offset": 1751
+    },
+    {
+      "Sentence": "We will then be able to be deployed on that compute in Azure on the quantum compute platform. I see so this is to over simplify things 'cause That's what I'm so good at. It's like before Gpus I might want to go and render the movie toy story. I could write all the code for some theoretical GPU. I simulate it locally and it takes an hour. For every frame. Fast forward 20 years and now we could render toy story in real time on an NVIDIA card that we have in our PC.",
+      "Duration": 30,
+      "Offset": 1782
+    },
+    {
+      "Sentence": "Exactly right, I would say we're not on the 20 year timeframe, though you know the idea would be that this would happen in more like less than 5 year timeframe to really scale to a larger larger quantum application and as we talked about in the beginning in the podcast. You know already today quantum hardware exists and you're looking at small numbers of qubits. But the number of qubits. We have today in the community is less than what you can simulate so.",
+      "Duration": 29,
+      "Offset": 1813
+    },
+    {
+      "Sentence": "By being able to run on a simulator, saying Azure. That's giving you access to the equivalent of you know like 40 cubits.",
+      "Duration": 9,
+      "Offset": 1844
+    },
+    {
+      "Sentence": "So let me ask one final question that I think will be good way to end the show for people who were listening who might be going to work and maybe they're doing text boxes over data and not particularly amazing stuff from a quantum computing perspective. But they may have a problem that their business. Whatever business they happen to be in might need to answer? How does one know and determine that they have a question is best answered by quantum focused language? Yeah.",
+      "Duration": 30,
+      "Offset": 1854
+    },
+    {
+      "Sentence": "Question and it's one that we continue to look into every day. I think that you know, some of the best problems to solve on a quantum computer are those where you're simulating a physical system. A quantum mechanical system so they're working on things thinking about things in materials material science. I want to think about an exotic property of a material. I want to think about catalysis. How do I make a chemical reaction more efficient and if that?",
+      "Duration": 31,
+      "Offset": 1885
+    },
+    {
+      "Sentence": "And that reaction involves a heavy metal then a quantum computers are great candidate say I want to do machine learning and I'm doing machine learning. But I have a way to maybe process data down when we're looking at near term quantum computers. If we have too much data. That's going to be expensive to do on a quantum computer, so cases where you maybe have streaming data or data that you could process down and then send to the quantum computer for example.",
+      "Duration": 33,
+      "Offset": 1918
+    },
+    {
+      "Sentence": "Routine to the quantum computer to speed up your machine learning algorithm quantum computers are good. I know great at modeling. The physical world. In many cases they're great at doing finding quadratic square root speedups. When searching for solutions. So those types of problems are things to think about.",
+      "Duration": 24,
+      "Offset": 1951
+    },
+    {
+      "Sentence": "Well, thank you so much for taking the time to put up with my questions an for educating all of us here on the show. We do appreciate you Oh my pleasure. Thank you for having me on and I encouraged listeners to go to microsoft.com. Ford slash quantum and try out the Microsoft Quantum Development Kit Fantastic. I am downloading. It now and integrates great with Visual Studio 2017 excellent.",
+      "Duration": 22,
+      "Offset": 1977
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 8,
+      "Offset": 2000
+    }
+  ]
+}

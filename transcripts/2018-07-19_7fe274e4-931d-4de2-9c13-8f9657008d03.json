@@ -1,0 +1,333 @@
+{
+  "id": "7fe274e4-931d-4de2-9c13-8f9657008d03",
+  "Title": "Compassionate Coding with April Wensel",
+  "PublishDate": "2018-07-19",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/6851f394.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by data dog. It's a cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "It's to identify anomalies and collaborate with your team to troubleshoot and fix issues fast. I'd like you to try it yourself by starting a free 14 day trial today.",
+      "Duration": 9,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Listeners of this podcast will also get a free data dog T-shirt get started at bitLY.com slash DATA dog shirt.",
+      "Duration": 8,
+      "Offset": 42
+    },
+    {
+      "Sentence": "That's bitLY.com slash DATA dog shirt.",
+      "Duration": 6,
+      "Offset": 51
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of cancel minutes today. I'm talking with April Wensel. He's the founder of compassionate coating and you can check out April wenzelWENSEL.com. Thanks for chatting with me today hello. Hi happy to be here. I'm looking at your website. I've seen you online and you give lots of talks about this concept of compassionate coding. And when I was talking to you. Earlier, I said, well is this like Softs kills or squishy sales skills.",
+      "Duration": 30,
+      "Offset": 67
+    },
+    {
+      "Sentence": "Me and I appreciated the check why is that wrong word to use yeah, so when we use terms like soft or squishy that doesn't sound like something that people would care about right. I mean, especially because the connotations with soft our weakness. We say things like he's gone soft and it's also associated I think to a certain extent with women and to be honest. Not that there's anything wrong with being associated with women, but soft quotes soft skills are important for everyone to develop not just women and so.",
+      "Duration": 31,
+      "Offset": 98
+    },
+    {
+      "Sentence": "That this Association is is harmful because it keeps people from giving these skills, the importance that they really should have and on top of that I mean? What we're talking about here are complex kind of psychological phenomenon that really aren't really soft, even in that area. They're very complicated. Their science behind it, so in that sense, too. There are definitely hard in terms of difficulty and complexity, as well. Yeah, you've also talked alot online about the idea of.",
+      "Duration": 32,
+      "Offset": 130
+    },
+    {
+      "Sentence": "Intelligence and I've always heard you know IQ and EQ and it seems like we really promote this idea that people should be smart and IQ is so important. But I'd never taken a class on EQ or learning about emotional intelligence. Yeah, which is unfortunate. I feel like that's the case for most people we are starting to see some social emotional learning happening in school curriculum, but I think right now only out in California in places like that. Not kind of in the mainstream but but empathy that's 1 aspect of emotional intelligence that it's definitely a skill that can be.",
+      "Duration": 35,
+      "Offset": 163
+    },
+    {
+      "Sentence": "Just something you're either born with or not born with you know that's very interesting. Why is it that we seem to think that people are born smart or not smart or they're born with an emotional core emotional intelligence. It seems like everything can be learned and we should be promoting that yeah, definitely. I'm a big fan of Carol Dweck's work on growth mindset, which is this idea. Just like you said that whatever skillet is that we want to develop it doesn't matter where we're starting from we can get better. We may not there may be an eventual limit that we hit or.",
+      "Duration": 32,
+      "Offset": 199
+    },
+    {
+      "Sentence": "More than other people, but all of us are capable of growing whatever skills we decide to yeah. It's interesting that you. Bring up the growth growth mindset because I'm thinking about my 2 kids. Well, I just made an assertion that they're not learning about emotional intelligence. In fact, the growth mindset has been a part of the curriculum at their school so that's cool that you brought up Carol Quick Yeah. Yeah, big fan of hers. Then in her work and I think there's this idea in Tech, especially that you're either born to be a coder.",
+      "Duration": 30,
+      "Offset": 232
+    },
+    {
+      "Sentence": "Or not you know, in that either. I think Jeff Atwood had in this blog post, where you said that the computers chose him or something like that, and it's like you know for some people that's the case. That's their origin story. You know that's how they feel that's how they frame it, but that's not the case for everyone. Some people were interested in what they could build interested in solving a specific problem and so they learn to code or we have a lot of people coming to coding now later in life. You know, taking boot camps or being self taught or whatever and those people. I believe that we should welcome them just as much as we would welcome anybody who.",
+      "Duration": 32,
+      "Offset": 263
+    },
+    {
+      "Sentence": "Were born to be a coder you know? That's a really? I really like the way you phrase that this idea of the programmers origins story really resonates with me because you know, there are tropes in the superhero origin story as somebody gets bit by a radioactive spider or they fall into a VAT of whatever and there's the origin story of I was given an Apple II at age 12. Why is that any more interesting or more valuable than I was a teacher for 20 years and I decided I want to get into Tech and I quit my job at 45 decided to become a programmer.",
+      "Duration": 30,
+      "Offset": 296
+    },
+    {
+      "Sentence": "Cool origin story, too, isn't it? Yeah, it really is. You did an interview with building programmers. An I like that idea that programmers are built. They're not they're not they're not born. Yeah, I think that's really. That's really true. So when we talk about these terms and now I'm not going to use terms like soft and squishy? What should I say 'cause. I want to make a compassionate environment. I want everyone to feel that they are valued but they say in programming naming stuff is hard.",
+      "Duration": 30,
+      "Offset": 327
+    },
+    {
+      "Sentence": "We are looking to name stuff, yeah, the the interesting thing about that is one of the reasons naming is hard is that naming actually requires a great deal of empathy because naming and that includes naming variables because the idea is you're not naming them for the machine. The machine doesn't care what you call the variables and there's no right or wrong. There's no perfect name in terms of actual correctness naming is really about who it's for and who is going to help so in the case of variables, you're really naming based on who's going to be reading the code, including yourself, your future self and also any.",
+      "Duration": 32,
+      "Offset": 358
+    },
+    {
+      "Sentence": "And so in this case for skills. I mean, one thing is just to refer to them more specifically like are you talking about communication skills? Are you talking about self-awareness introspection. Just be more specific instead of kind of lumping them together, another option is you know, we talked about emotional intelligence, emotional intelligence skills would also be good. Some people use something like professional skills, but again that's kind of vague and it's hard for people to know exactly what that means. I gave a talk and I talked about the talk that I do frequently. I refer to them as catalytic skills.",
+      "Duration": 32,
+      "Offset": 392
+    },
+    {
+      "Sentence": "Borrowed from Daniel Goleman, who is pretty big in the emotional intelligence world and this idea of catalytic skills is that they help you catalyze your other skills so for example, they may help you learn new technical skills. They may help you decide which technical skills to use which coding coding framework to use or whatnot that requires certain amount of problem solving ability. That's not actually directly a coding skill. It's more sort of a meta skill. So to speak so there's just a whole range of things you could call them.",
+      "Duration": 31,
+      "Offset": 424
+    },
+    {
+      "Sentence": "Bills and I think it depends on your audience really yeah. I think my initial reaction is that it might be hard to sell a more complicated word what the great thing about catalytic or catalyst is it. It's more precise. It says exactly like this is a thing that precipitates a thing it. It causes it a better thing to happen is evokes the sense of change in chemical reaction in the body. Yeah, that's what I like about it to you. It's more, it's more precise as you said that's interesting I like that.",
+      "Duration": 30,
+      "Offset": 457
+    },
+    {
+      "Sentence": "Is we try to promote these kind of things? How do we push back on people that are like Oh? Yeah, there's just a word? It's not it's not that big of a deal who cares yeah, yeah now. I hear that a lot and it's the power of languages is surprising. I mean, it does sound like? What does it matter what we call it but the thing is that?",
+      "Duration": 17,
+      "Offset": 488
+    },
+    {
+      "Sentence": "We have so many associations in our head with different words. You know like and so that can have a huge impact on how we actually think about things I mean, I think that that's just that's just undeniable. I mean, it 'cause if you think about the word soft, I mean? What comes to mind like I think of like pillows. I think of Sears had these commercials in the 90s. The softer side of Sears, like I think of all these things that just you know are nothing. That sounds important or something that I would need in the workplace, whereas you know here catalytic and I think you know.",
+      "Duration": 31,
+      "Offset": 506
+    },
+    {
+      "Sentence": "Chemical reactions that you're talking about. I think of making things more efficient faster. All that stuff, and so it's you know what I mean, so I think if we look at the associations. We have in our head. That's how we can see the power of language there is a really good point. And if someone were trying to do a soft skills workshop and sell it to like GE or some giant Corporation that might be challenging. But if you put together a catalytic skills workshop. You know there's a certain personality type in a giant company. They might be like, Yeah. That's exactly what we need here, yeah, exactly I'm doing a workshop at node summit coming up.",
+      "Duration": 32,
+      "Offset": 538
+    },
+    {
+      "Sentence": "Or an I called it working with humans and that's really 'cause that's what it's about, is like how to how to work well with humans as a human and so that's kind of how I described it, there that is funny. Though we are working with computers that are supposed to be deterministic and they follow instructions really well and then of course, the exact opposite of that or people, which are don't follow instructions, particularly well and are hard to understand sometimes, but it is the coming together of those, 2 things that were software happens right exactly. Yeah, I think for too long, we've sort of been neglecting.",
+      "Duration": 32,
+      "Offset": 571
+    },
+    {
+      "Sentence": "Side of things and I think you see this in the fact that you know, most software projects are not failing because of technical reasons. Really, they're failing for human reasons. It's you know, people not communicating requirements are not prioritizing them well or not designing for the customer with the customers in mind, and things like that, so I think this gap. This empathy gap and just emotional intelligence gap in general. That's been in tech for forever has really been you can see the evidence of it in with the technology that.",
+      "Duration": 30,
+      "Offset": 604
+    },
+    {
+      "Sentence": "So I think it's not just you know, oh let's just you know be nice to each other or whatever it's more like no let's be more efficient and build better products by building empathy for each other and the people were building for that's a really like actionable thing that you just said, like you're not out, promoting come on everyone. Let's be nice. That's all get along like Hey, listen, if we wanted to be a successful project. You working effectively with human next to you, or the cube over from you is as important as your code compiled. Yeah, absolutely and you said before that when people when you tell people that your company is compassionate coding they thing.",
+      "Duration": 35,
+      "Offset": 635
+    },
+    {
+      "Sentence": "Oxymoron you can have one with the other, yeah, they definitely do that. I've gotten that feedback and I've said that what I would like is for people that think it's redundant. Like I would like it to be the norm that you know, people in software are known to be empathetic that they have this versatel ability to work both on machines and with human beings. I think that's where the real potential lies that would be amazing. If we could make it show that tech felt.",
+      "Duration": 27,
+      "Offset": 671
+    },
+    {
+      "Sentence": "People new like Oh, yeah, computer person so great like this per there. There are great person. There, a kind person. Their computer person right wouldn't that be fantastic. Let me create but right now. I just feel like I don't want to fix my dad's computer. I think we're all just going to burned out and we are having enough trouble being compassionate with ourselves and our family, it difficult, sometimes to be patient and kind at work well. That's a really good .2, which is that the self. Compassion is just as important. I mean, everything really starts with self compassion, I mean?",
+      "Duration": 30,
+      "Offset": 699
+    },
+    {
+      "Sentence": "It could be that doing the work that I'm doing if I didn't take enough time to take care of myself take care of my own health do the things that make me happy outside of work and I think that's actually it's hard to be empathetic to other people. It's hard to be compassionate with other people. If you're not taking care of yourself in these ways, so that's actually really important point. Yeah, we hear a lot online about self care and I really like communities. Where were telling each other and helping each other say like Hey, listen, take they take the time. If you need a break and mental health afternoon. If it's just not working for you today if you can.",
+      "Duration": 33,
+      "Offset": 730
+    },
+    {
+      "Sentence": "Yourself because you're no good to us stressed out definitely yeah. I think that's really important, and I would also say that you know this idea of of you know with the programmers being kind people. It's not so far, fetched because if you think about it. We're problem solvers right so we look for pain points and we solve them and that's really what compassion is about, is about alleviating suffering right so reducing these pain points to a certain extent. Technologists are kind of like prime to do this. I mean, although you're right sometimes were burnt out.",
+      "Duration": 30,
+      "Offset": 764
+    },
+    {
+      "Sentence": "So I really do think that you know when you see, things to like open source like and dumb people who kindly contribute on stackoverflow that's a certain subset. Hopefully, a large subset, but it is a subset. Those people are generous right? That's generosity. They're not getting paid for this and you know, some of them and at least it open source and so you know, I think that's important, too, is that we have these seeds of compassion already in Tech and that's why I really have faith that we can help those grow and blossom into beautiful complexion flowers.",
+      "Duration": 31,
+      "Offset": 796
+    },
+    {
+      "Sentence": "I like the idea of direct of directly, tying compassion and empathy and working well as a team to code quality that we're not just saying your customers your employees your users will feel better your employees might not quit or whatever you're literally, saying the code will be higher quality and the shipping product will be better if everyone is is focused on empathy and compassion.",
+      "Duration": 25,
+      "Offset": 828
+    },
+    {
+      "Sentence": "Yeah, absolutely because really for me, I look at compassion is an optimization problem where you're trying to minimize suffering and so when you're talking about you know should we should we test the code like should we you know how we should we build this being compassionate towards yourself and the people, you're working with and the customer right all of these if you take those into account. I mean that's how you're going to get the best code right. This might be a bit of a stretch of an analogy, but I remember when I took my very first driving course. When I was 16 and they did this thing where they were like 2 people are going to drive in this simulator.",
+      "Duration": 31,
+      "Offset": 854
+    },
+    {
+      "Sentence": "It is aggressively and as fast as possible, and see if they get their first and the other one will simply follow the rules and stop and be a good driver and you drive for like 15:20 minutes and the person who drives aggressively and cuts people off ends up getting there. About 90 seconds early 90 seconds out of 20 minutes. Now certainly if they were trying to get to the hospital. Maybe that's necessary, but they were trying to make the point that this person burned a half dozen bridges was extraordinarily unsafe p***** *** half the road.",
+      "Duration": 31,
+      "Offset": 886
+    },
+    {
+      "Sentence": "There with 15% more speed, so applying that to code reviews to an experience at work. Minimal effort of being kind being pleasant would cost you little, if nothing if not make things better.",
+      "Duration": 16,
+      "Offset": 918
+    },
+    {
+      "Sentence": "Yeah, actually I actually love that analogy because really while driving is one of the best times to practice empathy and compassion is you know when you're stuck behind somebody or somebody cut you off or whatever it is, instead of just having a knee jerk really angry reaction. But just taking a minute like just taking a breath and thinking. You know, I don't know what that person is going through what might be going on in their life. That's making them act this way. And that's like a great thing that all of us who drive or or commuting anyway, really have the option to do is just.",
+      "Duration": 30,
+      "Offset": 936
+    },
+    {
+      "Sentence": "To think about in practice, you know that that concern for other people how you folks. I want to take a moment to thank our sponsors and remind you that when you support them You're supporting Hansel minutes because they make this show possible.",
+      "Duration": 13,
+      "Offset": 967
+    },
+    {
+      "Sentence": "Innovative developers help improve the lives of millions of small businesses in accounts that use QuickBooks Worldwide. Your app could make the difference that helps them work smarter and put more money in their pocket enter into it developer from tech tools to growing your customer base to helping you get funding into it developer helps you rap go from concept to company find out more at into it. Dot me slash code that'SINTU it.",
+      "Duration": 30,
+      "Offset": 981
+    },
+    {
+      "Sentence": "Slash code it makes me wonder. When did things get so so angry and so selfish? When did that idea of compassion or empathy become synonymous with some kind of weakness? Yeah, there's an interesting history there and I don't know that there's a great book called on kindness and it's about kind of charts. The history overtime because there was a time, especially because there's ties into religion. In some ways. I mean, not for me personally, but there's definitely a history there when religion was bigger in society like certain types of kindness.",
+      "Duration": 32,
+      "Offset": 1012
+    },
+    {
+      "Sentence": "Killer and then you know this industrialization happened to and then it's like you know it is all about efficiency. But the thing is that kindness really is compatible with efficiency, which is how I think this knew kind of resurgence of kindness is going to happen is that it's when you speak with emotional intelligence when you're speaking with somebody. They are more likely to receive the feedback or suggestions. You're giving them because they're not. It's not going to trigger their threat response. So if you come at somebody and you're like yelling at them or just even just being quote direct.",
+      "Duration": 30,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "Overly, direct, there, it's going to trigger their threat response. There fighter flight and so they're not really going to listen to your message right right in Azure Manager of people a manager of developers if I can express an issue of concern. Whatever weather be a code review or a managerial issue with someone in a way that doesn't trigger their threat response for that. They know it is coming from a place of helpfulness. Even if I make a mistake or say something incorrectly they won't necessarily.",
+      "Duration": 30,
+      "Offset": 1077
+    },
+    {
+      "Sentence": "On me and assume that I had malice aforethought. Yeah, exactly now. Jonathan sulk is someone that you have tweeted before and he's got a book out now called a new reality. Human evolution for a sustainable future and you pulled out a quota pull quote out of his book where you said that salt believes that we, as a society, are kind of transitioning from a time of competition independence with win lose strategies to a focus on cooperation and interdependence. Sometimes it doesn't feel like that do you believe that?",
+      "Duration": 30,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "And like part of what the book is about, is the fact that we are in this transition. And that's why there's so much conflict. There's you know whenever you're going through transition there's conflict.",
+      "Duration": 10,
+      "Offset": 1139
+    },
+    {
+      "Sentence": "In the new AG well people talk about a healing crisis, where when you're healing like sometimes things get worse before they get better. And so I think sometimes it seems like things are getting worse now and everybody you know, but I think really what's happening? Is we're talking about these things and we're trying to make to make changes and to make progress and it's inevitable that in that time. There's going to be resistance. There is going to be the people who want to protect the status quo like I encountered at all the time and trying to push for compassion and Tech, it's like the people who have been getting by without being compassionate in tech like really don't want to be compassionate because you know it.",
+      "Duration": 30,
+      "Offset": 1150
+    },
+    {
+      "Sentence": "Effort and they're doing fine, they have you know cushy jobs that they you know they're allowed to be a jerk to their you know if the people on their team because they're the programmer so there's a lot of resistance there. But at the same time, the fact that we're even talking about this right. I mean that's progress and so I think we see that on a global scale as well that you know, we're talking about when you look at too. Like the resources just everything that's being depleted like we have to change how we live because what we're doing is just not sustainable.",
+      "Duration": 30,
+      "Offset": 1182
+    },
+    {
+      "Sentence": "All kind of hoping for the Star Trek, the next generation world that promised you know food for all and we would all just kind of everyone in Star Trek known as I don't really think about how John Luke Picard gets AW 2. He's not really getting a paycheck. He just like this food at the wall and he does art when he has spare time really all. They get to worry about is their time and their intellectual pursuits that would be the ideal.",
+      "Duration": 24,
+      "Offset": 1213
+    },
+    {
+      "Sentence": "Yeah, for sure, and I mean, I think we can get there, you know, I mean, I think some people think oh. Let's you know unrealistic. Utopia whatever but I don't think so. 'cause I think you know, we can all make small changes everyday to work towards this you know brighter vision of the future. Just you know where more collaborative and more cooperative and just really taking care of each other. More and even if you do it. Even if like I said even if just when you're in traffic if you think about it. I mean, you're still helping raise the global kindness level. So I think whatever small steps we can take or definitely worthwhile. I want to take a little bit more.",
+      "Duration": 31,
+      "Offset": 1238
+    },
+    {
+      "Sentence": "To the idea that you have is that minimizing suffering because compassionate is a word that has certain connotations and in trying different words out in my mouth and in my brain to try to get understanding of your perspective. The idea of minimizing suffering is suffering is like a really bad word like that's bad. We definitely don't want more of that. You're saying compassion is the key to minimizing suffering for yourself for your users for your team for the devs for everybody.",
+      "Duration": 28,
+      "Offset": 1269
+    },
+    {
+      "Sentence": "Yeah, definitely UM so there's you know, there's different definitions of compassion, but there's 1 that I read from the Greater Good Science Center at UC Berkeley and they had this idea that compassion is kind of a more active version of empathy 'cause with empathy. You can feel what the other person is feeling and there's different types of empathy, but that's you know what it essentially boils down to where is compassion you not only can feel? How other people are feeling but actively desire to make them feel better so you want to reduce their suffering and so that's why I choose compassion when I talk about.",
+      "Duration": 32,
+      "Offset": 1299
+    },
+    {
+      "Sentence": "As often as I can of course I also use empathy because you know that's that's become the buzzword that people understand a bit more, but really. I think the next level is really compassion because it's just more active you and it's also potentially more rational because you don't necessarily even have to be very emotional at the time to make a compassionate decision. 'cause you really can look at it logically and think, OK, given all the parties involved which step forward will involve the least suffering right or the most pleasure, but let's be honest like a lot of times it's just about minimizing suffering so yeah, that's why I prefer that kind of Wave.",
+      "Duration": 35,
+      "Offset": 1332
+    },
+    {
+      "Sentence": "Yeah, yeah, uh talked a little bit more about that empathy versus compassion. So empathy is feeling what the other. The other people are thinking. But compassion is kind of on the way true altruism, but not quite there yet. Compassion is more. It's just more active so it's like you could you could be empathetic you could feel what someone's feeling it just not care if you're going to be out there feeling and just move on with your life. Compassion is more you feel what they're feeling and you're like, Oh, they're suffering. I want to make them feel better, so it takes that active steps so you actually commit to wanting to do.",
+      "Duration": 31,
+      "Offset": 1368
+    },
+    {
+      "Sentence": "Makes compassion different and yet, all tourism is another day in closely related of course, and you know it can be differentiated in different ways, but there I think the difference is pretty subtle in terms of altruism. But they're all different but related concepts is how I look at it. It's a really interesting spectrum. I mean, like we said naming things is hard. But once you get the once you get the taxonomy down. It's pretty powerful. There's a really cool infographic. That, I'll put in the show. Notes by Robert Shelton is a psychologist, it talks about.",
+      "Duration": 32,
+      "Offset": 1400
+    },
+    {
+      "Sentence": "Hey, I acknowledge that you're suffering sympathy. I care about your suffering empathy like you said. I feel your suffering for myself and compassion. You know, I want to believe it. Let's work together to relieve your suffering its spectrum as you as you head in One Direction.",
+      "Duration": 14,
+      "Offset": 1433
+    },
+    {
+      "Sentence": "Yeah, for sure, and it again. It's like you know, many concepts were different different schools of thought. Have you know different lines that they draw and whatnot so I think it's important that whenever people talk about it. So yeah, just get on the same page. You know it's you know, there's this tendency. I think in Tech, especially for there to be like a right or wrong answer like you know it's either this way or that way. And I think in general, even when it comes to like technical terms. It's more just how you define it and how we agree that we're going to define it and move forward in the conversation versus like this is the absolute right definition, you know what I mean?",
+      "Duration": 32,
+      "Offset": 1448
+    },
+    {
+      "Sentence": "Good point, so ultimately, it just matters if my team and we all agree on how we're going to treat each other and the right thing that we're going to do, and what compassion or empathy means to us. It doesn't matter that the universe agree on the exact definitions. Exactly is that the kind of thing that would learn in a work in a workgroup or a workshop rather or if we watch some of your videos online on the topic. Yeah, that's 1 of the things they have so really the workshops. They breakdown emotional intelligence in terms of the self and then social.",
+      "Duration": 30,
+      "Offset": 1481
+    },
+    {
+      "Sentence": "Ones and then I always talk about continuous improvement. So it was always have an Action Plan at the end to kind of how you're going to keep improving and so self awareness and Self Management is really about being aware of your own emotions and deciding how to manage them how to understand what your emotions really mean and then this social interaction component. We talk about how to communicate with empathy how to imagine what other people are thinking and feeling and asking them and discussing it directly carrying about that, then effective communication styles things like that.",
+      "Duration": 31,
+      "Offset": 1512
+    },
+    {
+      "Sentence": "And use improvement is really where I take the idea of the agile retrospective from Agile software development and I apply it on a personal level.",
+      "Duration": 6,
+      "Offset": 1544
+    },
+    {
+      "Sentence": "And it's something that's really helped me a lot to make improvement in my own life. Using this personal retrospective and so I always share that I'm in the workshops, too because you know this is an ongoing process. It's not just like you do a workshop where you read a book and then OK. I'm emotionally intelligent. Now it's more like it's a continuous process. Yeah, somehow. I was hoping I would go through this process and I'd be able to put this on my link then I'd be like you dream in college for exactly April says your compassion and so it's OK now. Yeah, exactly it really is a process you never never all the way there and you're certainly going to fall backwards. You're going to the wrong thing in a meeting you're going to insult someone accidentally or",
+      "Duration": 33,
+      "Offset": 1551
+    },
+    {
+      "Sentence": "Someone and then you say, Hey II hear you I hear? What you said yeah and that's where self compassion comes in handy because you know for sure. Like the other day like I tweeted something sarcastic and I realize that that's not really how I want to be in the world and it's not consistent with my values, but instead of beating myself up like Oh my gosh. I'm a horrible person. Again, I would thought well. You know, I was feeling this in that whatever it doesn't excuse what I did, but it's more like I understand why did that and so you know I have compassion for myself and I'm going to do better in the future and that's really all it takes.",
+      "Duration": 31,
+      "Offset": 1585
+    },
+    {
+      "Sentence": "There was another interesting thing I want to end on on Twitter, which isn't really a compassionate place. But I see you a lot clear and I'm there a lot, so somehow. We are trying to find a balance between being empathetic and compassionate people and going to kind of least compassionate place online. There was a discussion around and individuals hosted what they thought was innocuous tweet, saying Hey. If you switch jobs every year. We're probably not the right fit for you. They didn't think that that was particularly.",
+      "Duration": 30,
+      "Offset": 1617
+    },
+    {
+      "Sentence": "And Twitter disagreed, indicating that not everybody has the privilege to stick around at a crappy poisonous job for for a year and you were kind of involved in that and I notice that at the end of it. The individual wrote a whole post about it. That was very empathetic. How do you involved at all directly to get someone to go through like the I believe something no I really, really believe it. I'm going to double down on believing this to the wow. You changed my perspective. Yeah, now. I definitely can't take credit for that because I think that that.",
+      "Duration": 33,
+      "Offset": 1648
+    },
+    {
+      "Sentence": "We've got a lot of tweets about that, about his tweet, but I was really touched by the fact that he took a step back as people were people were kind of jumping on M 2 for not replying right away and I was thinking and I actually did tweet this in I included him in that which is that I hope he's just taking a step back and thinking about this because I think that there's this idea that oh you have to respond immediately. But the problem is when people respond immediately. It's usually coming from that, you know amygdala in the brain. It's coming from that fight or flight defense.",
+      "Duration": 30,
+      "Offset": 1682
+    },
+    {
+      "Sentence": "I have kind of viewpoint and so you're going to be going to defend yourself. You're going to attack other people just because you know that part about lizard brain that still with us is you know is going to come out and that's like? What most of Twitter, is right, so I actually thought it was great that he took a step back. He got a lot of different perspectives together a lot of perspectives and then. Yeah, like like you said his blog post was really empathetic really thoughtful. I think that's the value of these like in a longer form post. I mean, I do tweet alot alot, too, and I try to be thoughtful in my tweets, but",
+      "Duration": 31,
+      "Offset": 1713
+    },
+    {
+      "Sentence": "Can misconstrue them and then it leads to misunderstandings and all that sort of stuff blog posts are a little bit safer in that regards 'cause you can explore things in more depth. But yeah, I mean, I still don't know Twitter is an interesting place, sometimes empathy happens. There sometimes not so much. Yeah, I think it's Twitter is actually a lot like work. Sometimes I find joy and it feeds my spirit and I love going to Twitter and other days and just like I really can't do this today, sounds about right. So are there particular video that you would recommend that?",
+      "Duration": 30,
+      "Offset": 1745
+    },
+    {
+      "Sentence": "Or if they were going to go and take a look at your site and like what's your what's the best introduction to compassionate coding, yeah, so on. Compassionatecoding.com I have, like, a media page. And I think the one that gives the best kind of overview is emotional intelligence for engineers to talk that I gave it in G Atlanta and yeah, so I think that one is probably the best one to start with OK very cool. Yeah, we were actually that the same at the same conference at the same time, I wish I didn't land as well.",
+      "Duration": 28,
+      "Offset": 1776
+    },
+    {
+      "Sentence": "Yes, I believe that's true and that was a great talk that you gave and in the video online is really great. It's about 20 minutes long, so it's not going to be like 90 minutes of your time and it's definitely worth the taking the moment, it's interesting of course, that's on you tube. Hopefully the comments will become be complemented. Yeah, there were some interesting comments there, but I think I don't know. I don't have control over the comments there, but I think the organizers. They have been pretty good about at least hiding the worst ones always felt like the thing that's wrong with YouTube is the down arrow like who needs to.",
+      "Duration": 33,
+      "Offset": 1805
+    },
+    {
+      "Sentence": "Something you need to have an up arrow or no arrow like like I don't want a thumbs down. Anything I would just be nice or say. Nothing yeah, thankfully. It hasn't what's funny is hasn't gotten too many down errors that somebody posted on 4 Chan of all places and that attracted some interesting comments so if you look at the hidden comments. I don't recommend looking at hidden comments about that to everybody who wanted to go ahead and do that because I'll be excited to become a compassionate coder. There you go perfect. Thanks so much for chatting with me today? Yeah. Thanks for having me in super fun.",
+      "Duration": 31,
+      "Offset": 1839
+    },
+    {
+      "Sentence": "In another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 7,
+      "Offset": 1871
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "id": "8647a935-2347-413e-b590-6d9c8e24b7ca",
+  "Title": "Real Software Engineering with Glenn Vanderburg",
+  "PublishDate": "2018-12-07",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/1a2696c6.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Successful software starts at reagan.com Reagan APMprovides.net application performance monitoring, unlike anything. You've experienced before offering greater clarity around how your software is performing for your customers more than any other APM provider.",
+      "Duration": 14,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Easily detect and diagnose issues impacting end users and monitor every part of your stack in one powerful solution. You can monitor unloaded hosts enjoy richer trace data and call stack information and unblock those hard to solve performance bottlenecks that affect your web and mobile apps.",
+      "Duration": 16,
+      "Offset": 15
+    },
+    {
+      "Sentence": "Trying to get back to building great software instead of fighting. It start your journey to better software quality and try Ray Gun Free at reagan.com that'SRAYGUN.com today?",
+      "Duration": 24,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Glenn Vanderburg to VP of engineering at first, and pretty darn good public speaker. I really enjoyed your talk on real software engineering. Thank you very much. I'm always glad when people encounter that and enjoy watching it. What does it feel like when you done a bunch of talks you've been speaking and writing and talking about software for many, many years, but then you do a talk and somehow it resonates more than the others, and it becomes your best talk.",
+      "Duration": 32,
+      "Offset": 57
+    },
+    {
+      "Sentence": "It feels great, and a little bit intimidating I mean, this talk.",
+      "Duration": 5,
+      "Offset": 90
+    },
+    {
+      "Sentence": "I've been giving it off and on for about 8 years. But even 8 years ago. It was the product of about 10 years of thinking and reading and so it kind of almost feels like. That's the pecan. I'm not likely to ever hit that peak again. But that's OK. If people are still asking you to give one talk after 8 years and asking you to give it again and again that's a good feeling.",
+      "Duration": 26,
+      "Offset": 96
+    },
+    {
+      "Sentence": "That is a good feeling it is going to hit a home run. It does make you wonder if you'll ever hit a home run again like, No. No, you really want this talk well. I want to talk about this one were good with that.",
+      "Duration": 9,
+      "Offset": 123
+    },
+    {
+      "Sentence": "So you've given this talk, many, many times probably a couple of dozen and you think they would get stale. But people like the talk and it says something the talk is called real software engineering. You've done. It is keynotes. You've done it several times and those videos of them online and I'll make sure to put them in the show notes? What is the essence of real software engineering. The essence of it is you know I studied software engineering in college in the 80s and started trying to apply it.",
+      "Duration": 31,
+      "Offset": 133
+    },
+    {
+      "Sentence": "In the 90s and there was a way it was all taught then something we were all aspiring to do.",
+      "Duration": 7,
+      "Offset": 165
+    },
+    {
+      "Sentence": "Um to figure out the right way to build software and it never quite felt right to me and something always seemed to be wrong with that idea. And it took me like I said a number of years to get to the bottom of it, but the essence is that?",
+      "Duration": 20,
+      "Offset": 174
+    },
+    {
+      "Sentence": "Software engineering.",
+      "Duration": 1,
+      "Offset": 195
+    },
+    {
+      "Sentence": "Like any branch of engineering really isn't that prescribed and regimented. There's not just one way to do it. There are the essence is finding the right balance of.",
+      "Duration": 13,
+      "Offset": 197
+    },
+    {
+      "Sentence": "Cost and time to market and safety and robustness for the problem at hand and figuring out the responsible way to build it.",
+      "Duration": 8,
+      "Offset": 212
+    },
+    {
+      "Sentence": "What about the the analogies that have been used the extended analogies for many, many years about being an engineer and building a house versus being an engineer and building software people have an idea about how building houses is going to go and the fact of the matter is that we've been building houses for a long time and across the realm of engineering. That's like one of the best understood problems that we have even then, though there are cost overruns often.",
+      "Duration": 31,
+      "Offset": 221
+    },
+    {
+      "Sentence": "Things aren't as stable as you might wish it's not quite as predictable and wrote, I guess as people seem to think engineering always is an Furthermore when people think of engineering. They tend to think of physical structures and civil engineering and bridges and things like that, and that's where a lot of the analogies come from. But there are a lot of different kinds of engineering and some of them are very, very different from civil in structural engineering and a lot more experimental and ad hoc like software is.",
+      "Duration": 32,
+      "Offset": 253
+    },
+    {
+      "Sentence": "We continue to recreate the wheel in software engineering and there's whether it be extreme programming 20 years ago, or pier pair programming or sprints or Azure. Like we're all trying to figure this out. I am not a structural engineer. But it doesn't feel from the outside as a layperson that they're coming up with really revolutionary new ways to put up walls and stuff, no, I think there are several reasons for that one is.",
+      "Duration": 28,
+      "Offset": 286
+    },
+    {
+      "Sentence": "Physical structures have at most 3 dimensions, so you can depict that in drawings. You might need a whole bunch of drawings to describe different aspects of the thing but you can depict it in drawings and get really concrete no pun intended about what you're building software.",
+      "Duration": 20,
+      "Offset": 315
+    },
+    {
+      "Sentence": "Is abstract and any program of any complexity has multiple dimensions and it's more than 3 and I'm pretty sure the number is not an integer software is kind of fractally complex and it's hard to visualize. It's hard to describe precisely and a lot of what we're doing comes from experimenting with ways of communicating clearly both to other engineers, but also to the machine what it is, we're building exactly that is really thoughtful and.",
+      "Duration": 32,
+      "Offset": 336
+    },
+    {
+      "Sentence": "Thinking about that I had not.",
+      "Duration": 1,
+      "Offset": 369
+    },
+    {
+      "Sentence": "Done before we say, and I have said that it's really about communication like the slapping the keyboard part in the for loop is really secondary. It's are you an effective communicator. That's kind of separates the mediocre developers from the good ones. But what you're describing is that at least I can draw a picture and say make it look like that. But we're still trying to figure out the right boxes and lines to describe the software even sure an because we spend a lot of time I talked about.",
+      "Duration": 31,
+      "Offset": 371
+    },
+    {
+      "Sentence": "Software engineering in the 80s and 90s and we spend a lot of time investigating ways of.",
+      "Duration": 4,
+      "Offset": 402
+    },
+    {
+      "Sentence": "Depicting software in pictures and none of that has been very successful and part of it is the multi dimensionality problem and it turns out that.",
+      "Duration": 11,
+      "Offset": 408
+    },
+    {
+      "Sentence": "The best way we know to press really precisely describe software is in programming languages and I think a lot of you know it's funny that.",
+      "Duration": 12,
+      "Offset": 421
+    },
+    {
+      "Sentence": "This many years on, we're still inventing new programming language is almost as fast or faster than people can reasonably learn them and you would think we have figured out something and settled on it. By then, but I think a lot of that is seeking ways to describe not only the precise idea. But the intent behind it of what software is and how it works.",
+      "Duration": 24,
+      "Offset": 434
+    },
+    {
+      "Sentence": "Yeah, it all of this is an expression of one's intent and whether it be a picture is worth a thousand words and we draw the user interface and say this should look like this. There's never been a great way to express that thousand words. A lot of words. It is funny, though, that the language Azure. Or during the year is still happening like now we ended up with the language that none of us really deserved but it's the language. We have which is Java script.",
+      "Duration": 31,
+      "Offset": 459
+    },
+    {
+      "Sentence": "Qualified languages become the one that everything is expressed in the moaning that just earlier today. You mentioned the picture is worth a thousand words thing. I remember one conversation. I had that really crystallized. Some of the thoughts in real software engineering for me was probably 13 or 14 years ago, I was having lunch with Dave Thomas of the pragmatic programmers, and I was wrestling with Quy UML sucks, so bad and.",
+      "Duration": 30,
+      "Offset": 491
+    },
+    {
+      "Sentence": "And I said, You know it, it the idea seems to make perfect sense if a picture is worth a thousand words.",
+      "Duration": 7,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Why does it turn out to not be too helpful to draw pictures of our software I mean arguably it might help you communicate. Some things about it, but it doesn't seem to help help us think about it very well.",
+      "Duration": 12,
+      "Offset": 530
+    },
+    {
+      "Sentence": "And he in his wonderful way of piercing through misconceptions. He immediately turned around and said animals can see pictures in humans are creatures of language and it just sort of totally turned that picture is worth a thousand words thing on its head, too well.",
+      "Duration": 18,
+      "Offset": 543
+    },
+    {
+      "Sentence": "You know, maybe in some circumstances, but when you want to be precise about complicated things language is a lot more powerful and it's a tough one that if I spent much of the 90s doing UML diagrams as well, and whether you are switching and of course for people who are maybe younger who are listening to show a UML is the unified modeling language. It was basically the boxes in the lines that they told us would solve all our problems and a lot of time. I just thought that will an activity diagram or a use case diagram or a state machine were just different lenses to look at the same problem.",
+      "Duration": 32,
+      "Offset": 562
+    },
+    {
+      "Sentence": "Once there became 7 or 8 different diagrams. I felt like I kept repeating myself. Yes, and none of them, said what I needed to say, Yeah and really in order to get a full view of the system and talk about it with any degree of ease you needed to be able to kind of rapidly move between those different views of the system and the tools. All made that kind of complicated and clumsy. There is an article that was written by in the Atlantic, an opinion piece number of years ago that I thought was a little bit provocative and it said.",
+      "Duration": 30,
+      "Offset": 595
+    },
+    {
+      "Sentence": "Stop calling yourself engineers because I've used a screenshot of that article in one of my talks. Yeah, I thought that was a little bit aggressive and it said engineer is an aspirational title and software development. It basically belittled the entire engineer and buy us using it, it cheap and technology.",
+      "Duration": 18,
+      "Offset": 626
+    },
+    {
+      "Sentence": "Yeah, II found that article really II wish I had read it recently read it recently. And I had it more on the top of my mind, but I found that article frustrating because in some ways, it got so close.",
+      "Duration": 11,
+      "Offset": 645
+    },
+    {
+      "Sentence": "The truth and in some ways, it was so far. Engineering is an aspirational title, even for the traditional engineering fields. It's one of the reasons. I'm really passionate about using the word engineer and kind of reclaiming that for software developers.",
+      "Duration": 18,
+      "Offset": 657
+    },
+    {
+      "Sentence": "I've had people kind of ask me. Why does it matter or you just you know trying to gain more respect or something like that and no it's that using that name for yourself carries with it. Some expectations about.",
+      "Duration": 16,
+      "Offset": 676
+    },
+    {
+      "Sentence": "The seriousness with which you take your field and the job. You're doing, and trying to have some rigor around it and not be careless with people's money or lives or data or whatever, so sure aspirational that's fine. But then in that article when he talked about. He spent a lot of that. Oracle talking about and comparing software development to other engineering disciplines and it was kind of funny because he made the same mistakes that.",
+      "Duration": 30,
+      "Offset": 693
+    },
+    {
+      "Sentence": "Always seem to do of a only focusing on civil and structural engineering. Large scale physical objects, which is the most. Unlike it's the opposite end of the spectrum of engineering from software development and also he made it seem a lot more predictable and defined and prescribed then it actually is in the real world. One of the wonderful things about giving this real software engineering talk a couple of dozen times in different places around the world.",
+      "Duration": 30,
+      "Offset": 724
+    },
+    {
+      "Sentence": "Every time I do it.",
+      "Duration": 1,
+      "Offset": 755
+    },
+    {
+      "Sentence": "Somebody comes up to me, who is now a software developer, but has a formal education in some branch of engineering or another.",
+      "Duration": 7,
+      "Offset": 757
+    },
+    {
+      "Sentence": "And sometimes they have some challenges for me and are able to correct me and help me refine the message of the talk, but most often? What I hear is yes. You've got it exactly right engineering isn't what non engineers think it is. It's always more creative and full of dead ends and blind alleys and iterating through mistakes and trying to get better.",
+      "Duration": 26,
+      "Offset": 765
+    },
+    {
+      "Sentence": "Yeah, that's true, it really is a way of thinking I was tease. My parents when they call for tech support and they say you know, and my mom literally emailed me about the router earlier. She's like you know what? Should I do. I don't want to be flippant, but I'm like I don't know, man, I mean? Unplug it like I'm just going to poke at the thing and the idea that we somehow have the answers and it is a structured sometimes stuff happens and you've got to unplug it and plug it back in again. It's right for awhile that concrete mixes bad. Let's mix it again for years I had this.",
+      "Duration": 33,
+      "Offset": 794
+    },
+    {
+      "Sentence": "A bit of tension in my relationship with my wife where she would ask me how to solve some problem on the computer with the program. She was using or something she was trying to to do and she had some programming background as well so she's not the stereotypical tech support case. But she would say How do I do this and I would say Well, Scooter and let me sit down and well no don't do it for me. Show me how to tell me how to do it and then I'll learn and.",
+      "Duration": 30,
+      "Offset": 828
+    },
+    {
+      "Sentence": "Uh we for years we were frustrated with each other about this until I finally.",
+      "Duration": 4,
+      "Offset": 859
+    },
+    {
+      "Sentence": "Understood myself well enough to explain to her. I don't know how to do anything on computers. I know how to figure out how to do stuff on computers and that's about it generally don't know the answer to the question you're asking me but I have.",
+      "Duration": 17,
+      "Offset": 865
+    },
+    {
+      "Sentence": "Enough you know background knowledge and good problem solving strategies to be able to sit down and poke around in the menus and figure it out.",
+      "Duration": 7,
+      "Offset": 883
+    },
+    {
+      "Sentence": "So you know that was kind of a real turning point for us and and now.",
+      "Duration": 4,
+      "Offset": 891
+    },
+    {
+      "Sentence": "She scoots over and let's me sit down and figure it out and then I undo everything and has a have her sit down and tell her explain to her what I did, and how to do it works well. It's kind of like what's your password. I don't know. Let me touch the keyboard my fingers right? Yes, exactly.",
+      "Duration": 13,
+      "Offset": 896
+    },
+    {
+      "Sentence": "This episode is sponsored by Datadog, a cloud monitoring platform built by engineers for engineers data dog enables full stack of durability for cloud infrastructure applications and logs in one tightly integrated platform. You can see across all your servers containers apps and services in one place to monitor performance and make data driven decisions with a rich dashboards and algorithmic alerts collaboration tools. Datadog provides your team with the tools that they need to quickly troubleshoot and optimized modern applications.",
+      "Duration": 31,
+      "Offset": 911
+    },
+    {
+      "Sentence": "Yourself without free 14 day trial and receive a free data dog T shirt. Just go to bitLY.com slash DATA dog shirt to get started. That's badlyBTLY.com data dog shirt. There was something that you mentioned before we started recording. I wanted to talk about which may be applied to that as you move towards the you improve your competence in something it's the Dreyfus model of skill, acquisition, which when looked at its 4 qualities.",
+      "Duration": 30,
+      "Offset": 942
+    },
+    {
+      "Sentence": "Phone recognition decision awareness and then each of those qualities is Binary. It smells like the engineers equivalent of the Myers Briggs. Personal strengths do you mean in the sense of not really actually being based on science and having any reality behind it or it appears to be like let's put together a table and describe how 1 a way to think about things whether it be Myers Briggs or the Dreyfus model or frankly astronomy.",
+      "Duration": 31,
+      "Offset": 973
+    },
+    {
+      "Sentence": "Or astrology rather pardon me the Dreyfus model is something another thing I learned about from the pragmatic programmers.",
+      "Duration": 8,
+      "Offset": 1005
+    },
+    {
+      "Sentence": "And I may be completely butchering this in my memory, but my recollection is that Andy Hunt's wife is a nurse or is in the healthcare field and so this came to his attention and it's part of how nurses how the nursing field trains new nurses and initially your sole job is to learn to follow the rules. Yes, the rules are contextual and complicated and there's all kinds of situations, but",
+      "Duration": 30,
+      "Offset": 1015
+    },
+    {
+      "Sentence": "A beginning nurse you don't think about that. These are the rules. You do it this way. You do it this way. All the time and as you grow incompetence and gain more experience you reach a point where you start to learn the reasons for the rules and the rationale behind them and start can start seeing some of the context that that applies in those reasons, and then the third stage is you start to you have enough understanding of the rationale.",
+      "Duration": 31,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "Next context and you learn when it's OK to break the rules and go off script a little bit because the situation calls for it and the rules don't apply here and then for the fourth stage of really expert experienced nurses. You've internalised those things enough that you don't think about the rules anymore. You act in the context that a patient is and deal with their problems and choose the right thing to do based on your experience.",
+      "Duration": 32,
+      "Offset": 1077
+    },
+    {
+      "Sentence": "Brian Marick has written about these things a lot from a similar perspective. His wife is a veterinarian and a professor of veterinary Madison and she talks about teaching students to diagnose cows and it's not something so simple you can put into a nice neat decision tree.",
+      "Duration": 25,
+      "Offset": 1110
+    },
+    {
+      "Sentence": "It just takes a long period of apprenticeship where you walk through and well this one looks great to me well. No, you can tell it sick because XY and Z and then they come to the next one and well. It's sick. No, it's not well. You said it was sick. If it was doing XY and Z well. Well, yes, but this one is also doing AB and C and that means it's perfectly fine and just you know the complexities of a complex field with a lot of different things to think about.",
+      "Duration": 29,
+      "Offset": 1137
+    },
+    {
+      "Sentence": "I saw a wonderful viral tweet that was talking about the show. The TV show house when the doctor always seems to know what the problem is like he's the Sherlock Holmes or Medison right so someone comes in with a rash and a fever and they're about to die. And they're going to Kartik and then the houses like did you check his nose for reasons?",
+      "Duration": 21,
+      "Offset": 1167
+    },
+    {
+      "Sentence": "And then of course at the end. Everyone's like of course, all gather reasons. Yeah, reasons have touch that that's exactly what there's no there's nothing no flow chart would ever have sent you to raisins in his nose. But that was it and that was the problem and if you look at the Dreyfus model when it talks about decisions as you move from novice through competent to kind of proficient.",
+      "Duration": 20,
+      "Offset": 1190
+    },
+    {
+      "Sentence": "Your decision making process as you point out those from analytical to Intuitive, which as I am becoming a senior programmer an ice a senior in the elder programmer way of the term. I recently solved a problem at work and someone asked me how could you have known that?",
+      "Duration": 18,
+      "Offset": 1212
+    },
+    {
+      "Sentence": "The only answer I had was at Lamb Old Yes.",
+      "Duration": 6,
+      "Offset": 1231
+    },
+    {
+      "Sentence": "I mean, I don't know how you teach a 22 year old about Unicode and bit bit. Nishan little Indian and other than having been there right exactly. I pretty early in Mycareer 10 years in I guess so there's the old thing again pretty 10 years seems seems early in my career to me, I started noticing myself, making decisions based on intuition and hunches.",
+      "Duration": 30,
+      "Offset": 1238
+    },
+    {
+      "Sentence": "I felt really cool. But as a member of a team. I didn't think I could just get away with that all the time right. You have to have some rationale and whether you're justifying it tapirs or explaining it to more junior developers that you're trying to help them grow and learn the things you know, so I didn't always do this, but I would kind of challenge myself too.",
+      "Duration": 23,
+      "Offset": 1270
+    },
+    {
+      "Sentence": "OK, you, you made this decision based on a hunch but that hunch had to come from somewhere your mind is Distilling. Your experiences in this sub cognitive way, but it's still a product of your experience.",
+      "Duration": 15,
+      "Offset": 1294
+    },
+    {
+      "Sentence": "And uh so I sort of made this rough rule of thumb for myself that I didn't get to go and advocate for one of those hunch based decisions until I'd.",
+      "Duration": 10,
+      "Offset": 1310
+    },
+    {
+      "Sentence": "Kind of delved in and traced it and found a way to explain it rationally.",
+      "Duration": 5,
+      "Offset": 1322
+    },
+    {
+      "Sentence": "And that was a tremendously useful exercise for me and it helped the people around me, too. But it also helped me to kind of resurface some of those older experiences and consciously think about how they'd shaped my thinking and I have found that having a blog and having a blog for 15:20 years has been super useful because when something happens, I think to myself, wow, OK now. I know that that's a thing right, I should probably write that down. So someone else will know that that's a thing.",
+      "Duration": 31,
+      "Offset": 1328
+    },
+    {
+      "Sentence": "We recently had I spent about 16 hours debugging a segmentation fault on a Raspberry. Pi yeah, exactly and it was lovely 16 hours of my life and it turned out that I had been FTP ING binaries in ASCII mode and it was swapping your trendline you laugh, too. Old people laughing at each other in the thing that was so ridiculous about that is. When I started writing it up. I was like Oh, I should have seen that 20 minutes in like what was I doing?",
+      "Duration": 30,
+      "Offset": 1360
+    },
+    {
+      "Sentence": "And when I wrote it up as with all good blogs. The real quality is in the content of the comments. The Commentors was like. Oh, I knew it was that within 4 sentence is of course. I could see you crashing into the wall and I couldn't yell to stop you but it was fun to watch.",
+      "Duration": 18,
+      "Offset": 1391
+    },
+    {
+      "Sentence": "But writing that up and understanding that and then sharing it and making sure that people understand that failure and failing as fast as you can as often as you can. It's really how you become a good programmer and it's a big part of the essence of engineering as well. It is, isn't it but it can it can it be like? How do we not knock buildings down accidentally but we do allow software programs to fail. If you're interested in? What real engineering is like and the role of failure V book to start with.",
+      "Duration": 31,
+      "Offset": 1411
+    },
+    {
+      "Sentence": "By Henry Henry Petroski Professor of engineering at Duke University. I believe wrote a book many years ago, called to engineer is human.",
+      "Duration": 10,
+      "Offset": 1443
+    },
+    {
+      "Sentence": "And it's a book of essays about the role of failure in engineering and design and.",
+      "Duration": 6,
+      "Offset": 1454
+    },
+    {
+      "Sentence": "In debates about this kind of thing over the years I've heard many people say things like yeah, real engineers have math so they can prove that their design won't fail. And yet civil engineering designs fail every year to a greater or lesser degree and fortunately for everyone. Most of the failures are rather small scale and or they happen before the structure is open or anything like that, but the bridge.",
+      "Duration": 30,
+      "Offset": 1461
+    },
+    {
+      "Sentence": "In Italy earlier this year, tremendous tragedy. The ultimate and you know the full reports haven't come out yet. And everything so I'm speculating based on what I read of other engineers speculating about it, but the fundamental structural flaw in that bridge was kind of around from the beginning, it was.",
+      "Duration": 19,
+      "Offset": 1492
+    },
+    {
+      "Sentence": "Cable stayed bridge that used just one stay.",
+      "Duration": 4,
+      "Offset": 1513
+    },
+    {
+      "Sentence": "On each side of the tower, so it was a single point of failure and it wasn't very resilient in the face of any of the kinds of stresses that would be applied to a bridge and engineers in all fields are constantly trying to balance robustness and safety against costs and trying to get their projects built and trying to meet their customers budgets. And things like that, and their failures. All the time the bridge. The Morandi Bridge was made in 1967.",
+      "Duration": 33,
+      "Offset": 1518
+    },
+    {
+      "Sentence": "You would think wouldn't why would it would have broken in the last 5060 years. But then we have things like SSL or that are being broken where it's like wow. I wrote that code in the late late 70s and now that broke things do happen, it could run, it can be robust and still break and robust in again. Here's the context thing robust for most of the circumstances for which it was designed but then you take it. Outside of the initial original design center of that.",
+      "Duration": 30,
+      "Offset": 1552
+    },
+    {
+      "Sentence": "And apply different kinds of stresses to it, and all of a sudden, it's in a failure mode.",
+      "Duration": 6,
+      "Offset": 1583
+    },
+    {
+      "Sentence": "You know that is that kind of pops us all the way off the pops off the stack. All the way back to the beginning, where you talked about context. My family asked me why they couldn't run Windows 7 anymore. And I said the Internet is a different Internet if you want to run it. Unplugged air gapped please. Feel free but if you want to put it on the actual Internet. I would encourage you not to because.",
+      "Duration": 21,
+      "Offset": 1590
+    },
+    {
+      "Sentence": "The context of the entire planet and everything has changed hardware or software connectivity. It was hard to explain that that things are different now. Security Engineering is a particularly troublesome thing because it's always based on what you think is hard and people are always finding ways to make things that used to be hard, easy and even something, as simple as the scripts that script kitties run right you and I are old enough to remember when you think about some of those.",
+      "Duration": 31,
+      "Offset": 1612
+    },
+    {
+      "Sentence": "Crazy buffer overrun attacks and having to concoct just the right series of instructions to land at just the right memory address and think of how many times you have to do that before you found a computer where memory was laid out just so and it's just nobody would bother to do that. But then you rap. A script around it. An automated and figure out a way to test to see if it worked right and you can do it. Hundreds of thousands of times and now all of a sudden, it becomes easy. I recently saw something really interesting where someone was doing fuzz testing on.",
+      "Duration": 34,
+      "Offset": 1645
+    },
+    {
+      "Sentence": "These time call and they took over and crashed and iPhone simply by sending different pixels down the wire and it upset. The FaceTime Codec and went all the way down to the beast in the bowels of the beast itself. Wow, who would even think about that. If that's not real software engineering. I don't know What is this a particularly fiendish kind but yeah, well people can check out your talk real software engineering you point out on your website at vanderburgh.org.",
+      "Duration": 30,
+      "Offset": 1679
+    },
+    {
+      "Sentence": "Number of different versions and you nicely enough. You've listed them in order of your preference with the version from a conference called software art. Thou is being your favorite version of that talk that's a great little lecture series put on by Zen desk in Melbourne, Australia. Periodically have a speaker end to do a talk there in downtown Melbourne and they were kind enough to invite me and they had a good audio video setup and it's by far the best version of the talk.",
+      "Duration": 31,
+      "Offset": 1711
+    },
+    {
+      "Sentence": "It's so nice when you do go to a conference and they've set it up such that they'll make the definitive version of it's almost like a stand up comic getting the studio album done just so. So now we can put on Netflix. That's exactly it fantastic well. Thank you so much for chatting with me Glenn Vanderburg. Thanks for having me on this has been another episode of the pencil minutes, and we'll see you again next week.",
+      "Duration": 25,
+      "Offset": 1743
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "id": "742dc45c-ce5a-4630-ab71-3f89ce137b12",
+  "Title": "ASP.NET Core in Action with Andrew Lock",
+  "PublishDate": "2018-11-30",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/4ad60dd5.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 5,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Progress software is the creator of the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tools that also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 7
+    },
+    {
+      "Sentence": "Instrumentation and a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 26,
+      "Offset": 40
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of the council minutes and today I'm talking with Andrew Lock. He's just publishedASP.net core in action with Manning fantastic 3 part book that I've got access to online and then you can purchase as well. We even put together a 40% off coupon with the Code Pod Hanselman 18. I'll tell you that code at the end of the show and will put it in a link in the shownotes.",
+      "Duration": 30,
+      "Offset": 68
+    },
+    {
+      "Sentence": "Name book ebook or physical book 440 percent off how's it going? Sir. I'm good. Thank you? How you doing? I'm OK. So you survived writing a book. This is like a 700 page book. I mean, you really did it. It's got some heft to it. Yeah, it was hardware. I could've got there in the end.",
+      "Duration": 17,
+      "Offset": 99
+    },
+    {
+      "Sentence": "II've written a few books as well, and they are something where you like I'm so excited. I'm writing a book and then you're like, Oh my God. I'm running a book and what have I done? Why have I done this to myself and my family exactly realize go to edit the book and that's that's really, really in the editing part really is. No fun because you're like no every word. I wrote is exactly as I wanted it like we don't want to renumber these chapters. It's perfect, but you have to do the work. You've already read it. By that point 15 times and now you have to go through again so.",
+      "Duration": 32,
+      "Offset": 118
+    },
+    {
+      "Sentence": "On ASP.net Core 2 have you been following has been the core since the beginning or where do you? What are your qualifications pretty close to beginning I was aware of the whole project K thing vaguely but I didn't really pay much attention and it was around about the RC one time that I actually do a bit sigh. Kids play with and I were going to break my machine trying to do so that I really start paying attention then.",
+      "Duration": 30,
+      "Offset": 151
+    },
+    {
+      "Sentence": "This is just before I paid attention and played with the bits RC one RC 2 and then I started the book just before the 1.0 release, Oh wow. This has been a long time coming. It has been a long time coming now and it's been basically had to be rewritten from 1.8 to 2.0 because of that, but do you feel like I mean? We all joke about Microsoft and version numbers and stuff but you know they say wait for whitetail version 3 doesn't. It feel like has been a core 2021 kind of is version 3. Like is that the one people should pay attention to.",
+      "Duration": 34,
+      "Offset": 183
+    },
+    {
+      "Sentence": "Yeah, I feel like the especially with 2.1 being an LTS release if you're going to just going in. That seems like a great place to start even if you don't intend to keep up with the current leases. It seems like 2.1 is the place to come in. We should make sure that we expand our acronyms for people who might not be familiar so L TS means long term support right correct and then there's the 3 years of support, you get with that and then if you stay on the sort of the latest releases, which is the current branch.",
+      "Duration": 32,
+      "Offset": 217
+    },
+    {
+      "Sentence": "Then that's supported a couple of these updates, you probably know this better than I do. But it's basically supported until the next current release. So you have to make sure you stay up to date. If you stay on the current movies right and they announced recently that if you're runningASP.net core 2.1 on the full framework on the one that runs on windows that it'll be supported effectively indefinitely.",
+      "Duration": 20,
+      "Offset": 250
+    },
+    {
+      "Sentence": "Yeah, which is great for people who are migrating fromfrom.net framework grasp.",
+      "Duration": 4,
+      "Offset": 271
+    },
+    {
+      "Sentence": "Which brings up a really good point because you started in the net full framework kind of world and then core happened and I think people might say that core has a reputation of being you know, kind of moving fast and breaking things or people may be afraid to go to ASP.net because they are concerned that it might not be stable.",
+      "Duration": 20,
+      "Offset": 277
+    },
+    {
+      "Sentence": "I think it's fair to say that youknow.net core labor tower far happy to move fast and break some things that has happened but it feels like, at this point that everything is sort of calmed down a bit.",
+      "Duration": 16,
+      "Offset": 298
+    },
+    {
+      "Sentence": "Donate Cordis offers quite a lot of advantagesover.net framework at this point, and especially with Microsoft, saying thatwhile.net frameworks. Going to be supported. It's not really getting any more features isjust.net core is the place to be right now.",
+      "Duration": 13,
+      "Offset": 315
+    },
+    {
+      "Sentence": "Was that something that that you took you took into consideration you wrote. This book that that this is going to be around for awhile so you're going to invest your time exactly. Yeah, it was sort of clear from the get go in a way this was where all of the focus would kind of be. So where is this book from a difficulty perspective? I think a lot of people who are listening to this show might have experience withASP.net web forms or doing work in MVC, which really wasn't a product. We saidASP.net MVC. It was more of a pattern, but it became a product that had version numbers in.",
+      "Duration": 32,
+      "Offset": 331
+    },
+    {
+      "Sentence": "Maybe a lot of people out there who have MVC apps and they're kind of stuck and not sure what they should do next. So the good thing that the whole MVC Web API. Passiveness is the fact that they've come through to ASP.net core so if you are familiar with those inASP.net land. It's it's hugely transferable across so you don't really have to worry. They're not directly compatible but there's enough there that you can change a few namespaces at a few attributes and actually you can convert from aSP.net apps 2SD.net core.",
+      "Duration": 30,
+      "Offset": 364
+    },
+    {
+      "Sentence": "Very short, but you can if you're coming from Webforms. It's a bit more of a struggle in the same way of going from Webforms to ASP net. MVC was a big jump. Yeah, that's actually something that I have a little experience with because my blog. Still, runsASP.net web forms. Nearly 15 years old, and people tease me for not upgrading it, but it works fine. So why should I bother but I did a show recently with my buddy. Mark Downey, who has taken this 15 year old Webforms app.",
+      "Duration": 31,
+      "Offset": 395
+    },
+    {
+      "Sentence": "Where did itto.net core and he did it by you know managing separations of concerns and he made the front end MVC even though it was originally webforms, but the engine wasbasically.net standard and didn't have too much trouble, converting it into core and suddenly it's cross platform. I think about that. If crux of it depends how well you'll app is architected initially if it's essentially just a UI wrapper around whatever it isthen.net standard as well means you can plug in you can plug and exam are in front end if you need to.",
+      "Duration": 32,
+      "Offset": 428
+    },
+    {
+      "Sentence": "And that's what he ended up doing and well. The front ended require some some extra work. The engin you know the data access layer and all of that stuff, really just moved forward quite nicely. I think that's what I find quite loud down a bit of conversion ofSP.net apps to run anASP.net core primary. We want to one of them in Docker. We want to be able to have better sort of DevOps processes around them, which is just it's frankly easier inASP.net core that is runningon.net framework on windows.",
+      "Duration": 30,
+      "Offset": 461
+    },
+    {
+      "Sentence": "People don't have had this experience, but when I getASP.net apps running cross platform or when I get it running in Docker for the first time I'm always just a little bit amazed that it still actually work. You know, I mean, like I think new people who are listening to this might not understand that, but people have been workingin.net. For many years might go and say, Well, it's really a thing. It runs in Lenox. Certainly the first time I run my very firstASP.net core app on a Mac. Just natively on America, not home to try and work parallels and.",
+      "Duration": 30,
+      "Offset": 491
+    },
+    {
+      "Sentence": "We had shortcuts, he didn't work on my own are that the first time it works in it. It was kind of mind blowing so I did work in MVC Ann I wrote books on MVC but then I kind of took a break and I'm noticing that the thing that's the most powerful thing aboutASP.net core and I wonder if you agree would be this idea of the middleware pipeline and you spend a lot of time talking about that. Yeah, it's a completely different way of thinking about your app compared to certainly the winforms way in MVC.",
+      "Duration": 31,
+      "Offset": 523
+    },
+    {
+      "Sentence": "Well, it wasn't move towards oh in Catana as a Web server, and that's really inspiredASP.net core so if you have worked with that inASP.net then that will be very familiar.",
+      "Duration": 12,
+      "Offset": 555
+    },
+    {
+      "Sentence": "So so when would be the open web interfacesin.net was a community project to describe in a way to plug middleware together in a non version specific and a non vendor specific way right. It was a way of removing will give you more control of the people. I would say yeah, exactly it was. I'm not sure exactly where the inspiration was 40. It did come from node is doing a similar thing as composable bits of middleware.",
+      "Duration": 30,
+      "Offset": 568
+    },
+    {
+      "Sentence": "The pipeline but it's only if you if you're from the node world. It's very similar to the way you build a node up when I was doingASP.net, though I was doing HTTP handlers in HTTP modules and plugging them into IIS is that not the same as a middleware pipeline. That's similar in some ways, but it's also different in others. Fundamentally, the way the handlers and the modules worked was different for one, you're hosting in INIS, which is differentin.net core.net core is now.",
+      "Duration": 32,
+      "Offset": 599
+    },
+    {
+      "Sentence": "To the Web server within a console app. It's just a normal net console app as you would just right to command line modules and handlers there were frankly, a bit complicated. You had to understand the entire pipeline ever request and what was happening where all the different events that are raised at different points and IS would then call into your application and the appropriate points.",
+      "Duration": 22,
+      "Offset": 632
+    },
+    {
+      "Sentence": "With.net core you define the entire pipeline exactly how request should be handled within your application. So you could have different bits of middleware for different cross cutting concerns and generate the response based on the income request and you get an opportunity to say yay or Nay. And then move on to the next thing in the pipeline like in your chapter 3 on middleware pipelines. You've got some really great diagrams by the way I see the amount of work that you put into drawing these diagrams, so it really explained visually.",
+      "Duration": 31,
+      "Offset": 655
+    },
+    {
+      "Sentence": "Going on, you call out like static file middleware error handling middleware each different piece of middleware as it moves to the pipeline gets an opportunity to say. I care about this, or no go ahead to the next thing exactly so each piece of middleware. It can inspect the request. If he knows how to handle it. It can just regenerate a response and that's it done. Alternatively, it can add some headers. It could change request somehow or can completely ignore the request and pass on to the next piece of middleware that next piece of middleware.",
+      "Duration": 30,
+      "Offset": 687
+    },
+    {
+      "Sentence": "Value and can pass on to the next one and so on, and then once something generates the response.",
+      "Duration": 5,
+      "Offset": 719
+    },
+    {
+      "Sentence": "Each piece of middleware that has seen the requests going gets to see the response as well. So the response part is back down through this pipeline.",
+      "Duration": 7,
+      "Offset": 725
+    },
+    {
+      "Sentence": "Briefly, a word about net app net app is a developers dream for data management net app can. Manage my great store compressed clone encrypt secure and generally make data do things super fast, the data, it doesn't always like to do.",
+      "Duration": 13,
+      "Offset": 733
+    },
+    {
+      "Sentence": "Net app gives developers infrastructure superpowers with Azure Net app files. The only Azure service. That let's you move enterprise file share workloads to the cloud. In minutes register today and learn how you can get Azure. Net app files for yourself at net app that'SNETAPP.com slash Azure preview.",
+      "Duration": 20,
+      "Offset": 747
+    },
+    {
+      "Sentence": "Someone said once that they felt thatASP.net core embraced that HTTP existed more than previous versions, ofASP.net that they felt were trying to hide that HTTP existed that totally makes sense. I mean, especially from the web forms. POV webforms is obviously that was trying to sort of gloss over the fact that the web existed. It was trying to make it nice and quick and easy to create web applications by just ignoring the fact there's an enormous pipeline between.",
+      "Duration": 30,
+      "Offset": 768
+    },
+    {
+      "Sentence": "MVC sort of exposed a bit more of that in the Web. API much more but this takes it out. Even further so you say ignoring the fact you're basically saying pretending that this even exists and telling people don't even pay attention to that don't look behind the curtain there. Exactly yeah, yeah. I felt like the as the web decided with rest and with JavaScript or vanilla JavaScript to really embrace that OK. Let's stop hiding things stop hiding the browser. Let's stop hiding the Dom Let's stop hiding HTTP.",
+      "Duration": 30,
+      "Offset": 800
+    },
+    {
+      "Sentence": "Cleaner and easier in NBC and your part one where you basically introduce people to MVC. You talk about model binding razor views mapping URLs and the middleware pipeline almost an entire book but it's condensed. It's simpler. It's you spend a lot less time. Getting to the point then that I would say I did in my books. I think that is probably just 'cause these concepts have been around for a bit longer. Now, if you already experiencedASP.net for example.",
+      "Duration": 30,
+      "Offset": 830
+    },
+    {
+      "Sentence": "Dirty vaguely familiar with most of these concepts if not earlier, depending on exactly which aspects you been working with.",
+      "Duration": 6,
+      "Offset": 861
+    },
+    {
+      "Sentence": "So it's just one of those things where it's just in the general consciousness more. I think that you have to understand how HTTP works a bit at least in order to do web development, another new concept that people have to understand that has gone from being something that I think maybe the fringe or the more advanced developers did to now. Everyone does is this idea of dependency injection, which we used to have to shove intoASP.net to get it to work. Yeah, it was always really hard work I mean, I remember.",
+      "Duration": 28,
+      "Offset": 868
+    },
+    {
+      "Sentence": "And on the one hand, I remembered suddenly discovering dependency injection run. When I had just started programming. It made so much sense for simplifying a lot of code and then trying to put it into SPN app was such hard work that you often question brother was worth the hassle or not. It was possible. It was totally possible and we did it, but it was clearly an afterthought tax on whereas it's baked intoASP.net core they use it throughout whether you want to or not found.",
+      "Duration": 30,
+      "Offset": 897
+    },
+    {
+      "Sentence": "Or against the I generally but the framework itself is built very much depending on dependency injection. So you may as well embrace it. Frankly, I wonder how anyone could be against it. I was trying to figure out the best way to teach it or to explain it to someone because as with all kind of like mind, bending concepts. It's one of those things where you have to look at it multiple ways. And then eventually it'll it'll it'll pop it will click and you go Oh and then it all makes sense right so how do you express' that?",
+      "Duration": 30,
+      "Offset": 928
+    },
+    {
+      "Sentence": "And what that means like when you say inversion of control that makes it sound like you need a PhD to understand? What's going on. It doesn't there's always the arguments as well. The fact that you know dependency injection isn't the same as inversion of control and see but I can never remember quite exactly which the arguments are which way to be honest domain thing that I find is it. It just makes unit testing things easier. A lot of time. If you can inject an interface instead of a concrete version.",
+      "Duration": 30,
+      "Offset": 959
+    },
+    {
+      "Sentence": "Then you can test that class in isolation, you can test without having to if you've got an email, sending application for example, you can inject this.",
+      "Duration": 9,
+      "Offset": 991
+    },
+    {
+      "Sentence": "Yeah, I'm interface, which does the actual email, sending itself and then you can test how the email is generated and error handling that email sender throws. An exception that you can handle that without actually having to send emails about simple thing. There just making testing so much easier makes it worthwhile in my book. Yeah, that's absolutely. True, the website. In fact that runs this podcast is written inASP.net core and I would have to admit that in writing little apps.",
+      "Duration": 30,
+      "Offset": 1000
+    },
+    {
+      "Sentence": "Of little personal apps. I'm not one to do a lot of testing, but the testing is so easy. InASP.net core that for the first time. My person even my personal projects have an extensive test suite.",
+      "Duration": 11,
+      "Offset": 1032
+    },
+    {
+      "Sentence": "Yeah, I'm very much same very much to say, Well, the one thing I particularly could testing ISP dental coreys fact. You can do integration testing of your HTTP request without having to spin up servers. That's broom really quite useful for just testing end to end its people have different feelings about the various balance of whether you should have unit tests out versus integration tests or end to end tests. Whatever you want to call them. But just the ability to be able to.",
+      "Duration": 30,
+      "Offset": 1044
+    },
+    {
+      "Sentence": "Police pinup integration tests is really valuable that's a great point. There's so many layers. I mean, you can spin up and testASP.net core without spinning it up like you can just make in process calls without any web server or you can put a Web Server on it or you could even do HTTP in memory testing without an actual web server or if you feel like it. You can automate the browser and do full on end to end selenium testing put the browser on the puppet strings exactly.",
+      "Duration": 31,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "There's there's a lot of options. I think that's the difference is that you know you really do have a lot of options, with webforms you didn't have those options available. You could do selenium and you can do very low level tests but you couldn't do that very easily. You can do. That sort of in between level tests that you have before I forget one of the things about dependency injection that I have been using to explain to people is to say it's not your applications job to new things up to go and make new objects your application should be.",
+      "Duration": 32,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "For objects because your app doesn't want to think about object lifetime and how long scope should be if something it just wants something it just wants to send an email. So why does it need to suddenly as a business application be responsible for making an object and throwing it away at the right time and letting it live for the certain amount of time, those things are concerns that it shouldn't have exactly it does simplify your say your application logic lot. One thing I would say is that just because your application logic. Don't have to think about those things doesn't mean that.",
+      "Duration": 31,
+      "Offset": 1140
+    },
+    {
+      "Sentence": "You can just not think about them. You still basically delegating that decision down to the dependency injection container and you do have to bear that in mind. I've seen a few issues, where basically I've been using the wrong lifetime without really just you just register something with ADI container and don't really think anything more of it and then down the line. You start getting strange issues because you registered as a Singleton instead of a scoped service or something like that.",
+      "Duration": 30,
+      "Offset": 1172
+    },
+    {
+      "Sentence": "Point that you're making and it's something that people could could hurt themselves with if they didn't think about lifetime. They could just start injecting dependencies and forget about lifetimes and you spend a nontrivial amount of time you have a whole section on understanding life times to make sure people get that right and I think that's the key thing was really with dependency injection if you can understand the lifetimes and why you should.",
+      "Duration": 24,
+      "Offset": 1203
+    },
+    {
+      "Sentence": "Inject scope services into singletons and things like this then.",
+      "Duration": 4,
+      "Offset": 1228
+    },
+    {
+      "Sentence": "After that, it's all quite easy. It's fundamentally just building a paragraph of new objects and so once once you get that little once you get that concept, then basically all the difficulty is just managing lifetimes in part, 2 of the book. Once you've moved past that kind of getting started in the concepts. You start talking about really building. Complete apps like? What does it look like? In reality, let's stop talking about samples and start talking about real stuff like authentication and authorization and actual publishing and stuff like that was a little bit surprised you have an entire section an entire chapter.",
+      "Duration": 34,
+      "Offset": 1234
+    },
+    {
+      "Sentence": "Filter pipeline, which I thought was an interesting decision. It's it's a complex beast. Unfortunately, when you get into it. It's one of those things that again. It is easy to just pick and choose little bits of the filter pipeline and only use the ones you need the main thing with the reason for having a whole chapter on it was.",
+      "Duration": 23,
+      "Offset": 1269
+    },
+    {
+      "Sentence": "It was almost meant to be a reference guide to be honest. There's lots of bits and pieces around and documentation and the documentation in general is very good now but understanding the different filters. When you should use each filter? How they interact when an exception is thrown at some point in the MVC pipeline with a result, filter is used when the response filter is used. It's all quite complicated.",
+      "Duration": 30,
+      "Offset": 1293
+    },
+    {
+      "Sentence": "It didn't need to be an entire chapter. But getting information down. It is that's what it was in no way implying it shouldn't be a full chapter. I just thought it was a cool decision because effectively if I understand from reading the chapter. The filter in MVC filters are almost a pipeline within a pipeline right 'cause. The MVC itself is a middleware exactly. Yeah, the MVC filters or you say.",
+      "Duration": 27,
+      "Offset": 1324
+    },
+    {
+      "Sentence": "Then they're not a linear pipeline like the middle where they have a slightly E sort of convoluted.",
+      "Duration": 4,
+      "Offset": 1353
+    },
+    {
+      "Sentence": "But they are a pipeline and in fact, there's think within 1.1 introduced the middle, whereas filters feature into ASP net core so you can actually use middleware components as MVC filters.",
+      "Duration": 14,
+      "Offset": 1358
+    },
+    {
+      "Sentence": "I think it was that way around so that really just highlights how the fact they are just another pipeline, Yeah.",
+      "Duration": 6,
+      "Offset": 1373
+    },
+    {
+      "Sentence": "Right and and again, I have to give you kudos so forgive me. If I'm gushing a little bit too much. But credit to you for doing not just a lot of pros and code, but also illustrating this stuff with illustrations that explain the pipeline. I don't think that I have understood fully the MVC filter pipeline. Until I saw the diagram that you created as you said it's not just boxes on top of boxes. There is some kind of going off in the corner here to do action in vacation and then coming back and some optional things and.",
+      "Duration": 31,
+      "Offset": 1380
+    },
+    {
+      "Sentence": "It happened, it's even even more different, yeah, it's a complicated but it's like you say you need to, you need to have some pictures in there. Let me help when you're writing a book and simultaneously. The documentation is becoming better 'cause. It clearly the Docs team is really gotten their act together? How do you decide like? What goes in a book and what is something that you would send someone up to the documentation for and how do you kind of compete when you have a physical book versus?",
+      "Duration": 30,
+      "Offset": 1412
+    },
+    {
+      "Sentence": "Cox yeah, I think it turns out, people are trying to get out of the book and verse is why they were going to the documentation. I think the Docs are let you say that so much better now there are even better than when I started the book to go when I started their orbital over the place, but now the very consistent the difference, I think is.",
+      "Duration": 19,
+      "Offset": 1443
+    },
+    {
+      "Sentence": "Does different types of tutorial versus reference document that they have in duct and they try to pull those out as 2 different bits. If something is essentially center technical reference. You don't want to read that in the book. There's no there's no reason you're going to sit there and read about the API or every single minutiae of something that is meant to be. It's a story of sorts. It's taking you through through the application. So it's not really the story but.",
+      "Duration": 30,
+      "Offset": 1463
+    },
+    {
+      "Sentence": "Have some interest, frankly as opposed to just I just need to get this one little thing done, which I find a lot of time. That's why I'm on Docs. I think that's a good point. The limit even though a book is a random access thing. The linearity of it to like let me. Let me tell you a story. Let me walk you through this. Follow me on this vector from Chapter 1, all the way through and then also the physicality of the book. Frankly, I still have have a stack of books next to me actually right now that I'm going through you really can't learn a framework unless you do that linear.",
+      "Duration": 30,
+      "Offset": 1495
+    },
+    {
+      "Sentence": "One through Chapter 20, you know at least once or twice. Yeah, I completely agree and they have. I don't think there. There trying to sort of cover that base in the Docs to honest they they do have tutorials, but they're generally getting started early on ramp as opposed to right now, let's just do everything you've also put the source code for this on GitHub. So how much of a living book is this so the source code is it's all on GitHub.",
+      "Duration": 30,
+      "Offset": 1525
+    },
+    {
+      "Sentence": "The combination of some of the some of the samples in there were written in these sort of 1.01, .1 time frame and they've been updated to 2.0. This book was finished sort of just before 2.1 came out so there's various references to 2.1, but the source code currently is.",
+      "Duration": 19,
+      "Offset": 1556
+    },
+    {
+      "Sentence": "Covering 2.0 and in some cases to 1.1. I'll make fixes to that as necessary by trying to leave them as 2 point, so it matches. The book the physical book as opposed to necessarily keeping it updated with a 2.23, .0 releases or anything like that, well, I mean, certainly with 2.1 being LTS. The 2 dot XASP.net core concepts aren't changing and the APIs are changing minimally so it doesn't seem like people should be focused on daily builds ofASP.net core when in fact. This is one that's going to be around for many, many years to come.",
+      "Duration": 34,
+      "Offset": 1576
+    },
+    {
+      "Sentence": "The book itself there's I don't cover everything in it's just there's too much in the framework and it's changing too fast, so it covers as you say really the core fundamentals and some advance concepts that you can go along way with and those haven't changed at all, so I think that's a good side of it.",
+      "Duration": 20,
+      "Offset": 1611
+    },
+    {
+      "Sentence": "Absolutely, which also worth pointing out for people who are listening that they can go and take a look at at manning.com for aspirin at coronation. You've got free downloads of both chapter one, but then as an example. The filter pipeline. One that I was gushing about is also a free chapter you download. Chapter 13 for free. You can look at all. The source code all for free before you decide if you want to buy it and as I pointed out also because you came on the show. I talked to the folks at Manning and they put together a coupon code.",
+      "Duration": 30,
+      "Offset": 1633
+    },
+    {
+      "Sentence": "Hanselman 18 that would get you 40% off of the book and I believe 40% off anything else on manning.com, which is pretty cool and there's alive book combo or you can basically have it on as an E book and then you can read it on the web as well, which is pretty pretty sweet. Yeah, I don't think Descemet schools got a another free ebook on manning.com, which includes chapters from this book and from his book and from the core in action book as well. Yeah, that's a really great point so there'sASP.net core.",
+      "Duration": 31,
+      "Offset": 1664
+    },
+    {
+      "Sentence": "And there's.net core in action, which can give you sicken internals of profiling in performance and multiple runtimes. In all the details. OfASP.net Corp itself and just as a point of note. I wrote the foreword for Dustin's book. So I don't have a relationship with Manning, but I do think that those are great books, so that's why I'm having you on the show. And why it's worth checking those both out, yeah, I appreciate it.",
+      "Duration": 24,
+      "Offset": 1695
+    },
+    {
+      "Sentence": "Yeah, absolutely there's a lot of cool stuff going on right nowin.net core and it's so nice to see books and source on GitHub and I don't know it's just so different than it was 15 years ago, yeah totally. I mean, having the source code on GitHub was really the thing that got meinto.net core in the 1st place. It was being able to just just read through and see how things works and what was what was happening in such a pleasure well, and I even like the fact that like I'm looking right now at your book and chapter in chapter one there's a screenshot of.",
+      "Duration": 34,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "Mobile 2 and have a section here, but how to set up like it's a book that doesn't start with and now download visual studio. You literally are like well now pick vim or Emacs or sublime or Atom or brackets or whatever and pick whatever operating system would ever do you want and let's go and do this book and then you start going that that is one of the big selling point with ASP net core. I think is just the fact. It is, you can build it everywhere. You can run it everywhere. It does such a.",
+      "Duration": 30,
+      "Offset": 1756
+    },
+    {
+      "Sentence": "Do that mean I'm a Windows Guy and so I build on windows, but then I generally deploy to Linux and there's there's no issues with that. That's fantastic. Well, thanks, so much for coming on the show. No thanks God. It's been great all right. We've been talking about. Andrew logs bookASP.net core in action, it be sure to check out the show links down below as well as the coupon pod, handsome and 18. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 30,
+      "Offset": 1787
+    }
+  ]
+}

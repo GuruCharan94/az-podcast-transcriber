@@ -1,0 +1,373 @@
+{
+  "id": "6737568b-df87-4f93-ad86-35e9a3f163d4",
+  "Title": "Developing ON (not for) a Nokia Feature Phone with Elvis Chidera",
+  "PublishDate": "2018-01-19",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/29812a79.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Elvis Chad era. He is an Android engineer at dot learn, you can learn about them. At D OT learn dot. IO dot learn dot. IO is an Android engineer there? How are you Sir? I'm fine on you I'm good thanks for chatting with me? Where are you calling from LEGO's nature OK so you're from Legos, Nigeria, an I read about you on A?",
+      "Duration": 31,
+      "Offset": 40
+    },
+    {
+      "Sentence": "Post that you wrote on free codecamp.org that you started programming. How many years ago. There was some abouts those about 8 years ago, but 8 years ago and what was interesting about it was that you wrote your first app was not written on a on a computer.",
+      "Duration": 18,
+      "Offset": 72
+    },
+    {
+      "Sentence": "Yes, it was only a small there. Nokia phone like a little like when I think of a Nokia phone. I think of a little black and white phone that plays snake. Yeah, a little bit more advanced then that's 1 board serves just a feature phone little small phone with the numeric keypad and small screen, not as much as the smartphone is today OK so this is the Nokia 2690 that came out in 2010.",
+      "Duration": 31,
+      "Offset": 92
+    },
+    {
+      "Sentence": "Yeah, it didn't didn't have a hidden keyboard or flip open to a keyboard. No, you basically have to. You have the letters. They have to type a key several times to get a particular character.",
+      "Duration": 12,
+      "Offset": 123
+    },
+    {
+      "Sentence": "Really so you're saying, you just go like 1111222555.",
+      "Duration": 5,
+      "Offset": 136
+    },
+    {
+      "Sentence": "Exactly that's a typo in some words on it is also it was crazy. It was difficult for Maine. Unfortunately, I couldn't I couldn't get anyone to get me computer and there's nobody around there. Hardly computer so I was very. I really wanted to do really wanted to get into programming, which was my curiosity to spend a lot of time, downloading games be cause.",
+      "Duration": 30,
+      "Offset": 142
+    },
+    {
+      "Sentence": "I was giving the phone in a few months ago, so most of my time was spent going online searching for the latest game to download another point I was like, how how does all this stuff workout? Do I typeXYZ.com and it opens up this page. So I just went to Google and search for how to build a website. So let me to the DoubleTree schools tutorial on his team and CSS S so I so I saw this funny look into.",
+      "Duration": 32,
+      "Offset": 173
+    },
+    {
+      "Sentence": "His Gmail dogs, I was like why can't, they impute website in English. So I started I started learning that from Syria. They said prickly side, so you have laptop have windows part to type your code. I know that, but I tried looking for a computer. I couldn't get anyone. So I just had to substitute laptop for my phone. I went online to look for an app. I could easily use to type.",
+      "Duration": 30,
+      "Offset": 206
+    },
+    {
+      "Sentence": "Not not know exactly could just texted it as I was typing. The HTML tags there and put our blue 2 free hosting service and then our now look at look at it through my browser seriously. I'm I'm looking at this phone. This is 128 by 160. It's 100 PPI density. It's basically like a 2 inch screen couple of centimeters and its color, though, which is nice but that's basically it is pretty small screen.",
+      "Duration": 31,
+      "Offset": 238
+    },
+    {
+      "Sentence": "Code could you see I think I could see about 6 or 605 that's when I go full screen mood, but if I have already.",
+      "Duration": 11,
+      "Offset": 270
+    },
+    {
+      "Sentence": "If I have the program to bow tie to untitled body is like 5 or 4, depending on the font size. Did you have to think about storage space or memory? Did you run out of space?",
+      "Duration": 16,
+      "Offset": 283
+    },
+    {
+      "Sentence": "Uhm I didn't because I was able to get a memory card Astana America at.",
+      "Duration": 6,
+      "Offset": 300
+    },
+    {
+      "Sentence": "Site, which I put into the device and that was about 2 gigabytes of storage and it was a lot. Back then, they weren't lot of heavy files and since it's a feature phone. You don't have most of the absentee phone. We're just about 500. KB 500 kilobytes 100 kilobytes 100. KB so space wasn't really an issue except you had large video files on your phone.",
+      "Duration": 30,
+      "Offset": 307
+    },
+    {
+      "Sentence": "Started doing HTML you found a tutorial at W 3 schools and you're using basically notepad and this free upload but then you started doing J 2 me? What is J 2 me so thus Java to my credit so that's",
+      "Duration": 19,
+      "Offset": 338
+    },
+    {
+      "Sentence": "You could build apps for the featured phone using variants of Java, so it's not unlike the standard addition doesn't stripped down things that are not available there. Mostly the GI parts of Java, which like the swing and the rest is totally different. The GI parts, so it was built for this low end devices, the feature phones.",
+      "Duration": 30,
+      "Offset": 359
+    },
+    {
+      "Sentence": "This is use use it or that is if it is still Java, but just the variance of it and I guess it runs televisions and printers mobile phones. You can do like sensors like it was basically Internet of Things before Internet of Things. Yes, I did see on the book Windows learning. It's being used in PDS pages and few other stuff but I didn't get to use it.",
+      "Duration": 31,
+      "Offset": 390
+    },
+    {
+      "Sentence": "Devices I was only programming for a feature phone because that was the only thing I had there so you just said. Pdas portable digital assistance that reminds me of? When I was writing my first apps. I wrote on a Palm pilot and the Palm pilot was a black and white screen that was about 160 by 160, a very similar kind of a device except it didn't have any Internet connectivity. I didn't have any phone, too attached to it, so I really couldn't program on it and.",
+      "Duration": 31,
+      "Offset": 422
+    },
+    {
+      "Sentence": "And for it, it had about 4 K of memory. But how did you program on a feature phone I mean, you couldn't compile the Java on the phone itself right? Yes, I couldn't look at it for me, I found it too, which is free so I can't remember the programmer name. So it was a Russian the up was I had to remember how I got but I remember this sites being.",
+      "Duration": 32,
+      "Offset": 454
+    },
+    {
+      "Sentence": "In the Russian language, I like most of the most of the app also is in Russia. Russian so I got this up that allowed decay mobile it allows me it allows you to write to me codes run them and then Butte and APK, which Java which you could easily install download and install on any feature phone so it's.",
+      "Duration": 30,
+      "Offset": 487
+    },
+    {
+      "Sentence": "Is this it was basically an ID sort of so it's hard to text editor? It's the does the compilation and others and it gives you a Java? Which you could just upload so anyway, so I was lucky to send the app.",
+      "Duration": 17,
+      "Offset": 518
+    },
+    {
+      "Sentence": "Those house able to actually comply my face up.",
+      "Duration": 4,
+      "Offset": 536
+    },
+    {
+      "Sentence": "It seems like this is 2010, 2011, it seems like you are compiling in the cloud before the cloud existed. I think Jay to me. That was around 2122. That's in I started with hystereo. CSS JavaScript and I spent like 22 years or one. It there before I moved over to check for me, so I was using.",
+      "Duration": 30,
+      "Offset": 542
+    },
+    {
+      "Sentence": "Actually, it wasn't on the cloud. It was running on the feature phones. So I understand that I'm saying that the phone did not compile it. The cloud did the Russian website compiled the Java right.",
+      "Duration": 13,
+      "Offset": 573
+    },
+    {
+      "Sentence": "No, it was actually compiling on your phone. You don't need to be online to use the app, Oh, well. What is the Russian site then do?",
+      "Duration": 8,
+      "Offset": 588
+    },
+    {
+      "Sentence": "That was fact go to the app identity up from there. Oh, so the app downloads and then it does some magic on the phone and how long they must've taken forever to compile, though it depends on what's up so I realized the more complex my objects. The which time also increases and he got the point where he couldn't even compile the app anymore. So I had to start with installing features in the app and just for it the compiler.",
+      "Duration": 32,
+      "Offset": 597
+    },
+    {
+      "Sentence": "Sometimes I was thinking of having 2 versions of because I couldn't get it together in one GFI to compare wow. Just to be clear, you were typing public class hello world going like 222333, did it auto complete or did it. Could you copy paste. This seems pretty slow also complete so you had to type you have to type that using the keypad.",
+      "Duration": 30,
+      "Offset": 630
+    },
+    {
+      "Sentence": "Just like I say what's 22 T tree. Fortunately, I got so good at it that I knew how to is like this? When you type you have to wait for a few seconds for it to type the next thing. So why did was outside I use the arrow key to make that delay faster I move on to the next thing I got so used to read. I wasn't you can get as fast as using a computer but I was, I made it somehow.",
+      "Duration": 30,
+      "Offset": 661
+    },
+    {
+      "Sentence": "That sounds amazing, so how long did it take to and this was for a social media site you are basically trying to compete with Facebook you are writing your own. Facebook yes, my Facebook killer and how did that work? Are you a Facebook killer now you win no I don't drive cars that is open like this failure because.",
+      "Duration": 28,
+      "Offset": 693
+    },
+    {
+      "Sentence": "I looked at product or of uhm. I looked at product differently. Back then, so when I say Facebook. I just see this tunnel features that if I'm able to do the same thing and create more features release its proper people would just to Facebook doesn't has this and it doesn't have that sound converted platform. So my idea was simple for the social media to insert or just to use some open source projects and then build on top of that.",
+      "Duration": 31,
+      "Offset": 723
+    },
+    {
+      "Sentence": "They're too cool features there one. Back then, Facebook pin show your friends that we are online and they also they ensure that it was built for people already in real life. So -4 people in real life, strangers and everybody just connect launch that it wasn't good. I was basically begging people to stay on this side trying to give free stuff on this site for them to stay well it didn't workout so.",
+      "Duration": 31,
+      "Offset": 754
+    },
+    {
+      "Sentence": "Value, though, don't you think in doing the work like do you hope you don't regret the experiment no I didn't see that was Swartz slender history. Millis yeah, so so this right now, it's just building. Many projects an order book when I decided to take on that project. I was able to go deep into each. I have this feature. I want to implement and I have to learn this too particular level to be able to implement it so that was when I imagine it made me realize or look at product differently now.",
+      "Duration": 32,
+      "Offset": 787
+    },
+    {
+      "Sentence": "It's the same way and it also helped me in my programming journey silent alerts on their field experiments or field project. So when how many different apps. Did you right 'cause? I know that you wrote another app that actually got written up like in the newspaper you have like thousands of users and I think you were only 14 at the time. Yes, I was foot in my feh Stanfield project. I decided to do something else.",
+      "Duration": 30,
+      "Offset": 819
+    },
+    {
+      "Sentence": "I wanted something that people will be willing to pay for so I looked around, and I saw that I could actually make SMS cheaper for people in Nigeria. So the idea was to make make SMS cheaper and also make it easy for you to send messages to several people back then. It wasn't. I think most phones. You couldn't send messages to multiple reports so let's say you want.",
+      "Duration": 30,
+      "Offset": 851
+    },
+    {
+      "Sentence": "Send an installs Christmas message to all your friends and family after basically send to one sent to the second person sent to the third person. So those are the 2 call functionality's plan to. I wanted to add to the app. So also still any Java so I had to build the app. I could I couldn't afford anyone to work on the website or the back end for me so.",
+      "Duration": 31,
+      "Offset": 882
+    },
+    {
+      "Sentence": "Butte the back end, which the Apple stock into and I also built the landing page. Rage you get to download the options. There's no there's basically no official App Store for the feature phone. So you must let you most likely be hosting your app on your website or something like that, so that was my second big projects is went well, but I couldn't.",
+      "Duration": 30,
+      "Offset": 914
+    },
+    {
+      "Sentence": "Well, it's probably bugged in and it's I think it's just stayed around for about a year 2 before I shut it down. But at this point had you moved over to a laptop noticed I was still programming with my phone? How long did you spend on the phone doing your programming in a small world in a small environment?",
+      "Duration": 21,
+      "Offset": 945
+    },
+    {
+      "Sentence": "I spent some all holiday like after school everyday like school. It is so it was basically on this phone. I also able to convince a bunch of people to give me the phone battery store, not using backup power and you did. This for a couple of years. Yes, I did that for about yes.",
+      "Duration": 30,
+      "Offset": 967
+    },
+    {
+      "Sentence": "Come on say.",
+      "Duration": 1,
+      "Offset": 998
+    },
+    {
+      "Sentence": "Uhm I think about 34 years or so and you went. When did you go like in get like upgrade to a laptop and did you have to go to Internet cafes or did you? How did you get your Internet? When you moved off the phone. I got I got my lap to those 2 forts in I had to. I got him more there for that. So I just paid for subscription and was using that's on the laptop.",
+      "Duration": 31,
+      "Offset": 1000
+    },
+    {
+      "Sentence": "It doesn't have I still remember the experience up tonight is very cool or so moments for Maine to do you still in just curious but do you still have the phone like in a drawer somewhere? Unfortunately died it's too much just said, OK do this too much so I was thinking that if you're famous you're going to have to go to the museum and it will be on the wall and hopefully this here's where Elvis use the Nokia 2690.",
+      "Duration": 31,
+      "Offset": 1032
+    },
+    {
+      "Sentence": "III guess it should be sorry at home. I kept it so but I know it's no longer life so do you do you know a lot of people? Who are writing apps this way 'cause? It seems very constrained and I'm curious do you think it makes you a better programmer now like not everyone learned this way right? Some people they started on a laptop do you think you're more parent nature more careful because you started small?",
+      "Duration": 28,
+      "Offset": 1065
+    },
+    {
+      "Sentence": "OK, I want II don't think much people started this way. If you people that did either. They have the perseverance to do it that much until they were able to get the laptop for me, it was, I think ignorance or something or love for the apps for ended up spending a lot of time. Open now just build it big thing and all of a sudden I will.",
+      "Duration": 30,
+      "Offset": 1095
+    },
+    {
+      "Sentence": "Movies something like that, so I had this determination to keep using the phone. But currently I well it made me like I wake me up in the model like I remember most of the Java syntax and uh that's mostly for White Whiteboard. Interviews type of questions that they ask you for syntax and stuff like that, but basically I will prefer.",
+      "Duration": 30,
+      "Offset": 1126
+    },
+    {
+      "Sentence": "Currently, I'm trying to help a few developers that don't have access to laptop now to get to get laptops for them. Does there's no commitment to making on my part cause. I don't really want people to spend time doing that as you probably spend time trying to solve a problem not taking 3 months to build an app. That probably would have taken them 2 weeks or one month, too if they had a laptop or a computer.",
+      "Duration": 30,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "On your on your medium post. You said you're from the village in the US here. We have basically cities and then we have, like small towns or farming towns and the farther away from the city. You get you know the worst, the Internet is in a less access. You have my brother lives on a farm and they don't have like they don't have wired Internet. They don't have they can't buy Internet 'cause? They're too far away so I don't know if that's a village but it's pretty far out you know, there's It can't see his neighbors kind of thing.",
+      "Duration": 31,
+      "Offset": 1188
+    },
+    {
+      "Sentence": "How far out is the village in Nigeria and what is the difference between people who live there versus people who live in an apartment in the city.",
+      "Duration": 6,
+      "Offset": 1220
+    },
+    {
+      "Sentence": "OK uh I think the definition of village is basically the same thing like in the states or so you have this far. That far replaced us disconnected from a few basics things I think now technically. I refer to Wales from very, very small town that was in Portugal, but I moved that was.",
+      "Duration": 31,
+      "Offset": 1227
+    },
+    {
+      "Sentence": "Last last year. Those 216 and it's being totally different. The whole experience. Legos has been totally awesome, Ligas Ermine enjoys the?",
+      "Duration": 10,
+      "Offset": 1259
+    },
+    {
+      "Sentence": "Um ecosystem, yeah, is the Silicon Valley, a fun to related to something is it going to be like the Silicon Valley of the US so we have this tech ecosystem here. We have several huge companies working on very awesome stuff. We have Angela training future bottles developers. We have economic shopping site. Congress Jimmy and a couple of them. So when I'm moving moving from the village to the city you get.",
+      "Duration": 30,
+      "Offset": 1271
+    },
+    {
+      "Sentence": "Opportunities you most likely to get in the village. You get access to better Internet steady steady power supply. And lots of firms is basically very different very similar description. You gave is exactly the same trailer but port hardcourt is still a couple million people. I assume you were outside.",
+      "Duration": 30,
+      "Offset": 1302
+    },
+    {
+      "Sentence": "Yes, it's a just a very small place in Porter Got and I will say it wasn't really doesn't really developed voice not really developed, but I think technically refer to it as a very, very small town. Not Porte Hardknott Port Hartcourt yourself. But the town outside that you stayed in maybe how many people, you think are there oh estimates.",
+      "Duration": 30,
+      "Offset": 1334
+    },
+    {
+      "Sentence": "OK, I'll say about I'm not sure I can give it proper estimates. I didn't. I didn't really got much are you working here on your programming. How was it. When you move to Legos was something where you needed to get a job and you use your app kind of as the interview and you said. Here's this app. I built when I move to Legos so I was freelancing from.",
+      "Duration": 30,
+      "Offset": 1365
+    },
+    {
+      "Sentence": "What needs claims across Nigeria so I eventually worked with this clients that was very impressed with what I did for him and invited me to come over like they had this opening for a mobile developer position and just invited me to come for work with them, so that was when I moved to Legos. I just had this call on I think Saturday. I booked my flight.",
+      "Duration": 30,
+      "Offset": 1396
+    },
+    {
+      "Sentence": "I didn't really plan much just so II moved to watch Legos for a full time role. Yeah, it goes out the company code and very cold technologies tend to making apps can content for children. So I worked worked with them for a few months before moving over.",
+      "Duration": 25,
+      "Offset": 1427
+    },
+    {
+      "Sentence": "So what is not learn do basically is send a text at up so we created technology at MIT.",
+      "Duration": 13,
+      "Offset": 1453
+    },
+    {
+      "Sentence": "Is able to compress them able to reduce the file size of videos too less them?",
+      "Duration": 8,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "About depending on what the video contains you could get compression rates of you get a video of one minute for about 200 KB 300. KB depending on the context of the video. So we develop this tech that represent videos. Dragon frame by frame. They have this pixels and ordered you have text instructions that describe what is on the screen? How this animated from Point A to point B and all that.",
+      "Duration": 31,
+      "Offset": 1476
+    },
+    {
+      "Sentence": "By then that you could represent things like videos in can Academy or coding screencast in a very, very data lights.",
+      "Duration": 9,
+      "Offset": 1508
+    },
+    {
+      "Sentence": "Satellites fire here? How many so are most people on Android now in 2018 in Nigeria. Most people have small Android phones or do you see J 2 Emmys anymore and do they? How do people watch their videos? Yes, Jamies Theatine year. This bites the rapid growth of adoption rate of smartphones. There is they have. I think when I checked the numbers if I'm not mistaken. I think it's still about 70 to 30%.",
+      "Duration": 33,
+      "Offset": 1519
+    },
+    {
+      "Sentence": "So we have 74 Jamie phones and have tested for smartphones. That's if I'm not messing up with the number so it still represents a lot of lots of boost easy to buy both overtime like I think by 2:20 or so have smartphones went in because we have a bunch of companies bringing Android phones introducing different Android phones over here and most people I see when I'm.",
+      "Duration": 30,
+      "Offset": 1553
+    },
+    {
+      "Sentence": "And mostly I'm in East Africa and South Africa but I see Huawei and Samsung phones techno. Maybe yes, there's no probably did uh players very popular here, so they partner with lots of local guys able to show this phones here. So you most likely see it take no or any of this look players compared to Samsung or an iPhone or something like that.",
+      "Duration": 32,
+      "Offset": 1584
+    },
+    {
+      "Sentence": "And do you do you still do any J to me? Are you trying to get dot learn on these smaller phones or it is? What's the minimum phone for dot learn so we have?",
+      "Duration": 13,
+      "Offset": 1616
+    },
+    {
+      "Sentence": "You could play the videos, um using on the Web or you could we have libraries for Android and iOS and we haven't presented the library. Yet 4 digit to me platform, but us do myself This right. It's been long. I did anything with that switch it to me and I understand that the Library of content that you have is also Africa focused you're an education company but also focused on education in Africa.",
+      "Duration": 33,
+      "Offset": 1630
+    },
+    {
+      "Sentence": "This UM in Africa, so we know cyst.",
+      "Duration": 4,
+      "Offset": 1665
+    },
+    {
+      "Sentence": "The we did we did a test dousing gonna we realized that most students preferred lokoli created content versus we should look at equator contents contents from Khan Academy and there was strong preference for the local liquid content.",
+      "Duration": 20,
+      "Offset": 1670
+    },
+    {
+      "Sentence": "Very cool and have you done much iOS development or do you see any iOS over there?",
+      "Duration": 5,
+      "Offset": 1691
+    },
+    {
+      "Sentence": "Uhm I haven't done much iris developments. I develop or iPhone is not the majority so if you're looking at in germ focused. You most likely be looking at Ajit. CMU Android well, I've seen several iOS developers away.",
+      "Duration": 23,
+      "Offset": 1697
+    },
+    {
+      "Sentence": "OK and is that your plan right now is to focus mostly on an Android apps by the way I never asked you. Did you do any kind of formal education or do you see a lot of people going to college for mobile development in Nigeria?",
+      "Duration": 16,
+      "Offset": 1722
+    },
+    {
+      "Sentence": "Yes, some so I've sent several people go to college study computer science, not mobile mens specifically usually pick that up from online like most developers of send eitherself.org event report cloud puts camp coding program that they used to kick start. The carrier mobile app development. But now that you are a working developer do you feel any need to go to school?",
+      "Duration": 30,
+      "Offset": 1739
+    },
+    {
+      "Sentence": "You pretty much are on your way. Yes, I feel very strongly to go to college II believe I'm very interested in computer science and I believe going to college going along way in. I'm going to learn a lot. San be exposed to lots by going to college. I don't know. I just feel I should get this thing and just get it over. It's rather than just everybody accent by marks in my Deluxe Inn.",
+      "Duration": 31,
+      "Offset": 1770
+    },
+    {
+      "Sentence": "Elvis was up or something like that, so people can check you out on Twitter year at Elvis, an letter N and then should ARA CHIDERAL Vicentia Dara. I'll put a link to your Twitter in the show. Notes and also a link to your article on medium about how you went from programming. A Nokia feature phone to working for a startup. Thanks for chatting with me today thanks. This has been another episode of Hansel minutes.",
+      "Duration": 30,
+      "Offset": 1802
+    },
+    {
+      "Sentence": "See you again next week.",
+      "Duration": 1,
+      "Offset": 1832
+    }
+  ]
+}

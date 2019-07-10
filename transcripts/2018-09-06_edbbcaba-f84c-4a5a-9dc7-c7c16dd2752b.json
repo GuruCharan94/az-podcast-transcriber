@@ -1,0 +1,458 @@
+{
+  "id": "edbbcaba-f84c-4a5a-9dc7-c7c16dd2752b",
+  "Title": "Accelerate: The State of DevOps with Dr. Nicole Forsgren",
+  "PublishDate": "2018-09-06",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/7ec4091e.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we have a new sponsor today and I want to make sure that you support them because they make Hansel minutes possible. Raven DB it's a document database. That's non relational and fully transactional. It's available for Windows Anne Lennox with official client. APIs for net. The JVM go. Ruby node JS and python. Raven DB is designed for high performance handling tens of thousands of requests. Even on a single node now. Raven DB is capable of on the fly optimization.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Indexes and much more. It is a fully loaded GUI, which means it's simply to operate and you don't need arcane incantations on the command line. It just works. It's fast and it's right. Download your free community edition at ravenDB.net that'SRAVENDB.net. Hope you check it out.",
+      "Duration": 20,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with doctor Nicole Forsgren. How are you? I'm great? How are you? I am lovely Anne? I'm here reading your report you just released a report called accelerate the state of DevOps strategies for a new economy and you know the first thing that I see when I scroll down and I look at the bottom there's a series of sponsors.",
+      "Duration": 23,
+      "Offset": 65
+    },
+    {
+      "Sentence": "I usually assume that a DevOps or any kind of a research document like this would be sponsored by someone that's trying to sell me their thing.",
+      "Duration": 8,
+      "Offset": 89
+    },
+    {
+      "Sentence": "I see Amazon and I see Azure. An icy Google Cloud and a bunch of other cloud people. That seems like a big deal. I know right so the interesting thing and the really unique thing about this report is that it's not a vendor report right. This is not just a typical vendor report. This is rigorous research. It's like rigorous academic level research. I used to be a professor of a PhD and it's vendor and tool ignostic you'll actually notice. Several competitors on this report. Like you note.",
+      "Duration": 30,
+      "Offset": 98
+    },
+    {
+      "Sentence": "Azure Google Cloud is our collaborator in our diamond sponsor and so as you kind of scroll through the report as you probably also notice. It talks about capabilities. It talks about practices. It talks about strategies to drive high performance. It doesn't ever talk about a particular tool. It doesn't talk about particular things except a couple of places where we might list like an example right. It talks about ways to get better. It's never trying to sell you anything when someone looks at a report like this, I think that we as.",
+      "Duration": 32,
+      "Offset": 129
+    },
+    {
+      "Sentence": "Audience we is the people who are listening don't really have a way to judge weather report is good or not. We might look at it and say, well. This is well designed or this looks pretty or but sometimes these reports can be disguised like you say has event vendor could create it to try to sell me something but there is a nontrivial amount of research behind this. This isn't opinion that we're looking at correct right. This is pretty solid So what we actually do this. A 5 or 6 month process and and again right as I mentioned this is academic research, said the team behind this is myself.",
+      "Duration": 30,
+      "Offset": 162
+    },
+    {
+      "Sentence": "Mobile Gene Kim and we actually roll this into academic research. This is published in peer review and we have also rolled this. This is the year 5 for us. The core team. The first 4 years of research have also been published in the book accelerate In addition to all of the academic research that we've also published so.",
+      "Duration": 20,
+      "Offset": 193
+    },
+    {
+      "Sentence": "Right and accelerate we're going to have a link to this science behind DevOps with as you said yourself 'cause Humble Angene. Kim publish bite revolution out of Portland, Oregon, where I am.",
+      "Duration": 11,
+      "Offset": 214
+    },
+    {
+      "Sentence": "Yeah, so I guess to answer the second half of what you're saying, You're right. It can be really difficult to kind of figure out if someone is trying to sell you something or if it's real research. We do our best to be really clear about what it is that we are asking what it is that we're doing. We have a method section at the back of every research support that we've put out in the book Part 2 is all research right, which is funny. 'cause some people say, Oh, I didn't care about the research writers wanted to know what to do and some people say the findings are nice but I've read the reports.",
+      "Duration": 31,
+      "Offset": 226
+    },
+    {
+      "Sentence": "The left part 2 because it told me exactly what to do for survey methods, or what to do for system measures or what methods you were using it this morning I got.",
+      "Duration": 10,
+      "Offset": 259
+    },
+    {
+      "Sentence": "DM in Twitter from someone saying what clustering analysis methods. Did you use and why? Did you select that one and I need to know how to dig into this so we really do follow really rigorous methods that are not only rigorous but methodologically appropriate for the questions that were asking so not to put too fine. A point on it. This is not someone put out a survey monkey and then went into Excel and made some charts. I'm looking at the end here, and there is an actual whole section of the report that talks about your statistical analysis methods.",
+      "Duration": 31,
+      "Offset": 270
+    },
+    {
+      "Sentence": "Asian modeling and extensive footnotes on the research and the validation guidelines right and I love that you point that out, right structure. Equation modeling were also very, very careful debate. Explicit distinctions between what things are summarization write descriptive analysis. So, we have things about demographics informa graphics. What percentage of the industry responded where we are very careful to point out? Which things are correlations? Which things are predictions because we do.",
+      "Duration": 30,
+      "Offset": 302
+    },
+    {
+      "Sentence": "A step beyond just correlation, which things can you do that have been statistically shown to drive performance improvements across different areas of your business oh invite? Could I like skip to a spoiler. This is so my favorite thing.",
+      "Duration": 15,
+      "Offset": 333
+    },
+    {
+      "Sentence": "Lee and I can I just like dig into it 'cause this is much so. Everyone's like Oh, but this is going to work for me right our analysis for the last couple of years and in particular, this year. I went ahead and just dove into it. Even harder this year. We found statistically industry doesn't matter in a predictive way. There is no statistical evidence.",
+      "Duration": 21,
+      "Offset": 349
+    },
+    {
+      "Sentence": "To say that industry matters so if anyone out there is saying or their management is saying Oh, well. This won't work for us. These practices, or principles. Whether you want to call them digital transformation or DevOps or agile. You it won't work for us because I work in highly regulated fields. You know, I work in finance. I work in telecom. I work in Healthcare. This won't work for us because we were highly regulated. No, you know what I have data across well first of all I have over 30,000 data points.",
+      "Duration": 30,
+      "Offset": 371
+    },
+    {
+      "Sentence": "In dozens of industries and I've run this analysis and I did the most like rigorous statistical control methods that I could do in our predictive models and there was no statistical evidence that it matters. And I didn't even just group it into highly regulated or 9 highly regulated because then someone could come back and say, Oh, but we're more special were more highly regulated.",
+      "Duration": 22,
+      "Offset": 403
+    },
+    {
+      "Sentence": "I tested per industry. I tested technology separately financial services. Separately, government separately healthcare and Pharma. Separately, insurance separately telecom separately. There's no significance there? How can we as non PH DS except that stuff that is intuitively correct is in fact demonstrably wrong like I wish to work in banking and I would tell you that my gut says that it's.",
+      "Duration": 30,
+      "Offset": 426
+    },
+    {
+      "Sentence": "That environment in velocity in those things and matter and these things won't work for us in my wife works in Healthcare. But when you then show the data that says it's not the case. Why do we think these things? Why do we feel them in our gut and then find them not true well. So it's really interesting right. It's so interesting. You say that because so often people will come back and they will say.",
+      "Duration": 20,
+      "Offset": 457
+    },
+    {
+      "Sentence": "You know it's so great to see this data because it helps me confirm what I see and what I know to be true and then I'll have people come back and they'll say, Oh, this is so interesting because it's the opposite of what I see.",
+      "Duration": 11,
+      "Offset": 478
+    },
+    {
+      "Sentence": "Right and so sometimes people accused me of just doing confirmation bias. But we see surprises come up in the data right. We really follow the classic scientific method, we generate hypothesis first right based on industry experience based on the academic literature. Based on a lot of things that we want to test and then we have, like full rigorous research design to figure out what data we need to collect in order to test these hypothesis.",
+      "Duration": 31,
+      "Offset": 490
+    },
+    {
+      "Sentence": "Go collect the data and then I go through several steps to kind of test it and then we do test it and so we do have this situation where sometimes these.",
+      "Duration": 9,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Buy a CS or pre suppositions or confirmed and sometimes they're totally flipped on their head right one of my favourites is the idea that speed and stability are a trade off now. Some people have this firmly firmly held belief that in order to be stable. We have to slow down. We have to. But there's another core set of people that at least for a decade now have said no.",
+      "Duration": 28,
+      "Offset": 532
+    },
+    {
+      "Sentence": "I really believe in my heart that if we go faster. We will be more stable so how do we reconcile these 2 stories and how can? How can 2 groups of people believe something differently? How can we have 2 stories simultaneously so one story says.",
+      "Duration": 15,
+      "Offset": 561
+    },
+    {
+      "Sentence": "I have to slow down to be safe and to be stable and and that story that story makes sense right, I can perceive I can envision a story where slower releases are more safe because I can check it. I can test it. I can reassure myself. Now there's also another story that we can envision that says if I go faster. It's safer in. It's more stable because going faster means slower smaller releases. I mean right smaller bits smaller.",
+      "Duration": 31,
+      "Offset": 577
+    },
+    {
+      "Sentence": "Right I'm introducing smaller pieces in smaller risks. So it's actually more sustainable. But their intention. These are opposites stories. What we found over the last 5 years is that speed and stability move in tandem the highest performers get both there is no trade off and you point out here in the report that this is not a surprise this year. This is 5 years in a row that your cluster analysis has shown the relationship between throughput instability right.",
+      "Duration": 30,
+      "Offset": 609
+    },
+    {
+      "Sentence": "This is something that we let the data drive right. We did have this hypothesis well in early on were like I wonder which story is correct. I wonder I genuinely. I'm curious and it was funny because you don't Gina Jazz come in there like II think I know what it is, and I'm like that's cool. I'm going to let the data. Tell me when speaking of the data. You point out the data. This spread from the kind of the elite people that have their DevOps experience their CI CD kind of really dialed in.",
+      "Duration": 30,
+      "Offset": 641
+    },
+    {
+      "Sentence": "Folks that are what we would call the low performers and no disrespect to them. But we've all worked there where FTP ING every few months into production is your deployment strategy. You point out some pretty crazy statistics. I just want to read these really briefly 46 times more frequent code deployments.",
+      "Duration": 19,
+      "Offset": 672
+    },
+    {
+      "Sentence": "2555 times faster lead time from commit to deploy that's a That's a number. We gotta talk about. Yeah, that makes me very uncomfortable. That means that someone might check something and Gino January and not see it in production till March or July, and the elite performance have a much lower change failure rate. They're less likely to fail.",
+      "Duration": 22,
+      "Offset": 692
+    },
+    {
+      "Sentence": "Right and now when we think about that, though it's because when you do.",
+      "Duration": 4,
+      "Offset": 716
+    },
+    {
+      "Sentence": "Introduce code you're introducing very, very small pieces of code so.",
+      "Duration": 5,
+      "Offset": 721
+    },
+    {
+      "Sentence": "That introduction is small, it has a small blast radius oh that's with touches right attaches much less of your codebase when we think about making a change to code right. I mean, I use. I was a developer for a little. While we all think I'm going to introduce this piece of code how it's not going to break anything, it always breaks something right if I introduce a one line change how likely is that to break something it depends on the line. It depends on the light OK but if I introduce.",
+      "Duration": 30,
+      "Offset": 727
+    },
+    {
+      "Sentence": "Line or a thousand line change how likely is that to break something that's where you start getting into like you say the blast radius. I mean, you throw a Pebble into around in a ripple and how big is the blast and how big is the change in? How big is your down time so the other thing that we discovered this year. So we discovered these elite performers that are very much like the high performers in previous years right there, optimizing speed and stability because 00 I have so many things. I wanna talk about so I'll start with my high performers in my elite performers.",
+      "Duration": 32,
+      "Offset": 759
+    },
+    {
+      "Sentence": "Performers really are this group that is optimizing on speed stability. There, what we called high performers in previous years right there. This group that is continuing to push the bar there continuing to move forward. They don't make excuses. They're doing well year over year over year. We have this high performance group as well. There 46% of the market of the industry or 48% I love this.",
+      "Duration": 26,
+      "Offset": 792
+    },
+    {
+      "Sentence": "Because it's this incredible signal.",
+      "Duration": 2,
+      "Offset": 819
+    },
+    {
+      "Sentence": "That high performance is available to everyone. We're seeing this huge shift in the industry that this is achievable.",
+      "Duration": 7,
+      "Offset": 822
+    },
+    {
+      "Sentence": "All comes down to execution right you Trent you actually have AI'm looking at the report right now on page 20. You're showing the performance metrics overtime in 2016, 2017, 2018 and it's accelerating that movement. People are moving from low to high to elite there moving forward and becoming better at this and the time to restore service in incidents their failure rates. These things are changing your failing fast and failing often and getting their sites back up faster.",
+      "Duration": 31,
+      "Offset": 831
+    },
+    {
+      "Sentence": "So the high group is continuing to grow its continuing to improve the elites are the best or staying at the top of their game. The low performers, though, are starting to fall behind at increasingly larger rates right. The change failure rate is getting higher and we think it's because of increasing complexity in our systems right when you do go down. You go down hard. You discovered is it the systems or is it the people on their processes.",
+      "Duration": 30,
+      "Offset": 863
+    },
+    {
+      "Sentence": "Could be some of both right the processes aren't great. We can't keep up right or practices aren't great. The Cohen so and when you combine those 2 that's even harder right.",
+      "Duration": 9,
+      "Offset": 895
+    },
+    {
+      "Sentence": "So we discovered this additional group at the bottom of this low performance group and we called them misguided performers and at first. I had to convince my team a little bit about why I wanted to name the misguided 'cause. They were like oh that's not very nice and I'm like, Yeah, but that's why it's kind of perfect right. It's like when you make your mom. Mad like there's making your mom. Mad and then there's disappointing your mom right like don't disappoint is like the worst thing you can do.",
+      "Duration": 28,
+      "Offset": 905
+    },
+    {
+      "Sentence": "So the misguided performers. Let me describe them again. This is very this is completely data driven and by the way I will point out. This is 5% of our data so this is a non trivial group right. This is a good, solid set their deploying between once every 6 months. This other lead time for changes is also between once every 6 months, so this like a reasonable cadence right there going to be a whole bunch of people up there probably in highly regulated fields and government that are like yeah that seems good.",
+      "Duration": 29,
+      "Offset": 934
+    },
+    {
+      "Sentence": "Their change failure rate is actually better than our lowest performers when they introduce a change to the system. They only fail between 16 and 30% of the time.",
+      "Duration": 9,
+      "Offset": 965
+    },
+    {
+      "Sentence": "So they're like, sweet, we're doing pretty well probably because they have instituted strong policies and extra testing extra quality control right so.",
+      "Duration": 11,
+      "Offset": 976
+    },
+    {
+      "Sentence": "Like I'm imagining this story, not even imagining I work with clients. I work with customers. I work with organizations that say, we're going to take a slow and steady approach. We have this cautious approach to releasing software. It's slow but we have instituted so many guardrails around it OK. But when they go down. They are deploying such large large pieces of software that when they go down. They go down hard. They're down between one and 6 months and people look at me and they make this face like.",
+      "Duration": 30,
+      "Offset": 988
+    },
+    {
+      "Sentence": "Months to call your crazy your analysis is wrong, it's not though, because think abouthealthcare.gov.",
+      "Duration": 7,
+      "Offset": 1019
+    },
+    {
+      "Sentence": "Think about Sony right like when Sony was hacked, 4 times in a row right when they had security breaches. Customers might be able to access the system between like hours or days later.",
+      "Duration": 13,
+      "Offset": 1026
+    },
+    {
+      "Sentence": "But how long are we's fixing systems on the back end.",
+      "Duration": 4,
+      "Offset": 1040
+    },
+    {
+      "Sentence": "Right we are having to fix systems and infrastructure and restore data for weeks or months.",
+      "Duration": 8,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "This is a nontrivial problem, so when you spend.",
+      "Duration": 4,
+      "Offset": 1055
+    },
+    {
+      "Sentence": "Months getting ready to release software as we just talked about you are releasing this huge piece of change into the system that you could no longer understand the implications of when you said that the things can go down for that long. I just I winced because I would just assume that that was an outlier like I rememberhealthcare.gov I remember Sony. I remember the early early days of Xbox Live, but now we have.",
+      "Duration": 30,
+      "Offset": 1060
+    },
+    {
+      "Sentence": "The outage is being a couple of hours, I mean, even I think it was GitLab many, many, many years ago. I think deleted our production database. But even that was still measured in a day or a day and a half months seemed unconscionable. But I mean think of it. There are still websites right now that have planned outages for a whole day on a weekend. Oh, it's funny that you mention that I literally thought tweet about this and someone said it's 2018 in my bank is still down for like 6 hours once a month and you're not getting 596 hours down a month.",
+      "Duration": 30,
+      "Offset": 1091
+    },
+    {
+      "Sentence": "Right and those are planned outages what happens when you have an unplanned outage and again. This is this is not customer facing down time. This is what happens when you're down something happens, and you have to go down. Yes, the customers might be back up in a day. But how long does it take the rest of the team to pull your entire T of your system in your infrastructure in your data back online, but still you would say that if you were if she if we could grab a CPO for like a small credit union and then just drop them on this.",
+      "Duration": 32,
+      "Offset": 1122
+    },
+    {
+      "Sentence": "Right now they would probably you know who Rumph and they would say, Well, you know it's important to be cautious money. We're talking about probably highly regulated blah blah blah safety of the customer sure safety. The customer how much is it costing you to be down like this because also when you're down let's think about risk exposure security. And if you can too also related things in here if it takes you months to get to change through what happens to your.",
+      "Duration": 30,
+      "Offset": 1155
+    },
+    {
+      "Sentence": "Posture when you need to get a Patch through compliance update through a security Patch through and it takes you months to get through.",
+      "Duration": 9,
+      "Offset": 1186
+    },
+    {
+      "Sentence": "And then what's the difference between your regular change process and your emergency change process. It's well. One thing I might think about which actually you touch on a little bit in the report as well as the idea of manual work versus automated work. A lot of people would argue that those down times are a time for manual tasks that require a great deal of attention to detail.",
+      "Duration": 21,
+      "Offset": 1196
+    },
+    {
+      "Sentence": "Sure and we all know that manual work, particularly in times of stress and Overwork and burnout is where we tend to see more mistakes happen and by no fault of the people working so then you're only introducing more risk and more error and by the way. The thing I just mentioned when we are introducing changes in emergency situations. The emergency changes that were trying to introduce into the system as quickly as we can to recover from failure.",
+      "Duration": 30,
+      "Offset": 1219
+    },
+    {
+      "Sentence": "There's we usually skip testing, which is the time that we should not be skipping testing who has a tough one. I've been in the data center at the bank. When that happened if it's such it OK everyone. Let's test this stuff right. I mean, I've been working on systems that are down at hospitals and wear hours away from evacuating an ICU and we're desperately trying to Institute emergency changes. And right then it's like we have to get this change and we don't have time for tests.",
+      "Duration": 30,
+      "Offset": 1250
+    },
+    {
+      "Sentence": "Oh my gosh, we don't have time for tests like dear. Dear God in heaven. Please let this change work right.",
+      "Duration": 8,
+      "Offset": 1282
+    },
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 5,
+      "Offset": 1291
+    },
+    {
+      "Sentence": "Progress software is the creator the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 1297
+    },
+    {
+      "Sentence": "Answer documentation in a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 1331
+    },
+    {
+      "Sentence": "Your elites are doing very little manual testing. They're doing a lot less manual testing than the highs in the mediums. It's it's a very an elite performer in the DevOps space is a very automated group.",
+      "Duration": 12,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "Or their aunt or they're doing a very strategically, they have incredibly efficient test suites. They have great parallelization, so that they can be very, very strategic about exploratory testing manual testing where it matters. Right are low performers and especially our medium performers. If you don't have those test suites in place. Your then having to do manual testing right you're having to bang on the system.",
+      "Duration": 29,
+      "Offset": 1364
+    },
+    {
+      "Sentence": "Everywhere, but if you have these incredible test suites in place that by the way have been developed.",
+      "Duration": 5,
+      "Offset": 1394
+    },
+    {
+      "Sentence": "Why developers and by testers because when developers help write tests we write better and more testable code right when we know that it's going to need to be tested rewire more testable code.",
+      "Duration": 11,
+      "Offset": 1401
+    },
+    {
+      "Sentence": "But if we have everyone having to do all of our tests manually that's just not scalable and these are best practices, though one of the things that I feel like people aren't recognizing is that we are standing on the shoulders of Giants for a reason like a lot of these things that people these characteristics of elite performers are best practices and the people who are identifiable E demonstrably medium and low performers are shunning best practices explicitly.",
+      "Duration": 30,
+      "Offset": 1413
+    },
+    {
+      "Sentence": "And they're paying the price right and you know it's not always their fault or they're just scrambling to try to keep up.",
+      "Duration": 8,
+      "Offset": 1444
+    },
+    {
+      "Sentence": "Yeah, you have a quote here when you say the teams that adopt essential cloud characteristics or 23 times more likely to be elite performers water cloud characteristics. And why did you know? I love this part of the report so I'm going to give a tiny bit of context?",
+      "Duration": 16,
+      "Offset": 1453
+    },
+    {
+      "Sentence": "So often when we do this research and I will point this out, too. We do point out that kind of work into the section of the report. We ask questions about where people are are they in the cloud. Or they not in the cloud and we say you know the fact that we, as an industry are unclear about if we're in the cloud or not can explain why so many reports and vendor reports don't reflect our experience and so when we're doing research and even internal to our own organizations when we're doing metrics and monitoring and.",
+      "Duration": 31,
+      "Offset": 1470
+    },
+    {
+      "Sentence": "It's so important to make sure we have good, solid definitions of what it is that we think we're reporting on what it is. We think we're measuring and so one thing we did in the report is I included sort of a gotcha question. Honestly, we started by asking if people are in the cloud. Just a simple question right if you're if the primary servicer application that you're working on is in the cloud. How much do you agree with that statement and then we moved on to a very solid definition of what?",
+      "Duration": 30,
+      "Offset": 1503
+    },
+    {
+      "Sentence": "Computing is and we pulled that from Nest Right National Institute of standards and technology.",
+      "Duration": 5,
+      "Offset": 1533
+    },
+    {
+      "Sentence": "Because they have a definition of what it actually means to be doing cloud computing and it pulls down to 5. Ascential characteristics and so then we asked people if they do these 5 things for the primary server application that they work on and only 22% of people who previously said that they are working in the cloud are actually doing these 5 things.",
+      "Duration": 21,
+      "Offset": 1539
+    },
+    {
+      "Sentence": "I think this helps illuminate what's happening when people say, Well, you know, we moved to the cloud. But we don't see any of the benefits that people say come from the cloud and we're like OK. Yeah, like you can't just say you're in the cloud and it doesn't work right. I think Cory Quinn had this hilarious tweet. The other day, saying like you can't just like throw a sticker on your data center and say that you're in the cloud now.",
+      "Duration": 20,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "So these 5 characteristics of what actually makes cloud computing or this so the first is on demand. Self-service you can provision resources as needed automatically without human interaction. You can't put in a ticket if you use a ticket fail sorry. Love you fail number number 2 broad network access capabilities are available through anything mobile phones tablets, laptops workstations.",
+      "Duration": 30,
+      "Offset": 1583
+    },
+    {
+      "Sentence": "Number 3 is resource pooling resources are pooled in like a multi tenant model K so physical virtual resources or dynamically assigned and reassigned on-demand number 4 rapid elasticity. So now most people think about this? When we think about the cloud right. So we can think about like bursting and stuff, and the number 5 is measured service. So here is where our cloud systems can kind of automatically control and optimize resource use and again this is where kinda bursting comes right.",
+      "Duration": 30,
+      "Offset": 1613
+    },
+    {
+      "Sentence": "In the resource usage can be monitored controlled and reported for transparency. This this one is also really nice right because of the reporting aspect. The elasticity aspect of things. I love that word in the context of the cloud. The idea that provision and release stuff that scaling isn't a life event like it used to be right. Yeah, I was, I mean. I remember those days. I love how you say that's not a life event work at a company called 8hundred.com?",
+      "Duration": 31,
+      "Offset": 1644
+    },
+    {
+      "Sentence": "00.com, you probably should not go there now 'cause I have no idea what's there, but this was back in the early days of the Internet when it was like everything had 33 letter domains like Oh, yeah, I worked at 8hundred.com and it worked at gear.com when you could actually like have that idea for a noun and use all the vowels and consonants. You didn't have to like remove the vowel to be creative.",
+      "Duration": 22,
+      "Offset": 1676
+    },
+    {
+      "Sentence": "Oh yeah, and uh well. I remember when we went and sold 3 DVD's for a dollar. That was our big, Black Friday sale and scaling from 3 machines to 6 like involve driving down to PC Micro Center and getting the machines and racking them like it was rapid elasticity was scaling in a week and a 2:30 week period and it was extremely stressful. And it was, but it was the way that we did DevOps 20 years ago.",
+      "Duration": 28,
+      "Offset": 1699
+    },
+    {
+      "Sentence": "Oh yeah, well and back, then, it was much more difficult right like it was a lot harder. We didn't really have you know distributed systems set up the way we do now. I mean, I used to work in datacenters. My first job was on a mainframe so II mean I feel this. I was working in labs. I was laying cable so the report can be gotten online and I'm going to make sure that we have a link to that cloud platformonline.com. And there's a link to go directly that I'll make a little Lincoln all tweet about it as well.",
+      "Duration": 31,
+      "Offset": 1728
+    },
+    {
+      "Sentence": "To point out there's even more depth in the book accelerate the science behind DevOps. It's like 203, 100, Page Book and you got some praise from people that don't typically praise books. You've got common Mary Poppendieck in there. You've got Martin Fowler. Why did this book land so well? Is it because of the rigor of the science behind it?",
+      "Duration": 24,
+      "Offset": 1760
+    },
+    {
+      "Sentence": "I think there's a few things right. I think the rigor really helps because then it's not just a bunch of like this is I think this is a good idea. I think this is kind of an opinion I know. Yeah, the rigor really convinced Mart and you know, we've been following our work for the last few years and I will actually say he he was sort of a big nudge in writing. It I bumped into him at a conference and he pulled me aside and he said. You've got to write this book or my God. Did I know I'm busy because no if you don't write it, I will I was like.",
+      "Duration": 30,
+      "Offset": 1784
+    },
+    {
+      "Sentence": "So he was getting up at Martin Family Fountain View and he's like you need to write this and you're like. Dude, I know Martin salary as well for sure. I don't know. He was so funny well and then I told him later that his threat to write the book and if I didn't, he would, he goes. I was kidding. And I was like well. It's probably good. I didn't know you were kidding because that's what kicked my butt and to care. The gaze of Sauron is turned in our direction. We better get this book out before Fowler writes it for us.",
+      "Duration": 30,
+      "Offset": 1815
+    },
+    {
+      "Sentence": "So and it's interesting because that also made sure that I had a really, really solid section in the back. So the interesting thing is some people love the whole book. Some people really love part so we have 3 parts part. One is everything that we have found its findings. The results what we found the research and transformation to research and transformation part 2 is the science behind him. My nerd moment came when my PhD advisor texted me and she said. This is like a beautiful take on.",
+      "Duration": 30,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "Kind of an elegant take on survey measures and how to do them and how to lay it out the right way, but also how it relates to a few other people have actually deemed me which I think I'm a little proud of 2? How to relate it to system measures so if you're in an organization and you want to capture measures out of Systems 'cause That's actually what I started from doing systems and log analysis and how to think about measures this way. How to relate them and how to measure things and how to think about them. Input data together an analyze it in a good holistic way.",
+      "Duration": 31,
+      "Offset": 1877
+    },
+    {
+      "Sentence": "We love that 'cause like they've read the reports or they're like, I already know what I'm doing but I need to think about measurement in an organization and communicating measurement and then part 3 is a case study from ING so how to put all of this into practice and that was actually contributed by Steve Bell and Karen Whitley Belt. They were very, very lovely and gracious they were early readers to the book and they said. You know you really it might help people to be able to visualize what this looks like in practice and.",
+      "Duration": 30,
+      "Offset": 1909
+    },
+    {
+      "Sentence": "You know my.",
+      "Duration": 0,
+      "Offset": 1940
+    },
+    {
+      "Sentence": "I think I am best served writing about the science and I've helped organizations through this and we were on a phone call and they said. We'd be willing to write it for you and I was like Oh my gosh. What yes thank you. So yeah, it was fantastic. So it was nice that it kind of came together in those 3 parts. Great yeah, and some people love that part the best, because they can see it and feel it in the way that Steve and Karen have written. It is really like a day in the life. It's walking through what I want to point out also just as we closed.",
+      "Duration": 30,
+      "Offset": 1942
+    },
+    {
+      "Sentence": "Here that you would think that uh books with this much work behind it, which meant this much science would be very expensive and you be spending 5060 bucks on it, but you can go up on Amazon right now and the Kindle version of this book is very modestly priced you get in paperback and I think it's just a fantastic resource. This is not a pamphlet. This is 300 pages of really, really thoughtful research by some experienced focus in the space and I really appreciate you coming on the show with me today.",
+      "Duration": 26,
+      "Offset": 1973
+    },
+    {
+      "Sentence": "Yeah, thanks for having me it's been great to chat.",
+      "Duration": 2,
+      "Offset": 2000
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 7,
+      "Offset": 2003
+    }
+  ]
+}

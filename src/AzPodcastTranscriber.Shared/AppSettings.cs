@@ -9,6 +9,10 @@
         public string CosmosDBAuthKey { get; set; }
         public string CosmosDBDatabaseName { get; set; }
         public string CosmosDBCollectionName { get; set; }
+
+        public string GitHubToken { get; set; }
+        public string GitHubUserName { get; set; }
+        public string GitHubRepoName { get; set; }
     }
 
 }

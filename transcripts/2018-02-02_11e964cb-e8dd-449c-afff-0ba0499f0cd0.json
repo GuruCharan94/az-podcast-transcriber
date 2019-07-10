@@ -1,0 +1,343 @@
+{
+  "id": "11e964cb-e8dd-449c-afff-0ba0499f0cd0",
+  "Title": "Empathy in Technology Product Design with Venture Capitalist Sarah Kunst from Proday",
+  "PublishDate": "2018-02-02",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/d8793d94.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Sarah couldn't. She is the founder and CEO at pro day. Anna long time investor and venture capitalists? How are you? I'm great? How are you? I'm very well so you rap pro day is pretty amazing. I've been checking out the website at Pro Day Dot Co and it basically let's you workout with your favorite professional athletes and work alongside them. It's pretty pretty clever idea but this is.",
+      "Duration": 30,
+      "Offset": 40
+    },
+    {
+      "Sentence": "First foray into into business and companies you been doing startups and tech for a very long time, I have. Yeah, pretty much my entire career and one of the things that you said to me that I wanted to talk about today was how empathy matters in software development but then I thought you were going to go in a certain direction. I thought you were going to talk about the importance of empathy for empathy's sake. But you said no. This is about shipping cool stuff and this is about making money, yeah, absolutely.",
+      "Duration": 30,
+      "Offset": 71
+    },
+    {
+      "Sentence": "I want to be a good person because we live in a world that's very hard to live in if everyone is not a good person, but it's really there's a business imperative too. And I think that sometimes that gets a little bit lost and we feel like when we talk about things like empathy in design or in Tech, it sort of. For the fuzzy reasons, and it is, but there's also a lot of cold hard cash reasons, too, so I'm excited to talk about that, yeah, and when did you start developing this perspective?",
+      "Duration": 28,
+      "Offset": 103
+    },
+    {
+      "Sentence": "You know, I think for me, I remember in in either high school or college. I was in a class learning about automobile design. I'm from Michigan and so, so the Big 3. Automakers are weigh heavy on all of our minds, there and they were talking about how I think in the 60s women had started to drive a lot more. And so they wanted to do better a better job of selling cars to women or at least 2 if you have a car that a woman hates and there's another car that the woman hates less the odds are that.",
+      "Duration": 32,
+      "Offset": 132
+    },
+    {
+      "Sentence": "The husband even if he's the one making the purchase decision and it's in his name is going to buy the car that the woman hates less so they were working on this idea. And they got all the engineers. 'cause all the engineers were meant they made them all come to work. One day and they put them in skirts and heels, and purses and give them lipstick and all of this stuff right perfume like everything that that women. You know at the time we're probably going to be wearing as they were in a car and they made them do all of these tests dressed as women, an immediately the guys were like.",
+      "Duration": 31,
+      "Offset": 165
+    },
+    {
+      "Sentence": "We need a place to put the purse like if you have all your stuff in this purse. You don't want it like in the backseat or flying around in the seat next to you step on the brakes and it goes flying like do. We need a place for the purse or they'd realize that if you were wearing like a tighter skirt and you're trying to get into the car. You really struggle because you can't sort of like hike one leg up and then sit and then the other and so they just realize all of these things in like this, 2 hour sort of test period that completely changed the way they thought about building cars.",
+      "Duration": 30,
+      "Offset": 196
+    },
+    {
+      "Sentence": "Wasn't or designing the interior car and it wasn't that that they were doing it because you know these auto workers were secretly feminist right. They were doing it because they needed to be able to more effectively sell cars to half the population.",
+      "Duration": 15,
+      "Offset": 227
+    },
+    {
+      "Sentence": "Interesting they were presented a problem. The problem was here now you wearing a skirt and you have a purse make a very comfortable car and that's the problem.",
+      "Duration": 9,
+      "Offset": 244
+    },
+    {
+      "Sentence": "Interesting I don't understand why walking in someone else's shoes isn't so obvious why we aren't starting our design from that that route place, yeah, and it even little things right like I'm African American, but a lot of my friends are not. And so I started making sure that I have some screen because I would feel really bad when I would be friends would come over during this summer and you know they'd be like, Oh my God, like we're going to go over this hike or whatever do you have sunscreen and I'm like no sorry and then they get these crazy sunburns?",
+      "Duration": 32,
+      "Offset": 255
+    },
+    {
+      "Sentence": "Fair I've only gotten one sunburn in my life and it was, it was on a medication that made my skin photosensitive. I had no idea what it felt like because, like try to imagine if you just never had a sunburn and you get a sunburn as an adult and you didn't realize you got a sunburn. I thought I was dying. I thought that I had had some sort of chemical burn or something over my entire body. I didn't know what it could be. I thought I was going to die. And I was explaining it to friends and they were so worried about me and finally one of them looked at me.",
+      "Duration": 31,
+      "Offset": 288
+    },
+    {
+      "Sentence": "You have a sunburn, but I had no idea and ever since then. I'm like OK. I'm going to keep sunscreen on hand because I had no idea that this is what was happening to my friends and so it. It is obvious, but I think often we need a catalyst either a business imperative or personal experience that makes us go Oh wait. I need to purposely think about. Other peoples perspectives to make sure that they are happy or comfortable or lucrative or whatever your goal is.",
+      "Duration": 30,
+      "Offset": 320
+    },
+    {
+      "Sentence": "One of the phrases that I'm not a big fan of in the news right now is this as a father of daughters, and then the whole thing why is it that something big has to happen to cause someone to have it be a catalyst for change why are we not taught that empathy for others right off the bat I think that we are taught empathy in a broad strokes sense right like if anyone tells you sorry my mother just died we have a knee jerk empathy right so I think that we're taught that for big things.",
+      "Duration": 32,
+      "Offset": 351
+    },
+    {
+      "Sentence": "Really universal themes. I don't think that we are taught think that there is something that we do. That was very well intended but is not well executed right. This idea of sort of. I don't see gender. I don't see race. I don't see whatever which is yes, like we understand right. The same way that a baby doesn't really see gender race and that's good. You want to be able to love everyone, but I mean babies also have to wear diapers. 'cause they can't control. Their bowel movements like as we grow up. We have to have more nuance around these things.",
+      "Duration": 30,
+      "Offset": 384
+    },
+    {
+      "Sentence": "Have to say you know, Hey? What is it like if you know another favorite example of mine is my dad is a foot taller than my mom and so he he hung a mirror once in their bathroom and my mom couldn't see it because it was so incredibly tall because he just held it up at his head length and hung it because that's how you hang a mirror right if you want to use it to do your hair and so it was just this really funny and small thing where my parents have been very happily married for 35 years and.",
+      "Duration": 31,
+      "Offset": 415
+    },
+    {
+      "Sentence": "That doesn't mean that you're going to always have that sort of knee jerk and pathetic thought because it's not it is not.",
+      "Duration": 11,
+      "Offset": 447
+    },
+    {
+      "Sentence": "It's hard to think about always Hey? How is this affecting the other people around me? Who need this product or who will use this product in so I do think that there is especially in engineering. A piece of it that needs to go into you know really this back right when you're expecting out of product when you're thinking about what you're going to build who are the stakeholders and then how are the stakeholders different from each other? I think is a piece of it that we sometimes miss Ann we just sort of build a product for ourselves and figure Hey.",
+      "Duration": 30,
+      "Offset": 459
+    },
+    {
+      "Sentence": "And so if I like in other people will like it and that's not.",
+      "Duration": 2,
+      "Offset": 490
+    },
+    {
+      "Sentence": "Always the way it works, it feels like that there is a sweet spot between understanding the persons perspective as well as just objective objectively. Speaking as an outsider so there's value in being deeply empathetic, but there's also value in being detached, yeah, and I think that's part of it. I think that there is I think you really do need to do both right. You need to think about. Hey, what do I want because I do think it's hard to build products that you're completely divorced from just because?",
+      "Duration": 30,
+      "Offset": 494
+    },
+    {
+      "Sentence": "Have more of an Anna subject process so you do need to think like I am a human and I represent to some extent, the human experience right? What do I think wanted need but then also think about who are the other stakeholders and almost treat them all equally right. I think that's a detachment piece where you don't say well. This is what I want and 30% of the audience will want what I want so we should prioritize that because I'm the one building, it, but instead sort of treats every stakeholder is kind of equal and say how do we build this?",
+      "Duration": 30,
+      "Offset": 525
+    },
+    {
+      "Sentence": "That will work for everyone, there used to be complaints about like the really the older. I phones that they were too small right guys would say that so tiny. I feel like you know, I want a bigger phone and then now you have these massive massive massive iPhones and granted Apple sort of. They decided not to go straight down the middle right. They made the really, really big phones and the and now they continue to make the smaller phones instead of just picking one. But if you give a 5 foot tall woman one of the massive phone, she's like.",
+      "Duration": 31,
+      "Offset": 557
+    },
+    {
+      "Sentence": "This is terrible like it's like a basically an iPad if you give a 7 foot tall NBA player under the little phones. There, like I can't hold this. This is a phone for ants. You know, so it's important. I think to think about those practical things and then decide do we build 2 product? Is there a happy medium like? How do we meet these people's needs but I do think a lot of it is even just having that moment of thinking about it. I think a lot of interesting solutions come from there.",
+      "Duration": 26,
+      "Offset": 589
+    },
+    {
+      "Sentence": "How far do you go though I think that people on the naysayers side would say that in some ways were being and they use the word politically correct. I would just say overly inclusive like you can't hit 100% because you could spend all of your time on that last 2%. I mean, nobody nobody so one engineers. Love spending all their time on the last 2% right. Let's be honest, prying a product out of an engineer his hand to push it into development when there's 1 tiny thing that could be fixed if we only had 7 more weeks.",
+      "Duration": 31,
+      "Offset": 616
+    },
+    {
+      "Sentence": "Is every is every product manager is biggest biggest job so one you know? I certainly think that engineers out of out of anybody have a unique skill set an interest in this sort of perfection. I don't think it's politically correct again. It's about money right and if you are an engineer and you run a company or you work at a company you really want your company to make money so that you can keep getting a paycheck and eventually sell for billions of dollars right. So, your stock price goes up and your equity is worth more so.",
+      "Duration": 30,
+      "Offset": 648
+    },
+    {
+      "Sentence": "Business case is we live in a capitalist economy in America and lots of other places around the world. An money makes the world go round. Fortunately, or Unfortunately, so if you're talking about doing something that cuts out half of you know the population. There is a famous example again of Apple. They release their Apple Health Tracker and they didn't just sort of say, Oh, yeah. Here's Apple Health Tracker. They said this is the most comprehensive health tracker in the history of the world and this is the best health tracker ever. Guess what they did not do at all.",
+      "Duration": 31,
+      "Offset": 679
+    },
+    {
+      "Sentence": "They did not track women's ministration so 50% of the world right and I would say probably a solid assuming that the average. Apple iPhone user is is North of 12 and South of you know, let's say 65 right 8090 percent of the population of women using iPhones.",
+      "Duration": 25,
+      "Offset": 711
+    },
+    {
+      "Sentence": "Could track their periods they have periods and this was not built in and again. It's fine if you say, Oh, it's a basic health tracker if you tell me it's the most comprehensive health tracker and you are not tracking something that happens to literally every single woman for a solid 30 to 40 years of her life. At least it's hard to believe that it's the most comprehensive health tracker right and so things like that and they got a lot of backlash for it and you know they also miss out on market share because in that whole a lot of other.",
+      "Duration": 30,
+      "Offset": 737
+    },
+    {
+      "Sentence": "Popped up and even now anytime you download a health app on the Apple apples begging you to use. Apple health and let you write to it, but the reason in large part that you're downloading. These other apps in the 1st place is because they're super comprehensive app wasn't so comprehensive after all, so you know, those kinds of business cases. I think are beyond obvious and I certainly would be hard, pressed to say that worrying about 50% of your user base is political correctness or overly inclusive right? That's sort of just.",
+      "Duration": 31,
+      "Offset": 769
+    },
+    {
+      "Sentence": "Wait so you know II think that that yes, there's always things on the margins, but but a lot of what we're talking about our basic block and tackle things that just haven't happened, I found an interesting article on your website on Pro Day Dot Co. Under fitness about the Nike Pro. His job and again. It's something that kind of the average person that looks like me might think well. That's kind of Obscur, but when you look at the article. It's really quite interesting because it was.",
+      "Duration": 30,
+      "Offset": 801
+    },
+    {
+      "Sentence": "The female weightlifter who is discovering that the one job. She had that was competition. Appropriate had issues with weight. It would shift while she was moving at 'cause breathability issues as I was reading about this. I would have to say. My thoughts and opinions about whether or not, that's a good product or not turn into engineering questions. I started to think about it in terms of engineering OK. This is a problem. We can solve this problem, apparently they worked very h*** ** this to come up with an athletic.",
+      "Duration": 30,
+      "Offset": 833
+    },
+    {
+      "Sentence": "Job yeah, absolutely mean when you think about it right in America. We don't see this, but but around the world something I mean, being Muslim that's it's the largest it's basically a religion. That's neck and neck in terms of with Christianity in terms of penetration around the world right and on top of that there's a disproportionate amount of Muslim people in emerging markets as we all know right. Emerging markets are where a lot of explosive growth is going to come from right.",
+      "Duration": 30,
+      "Offset": 864
+    },
+    {
+      "Sentence": "America, who wants to buy a piece of Nike workout gear right has a piece of Nike workout gear. You might want more pieces. They might come up with the fund new color technology, but we all have you know more more basketball shorts and leggings and T-shirts. Right then we know what to do it for the most part in this country in similar right in most of Europe, but then you look at places like Indonesia places like India places where a lot of this, this sort of organized sports.",
+      "Duration": 30,
+      "Offset": 895
+    },
+    {
+      "Sentence": "To take off in terms of worldwide competition right and there is a massive opportunity to sell products to those people right and so of course, you're going to optimize for Hey, there's a massive emerging market that were desperate to get a piece of and not only do we want a piece of it in general. We also a lot of times? What will happen in an emerging market. We've certainly seen this in India over the years is that they don't necessarily want American products right or European products, they want.",
+      "Duration": 31,
+      "Offset": 925
+    },
+    {
+      "Sentence": "That is sort of from where they're from, and speaks to them more directly and so then when you start to look at that you oh wait a minute if if they if we don't necessarily just get to go in. It's not like in China or Russia, where when American brands came to those countries. There was a massive pent up demand. An excitement for them right there. American brands aren't always the most desirable always now and so instead of somebody.",
+      "Duration": 30,
+      "Offset": 958
+    },
+    {
+      "Sentence": "You know, Nike in these regions right. Nike for Muslim people. Nike has to be in front of the business case, and say we really don't wanna lose this customer right. This customer doesn't own any Nike Gear and they could buy a lot of Nike Gear so how do we get in front of them and build that relationship and it is using their engineering resources. It is using you know their marketing resources. But it's also just having that empathy in the engineering and design to build what makes sense for that customer.",
+      "Duration": 30,
+      "Offset": 989
+    },
+    {
+      "Sentence": "One of the things that I've been excited about and I've started to realize in looking at the products and things that II use myself is that a lot of them were built by smaller companies. You know with the rise of Etsy were getting design, thinking and empathy from product that people are building in their garages. There's no reason that Nike needs to own that market other people could exactly and the good part about that right. The Internet sort of making that super flat and accessible and you see people. I don't know if you're familiar with.",
+      "Duration": 31,
+      "Offset": 1019
+    },
+    {
+      "Sentence": "Colours their brand I think out of Austin, Texas or somewhere down South and they've grown into this billion dollar behemoth because they realize that there is a massive need for well designed and attractive super super super durable coolers and it wasn't being met and that's something that you know, Amazon can have a billion different coolers that there selling but there are sort of optimizing for what's the cheapest? What's the whatever and this was a brand that somebody built, it to solve their own problems, and I think that.",
+      "Duration": 32,
+      "Offset": 1051
+    },
+    {
+      "Sentence": "That's sort of the sort of the opposite of what I was saying, but also a continuation of it when you if everyone at some extent is engineering things to solve their own problems or you're always biased heard solving your own problems. First then I don't believe really in trying to fight human nature on things so if that insulate. Humans are OK. So then if everyone looks the same is from the same University lives in the same town, then their problems are going to be much more similar if we have a much broader range of backgrounds experiences.",
+      "Duration": 31,
+      "Offset": 1084
+    },
+    {
+      "Sentence": "And perspectives in engineering pod right then we can actually solve their own problems. But we're going to do it in a much more empathetic way because we're bringing a lot of different perspectives to the table just as a bit of an anecdote. I think I've talked to you. Before that, I'm a type one diabetic and I wear an insulin pump even though I've been doing this for 25 years and one could argue that I'm one of the most empathetic diabetics out there about diabetes stuff.",
+      "Duration": 31,
+      "Offset": 1116
+    },
+    {
+      "Sentence": "Just talking with a lady at my kids school who is also a diabetic and she was complaining about how she had nowhere to put her.",
+      "Duration": 7,
+      "Offset": 1148
+    },
+    {
+      "Sentence": "Insulin pump and I didn't understand why it wasn't in her pocket or clothes have pockets there. There's so many clothes for when they have no pockets. She has a custom bra with an instant pot rocket. There is actually instant pump bra market absolutely and that's the type of thing right that you would just as soon as you said that I knew exactly what you were talking about because you know beta woman you constantly. I actually work out a lot and so it's so hard guys. It's really hard to find.",
+      "Duration": 30,
+      "Offset": 1156
+    },
+    {
+      "Sentence": "Don't have pockets right, but you almost never see girls in the gym in like basketball shorts right leggings. Almost never have pockets because the way they are designed and it's such a pain like I can't tell you how many times my phone is gone flying during the middle of a workout because it's not in a pocket and so recently. I've started only buying leggings and workout clothes and stuff that have pockets, in them because before that, I would have to wear a coat to the gym strictly because I needed a place to put my phone, while I was working out you can do the arm bands that their pain and so.",
+      "Duration": 31,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "Christine how something like that, to half. The population is obvious and to the other half. It's not and it has nothing to do with you know your preferences or biases or anything, it's just you go into the store and you buy pants and she goes in the store and she buys pants your pants will have pockets 100% of the time women's pants have pockets that actually work in our big enough for an insulin pump. Maybe 30% of the time you know it's pretty crazy. What a difference. That makes it really does so how are you applying all of these concepts around design thinking empathy?",
+      "Duration": 30,
+      "Offset": 1219
+    },
+    {
+      "Sentence": "Into the product that you make like proton, yeah, so you know, especially on mobile phones. It is interesting. When you were working on a platform that has so many constraints that are completely above your pay grade right so anybody who's built apps for Apple or products on Apple. You know you can't just say, Oh, well. I think this should happen. Apple says no this is the way that you can play within our walled garden right and so that is always an interesting challenge and we have a lot of conversations about fringe cases.",
+      "Duration": 30,
+      "Offset": 1250
+    },
+    {
+      "Sentence": "That a lot of times those can feel more like thought experiments and to be totally honest. Sometimes they are thought experiments, but I what I've found is that by having those discussions right. It makes when you have those discussions. It means that it's at least on your radar right so we might say Oh, you know should we have a logging tool or should we have a you know a way to read the website that is super easy to use.",
+      "Duration": 30,
+      "Offset": 1281
+    },
+    {
+      "Sentence": "You know with disabilities and then we say. Honestly, we don't have disabilities. We don't know what that looks like. So then we'll go we might start with Googling and finding like a medium article or something about developer who has low hearing or vision and how their top things to think about right when building it out for those populations. We might look into Apple's documentation itself and say OK. What is Apple? Do are there solutions sometimes you want to build a solution then you find out Oh no Apple actually?",
+      "Duration": 30,
+      "Offset": 1312
+    },
+    {
+      "Sentence": "Disability mode that does XYZ already and so it's not always and I think this is a big part of it when you set out to engineer with empathy. It's not always that you end up building fundamentally different solutions to some extent, you're just taking the sort of surprise out of it right. It's like the QA process. Sometimes you go through QA and you find huge giant bugs that you have to fix other times, you go through QA an you've done everything perfectly and it works, and it can ship right. It doesn't mean that you if you do QA.",
+      "Duration": 30,
+      "Offset": 1343
+    },
+    {
+      "Sentence": "Bugs you wouldn't say OK. I'm done right, like I'm never doing QA again. I've clearly imperfect and it will never be wrong again. It's still a needed kind of thought experiment to go through and so you know it that I think is important thing to remember that, you don't want to say, Oh, well. It was all. I don't understand what we would need to change or there is nothing to change, so don't worry about it is really not.",
+      "Duration": 30,
+      "Offset": 1374
+    },
+    {
+      "Sentence": "The way to go you really do need to say every time OK, you know it worked. This time, but we're still going to keep investigating it and I think when you keep that mindset really interesting things pop up and the other cool thing about engineering is you never know when by being more empathetic you're going to stumble onto a whole massive market that you would have not seen otherwise and so I think that there is a huge business case for it. An it's also kind of fun. You know being in that stage of learning and just thinking about new problems and new ways, is one of the best.",
+      "Duration": 34,
+      "Offset": 1405
+    },
+    {
+      "Sentence": "Yeah, it's interesting because I'm sitting here thinking about how what we used to think of as niche as there are no nixas if it's 1% of the world is still a massive market. So what you're saying is absolutely true. You could build a billion dollar company on each absolutely.",
+      "Duration": 15,
+      "Offset": 1441
+    },
+    {
+      "Sentence": "Interesting so when do you think we need to learn teach this in schools? Is empathy in design and empathy in software development something that needs to be taught in CS 101.",
+      "Duration": 8,
+      "Offset": 1457
+    },
+    {
+      "Sentence": "Yeah, I Mean II think that it is AI think in every part of product development right so from thinking about. Why are you building a product in the 1st place to design to engineering it's it's an integral part of it right and I think it's especially in engineering because so often. Engineers are the ones you know the designer might say Hey. This is what I want but often if it comes down to push back from the engineers right that they're going to win out because they're the ones actually building it right so.",
+      "Duration": 31,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "Understand why this empathy matters, they might see something in the designer in the product fact that doesn't.",
+      "Duration": 5,
+      "Offset": 1499
+    },
+    {
+      "Sentence": "Seem intuitive to them or doesn't seem useful or needed an I think that having that that grounded that grounding and understanding and here's the business case in the innovation case for why we care about empathy is super helpful and I do think the earlier you started the better right. If you've ever spent time on college campuses with engineers. They always you know typically at that stage in your life. You know you don't have a ton of experience in life because you know you've never had to buy a car by yourself, maybe or have a mortgage or had kids.",
+      "Duration": 31,
+      "Offset": 1506
+    },
+    {
+      "Sentence": "Sometimes you'll see that college engineer is sort of always want to build the same tools right every college is like Oh, there's not enough parking on campus or there's we need to build an app for parking or there's not you know, we need something. So we can play video games with other friends easier. We don't want to use Twitch. It slightly better than Twitch and and we've taught engineers to kind of think their way through the sort of startup road map of does that make sense is that good is that what we want to do and we've done a good job of getting them to think through that I think that.",
+      "Duration": 30,
+      "Offset": 1538
+    },
+    {
+      "Sentence": "Space that we are missing is how do we get them to think through some of these empathy challenges in the same way right an it's not hard. It's just another piece of good engineering and good design and good product development that we need to teach early.",
+      "Duration": 18,
+      "Offset": 1569
+    },
+    {
+      "Sentence": "It's so interesting that now we seem to find these things if we don't teach them up front we end up finding them in user testing like the now legendary faucet detector that can't see black hands exactly exactly or in China. The face unlock is being unlocked by other people and it's certainly not these are when you get to things like AI in machine learning right, which is a largely with the face lock is it's not.",
+      "Duration": 30,
+      "Offset": 1588
+    },
+    {
+      "Sentence": "Point you know a human.",
+      "Duration": 2,
+      "Offset": 1620
+    },
+    {
+      "Sentence": "When we teach machines right machine learning means that we're teaching machines basically everything that they can learn from us depending on how wide those parameters are and so, if you teach them how to tell Asian faces apart. They can television faces apart. If you don't then they can't right and so there is it's so as technology sort of gets exponentially better. The fallout or the risk of making the wrong decisions or not being empathetic enough early on.",
+      "Duration": 30,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "Right one thing that I thought was really interesting about the soap dispensers that can't see black hands. Is there is a question. You know that I saw on Twitter that said, what happens if self driving cars have the same problem.",
+      "Duration": 13,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "Right in an in it's a massive thing to think about and it's you know, and we see that in simple machinery. Right 5 year olds can't sit in the front seat because they're not heavy enough generally for the airbag detector to go off right. It's not that car companies want to kill your kindergartner. It's just that the way that that product is engineered and I think it's also the way to seatbelts are but you know the way that that product is engineered is unsafe for certain populations and we know that and we accept that.",
+      "Duration": 32,
+      "Offset": 1669
+    },
+    {
+      "Sentence": "Nology sometimes we think Oh, well, it works equally. It's technology. It can't be racist. It can't be sexist. It just works. But that's not always the way it does and so there are some big questions that we have to grapple with and quite frankly not only would it be terrifying if self driving cars couldn't see black people and started running them over. It would also be a public relations and financial nightmare for these companies that they very well, might not survive so from an empathy perspective and from a business perspective like these things have to be solved.",
+      "Duration": 30,
+      "Offset": 1702
+    },
+    {
+      "Sentence": "Yeah, I think that that point, though, that the root point that really hit me what you just said was you can't say, Oh, it's just technology. It just works as it was made by people. It was coded by people. It was designed by people 4 people. So the idea that people think that technology can't be by its definition, excluding that's just wrong. You know an interesting story that you might be interested in my family came over from South Africa and they were shocked at how many ramps there were they could not get there, they were just like.",
+      "Duration": 30,
+      "Offset": 1733
+    },
+    {
+      "Sentence": "Everywhere and they were freaking out and I said, well, yeah, there was a lot like you know 40 years ago, called the Americans with Disabilities Act. We have to have ramps so people can get up and then they started realizing that stairs are exclusive, yeah, excluding and they thought that everyone needs to have that we should have ramps for everybody. I thought that was so interesting they came from a town that just didn't have ramps.",
+      "Duration": 22,
+      "Offset": 1764
+    },
+    {
+      "Sentence": "Yeah isn't that crazy, it is an for and then for me to go and think it makes complete sense right like? Why would you have ramps everywhere but we do sort of take it for granted? Yeah, it's interesting how and you know that and we didn't touch on that and we are running out of time, but that the reason that America has so many ramps right in elevators and everything else is because of actually legislation because it wasn't apparent in obvious to anyone until a group of people got together and advocated for it. An it became a lot. You know, and so I think most engineers in most people in technology.",
+      "Duration": 34,
+      "Offset": 1787
+    },
+    {
+      "Sentence": "Phone problems before and not get to the point where government feels like they should step in and regulate but but then that becomes an issue of self regulation right if you are in a wheelchair or if you just broke your leg. You shouldn't not be able to get into buildings for any building ever like that. That's an insane way to live and so it was changed and hopefully with some of these technology questions. We can take ownership of these issues and make the world a more empathetic place ourselves so that we don't end up.",
+      "Duration": 31,
+      "Offset": 1822
+    },
+    {
+      "Sentence": "Government regulators coming in and saying Hey, you know you guys have to build ramps. It can't just be a stairway world exactly well. Thank you so much for sharing your thoughts with us today. Sarah Kunst, thank you. You can check out Sarah at Pro Day Dot Co and on Twitter. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 24,
+      "Offset": 1854
+    }
+  ]
+}

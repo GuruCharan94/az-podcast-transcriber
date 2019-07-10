@@ -1,0 +1,448 @@
+{
+  "id": "31d7baac-0d20-47c4-b94d-bcce571b0848",
+  "Title": "Getting started with Machine Learning and Sabrina Smai",
+  "PublishDate": "2019-01-25",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/bc09358c.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends today's sponsor is datadog a real time monitoring platform that unifies metrics logs and distributed request traces from your cloud containers and orchestration software you can track the health and performance of your dynamic containers your app services with a rich visualizations and machine learning driven alerts data dogs new cluster agent streamlines data collection from large container clusters and allows you to Autoscale. Kubernetes workloads based on any metric that you're already collecting with Datadog to start monitoring your container clusters.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "For a free trial today and data dog will send you a free T-shirt visit bitLY.com slash DATA dog shirt to get started that's bitLY.com data dog shirt.",
+      "Duration": 18,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another extremely handsome minutes. Today I'm talking with Sabrina's minds is a software engineer in the commercial software engineering team at Microsoft and works with partners to solve business problems using machine learning and artificial intelligence and I met you at a hackathon and is a hackathon where you got into ML&I.",
+      "Duration": 18,
+      "Offset": 57
+    },
+    {
+      "Sentence": "That's exactly where I got into artificial intelligence and machine learning and it was just such a fascinating space to be able to see all these incredible people in one room, using these technologies to impact the world and that's when I was sold.",
+      "Duration": 14,
+      "Offset": 76
+    },
+    {
+      "Sentence": "So you you are also a teacher and like teaching assistant and you taught at your college design kind of give back so it's kind of natural that you would be doing the same thing at hackathons and actually. I met you at a hackathon learned about AI and I wanted to bring on the show and talk about it. I'm super excited to be here. So hopefully other people can learn about how I got started in machine learning and hopefully as soon as they turn off this podcast. They want to like pull up their ID and get hacking with machine learning so.",
+      "Duration": 31,
+      "Offset": 91
+    },
+    {
+      "Sentence": "Looks like it's so many buzzwords as with anything you have to go and learn all the different acronyms in different different words and stuff, and I'm sure that people have had a lot of failed attempts at getting started like I know that I've tried and then just gave up and put it down for awhile now that seems to be a reoccuring sort of situation with a lot of people just attempting to learn something that's super broad and vast so completely understand yet. Did you have any trouble the first time that you installed tensor flow. The first time that I downloaded tensorflow? Is actually really funny because.",
+      "Duration": 32,
+      "Offset": 123
+    },
+    {
+      "Sentence": "That was the only one I remember I was looking at all these demo videos of these neural networks. Learning how to play super Mario and like star craft Dota and like League of Legends and I even saw like a 17 year old that built a rap song builder for Connie West using LSTM and I'm like OK. I need to learn this ML stuff. It's way too cool and I remember that night. I tried installing tensorflow and this is a typical story that people that attempt machine learning for the first time and then they go in copy and paste code from tutorials.",
+      "Duration": 31,
+      "Offset": 156
+    },
+    {
+      "Sentence": "Me, I was copying and pasting a tutorial that was from the emanus data set which is like for handwritten digits.",
+      "Duration": 7,
+      "Offset": 188
+    },
+    {
+      "Sentence": "And I remember I had no idea what was going on in the script, but I was getting great results from that Neural Network. It was fantastic. But every single modification that would that I would make would throw me an error because I was new to python syntax. I had no idea how to write a neural network.",
+      "Duration": 17,
+      "Offset": 196
+    },
+    {
+      "Sentence": "And I was like OK. Let me take a step back and did what any seasoned newbie would do and binged it or Google then and what I typed in was how to write a neural network and of course to my surprise, not really. But there was all this. Mumbo jumbo math lingo and symbols that literally look like alien language. We were just talking about aliens, you and I before this podcast, so everything looked like alien languages and there was terminology in sentence is like.",
+      "Duration": 30,
+      "Offset": 214
+    },
+    {
+      "Sentence": "Look Morita activation function to transpose the product of derivative. You know backpropagation through time, but that did not make sense, but that's the stuff that you usually here and I completely felt defeated but I didn't want to give up so that just seems to be a typical story that a lot of people have and then you get super excited when you hear about like courses like course era with injuring get really excited and then maybe halfway through the course it still sounds like Zora's our Lord.",
+      "Duration": 33,
+      "Offset": 245
+    },
+    {
+      "Sentence": "Language so let me parse some of that, though, because there was a lot of information there and sometimes what happens when we're learning. These things and I think you just fell into the same trap is we throw out words or acronyms. We don't understand. So 2 that I didn't follow in your sentence just their first one was LS TM. We you said someone was making music long short term memory units in recurrent neural networks and then you, said MNIST What are those things so LSTM exactly right long short-term?",
+      "Duration": 30,
+      "Offset": 279
+    },
+    {
+      "Sentence": "Memory, which is a recurring neural network architecture and it just well in this specific case. It was learned to use learned to learn the style of Connie West to sort of generate music so this is mainly used in cases like that, and the Ms data set is a data set of just handwritten digits that it's kind of the Canonical example data set where a lot of people use to learn, especially learn neural networks.",
+      "Duration": 31,
+      "Offset": 310
+    },
+    {
+      "Sentence": "And it's just a data set of handwritten digits, and you're trying to train a neural network too.",
+      "Duration": 4,
+      "Offset": 342
+    },
+    {
+      "Sentence": "Try to read what they are.",
+      "Duration": 1,
+      "Offset": 348
+    },
+    {
+      "Sentence": "So it seems like there's a lot of these datasets. Those pictures ones. There's cats. There's handwriting. This is a really common thing and some of these are like like 2030 years old, they're just like files and somehow they became the Hello World of machine there. Right yeah, especially the cat and dog for deep learning is it a cat or is it dog. VMS data set is another good one. The iris data set is another another Canonical example that a lot of people use for classification problems.",
+      "Duration": 30,
+      "Offset": 351
+    },
+    {
+      "Sentence": "Yeah, those are definitely the famous ones so.",
+      "Duration": 4,
+      "Offset": 382
+    },
+    {
+      "Sentence": "Are these ones that everyone learns in school? And if we are now out of school and listening to a podcast are these the hello worlds that we're going to go out and learn about and try when we do our own self self directed learning. It seems to be the examples that you see on line over and over again like on kaggle you. See you see it a lot in the tutorials, so there's sort of everywhere and a lot of people talk about them. They're just really their examples that you just constantly see online. So yeah, these are great examples for you to get started on.",
+      "Duration": 29,
+      "Offset": 387
+    },
+    {
+      "Sentence": "Like I think for binary classification when I was like helping to teach.",
+      "Duration": 5,
+      "Offset": 417
+    },
+    {
+      "Sentence": "Uhm I think the iris data set is the one that I was really focusing on the Ms data set is the one that I attempted to learn because that was the first thing that popped up when I typed in how to write a neural network, but again there was all these.",
+      "Duration": 15,
+      "Offset": 423
+    },
+    {
+      "Sentence": "Crazy vocabulary that I had to learn that's why I decided to learn to shift my learning approach to try to speak alien instead so I was typing up.",
+      "Duration": 10,
+      "Offset": 439
+    },
+    {
+      "Sentence": "I was typing up these machine learning. Turns out to use instead of trying to follow these tutorials. It wasn't really helping me so you just showed Kegl KGGLE. It looks like it's like the CSS S workshop or JS fiddle or think it's one of those websites where you go online and you mess around in a sandbox so this is the JS fiddle of machine learning. I think that's a good way to put it. Actually, yeah, so a lot of people. Ask me like Hey? What are your tips on trying to learn machine learning and one of the tips that I?",
+      "Duration": 32,
+      "Offset": 451
+    },
+    {
+      "Sentence": "Liz kaggle competitions are really good way to not only make money. But you actually get your hands dirty and tried to learn how other people solved solutions, but also there's a bunch of datasets like the iris data set that's actually on Kaggle is all these different competitions that you can get part of and learn how to?",
+      "Duration": 24,
+      "Offset": 483
+    },
+    {
+      "Sentence": "How to apply these machine learning techniques through practice well hang on you said make money now I'm over here at kaggle.com slash competitions. And there is like for example, at the time of this recording can you identify a humpback whale by its tail? There's 1300 teams that are all competing for $25,000? When did this happen there given money away is this like the Netflix challenge now and they're gonna give us cash for solving problems likely right, I mean, a lot of these companies are.",
+      "Duration": 30,
+      "Offset": 508
+    },
+    {
+      "Sentence": "Unique solutions for a lot of their problems and they're actually going into Calculon just proposing a lot of money for a bunch of data scientists or machine learning engineers or even developers that are just wanting to use their creativity to try to solve a challenge and.",
+      "Duration": 18,
+      "Offset": 540
+    },
+    {
+      "Sentence": "People get jobs from Kaggle people get money and it's funny. I've never won money from Kaggle, but there's a chance that you might I'm like I think about this. I know nothing about machine learning. I know skwat and I'm sitting here right now like think I could maybe win this money like I could how hard could it be right. It's like a whale tail. I want to look at the tail is basically what they're doing is it got all these photos of whales breaching and then there were tail goes down.",
+      "Duration": 30,
+      "Offset": 559
+    },
+    {
+      "Sentence": "They have 25,000 images.",
+      "Duration": 1,
+      "Offset": 589
+    },
+    {
+      "Sentence": "In the Happy Whale database happy well. One word, and basically they want you to give back as CSV file a comma separated value file with the jpeg picture name and the whale. You think it is like that's awesome. And you could win money now and even for people that are just getting started. There's a lot of data sets that are actually a lot of people tell you that the data cleaning side of things is the most difficult part because that's 80% of your time is in in that stage.",
+      "Duration": 30,
+      "Offset": 592
+    },
+    {
+      "Sentence": "One data sets that are actually have been cleaned for you. On Kaggle, so you can just kind of jumpstart into I mean. Of course, you need to do some analysis on the data. But then the feature engineering and some of the data manipulation. Aspect has been done for you so you can just apply your learning on machine algorithms and stuff like that directly on kaggle so.",
+      "Duration": 24,
+      "Offset": 623
+    },
+    {
+      "Sentence": "It's definitely a pretty clearly approachable so they don't seem to tell us that you just said that that most of machine learning is cleaning up the data is really it's a garbage in garbage out situation. That's correct but I've seen a couple of.",
+      "Duration": 14,
+      "Offset": 648
+    },
+    {
+      "Sentence": "Competitions on kaggle that already have it's meant for beginners and the data set has been cleaned slightly cleaned. I mean, it's still a little bit dirty, but it just allows you to just.",
+      "Duration": 11,
+      "Offset": 664
+    },
+    {
+      "Sentence": "Kind of jump start a little bit and make it easier for beginners so that's deeply cool OK. So you said that you started doing yourself direction learning as you were doing this in college and then out of college and working as a software engineer? What did you change to make your first failure turned into a successful learning approach as you were learning to speak ML? Yes, so that's an interesting question because I just wish I.",
+      "Duration": 25,
+      "Offset": 676
+    },
+    {
+      "Sentence": "Discovered this before hand and again there's no solution for learning like I can't tell you what the solution is for getting started with ML or learning because we're all unique individuals and we all have unique learning requirements. So I can speak about what worked for me and for me, I started to realize that when I was taking the Andrew Ng courses. And when I was learning through these courses and researching I was realizing that there is one thing that I was getting stumped about and it was.",
+      "Duration": 30,
+      "Offset": 702
+    },
+    {
+      "Sentence": "Machine learning vocabulary was throwing me off so.",
+      "Duration": 4,
+      "Offset": 733
+    },
+    {
+      "Sentence": "That's what I decided to do, I decided to change my learning focus to speak alien instead so for instance, if there was terms that were re occuring over and over again like activation function or back propagation or even that weird looking E symbol that you find in all these equations like? What is it and how do you calculate it so I decided to say Hey? Let me let me research that and it turns out that weird looking E symbol is the Greek symbol for Sigma, which is a mathematical wait for you to indicate the summation of an array or matrix.",
+      "Duration": 32,
+      "Offset": 738
+    },
+    {
+      "Sentence": "Months and months over and over again and things started to make sense so whenever I had something that was unclear like an activation function. I would isolate it and sort of ask a bunch of questions and then research them. So when I went back to these Andrew Ng Course is on course era and these courses that I thought were just really, really great for the first half and then started speaking alien. I flew through those afterwards, so the entering course is fantastic. I wouldn't recommend it for someone that's just really starting off.",
+      "Duration": 30,
+      "Offset": 771
+    },
+    {
+      "Sentence": "And for context, Andrew Andrew Ng that last name spelled ANG, he founded and LED Google brain and he worked it by do and he's a professor at Stanford and his his courses at Corsair and I'm going to have links for everything. Everything that Sabrina has mentioned is going to have links in the show. Notes those are kind of considered the gold standard for machine learning 101. But as you say it requires a certain amount of vocabulary where that vocabulary might be a little bit of math or a little bit of this a little bit of that and without it.",
+      "Duration": 30,
+      "Offset": 802
+    },
+    {
+      "Sentence": "Oh really difficult to follow exactly right and there's many things to consider in terms of like learning getting started with machine learning like maybe some questions that you should ask yourself is like. Hey, are you a top down or bottom up learner and what I mean by that is for me at least I'm more of a top down learner an what that means is that I'd like to understand the high level theory side of things just sort of speed through everything that has to do with machine learning on a very, very high level.",
+      "Duration": 30,
+      "Offset": 834
+    },
+    {
+      "Sentence": "Get a notch down a notch deeper and deeper and deeper and then look under the hood and really get into the nitty gritty math portion of it. After I know the theory. But some people are not like that. Some people need to know all the math. Like the low level math first and then start taking it a level up and up and then sort of start mapping. These theories to these mathematical calculations. Afterwards, so these are the things that you need to consider because maybe if you're.",
+      "Duration": 27,
+      "Offset": 865
+    },
+    {
+      "Sentence": "Bottom up learner than the entering course right off the bat would be would be helpful. But if you're not then maybe taking a high level understanding of machine learning through Udemy or Udacity or something like that, or the MPP course that Microsoft offers is a good idea. And then sort of get your hands dirty with like the low level math afterwards through taking the.",
+      "Duration": 23,
+      "Offset": 894
+    },
+    {
+      "Sentence": "Andrew Ng Course in course era.",
+      "Duration": 2,
+      "Offset": 918
+    },
+    {
+      "Sentence": "And the MPP is a Microsoft professional program course as well, and again will have links to all of these great resources that were going through in the show. Notes interesting OK, so it seems like really understanding how you absorb information was a way for you to make sure that you were going to be successful. Absorbing this totally foreign information because I assumed in your undergraduate they didn't exactly teach this stuff they talk programming, not machine learning.",
+      "Duration": 26,
+      "Offset": 921
+    },
+    {
+      "Sentence": "That's exactly right and uh it's great 'cause I mean in computer science is kind of like oh as long as you sort of produce. This set of outcomes, you get an A. You don't really learn about what type of learning style that you absorb when it comes to theory and stuff like that, and that's something that I just sort of learned when I was getting started with machine learning so this really helped speed up my learning process.",
+      "Duration": 27,
+      "Offset": 949
+    },
+    {
+      "Sentence": "Hey folks, you're a very good developer probably regardless you do right bugs. That's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that costed and fix it without delay century. It's a name so common that they have to include the top level domain in their advertising to make sure you remember it.",
+      "Duration": 30,
+      "Offset": 977
+    },
+    {
+      "Sentence": "Free dot IO that century dot IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix it together visits entry dot IO.",
+      "Duration": 19,
+      "Offset": 1008
+    },
+    {
+      "Sentence": "So there's so many different choices out there, but the ones that keep coming up over and over our python as the language in tensor flow, as the framework is tensor flow kinda VHS of machine learning like did it. Win or is are there lots and lots of frameworks to learn there's plenty of frameworks. I mean just depending on if you're talking about deep learning or just traditional machine learning. But there's a lot of sort of really popular frameworks out there tensor flow.",
+      "Duration": 30,
+      "Offset": 1028
+    },
+    {
+      "Sentence": "Interflow Keras Scikit learn the way that I like to think about them is you don't have to build like neural networks from scratch. For instance, an analogy that I like to use is it's like having the option of building a computer from scratch or buying a prebuilt computer things like tensor flow. Keras and Scikit learn are kind of like the prebuilt computer analogy where you can just basically watch tutorials and jump right into using them without really.",
+      "Duration": 30,
+      "Offset": 1059
+    },
+    {
+      "Sentence": "Things like derivatives or matrix multiplications or activation functions sort of takes away all the heavy lifting for you.",
+      "Duration": 7,
+      "Offset": 1090
+    },
+    {
+      "Sentence": "But of course, there's tradeoffs.",
+      "Duration": 1,
+      "Offset": 1098
+    },
+    {
+      "Sentence": "Alright, well, like we are sometimes as computer scientists sold this idea that like the only true Jedi built it on Light Saber. But at the same time you know it's a pretty nice over the counter light sabers. You can pick up for nothing, so do. I really want to go out there and write my own open source neural network library? When there's so many other ones that I can use instead. I know that's exactly right, but of course, there's tradeoffs to that, even though their pre builds. You can get started on the right away and it's really great for.",
+      "Duration": 30,
+      "Offset": 1101
+    },
+    {
+      "Sentence": "You from all this, you know lingo that I was just mentioning to you. It's really good for like proof of concepts and stuff like that, but of course, there's tradeoffs like if you if something inside your code breaks. That's very on the low level side of things, it might be really hard for you to figure out what it is, and what the problems are and you have kind of less control.",
+      "Duration": 20,
+      "Offset": 1132
+    },
+    {
+      "Sentence": "So it's completely up to what sort of scenario that you're dealing with I've noticed also that these are not all necessarily peers right so like you might hear someone say, Keras and Tensorflow in the same sentence and you would think that there are 2 things that compete but doesn't one sit on top of the other and then there's a stack. Yeah, that's exactly right when it comes to Karas and for those of you that don't know. Charice is a high level, Neural Network Library and it's written in python.",
+      "Duration": 32,
+      "Offset": 1153
+    },
+    {
+      "Sentence": "The rapper 2 tensor flow, so it sits on top of tensor flow or CNTK or no more theano, but but yeah, so yeah, you're exactly right so they're not like interchangeable, but you can still use tensor flow. If you'd like or if you want to have an easier sort of using keras is kind of like building blocks where it's really good for proof of concepts and experimentations, but that's before launching into.",
+      "Duration": 30,
+      "Offset": 1185
+    },
+    {
+      "Sentence": "Like build process or process, however you would like to the American or the Canadian way of saying it. I don't know if you're Canadian did your Canadian mistress week out there will keep calling me out on it process. No don't don't don't let them don't let them if you want to, if you want to say color with AU in favorite OK, you should just say that you should say it like that. You should literally say hello. That's a very nice shirt. I like the color with uh you just say it with you. I'm going to start doing that.",
+      "Duration": 30,
+      "Offset": 1217
+    },
+    {
+      "Sentence": "Make it cooler in America. You'll make it cool. Everyone will start doing it and then you don't have to be sorry. I like what you did, there. Scott you got me. I'm sorry that you had to say that alright.",
+      "Duration": 11,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "Oh, that's OK, so OK, so then there's different frameworks. You can use python. You can use a lot of these things are written in python. They have APIs that present themselves in python, but to get a little bit back on the math. So I know which one of these to pick what do I need to know? Do I need to go to Khan Academy and maybe I don't know get a little better and brush up on my math prerequisites. That's a really good question because that's a question that I often get asked is Oh my God, math really scares me and where do I get started and?",
+      "Duration": 30,
+      "Offset": 1262
+    },
+    {
+      "Sentence": "Scares people off but in terms of what you need to know for math sort of have this like pie chart that I keep referring people to this was.",
+      "Duration": 11,
+      "Offset": 1292
+    },
+    {
+      "Sentence": "Created by a bunch of data scientists like Serraj, Revel, who was really big on YouTube and all these articles. But anyways when it comes to machine learning. I would say 35% of the prerequisites for machine learning. It's gotta be the majority in linear algebra and then maybe a quarter would be in probability and statistics, maybe 15% in calculus 15% in.",
+      "Duration": 26,
+      "Offset": 1305
+    },
+    {
+      "Sentence": "Algorithms and complexity, and maybe 10% in data preprocessing and you also mentioned Khan Academy and I want to give them a huge shout out because they are super awesome. They taught me like most of the math tools that you need to know on writing your own machine learning algorithms. But there is only one downside to the Khan Academy and that's the fact that you have to build your own curriculum, so that's why I really love the MPP Course, which is the Microsoft.",
+      "Duration": 30,
+      "Offset": 1332
+    },
+    {
+      "Sentence": "Program they do have a course for the essentials for math that you need that's important for machine learning and.",
+      "Duration": 9,
+      "Offset": 1363
+    },
+    {
+      "Sentence": "Yeah, so most of the time when you're writing your own machine learning algorithm. You'll be given like formulas and pseudocode. Most of the time so you having a better understanding of pseudocode an had pseudocode and how to calculate them and various interchangeable indices is very important, and what I mean by that is like derivatives. You can write them in like 2 different ways. You can write them like F Prime of X equals X squared but then you can also write it like the?",
+      "Duration": 29,
+      "Offset": 1373
+    },
+    {
+      "Sentence": "D times Y over X Times D like they're both calculated the exact same way. But it can be really confusing. If you don't know that so just understanding the various interchangeable into seasoned and how to calculate pseudocode is it all really important basics for machine learning success and that's the stuff that I used so.",
+      "Duration": 21,
+      "Offset": 1403
+    },
+    {
+      "Sentence": "Yeah, the like we both for Full disclosure. We both work for Microsoft. Although we work in totally different groups. But it's actually a very good course. The MPP for artificial intelligence and they'll be links because it's actually a track of 10 other courses with like 12 hours per course and you get skills. So it covers ethics and essential mathematics for artificial intelligence is its own individual course on edx you know, some of them are free for studying.",
+      "Duration": 30,
+      "Offset": 1426
+    },
+    {
+      "Sentence": "For studying but you can also get a certificate so if you're kind of getting started and you want to put more stuff on your resume certainly doing them for free for self study is great, but also getting a certificate that indicates that you actually did it is pretty sweet and particularly that essential math for machine learning is a pretty great course and this is the so many things on online for self study, but I think your point about finding one with a track that guides. You is so helpful definitely right and ethics is another big one. I mean, you mentioned something that the industry keeps talking about and they talk to you about GDPR.",
+      "Duration": 31,
+      "Offset": 1457
+    },
+    {
+      "Sentence": "That's really essential like legal implications of using particular data. It's stuff that you need to keep in the back your mind while you're learning machine learning will help make the industry. A lot better in the future. So yeah, that's a great point. It's not something that glossed over at all because there are applied data methods. When is doing ethical worker legal work in analytics and you want to be able to apply those frameworks and it may not sound like super glamorous, but it's deeply important otherwise you could inadvertently.",
+      "Duration": 32,
+      "Offset": 1489
+    },
+    {
+      "Sentence": "In the way that you go and look at data and there's so many stories of unethical examples online for machine learning and HP is one of them. HP had actually one of my colleagues showed me this video. There was an HP camera that was sort of following.",
+      "Duration": 19,
+      "Offset": 1521
+    },
+    {
+      "Sentence": "That that sort of follows you based on your face so if they see your face. The camera will start moving, and following you. But change cool. It's cool. It's incredible and this was a few years back. But this is just an example of ethics when a white lady would walk by adding the camera works. It seems to be following along perfectly but then if someone with darker skin. Tones would walk in front of the camera. It was not sensing it, at all, so that's just.",
+      "Duration": 30,
+      "Offset": 1542
+    },
+    {
+      "Sentence": "Example of a product that has been shipped out and ethics and there's so many conversations that happened around that and it's it's really important topic and the other one. I think is really important is anonymization of data like looking at a data set and being able to say do people move in a certain way or do we need to build a road here because people are moving into this location is super useful information. But it can become very creepy if the data is not anonymized and then I can go and say.",
+      "Duration": 32,
+      "Offset": 1573
+    },
+    {
+      "Sentence": "Is here on Tuesdays getting a sandwich and you know that becomes very problematic very quickly Oh? Yeah definitely and your example really gave me shivers. Well, I keep thinking of the Tom Cruise Movie Minority Report. When he's walking in the mall. And it's like you're getting we're getting that experience now is just were not walking in the mall, where you get like pop up ads and it's like. Hey, it looks like you need to shave by this and that happens now when you look at something on Amazon and then suddenly, the entire Internet wants to sell you that thing that you looked at what you looked at once that it follows you forever. Yeah.",
+      "Duration": 34,
+      "Offset": 1606
+    },
+    {
+      "Sentence": "Really really creepy or or the show. I watched on Netflix 2 years ago that they are still trying to get me to watch to just browsed at one time, but don't want to watch that or if you buy refrigerator. For instance, on Amazon like a week ago and then the next week. They're like, but which you like to buy another one, and it's like no. I just your algorithm is just not like this recommender system is not really. It's not it's not great. Let's just say that, but yeah, you're right there's so many examples of just silly things like that, so if I go off.",
+      "Duration": 30,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "We learn these things I do a little bit of work. This something that I do where I build up my math. I build up my understanding of these frameworks. I take some of these great online courses. What's the first project that you would recommend people start with I would say the first project could be starting off with a simple feedforward neural network that helps you predict what color of the background on a pages and it's just a very simple project that allows you to learn the basics of machine learning.",
+      "Duration": 30,
+      "Offset": 1672
+    },
+    {
+      "Sentence": "Why it's important to get started right away on a project and trust me when I say this because you trying to write your own neural network from the very beginning instead of just learning about the theory and stuff like that takes your learning to a whole new level because?",
+      "Duration": 19,
+      "Offset": 1703
+    },
+    {
+      "Sentence": "As soon as you get started with a project you're getting your hands. Dirty you will get stuck inevitably and you officially have your first question to look up and then you keep that process going and.",
+      "Duration": 11,
+      "Offset": 1723
+    },
+    {
+      "Sentence": "Yeah, so I would say that that's 1 example of one project that you can get started on right away. The Ms data set neural network project. There's tutorials on that, but I would say just try to build the feedforward neural network that predicts color background, you say predicts on like a page or yeah, so it would take in a page and then you build a neural network are very simple neural network that just has 2 inputs, like black and white and it would predict.",
+      "Duration": 30,
+      "Offset": 1736
+    },
+    {
+      "Sentence": "The background of a page and I would discourage you using?",
+      "Duration": 3,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "'cause there's no tutorials really, for that. But if you build it from scratch. You're forced to research and continue on that, Curiosity and search things up. You'll really understand the basis of building a neural network forgive my ignorance. But this might be an example of a word that I'm not understanding you're saying predicts is that the MLE way of looking at that like it's not really a prediction right. It's either. This color or it's that color.",
+      "Duration": 30,
+      "Offset": 1771
+    },
+    {
+      "Sentence": "Was it a prediction? Well, that's a good question. It's just concluding creating inferences so maybe my terminology was not.",
+      "Duration": 7,
+      "Offset": 1803
+    },
+    {
+      "Sentence": "Was not like I guess machine learning politically correct but creating inferences so like concluding or deducing using reasoning through the machine learning. I definitely feel like working with the data set that you care about where the hell is helpful like I always use the example of diabetes because I have a personally huge data set of my blood sugar every 5 minutes for the last 10 years in a big giant mongo database. If you have a database of your kids.",
+      "Duration": 30,
+      "Offset": 1811
+    },
+    {
+      "Sentence": "Name or your churches meetings or whatever you could go and predict stuff like. When were more likely to have meetings or when the best when the most people show up for a meeting or is my blood sugar lousy on Thanksgiving Day. You know like there's so many questions. You can ask wouldn't you agree that if it's about something you care about you'll be more likely to stick with it. Yeah, I know Scott I completely agree. I mean, you're right there's so much data that you're accumulating throughout your days weeks and months that you can use to create.",
+      "Duration": 30,
+      "Offset": 1843
+    },
+    {
+      "Sentence": "Is end make your life easier and one data set that? I actually used for machine learning was actually my fridge data weirdly enough so I decided to.",
+      "Duration": 14,
+      "Offset": 1874
+    },
+    {
+      "Sentence": "Put a camera in my refrigerator because I guess when I was in college nerd. Scott that hurts no that is amazing. People know that I'm like the Raspberry. Pi kik, but you put if you put a camera in your fridge. That's amazing so please continue. I mean that in the kindest and the most complimentary way. I think but it gets even sillier so I guess back in college or University in Canada.",
+      "Duration": 32,
+      "Offset": 1889
+    },
+    {
+      "Sentence": "Realize that I was wasting a lot of food because I guess I was going out to eat but then as soon as I decide to stay in all the food in my fridge decided to rock because that's not the first thing I think about is like cleaning out my fridge, but I realized that that was a problem for me, So what I decided to do is.",
+      "Duration": 19,
+      "Offset": 1922
+    },
+    {
+      "Sentence": "I had a uh I had at the time I don't know if they still have it, but it's something called Android things and Android came out with like Raspberry. Pi with like sensors and a camera all-in-one kit. So I decided to install I decided to put a camera in my refrigerator and then every single time there sensor would detect light, meaning that I have opened up my fridge. It would take a take photos of what's inside my fridge and then actually using?",
+      "Duration": 30,
+      "Offset": 1942
+    },
+    {
+      "Sentence": "Our cognitive services toolkit, which is sweet of incredible. APIs that was built by Microsoft researchers for machine learning and computer vision and whatnot it would.",
+      "Duration": 13,
+      "Offset": 1973
+    },
+    {
+      "Sentence": "Basically analyze whether my food was rotting or not, and then I would receive notifications to say. Hey, like your tomatoes are super rotten so you should probably throw those out, but then I created a middle stage where it's like it's about to rot so you should probably use it and then using using machine learning and like scraping the Internet. There was like for example, if I tomatoes there were about to rot and let's say like milk or something that's about to.",
+      "Duration": 30,
+      "Offset": 1988
+    },
+    {
+      "Sentence": "It was really hard, because the milk part was really hard, but I'll give it. Another example of like bananas or something and then it would use the Internet to find recipes that included tomatoes and like bananas, which just kind of random, but then it would suggest like here's a recommendation of like recipe that you can use with tomatoes and bananas, which would be a really odd combination of things, but that's just an example of Hey, I had a problem.",
+      "Duration": 26,
+      "Offset": 2019
+    },
+    {
+      "Sentence": "Had available you know data that I can I can use and yeah? I save a lot of money that is freaking amazing that that is awesome, OK, you have now I was really excited when I put my Raspberry pie on my garage door and it text me when I left the garage door open, but that's not nearly as cool as suggesting recipes. When you detect rotten bananas with a camera in the back of your fridge. That's awesome. Fantastic well this is just a great example of the kind of cool stuff, you can do with machine learning.",
+      "Duration": 33,
+      "Offset": 2046
+    },
+    {
+      "Sentence": "Just do you know with a for loop in C sharp that's why you've got as a programmer bring machine learning into your tool kit and there'SML.net so even with C Sharp. You could still do machine learning. Fantastic well thanks. So much for chatting with me today. Well, thanks, so much for having me. I'm really excited that I got to be on your show so fantastic cool, so we've been talking with Sabrina's my and this has been another episode of Hansel minutes will see you again next week.",
+      "Duration": 27,
+      "Offset": 2080
+    }
+  ]
+}

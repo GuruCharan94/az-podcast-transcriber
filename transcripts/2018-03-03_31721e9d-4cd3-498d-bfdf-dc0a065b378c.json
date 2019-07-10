@@ -1,0 +1,448 @@
+{
+  "id": "31721e9d-4cd3-498d-bfdf-dc0a065b378c",
+  "Title": "Developing Online Identity with Sarah Squire",
+  "PublishDate": "2018-03-03",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/96d1c152.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Sarah Squire. She's a senior technical architect at ping identity and you're going to help me understand what's going on with identity? How are you? I'm great. Thanks for having me on Scott. This is great. I'm finally someone will explain to me what the hecks going on. Because I thought we solved identity on the web. I remember somewhere around 20052 thousand 6.",
+      "Duration": 28,
+      "Offset": 41
+    },
+    {
+      "Sentence": "There was this announcement of like you know, kind of quasi announcement identity 2.0 and we were going to stop doing emails and passwords and it was all being solved, so that's been 12 years? What's identity 2.0, so identity 2.0 was an OS con keynote by Dick Heart, who at the time worked for skip identity, which was his own startup who now works on Amazon Alexa. So if that tells you anything about the direction that Alexa is going.",
+      "Duration": 31,
+      "Offset": 70
+    },
+    {
+      "Sentence": "So I don't need 2.0 is actually part of the on boarding curriculum that speech was part of my onboarding curriculum when I went into identity about.",
+      "Duration": 8,
+      "Offset": 102
+    },
+    {
+      "Sentence": "6 years ago, so it got me really passionate about the field it explain to me that there are a lot of problems to be solved and that people are solving them in creative ways. And one of the things that I love about working and identity and that really inspires me about the field is that you can put in a small amount of work. This is like the one part of the technology stack where you can put in a small amount of work and get a huge output both in terms of security and in terms of Usability And if you can make people happier and more secure at the same time.",
+      "Duration": 32,
+      "Offset": 111
+    },
+    {
+      "Sentence": "That buys you a lot in terms of value. Add for Technology I was thinking about the differences, though between identity for the technical person an identity for the non technical person and I was just thinking about this yesterday. I've had the same email address and I have owned my own domain. Now, for Gosh forever. I don't know 1718, 19 years. But my non technical family members go through email addresses like like crackers.",
+      "Duration": 30,
+      "Offset": 145
+    },
+    {
+      "Sentence": "And some of them I've had 456 emails in the last and the reason that they abandoned them is that they lose access. They forget the password. They lose interest. They change their email because maybe it wasn't professional and now they need to be professional so their identity doesn't change in the world, but it changes online a lot, which makes it really frustrating for them to move around the Internet. Absolutely account recovery is a huge issue and identity and there's some really interesting work going on there so there are 2 initiatives.",
+      "Duration": 30,
+      "Offset": 176
+    },
+    {
+      "Sentence": "Buy Facebook one is.",
+      "Duration": 4,
+      "Offset": 207
+    },
+    {
+      "Sentence": "Key recovery through a third party so you can.",
+      "Duration": 5,
+      "Offset": 213
+    },
+    {
+      "Sentence": "Leave a key to your Facebook account in your GitHub account so that if you can get into one. You can get into the other, but it's very privacy preserving because GitHub doesn't actually know what that key is for it's like giving a giving a physical key to a neighbor and saying I might need this from you someday, but I'm not going to tell you what the key is for. I'm not going to tell you what safe deposit is at which bank right so that's a great great method of account recovery right. So then even someone who stumbled upon the key like I found we've all found keys on the sidewalk sure.",
+      "Duration": 30,
+      "Offset": 220
+    },
+    {
+      "Sentence": "Ooh I like that there's always a movie where someone finds a key and has a number on it, and we always assume. It's yeah, another exciting thing that's going on an account recovery is called social recovery. So a lot of businesses are looking at, I can delegate 5 different trusted friends and if 3 of them come back to the service that I'm using and say, yes, this is Sarah I have verified with her that she lost her key. Give me a code and I will give it to Sarah so that she can get back into her account.",
+      "Duration": 30,
+      "Offset": 251
+    },
+    {
+      "Sentence": "If IS Eric and recover 3 of those codes, they will let me back in.",
+      "Duration": 3,
+      "Offset": 282
+    },
+    {
+      "Sentence": "That sounds like initially awesome, but if someone grouped some kind of piled on you like grouped up. You could have 56 mean people all collectively try to take over your account and they're all bad guys. Yeah, see. Now you have to be nice to your friends it's good for the world.",
+      "Duration": 17,
+      "Offset": 286
+    },
+    {
+      "Sentence": "I got an email literally yesterday, saying from Facebook that someone was trying to recover. My account and I wonder for people with well known email addresses or with Internet famous people if that could become like a huge problem like are famous people like Tom Cruise getting password resets every 10 minutes.",
+      "Duration": 22,
+      "Offset": 304
+    },
+    {
+      "Sentence": "So famous people at least for Google probably for Facebook as well have the opportunity to have an additional level of security so they can use a second factor authentication device is what we call it in the industry, but it's a little USB device. It goes on a key chain you can plug it into your USB port. And it has either a one time password or private key on it, that can sign cryptographic challenges to prove that it's you so that if you want to reset your password it won't even send you an email.",
+      "Duration": 31,
+      "Offset": 327
+    },
+    {
+      "Sentence": "The opportunity unless you have that key with you interesting is that what's called a yubikey. Yubikey is one provider of those, yeah, I ordered one. It is literally arriving today? Oh, awesome, yeah. I use yubikey nanos. I keep them out. My earrings 'cause they're little and gold.",
+      "Duration": 17,
+      "Offset": 359
+    },
+    {
+      "Sentence": "And then when I go to conferences people know that I'm in identity immediately if they know what that is so it's a good good networking tool and then I also keep one at home in a safe because the problem is if you lose the one that you're carrying on your key chain or in your purse. If you keep it in your computer if the computer gets stolen right. You can't recover that account. You can't recover that key so it's important to register 2 or even 3 keys and keep them in safe places or with friends.",
+      "Duration": 29,
+      "Offset": 376
+    },
+    {
+      "Sentence": "Interesting yeah that was my next question what, if you lose it like I'm planning on putting mine on my key chain. But at the same time, we were talking about leaving a key somewhere at GitHub and no one knows what it is. I assume that if someone has a key chain with a yubikey on it, then. Everyone can be like oh that's important like the existence of a yubikey. Even on your earrings could maybe have someone run up and grab them rip them out of your ears.",
+      "Duration": 23,
+      "Offset": 406
+    },
+    {
+      "Sentence": "Like they are advertising that they are what they are.",
+      "Duration": 2,
+      "Offset": 430
+    },
+    {
+      "Sentence": "True.",
+      "Duration": 0,
+      "Offset": 434
+    },
+    {
+      "Sentence": "So this is the only answer just have as many as as you want like have backups should I buy another one. Yes, you should you should have at least 2 especially if you're going to be carrying one around if you only need one occasionally then just keep it at home in a safe. But if you're going to be carrying one around if it might get stolen or lost absolutely keep keep a backup somewhere safe. What is inside these keys again. Yubikey is just one example. But this is a standard thing and is it typing? Is it like a keyboard is pretending to be a keyboard and then typing in A.",
+      "Duration": 30,
+      "Offset": 435
+    },
+    {
+      "Sentence": "That's a great question it has a lot of modes so one is a private identity verification mode. That's the highest security so that actually has a cryptographic key that is stored on the device itself that can sign challenges. It can work through a standard called Universal second factor or U2, F that as part of the fight alliance standard sweet.",
+      "Duration": 27,
+      "Offset": 466
+    },
+    {
+      "Sentence": "And then it can also just do a time based one time password. So basically what that means is that when you log in. It will act as a keyboard for your computer so it works exactly like if you have the apps on your phone where you pull up a one time password and then you enter it in. It's exactly the same technology exactly the same standard except that the Yubikey will create longer more secure one time passwords and it will type them in for you right. I used so again we get to this identity theme, it's easier and it's more secure exactly I use things like.",
+      "Duration": 32,
+      "Offset": 494
+    },
+    {
+      "Sentence": "That give me that and then they kind of collect all those things. But then it seems like as we build abstraction layers on top of abstraction layers. It feels a little bit like we expand but where like Authy has like 1520 accounts that I'm all managing and then they give you a single password or I use one password or LastPass, which puts hundreds of passwords and then we give you a single password to manage it. So, whenever I'm trying to sell 2 factor authentication to family members as I'm sure you do at Thanksgiving dinner.",
+      "Duration": 30,
+      "Offset": 527
+    },
+    {
+      "Sentence": "Heading one happy holidays make sure you get 2 factor auth when you say, I see you've been listening to us when you when you do things like one password. They always go wait a second, but then that means the bad guy would only need one password or my yubikey or Miathi password is that just part of the ongoing tension of identity. It is absolutely we have. We have a problem with passwords in general. We're trying to get away from passwords. No one's been able to do it yet, though there are really secure really easy really.",
+      "Duration": 33,
+      "Offset": 559
+    },
+    {
+      "Sentence": "Deployable method of authentication so we're stuck with passwords for an we're going to be for a long time. There's no good way to keep track of them, but I would say yes. I use a password manager. I recommend that other people use password managers and have 2 factor authentication on your password manager itself.",
+      "Duration": 18,
+      "Offset": 593
+    },
+    {
+      "Sentence": "Me OK and these standards, though like ooh F and then other standards that are kind of underneath that they're all supported by these different keys like these NFC security keys where you hold the key tap it up against your phone and then it does something are these all just different transport mechanisms to pass that one time key in yeah, exactly so communicating whether you're doing, it over Bluetooth or NFC or USB it's all using the same standards. The same technology. It's working the same way. That's just a difference in how it's communicated to the Div.",
+      "Duration": 35,
+      "Offset": 612
+    },
+    {
+      "Sentence": "OK, so whether it's a QR code or Bluetooth or whatever it's just all transport mechanisms. Yep, oh OK. I understand also, though that with regards to like NFC that there was concerned that maybe the iPhone doesn't have the things that it needs to support it support things like yubi keys correctly. I wonder how much support. We're getting from different phone manufactured from Apple from Samsung, etc to support these kinds of things versus their proprietary things like face ID in touch ID.",
+      "Duration": 30,
+      "Offset": 647
+    },
+    {
+      "Sentence": "Sure face ID and touch ID are certainly a valid method of authentication and if you are a developer who's looking for a quick and easy way to do 2 factor authentication. Those APIs are open. There are very easy. It's just a couple of lines of code and you can add them into your application and require a touch ID or a face ID, either in lieu of or In addition to a password.",
+      "Duration": 23,
+      "Offset": 679
+    },
+    {
+      "Sentence": "So I highly recommend that.",
+      "Duration": 2,
+      "Offset": 703
+    },
+    {
+      "Sentence": "But as far as NFC support.",
+      "Duration": 1,
+      "Offset": 707
+    },
+    {
+      "Sentence": "That's always going to be a struggle right even if Apple were to open it up. They could pull it out at anytime and so as a developer. It's very hard to be reliant on a closed system. A proprietary system like that because you just don't have control over what's going to happen in the future? Do are they on our side are they on the side of the consumer or the on the side of standards. They do not normally come to standards agency meetings, they do not come to the IETF.",
+      "Duration": 30,
+      "Offset": 710
+    },
+    {
+      "Sentence": "The foundation I can tell you that much IETF. Sorry is the Internet Engineering Task Force. They do the uh oh. Oth standard, which is a very common method of delegated delegated usually authentication, but technically authorization.",
+      "Duration": 16,
+      "Offset": 740
+    },
+    {
+      "Sentence": "Do these these these identity organizations standard organizations like the ones you just describe are they able to really move the needle on the Internet itself or like do you ever? Find yourself coming up with a standard in a committee and then the standard never goes anywhere is because whatever business factors. The Internet didn't go for it or whatever like Are there standards that were amazing that would have solved all our problems, but it just never happened, I struggle with that question.",
+      "Duration": 30,
+      "Offset": 758
+    },
+    {
+      "Sentence": "Great question oas or 2.0 and open ID connect are certainly standards that the Internet has picked up and taken for their own. If we probably you and I use often open ID connect every day. If you use login with Facebook login with Google.",
+      "Duration": 18,
+      "Offset": 789
+    },
+    {
+      "Sentence": "Anytime you do that, you're using open ID connect so that has certainly had a lot of uptake.",
+      "Duration": 6,
+      "Offset": 808
+    },
+    {
+      "Sentence": "There are also a lot of great ideas and identity that have not gotten uptake.",
+      "Duration": 3,
+      "Offset": 815
+    },
+    {
+      "Sentence": "And I think it's because we're very insular community where a very jargony community and I would really like to fix that. I'm doing a talk at RSA this year called identity in 10, 100 words.",
+      "Duration": 13,
+      "Offset": 819
+    },
+    {
+      "Sentence": "And the idea is borrowed from Randall Munroe XKCD, you know him. The Web comic of course, so he wrote a book called Thing Explainer.",
+      "Duration": 9,
+      "Offset": 833
+    },
+    {
+      "Sentence": "Where he explains complicated objects like the Saturn 5 rocket using only the thousand most common words in the English language?",
+      "Duration": 7,
+      "Offset": 843
+    },
+    {
+      "Sentence": "So I decided that we need that for identity. We need to explain what authorization is what authentication is in really basic easy to understand terms, so that's The talk that I'm going to be giving that will be an RSA TV on April 17th is that challenging, though, because I've seen you write about this identity and tender words before and I feel like if I would try to explain this to non technical family member I might lose them at assertion and credentialing in system of record.",
+      "Duration": 30,
+      "Offset": 851
+    },
+    {
+      "Sentence": "Those are English words that are simple. They sure sound complicated right and that's the problem is that they do sound complicated, but an assertion is something that we've had for as long as we've been humans right assert that there are cookies in the cookie jar and that may or may not be true and you can check that assertion by opening up the cookie jar and saying are there cookies in it right so they might they might be initially challenging but they are still basic words that have concepts that ever understands right identity is not a hard field.",
+      "Duration": 30,
+      "Offset": 882
+    },
+    {
+      "Sentence": "It's not a hard field to explain but it's very difficult to pick up if we're only using the industry specific jargon that all of us know that we can't communicate to everyday people everyday developers right. I feel like sometimes I lose people that often off all the time, even industry professionals get get lost with the difference between authentication and authorization. Yeah, I remember 12 years ago, 10 years ago, when open ID was happening. I rushed to add meta keys to my.",
+      "Duration": 34,
+      "Offset": 912
+    },
+    {
+      "Sentence": "Again, I started logging into stackoverflow, which was the first major website that would let me log in by putting in my my website and then the browser did this dance.",
+      "Duration": 12,
+      "Offset": 947
+    },
+    {
+      "Sentence": "Where it would bounce over there and look at my medic keys and then there'd be a combination of client side and server side.",
+      "Duration": 7,
+      "Offset": 960
+    },
+    {
+      "Sentence": "Uh handshakes for lack of a better word. But now when I go to things like stackoverflow. I see Google. I see Facebook. I see LinkedIn. I see I see basically everything except open ID and using stackoverflow as an example. They've now buried open ID deep into other options.",
+      "Duration": 17,
+      "Offset": 968
+    },
+    {
+      "Sentence": "Did open ID die? Is it over? Is it just is it just done?",
+      "Duration": 5,
+      "Offset": 987
+    },
+    {
+      "Sentence": "Open ID originally did not get a lot of uptake because most people don't run their own websites. They don't have their own domains and then open ID connect came along and made it very easy for people to use Oauth for things like Google and Facebook and LinkedIn like you mentioned and have it be standard and interoperable and secure so open ID connect definitely one out.",
+      "Duration": 21,
+      "Offset": 993
+    },
+    {
+      "Sentence": "Over the long term in terms of adoption, we're still trying to get it, though in places like banking, so there is an initiative in the EU torta open banking if you use financial aggregatorlike.com or personalcapital.com you actually enter all of your own bank credentials you give them your password and they scrape. They go off and then they log in for you and they screen scrape. Yes, and in order to screen scrape. They have to store your password in cleartext.",
+      "Duration": 30,
+      "Offset": 1015
+    },
+    {
+      "Sentence": "Encoded in a way that they can decode it right so it's not it's not a salted hash password that they were storing so this is a huge problem we and we're trying to use so often open ID connect basically to force banks to have an API have a protected API, so that I can say. I'm going to delegate access to my bank account to MIT.com so that they can access this API on my behalf. This is like when you log into something in Facebook or in Twitter and it says. We're going to need to be able to login when you're not around.",
+      "Duration": 32,
+      "Offset": 1046
+    },
+    {
+      "Sentence": "Stuff is that OK, it's an extra bit if of requirements if they request on your behalf, but they don't have your password exactly so then you get that proactive consent screen that says this application will have access to your name. Your address your account balance is your activity do you agree? Do you consent to give this organization access but now if you could maybe talk a little bit more about open ID versus open ID connect because I understand that they're both for.",
+      "Duration": 31,
+      "Offset": 1079
+    },
+    {
+      "Sentence": "Dedication.",
+      "Duration": 0,
+      "Offset": 1111
+    },
+    {
+      "Sentence": "An open ID connect even though it has the same name. It's really oauth underneath which is an authorization protocol right. So when or first came out. It was revolutionary. But in order to make it be interoperable between companies. You had to agree on well? What do you call a name all I call it name you call it surname? What do you call an email, I call it address. You call it email right so you had to figure out? What everyone was calling different attributes so open ID connect came along and added not only the authentication peace.",
+      "Duration": 31,
+      "Offset": 1113
+    },
+    {
+      "Sentence": "But also a basic profile piece to just say here are the attributes that almost everyone needs. The pieces of information about the user that we all need. Let's just standardize we're going to call these.",
+      "Duration": 10,
+      "Offset": 1145
+    },
+    {
+      "Sentence": "And that's really what made adoption of open ID connect blow up and if I log in then to stack overflow and I see Google, or Facebook will I ever again be able to have my own security. Server to run it myself, or should I just feel OK about these walled gardens. In these giant companies managing my identity. 'cause they're the best practice so you mentioned standards that don't get wide adoption, but that are being created one of those standards in the Internet engineering task force is.",
+      "Duration": 30,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "What we called dynamic registration in the oauth working group, so dynamic registration is the concept that you have a signed statement that lives somewhere on your website that says here's all of my O auth endpoints. Here's my public key. Here's my name. Here's my domain. Here's all the domains that I use.",
+      "Duration": 20,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "And then anyone can come to your.",
+      "Duration": 3,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "Application and either use it to log in or log into it.",
+      "Duration": 4,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "Me, I'm trying to said that there is no pre registration required so instead of having A.",
+      "Duration": 6,
+      "Offset": 1220
+    },
+    {
+      "Sentence": "Login with Google login with Facebook login with LinkedIn. You can say log in with your domain and you can type in hanselminutes.com and it says.",
+      "Duration": 8,
+      "Offset": 1227
+    },
+    {
+      "Sentence": "OK. Let me look up where your software statement is and then I can register you without any humans, having to do anything as an O Auth service provider.",
+      "Duration": 10,
+      "Offset": 1236
+    },
+    {
+      "Sentence": "And then you can log in with your domain so that seems to bring us back to the beginning. In 2006 when I would go and and say my open ID if you look in the meta tags of my blog. I still have these things actually. I'll do it right now. View page source and there, it is. There's like meta tag open ID says go over here and then I think I had one of the open ID providers at the time do that.",
+      "Duration": 30,
+      "Offset": 1248
+    },
+    {
+      "Sentence": "Are we just returning to that idea?",
+      "Duration": 1,
+      "Offset": 1279
+    },
+    {
+      "Sentence": "Yes, it's a different way of doing that same thing. There's also some really interesting work going on in the blockchain space so company is called ever nimana, nonprofit called sovereign are working on creating a public directory of people of identifiers for people or organizations or businesses and then and associated public key and identity document so that some really interesting work that's going on that could also enable that sort of decentralized.",
+      "Duration": 30,
+      "Offset": 1281
+    },
+    {
+      "Sentence": "Way of authentication through whatever mechanism you choose. So then there would be a publicly available ledger. That was like a publicly available immutable, yellow pages or white pages out there for people to look up other people, yes exactly.",
+      "Duration": 15,
+      "Offset": 1313
+    },
+    {
+      "Sentence": "Interesting but the I don't know whoever name is but it sounds like as with all things if I went to their website. It would probably say products and how do we balance trying to build companies around these things versus trying to build standards that will live beyondevernham.com. Going out of business, so the Sovereign Foundation is part of this strategy. So everything would be one identity provider in the broader sovereign ecosystems and the idea is to have an ecosystem that.",
+      "Duration": 32,
+      "Offset": 1330
+    },
+    {
+      "Sentence": "Join anyone can create a node it is a permissioned ledger so.",
+      "Duration": 6,
+      "Offset": 1363
+    },
+    {
+      "Sentence": "You can kick people off if they're acting maliciously if they're attacking other people. But the idea is that anyone should be able to join anyone should be able to have a node to act as an identity provider.",
+      "Duration": 13,
+      "Offset": 1370
+    },
+    {
+      "Sentence": "And that it should be open and distributed so not rely on anyone company or person. I like that. I do not want to be reliant on anyone as much as I like login account. I don't wanna be reminded anyone so let's get to practical? What can we do when we're done with this podcast type stuff. There's authion. There's LastPass and there's 1 password and there's coming standards. And there's you be keys. Right now, I go to Thanksgiving dinner and I tell everyone to think about using something like coffee and.",
+      "Duration": 30,
+      "Offset": 1384
+    },
+    {
+      "Sentence": "2 Factor Auth at least on Gmail and Facebook and if they can on their bank, but you be keys. And I use yubikey in the generic term like Kleenex, not trying to sell their stuff but it still feels a little techie like I'm not sure how I could sell my dad a yubikey or do you think I should?",
+      "Duration": 19,
+      "Offset": 1416
+    },
+    {
+      "Sentence": "Uhm I think you should I think that it's getting really easy to crack passwords and part of that is due to bad password policies, which we should also talk about but it's not a hard concept right. You can keep it on a key chain you plug it into a USB drive when the computer tells you too. It is something that every day. People can do to increase their security and even if they are not. People who would be specifically targeted even if they're not celebrities even if they don't have a lot of assets to steal.",
+      "Duration": 32,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "People doing broad attacks of just swaths swaths of people at different services. An hoping that they come up with something useful and having your identity stolen as everyone knows is just a huge amount of work to recover from so if buying a yubikey and taping it every time you log in is a solution to that. That's it's like flossing your teeth right. It's a pain, but but you do it to avoid the worst pain down the road right.",
+      "Duration": 30,
+      "Offset": 1469
+    },
+    {
+      "Sentence": "My kids to floss their teeth was, I said if you're not flossing you might as well, just not even bother brushing like it's not even worth it. So to apply that to if you're not using 2 factor. Auth you might as well, just make your password password because ultimately it will be owned you're not wrong.",
+      "Duration": 16,
+      "Offset": 1500
+    },
+    {
+      "Sentence": "So do you recommend pass phrases or do you recommend password managers to nontechnical parent? I recommend password managers for sure. I think their way better pass phrases are also good so pass phrases or where you have a sentence or a line or a series of regular English words that you can easily memorize and type in So what that makes for a really long password. That's very easy to remember which is exactly what we want in terms of entropy.",
+      "Duration": 29,
+      "Offset": 1517
+    },
+    {
+      "Sentence": "Using again just you because an example. I'm sure you can suggest some other ones, and I go up there and I click store. I'm technical. I have a podcast about technical stuff and I'm looking at 8 different you be keys that I don't know which one to pick you know what I'm saying it's like well. This ones cheap and this one stays in the port. But then Sarah said. Don't keep it in the port put it on an earring. This ones tiny. I have no idea how anyone would expect this to become a widespread everyone has one consumer thing.",
+      "Duration": 33,
+      "Offset": 1548
+    },
+    {
+      "Sentence": "If they don't solve that problem, you know, there are 20 different kinds of floss they all work.",
+      "Duration": 5,
+      "Offset": 1582
+    },
+    {
+      "Sentence": "That's true, it's true. I do think it's a problem that you be key that you be Co, which is the name of the company that produces you be keys is the primary provider. Currently, they're the only one who is really doing this at scale so if if we start to rely on them. Something happens, if they decide to go proprietary if part of their supply chain gets wonky right and they can't produce as fast as they could before we're all in trouble.",
+      "Duration": 30,
+      "Offset": 1588
+    },
+    {
+      "Sentence": "Interesting so let me ask you this, though, if they if that happens theoretically or if we start looking at whoever's if I say I want one of these keys from anyone who is not yubikey am I going to be looking at da G overseas tech companies that I've never heard of an might they be compromised. Yes, absolutely you might be looking at the G companies they might be compromised. There is a standards organization called the Fido Alliance. That certifies companies so that you know whether they're authentication devices are actually compliant with with.",
+      "Duration": 34,
+      "Offset": 1619
+    },
+    {
+      "Sentence": "Entered or not so if you see U2, F, the letter U the number to the letter. FU 2 F certified on a device. That means that it is compliant with the security standard and you can trust it. I see so just like I can buy power adapter and it says UL certified and people have over the years learned about that will start learning that Fido certified mean something exactly right before we started recording as you recall. We were talking about what we're going to talk about on this show.",
+      "Duration": 31,
+      "Offset": 1653
+    },
+    {
+      "Sentence": "Phone call and it said unknown caller, but it said San Diego and I don't know anyone from San Diego. So you are very kind and you said, OK, I took a moment I took the call and it was someone, saying that they wanted to. Give me money. It was my health care provider that we've cut a check for you.",
+      "Duration": 15,
+      "Offset": 1685
+    },
+    {
+      "Sentence": "And without realizing that I was also on the phone with an identity expert yourself. I said How do I know that you are? Who you say you are and they said that they were going to email me?",
+      "Duration": 13,
+      "Offset": 1702
+    },
+    {
+      "Sentence": "Did I do the right thing?",
+      "Duration": 1,
+      "Offset": 1716
+    },
+    {
+      "Sentence": "Yeah, absolutely phone fishing is very common.",
+      "Duration": 6,
+      "Offset": 1718
+    },
+    {
+      "Sentence": "Unfortunately, a lot of companies still use what we call knowledge based authentication, which is secret questions or questions over the phone about your account about personal information about places. You might have lived a lot of authentication, including credit applications is still done in that manner.",
+      "Duration": 18,
+      "Offset": 1725
+    },
+    {
+      "Sentence": "I was part of the team that rewrote the NIST digital identity guidelines and we actually outlawed that for federal agencies so at least as far as the American government is concerned, they are not allowed to use knowledge based authentication. But banks still do it. People who can open up lines of credit. People who can issue mortgages. They still use knowledge based authentication so giving out personal information about yourself is still dangerous. It's gotta love to get to a place where that's not true because personal information is very easy to find on the Internet.",
+      "Duration": 32,
+      "Offset": 1744
+    },
+    {
+      "Sentence": "We're not there yet they have not yet emailed me which creeps me out well. Maybe it wasn't attacker. See and this is the other thing you know when you get a mortgage in the US, they'll say OK. We're going to do some authentication of the phone and then they start asking you questions about like 30 years ago, you live on? What Street and then how do you know this this is not OK this is not a way of proving it's me you know more about me than I do. Yeah, it's even worse when you don't know when you get the security questions like.",
+      "Duration": 30,
+      "Offset": 1777
+    },
+    {
+      "Sentence": "Your favorite food, I'm like I don't know what my favorite food, is at the time. I took this test before yeah, so I was working with the University of Washington, when they replaced their knowledge based authentication system and they had data going back 10 years showing that 60% of users get their secret questions wrong on the first try really so it's not just bad security. It's really bad usability. We do not even know ourselves will. Thank you so much Sarah Squire for talking to me about identity today.",
+      "Duration": 31,
+      "Offset": 1807
+    },
+    {
+      "Sentence": "Talking to this guy this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 9,
+      "Offset": 1839
+    }
+  ]
+}

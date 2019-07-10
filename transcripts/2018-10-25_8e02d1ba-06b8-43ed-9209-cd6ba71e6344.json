@@ -1,0 +1,523 @@
+{
+  "id": "8e02d1ba-06b8-43ed-9209-cd6ba71e6344",
+  "Title": "Gaming for all with the Xbox Accessibility Controller and John Alexander",
+  "PublishDate": "2018-10-25",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/b1d0a9d2.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks, Intel as a sponsor this week and I welcome them because they're bringing some high performance developer tools for all of us. Check out Intel's parallel studio. XEI've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C python or even 4, Tran but is your code building in such a way and written in such a way that it uses the latest techniques for vectorization.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Bing multi node parallelization or memory optimization.",
+      "Duration": 3,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 31,
+      "Offset": 36
+    },
+    {
+      "Sentence": "F***",
+      "Duration": 2,
+      "Offset": 68
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode cancel minutes today. I'm talking with John Alexander is a gamer. Anna content developer. I want to talk to him about the Xbox adaptive controller? How are you Sir wonderful Sir thanks for taking the time to talk to me about this? Yeah, so this is out now. I can go and buy the Xbox Adaptive Controller for 99 bucks or 100 Bucks us in stores at Microsoft stores? Yes.",
+      "Duration": 24,
+      "Offset": 76
+    },
+    {
+      "Sentence": "Somehow, I thought it would be more expensive like I thought it would be like a thing like it would be hundreds of dollars would be Xbox priced but that seems like a very reasonable price for something that's going to open up gaming for a lot of people. Oh, yes, one of the things when the Xbox Adaptive Controller had been announced. It was still in development when they actually announced the price. It blew everyone's mind because normally when you have Accessibility issues and you need to get special equipment for that.",
+      "Duration": 31,
+      "Offset": 101
+    },
+    {
+      "Sentence": "In the hundreds and hundreds of dollars very easily for some of the modified controllers and so with the.",
+      "Duration": 7,
+      "Offset": 133
+    },
+    {
+      "Sentence": "Accessible controller, it allows you to get what you need for a very small price. Yeah, it's it's amazing.",
+      "Duration": 8,
+      "Offset": 141
+    },
+    {
+      "Sentence": "So what is your mobility issue so my mobility issue is what they call hema plegia an what that means is that your entire one side of your body is.",
+      "Duration": 12,
+      "Offset": 151
+    },
+    {
+      "Sentence": "Affected so all the systems on my right side actually.",
+      "Duration": 4,
+      "Offset": 164
+    },
+    {
+      "Sentence": "And you may be able to tell I have a slight lists because it even effects. The side of my tongue a little bit. Everything on my right side is affected, including I have. I wear a size 7 and a half shoe on my right and a 9 and a half on my left.",
+      "Duration": 19,
+      "Offset": 168
+    },
+    {
+      "Sentence": "And and there's a hammer pull it means like hemisphere, Ham like quadriplegia or Hema. Plegia means that the Hemisphere. The entire hemisphere oramai side, I guess I never really thought about that.",
+      "Duration": 16,
+      "Offset": 189
+    },
+    {
+      "Sentence": "But is is totally affected so I have really no fine control on my right side on my right hand at all, so I type with one hand and do pretty much everything with one hand.",
+      "Duration": 10,
+      "Offset": 206
+    },
+    {
+      "Sentence": "But when you're playing Xbox Games.",
+      "Duration": 1,
+      "Offset": 217
+    },
+    {
+      "Sentence": "Typically, you need 2 hands. There's 2 triggers there's 22 joysticks. There's the D pad. There's buttons. There's upper triggers there's lower traders and.",
+      "Duration": 13,
+      "Offset": 220
+    },
+    {
+      "Sentence": "It can be frustrating for people with mobility issues or uhm.",
+      "Duration": 5,
+      "Offset": 233
+    },
+    {
+      "Sentence": "You know sensory issues or vision or something like that, and they can't really play so using the Accessibility controller allows you to plug in all sorts of external controllers so that you can use so for example, I use 2 Xbox not Xbox to rock band.",
+      "Duration": 19,
+      "Offset": 239
+    },
+    {
+      "Sentence": "Drum pedals for my triggers.",
+      "Duration": 3,
+      "Offset": 259
+    },
+    {
+      "Sentence": "Young really OK, so I have rock band and the the rock band Orange drum pedal. It's like the controller. It's orange and I got it at goodwill and it has a 3.5 millimeter looks like a headphone. Jack on the end of it right and so you can plug in on the back of the controller itself. There are 3.5 millimeter controllers.",
+      "Duration": 26,
+      "Offset": 264
+    },
+    {
+      "Sentence": "For Jacks for the controllers and pretty much any button any trigger.",
+      "Duration": 6,
+      "Offset": 292
+    },
+    {
+      "Sentence": "Has a spot along the back that you can plug in and the reason? They did that it's all in a wine so that people with mobility issues or dexterity issues. It's not you know they're not like stacked one on top of the other anything they worked a long time with different agencies different charities.",
+      "Duration": 19,
+      "Offset": 299
+    },
+    {
+      "Sentence": "To really workout the design on this and it was one of the things out of the inclusive technology lab, and I don't know Scott if you've ever been there, but it's an amazing amazing place.",
+      "Duration": 14,
+      "Offset": 320
+    },
+    {
+      "Sentence": "That they they do the designs for things like the accessible controller. And I know that several other companies and organizations have used the expertise now of the inclusive technologies lab for different.",
+      "Duration": 15,
+      "Offset": 335
+    },
+    {
+      "Sentence": "For different offerings.",
+      "Duration": 2,
+      "Offset": 351
+    },
+    {
+      "Sentence": "Wow, well before we get into the like. The techie parts how it works, and what it does. Let me back up a second. You've been a gamer for years, though I mean, I've no, I've known you for 15 years? How are you playing Xbox before I was usually the standard meat meat target for my kids in Halo? I was the practice dummy so I would like for example, if you're trying to play. Something needs both joysticks. I would typically either turn. The controller around sometimes or put it on the side.",
+      "Duration": 31,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Hit it with one part you know, and then try to move a little bit with the other so like for example, in the first person shooter games, you have the navigation where you're running around with your feet. But then you twist at the waist with the other one and that's where I would usually have the problem. I'd have to move and then quickly twist with the waste and by that point, spawning again. So so for the most part for quite awhile. I haven't played console based games. I've just played PC based games.",
+      "Duration": 30,
+      "Offset": 387
+    },
+    {
+      "Sentence": "And and then how did you do that? Was it because the PC you get the keyboard and the mouse and you can rearrange things? Maybe move the mouse to the right side. But you're still only trying to do all of this with just right with just wanna hear still doing it with basically one hand, you can use you can use some of the on the keyboard. The arrow controllers or WASD or something like that with your other hand, somewhat and then move the mouse or whatever. You need too, but still, it's it's kind of frustrating, sometimes and.",
+      "Duration": 29,
+      "Offset": 418
+    },
+    {
+      "Sentence": "So being able to do that. You know you kind of pick and choose the games. You want to play so I've been for a long time and playing things like Sivan and those sorts of things, which aren't as much of a Twitch game.",
+      "Duration": 10,
+      "Offset": 449
+    },
+    {
+      "Sentence": "As as other things.",
+      "Duration": 1,
+      "Offset": 461
+    },
+    {
+      "Sentence": "So there's a huge gaming community, though out there before the Xbox Adaptive Controller that would just basically say we're going to solve. This weather weather. We have support from a company or not right. There's like be able gamers charity and there's special effect and there's cerebral palsy foundation. People were building solutions. I've seen out of wooden tape and wires that they made themselves and this was a very DIY community like.",
+      "Duration": 30,
+      "Offset": 463
+    },
+    {
+      "Sentence": "We're going, we're going to game. No one's going to let them know what's going to stop them right right? In fact that's a good point back in the early 80s when I had my Atari. There was an article in Atari age at the time that showed you how to unscrew it and then rewire the circuit board, so you could make it a left handed controller. So I did that so that I could use the fire button on the left hand side, but yeah.",
+      "Duration": 31,
+      "Offset": 494
+    },
+    {
+      "Sentence": "So many there have been so many charities and people just spending their own time as makers to help other people modify different controllers or hook them up to maybe a breath like a straw, so you could use that for the fire button or something like that to allow people to escape the prison if you will, or the frustration of having a body that a mind that's trapped inside this Mobility Limited Limited.",
+      "Duration": 30,
+      "Offset": 526
+    },
+    {
+      "Sentence": "Yeah, I understand that a couple of couple years ago, the kind of famous moderate Vanhecke BENHECK created Xbox One single handed controllers which solves problems for a single handed person. But there's a diversity of limited mobility issues someone might not simply have only one arm. You can use your other hand to do some stuff like it could be a trigger hand right right, I can use it to grasp.",
+      "Duration": 30,
+      "Offset": 557
+    },
+    {
+      "Sentence": "Is it?",
+      "Duration": 0,
+      "Offset": 588
+    },
+    {
+      "Sentence": "On on anything you know course course ability, not finally I can grasp so I can use it for A.",
+      "Duration": 7,
+      "Offset": 589
+    },
+    {
+      "Sentence": "For trigger it's just harder to do, especially with the the way that the controller is molded. But it's really interesting because the way that the adaptive controller came about.",
+      "Duration": 11,
+      "Offset": 597
+    },
+    {
+      "Sentence": "Was in 2014 and I don't remember who it was that was scrolling through Twitter. But they were they saw a tweet by warfighter engaged whose nonprofit organization that provides gaming devices to wood nude vets and so they saw saw this photo.",
+      "Duration": 15,
+      "Offset": 610
+    },
+    {
+      "Sentence": "And they reached out to that to Warfighter, an started learning how difficult it was and so there's a hackathon at the 2015 ability summit. Anna group of employees decided to put together a team to develop a solution for accessible gaming.",
+      "Duration": 16,
+      "Offset": 626
+    },
+    {
+      "Sentence": "Until they worked with Ken Jones, who's the leader of warfighter engaged.",
+      "Duration": 5,
+      "Offset": 644
+    },
+    {
+      "Sentence": "And they developed at that point gaming device that use connect.",
+      "Duration": 3,
+      "Offset": 650
+    },
+    {
+      "Sentence": "To track gamers movements and translated translate them.",
+      "Duration": 3,
+      "Offset": 654
+    },
+    {
+      "Sentence": "As if they were inputs from a traditional wireless controller, wow and it does make you wonder, though why it took so long like if you were hacking your Atari in the 80s doesn't. It feel like this should have been a thing along time ago, yeah, I think part of it is, is that you know, sometimes people are just going about their lives and they just they don't see it and it's not that good or bad or anything. They just don't see it, I think really.",
+      "Duration": 28,
+      "Offset": 659
+    },
+    {
+      "Sentence": "A lot of companies now for whatever reason are really trying to focus on Accessibility. I mean, if you look at Tommy Hilfiger now has a line of Tommy accessible clothing and so they have magnetic clasps for your buttons for your shirt. So it still looks like buttons on a dress shirt, but it's actually a magnetic cloud.",
+      "Duration": 23,
+      "Offset": 688
+    },
+    {
+      "Sentence": "And Nike I tried these on and they didn't work for me, but they have as part of their flies. There fly line high top that zips all the way around with velcro see that you can basically instead of using shoe strings. You can zip all the way around, it and it kind of opens opens the show up and then kind of zip sit around there, so these are small small and clever design things that can fundamentally change how someone is able to just move through there.",
+      "Duration": 32,
+      "Offset": 713
+    },
+    {
+      "Sentence": "Life like this is absolutely this is just it's the organizational willpower to do it.",
+      "Duration": 5,
+      "Offset": 746
+    },
+    {
+      "Sentence": "And that's why you know, one of the reasons why I love Microsoft.",
+      "Duration": 4,
+      "Offset": 752
+    },
+    {
+      "Sentence": "Because they they decided to do this, they put you know they put their money where their mouth wasn't created something that's very affordable, and very, very flexible. You can use it on both the peace on both Windows 10 and on the Xbox itself. And so you can configure it. However, you need to. In fact, it has oversized buttons 2 oversize buttons and I've got 2 other oversized buttons. So I just took a picture of a regular Xbox Controller with the XY AB.",
+      "Duration": 30,
+      "Offset": 757
+    },
+    {
+      "Sentence": "And then put it on the buttons and created that diamond the diamond configuration.",
+      "Duration": 5,
+      "Offset": 789
+    },
+    {
+      "Sentence": "And uh use it use the buttons that way with my right hand.",
+      "Duration": 4,
+      "Offset": 795
+    },
+    {
+      "Sentence": "Interesting so we're on a podcast of course, so people will have to go in Lincoln go and search for images with this. But let's describe it. It looks like it looks like a DJ turntable. It's a white rectangle. It's a very attractive controller, it matches. The Xbox style with 2. Big black buttons on it, that are several inches wide that look like they could be turned tables, but they're actually buttons. There's a small D pad presumably for set up starting start and select buttons.",
+      "Duration": 30,
+      "Offset": 800
+    },
+    {
+      "Sentence": "Author it's rather Spartan, but if you flip it around on the backside. There's 193 .5. Millimeter Jack sand. Multiple USB ports. This is not a controller as it is at Controller Toolkit right right and that's the main thing is that it's not necessarily the controller itself. But it's almost. I want to say it's a framework but it's a platform. It's an ecosystem right right and the interesting thing about it is on the controller itself yes, it has AD pad.",
+      "Duration": 31,
+      "Offset": 831
+    },
+    {
+      "Sentence": "The Xbox Controller D pad to that D pad. Oh, you can also then using a technology also that came out. I think in like 2014 or 2015 called copilot.",
+      "Duration": 12,
+      "Offset": 863
+    },
+    {
+      "Sentence": "And Co Pilot is an Xbox technology that allows 2 controllers to work as one.",
+      "Duration": 7,
+      "Offset": 877
+    },
+    {
+      "Sentence": "Right that's a software based thing I've actually done that with my kids before they right before they became able to really play. I could move the head of the character and they could move the body kind of thing right in the same way the accessible controller takes advantage of using copilot. You can use it with a regular controller and then map from that controller onto so if you want to use in one hand, you want to use the controller and then the big buttons of the accessible controller.",
+      "Duration": 31,
+      "Offset": 885
+    },
+    {
+      "Sentence": "We do that and there's a little button on the X on the accessible controller.",
+      "Duration": 5,
+      "Offset": 917
+    },
+    {
+      "Sentence": "The 3 lights next to it, and those were the mapping profiles that you use so you get into the Xbox and you turn on copilot and it says OK? Do you want to map these things and so like for example, I've mapped the right joystick to the D pad on the accessible controller, so you can map anything to anything.",
+      "Duration": 20,
+      "Offset": 924
+    },
+    {
+      "Sentence": "And then on the back. These these 3.5 millimeter devices. This is basically a headphone Jack but it's not for headphones. We've all looked at these plugs before they usually have stripes. There's either like mono or a digital input. There's a stereo or 3 stripes and you can use those for digital like a button, pushing it on and off or for analog things like joysticks and it will support all of these different things were switches or buttons.",
+      "Duration": 30,
+      "Offset": 945
+    },
+    {
+      "Sentence": "Do you so you can do remapping in software and physical mapping in hardware? Yes, so that means that like this, this button that you have the one from rock band is that an on off or is that a trigger where you could push it slightly and it's like an analog input. You can push it slightly. It's when you plug the pedal into the back of the controller for it as a little simple 4 right trigger you can plug that you plug that right in there and yeah, it is.",
+      "Duration": 31,
+      "Offset": 975
+    },
+    {
+      "Sentence": "It's got to be analog because it Totale handles the pressure just just fine. That's amazing sort of Bigfoot trigger and put in all of this in the show. Notes 'cause I want people to see these if they can. It's pretty amazing. It's an ecosystem because it's open and it's not being prescriptive and I think this is important. The active controller is not saying use it like this. It's just a series of ports and possibilities and if you go on the show notes and look at our.",
+      "Duration": 31,
+      "Offset": 1007
+    },
+    {
+      "Sentence": "Have the accessories, you can get like you can Mount it to your leg you can. Mount it to your wheelchair. They have wheelchair arm mounts for the controller itself or mounting it in any way that you want. There's a whole ecosystem around it. One of these ones. It's really interesting is called the quad stick so it's a sip and puff mouth stick that can be used right to map directly to the Xbox Controller. If you want to fire with your mouth. You can do that. I believe there's also somebody makes a tracking device that you can use.",
+      "Duration": 30,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "So you can use that to move there's all sorts of things.",
+      "Duration": 3,
+      "Offset": 1071
+    },
+    {
+      "Sentence": "Oh, wow. Oh, and it would actually map directly to the joystick so it's a head tracker. But it's the Xbox doesn't know it is. It just thinks it's a choice to write and.",
+      "Duration": 8,
+      "Offset": 1075
+    },
+    {
+      "Sentence": "You talked about the.",
+      "Duration": 1,
+      "Offset": 1084
+    },
+    {
+      "Sentence": "Wheelchair Mount and the way that that happens is if you flip if you flip it over. There are several screw mounts in there, of different sizes that match a lot of medical medical devices, he would use so it matches right to like a wheelchair Mount.",
+      "Duration": 17,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "Oh, so if I understand correctly. You know how when you like I've bought cameras and there's a standard for how the camera attached to the tripod and then maybe you'll look at another device that you purchased any go. This fits on top of the tripod 'cause. It uses the same screw style and size. So you're saying that there are standards for mounts, so all of these things just just physically work together right and so it's really neat the amount of thought that has gone into this.",
+      "Duration": 27,
+      "Offset": 1105
+    },
+    {
+      "Sentence": "And Yeah, but one of the things I'm looking at a picture of this right now and on the backside of the controller with all those 3 and a half a Millimeter Jacks. There are symbols on the top so you can look down and see which ones you're needing to but then also on the back in high contrast in black.",
+      "Duration": 19,
+      "Offset": 1133
+    },
+    {
+      "Sentence": "Larger there are symbols right underneath each one of those as well.",
+      "Duration": 4,
+      "Offset": 1153
+    },
+    {
+      "Sentence": "So they really thought about the nuances that you might need. I was involved in the in the beta program of this and even between the last beta of the hardware and the release. They put a very subtle curve in the top.",
+      "Duration": 17,
+      "Offset": 1159
+    },
+    {
+      "Sentence": "So that it would be a little bit better ergonomically interesting and the other thing I think is worth pointing out is while it's trying not to be prescriptive. It's allowing for accessory makers to themselves be prescriptive depending on what you need for example, I figured oh well. This is speaking from a relatively able bodied perspective. I figured well. Maybe they'll just make big buttons like big giant buttons right, which is a very simplistic.",
+      "Duration": 27,
+      "Offset": 1177
+    },
+    {
+      "Sentence": "Wait, for me to think, but I go when I look at these accessories from a company called able net. They have big switches, which makes sense. But they also have micro light switches switches that will click with just the slightest amount of touch.",
+      "Duration": 13,
+      "Offset": 1205
+    },
+    {
+      "Sentence": "Or switch is like a button that happens when you grab it or grass better pull it to one side or they've got a jellybean switch, which is squishy button, not going to hurt you if you if you pound on it like these are all different ways to send binary information, but each one doesn't look like a switch in the simplistic way. I was going to think that it would look like right and that's a neat thing. I'm glad you brought up able net because they've done.",
+      "Duration": 30,
+      "Offset": 1220
+    },
+    {
+      "Sentence": "Mount for a lot of people and if you go out to able net one of the things you'll see on some of the pictures is it looks like there's almost a coding over the button and the reason like almost a plastic transparent coding over the button. The reason that is, is for people that have.",
+      "Duration": 17,
+      "Offset": 1251
+    },
+    {
+      "Sentence": "Issues controlling their mouth. I know of a young man who has wasted several controllers because as he gets excited to roll comes out a lot of drool comes out and it destroys. The controller, so they even take those sorts of things into account and so it's amazing, the small details that they really look at to be able to make sure that it's the best experience possible.",
+      "Duration": 27,
+      "Offset": 1269
+    },
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 5,
+      "Offset": 1297
+    },
+    {
+      "Sentence": "Progress software is the creator the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and comes with a range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 1303
+    },
+    {
+      "Sentence": "Instrumentation in a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 1337
+    },
+    {
+      "Sentence": "And this device has a has software to support it and its firmware updateable and it plugs into windows. So you program. It you get it all set up and then you can gain both on Xbox, an on your windows games in your steam games. Yes, and then you just have to map it. However, you want and I notice that there is also a one handed joystick. It looks kind of like a We Nunchuck. If you tried that as a one handed user. I haven't I've used the we nunchuck several times, but I haven't actually.",
+      "Duration": 28,
+      "Offset": 1356
+    },
+    {
+      "Sentence": "Use that one yet the next one, I'm actually getting is called a 3 D.",
+      "Duration": 3,
+      "Offset": 1385
+    },
+    {
+      "Sentence": "Control I don't remember the name of it, but it allows you to move things with your basically with your feet completely with your feet. It's almost like a balance.",
+      "Duration": 7,
+      "Offset": 1390
+    },
+    {
+      "Sentence": "A balance board that you might use like when you're doing a pilates, or something. Oh, right there's the 3 D rudder foot control. That's it. It's the 3 D rudder and so I've got that actually in order to play with.",
+      "Duration": 12,
+      "Offset": 1398
+    },
+    {
+      "Sentence": "To see how I can use that in one of the things I want to potentially do with that is help.",
+      "Duration": 6,
+      "Offset": 1412
+    },
+    {
+      "Sentence": "People with Accessibility issues have a better experience programming and so maybe with the 3 D rudder. They can move the mouse a little bit better or find a way to create some macros for it when they're using something like Visual Studio Code or visual studio or whatever to be able to help that a little bit more. Now I think I know the answer to this to this question. But I've watched My 10 year old my 12 year old kind of like develop their skills to be able to like when you first start like a first person shooter.",
+      "Duration": 30,
+      "Offset": 1419
+    },
+    {
+      "Sentence": "You're walking around you can't quite figure out the right thumb is your head in the left them as your body and you end up looking up in the sky or looking down and eventually that becomes second nature right after you set this controller up and your custom accessories. The way you want it whether it be on amount of your own or a table or however. You set yourself up? How long does it take and what is it like does it become intuitive where you just immediately know that moving your need to the right is the right trigger and moving, it to the left is left trigger or however you set it up.",
+      "Duration": 31,
+      "Offset": 1450
+    },
+    {
+      "Sentence": "Natural yes, it's just it becomes a habit just like with anything else at least it has in my case.",
+      "Duration": 6,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "And the neat thing is, is that if you have multiple people that want to use this you can have multiple profiles setup or maybe something works. A little bit better. Another configuration works better for a driving game versus a first person shooter game. You could have another mapping and change the change. The controls around to what makes sense for that particular game well, OK, so the controller. I understand is USB C. It's got a battery inside. It really acts like an Xbox Controller. It uses the same Xbox wireless at.",
+      "Duration": 33,
+      "Offset": 1489
+    },
+    {
+      "Sentence": "Just like an Xbox Controller 'cause. It is an Xbox Controller for all intensive purposes. The Xbox thinks it's an actual controller and I know the exclusive lab when they were working on this and the Xbox is hardware team, even went so far as to make sure that Azure using this like for online tournaments or things I'm sorry.",
+      "Duration": 23,
+      "Offset": 1523
+    },
+    {
+      "Sentence": "It uses the anti cheating things that Xbox would normally use anyway. So it's not anything that would be a competitive advantage or anything like that. They've they've tried to make sure that it just levels. The playing field so speaking of lowering them feel at the beginning of this podcast. You told me that when you were playing before you were effectively. You said the meat target for your kids has this level, they have you been able to pone your kids? Is that really is the goal here?",
+      "Duration": 30,
+      "Offset": 1547
+    },
+    {
+      "Sentence": "That that's the goal, the gold standard and I'm now able to hold at least hold my own I get maybe maybe a couple of 2 or 3 kills in now before I before I get killed so I'm a little more challenging me target so but I have been able to play almost all the way through Fallout 4 with this controller.",
+      "Duration": 20,
+      "Offset": 1577
+    },
+    {
+      "Sentence": "In the combat scenes and everything else very effectively and so I'm super excited about that and then I don't know if you saw the launch video that I'm in with my fake family, they give you a fake family at the we do it. It was filmed at the exclusive lab, but the game that I'm playing. They just took about 15 or 20 minutes of us playing the games, I'm actually.",
+      "Duration": 25,
+      "Offset": 1598
+    },
+    {
+      "Sentence": "Really into it because it was like a Street Fighter game and I was actually winning against the young man.",
+      "Duration": 6,
+      "Offset": 1624
+    },
+    {
+      "Sentence": "That I was playing against whereas before I would have gotten in a couple of shots, but now with the ability to use those buttons in in memory map. The controller it. It just opened things up and just made.",
+      "Duration": 13,
+      "Offset": 1632
+    },
+    {
+      "Sentence": "It makes it another way, I don't want to say otherwise dreary existence because it's not really. But if you want to play the games could because you're a gamer and it gives you that ability to feel like yeah, I can participate.",
+      "Duration": 15,
+      "Offset": 1646
+    },
+    {
+      "Sentence": "You know something else that's worth pointing out, you kept mentioning the attention to detail and the little things. They even made the packaging. Yes, iaccessible, so how often have. We all had to go and find a knife or struggle to open up the carpet. This thing kind of unfolds itself like a flower and it has this amazing packaging. Both the cardboard around it and then the internal box. It's not packaging that you would want to throw away now. Actually, I still have the beta version and I'm going to, I'm trading that in for the actual.",
+      "Duration": 31,
+      "Offset": 1664
+    },
+    {
+      "Sentence": "The actual release version and I can't wait to see the packaging because.",
+      "Duration": 4,
+      "Offset": 1697
+    },
+    {
+      "Sentence": "The listeners ought to know that they spent even they spent 4 years on the controller, but they spent an entire year on the packaging and to weigh you open. It is with a little ring that you just pull back and it pulls some very not real sticky tape off and then. Yeah, it just unfolds like a flower but then it also slides out gently on a cardboard.",
+      "Duration": 21,
+      "Offset": 1702
+    },
+    {
+      "Sentence": "Kind of lift if you will so that you don't have to you can just kind of scoop it off. If you need to, yeah, exactly there. These loops and they set a standard for no teeth. Yep, for the package designers because people with limited mobility will often have to use their teeth to open packaging, which is not not the best the out of box experience now that you get pretty good at it. Sometimes, Unfortunately, so we can get this, where Microsoft stores and online.",
+      "Duration": 30,
+      "Offset": 1724
+    },
+    {
+      "Sentence": "Right now, I believe it's just at the Micro stores and on Microsoft stores and online. But I have a feeling that once once production gets totally ramped up and everything that you'll be able to get it at Best Buy or wherever you know your local store. Maybe yeah that's fantastic. I'm curious also do you know if it has a headset adapter as well like the thing that I'm always impressed with my Xbox controllers. I just plug headphones in and they wirelessly bring the sound over so.",
+      "Duration": 30,
+      "Offset": 1755
+    },
+    {
+      "Sentence": "Actually have wireless headphones that were custom and separate I plugged into my stereo and now the Xbox Controller is itself a headphone transmitter. Yep, I'm not sure about the wireless headphones. I would assume that since it's using?",
+      "Duration": 13,
+      "Offset": 1787
+    },
+    {
+      "Sentence": "It can be you can use it as a wireless controller. I would assume that would act as a wireless headphones. I guess is what I'm saying right well, yeah 'cause. There is a 3 and a half inch or 3 and a half. Millimeter Jack on the left side that has a headphone above it. Yeah, you can use headphones with it.",
+      "Duration": 14,
+      "Offset": 1801
+    },
+    {
+      "Sentence": "Fantastic see you know, I think.",
+      "Duration": 3,
+      "Offset": 1817
+    },
+    {
+      "Sentence": "I don't have mobility issues but I have had mobility issues and I think this is a thing for those of us who are listening to this podcast who may not have those issues, right now. You just never know. I've had. I've had frozen shoulder surgery, where I had no mobility in my left arm for 2 years. I had carpal tunnel surgery on my right hand and I've got a bone spur in my thumb right now where my right hand. Gaming is painful. We as relatively able bodied people should not.",
+      "Duration": 32,
+      "Offset": 1821
+    },
+    {
+      "Sentence": "Think about technologies like this as being you know this is just for people in wheelchair or this is just for people with serious mobility issues. This is really about it, making it for everybody like this is what inclusion means it's yes, it's for players with different disabilities or different abilities. But it may be well for you is someday if if something goes awry in a body part that you don't expect I did not expect to get frozen shoulder or hand issues but it's nice to know that controllers like this exist if I ever need them.",
+      "Duration": 31,
+      "Offset": 1853
+    },
+    {
+      "Sentence": "And it it's just another way to like you, said be inclusive and given Avenue to people so that they can participate. Fantastic Alright well. Thanks so much. John Alexander for chatting with me today. Scott it's always a pleasure to talk to you. I appreciate that this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 18,
+      "Offset": 1885
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "id": "a58abdac-69c8-425c-9701-5bf51f0fe4c4",
+  "Title": "The Problem with Software by Adam Barr",
+  "PublishDate": "2019-05-02",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/0750f4e6.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "As a software engineer chances are you've crossed paths with mongo DB at some point. Whether you are building an app for millions of users or just figuring out your side hustle. As the most popular non relational database, Mongo DB is intuitive and incredibly easy for development teams to use .Now with Mongo DB Atlas you can take advantage of Mongo DB's flexible document data model as a fully automated cloud service.",
+      "Duration": 23,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Mongo DB Atlas handles all the costly database operations and admin task that you'd rather not spend time on like security, high availability, data recovery, monitoring and elastic scaling, Try Mongo DB Atlas for free today. Visit WWW dot Mongo DB.",
+      "Duration": 17,
+      "Offset": 24
+    },
+    {
+      "Sentence": "Dot com slash cloud to learn more that's mongoDB.com slash cloud.",
+      "Duration": 10,
+      "Offset": 42
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. It's another episode of cancel minutes and today I'm chatting with Adam Bar. He's the author of the problem with software? Why Smart Engineers Write Bad code. You worked at Microsoft for many years didn't you Sir.",
+      "Duration": 12,
+      "Offset": 61
+    },
+    {
+      "Sentence": "Yes, I worked there for a little over 23 years in 2 different stints 10 years and in 13 years as developer Devilly Dev manager and then couple other jobs and you've census caped and consulting and hopefully enjoying yourself, yeah, so there's things. I miss about Microsoft. But overall, I'm happy to be have a little more flexibility in my schedule. When you took a sabbatical you went off and wrote this book, the problem with software and I was.",
+      "Duration": 30,
+      "Offset": 75
+    },
+    {
+      "Sentence": "And enough to get an early copy and I've actually on the back of the other cover there with a little quote about why I think this book is great and one of the things that II said about it was that it was an unflinching view of what sucks about software and how you can potentially solve it. It's a really dense book and I say that in the kindest way of the word dense there's a lot of information shoved into 300 pages in this book.",
+      "Duration": 24,
+      "Offset": 106
+    },
+    {
+      "Sentence": "Right the idea was, I wanted a book that was readable by a non programmer, but also could be read by programmers. So the nonprogrammers would get some insight into what was going on with programmers.",
+      "Duration": 12,
+      "Offset": 131
+    },
+    {
+      "Sentence": "And the programmers would hopefully get a little self reflection about what they could do better, so my concern was that I'd make some comment about what example was I'd say, well bite is 8 bits and in some programmer in their mind would jump up and say, well, no actually you know, there's this example referenced in the original K and RC book where a bite is 9 bits. How can you say such an uninformed statement so I tried to put the?",
+      "Duration": 25,
+      "Offset": 145
+    },
+    {
+      "Sentence": "The details like that proving my programming chops into the endnotes. 'cause the programmers will read those and then the regular people will just skip the end notes and hopefully get a little more.",
+      "Duration": 10,
+      "Offset": 171
+    },
+    {
+      "Sentence": "The story without all these random tangents explaining these really esoteric details about stuff that only a programmer would care about. I'm trying to avoid the situation.",
+      "Duration": 9,
+      "Offset": 181
+    },
+    {
+      "Sentence": "When you read a book about programming.",
+      "Duration": 2,
+      "Offset": 192
+    },
+    {
+      "Sentence": "Live Thompson just came out with his book coders and I was leafing through it, and even just reading it. He's he's not really a programmer you see these things we grit your teeth really. That's not quite accurate. Even I understand for a wide audience. That's what you gotta do so. I tried to be accurate where possible and that does lead to some digressions and tangents just to really explain well. This is actually what the real story is I'm actually going to have Clive on the show in a little while and I'm quoted multiple times in the book.",
+      "Duration": 31,
+      "Offset": 195
+    },
+    {
+      "Sentence": "And he had a fact Checker I mean, I spoke to him at length. I spoke to his fact, Checker at length. There's still a number of times and I was like well. That's not exactly how I would've thought you know, there's all these people talk about bugs and software and they're kind of merging together an actual bugs like Heartbleed, where the program, made a mistake and then things like the 737 Max 8 problem, which is.",
+      "Duration": 23,
+      "Offset": 227
+    },
+    {
+      "Sentence": "Really, technically not a programmer bug because the system is working as designed. It was just designed badly and then he got problems like the the Ericsson certificate problem last fall that knocked out some cell phones and and people call all those things bug and dogs and he's trying to give an example of a bug and it gives a python syntax error. It's like. That's not any of those that's not at all. What we're talking about it's not a logic bug or design bug or an operational bug. It's some minor thing that gets.",
+      "Duration": 30,
+      "Offset": 252
+    },
+    {
+      "Sentence": "Cleared up quickly and never effects any code that's checked in so I was trying to be. Hey, I'm actually a programmer. I do understand this stuff when I try to explain it for a lay man at least I'm not making some basic mistake of Miscategorizing, something that would great on a programmers eyes balls. I was trying to explain meltdown and Spectre. You know the Intel. CPU exploits as not really a bug as they were like you say a design flaw?",
+      "Duration": 30,
+      "Offset": 282
+    },
+    {
+      "Sentence": "Blame them for the layperson and I said, well imagine that you thinking about going and spending. Some money and by virtue of the fact that you thought about looking in your wallet. I stole the credit card out of your wallet.",
+      "Duration": 13,
+      "Offset": 314
+    },
+    {
+      "Sentence": "You know your 'cause you're doing a predict if there's 2 parallel universes, one where you left an open your wallet and went off and did it in one way you didn't and by virtue of the fact that you thought about it. I've stolen your money and people like either think that's a perfect analogy. Or they spend the rest of the day. Ripping the analogy of partisan totally and completely imperfect analogy. There's just no good way to make analogies around code. Yeah, honestly that analogies made has some flaws, which up never mind.",
+      "Duration": 28,
+      "Offset": 328
+    },
+    {
+      "Sentence": "I thought I saw I heard about that. I thought wow. That is really clever occasionally you have to look at it, sometimes you look at next point you're like wow. I mean, just to think of that and realize you could use cash speed to predict stuff and realize what the processor done is they got more complicated is actually pretty darn clever and you refer to the software sausage, then how it's made and what's clean and what's not throughout the book.",
+      "Duration": 30,
+      "Offset": 357
+    },
+    {
+      "Sentence": "One of the things that you call out kind of early on is this. The education of a programmer and whether or not. We can catch. These things early or maybe some of these bugs in software are really bugs and how we teach software.",
+      "Duration": 11,
+      "Offset": 388
+    },
+    {
+      "Sentence": "Yeah, I think the problem is you.",
+      "Duration": 1,
+      "Offset": 401
+    },
+    {
+      "Sentence": "You could learn to program on your own at a lot of people do this really started once the personal computer became widespread and people could teach himself to program without going to work for a company or go to college, which is where the computers used to be.",
+      "Duration": 14,
+      "Offset": 403
+    },
+    {
+      "Sentence": "And people talk themselves and then they went to college and kind of use the same skills. They taught themselves and.",
+      "Duration": 6,
+      "Offset": 418
+    },
+    {
+      "Sentence": "Universities weren't really teaching.",
+      "Duration": 1,
+      "Offset": 425
+    },
+    {
+      "Sentence": "Actual mechanics of writing code they tended to teach algorithms.",
+      "Duration": 3,
+      "Offset": 427
+    },
+    {
+      "Sentence": "And so people were basically all self taught even if you had a nominally had a software engineering or computer science degree you actually taught yourself to code and you would tell yourself on very small programs, maybe with a couple other people working for 3 months. On some assignment in class and that is vastly different from what you do at a large company where the software has to persist for years and it's multiple people working out of multiple groups, it stitched together with APIs.",
+      "Duration": 29,
+      "Offset": 431
+    },
+    {
+      "Sentence": "The frustrating part of all this is IBM and other companies figured this out in the 1960s and wrote a bunch of books about it.",
+      "Duration": 7,
+      "Offset": 461
+    },
+    {
+      "Sentence": "But that was essentially ignored by all these self taught people in the late 80s and early 90s because they could be successful.",
+      "Duration": 8,
+      "Offset": 469
+    },
+    {
+      "Sentence": "With their self taught methodology so you really wind up and it still today that it takes a while working in industry for people to hopefully figure out oh.",
+      "Duration": 9,
+      "Offset": 478
+    },
+    {
+      "Sentence": "API design is very important, it's not some afterthought stitching these things together is really what matters not just cranking out some code in my office and Microsoft Certainly.",
+      "Duration": 12,
+      "Offset": 488
+    },
+    {
+      "Sentence": "Despite that being known an ignored they spent a long time, figuring out things for example, that you couldn't test in quality. You had to design it in. I heard Jerry Weinberg state that Charles Babbage, working on the difference engine 150 years ago, stated that you could not test quality in you have to design it in so it's not like it's a new idea, but people keep having to re discover it on their own at great cost of time and frustration.",
+      "Duration": 30,
+      "Offset": 501
+    },
+    {
+      "Sentence": "So OK, so let me ask you this, this tough question because.",
+      "Duration": 2,
+      "Offset": 532
+    },
+    {
+      "Sentence": "As I'm going to refer to you and I as senior developers and that could be a double entendre in the use of the word senior? How do we make sure that we have senior people are not gatekeeping and preventing younger people or self? Taught people from being successful like there is this knowledge out there by virtue of the fact that there are other self taught or learn to code camp. Or maybe just learned at a University that didn't teach them these things. How do we set them up for success when we bring them on our teams certainly we don't want them to simply not get involved in tech in the 1st place we want them to be successful.",
+      "Duration": 33,
+      "Offset": 536
+    },
+    {
+      "Sentence": "Right it's tricky to avoid being the grumpy old person shaking your fist at those kids today.",
+      "Duration": 6,
+      "Offset": 570
+    },
+    {
+      "Sentence": "I think the way I learned.",
+      "Duration": 2,
+      "Offset": 577
+    },
+    {
+      "Sentence": "And I start out by had a job before Microsoft but my first.",
+      "Duration": 3,
+      "Offset": 580
+    },
+    {
+      "Sentence": "Real serious offer developed was at Microsoft and I happened to be on the.",
+      "Duration": 3,
+      "Offset": 585
+    },
+    {
+      "Sentence": "Windows NT team under Dave Cutler, an?",
+      "Duration": 3,
+      "Offset": 589
+    },
+    {
+      "Sentence": "Luckily, that was just the way things were done you did do design work.",
+      "Duration": 5,
+      "Offset": 593
+    },
+    {
+      "Sentence": "Really did worry about quality you try to avoid being careless that was the.",
+      "Duration": 4,
+      "Offset": 599
+    },
+    {
+      "Sentence": "Just the in the air.",
+      "Duration": 1,
+      "Offset": 604
+    },
+    {
+      "Sentence": "In the group and so I think what's important when people come into existing team out of college is just to say look this is what we do.",
+      "Duration": 8,
+      "Offset": 607
+    },
+    {
+      "Sentence": "Acknowledge that the people are smart, Nick and write code. Nick applied debug small bits of code. But in a gentle way explain that industry software is different because of the scale and time.",
+      "Duration": 13,
+      "Offset": 616
+    },
+    {
+      "Sentence": "But it has to last.",
+      "Duration": 1,
+      "Offset": 630
+    },
+    {
+      "Sentence": "Bears certain ways, we have to operate.",
+      "Duration": 2,
+      "Offset": 632
+    },
+    {
+      "Sentence": "Despite that, your first code review will be hard to take for anybody. It will feel like personal criticism.",
+      "Duration": 7,
+      "Offset": 636
+    },
+    {
+      "Sentence": "No matter how much you prepared for it. I wish universities did code reviews, they had students doing code reviews of each other's code.",
+      "Duration": 8,
+      "Offset": 644
+    },
+    {
+      "Sentence": "Both for the educational aspect and also just getting used to it that that's part of.",
+      "Duration": 4,
+      "Offset": 653
+    },
+    {
+      "Sentence": "Working in software's other people have opinions about your code and you're not the the one software genius in the world.",
+      "Duration": 7,
+      "Offset": 658
+    },
+    {
+      "Sentence": "That is hard to take that feedback, though like you have to be able to take like you're like, I used to say like you know, my code doesn't suck so my code sucks. Rather, I don't suck right. It's like when you write your first essay or your first poem or anything, you put a piece of creativity out in the world and it's sub optimal it doesn't work. For whatever reason, not attaching your ego to what you wrote is challenging for anyone, especially a young person right. I think especially if you're in software where you sort of succeeded without.",
+      "Duration": 30,
+      "Offset": 667
+    },
+    {
+      "Sentence": "Having to learn a lot from other people and get feedback. I think another industry certainly other.",
+      "Duration": 5,
+      "Offset": 698
+    },
+    {
+      "Sentence": "Engineering disciplines or areas like Madison.",
+      "Duration": 3,
+      "Offset": 705
+    },
+    {
+      "Sentence": "You're learning from other people, all the time, nobody goes through a medical program thinking. Oh, I know everything about Medison. I'll just keep doing what I did in high school so they've already been.",
+      "Duration": 11,
+      "Offset": 709
+    },
+    {
+      "Sentence": "Taught that yes, you have to learn, you have to stand on the shoulders of Giants.",
+      "Duration": 5,
+      "Offset": 721
+    },
+    {
+      "Sentence": "And I think I made an analogy in software, Smart Core. Maybe getting a little boost onto their big toe or something and most most stuff is just re learned.",
+      "Duration": 8,
+      "Offset": 727
+    },
+    {
+      "Sentence": "By people rather than having us understanding it that's the way the world works you learned something from other people.",
+      "Duration": 6,
+      "Offset": 736
+    },
+    {
+      "Sentence": "Speaking of old people who shake their fists. You mentioned Edgar Dijkstra in the in the book and you talk about in 1975, he said. It's impossible to teach good programming to students who had an exposure to basic there already mutilated beyond hope of generate regeneration. That's a little bit rough. I certainly hope we're not doing that today with JavaScript or other languages that are more accessible well. Every time I make a comment about a specific language. Somebody yells at me so I'll refrain from that, but",
+      "Duration": 30,
+      "Offset": 743
+    },
+    {
+      "Sentence": "Extra was really saying the quote is a good one about basic because well Bill Gates is first language is basic so isn't that funny.",
+      "Duration": 8,
+      "Offset": 774
+    },
+    {
+      "Sentence": "But the time exactly important, it was 1975. It was the year that Microsoft was founded to market a basic interpreter.",
+      "Duration": 9,
+      "Offset": 783
+    },
+    {
+      "Sentence": "And doctors really trying to tell people languages like basic as they existed back then, not not visual basic, which is somewhat. Modern those languages didn't didn't have block if statements. They were riddled with gotos out of necessity. The subroutines enough parameters. They were terrible languages and he was saying there are actually better languages.",
+      "Duration": 20,
+      "Offset": 793
+    },
+    {
+      "Sentence": "Our goal in particular was a pretty good language and it's really the ancestor of C in C Sharp and Java in most modern languages. He was desperately trying to tell people stop learning basic stop learning Fortran and Cobol as your first language use better leg, which is Unfortunately it was just the wrong timing. The PC industry was happening. They all use basic as their built in language because you could fit it into a one K ram or something and so.",
+      "Duration": 29,
+      "Offset": 814
+    },
+    {
+      "Sentence": "They went with basic all these people bought their PCs taught them selves. Basic and maybe there weren't mentally mutilated, but they certainly learn some very bad habits. I wish I had an argument with somebody.",
+      "Duration": 13,
+      "Offset": 845
+    },
+    {
+      "Sentence": "About.",
+      "Duration": 0,
+      "Offset": 859
+    },
+    {
+      "Sentence": "Well, is my sister actually about how.",
+      "Duration": 2,
+      "Offset": 860
+    },
+    {
+      "Sentence": "You didn't really need parameters to methods and you could use a line number instead of a name. I mean, you understood it right? That's just a classic kind of thing you say when you've only worked on small pieces of software for yourself and you've never worked on something big? Because if you're writing a small piece of software for yourself. Any language is fine. Essentia Lee 'cause It doesn't matter how readable it is you understand it.",
+      "Duration": 26,
+      "Offset": 863
+    },
+    {
+      "Sentence": "It's when other people have to understand your code that.",
+      "Duration": 2,
+      "Offset": 890
+    },
+    {
+      "Sentence": "Something like old school basic really becomes problematic. She's a programmer to your family of programmers. While she's actually not a programmer. But she was taking a programming class in college. When I was in high school senior group through with my sisters probably not.",
+      "Duration": 17,
+      "Offset": 892
+    },
+    {
+      "Sentence": "You know the place where applied the most logic tomar. Arguments probably mostly interested in improving her wrong. So I adopted this sort of ridiculous attitude that IBM PC basic was good language.",
+      "Duration": 13,
+      "Offset": 910
+    },
+    {
+      "Sentence": "Your code is powerful and so are you and when you consider the reach of your code. It's clear that to deliver quality code. You must also deliver secure code. So where can you start a first step is educating yourself on basic secure coding principles and beginning to put these principles into practice everyday veracode secure coding tool kit is your go to resource for all your secure coding needs.",
+      "Duration": 23,
+      "Offset": 925
+    },
+    {
+      "Sentence": "The benefits of the toolkit include learning best practices for a secure coding.",
+      "Duration": 4,
+      "Offset": 949
+    },
+    {
+      "Sentence": "Understanding how to secure your DevOps environments and learning to combat the most common software vulnerabilities stay secure and download this valuable asset today. At veracode.com tool kit. That'SV eracode.com slash toolkit. You also talk about the difference in programmers of different eras and what they worry about and you point out that the programmers of your error worried about the efficiency at which their programs run and I remember myself reading the book.",
+      "Duration": 31,
+      "Offset": 954
+    },
+    {
+      "Sentence": "Wearing pearls which is a collection of columns from Carnegie Mellon computer science professor and it seems like I hear at least amongst applications that are commercial applications less and less about the concern around efficiency? Are we getting away with a lot because processors are so.",
+      "Duration": 16,
+      "Offset": 986
+    },
+    {
+      "Sentence": "Powerful in memory so plentiful.",
+      "Duration": 1,
+      "Offset": 1003
+    },
+    {
+      "Sentence": "Well, we probably are and I think that's fantastic because.",
+      "Duration": 3,
+      "Offset": 1006
+    },
+    {
+      "Sentence": "When you worry about performance you almost certainly make your code more complicated and harder for other people to understand what I was teaching. My kids to drive. I said the number 1 way to drive safely is not to be in a hurry because when you're in a hurry. You take shortcuts and you're not your best driver at same thing with designing software if you're worried about performance.",
+      "Duration": 21,
+      "Offset": 1010
+    },
+    {
+      "Sentence": "It sounds like a Noble thing and.",
+      "Duration": 1,
+      "Offset": 1032
+    },
+    {
+      "Sentence": "Maybe you could even conceptually say, and there's a couple examples probably where I remove the code and it was simpler and it ran faster, but that almost never happens worrying about performance means put again some side channel or adding some weird. API parameter that kicks in. Some behavior in certain situations. And just generally writing more code to handle the common path separately from.",
+      "Duration": 24,
+      "Offset": 1035
+    },
+    {
+      "Sentence": "The error path or whatever just just it winds up with less understandable code and so the fact that people can not worry about it in most cases and just write clear simple code is actually a great thing again when Bentley was writing program are pearls. That was along time ago and you didn't have to worry about.",
+      "Duration": 20,
+      "Offset": 1060
+    },
+    {
+      "Sentence": "Performance more, but even he said, although programming, pearls is mostly about performance. Even he said. Don't do this stuff all the time. This is for the situations where you need to worry about performance. You can use these techniques, but don't just go blindly trying to make your software fast, even though it feels good. It's like scratching an itch and it's easy to measure you made. Something 5% faster, figuring out. They also made it 100% more complicated is takes longer and involves other people and more time, which are.",
+      "Duration": 32,
+      "Offset": 1082
+    },
+    {
+      "Sentence": "Not something programmers generally want to deal with so they can just sit there over optimizing something all day and feeling virtuous when in fact, there probably not helping anything will certainly making it what's that? What's that old saying right make it right, and then make it fast, yes, I like news, quote about.",
+      "Duration": 16,
+      "Offset": 1115
+    },
+    {
+      "Sentence": "For Optimization is the root of all evil and.",
+      "Duration": 2,
+      "Offset": 1132
+    },
+    {
+      "Sentence": "II've simplified that to say, Optimization is the root all of all evil. Not you should never optimize. But a lot of bugs are there because some was optimizing something and?",
+      "Duration": 10,
+      "Offset": 1135
+    },
+    {
+      "Sentence": "And they like said made the card more complicated or just had a bug programmers like to write caches again caches seem like a clever thing. But there's a lot of bugs in the cash itself, which only manifest because you tried to make things faster and often without.",
+      "Duration": 17,
+      "Offset": 1145
+    },
+    {
+      "Sentence": "Really, knowing if that was.",
+      "Duration": 1,
+      "Offset": 1163
+    },
+    {
+      "Sentence": "Important and until you get something in front of a customer. You don't really know if this thing needs to be optimized and today with.",
+      "Duration": 7,
+      "Offset": 1165
+    },
+    {
+      "Sentence": "Stuff in the cloud and the way you could scale so easily and storage is basically free and.",
+      "Duration": 5,
+      "Offset": 1173
+    },
+    {
+      "Sentence": "CPU is so cheap a lot of times you don't have to worry about optimizing it. You just throw some more hardware at it.",
+      "Duration": 5,
+      "Offset": 1178
+    },
+    {
+      "Sentence": "You know it's it's interesting that you pointed out 'cause I've got a blog system that I worked on that's called dos blog. Das like its German for the blog and it's been running for 14 years, effectively unchanged.",
+      "Duration": 14,
+      "Offset": 1185
+    },
+    {
+      "Sentence": "But I have a couple of bugs that I hit probably once or twice a month as well as a lovely bug that I hit every time we fall back because the software never expected that time could cope backwards.",
+      "Duration": 14,
+      "Offset": 1200
+    },
+    {
+      "Sentence": "And they're all caching related and I&I probably didn't you know, I did it because 15 years ago. We had less processor power than we do today and I could probably turn the cash. Often the thing would work. A lot more reliably virtually every bug in dust blog is Cash Cash related bug. Yeah, I'd say within within within a routing error. If someone suggests a performance optimization you should say no you'll be right enough that.",
+      "Duration": 24,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "Other couple of cases where it's probably a good idea. You can deal with, but I think as I said it's a programmer instinct.",
+      "Duration": 6,
+      "Offset": 1240
+    },
+    {
+      "Sentence": "And you've got these old timers.",
+      "Duration": 1,
+      "Offset": 1247
+    },
+    {
+      "Sentence": "Grumpling about",
+      "Duration": 1,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "Kids today, but I think there's a far more important things to concentrate on it in particular make it code is maintainable unreadable well. I appreciate that, like we can joke about old programmers and kids today. But what what do you think kids today? Will get from a book like this there's historical context. I think you talk about the importance of agile and when these things started and how it fits into how we make software today. What do you think that a 20 year old would take away from this book as they're learning about things like agile and learning about things like design thinking.",
+      "Duration": 32,
+      "Offset": 1251
+    },
+    {
+      "Sentence": "Right hopefully they'll they'll get the understanding that something like agile is useful in certain situations, but not all situations an that language, they like?",
+      "Duration": 9,
+      "Offset": 1284
+    },
+    {
+      "Sentence": "Is good in some situations?",
+      "Duration": 2,
+      "Offset": 1294
+    },
+    {
+      "Sentence": "But now there are situations, so just be a somewhat sceptical consumer of programming wisdom.",
+      "Duration": 4,
+      "Offset": 1297
+    },
+    {
+      "Sentence": "They have likely very limited experience.",
+      "Duration": 3,
+      "Offset": 1302
+    },
+    {
+      "Sentence": "But all the broad exposure to a bunch of different languages, a bunch of different code bases.",
+      "Duration": 4,
+      "Offset": 1305
+    },
+    {
+      "Sentence": "And so they may based on their own experience think that something is the right way to do something but.",
+      "Duration": 5,
+      "Offset": 1311
+    },
+    {
+      "Sentence": "That may or may not be true and I think it's easy.",
+      "Duration": 3,
+      "Offset": 1317
+    },
+    {
+      "Sentence": "To kind of float through a CS undergrad program on your own wits.",
+      "Duration": 5,
+      "Offset": 1321
+    },
+    {
+      "Sentence": "And never really come to terms with the fact come to face with fact that other people actually are smart, too.",
+      "Duration": 6,
+      "Offset": 1328
+    },
+    {
+      "Sentence": "Your favorite language may not be the greatest language that kind of thing, so just an appreciation that they might be suffering from a little bit of hubris.",
+      "Duration": 7,
+      "Offset": 1335
+    },
+    {
+      "Sentence": "As they approach.",
+      "Duration": 1,
+      "Offset": 1343
+    },
+    {
+      "Sentence": "Work in an industry and they'll sold grumpy programmers may have something to teach them. Yeah, as someone myself who used to teach computer science at a State University at least I always felt like there should have been a historical context of computer science or history of computer science and like let's learn about programming. 'cause I feel like I'm learning more now in 2019, about the history of programming from tweets where I learn about.",
+      "Duration": 30,
+      "Offset": 1345
+    },
+    {
+      "Sentence": "You know, Ada Lovelace, dead or what you are seeing a movie like hidden figures. And I go Oh wow. I didn't realize that that's how that was done because no one ever taught me this in school. I don't know did you have a history of computer science course we had? We had zero history. I went to school in the 80s so a lot of this.",
+      "Duration": 15,
+      "Offset": 1376
+    },
+    {
+      "Sentence": "This was a lot of empirical studies done in the 70s people actually studied.",
+      "Duration": 4,
+      "Offset": 1393
+    },
+    {
+      "Sentence": "Commenting and variable names and method length. All this stuff that's just sort of debated endlessly now with no resolution actually started in the 70s and that that wasn't that long ago and I went to school. But we heard nothing about it was just hear some algorithms now go write a compiler and figure out here's the here's the book about here's KNR go teach yourself C.",
+      "Duration": 22,
+      "Offset": 1398
+    },
+    {
+      "Sentence": "Kind of thing and that was that was what I heard from other people. It wasn't just why I went to school. And so, yeah, there there. There was there was really nothing. Historical sort of time began when Unix was created maybe and it literally begin though I mean, technically it kind of begins at that moment. We know when zero was right right. Yeah, that that was essentially the message. We got see was sea was the first programming language ever. The first decent programming language ever feel like that, like for people of a certain age.",
+      "Duration": 34,
+      "Offset": 1421
+    },
+    {
+      "Sentence": "It imply that like see was the first language ever of any of any import. Here's the KNR book. They handed to you and oh by the way. There's assembly language. But we only have to do that for one semester, yeah, it really was literally somebody asks in class.",
+      "Duration": 17,
+      "Offset": 1456
+    },
+    {
+      "Sentence": "As we're discussing our first programming assignment.",
+      "Duration": 2,
+      "Offset": 1474
+    },
+    {
+      "Sentence": "Because there were one of the rare people who hadn't taught themselves to program.",
+      "Duration": 3,
+      "Offset": 1478
+    },
+    {
+      "Sentence": "In High School, said well How do I learn the language and they said Oh, well here's the book knock yourself out?",
+      "Duration": 7,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "Those are the days so you were at Microsoft through windows NT through 2003 and a lot of bugs started showing up Slammer Bug Slammer. Blaster worms like 20034, 5 people were slapping windows. NT and Windows generally around pretty pretty hardware. They not yes. We did a an attempt.",
+      "Duration": 25,
+      "Offset": 1491
+    },
+    {
+      "Sentence": "To eradicate the bugs.",
+      "Duration": 2,
+      "Offset": 1517
+    },
+    {
+      "Sentence": "In it had to be before mid 2000 'cause That's when I left the NTT and that's when I left Microsoft. The first time so that was where they actually sat down and explained about buffer overruns.",
+      "Duration": 11,
+      "Offset": 1521
+    },
+    {
+      "Sentence": "An exactly how you could.",
+      "Duration": 2,
+      "Offset": 1533
+    },
+    {
+      "Sentence": "Construct an exploit using a buffer overrun which again to me seemed wow. That's really clever. But then of course, it was my software their attacking so we have to fix it, but we did it with.",
+      "Duration": 10,
+      "Offset": 1536
+    },
+    {
+      "Sentence": "Just with code reviews and we didn't have the Sal the annotation language that would attempt to.",
+      "Duration": 5,
+      "Offset": 1547
+    },
+    {
+      "Sentence": "Track some of these see problems that cost across function calls so you could actually get some sense of what was safe and what wasn't.",
+      "Duration": 7,
+      "Offset": 1554
+    },
+    {
+      "Sentence": "And I think Jim Allchin Maiden, Unfortunately quote to the comment to the press that oh we found all the bugs and and and fix them and then of course, you had Slammer Hanzo Toben Blaster. She believed that there was an automated tool that could find all buffer overflows. I think he just thought you could find it by code reviews.",
+      "Duration": 18,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "II mean finding stuff by code reviews is really a classic testing in quality approach, I mean.",
+      "Duration": 7,
+      "Offset": 1581
+    },
+    {
+      "Sentence": "Eric Raymond was running around claiming that.",
+      "Duration": 2,
+      "Offset": 1588
+    },
+    {
+      "Sentence": "Open source software is more secure because there are more eyeballs looking at it, which is just completely not true. You make things more so there is open SSL right. You make things more secure by by engineer again.",
+      "Duration": 13,
+      "Offset": 1591
+    },
+    {
+      "Sentence": "Certain techniques avoid in this case in C is such a terrible language for buffer overruns by those techniques to avoid it or you could not write stuff and see that would also work but that might be a bridge, too far for some people but yeah, it was.",
+      "Duration": 15,
+      "Offset": 1605
+    },
+    {
+      "Sentence": "I think II don't think my code ever actually had an exploit directly in my code but.",
+      "Duration": 5,
+      "Offset": 1622
+    },
+    {
+      "Sentence": "I mean, I was writing.",
+      "Duration": 1,
+      "Offset": 1627
+    },
+    {
+      "Sentence": "Code that faced the network that manipulated buffers received off the network so I mean, I could easily have.",
+      "Duration": 6,
+      "Offset": 1630
+    },
+    {
+      "Sentence": "Had an exploit that was directly in my code.",
+      "Duration": 2,
+      "Offset": 1637
+    },
+    {
+      "Sentence": "Do do people keep did people keep track of stuff like that I mean? Does it really matter whether is in your code or do they put their collective code ownership does it where people running blame and saying look. It was Adam. They they they wouldn't run blame? I think it was maybe this is being too forgiving.",
+      "Duration": 16,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "The attitude was well see is Harden.",
+      "Duration": 3,
+      "Offset": 1658
+    },
+    {
+      "Sentence": "Uh I think that was giant out even when the first is hard. The first Morris Worm came out in 1988, which is the first remote see exploit the attitude was wow. You can't protect against everything sort of attitude. I mean, why once I actually worked and the trustworthy computing team.",
+      "Duration": 19,
+      "Offset": 1663
+    },
+    {
+      "Sentence": "And.",
+      "Duration": 0,
+      "Offset": 1683
+    },
+    {
+      "Sentence": "He had",
+      "Duration": 0,
+      "Offset": 1684
+    },
+    {
+      "Sentence": "They had some analysis of all the major exploits and who had done the actual check in again. I don't think they were going to blame people. That was just OK. Maybe there's something on this team, and then he had the actual name of the person who done the check and I sort of said well as anybody on that list twice and.",
+      "Duration": 14,
+      "Offset": 1686
+    },
+    {
+      "Sentence": "Sort of laughed and then we order, the Excel by.",
+      "Duration": 3,
+      "Offset": 1702
+    },
+    {
+      "Sentence": "By user ID and there was somebody who had actually managed to check in 2 exploits or the code behind 2 exploits and.",
+      "Duration": 8,
+      "Offset": 1706
+    },
+    {
+      "Sentence": "With like my weather app that guy we looked him up and of course, he was now a director development somewhere at Microsoft. But that's an amusing story. But that doesn't mean necessarily he was a bad programmer. I mean, I think we all could have made mistakes but.",
+      "Duration": 14,
+      "Offset": 1716
+    },
+    {
+      "Sentence": "He just happened to have to have made 2 of them well. Certainly. Let me let he who is he or she who has filed the first bug through the first. The first stone. I mean, anyone can make a bug like that. It's you can fat finger or something and you're off by one errors are the bane of the entire Internet aren't they yeah, there's a lot of Unicode.",
+      "Duration": 21,
+      "Offset": 1731
+    },
+    {
+      "Sentence": "Pudding Unicode into the guts of NT was a great saying because it meant you could handle these languages, but there was a lot of these exports that were just.",
+      "Duration": 7,
+      "Offset": 1753
+    },
+    {
+      "Sentence": "Messing up the",
+      "Duration": 1,
+      "Offset": 1762
+    },
+    {
+      "Sentence": "W char the number of.",
+      "Duration": 2,
+      "Offset": 1763
+    },
+    {
+      "Sentence": "2 bide characters versus the number of bytes needed to store it and so you had a lot of these it wasn't off by one. It was off by a factor of 2 mistakes and you just tried to copy a 256 Unicode character.",
+      "Duration": 14,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "Buffer, which is 512 bytes into a 256 byte.",
+      "Duration": 3,
+      "Offset": 1782
+    },
+    {
+      "Sentence": "Stack buffer.",
+      "Duration": 1,
+      "Offset": 1786
+    },
+    {
+      "Sentence": "Ann.",
+      "Duration": 0,
+      "Offset": 1788
+    },
+    {
+      "Sentence": "The thing would overrun and I remember those days or after very difficult. I remember as everything was switching over we were in school. It was baked into our brains that one byte equals one character and then one day.",
+      "Duration": 14,
+      "Offset": 1790
+    },
+    {
+      "Sentence": "One byte equals 11 or less than one character or a fraction of a character of the beginning of a statement that there might be characters coming and UTF 8 headers and all these things became complicated something we were counting bytes in one hand and counting characters on the other hand, and it took quite a few years before everything shook itself out right actually walk through this. In some detail in the book because I think it's important. I'm trying to explain why, why see is a bad language and hopefully I'm not losing all my non programmer readers, but",
+      "Duration": 31,
+      "Offset": 1804
+    },
+    {
+      "Sentence": "It really comes down to just make it a math mistake and I mean, you can do it right. You can write buffer manipulation code that is not exploitable I think the fact that people use the term virus makes it sound like Oh, you can't necessarily defend together against it, but you can write clean code. It's just a little tricky to do you call that a couple of other things that reminded me of some bugs that I had like you call that the Turkish Codepage and the concept of code pages where we had 256 characters and we were trying to map.",
+      "Duration": 32,
+      "Offset": 1837
+    },
+    {
+      "Sentence": "Here's on top of those. I remember one of my big bugs that actually I still think still may exist in my blogging software is the legendary Turkish. I where they have and I letter. I with the dot above it and when you capitalize that I it turns into a capital I.",
+      "Duration": 16,
+      "Offset": 1870
+    },
+    {
+      "Sentence": "With a dot above it, which is not a capital. I it's a Turkish capital. I make comparisons and go ahead. Yeah, it's another example. I actually dig into it. My book a bit because I'm trying to explain about it's an API. You call an upper casing API. Or maybe you call comparison API and you have to make sure your doing properly and it's.",
+      "Duration": 21,
+      "Offset": 1886
+    },
+    {
+      "Sentence": "I'm just trying explain that again. API design is really important in understanding in API.",
+      "Duration": 4,
+      "Offset": 1908
+    },
+    {
+      "Sentence": "His critical and that's really somebody. Not exactly understanding what their API does and in this particular case. I wind up Ray only against default parameters, which I think are really a scourge on programming and should be removed because it you have to make an assumption about what the color of the API wants and I think that's a bad idea. And yes, you can save a little typing with the default parameter, which saving typing is bit of an obsession among programmers. But if it leads to a bad bug.",
+      "Duration": 30,
+      "Offset": 1914
+    },
+    {
+      "Sentence": "Isn't worth it so I don't like?",
+      "Duration": 2,
+      "Offset": 1945
+    },
+    {
+      "Sentence": "Default parameters on on APIs well. There's a ton of great stories in the book and like you point out. It is iaccessible. This is not a book where one page is full of code and the other pages full of discussion of code. It is definitely readable by the non programmer. It's not an overwhelming bunch of curly braces. That's going to stress you out, it's really a fun smart.",
+      "Duration": 23,
+      "Offset": 1949
+    },
+    {
+      "Sentence": "Tour of many decades of experience from yourself and others, and I appreciate you coming on the show to chat with me about it.",
+      "Duration": 7,
+      "Offset": 1973
+    },
+    {
+      "Sentence": "Thank you so much for having me, you can check out the problem with software. Why Smart Engineers. Write bad code. It's available now from MIT press and I'm going to have links to it in the show. Notes This has been another episode of Hanselman said. We'll see you again next week.",
+      "Duration": 14,
+      "Offset": 1981
+    }
+  ]
+}

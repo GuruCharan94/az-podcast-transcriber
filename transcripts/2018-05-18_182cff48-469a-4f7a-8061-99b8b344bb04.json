@@ -1,0 +1,418 @@
+{
+  "id": "182cff48-469a-4f7a-8061-99b8b344bb04",
+  "Title": "Eric Heutchy on Backward Compatibility, Xbox One X Enhanced Games, and The Heutchy Method",
+  "PublishDate": "2018-05-18",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/f313ec30.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott and I've got a word from a new sponsor in a really cool sponsor. In fact that I used myself. They're seek that'SSEQ and you can check them out at getseek.net that'SGETSEQ.net seek is the easiest way for your team to capture and search and visualize structured log events, you probably do logging. Maybe you have a node app or anASP.net core app move beyond text files check out structured logging it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which individual property values as well as the text that's associated with each event they get sent across the network to seek which then displays them and makes them searchable. It's really easy to get started. You can probably instrument your application. If you're already using logging in just minutes just gotta get seek that'SGETSEQ.net you install the seek server. It's a Windows service and then it listens and handles all the logging whether you're using node JS and the bunion logging library or maybe you use Cera Logon.net?",
+      "Duration": 31,
+      "Offset": 31
+    },
+    {
+      "Sentence": "P.net core is built in logging seek is there for whatever you want to usewetherby.net or node or python or Java. It's a really great product and I encourage you to check them out and support them, the way that they support us here at Hansel minutes.",
+      "Duration": 13,
+      "Offset": 63
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Eric Hytche. He was a software engineer on the backwards compat team at Xbox? How are you Sir?",
+      "Duration": 9,
+      "Offset": 90
+    },
+    {
+      "Sentence": "Doing well how are you I'm pretty freaking thrilled because I have a 4 K TV that I spent an inordinate amount of money on and I'm actually getting a lot of really great content on it. It's fun. I thought I was going to have to buy a bunch of new games and even though there's a bunch of amazing 4. K stuff on Xbox One X playing all these old games. I played Red Dead Redemption yesterday and it's like crisper than my memory, which seems impossible to me and.",
+      "Duration": 30,
+      "Offset": 101
+    },
+    {
+      "Sentence": "Think about something to do with that. Yeah, it's been really fun. One of these we could talk about is we were able to present the games to the way you remember them not the way they actually looked at the time.",
+      "Duration": 9,
+      "Offset": 132
+    },
+    {
+      "Sentence": "You know, and you did that before with like Halo right like the Halo remasters. But the remasters were people made new textures, and like a lot of work went into making it look the way you remember it but that wasn't the same as as the stuff that the back. Compat teams doing with the call them. The Up Masters that Master Xbox One X enhanced versions of titles.",
+      "Duration": 23,
+      "Offset": 141
+    },
+    {
+      "Sentence": "The enhanced for Xbox One X enhanced there. That's different than remastering like we see on other consoles. It's very different as you talked about in a remaster. Normally, they'll go in and do higher quality versions of textures or models and things like that. And for us. The game is running in the emulator totally unaware that anything is changed. It thinks it's running on a standard Xbox 360.",
+      "Duration": 22,
+      "Offset": 166
+    },
+    {
+      "Sentence": "Really so this isn't a find the source code and frantically recompile it with new PN GS in a folder somewhere, not at all. If we had access to source code that would be great often were sitting there looking at a disassembly of code trying to figure out what's going on and everyone writes their apps differently right like one or all of these kind of 3 D games running like if I use the example of red dead. It's over the shoulder third person. I'm running around in an open world. There's only so many ways to write that though.",
+      "Duration": 33,
+      "Offset": 189
+    },
+    {
+      "Sentence": "SMS kinds of textures that people have put together those textures are going to get any higher quality and so you end up with kind of engines that are different engines that lots of titles use an so you get similarities there, but there are a number of different engines that were used across the industry and so there is a huge variety in how the game actually works under the covers. I see so it's not just like oh make it work right for unreal and then everything is amazing. It is it is an art form in the sense that each game is being tweaked.",
+      "Duration": 30,
+      "Offset": 223
+    },
+    {
+      "Sentence": "In each game will use different rendering techniques and things like that that interact differently with running at a higher resolution on all of the forums out there. People are kind of like doing their arm chair quarterbacking trying to figure out how this is done and how why didn't we ever do it before kind of thing is this a breakthrough or is this something that emulators have been doing like PS. One PS 2 emulators have been doing on windows machines and I think there's even some we emulators or is this a new technique.",
+      "Duration": 31,
+      "Offset": 254
+    },
+    {
+      "Sentence": "Some emulators aware of that will upper has kind of the final rendering buffer.",
+      "Duration": 5,
+      "Offset": 286
+    },
+    {
+      "Sentence": "But along the way on 360 engines were much more complicated and you'll get a shadow pass in a blur Pacyna Bloom pass and all these different passes running.",
+      "Duration": 8,
+      "Offset": 292
+    },
+    {
+      "Sentence": "And we've kind of got the ability to tweak which passes run at high resolution which don't in order to balance out the quality of the final output and performance an produce something that is.",
+      "Duration": 13,
+      "Offset": 301
+    },
+    {
+      "Sentence": "The game that you remember, but looks way better than it did then.",
+      "Duration": 2,
+      "Offset": 314
+    },
+    {
+      "Sentence": "And is it really because we just have so much more processing power. It's like well why not? It is actually this whole thing started out as we've got something called pics files and that is, you can take a capture of a game it takes one frames capture and it stores all of the textures. All of the geometry. All the shaders. Everything in that frame gets dumped in this file an on the compact have been super useful one. You can look at them and try and figure out where does our rendering differ from what happened on an actual 360.",
+      "Duration": 32,
+      "Offset": 319
+    },
+    {
+      "Sentence": "We also have huge suite of these files that we use for nightly regression and so every night. We've got a whole rack full of consoles that run an take all these pics files and play them back and we have files and at one point I just decided.",
+      "Duration": 13,
+      "Offset": 352
+    },
+    {
+      "Sentence": "Do you know it. We need to try and see what happens if we run this at a higher resolution ones that look like an just fooling around in my office got it up and running and turns out the games look really, really nice. And this was back prior to Xbox One X Dev gets even.",
+      "Duration": 14,
+      "Offset": 366
+    },
+    {
+      "Sentence": "And so I got it an then decided well this looks really nice. What would it look like in game. Ann was able to get it up and running in game and it was beautiful, you know, these games look amazing. But they were running like 68 frames. A second instead of 30 frames. A second and so this really elegant slideshow. And then later on the Xbox One X hardware came out well. If you look at the performance difference between that Anna regular Xbox One that kind of would get us right to where we would need to be to be running these at the frame rate we need.",
+      "Duration": 30,
+      "Offset": 381
+    },
+    {
+      "Sentence": "If.",
+      "Duration": 0,
+      "Offset": 412
+    },
+    {
+      "Sentence": "Alright let's let's see if we can turn into a real product is the increasing of the resolution easier than doubling of the frame rate understand that these games might look amazing. But they are quote Unquote still or just at 30 frames. A second would it confuse the game. If you suddenly just made them render faster or is it is that something that their engines couldn't do even if they wanted to very much. That would be a problem. You know, kind of the game is built around this logic of how quickly my updating.",
+      "Duration": 30,
+      "Offset": 413
+    },
+    {
+      "Sentence": "Some games, even that have a fixed frame time and if you play them back, too slowly or too fast. Time will dilate or expand in the game and all of a sudden not holding up frame rate. Now the game runs in Slowmo and so in general games have many more assumptions built in about what kind of frame rate. They run at and how quickly they can update the game world. All the logic run. I run collisions that type of stuff whereas graphics. We've emulated the Xbox 360 chip the GPU in there and it's possible for us to say.",
+      "Duration": 31,
+      "Offset": 444
+    },
+    {
+      "Sentence": "We know when we're rendering when we do that. We're going to increase pixel count here and as I said, before without the game even being aware of it. So when I play like Red Dead Redemption as an example. But it will use it as a generic example. That dude that is running around is amazing, the signs in the distance are amazing. But like the HUD generically. The heads up. Display looks the same because I guess. No one ever did a high res HUD and why would they even imagine that exactly there is no reason to put aside in 'cause. There's always shown some set number of pixels and so they probably designed the art to be exactly that number of pixels.",
+      "Duration": 32,
+      "Offset": 476
+    },
+    {
+      "Sentence": "How does it not show up in like the upper left corner like? Why does it show up correctly positioned relative to the rest of the screen. If it's running at a higher resolution. That's part of the technique here is just making sure that the viewport that things are positioned in the same place on screen rather than being offset a specific number of pixels and so, if in the game. It originally was offset a specific number of pixels well. Now we scale that up by whatever factor we've increased the resolution.",
+      "Duration": 23,
+      "Offset": 509
+    },
+    {
+      "Sentence": "I see does it help that 4 K is exactly 41080 P screens or is that an overly simplistic benefit at all, so the way we actually work is most of the Xbox 360 games ran at 7:20 P or something similar to that and so will a pixel count by 9 X 3 and horizontal 3 and vertical and so if the game was 720 P on 360. We run at exactly 4 K resolution. A lot of games ran at something slightly below 720 P and then we run into similar.",
+      "Duration": 31,
+      "Offset": 533
+    },
+    {
+      "Sentence": "She'll below 4 K Oh my God, so this is not just for this is huge. This is almost almost an order of magnitude clearer, which apparently at my memory is also apparently in order of magnitude clearer because it does feel both simultaneously amazing and you really to be clear, we're talking about this in a podcast of the irony is not lost on me, but people who are listening need to find a friend go and see an Xbox One X on a proper 4. K machine and you will be blown away that you are playing a 360 game it is almost impossible to get your head around.",
+      "Duration": 30,
+      "Offset": 565
+    },
+    {
+      "Sentence": "Simultaneously exactly how I remember it is, and it's amazing how well some of these games hold up an quote unquote. All we're doing is increasing the resolution. But the assets in there. The textures were way beyond what the hardware at the time was able to display and so now we've got more powerful hardware. Let's take advantage of that these games. Look gorgeous so using red dead as an example as I walk up to a building there might be a wanted sign on the wall.",
+      "Duration": 24,
+      "Offset": 596
+    },
+    {
+      "Sentence": "This is now getting into kind of the mind of the Redditor. Well, I guess. They're just using the close up texture. All the time, like the texture that you would see and we would do this we've all done this. When we had an original Xbox or an Xbox 360 to get a feeling that it was super high res as you walk right up to someone's face like we all played half-life right you walk right up to the bad guys face just to see how good the textures are but then you back up and then get blurry.",
+      "Duration": 26,
+      "Offset": 621
+    },
+    {
+      "Sentence": "Are you doing? Everything at hi rez or you? Are you doing? It adaptively so it feels like it's always high so the fun thing here is we're not explicitly doing anything to show a higher or lower quality version of the texture. The way the graphics Chip Works is you've got mad, so you've got the highest resolution version of the texture. Another version that's a quarter, the size of that. Another guys all the way down till you get to a one by one pixel here. This would look like from really far away and then as it's rendering. The GPU will say how close together, these pixels that I'm drawing.",
+      "Duration": 32,
+      "Offset": 649
+    },
+    {
+      "Sentence": "Really close together in a texture that use a high highly detailed version of the mipmap whereas if you back away, well now, the pixels. Maybe farther apart in the texture and so it will drop down to a lower quality, mip and So what we've done is increase. The resolution by Nynex. That means that whereas before it would be dropped down to the second or third map. Now it can be up at the very top level and giving you that highest quality thing that was already there in memory. But the hardware before was limited an just didn't have enough pixels to show you it.",
+      "Duration": 30,
+      "Offset": 682
+    },
+    {
+      "Sentence": "OK, I got you now and again without without anyone being the wiser like there is a virtual 360 in your Xbox One X with a high res card, but it just doesn't know right that wanted poster exists in 8 different versions. Let's say an on the 360 and always did even did even do the exact days and on the 360 when you walk down super close. It was able to use that highest quality one and then when you backed away, a little bit, it drop down whereas in this Xbox One X enhanced version.",
+      "Duration": 30,
+      "Offset": 713
+    },
+    {
+      "Sentence": "They were able to keep using that high quality one for much longer because the pixel density is so much higher. What about games that did dynamic resolutions and adaptive resolutions. I don't know any specific ones because it all looks amazing to me, but there are games that are like frame locked and resolution locked and then there are games, where they talking like Halo will just switch. The resolution down a smidgen. Then it would all happens frame by frame, yeah, so on, Xbox One. That's got to be a really popular technique. I'm not aware of anything that used it back in the 360 generation there may be something.",
+      "Duration": 33,
+      "Offset": 744
+    },
+    {
+      "Sentence": "Terms of frame rate lock you'll often see games that is less of a lock and more of their just certain scenes in games that don't keep up with the intended frame rate, and it will slow down an very often in the emulator. We are able to keep a maintain a higher frame rate through certain scenes than the original hardware could OK. So why are people minimizing this so much that you're saying that this requires you're sitting in a very simple way like oh that's how it's done but it's more than just just.",
+      "Duration": 30,
+      "Offset": 778
+    },
+    {
+      "Sentence": "Should have been done years ago, I think it's one of these things of the Xbox 360 generation was one of the first times when you had that much texture detail and that much geometry that developers really had built this much visual Fidelity into their game. That wasn't able to shine through and also just in terms of engine complexity. Things got much more complex. We've also done some original Xbox Games via compatibility an they upscale both on a regular Xbox One for Xbox account.",
+      "Duration": 31,
+      "Offset": 809
+    },
+    {
+      "Sentence": "Box one X at 16 X pixel count and you can see, there, it was starting to be the quality texture and quality geometry. Those games hold up beautifully as well, too, and I was praying Ninja Gaiden. I think was injured and black on my Xbox One X&I came is a while back but it had 2000 early 00s. 2005 is a 12,004 2005. Something like that. But it was a 16. It was one of the one of the few 16 my nines as I recall.",
+      "Duration": 30,
+      "Offset": 840
+    },
+    {
+      "Sentence": "Go and buy it even now, I think for like 5 or 10 Bucks 10 bucks at least 10 years ago and it does hold up if you're sitting in a normal if you look at a real close. You can tell but it moves. It's really interesting. Lee, the resolution and the graphics aren't what makes it feel even a little bit dated. It's the camera control like we hadn't decided yet industry. On 2 thumb camera control. It's fascinating to see games that are this old and I played that game back when it came out and be able to play it now an.",
+      "Duration": 31,
+      "Offset": 872
+    },
+    {
+      "Sentence": "Ben versus what it looks like now an how well the developers vision is coming through there. It's just really excited to be a part of it's exactly what they not just what's the way I remembered it's the way they always wanted it and it also even though you work on back on the back. Compat team and we're talking about the graphics aspect of things. It's worth pointing out that like I just fired up a couple of hours ago. What's it called Tom Clancy's splinter cell conviction and I loaded up a save game from 6 years ago that I totally forgotten about.",
+      "Duration": 30,
+      "Offset": 904
+    },
+    {
+      "Sentence": "You know, finishing the game and I've gone from an Xbox One to an Xbox One S to an Xbox One X from an original Xbox 360, so that's 1234 consoles.",
+      "Duration": 10,
+      "Offset": 935
+    },
+    {
+      "Sentence": "From Red Dead Redemption and I've been on the same on the same save game for so long. I is just cool. I don't think people get the respect they deserve for the the organizational willpower that Xbox gives us backwards compatibility across everything not just making it pretty but make it functional. It's really cool to be able to get the scenario where as you said. You keep your save game that you had from 10 years ago.",
+      "Duration": 24,
+      "Offset": 946
+    },
+    {
+      "Sentence": "And similarly all these games that you bought digitally an just one day. Hey, it, shows up in your ready to install list of We've got a new game ready for combat and this game that you played back then go at it again.",
+      "Duration": 11,
+      "Offset": 971
+    },
+    {
+      "Sentence": "Yeah, it's funny that you mentioned that the idea that I don't. I don't even remember when I bought that digitally you know, and then suddenly, Knights of the old Republic is available again. I think oh. I guess I can install that and play that and more importantly, introduced it to my kids.",
+      "Duration": 11,
+      "Offset": 984
+    },
+    {
+      "Sentence": "And not have them tease me because it then that movies black and white. Daddy exactly if it's been playing Fusion friendly with my kids, an knights of the Old Republic. I'm working through it with my son, 'cause. He's a huge Star Wars fan and it's really cool to have this experience that I have great memories of the game. Ann you talk about movies, not being black and white video games. Interesting thing of its kind of historically been a well. You play a generation and then that's it. It's over and it's kind of hard to play those games anymore. But a great video game is going to be a great video game.",
+      "Duration": 30,
+      "Offset": 996
+    },
+    {
+      "Sentence": "30 years from now and being able to preserve my collection of games and those memories and re living with my kids, same thing. I would do with a movie. It's really nice being a part of that.",
+      "Duration": 9,
+      "Offset": 1027
+    },
+    {
+      "Sentence": "As a consumer I hope I mean, I don't have any inside baseball. But I hope that this is kind of the end of the console generation every certain number of years and if this, if the entire Xbox game library can be brought forward forever. Then, like you say 20 years from now will still be playing games across multiple generations on a single piece of hardware? Which would be pretty exciting.",
+      "Duration": 20,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "Hey folks, Intel as a sponsor this week and I welcome them because they're bringing some high performance developer tools for all of us. Check out Intel's parallel studio XEI've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C plus plus python or even 4, Tran but is your code building in such a way, and written in such a way that it uses the latest techniques for vectorization.",
+      "Duration": 31,
+      "Offset": 1059
+    },
+    {
+      "Sentence": "Bing multi node parallelization or memory optimization.",
+      "Duration": 3,
+      "Offset": 1091
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 26,
+      "Offset": 1095
+    },
+    {
+      "Sentence": "So mipmaps back to the tech mipmaps that level of detail right? That's the image quality. They were also originally done to reduce stress on the GPU in the CPU because of that back off? How do you use the same kind of techniques to keep the processor working but not working so hard that you're going to lose frames. So we don't don't particularly in terms of maps like you get the benefit of less memory consumption. When things are far away and you're using lower level, maps, but for us.",
+      "Duration": 30,
+      "Offset": 1123
+    },
+    {
+      "Sentence": "First is we're running an emulator and so the normal kind of emulator thing of in order to maintain accuracy. You end up doing instead of a simple single operation. Maybe have to do a few things one thing that pops to mind is when they were emulating the original Xbox on the Xbox 360 and they had to do a floating point divide and it turned out that the original Xbox Headage slightly more accurate divide in certain cases.",
+      "Duration": 29,
+      "Offset": 1153
+    },
+    {
+      "Sentence": "And so in the emulator they would do is do the divide and then do a Newton Raphson iteration to refine the result and be able to match bit, for bit what the original console produced.",
+      "Duration": 11,
+      "Offset": 1183
+    },
+    {
+      "Sentence": "So just in general emulators, you end up doing all these weird things of well in the case of Manzoor. You know certain normal values. The result is different and so we have to do these expensive tests to make sure that we get bit. Accurate results there. Similar kind of thing in the emulator is that?",
+      "Duration": 17,
+      "Offset": 1196
+    },
+    {
+      "Sentence": "Are shaders end up being way more complicated than would normally be because we have to handle some of those weird edge cases or certain pieces of hardware, there are certain techniques on 360 that were extremely fast, an in emulating am they end up consuming huge percentage of our frame time and so there's kind of if we could just run the same code. It would be trivial to run this thing at whatever framerate we wanted, but to be able to run it emulated so it's running the same way it did on a physical 360, we end up kind of having to try.",
+      "Duration": 31,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "Various tricks to make some of these things that end up being much more expensive under an emulator. Where can we reduce those turn some of those things off and the Xbox 360 was IBM power PC based thing right and what is the Xbox One X Xbox One X is X 64 so you are literally running a power PC emulator emulating the original GPU. Anet assume any of the weirdness is of all those things. Yeah, if it did something even remotely wrong, you, also have to be wrong.",
+      "Duration": 31,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "Exactly and maybe nobody ever intentionally assume that that wrong thing would happen, but some game accidental. E used it and took a dependency on it, and so even if something was a mistake. We gotta be able to faithfully emulated because some games going to do it, taking a bug as a dependency. Exactly oftentimes will say there's no way anyone ever did that and then without fail 2 months later, or 6 months later, Nope. Here's the title that did that and then also we have to remember that there's an Xbox One and Xbox One.",
+      "Duration": 30,
+      "Offset": 1278
+    },
+    {
+      "Sentence": "And an X and you've got to make it scale up appropriately as it moves through these kind of 3 sub generations of Xbox ones. We do an in terms of development side for a game that we're not doing in Xbox One X enhancement for we kind of just ship it as is and it will generally run fine now our test team has to go through and make sure that running it faster on the Xbox One X doesn't cause problems, but that's something that we really haven't seen outside of maybe a couple isolated cases and does this mean that people have to play the whole.",
+      "Duration": 30,
+      "Offset": 1309
+    },
+    {
+      "Sentence": "Literally, like Oh Man, I gotta go through the Witcher again. We have an army of testers and they will go through and kind of games go through these different phases of we've ingested. The Binary and that we can make an emulated version of it and then we run it for awhile and capture some data about it and then we have what we think is a shippable build and then we have them play through the entire game start to finish kind of trying to find every corner and make sure everything works. And now they do that both on a Xbox One Xbox One X and then as we get closer there's some more checks.",
+      "Duration": 31,
+      "Offset": 1340
+    },
+    {
+      "Sentence": "But there are a large number of people whose job is to play through these games over and over, Oh my goodness. Now there's also something I noticed that I was surprised me if you ordinarily there's the Xbox Guide Button that big kind of bright button in the middle of your controller and you push it takes you home on an Xbox 360 would bring up the Xbox 360 guide the way that you get to the guide on Xbox One X if you want to get into the Xbox 360 guide is kind of a punch through you push start and select or view and menu.",
+      "Duration": 30,
+      "Offset": 1372
+    },
+    {
+      "Sentence": "Obviously and you get into is it a real Xbox guide or an emulated one. It's running the emulator still and at that point. It's just simulating what would happen on a 360 in terms of bringing up the guide. But it has a special menu that says Xbox One. X settings, which kind of increases the inception.",
+      "Duration": 16,
+      "Offset": 1403
+    },
+    {
+      "Sentence": "At all 'cause you're finding a setting within the emulator that refers back to the host. It's almost like finding a VM specific setting and it has a choice between graphics or performance. Then it was kind of fun to put that into the guide there 'cause. It's probably the last button that will ever be added on Xbox 360 and what is it that was referenced this console. It's came out 15 years after the first one or 10 years or whatever it is why would I ever not want to optimize the game for graphics. If you wanted to see what it looked like originally one thing we've seen a lot of people do is record comparisons of.",
+      "Duration": 30,
+      "Offset": 1421
+    },
+    {
+      "Sentence": "Verse of the performance mode, the other reason it's in there is if there's a case where we aren't able to maintain frame rate while running into the Nynex enhanced version. You could run at a higher frame rate potentially across all the games. We've shipped there. Basically, no instances. I think there may be one or 2 corner cases where we don't quite hold. The frame rate running in the enhanced mode in terms of you just want to enjoy the game were very careful to make sure that if we're shipping an enhanced version. It keeps its frame rate, and graphics mode is what you should be playing in this is amazing so full frame rate that you expect.",
+      "Duration": 31,
+      "Offset": 1452
+    },
+    {
+      "Sentence": "The pixel count and virtually no games that you've seen that have that can't hit that full full full right. I've never seen a slowdown on any of my emulated games. The Army of testers found one or 2 scenes where you look a certain direction. It slows down but just playing through the game. I see you're unlikely to find that So what about bugs right. This can't just be the story that you told Diane we figured this out and I guess it looks looks amazing and it has so much power like of course, it looks amazing there must be?",
+      "Duration": 30,
+      "Offset": 1485
+    },
+    {
+      "Sentence": "That game had a weird waited things about stuff for bugs that got you unexpected results. When you started throwing high res textures, and different different aliases. Antialiasing settings at them and there's been all sorts of bugs that come through this one of the more interesting ones was there something you can do called a visibility query, which is basically a way for the game to say. I want to know how many pixels actually get drawn by this draw.",
+      "Duration": 23,
+      "Offset": 1515
+    },
+    {
+      "Sentence": "Answer game will draw some stuff and then it will draw something under a visibility query and use that later on the CPU or on a future GPU called to make a decision and there was a game where I think it was an extra flashlight got turned on couldn't figure out what it was compared would eventually tracked it down to the visibility query was now saying there were 9 times the number of pixels visible that there had been before and the CPU was doing some calculation, saying that's a bunch of stuff I guess it was a light beam.",
+      "Duration": 30,
+      "Offset": 1540
+    },
+    {
+      "Sentence": "Light source.",
+      "Duration": 0,
+      "Offset": 1571
+    },
+    {
+      "Sentence": "Cancel saying well that looks like a lot of pixels were visible from this light source even though it was barely visible. But since we've scaled up the visibility query. The CPU said. That's visible enough. I need to show this glow and so it's really awkward glow showed through and we had to go through and say, Nope when you're done visibility query cut that down by the appropriate ratio in the windows world. I know that there's all kinds of backwards compatibility kind of catalogs so if I'm just picking a name. I don't know this to be true. I'm just picking it like let's say QuickBooks.",
+      "Duration": 30,
+      "Offset": 1572
+    },
+    {
+      "Sentence": "Word on Windows 8 instead of Windows 7, there's a whole team at Microsoft that says oh look. They called get each wind in a weird way they're expecting a certain thing. So then they don't actually Patch QuickBooks.",
+      "Duration": 12,
+      "Offset": 1604
+    },
+    {
+      "Sentence": "Only Patch windows, they just kind of like promise to lie or they Patch that one function call as a way of saying.",
+      "Duration": 7,
+      "Offset": 1618
+    },
+    {
+      "Sentence": "Yeah, when QuickBooks does it it's different will give him something special, and this is part of windows larger dedication to things just working?",
+      "Duration": 7,
+      "Offset": 1625
+    },
+    {
+      "Sentence": "How are you patching without patching in the way that you're describing so in terms of things Patch like that? I think more on the CPU side where for instance, we've had games that were originally multiple disks and so you play through your game and at some point, it pops up, a dialogue that says please insert disc 2 now and will let people go. Now we want to ship it digitally an there's not another disk to put in and so the Devs will go through and figure out where was that API call Ann stub that out from the game so instead of popping up this dialogue you just keep playing through.",
+      "Duration": 32,
+      "Offset": 1633
+    },
+    {
+      "Sentence": "If there are any GPU cases that are similar to that a lot of it is just in the scaled world make sure we're lying appropriately game isn't able to realize that the pixel counts are different than what it expected is it kind of a bit of State Management. You have to keep him. How long have we been lying even lying inconsistently or any of our lives going to come back on us when they get to the end of this level, Yep usually we just have to worry about within one frame occasionally things persist. Beyond that, but sometimes it's even this will keep a copy of our.",
+      "Duration": 30,
+      "Offset": 1666
+    },
+    {
+      "Sentence": "Hi res version, but will also make a low res version because the CPU is going to access it or something else is going to access it and need that lower quality version. For whatever reason, Oh wow. That just blew my mind, So what you show the user? Which looks amazing may not necessarily be? What you told the CPU that we showed the user and you say here's the low res version. Here's the non retina. Display you go ahead and look at that and it's the same don't worry exactly and as long as you're lying consistently keep up the illusion that Hey game.",
+      "Duration": 30,
+      "Offset": 1697
+    },
+    {
+      "Sentence": "You're just running an old Xbox 360 everything you expect to be there will be there. It feels like the backward compatibility library and again. I'm speaking as a user started slow you heard nothing but complaints about like what about this and what about that. And now it's coming faster and faster and faster and faster if you is it because you all have built up a library of tricks and tips and ways like you've polished the way you do back compat. So now you can start not just releasing back compat, but also Xbox One Enhanced Yeah. I think a lot of it just comes with the maturity of the emulator an?",
+      "Duration": 32,
+      "Offset": 1728
+    },
+    {
+      "Sentence": "It's been put in back when we launched you know, we had some games that we wanted to ship that we just couldn't get to run a frame rate. We had games that instead of at 30 they would run at 10 or 15 frames. A second and we don't want to miss poor experience so at the time we said. Here's a title. We don't think we're ever going to be able to ship.",
+      "Duration": 17,
+      "Offset": 1760
+    },
+    {
+      "Sentence": "And then over the next year or 2 as we put out more titles. We optimize various things and make bug fixes in the emulator.",
+      "Duration": 7,
+      "Offset": 1779
+    },
+    {
+      "Sentence": "And the technology is matured matured and then we came back and said nae this game that we didn't ever think we'd be able to ship if you play it now, it's holding 30. Most of the time and were able to go back to it able to ship it and so there have been titles. We didn't think we'd be able to ship and as of right now been able to ship one the first one, that ever stuck out as this might not be possible in the emulator and so that was really, really cool. Feeling yeah, I'm actually going and buying a bunch of these games that like for cheap.",
+      "Duration": 30,
+      "Offset": 1787
+    },
+    {
+      "Sentence": "And by the original Assassin's Creed, which was gorgeous at the time and it's even more gorgeous now and it's like 15. Bucks 10 Bucks 20 Bucks and then is this thing of great game is still a great game. Whether it came out 10 years ago, or came out this week? Absolutely. I just like I say I just bought an finish from an old savegame splinter cell simply because I saw that like I've been finally waiting for this and it's backward compat and I went on Amazon. I think I got it for 5. Bucks got it immediately and I'm looking forward to getting back into crack down. I know I have to save game in crackdown.",
+      "Duration": 32,
+      "Offset": 1817
+    },
+    {
+      "Sentence": "Well, I never made it through which or 2, which is now back Compat and enhanced as well. Yeah, last question. I have is why is it called the hytche method if there's a whole team it got named after me because I was kind of the dev that experimented with it got the technology up and running the GPU team is relatively small this about 5 of us or so, but I've definitely had her as we've been getting these games enhanced so despite having any amount. It's been a team effort do you feel weird having I assume you see the Reddit threads on the forum thread?",
+      "Duration": 31,
+      "Offset": 1851
+    },
+    {
+      "Sentence": "It's a method you know like its capital H Capital M, like you know it's a method. The weirdest thing for me to see my name is spelled correctly and having people pronounce it correctly because all throughout my life. It's been a strange name and people struggle with that and so that's been yeah. Not anymore. You've got the juice you get you get autocompleted. When people type your name. Now, which is pretty sweet well. Thanks so much for chatting with me today and it's been a pleasure. Thanksgiving on I would really, really, really encourage folks that have Xbox in that have an Xbox One X or if you have a friend.",
+      "Duration": 31,
+      "Offset": 1883
+    },
+    {
+      "Sentence": "The backwards compat is such a joy. It really cannot be overstated. I know I sound like a fanboy, but it is really opened up my whole library and brought me back to a bunch of games that I just happy that I've been able to play them again.",
+      "Duration": 13,
+      "Offset": 1915
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 1929
+    },
+    {
+      "Sentence": "Better benefits.",
+      "Duration": 3,
+      "Offset": 1934
+    },
+    {
+      "Sentence": "I.",
+      "Duration": 3,
+      "Offset": 1938
+    }
+  ]
+}

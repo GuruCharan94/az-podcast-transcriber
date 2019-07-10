@@ -1,0 +1,383 @@
+{
+  "id": "8b09e7d5-3c53-4ccb-bba2-19d0b9163f2c",
+  "Title": "Performance as a Feature with Jeremy Boyd",
+  "PublishDate": "2019-04-11",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/64115a70.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Would you like to write code faster and smarter with rich code completion and clever code analysis? Find anything in a solution instantly? What if you could easily explore and run tests work with gift material or TFS seamlessly. Anri factor in a few clicks. All this and more is available in jet brains riderA.net IDE for Windows, Mac and Linux try. It free for 30 days get writer today at RIDERIDE.net that's writerID.net.",
+      "Duration": 33,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of cancel minutes and today I'm talking with Jeremy Boy. He's a CTO at Ray Gun, an expert on all things scale and APM APM. I hear this a lot thanks well. I PM stands for application performance monitoring or application performance management, depending on which flavor you take really in a nutshell. It's about looking at server side performance how what is your application actually doing and?",
+      "Duration": 30,
+      "Offset": 41
+    },
+    {
+      "Sentence": "An interesting sort of way of thinking about this is that when we build web applications. For example, we load. The site and we get really good data on the browser. Actually, these days about what is happening with the request and what you generally find is that the longest time is waiting for things to come back from the server the code that you wrote just takes time to execute and you often wonder what's going on down there? What why is it taking so long? Is it a bad query? Is it some bad code that I wrote.",
+      "Duration": 30,
+      "Offset": 72
+    },
+    {
+      "Sentence": "PM is all about trying to demystify that really give you insights into what's going on down there and more specifically? What is that that could be a problem that you could actually then take some action on and text and improve the situation. Now I might be making myself look better, giving away secrets or not good secrets. But 20 years ago, when I was doing really large financial services systems. At least large late 90s early 00s. We were still spending. A lot of time, parsing logs running log parser sucking logs into SQL server, and trying to figure out what was going on.",
+      "Duration": 34,
+      "Offset": 103
+    },
+    {
+      "Sentence": "Do these things much like forensic Lee. We could tell you what happened afterwards, but there was very little. What's happening right? This moment going on? When did that start to change that's right and I remember those days as well? I'm actually pretty glad that we move past a lot of that when this sort of changed in my opinion. I think is really. When we saw bandwidth really increase, and people typically for hosting environments and for getting access to this data.",
+      "Duration": 27,
+      "Offset": 138
+    },
+    {
+      "Sentence": "Bandwidth became less of a problem and also the proliferation of the cloud, which allowed us to really ramp up resource is to meet the sort of scale challenge that you faced with dealing with increasing volumes of data, particularly start measuring things at increasing the smaller and smaller level just as a bit of a tangent. I guess one of the interesting things that we sort of found we got into the application performance about measuring space is.",
+      "Duration": 27,
+      "Offset": 167
+    },
+    {
+      "Sentence": "What's actually going on under the hood and as it turns out there's an amazing amount of things going on under the hood kind of reminded me a little bit when I was younger. You read Scientific American or something like that, and learn that oh below the level of the Atom there's another level. It's kind of like that. With the code that we write and so as we delve down. Even a simple program like Hello World console dot right line hello world.",
+      "Duration": 28,
+      "Offset": 195
+    },
+    {
+      "Sentence": "Even though on the surface that only looks like it would take to mythical zoan enters main enters console writeline and exits. There's actually hundreds of underlying calls that go on inthe.net framework to actually support that.",
+      "Duration": 14,
+      "Offset": 225
+    },
+    {
+      "Sentence": "And so as you start to kind of measure down to that level. The amount of data that you can start generating and interpreting starts to really mess up and I think in the past, we were never really able to.",
+      "Duration": 14,
+      "Offset": 240
+    },
+    {
+      "Sentence": "Take on board all of that data all at once. You couldn't put it through the network fast enough. The machines that we had access to just simply weren't fast enough to process that we could do batch processing. A lot of offline processing and crunch. Those numbers overtime, but we never really had access to it, and the way that we could look at the stuff in real time and I think between the cloud between that sort of increase in bandwidth. We've been out of start unlocking some of these new realms that exists below the surface.",
+      "Duration": 32,
+      "Offset": 255
+    },
+    {
+      "Sentence": "During production, we used to worry about things like Well, you don't want to turn the logging on in production. It's certainly not on a verbose or diagnostic because you're going to be.",
+      "Duration": 8,
+      "Offset": 288
+    },
+    {
+      "Sentence": "Filling up the disk or filling up the pipe or whatever like if you're doing aggressive logging you can you know the perception was at least when I was starting out that you're not scaling if you're doing all of these logging, but do we have enough per fan enough pipe now that we can be a lot more verbose in our logging very sure can, she decided there's always a trade off of these things I mean, it's interesting because it's only when you delve into this realm. You know performance is becoming much more of a concern for you for people who are looking at.",
+      "Duration": 30,
+      "Offset": 297
+    },
+    {
+      "Sentence": "A question on the mind is how can I improve performance of my system and so you know one of the things you don't want's to necessarily degrade the system by putting in some sort of invasive approach like you mentioned the logging which that will generate a lot of IO, so that that would hamper things if that's not managed properly so that we are able to really sort of solve this now, partially becaus machines are a little bit faster. We've got better resource is but also be cause. We now offloading that data not necessarily locally but.",
+      "Duration": 32,
+      "Offset": 328
+    },
+    {
+      "Sentence": "Back through to the cloud and again Dec sort of couples with that bandwidth story. But the ability to just kind of just send fast amounts more data than we would have thought about in the past as being sort of real or possible.",
+      "Duration": 13,
+      "Offset": 361
+    },
+    {
+      "Sentence": "Right so then you're saying that the simplistic perspective, that I was doing 20 years ago was logging. Or maybe log shipping, but now it's events. It's exceptions. Its internal that's how deep you want to go in the stack and then you're offloading all of that get it off of the machine as quickly as possible into some kind of a pipe liner and Ingestion Pipeline.",
+      "Duration": 19,
+      "Offset": 375
+    },
+    {
+      "Sentence": "That's exactly right, yeah, I mean, conceptually how our sort of approach works is that we sayfor.net profile. There's profiling apisand.net, which for anyone who would love a good little adventure able to be convention. Highly recommend actually looking at enter the profiling. APIs just to learn a little bit more about howthe.net framework actually works. It's really in lightning. Quick I guess quick sort of example of that is going back to my mention of.",
+      "Duration": 30,
+      "Offset": 394
+    },
+    {
+      "Sentence": "There's actually hundreds of these method calls happening on on a simple program even like hello world.",
+      "Duration": 5,
+      "Offset": 425
+    },
+    {
+      "Sentence": "Hello world example for sale full framework would generate about 2200 odd method calls under the hood. We and you don't think about this. It's things like system. Not globalization becaus. It's writing to a stream which then goes to some output source, which has to be formatted for the local culture.",
+      "Duration": 17,
+      "Offset": 431
+    },
+    {
+      "Sentence": "Uhm it's a stream so it's got a lot of mechanics under the hood there so all of that is quite interesting to understand how it works, and we sort of get down to that level. You suddenly realize well. Actually, there's there's a lot going on here and there's a lot. I could potentially control and manage the performance of and that sort of. We learned a lot of that through building an APM tool and then sort of that gave us new insights. I guess a new level of understanding of how things work and where the optimizations might be out to be gained.",
+      "Duration": 31,
+      "Offset": 449
+    },
+    {
+      "Sentence": "They're sort of framework itself is actually being built quite lucky. These days with the core CLR. The work that's been going on in.net core becaus that's in the open and big focusand.net core has been on improving performance of the framework so I do a lot of watching of the commits that go into the net core repository's often just to look at where things being tuned and what are the techniques that are being used to tune performance in the framework itself?",
+      "Duration": 30,
+      "Offset": 481
+    },
+    {
+      "Sentence": "Overtime those techniques were actually transposable with code that you might write particularly in again, you're looking at your system and you're thinking Well, you know this area is slow. You have delved into specific sort of you about to say right well. That's this method or it's this kind of algorithm that we were operating over that's not running as well as it could what our approach is that we could look at turn the performance here, so we applied a lot of that in our ingestion pipeline because as you kind of mentioned there's a potential to generate an amazing amount of data.",
+      "Duration": 30,
+      "Offset": 512
+    },
+    {
+      "Sentence": "Sort of observing what's going on in the process and we have to deal with that data and as sort of data comes into our system. We have to kind of take a look at it figure out what it represents. We do a lot of work in terms of kind of rationalizing the view of what happened in a program an presenting that nicely for example using a flame chat to a developer so they can better understand enter the focus in on? What is it that really is going to make a difference to improve in my system?",
+      "Duration": 28,
+      "Offset": 544
+    },
+    {
+      "Sentence": "How important would it be then, though to not look at some of those events I mean like you really want to monitor what matters and like there's a joke. I heard on Twitter recently. They said that the biggest crime that the C programming language ever did was that they convinced the world. There wasn't a runtime so someone might hear you say, Well, you know there's like 2000 things happening underneath console that rightline.net sucks, but comes with outright line? Doesn't get even close to the metal no matter what language you're writing it in there's always something underneath but.",
+      "Duration": 30,
+      "Offset": 573
+    },
+    {
+      "Sentence": "If I'm trying to do hello world at scale. I probably can lose some of those events. You know you always have to put the stuff in perspective. You know you can optimize the hell out of anything but you have to kind of put it in perspective of what's going to make the biggest impact for the object as I'm trying to reach with this system is that the fact that I want my customers to have a certain experience infers a certain load time, which and fears that I need to kind of Target performance on certain queries.",
+      "Duration": 31,
+      "Offset": 604
+    },
+    {
+      "Sentence": "Didn't slas internally I'll focus my efforts there. I'm not going to focus my efforts necessarily on shaving off another few NS off. This particular function. So I context. Certainly matters and again a big part of what our job is really is to try and highlight. Where is it the big wins? Are we going to gain performance to try and meet those objectives that you've got about what your system should be doing and how your customers should be experiencing it? What about some of like if you think about it from.",
+      "Duration": 30,
+      "Offset": 636
+    },
+    {
+      "Sentence": "Perspective I like to think about like the heisenberg. Uncertainty principle that I can observe something and tell you where it is or how fast it's going but not both when we observe systems. Large systems like this. When we instrument them? Are we taking a chance that it might not behave the same way it did 'cause. We don't want to say, Well, it worked on my machine, or it worked. Before I plugged in an APM solution. Yeah, certainly that's always a concern. Another thing that comes comes into play is that it isolated observations always just going to be there.",
+      "Duration": 31,
+      "Offset": 668
+    },
+    {
+      "Sentence": "Then shut up the activity time given point in time and that doesn't necessarily mean that that's how the rest of the requests or the rest of the interactions with that particular method or particular endpoint are going to always behave and so again. It's about building up a big picture of that, so overtime. The good thing about putting in a solution like this is that and having it kind of observing for longer periods of time as you build up a bit of you bit of holistic view of what's going on in the longer term.",
+      "Duration": 30,
+      "Offset": 700
+    },
+    {
+      "Sentence": "Certain types of users and they might be important users or they might just be kind of different in the way that they are interacting by myself where those users are having a problem, but ever analysis fine and information is power, so taking a lot of that insight and be able to kind of make informed decisions about where to deploy your time and effort because at the end of the day for most of us doing development, cutting code. You know there's a never ending list of things to be done and really a lot of the time we just want.",
+      "Duration": 30,
+      "Offset": 730
+    },
+    {
+      "Sentence": "Microsoft sells on the things that are going to make the most difference in actually achieve good winds and you know get get get there. All the good positive feedback out of that the last thing we want to do is make you an optimization that was just not actually worth it or anything like that. There's always an overhead with bringing in some kind of observation approach like monitoring tool at logging framework. So you just have to keep that in mind, and that's where we often do an approach where will do.",
+      "Duration": 30,
+      "Offset": 761
+    },
+    {
+      "Sentence": "You kind of deployment of something where we put a new approach an we measure how how the baseline looks will put it in me. The other side of afterwards? What's the impact of putting this technique and play. That's important. You've always got to measure things and just kind of understand and put that back into the context of what am I trying to do what was I trying to achieve.",
+      "Duration": 23,
+      "Offset": 792
+    },
+    {
+      "Sentence": "Actaeon Zen database is the best in class single. Securus scalable architecture for edge data management. It's the perfect solution for software developers who want dedicated application data management and deliver business critical products and services in 2. OT and low it environments. Customizable installation self tuning Seamless backward compatibility minimal memory requirements and exceptionally low support requirements and better performance than most alternatives like SQL Lite all means that you can deliver applications to customers.",
+      "Duration": 30,
+      "Offset": 817
+    },
+    {
+      "Sentence": "Across a wide range of platforms with direct access from C plus plus python. Another popular languages. Zen simple set of API significantly expands the pools of developers capable of building their next business. Critical application on Actaeon. Zen try today at actaeon.com slash then that's a CTIN.com slash Zen.",
+      "Duration": 23,
+      "Offset": 847
+    },
+    {
+      "Sentence": "I've heard that there are profilers that are listening all the time and APM systems that are paying attention to everything and then I've also heard the idea of a sampling profiler or's like it looks at 5% of the requests. You have thoughts about whether that's a good idea or not only thing sampling is a recently good idea is it in overhead involved with projectsfor.net. The implementation of how profiles work withthe.net framework, which again kudos to the efforts that are going on in.net core one of the things that's happened there is this.",
+      "Duration": 33,
+      "Offset": 871
+    },
+    {
+      "Sentence": "Notation is sort of surfaced around had to interact with the profiling. APIs that exist inthe.net framework. Andand.net core, but there's always an overhead of using that sort of approach.",
+      "Duration": 9,
+      "Offset": 905
+    },
+    {
+      "Sentence": "You can reduce the impact of that sort of thing by taking more of a sampling based mindset to this again. It's sort of. It's one of these things where you need to kind of find the right balance. If you sample to aggressively you open the window to losing a lot of the outliers that might occur often. It's a case where you often want to build up the big picture first and there's a cost to that overtime. You might feel there's a confidence level. You understand the nature of the data you see and come through.",
+      "Duration": 31,
+      "Offset": 916
+    },
+    {
+      "Sentence": "You know you've already identified with the key hotspots are and I'll start to dial the the rate of observation down. Accordingly, which would correspond to improved performance. Just threw less overhead of that sort of approach being and play. I see so you could do something like have it beyond listening for everything at Dev, an half the things that staging in 10% or something at production depends on your problem and then of course, all exceptions or anything bad that might have happened.",
+      "Duration": 30,
+      "Offset": 948
+    },
+    {
+      "Sentence": "And one of the one other sort of approach that we assume the pushing in this space is the idea of leveraging this more for supporting debugging scenarios. You know one of the key challenges that a lot of developers have particular when things go into production is that you lose your access to kind of instrument or get really detailed analysis of what's going on for example, local, state variables? What are the values of those arguments that come through the parameters for method calls you?",
+      "Duration": 30,
+      "Offset": 978
+    },
+    {
+      "Sentence": "All that context is quite important to reproducing a problem or understanding how problem manifests you know being a performance problem beer crash. You know the context often is very critical to really understanding. The nature of the problem, so one of the things that we really sort of spent a lot of time looking at is how we can leverage the sort of capability to treat really support those production debugging type scenarios where.",
+      "Duration": 26,
+      "Offset": 1010
+    },
+    {
+      "Sentence": "You kind of know the heuristics of how a problem is going to manifest. It's going to be this user at this time of day with this type at this end point.",
+      "Duration": 7,
+      "Offset": 1037
+    },
+    {
+      "Sentence": "And we've seen this behavior and I just want to know more about it and so you know the controls are there to allow it to just sort of roll windows type of thing as in action Ann play? Give me more data about it. But every other time. Just don't don't send as much data about what's going on. Because I'm I'm not going to be looking at and I'm not interested in collecting all that I see so it really is something where you don't necessarily dial it up for the entire application. But you might categorize things like the shopping carts acting weird. Let's dial up.",
+      "Duration": 31,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "In the shopping cart dial up all events for the shopping cart and there's always going to be areas, which are going to be focused focused on this week. We really focused on the shopping cart and we really need a much richer level of information about what's going on there to make better decisions about what we need to do you know were in that investigation fails. We just need to click log data in this space but everything else that's just business as usual. Let's just sample that that's not collect as much information.",
+      "Duration": 30,
+      "Offset": 1077
+    },
+    {
+      "Sentence": "We also want to know what's going on there in case any problems? Do turn up. But we don't need as much detail now often times when you've got mobile devices or local applications. An app that I'm running on windows or not. I'm running on my iPhone. There's privacy concerns. I want to make sure I'm not like no one likes a lot of people don't like Telemetry. They don't want to be kind of quote Unquote spied on on the website. You have a little bit less control. If someones implementing an APM product? How do they make sure that they don't accidentally leak information out. You don't want to throw a credit card?",
+      "Duration": 31,
+      "Offset": 1108
+    },
+    {
+      "Sentence": "Boundary into some you know, some third party APM system do you have filters or what's the best practice for that. That's a really good question. I mean data privacy is quite an important concern in our space. The nature of the problem is quite vast really because as you kind of allude to the opportunity to just send sensitive data across the wire when you're kind of captured when you're looking at things more at a system level rather than.",
+      "Duration": 26,
+      "Offset": 1140
+    },
+    {
+      "Sentence": "Thinking so much about the data that's going on through these systems. You know the opportunities are vast where that bpi information or access tokens, which would give you an opportunity to escalate privilege into a system. Those are all concerned. Our general approach for this is to allow people to sort of filter out the information to effectively kind of give you a hook, then before the information leaves your boundary to do our system to sort of do any kind of data sanitisation.",
+      "Duration": 30,
+      "Offset": 1167
+    },
+    {
+      "Sentence": "Run requirements as it were in terms of what data is sensitive usually this can be expressed with patents more regex so.",
+      "Duration": 7,
+      "Offset": 1198
+    },
+    {
+      "Sentence": "That that's kind of typically how we deal with this problem. We also particularly with other products that we build like crash reporting. It's more case if there's some standard things like a lot of it's going into web system so you're always going to look at the form. You're going to look at the what's coming across in the querystring user input. That's where this information is likely be coming from so let's just scan that for known patterns first and you can get rid of a lot of that information back fault. Then there's always going to be.",
+      "Duration": 28,
+      "Offset": 1207
+    },
+    {
+      "Sentence": "System specific stuff like those security tokens or just things that only the developer of that system would have an intimate awareness of debt will require them to really kind of ensure that that data is removed. Prior to semiconductor service like ours. Now of course in the interest of Full disclosure. There have been episodes of the podcast that Reagan has sponsored in the past, but of course for this. This conversation and one of the reasons that I called you and wanted to talk to you was the scale that you're running.",
+      "Duration": 30,
+      "Offset": 1236
+    },
+    {
+      "Sentence": "Bananas like not just billions of events how I want to. I want to understand how one scales like that, and do you get backed up? Is there a queue? What is the Q like? I just can't quite get my head around the scale at which you ingest information?",
+      "Duration": 20,
+      "Offset": 1268
+    },
+    {
+      "Sentence": "It's pretty fast. I have to tell you and again instead of going back to that sense of where we were 20 years ago.",
+      "Duration": 6,
+      "Offset": 1290
+    },
+    {
+      "Sentence": "We never really drink that you know the rights at which we kind of can ingest information that you know when you're dealing with the whole engineers are potential source. There's you know, there's a real it's very, very easy actually to just completely overwhelm yourself. With traffic so in terms of how we sort of win about it. It's actually took a lot of I guess vision or inspiration from early talks that came out of Amazon power. They sort of did their scaling.",
+      "Duration": 30,
+      "Offset": 1297
+    },
+    {
+      "Sentence": "Talking about how they really went through more of an incrementally sort of scaling approach you know, we rebuilt the system because we reach the scaling point and then we rebuild it again. 'cause we reached another scaling point and so we have kind of progress in the similar way, we initially when we when we should have backed on this journey. We were kind of a different company. We did different things. And this was just an idea and so at that point. You don't really want to over commit to wow. This could tend to be really, really massive thing.",
+      "Duration": 30,
+      "Offset": 1328
+    },
+    {
+      "Sentence": "Might want to provision ahead of ourselves. Instead, you know, one of our other focus is always been on cost and performance. You know, squeezing out everything from the dollars that we spend so for us. It was a case of let's get something that's going to see us through 10 times the amount of customers. We got now and then 100 times. United customers that were right now and then a thousand times and to be fair, along the way we've certainly been tested and frightened a little bit by how much data we can actually get there.",
+      "Duration": 30,
+      "Offset": 1359
+    },
+    {
+      "Sentence": "Beyond that, in fact was only a few weeks into having launcher our system where new customer came on board and all of a sudden they were sending it writes that were sort of tens of thousands of times above what we had sent before I remember being sort of online one night and the pager alerts went off and it was the sort of internal buffers were being saturated and we literally had sort of seconds before they're about to run out by the time we have dealt with the problem and so a lot of the time it's just about.",
+      "Duration": 31,
+      "Offset": 1390
+    },
+    {
+      "Sentence": "Scaling one step ahead of yourself, so that sort of notion of scaling our systems is actually just sort of a continuous cycle for us, we're always thinking about.",
+      "Duration": 11,
+      "Offset": 1422
+    },
+    {
+      "Sentence": "Where where are the bottlenecks you know what? Are we going to be doing to kind of ramp this up so that we can sort of like 10 X the volume through this section of the pipeline and just really approach and I'm sort of methodical fashion like that. It almost seems like your everyday preparing for a Benevolent D dos where someone's going to distribute distribute denial of service on you except they're using your APIs and your own product against you without meaning to like loops up sorry we turned everything on verbose and you have to be ready for anything surprising? How much that happens, Yeah.",
+      "Duration": 31,
+      "Offset": 1433
+    },
+    {
+      "Sentence": "It's it's it's it's just the nature of this and to be fair. You know this is what the cloud is unlocked in a way it's unlocked the ability for the Internet to be re heading you pretty regularly and so by design. When you kind of set yourself up with that model. You are effectively asking for a day to spend any given point in time. And so you just have to be prepared for that and build build a bit of resiliency under the system should just know that that's actually going to be a thing that you're dealing with all the time and.",
+      "Duration": 30,
+      "Offset": 1465
+    },
+    {
+      "Sentence": "Where is in style is plenty paper at a much bigger skylan us so you know we can take inspiration and learnings from what other people were doing you know they might be in a different stage of their journey but.",
+      "Duration": 8,
+      "Offset": 1496
+    },
+    {
+      "Sentence": "Yeah, another great thing you know certainly in the last sort of 10 years, which I'm sure you probably agree with that there's a lot more sharing of this information off the learnings of the fact that we're dealing with these challenges. Maybe it's not the most elegant solution daily round uses but here's the Ways and practice that we deal with these problems and we're all learning wrong, commending and we might find better ways overtime.",
+      "Duration": 26,
+      "Offset": 1505
+    },
+    {
+      "Sentence": "But you know it's really happening that we, as an industry able to kind of collectively level up in this way now. This is builtin.net core, but your state, your SDK's are all languages. Every doesn't matter. It's all HTTP but youpicked.net core on the back end is that correct, yeah, originally I mean, we very much. Historically, a Microsoft shop both J&J My cofounder.",
+      "Duration": 30,
+      "Offset": 1532
+    },
+    {
+      "Sentence": "Wewere.net developers so you know it's a common thing you know developers go with what they know, and and what they trust so for a long time, we were leveraging full frameworkwin.net core start to appear on the horizon were quite interested in a particular with the view that there was going to be a lot more iteration in that framework so there's the opportunity to get involved as well with looking at how how the framework works American Proquest. We ever really done, too much of that in practice, but you know, we've been leverage off the.",
+      "Duration": 32,
+      "Offset": 1563
+    },
+    {
+      "Sentence": "That exist in the community. You know, there's people like being Adams have really put on a huge focus on performance in the framework. We're all the beneficiaries of his amazing work. So we really in the transition phase. Now I've trying to port as much of our ingestion pipeline. Overto.net core as quickly as possible. There's amazing sort of performance wins that we can unlock byusing.net core and obviously from thinking more holistically as a CTO the technology choices just a wonder one right there.",
+      "Duration": 31,
+      "Offset": 1596
+    },
+    {
+      "Sentence": "And still building using the same base class, libraries, you know a little bit of difference. There, I guess back at the end of the day. It's very, very familiar and it's you know stores productive and you're still using the same toiling in the same tool chain and all their build systems and all that so it makes the switch quite easy and I think I've also sort of derived a lot of confidence from Microsoft sort of stance on this which is this is the bleeding edge, but you're going to bring back a lot of the good stuff and try and learn that into the full framework overtime.",
+      "Duration": 29,
+      "Offset": 1628
+    },
+    {
+      "Sentence": "If I were going to build something big, real big. The thing that I always worry about isn't that I can do it or not. It's that the thing that I'm building on top of is not going to have some weird insidious problem like under load whether it be node. Orgor.net or whatever. There's always that concern that you're sitting on a stack and you just don't know if it's going to like have a memory leak or blow up under pressure or have some fundamental architectural issue around.",
+      "Duration": 29,
+      "Offset": 1658
+    },
+    {
+      "Sentence": "Threading or a sink or whatever you know how do you deal with that when you're pushing so much traffic through such a huge pipe? Did you think about that in the contextof.net or.net core or did you? Did you test for things like that?",
+      "Duration": 13,
+      "Offset": 1688
+    },
+    {
+      "Sentence": "Early on, we probably wouldn't have thought too much about it at all. Really, you know, we were committed to building and then we votein.net overtime. Obviously, as the scale starter ramping up performance became far more of a thing like it becomes a feature. It's something that is ingrained into our thinking it's ingrained into this the way in which these parts of our system has to work so overtime. We've I guess gotten a lot more into really benchmarking and understanding what's going on? Where is the time going?",
+      "Duration": 31,
+      "Offset": 1703
+    },
+    {
+      "Sentence": "Like I said, I talked about at the beginning with while using a PM till in the 1st place. You know this. This technique kind of obviously just goes can be applied further to the framework looking we can measure that as well. So we can. Obviously just benchmark the system as a whole and understand OK. Where is slowing down wires that potentially locking up always the contention is that a framework problem? Is it something on our side.",
+      "Duration": 27,
+      "Offset": 1734
+    },
+    {
+      "Sentence": "Again, you know, we want you kind of mentioned all you know wouldn't want to building on like how scads and with the full framework. I never particularly found any issues there, but as we have seen with the developmentof.net core and all of their community contributions. This plenty of plenty of room on the table still to improve performance and but that hasn't necessarily hampered anyone in terms of delivering systems, but it's really nice to know that that's our.",
+      "Duration": 30,
+      "Offset": 1762
+    },
+    {
+      "Sentence": "Bigger focus within Microsoft and suddenly the developmentof.net core and the continuing color evolution about that. A lot of people are dealing with these problems. They're concerned about performance. They are interested in making sure the frameworks as tired as possible. And those contributions. All kind of come together and we all benefit from it. It seems like subtle things like I know that some people feel net folks talk about span of tea, too much like it's the biggest thing since link.",
+      "Duration": 31,
+      "Offset": 1793
+    },
+    {
+      "Sentence": "Bing since you know generics, but it feels to me like not avoiding unnecessarily copying around stuff that you already have in memory is a pretty big deal, and the underlying partsof.net core that have been improved by the span of T would probably benefit and APM system as well.",
+      "Duration": 16,
+      "Offset": 1825
+    },
+    {
+      "Sentence": "I think it would benefit most people to be honest, you know, one quick example within the context of our ingestion pipeline that where this makes a big difference is JSON serialization or deserialization. That's something that historically ever and just kind of used as a library for and you just don't really think too much about everyone kind of knows that it's kind of slow one of the reasons that slow is that there's a lot of memory allocations into copying that goes around the cause. You know you're dividing things up and creating new little objects to represent them.",
+      "Duration": 32,
+      "Offset": 1842
+    },
+    {
+      "Sentence": "Model and all of that and by using a technique like span, which at the end of the day. It's just fixed fixed sort of pointer across a block of memory where you can avoid those allocations to us by repointing and this is just this copy is just you know, these bites from 4 to 16 rather than will copy it and include all of that cost so everyone who's using Jason Generalization. Deserialization today and you know if they would moveto.net core 3. We have those improvements have been made.",
+      "Duration": 32,
+      "Offset": 1875
+    },
+    {
+      "Sentence": "Benefit from that for free so.",
+      "Duration": 1,
+      "Offset": 1908
+    },
+    {
+      "Sentence": "Those sort of performance wins you know, while yeah, sure using span is definitely a great thing we can leverage it. It's good to see that that's been kind of baked in into the framework itself, so that even if you're not necessarily thinking about these things we don't want to think about those things are not really top of mind do not major concern.",
+      "Duration": 18,
+      "Offset": 1911
+    },
+    {
+      "Sentence": "You are still going to pick up the benefits of having these things board into the enter the you know the worldviewof.net very cool well. Thank you so much. Jeremy Boyd CTO of Ray gun for talking to me today about the world of application performance monitoring management. However, you want to call it. I've learned a lot. I appreciate your time. Thank Scott and really appreciate it.",
+      "Duration": 18,
+      "Offset": 1930
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 1950
+    }
+  ]
+}

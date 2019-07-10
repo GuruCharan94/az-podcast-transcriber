@@ -1,0 +1,403 @@
+{
+  "id": "f14d62d3-1ef3-444e-b37a-1944fa224bb6",
+  "Title": "Your biggest questions when learning how to code with Ali Spittel",
+  "PublishDate": "2019-04-25",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/28542fbf.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Actaeon Zen database is the best in class single secure scalable architecture for edge data management. It's the perfect solution for software developers who want dedicated application data management and deliver business critical products and services in 2. OT and low it environments. Customizable installation self tuning Seamless backward compatibility minimal memory requirements and exceptionally low support requirements and better performance than most alternatives like SQL Lite all means that you can deliver applications to customers as scale.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Wide range of platforms with direct access from C plus plus python. Another popular languages. Zens simple set of API significantly expands the pools of developers capable of building their next business. Critical application on Actaeon. Zen try today at actaeon.com slash then that's a CTIAN.com slash Zen.",
+      "Duration": 29,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Cancel this is another episode cancel minutes today. I'm talking with Allie spell. She is a software developer and developer aggregating over at Dev 2. That's dev dot TO how are you? I'm doing well? How are you? I'm doing alright? Thanks for chatting with me today? I was following a really cool thread that you have going on Twitter where you asked a bunch of people.",
+      "Duration": 19,
+      "Offset": 68
+    },
+    {
+      "Sentence": "Specifically, new programmers what were their biggest questions about learning how to code? Why are you exploring how new developers think about learning? How to code totally so for me? I started off programming Anna really untraditional way. I wasn't a computer science major. I started coding little bit older than a lot of developers that I Know and it was something that was pretty difficult for me ended up quitting coding after taking 2 computer science classes.",
+      "Duration": 31,
+      "Offset": 88
+    },
+    {
+      "Sentence": "I just thought that coding wasn't for me and so I totally walked away from it, and then came back to it. A little bit later and so I know that that was such a hard process for me to learn how to code and to feel accepted in the developer community. So it's something that I'm really passionate about now I ended up teaching people how to code full time at a boot camp for a year and a half an now. I am still trying to teach as much as I can even though I'm still even though I moved back to a software engineering position.",
+      "Duration": 30,
+      "Offset": 120
+    },
+    {
+      "Sentence": "Bunch of these concepts an you've broken them down. It's kind of cool. You I've never seen this before it's quite clever. You ask the question on Twitter and then they answered and then you actually did something that I recommend to a lot of people rather than answering the question on Twitter and effectively giving Twitter your keystrokes for free. You took the questions and answers and put them on your blog and then linked back to it, so every time someone asked a question you would say, Oh, I answered it over here, very clever, yeah, mostly just because Twitter so temporary.",
+      "Duration": 30,
+      "Offset": 151
+    },
+    {
+      "Sentence": "Also, having some place that I can link this back in the future is really helpful, yeah, when it's like Twitter may go away. Someday, but your blog post will be there forever. Totaly Yeah, one of the things that I've noticed that I know that you've been exploring this as well as how to break down problems and I'm trying to get my head around what's Intuitive.",
+      "Duration": 19,
+      "Offset": 182
+    },
+    {
+      "Sentence": "And what's in born and like what I find intuitive might not be with someone else finds intuitive do you think you were born able to break problems down like like quote unquote like a coder or did you learn that?",
+      "Duration": 12,
+      "Offset": 203
+    },
+    {
+      "Sentence": "So I think one of the biggest problems for programmers is to be able to like teach yourself and solve things for yourself. And so I was home schooled growing up and I think that that was actually a really big part of how I am a strong programmer because I had to teach myself a lot of the skills growing up in teaching myself math and teaching myself English and all those things and I think that that's really translated well into programming an?",
+      "Duration": 30,
+      "Offset": 216
+    },
+    {
+      "Sentence": "Going in that way so I think that definitely the education system plays a huge role into that and the different education that people have access to is really, really huge there an if I do think that the fundamental math concepts really play a big role in to this an?",
+      "Duration": 22,
+      "Offset": 247
+    },
+    {
+      "Sentence": "Interesting it is to think about like most of programming or a huge chunk of programming is basic algebra and actually teaching people? How to code. That's something that I've seen lacking in a lot of students and so.",
+      "Duration": 12,
+      "Offset": 270
+    },
+    {
+      "Sentence": "I think that those skills tend to come in big part from the education system that being said, I also think that certain people do like breaking things apart and putting them back together. But then other people do are more interested in having a premade solution that they take which I think are actually both really important skills for programmers like building stuff for Yourself is really important to some extent, but then also knowing where to go outside of yourself and find a solution that's already been made for you is also pretty important.",
+      "Duration": 32,
+      "Offset": 284
+    },
+    {
+      "Sentence": "II have this, this, this conversation with Maria on my team and I bring it up often in podcast because it was really very clever. We were teaching each other. Some techniques and it was my turn to teach aspectsof.net and see. And I started at a very low level showing her the intermediate language. The assembly language that net compiled into and I basically taught the way I was taught which is from the metal.",
+      "Duration": 24,
+      "Offset": 317
+    },
+    {
+      "Sentence": "Up.",
+      "Duration": 0,
+      "Offset": 343
+    },
+    {
+      "Sentence": "And she stopped me and said I don't like to learn about the metal like I don't the metal doesn't matter anymore. I'm really more interested about learning from the glass of the monitor back like what you mean by the class and it's like Well, you know press F 12 in the in the browser and then go backwards. And I'll go as far back as I want to until it becomes not interesting.",
+      "Duration": 18,
+      "Offset": 344
+    },
+    {
+      "Sentence": "Right but you need to know about yeah, it's kind of cool hot does she need to know about CPU registers and stuff like memory management for me meant allocating your own memory. In C, but memory management. Today is more like JavaScript memory management, which is very, very different totally so I think.",
+      "Duration": 16,
+      "Offset": 363
+    },
+    {
+      "Sentence": "It can be important for contextual knowledge like knowing why use different data structures based off of memory usage and stuff like that, like why you would use a linked list in certain scenarios an array and others. So I think that it's helpful in that context. But that's actually where I left Computer Sciences had done really well with the python. An higher level programming classes where it's a lot of just putting the pieces together and building stuff fast, but then, when I got to see.",
+      "Duration": 30,
+      "Offset": 381
+    },
+    {
+      "Sentence": "Learning about pointers and all that it was a little bit less relevant to me. I don't think I ever really got like why we are learning this, if we know how to use python like? Why would we use C plus plus but now looking back on it. I very much understand that, but at that point. I didn't have that context to know why knowing that was important, and I just had more fun with python. So I'd rather write code with that at that point when I was growing up. My father would not. Let me drive an automatic stick car, he required me to drive a manual stick.",
+      "Duration": 32,
+      "Offset": 412
+    },
+    {
+      "Sentence": "As he was his argument was with the automatic.",
+      "Duration": 2,
+      "Offset": 445
+    },
+    {
+      "Sentence": "It's fine, but it's hiding something from you so you need to learn to write it drive a stick because one day. You'll need to drive a stick and that actually happened. There's been times when it was like I was the only one in the group that could drive a stick and it got us out of weird situations, but at the same time now. Fast forward now we have, like Uber.",
+      "Duration": 16,
+      "Offset": 448
+    },
+    {
+      "Sentence": "And we're like, how many more level actors from subways to text to taxis to ubers. How many layers of abstraction have. We put on top of the manual stick car.",
+      "Duration": 9,
+      "Offset": 465
+    },
+    {
+      "Sentence": "Then we become this culture where we have the people who can drive stick and the people who don't even have drivers licenses. I wonder if the same thing will happen in software where we have, like the nose in the know knots or the low level stick shift driving people in the Uber driving people and if that creates a caste system. Yeah, that's really interesting. I mean, thinking about it, so many people specialized in so many different fields. Like I know so many awesome. The developers that write HTML and CSS S, and that's pretty much it and so.",
+      "Duration": 30,
+      "Offset": 475
+    },
+    {
+      "Sentence": "If you're working in mostly those languages is that super super helpful to know about Assembly and how binary works and how you know the CPU is going on. Maybe it's still helpful, but maybe it's more important to focus on Accessibility and how CSS S is interpreted by the browser and all that so there's so many different niches that we can really narrow down into your own and have your more important information there, so was your advice to a new programmer to like not be stressed out.",
+      "Duration": 30,
+      "Offset": 507
+    },
+    {
+      "Sentence": "How much stuff there is to memorize and just think about the fact that there are these niches and you can just focus on the one that's interesting to you and really not sweat. The other stuff. Yeah, I'm a pretty vague like don't memorize anything person. I personally am not somebody with the best memory in the world. I definitely focus more on being able to look stuff up being able to breakdown a problem accurately being able to ask the questions that matter so that you know what the problem really is, and what the client actually wants from a project.",
+      "Duration": 30,
+      "Offset": 538
+    },
+    {
+      "Sentence": "All those things and working with the team and all that is a lot more important than having anything memorized in order to recite something back by memory to somebody do you think that there's just so much stuff now? Maybe that there was less stuff in the 80s or different stuff than a certain generations are expected to like learn the whole stack and the whole stack is so much more to memorize that it's slowing people down and making new devs like too, afraid to jump in maybe I also think that.",
+      "Duration": 31,
+      "Offset": 569
+    },
+    {
+      "Sentence": "The availability of information right now, too, is so incredible where you can look pretty much anything up and haven't answer there in a couple of seconds. I think knowing that is so important. And I think in general. Our education system like really needs to move to a point where they're accepting of that and classes aren't just memorize these things anymore. But I guess that's a different different answer, but I think that you brought up the education system. A couple of times. We can't really talk, too much about that.",
+      "Duration": 31,
+      "Offset": 601
+    },
+    {
+      "Sentence": "About the the the let's talk about the concept of code smell or just general factual smell like you just made the comment that there's lots of stuff online that people can go and find and download but there's a difference between using the Internet and the sum of human knowledge to get an answer. And then copy pasting directly from stack overflow into production is a fine line there, so I feel like some of the new devs. Maybe are having trouble telling whether something is true or not or whether this is appropriate code because.",
+      "Duration": 30,
+      "Offset": 633
+    },
+    {
+      "Sentence": "Sing on Google, it must be the best way to use a linked list. Right yeah, definitely so it's definitely overcoming that and instead of Googling, a whole problem googling, the parts of the problem that you can't solve yourself. So instead of searching? How do I make a tic tac toe game in JavaScript? Which I know a lot of new developers might do. Instead, it's how do you have a button that you can click on and have some other user interaction based off that button click like having the individual pieces that you can Google and find the answer to.",
+      "Duration": 32,
+      "Offset": 664
+    },
+    {
+      "Sentence": "String method is or something like that is so important. But then being able to breakdown that problem and solve those pieces individually is still so important, and I think that's what?",
+      "Duration": 9,
+      "Offset": 697
+    },
+    {
+      "Sentence": "Programmers need to focus on is being able to solve those problems being able to break them into pieces being able to research those pieces individually. I think that's the really important part. That's a good point that gets to your point about breaking down pieces of a problem into the right the right chunks. I wonder if if you and I Google for different stuff than the new people do like maybe they are googling for bigger things of bigger scope or bigger full on solution type stuff while you and I are looking for a syntax and I know what I'm doing. I just don't know how to hook the button up.",
+      "Duration": 33,
+      "Offset": 707
+    },
+    {
+      "Sentence": "Total E and that's why I'm kind of ready with series that I'm working on right now, so I'm working on a project where I'm taking a bunch of different aspects to problem solving and breaking them down for developers and showing my process and my advice for how to approach these things and what questions to ask and what strategies to follow in order to find the right solutions to problems and one of my things for a little bit and learning and not for forever, but maybe at some point make yourself a CHEAT SHEET.",
+      "Duration": 32,
+      "Offset": 741
+    },
+    {
+      "Sentence": "The syntax that you might need for your language and then turn off the Internet for awhile in only write code on your computer not forever, but just for a little bit so that you're solving these problems by yourself, you're putting together the pieces an coding is in a research problem. It's problem, solving problem and wonder if there was a way or if we could do a survey to find out the average time spent coding in between googling sessions question, Yeah for sure.",
+      "Duration": 30,
+      "Offset": 774
+    },
+    {
+      "Sentence": "And what would that tell us like again. I don't want to draw any any qualitative conclusions or imply that one person is better or lesser but there must be a type of person who spends an hour or 2 coding and then they Google, something and then come back and there must be another person who spending an hour googling. In 5 minutes coding and what can we learn about that and how can we use that information to help everyone totally I think they would follow I said to the spectrum depending on what I'm building 2. If I'm building something in a language. I'm super familiar with an?",
+      "Duration": 32,
+      "Offset": 805
+    },
+    {
+      "Sentence": "Of Ben familiar with this problem and solve something familiar in the past, then I might be the person that's not googling things for long periods of time, but it's something that's brand new to me like I probably be googling more. That's a really great point. I recently hooked up this keyboard. That's got like these leads in the keys to show my blood sugar and they wanted me to do it in node, which I'm not good at and I swear. I spent like 2 hours looking for how to make a request a node because I just found.",
+      "Duration": 30,
+      "Offset": 839
+    },
+    {
+      "Sentence": "7 ways to do it and I couldn't tell which one was right.",
+      "Duration": 3,
+      "Offset": 870
+    },
+    {
+      "Sentence": "But if I was doing it in C Sharp I would not be doing that at all. I wouldn't I would I would have spent many, many less hours. Googling for that simply because I was not familiar not just that I wasn't familiar but also that there was no clear answer that was a tough part. Everyone had an opinion about how to make an HTTP request in JavaScript and they were all different. Yeah, I think that you have a script ecosystems fascinating in that way that there are so many ways of doing things that are pretty much correct at this point. But there's just a lot of ways of doing anything with all the different frameworks that are out there.",
+      "Duration": 32,
+      "Offset": 874
+    },
+    {
+      "Sentence": "You put that out that it is so many ways that are you just said there are correct like I was looking for the way like the way in the light the truth. You're saying that they were probably all correct and that's scary, yeah, I think so. Just there so many things that are out there that you could totally use to make a valid HTTP request and have it work perfectly fine. But maybe there are different tradeoffs. Like Are you looking for something more efficient. Are you looking for lightweight library. Are you looking for something that's developer friendly. Those are all the tradeoffs that.",
+      "Duration": 30,
+      "Offset": 907
+    },
+    {
+      "Sentence": "Do it well, let's talk about those so just in a few seconds. You rattled off some very thoughtful software engineering type questions about like stuff, but how does a beginner move past the tutorial and move into those kind of smart questions because sometimes when you go to an interview. They ask you the question and then you freeze because it's like I don't know the right answer, but really the right answer is the 5 questions that you just rattle off answering the question with more questions and sometimes the way they go at it interviews are at tough format in general just because.",
+      "Duration": 32,
+      "Offset": 938
+    },
+    {
+      "Sentence": "Pressure and I don't think clearly when I'm under pressure at all definitely could solve questions way better outside of a high pressure situation, but that being said, I think that coming at it from those different perspectives. It's really important. That's something that I want to bring to new developers like whenever I'm teaching I always say that.",
+      "Duration": 23,
+      "Offset": 971
+    },
+    {
+      "Sentence": "Teaching the syntax or",
+      "Duration": 2,
+      "Offset": 995
+    },
+    {
+      "Sentence": "Any of that is not what's important to me in this like it's you do have to be able to build stuff, but what's a lot more important to me is that you know what questions to ask and how to teach yourself? How to code it end of me teaching you because.",
+      "Duration": 15,
+      "Offset": 998
+    },
+    {
+      "Sentence": "You know, I can teach you so much about this one thing, but who knows what you're actually going to be doing once you get out there and so it's way more important that you can take what you learned here and apply it to something else rather than actually knowing just the one way to do things hired the leading career marketplace for software. Engineers will match you with your next job based on your skills experience and desired salary. They'll intelligently match, you with over 10000 companies were looking for engineers just like you better yet.",
+      "Duration": 30,
+      "Offset": 1014
+    },
+    {
+      "Sentence": "Apply just create a profile and let leading companies such as we work drop box. Wayfair Zillow and more applied directly to you join hired today at hired.com slash Hansel minutes. That's hiredHIRED.com slash Hansel minutes.",
+      "Duration": 18,
+      "Offset": 1045
+    },
+    {
+      "Sentence": "So how do we teach that to new Devs you teach new tabs you taught them at General Assembly taught them all over? How do you like I was teaching my son? How to code and then something we bumped into an issue and the issue wasn't the code. It wasn't syntax. It was like the DNS server was messed up.",
+      "Duration": 13,
+      "Offset": 1064
+    },
+    {
+      "Sentence": "That's not at all, what we were trying to do So. What do you do if your full time Devin you been involved in dev for 2 or 3 years and then you're just now learning how DNS works, which is part of infrastructure like suddenly you're driving in an Uber and now you need to drive a stick shift.",
+      "Duration": 13,
+      "Offset": 1078
+    },
+    {
+      "Sentence": "Yeah, it's tough I think a lot of that's research, Egan be having those skills to research stuff and also just the ability to stick with it. I know like I've been writing code for I guess 6 years now and just last week. I was trying to debug a CSS S issue that wasn't actually a CSS S issue. I forgot to close in HTML tag. It's things like that. That would get you because you're thinking always SCSS working like.",
+      "Duration": 31,
+      "Offset": 1092
+    },
+    {
+      "Sentence": "SS but it isn't at all, I am so I think a lot of it's just sticking with it and keeping trying thing is looking at different things looking at things from different angles and knowing that sometimes it'll take some time and sometimes it would be really annoying. But if you stick with it. It will eventually get there and then another thing is being willing to ask people questions because at some point. Maybe somebody else is going to be able to solve that question in a couple of minutes, whereas for you, it might be worth it to learn that new thing and put that time into it, but maybe.",
+      "Duration": 30,
+      "Offset": 1124
+    },
+    {
+      "Sentence": "But to just have somebody else solve that piece of the problem. I think also it's important for people to know that old timers like me or experience programmers like yourself bump into this stuff all the time and we have to get to that point ourselves. We have to get the junior engineers to the point where they can feel that they can in a safe place say. Hey, I did this thing and it was a silly fun error. Let's laugh about it and learn from it as opposed to beating ourselves up about that. Another person might beat themselves up. But the",
+      "Duration": 31,
+      "Offset": 1155
+    },
+    {
+      "Sentence": "Angle bracket but we all are like listening and going up Yep we've all had the million dollars; or I commented that code out or whatever and we spent hours staring at it and it was like a check box or a missing slash totaly I think the idea of having a safe place to fail is super important and having a place that.",
+      "Duration": 20,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "Isn't?",
+      "Duration": 0,
+      "Offset": 1208
+    },
+    {
+      "Sentence": "Immediately getting pudding on the pressure in a situation that there doesn't need to be a lot of pressure so giving time to do assignments when you're being on boarded or knowing that certain things will take way less time than you think they will in some things will take a lot more time than you think they will and having that place where it's not always a super high pressure environment and you do have the ability to go down the wrong road come back and try a different path. I think that's really important.",
+      "Duration": 31,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "Environment but also in a work environment yeah and optimizing the amount of time that you like I always believe in fail fast fail often so if I can avoid spending like 17 hours debugging an issue that ends up being missing; like I'd like to do that but I do also want it to take a little bit of time like I want to waste an hour trying to learn because there's a learning opportunity there you know what I mean so there's that sweet spot of this took a long time and I figured it out versus this completely crushed my spirit and destroyed my momentum.",
+      "Duration": 32,
+      "Offset": 1241
+    },
+    {
+      "Sentence": "Totale I think that, like hour rule is a pretty good, one if it's taking about an hour, then keep working at it yourself. But if your past that our mark try to try to reach out to somebody else for a second pair eyes have you noticed as you probably taught people of varying ages and across generations that I'm starting to notice that people Google and I'm using Google in the general like searching the Internet term. People Google differently than other people. I'm noticing my sons, Witcher.",
+      "Duration": 31,
+      "Offset": 1274
+    },
+    {
+      "Sentence": "Here's Google full and complete sentence is.",
+      "Duration": 3,
+      "Offset": 1306
+    },
+    {
+      "Sentence": "Like they ask Google a question as if it is a person like How do I buy the data and I don't know if Google is that good at answering full and complete sentences. 'cause it's looking for the word. How do I and it I think they may not be getting the right answers do you think that new devs or devs that are like coming up in the last 4 or 5 years tend to do that, well old timers do the whole keyword. Google search and how much is Google searching or learning? How to search a useful thing to learn.",
+      "Duration": 30,
+      "Offset": 1311
+    },
+    {
+      "Sentence": "Yeah, so I actually almost would have notice the opposite in my experience, but I think definitely most developers that are successfully. Googling things I think are doing the kind of keyword. Here's my error and this is what it's saying and then here's the programming language and that's it. That's kind of the best way that I found to find answers as far as googling. I would get familiar with some of the tricks for Google like that. You can search things in quotation marks in order to get an exact quote you can.",
+      "Duration": 35,
+      "Offset": 1342
+    },
+    {
+      "Sentence": "Excite search all those kind of tips and tricks can make your googling process a little bit more helpful so I think that that can be good as well. That's really good point. I wonder if that will go in your course on moving past tutorials that you're going to put up at Dev Dot T. Oh yeah, definitely that's something that I definitely want to include in there.",
+      "Duration": 19,
+      "Offset": 1377
+    },
+    {
+      "Sentence": "Kind of guideline for how to Google different issues and then also.",
+      "Duration": 4,
+      "Offset": 1398
+    },
+    {
+      "Sentence": "What tips and tricks can make?",
+      "Duration": 1,
+      "Offset": 1404
+    },
+    {
+      "Sentence": "Googling process easier, yeah, I keep coming back to that concept of smell right like you don't know how you develop your sense of smell, but it just happens and it's like.",
+      "Duration": 9,
+      "Offset": 1406
+    },
+    {
+      "Sentence": "I may not know python like you know python and you may not know she sharp like I know she sharp, but I bet you that we could both look at some code and we could go it doesn't really smell right. I don't know why but it smells wrong, and then if we went searching for something on the Internet. We could also feel that the search results didn't smell right like I should have found it it must be that I typed this search.",
+      "Duration": 20,
+      "Offset": 1416
+    },
+    {
+      "Sentence": "Term wrong and I could you feel in your soul that the answer is out there. You just not you just not telling Google the right stuff for it to give it to you.",
+      "Duration": 7,
+      "Offset": 1437
+    },
+    {
+      "Sentence": "Oh, totally I've had so many students who are like I've Googled this thing over and over and over again. An you know, I'm looking at it and I see exactly what the issue is that I'm like if I Google this right now. I would find it, but they don't know how to Google. It properly yet and then it's hard to get used to it. I think a lot of these things are honestly just time. In doing them over and over again and recognizing the patterns that do work in recognizing the patterns that don't work, but then again, we can also give people some.",
+      "Duration": 28,
+      "Offset": 1446
+    },
+    {
+      "Sentence": "Sneak head's in order to make that process a little faster. How much do you find that like like appropriate uses of historical context or like dropping in little bits of knowledge about how things used to be done. Sometimes we were talking about like hard drive performance the analogy. I was using even though I'm old was a record player and like you know you're talking about like hard drives and how hard drives move around if you were trying to play a record a music on a record and the let's say that the song the song was fragmented.",
+      "Duration": 31,
+      "Offset": 1475
+    },
+    {
+      "Sentence": "Record like the needle would have to actually get up and go looking for the rest of the song and get back down. You would probably like slow the beat down it would probably make the song not sound right and that analogy worked really well for some people but for other people. It didn't 'cause. It's an old analogy. But it provided historical context about like how heads move around a digital hard drive.",
+      "Duration": 21,
+      "Offset": 1507
+    },
+    {
+      "Sentence": "Yeah, so I think knowing some of that stuff is really important, and teaching with Analogies. I think is also really important that concept of linking where you're taking what they know, and then teaching them something really tiny based off of what they already know in teaching it incrementally in that way is really important, and then I also think having analogies that fit your audience in our relevant for everybody is also something that's really important. I was really passionate about making sure that examples didn't fit into the like.",
+      "Duration": 32,
+      "Offset": 1530
+    },
+    {
+      "Sentence": "Your tapes, I notice that a lot of people teach with like Star Wars or Lord of the rings. Or.",
+      "Duration": 6,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "Star Trek I have never seen any of those things at all, and walked blocked and reported were stopping right now. I definitely don't fit into the stereotypes at all, and so I would teach with like a Britney Spears fan app as one of my things and help people's attention. So much because they thought it was super funny and super out there and it also kind of speaks to very different audience than maybe some of the other examples, whatever, so that's something that I really.",
+      "Duration": 32,
+      "Offset": 1571
+    },
+    {
+      "Sentence": "Event, as well, I wrote an article earlier this year. That was an introduction to like less based off of Ariana's ground these. Thank you next and that kind of.",
+      "Duration": 10,
+      "Offset": 1605
+    },
+    {
+      "Sentence": "Crazy on Twitter and it was definitely a really fun article to write and if you look at like the analytics of who is reading it was really different than the normal tech audience, which I thought was really cool as well so that makes me wonder if I need to do something about like Intel processors as it relates to like 7 rings do it. I'm just saying there's like a thing there that could potentially be done and this is an interesting thing, though, that like when it is an analogy on Tolkien or something Star Trek E people find that exclusionary but if.",
+      "Duration": 31,
+      "Offset": 1615
+    },
+    {
+      "Sentence": "As I'm Star Trek fan or Star Wars fan was in a tutorial and you did something on you know, My Little Pony Friendship is magic. I would find that charming and awesome and I would totally roll with it. So it's interesting that some fandoms are somewhat exclusionary, while others are more more cool like I would think of Britney Spears analogy would be awesome. And I would be more engaged like you described yeah. I think it's more just having a balanced then totally cutting. One type out having those examples just great. It's just that the other example. It should be in there as well so that.",
+      "Duration": 34,
+      "Offset": 1648
+    },
+    {
+      "Sentence": "You're different audiences instead of always appealing to one part of the room. That's really cool. I talk about the importance of Localising. Your talk and I don't mean picking language even though that's important who's your audience and are all of your slides your words your analogies your reference is going to land. You can't go. Maybe you couldn't go and do that, Britney Spears thing in another country where she wasn't popular.",
+      "Duration": 24,
+      "Offset": 1683
+    },
+    {
+      "Sentence": "Totale now and then find out whoever the Britney Spears of Bulgaria is and then use that person for your for your app totally totally and then you get a pop culture primary in another country too. Yeah, that's a great way to do things. So, your new course that you're working on moving past tutorials. How long do you think it's going to take and I'm going to release it as it comes or is this something that we're going to wait a few months for yeah, so I'm going to be releasing parts of it weekly so that I can iterate on feedback and build off of what people are liking.",
+      "Duration": 31,
+      "Offset": 1708
+    },
+    {
+      "Sentence": "Minimize stuff that people aren't enjoying as much and really tailor it to the audience that comes from it. So it's going to be definitely incrementally pushed and I'm really excited about it. I'm trying to make it appeal to as many of learning styles as possible so it's going to video in visual and written link out to other resources. So definitely will be trying to appeal to as many problem solvers as possible. Yeah, I think would be really helpful to be able to breakdown problems that we see and interviews. I have a friend who recently did not do well at an interview.",
+      "Duration": 33,
+      "Offset": 1741
+    },
+    {
+      "Sentence": "Just because you know it's whiteboarding and it's uncomfortable and all that kind of usual interviews suck type stuff, but because the actual breaking down of a problem was complicated. It was about sorting coins like imagine of coins are rolling down and they need to be sorted into particular buckets and stuff like that. And I think that if the breaking down was clearer and the tools available to wear clearer it would have been more successful interview. Yeah, I agree. I think that the interview process is definitely broken, but there's also some validity that.",
+      "Duration": 31,
+      "Offset": 1775
+    },
+    {
+      "Sentence": "Are so difficult because they have such a huge problem solving component? To them and that can really challenge people and it's important to test those skills because that is what they are going to be using and so I mean from an interviewer perspective. It's how do you test that in a fairway but then on an interview be perspective it's? How do I solve these problems accurately an really think about all the different components that go into it and all the edge cases that can happen and how to stay with it when they ask you the.",
+      "Duration": 31,
+      "Offset": 1807
+    },
+    {
+      "Sentence": "Shane, a little bit further in now. You said that you're going to be using the using python. Your favorite language of choice to do this. But the course is mostly language. Agnostic so even though I'm not a big python head. I'm going to be able to follow along, yes, so it's going to be totally language. Agnostic in that you can solve any of these problems in any programming language, the only reason I'm using python is because the syntax of python looks pretty similar to spoken word, and so I switching between python and JavaScript is my kind of 2 primary languages.",
+      "Duration": 33,
+      "Offset": 1839
+    },
+    {
+      "Sentence": "It relies alot more on symbols, whereas python result revolves moron like written word, and so I think that if somebody was looking at it. Python would look more like written word or pseudo code that was my next question is kind of like pseudocode, yeah, yeah? Where are you going to be able to check this out? They just have dot TO and then a spittle and that's where they would follow you, or is there a specific URL for it. Totaly Dev 2 ace pedal and the post will be going up on there, it will also be a series.",
+      "Duration": 30,
+      "Offset": 1873
+    },
+    {
+      "Sentence": "That starter post everything will be linked off of that one OK cool. We're going to make sure that we've got links directly to of course, your page, but also even after this podcast has been published will make sure to put in additional links in the show. Notes so if you're listening to this show. You can go down to the show. Notes and check it out and will have links to Alys work thanks so much for chatting with me today awesome think. Yeah, this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 29,
+      "Offset": 1904
+    }
+  ]
+}

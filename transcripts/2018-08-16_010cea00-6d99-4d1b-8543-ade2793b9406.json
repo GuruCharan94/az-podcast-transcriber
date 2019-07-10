@@ -1,0 +1,588 @@
+{
+  "id": "010cea00-6d99-4d1b-8543-ade2793b9406",
+  "Title": "Container Catharsis with Laura Frank Tacho",
+  "PublishDate": "2018-08-16",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/ededc64b.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 8
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users.",
+      "Duration": 12,
+      "Offset": 41
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Laura Frank. She is the director of Engineering Cloudbees? How are you Hey? Scott I'm doing really well? How are you doing? I'm doing OK? I'm excited to talk to you because you have expertise in containers that goes back to the beginning with you there? When Docker was brought out announced to the days of yore. Yeah, I started using Docker in 2013, which is it really was just like a couple months after Solomon maybe.",
+      "Duration": 32,
+      "Offset": 58
+    },
+    {
+      "Sentence": "Or shared the project at Pycon during that, like very famous lightning talk, the most famous lightning talk that ever was so I remember very distinctly. I was working at HP at that I'm working on HP cloud back when they have HP cloud public cloud and someone shared the link of the talk in IRC channel and.",
+      "Duration": 19,
+      "Offset": 91
+    },
+    {
+      "Sentence": "Not like others this thing sounds pretty cool and I was like does sound pretty cool and from there. You know XYZ happened. We had a mutual colleague that ended up going to century link to start a team in the labs Department to do research and development. The topic was Docker and like a bunch of us from HP one over there to start working on developer tools. So it happened really, really quick, but yeah, I've been very I've been steeped in the container world since.",
+      "Duration": 32,
+      "Offset": 111
+    },
+    {
+      "Sentence": "13.",
+      "Duration": 0,
+      "Offset": 144
+    },
+    {
+      "Sentence": "Is that one of those things where you see a technology here about a new project in like Oh? Yeah. I need to be all over that and then you just jump in or were you already in satellite projects or things in the area around it.",
+      "Duration": 12,
+      "Offset": 146
+    },
+    {
+      "Sentence": "Yeah, I was in the developer tool space. I was working on the infrastructure team at HP cloud. So was very much into you know cloud migration story tools that made it easier for developers to start doing work in the cloud things that made developers more productive, so it was in sort of a adjacent space. One interesting thing about me, though, is that I'm really boring and I don't don't love risks.",
+      "Duration": 31,
+      "Offset": 159
+    },
+    {
+      "Sentence": "The Midwest my dad's a mechanic you know financial stability wasn't wasn't really something that I had a lot of when. I was not necessarily not. When I was young, but when I was in college like putting myself through school.",
+      "Duration": 14,
+      "Offset": 191
+    },
+    {
+      "Sentence": "The idea of joining a startup or working on a very early project with a lot of risk involved is just not my Cup of tea.",
+      "Duration": 8,
+      "Offset": 206
+    },
+    {
+      "Sentence": "But Uh, I don't know there was something something about it that made me feel very competent and safe about the future. So I just I just kind of went with it. I really trusted my colleagues as well. And I knew that that we could build something cool with the project and we ended up doing quite a bit of cool stuff and I'm still here. So yeah, it sounds like as a big but it's a bet that paid off. Yeah, I wish I could you know that question like if you could tell your past self something?",
+      "Duration": 31,
+      "Offset": 216
+    },
+    {
+      "Sentence": "Listen it's gonna be fine.",
+      "Duration": 3,
+      "Offset": 248
+    },
+    {
+      "Sentence": "Now you you're still a member of the mobi projects. Technical steering committee. I am man I've been was elected I think.",
+      "Duration": 7,
+      "Offset": 252
+    },
+    {
+      "Sentence": "This was probably about a year ago that elections were in. It's a 2 a 2 year term. So I'm happily sitting on the Technical Steering Committee for Moby Project. I'm a member of the Docker captains group, so this is a group that.",
+      "Duration": 11,
+      "Offset": 259
+    },
+    {
+      "Sentence": "States all the way back to 2015 think we were kind of formally announced adds doctor. Connie you in Barcelona, which doctor Connie will be in Barcelona this year. Again, which is pretty cool. It was sort of an aggregate group of people who are doing a lot of blogging speaking community organizing people who had sort of stepped stepped up and had a bit of a loud voice around.",
+      "Duration": 23,
+      "Offset": 272
+    },
+    {
+      "Sentence": "Docker using Docker or different things. You could do with Docker. So I'm really happy to be part of that group as well, and the people that I've been able to meet or help get started with containers has been really rewarding.",
+      "Duration": 10,
+      "Offset": 296
+    },
+    {
+      "Sentence": "There could you detangle the names a little bit, for second like when I see the docker icon. It's like a whale right so that that Moby Dick is that meant to imply it's like Moby, but he's got containers on his back. So he's like a ship. Yeah, he's that's Moby. His name is not Moby Dick. It's not be Doc Moby Doc. That's actually awesome. I did not know that as a counterpart as well. I can't decide if it's so a wife or a sister or maybe just a coincidence that they have the same last name?",
+      "Duration": 33,
+      "Offset": 307
+    },
+    {
+      "Sentence": "Who is Molly doc?",
+      "Duration": 1,
+      "Offset": 341
+    },
+    {
+      "Sentence": "What is OK is this is this is like for another project?",
+      "Duration": 3,
+      "Offset": 343
+    },
+    {
+      "Sentence": "She's just she's just there. I think I'm not sure if anyone who is not like really, really deep into the Docker World, there hasn't attended a doctor. Kahn knows I see. I think I think Moby just like being blue and like I think he's just like very cool boy.",
+      "Duration": 18,
+      "Offset": 347
+    },
+    {
+      "Sentence": "No no it's nice like it's nice to have AA girl.",
+      "Duration": 3,
+      "Offset": 366
+    },
+    {
+      "Sentence": "Well, as well, but OK so the Moby project is like.",
+      "Duration": 4,
+      "Offset": 370
+    },
+    {
+      "Sentence": "What's the difference between Moby in Docker, though like Chrome is to chromium, as dockerized mob. I'm so glad you asked so this was this was announced in Austin. The foundation of the Moby project in it. I think it just wasn't announced very well and there were lots of cleanup tasks. I should say like PR tasks afterward to kind of Detangle. It so I'm glad we can talk about it here. So Docker Inc is a Corporation that sells docker, the product.",
+      "Duration": 30,
+      "Offset": 376
+    },
+    {
+      "Sentence": "For a long time, there wasgithub.com slash Docker and Docker was the open source project behind the product that Docker Inc. Sold so there was this natural classic clashing interests. I guess because?",
+      "Duration": 15,
+      "Offset": 407
+    },
+    {
+      "Sentence": "Open source you know, let's say for example, Microsoft is a huge contributor to the Docker. The days of your docker open source project, which they were like maybe Microsoft wants to Productize. Some of it and like them. They're pushing or even Docker Inc wants to their productizing and then they pushed up into the open source project. So it's just a conflict of interest to solve that problem and to make it really clear that Docker Inc is a company with corporate interests and that there are open source components that are kind of going into.",
+      "Duration": 31,
+      "Offset": 423
+    },
+    {
+      "Sentence": "Going into the product everything that's open source and that's like a builder or plumber component is now in the Moby project that stuff like container. D the runtime. All of those low level components to that kind of consumed by the upstream or I guess downstream Docker product.",
+      "Duration": 21,
+      "Offset": 456
+    },
+    {
+      "Sentence": "So OK, so let me see if I understand this, then so Mobi has this Library of back end components. Like all the different like back end, containerized stuff networking and volume management and logging and stuff.",
+      "Duration": 13,
+      "Offset": 478
+    },
+    {
+      "Sentence": "And then there's a framework to assemble all of that and deploy and test those artifacts.",
+      "Duration": 5,
+      "Offset": 492
+    },
+    {
+      "Sentence": "Yep, and all of that the collision of those things are docker. Could I go and take Mobi and turn into like Scott Docker and sell it.",
+      "Duration": 12,
+      "Offset": 498
+    },
+    {
+      "Sentence": "Totale if I if I was clever if you had a bunch of time on your hands and maybe a couple of Red Bulls. You totally could so code. It's just it's just a matter. It's typing. It's all it is. It's just if you haven't tried to type it out, then then you can you tell my tell my kids that like I want to be a program it's just typing it's not a big deal, OK, so then what is Lennox kit? Yeah, Lennox Cat is really interesting projects?",
+      "Duration": 30,
+      "Offset": 511
+    },
+    {
+      "Sentence": "It is like?",
+      "Duration": 1,
+      "Offset": 542
+    },
+    {
+      "Sentence": "Trying to think how I can explain this.",
+      "Duration": 2,
+      "Offset": 544
+    },
+    {
+      "Sentence": "It's sort of like making your own operating system or making your own distribution of Lennox. But like all in containers well so the reason the reason I ask is that there's all these Lennox is right, and like I'm running Windows 10 but I feel like for Lennox is that I run on it, and you know every once in awhile. I'll call some native API and I'll get like Oh, you're missing Lib blah blah. You dummy go get lip blah blah blah and then it's a whole thing and there's just hold dance like does my app support the APIs.",
+      "Duration": 31,
+      "Offset": 548
+    },
+    {
+      "Sentence": "That I that my app needs and then sometimes I'll go and put together a docker container for my app and it would be like Oh, it's 800 MB, you're an idiot and then I'll do it again. It's like. Oh, it's 40 MB you're a genius and I have no idea what happened. And I really just want to know How do I ship the smallest Lennox that does just the functions of my app calls Lennox gets a great project to peer into to that specific problem. So the kind of premise and I guess the the tag lining kind of description for Linux Kid is.",
+      "Duration": 31,
+      "Offset": 580
+    },
+    {
+      "Sentence": "Typically building your own destroy clinics specifically for whatever workload that you're going to run on top of it. So I think that's a general struggle in the container world and kind of there's like on one and containers are really appealing to people because there's this promise of like cut out, all the fat only have what you need to run your application.",
+      "Duration": 22,
+      "Offset": 612
+    },
+    {
+      "Sentence": "Dependency management is great everything is super tiny there's optimization of images optimize your dockerfile optimize everything so that it's a small a small small thing on the other hand, there's like developer productivity and wanting to make kind of like the silver bullet image that will do pretty much anything that the consumer. The developer on the other end wants to do. There's really not a way to make those types of images super super tiny and strip away. Everything 'cause you never you can't really predict the use case of whoever might be consuming it so for those people that are real.",
+      "Duration": 35,
+      "Offset": 636
+    },
+    {
+      "Sentence": "About running the absolute smallest thing.",
+      "Duration": 5,
+      "Offset": 671
+    },
+    {
+      "Sentence": "Getting really, really deep down into the plumbing stuff that's what Lennox Kid is a project for you. If you're interested in running containers as a maybe, as a developer use case or just like to help you in your daily work or even if you're running them in production.",
+      "Duration": 17,
+      "Offset": 678
+    },
+    {
+      "Sentence": "It might not be. I think it's a cool project to look into but it might not be like immediately actionable for for that particular use case.",
+      "Duration": 6,
+      "Offset": 696
+    },
+    {
+      "Sentence": "OK, so I'm hearing that you know if my app works great on Aboon 2 or an Alpine and you know, I don't have the patience or the interest to go into into Lennox kit. That's OK like I shouldn't feel bad. Yeah, you shouldn't feel bad. I think even in my circle and I'm pretty into the like. The container power user. I only know personally a handful of people that even experiment with Lennox Kit and I don't mean to make it sound like not approachable, but it is like it's a building block.",
+      "Duration": 30,
+      "Offset": 704
+    },
+    {
+      "Sentence": "Like a underground plumbing sort of tool, it's not.",
+      "Duration": 4,
+      "Offset": 735
+    },
+    {
+      "Sentence": "It's I think there's a very small subset of developers that are working on problems that are well solved by Lenox get. I think Docker, the people who work at Doctor are great examples of those kinds of people working in that space. But for a lot of us, even when I was at director level don't code. Day-to-day necessarily anymore. But even when I was coding. A lot using Docker alot, I probably want touched Linux get very frequently.",
+      "Duration": 30,
+      "Offset": 740
+    },
+    {
+      "Sentence": "OK, well, it's good to know that it exists and maybe if I were engineering person at Netflix. I'd make like Netflix OS and it would be like just the perfect little Lennox for Netflix and we'd all use it. But the average. Joe and Jane do not need to worry about that, so that's good to know my final thought about Moby project in like these Palmer components. I think it's easy if you are a developer like getting started with Docker. Or maybe you're even using it everyday and you see all these like really cool projects coming out of mobile build Kit Lennox kit.",
+      "Duration": 31,
+      "Offset": 771
+    },
+    {
+      "Sentence": "And it can kind of cause you shame. Maybe they think like oh. I'm not using them and might not like am I not smart or you know what's is this for me? Is this not for me, I might not a great developer like your great. These are really low level components and they're not don't feel bad if it's not something that you're touching everyday like you're doing fine? Yeah.",
+      "Duration": 22,
+      "Offset": 803
+    },
+    {
+      "Sentence": "Well, I think we, we appreciate that because there's a lot of there's a lot of words. And there's a lot of nouns that are being turned into project names and if you hear about a noun and you're like. Oh, no, I learned that now now, too. I just learned this other known it could be a little bit overwhelming, so hard to know what to pay attention to. I think in this particularly in the space like the cloud native space. The container space. It's like I think JavaScript has a bad reputation of there's something shiny everyday like I think a bit unfair because there's lots of.",
+      "Duration": 30,
+      "Offset": 826
+    },
+    {
+      "Sentence": "Happens everywhere regardless of what language or what? How deep in the stack. You are so it's certainly happening in the container space super low level. There's often a bunch of new shiny stuff all the time it's easy to get distracted or not quite know where to focus.",
+      "Duration": 15,
+      "Offset": 857
+    },
+    {
+      "Sentence": "Uh-huh.",
+      "Duration": 0,
+      "Offset": 873
+    },
+    {
+      "Sentence": "So Docker was released for the first time, like you said in March of 2013, so even though it took over the world is only 5 years old. Yeah, it's a baby, which is crazy. It's a baby. Yeah, exactly like my had a 5 year old and his whole brain wasn't even attached to the rest of his body. Even now, he's 12 and he still marginally functional not attached.",
+      "Duration": 24,
+      "Offset": 874
+    },
+    {
+      "Sentence": "Yeah, one is 20, so but the way people talk about doctor. You would think it like invented the container. You had totally did not yeah. I think that's I think back to one of the first talks that I gave or maybe even like.",
+      "Duration": 15,
+      "Offset": 900
+    },
+    {
+      "Sentence": "The first large conference talk that I gave was.",
+      "Duration": 3,
+      "Offset": 917
+    },
+    {
+      "Sentence": "Ruby comp 2014.",
+      "Duration": 2,
+      "Offset": 921
+    },
+    {
+      "Sentence": "Using like how to develop a rails application in Docker or with Docker and my first slide. Or maybe my second slide after the like. Hi my name is Laura slide was.",
+      "Duration": 10,
+      "Offset": 923
+    },
+    {
+      "Sentence": "Doc a Docker is not a container and doctor didn't invite containers, they never you know.",
+      "Duration": 6,
+      "Offset": 934
+    },
+    {
+      "Sentence": "The Narative might change, but they still won't have invented containers containers have been around components of containerization have been around and for decades, really, and they're just sort of making it really easy to use as a developer and I think even now in 5 years and that think that point still gets gets missed especially with people who are joining the conversation now and have missed the historical context. So I'm always happy to talk and then kind of explain the?",
+      "Duration": 30,
+      "Offset": 941
+    },
+    {
+      "Sentence": "Well, so Docker is 5 years old, but Lennox containers came out like 9 years ago, but open VZ came which was a virtualization technology for like 13 years ago. But all of this is still even older than that. Yeah, yeah, it's always the same stuff kind of repackaged and re purpose. An I think containerization in what we call a container is sort of the culmination of quite a few principles or few patterns that have?",
+      "Duration": 31,
+      "Offset": 972
+    },
+    {
+      "Sentence": "Waiting for a long time, maybe they haven't been super widespread or very well supported things like see groups make things a lot easier namespaces, etc. Those like very building blocks of containers. They often go kind of under the radar because they're wrapped in this nice like whale blue whale that is easy to interact with and it's really easy to focus on the Blue Whale and it doesn't matter if I'm using docker everyday if I understand like.",
+      "Duration": 29,
+      "Offset": 1004
+    },
+    {
+      "Sentence": "What happened 15 years ago or how containers were had evolved overtime?",
+      "Duration": 6,
+      "Offset": 1034
+    },
+    {
+      "Sentence": "I think that's fine. I think it's I think it's always interesting, though, to kind of look back and see the patterns that tend to repeat themselves over time I'm very interested in those so.",
+      "Duration": 11,
+      "Offset": 1041
+    },
+    {
+      "Sentence": "Hey friends this is Scott you know, listening to podcasts is a great way to keep up to date on technology since we're always learning is software people and you can also find a job by listening to a podcast. If you check out our new sponsorhired.com that'SHIRED.com slash Hansel minutes on hired.com software. Engineers can get interview requests from companies that want to hire you each offer will have the salary in the equity up front, you can view those interview requests and accept reject change the offer before even talking to a company. It's a great way to find out what's out there.",
+      "Duration": 32,
+      "Offset": 1053
+    },
+    {
+      "Sentence": "To move there working with over 6000 companies from startups to large companies from 14 major tech hubs throughout North America and Europe? What's great about this? Is it's totally free for software engineers and if you get a job throughhigher.com that ordinarily give you with 300. Thank you bonus. But if you use our special link they'll double that bonus you'll actually get paid $600 when you accept that job now if you're not looking for a job. But you know, someone who is refer them to hire.com slash Hansel minutes and they'll give you elite bonus of 1000.",
+      "Duration": 32,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "$7 bonus when they accept a job so check him out at hired.com slash Hansel minutes.",
+      "Duration": 6,
+      "Offset": 1119
+    },
+    {
+      "Sentence": "So for someone who is trying to find that balance between what we just talked about which is you don't have to learn everything and here's a whole list of words. And now you can forget all of those, and just use Docker and on the other hand, though all the cool historical context and the where containers came from his concept, etc cetera. Where do you decide when to stop if you're listening to this podcast you like wow. There halfway through and I'm still not sure if I'm supposed to use Docker or not what do we tell them if you've never used the container before don't get bogged down with all of the historical context.",
+      "Duration": 31,
+      "Offset": 1126
+    },
+    {
+      "Sentence": "Like.",
+      "Duration": 0,
+      "Offset": 1158
+    },
+    {
+      "Sentence": "If you think that you might be interested in cake. I wouldn't recommend that you go to the store and like look at the history of flower and think about all the different kinds of sugar that you want. I would just recommend going to the bakery and picking out something that looks good and trying it first, then when you want to make changes to maybe like oh, maybe that's a buttercream. I don't really care for and I want to have Italian buttercream. Instead, then I think that's the time to dig a bit deeper, a little bit underneath the surface. But if you're happy with that cupcake then.",
+      "Duration": 31,
+      "Offset": 1159
+    },
+    {
+      "Sentence": "Sing for you like we're all humans. We have only we have limited time we have limited keystrokes. There's probably something else that you could do if it's not interesting to you don't feel pressured to dig into the nitty gritty details. So what's all this talk of container wars, though like? Is there a war did we win. I'm unsure. I think we won. I could be wrong or we? I don't feel like I lost. I think that's good so.",
+      "Duration": 30,
+      "Offset": 1191
+    },
+    {
+      "Sentence": "So maybe here here's a little bit of history lesson. So Docker is I would say the market leader or like market share leader for sure on containers. An I think that's not the only container runtime. I think right now, it's a solid container product and that's it may be an important distinction is like Docker, Inc is a Corporation that has a product and that product is Docker. There's a lot of internal stuff like the container runtime that goes into Docker, but there are other container runtimes up there.",
+      "Duration": 31,
+      "Offset": 1222
+    },
+    {
+      "Sentence": "I think this must have been 2 or 3 years ago, but core OS and it still exist today, but core OS came out with rocket. Archetti unsure what the correct pronunciation? Is and I think I've never asked so I'll just keep saying rocket. Maybe it's I don't know, but they came up with their container runtime to sort of not say compete with Docker. Maybe in some ways, but to sort of complete the story, perhaps or just offer an alternative.",
+      "Duration": 28,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "So that was sort of the start of this like Oh, you know, I feel like there's there's like militant forking on GitHub of like we're forking. This repo and like we're going to build something else and in a lot of ways rock. It felt like that. It was like Oh wow. Everyone the community had really gotten behind Docker and then now there's this thing that's like causing some turbulence in the container space so that's sort of where we started with the container wars and I think now.",
+      "Duration": 30,
+      "Offset": 1283
+    },
+    {
+      "Sentence": "The landscape around us, it's really clear that we've we've evolved to the orchestration wars and that's where most people spend their energy.",
+      "Duration": 8,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "Did Kubernetes warring swarm like who's the winner?",
+      "Duration": 3,
+      "Offset": 1323
+    },
+    {
+      "Sentence": "And I just think, OK, so let me see if I understand this, then so core. OS is this lightweight distro built around containers. That was done by the chorus folks and they did. They did rocket built on top of our Katie or rocket. But this is all sitting on Lenox containers, though right you need see groups and you need all Lennox East stuff anyway, right so this is just like not to be.",
+      "Duration": 20,
+      "Offset": 1328
+    },
+    {
+      "Sentence": "I use this analogy a lot. There's a whole. You know VHS versus Betamax like it. Still, it cassette tape. It's got like a magnetic spool inside, yeah, so they're not fundamentally different not fundamentally different. There's like some distinctions and actually you know it's so funny like this. This this rocket versus Docker. I think it took up so much of my bandwidth at that time. It was like the most important thing and I'm thinking back right now and I think what even.",
+      "Duration": 28,
+      "Offset": 1349
+    },
+    {
+      "Sentence": "Where we so mad about again I can't even particularly remember the specifics but?",
+      "Duration": 6,
+      "Offset": 1378
+    },
+    {
+      "Sentence": "But yeah, so Docker used to be based on Lenox Containers LXC If so, if you haven't heard the term Galaxy. That's like the Linux containers and Docker just built on top of Alexy and use the their basic functionality of containers and added some stuff on top of it and it was like OK, where we're putting the nice like the frosting on it, and making it easier for developers to use but you're right a lot of the stuff like a dialogue sea level were shared it was.",
+      "Duration": 30,
+      "Offset": 1385
+    },
+    {
+      "Sentence": "Apple I would say 2 years after doctor started that they actually got rid of Alexion. They started running on their own runtime, so that was also is that Lib container so that's like when we talk about the container wars a lot of that. You know what that actually means it's not like Docker necessarily it's like the container runtime wars like isn't maliksi versus lip container and like what container runtime are we using?",
+      "Duration": 30,
+      "Offset": 1417
+    },
+    {
+      "Sentence": "Interesting and I think when we did beyond containers with Tracy, a couple months back we touched on this as well about how.",
+      "Duration": 8,
+      "Offset": 1447
+    },
+    {
+      "Sentence": "You know things that we interact with often and that seems to be the most important thing. It's like just give it maybe 6 months or a year and that little piece of tech becomes abstracted away from us.",
+      "Duration": 12,
+      "Offset": 1457
+    },
+    {
+      "Sentence": "And I think that's really what happens like no one thinks about if they start up a container. What runtime it's using or like if it's using Aleksi or something else. What you're focused on that just needed to work and I need. We're betting our companies on this technology right. I just wanted to work. Yeah, exactly so we've seen that. I mean, we've seen that commoditization. Not and it's not just in Tech, it's like everything I mean when you buy an EC 2 instance on AWS like you're getting electricity, but you don't.",
+      "Duration": 31,
+      "Offset": 1469
+    },
+    {
+      "Sentence": "Think about like Oh I have to pay the electric bill for the data center. Electricity is a commodity and it just like it comes with it when you when you pay for AI? Don't know if you run a container on AWS or if you are using a hosted or managed orchestration service, you're getting a container on time. That's packaged in it. You just don't necessarily see it or think about it, so I think so.",
+      "Duration": 28,
+      "Offset": 1501
+    },
+    {
+      "Sentence": "Sorry. Help me understand you move it up moving up to orchestration, though, then are we going to not think about that, like why is there a world where I don't even think the Kubernetes exists. I think So and I think that world is I think that's I think the natural progression is maybe a bit pause because we are as an industry just like so captivated by Kubernetes and we think it's the most amazing thing ever and can't imagine life without it. So I think that's going to installing a bit the commoditization, but I think we're.",
+      "Duration": 32,
+      "Offset": 1531
+    },
+    {
+      "Sentence": "Get there where?",
+      "Duration": 1,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "If you're what you really want is you want an application. That's running that's distributed and highly available like that's the thing that we're going after here, so whether that's kubernetes or like something else, it as a developer. It's probably not the most relevant thing to you if you are of course, like a reliability engineer someone who's on call or supporting these systems like then the question is a little bit different, and maybe it is more important, but I think it will be a year.",
+      "Duration": 30,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "Until we have other patterns that sort of rap kubernetes and maybe abstract kubernetes away. I think people will start thinking about like I don't think people will be talking about pods or parts of the kubernetes syntax like their gamble declarations deployment declarations necessarily anymore. I think it's going to be a maybe one level up like just generally. Here's my application and then there needs to be some service that takes that application and says OK well.",
+      "Duration": 30,
+      "Offset": 1598
+    },
+    {
+      "Sentence": "Translate it into this thing, so I can run kubernetes, but it could run somewhere else.",
+      "Duration": 4,
+      "Offset": 1629
+    },
+    {
+      "Sentence": "Well, now, you got and then you've got STO.",
+      "Duration": 2,
+      "Offset": 1636
+    },
+    {
+      "Sentence": "To sit on top of Kubernetes.",
+      "Duration": 1,
+      "Offset": 1639
+    },
+    {
+      "Sentence": "To connect micro services.",
+      "Duration": 1,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "I are we just rearranging deck chairs on the Titanic and we're just going to go and squish it all together like someone's going to write something that takes is Geo plus carbonate plus Docker and turns it all into a monolith again.",
+      "Duration": 11,
+      "Offset": 1644
+    },
+    {
+      "Sentence": "I'm wait. I'm ready. I'm ready for it. I mean, how distributed is just have to get before it's just like oh come on can. We just write like a big old C application. Yeah, you know it's so interesting. I guess this is not totally related to microservices and containers. But I work in a CI CD world, so I'm really interested in automation. I see a lot of companies source like I don't see their source code specifically but I see how they organize it.",
+      "Duration": 30,
+      "Offset": 1656
+    },
+    {
+      "Sentence": "On a rainbow is getting a lot of traction now, so if you've not heard that term before so we have. We have Micro Services, which is this architectural abstraction of putting business logic in little chunks and making them available via API and having all these little services and usually it's that one service corresponds to one repo on GitHub or whatever your SCM provider is but it's really hard, then when you're trying to Automate and actually like run stuff in production to have like 100.",
+      "Duration": 30,
+      "Offset": 1687
+    },
+    {
+      "Sentence": "In your your source code management tool So what a lot of companies have done and actually some quite prominent ones are they just like said no everything just in a folder. It's just in one repo.",
+      "Duration": 11,
+      "Offset": 1719
+    },
+    {
+      "Sentence": "So now we're seeing like I mean, everything is a pendulum. We swing one way and then you know it's like oh. We gotta gotta start swinging the other way. But I'm definitely seeing some movement in that other direction. We're seeing the monolith first.",
+      "Duration": 16,
+      "Offset": 1731
+    },
+    {
+      "Sentence": "The monolith first first method that Martin Fowler wrote about. I think it's not even really that recent I think it was like a year ago when he wrote that blog post that I find to be very captivating and I share. It often with people who are struggling with microservices but.",
+      "Duration": 18,
+      "Offset": 1748
+    },
+    {
+      "Sentence": "I think.",
+      "Duration": 0,
+      "Offset": 1768
+    },
+    {
+      "Sentence": "You know this, I think there's This this representation of the world where everyone's using containers and everyone has everything in Micro Services and everyone's using kubernetes and if you're not doing it. You're too late. I think that's just really not accurate. And if you're listening to this podcast and you're not using containers and you feel bad about it. Please don't. I care about you. I don't think that you're doing anything wrong. Don't feel bad. I think in reality. It's something I think the last statistic. I read and I can't remember the source Little Rock. My brain trying to find it was something like 10%.",
+      "Duration": 34,
+      "Offset": 1769
+    },
+    {
+      "Sentence": "Of developers or it professionals are actually using containers in production. I think that's really different from the story that were told.",
+      "Duration": 7,
+      "Offset": 1804
+    },
+    {
+      "Sentence": "Or the perception maybe.",
+      "Duration": 1,
+      "Offset": 1812
+    },
+    {
+      "Sentence": "I appreciate that because it's overwhelming right like even just now people are listening and they're like OK, Docker Kubernetes and sits on top of that is teal sits on top of that and then is Dio uses on void mixer in pilot in Citadel and just like now now now now now. I just want to make hello world scale. That's all. I really wanted to do now, I've got containerized distributed hello world, and then while we are recording this podcast. I don't know if you know about this, but Google Cloud just announced.",
+      "Duration": 31,
+      "Offset": 1814
+    },
+    {
+      "Sentence": "Live like 20 minutes ago",
+      "Duration": 2,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "Which is serverless Google Cloud on top of kubernetes on Google cloud?",
+      "Duration": 5,
+      "Offset": 1850
+    },
+    {
+      "Sentence": "Like they were announcing they're in the process of announcing it like this moment and again. Serverless then what's so funny about services. It aims to hide it all. Yeah, that's the whole idea of services like build on this stuff all these nouns and then we're going to hide everything and pretend it doesn't exist and we're going to put a slider bar in front of it.",
+      "Duration": 18,
+      "Offset": 1857
+    },
+    {
+      "Sentence": "And then we're going to attach that slider bar to your credit card and that serverless.",
+      "Duration": 3,
+      "Offset": 1876
+    },
+    {
+      "Sentence": "That's wild it is I mean, there's a new shiny object every day. I think it'll but yeah, I mean, you're point your point. I think is is super really solid. It's that it's overwhelming and now we're just we're combining a bunch of stuff together and it's really hard to know what to pay attention to what's going to stick like?",
+      "Duration": 22,
+      "Offset": 1881
+    },
+    {
+      "Sentence": "Is yeah is serverless going to stick our containers going to stick? I think the answer if we've found to be yes, but like but maybe no because.",
+      "Duration": 8,
+      "Offset": 1904
+    },
+    {
+      "Sentence": "You know if you're using a serverless architecture. Some serverless service serverless as a service or functions as a service. I guess is a good way to talk about it, it could be running on kubernetes like it could be running on I don't know a mainframe in your parents basement. I think the point is like you shouldn't have to care so it's really about what part of the problem space you have access to or even want to have access to like if I'm running if I'm if I'm teaching.",
+      "Duration": 30,
+      "Offset": 1913
+    },
+    {
+      "Sentence": "Course on rails development and I have a bunch of students that are running their app on heroku. I don't care and they shouldn't care. What heroku is using under the covers to make that possible for them to enable them to do that. If I'm a site reliability engineer at Heroku. Obviously have a different opinion about it. I think it's just really all about what's relevant to you? What are you trying to accomplish?",
+      "Duration": 24,
+      "Offset": 1944
+    },
+    {
+      "Sentence": "What's the right match? What you're trying to accomplish and I think it's hard as a technologist to not get really distracted and kind of focus on what's ahead of you. I've certainly guilty of it. I like the cool new stuff, I get really fixated on like minutiae of projects and I dig really deep into them for my own personal enjoyment, but it's.",
+      "Duration": 24,
+      "Offset": 1969
+    },
+    {
+      "Sentence": "It's hard to stay focused, but it is important. Otherwise, it's just you know you feel overwhelmed and then you go into a shame spiral about not using all the stuff that you think we should be using?",
+      "Duration": 10,
+      "Offset": 1994
+    },
+    {
+      "Sentence": "Well, in the short term, though we know that we can use containers and we can use Docker and we can probably feel free to pick a container orchestrator that makes us happy makes our company. Happy we can always swap it out for another one in the future. Yeah, I think the one thing that's really great about the container ecosystem in general is that generally speaking, and of course, there are exceptions. To this, but pretty much everything that you do has an interface that matches another tool so for example, if you're using?",
+      "Duration": 30,
+      "Offset": 2006
+    },
+    {
+      "Sentence": "You have a deployment and you have you know services that you're declaring you're exposing a poor you're mounting volumes. All of those things map to something out like the equivalent the functional equivalent in a different orchestration tool because more or less. Those tools are solving the same problem. The problem set is pretty well defined. They just have different implementations of the solution. So you can move kind of easily back and forth. If you if you need to the same goes for many of the components.",
+      "Duration": 31,
+      "Offset": 2037
+    },
+    {
+      "Sentence": "That are are using common interfaces, so swapping out of storage plugin for example, networking interface. Our networking plugin, etc. Those things have commonly defined interfaces. So the vendor lock in is not so not so scary in the container world.",
+      "Duration": 17,
+      "Offset": 2070
+    },
+    {
+      "Sentence": "Cool, well, I appreciate you taking the time to help me get my head around all of this because it's overwhelming joy. We had just like a therapy session for everyone who feels overwhelmed by the state of containers like we should put some like soothing music behind this whole podcast like that is a good idea. We should call it the container. Catharsis is the title of this s*** it's like it will be OK. If you feel overwhelmed. That's fine. Everyone is overwhelmed. I'm overwhelmed and I've been I've been in the container world for 5 years already so I can just imagine what someone starting out.",
+      "Duration": 32,
+      "Offset": 2089
+    },
+    {
+      "Sentence": "It's OK will be fine.",
+      "Duration": 2,
+      "Offset": 2122
+    },
+    {
+      "Sentence": "Cool people can check you out, and your product at cloud beesBES.com and learn about continuous software in delivery and container container smarts and DevOps and Jenkins and all those great things and they can follow you on Twitter as well. I'll put links in the show. Notes thanks so much for chatting with me today. Great, thanks, so much. Scott this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 23,
+      "Offset": 2126
+    },
+    {
+      "Sentence": "When I heard.",
+      "Duration": 3,
+      "Offset": 2150
+    }
+  ]
+}

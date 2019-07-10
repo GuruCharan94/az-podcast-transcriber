@@ -1,0 +1,463 @@
+{
+  "id": "27fc30dc-5091-4e05-82ce-a3ef1d4329e0",
+  "Title": "How GDPR is affecting the American Legal System with Gary Nissenbaum",
+  "PublishDate": "2018-08-30",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/14c5f125.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Pay folks Intel as a sponsor this week and I welcome them because they're bringing some high performance developer tools for all of us. Check out Intel's parallel studio. XEI've talked about parallelism before on the show and the importance of using the complete instruction set unlocking the power of the processor that your code is running on you all might be writing C or C python or even 4, Tran but is your code building in such a way and written in such a way that it uses the latest techniques for vectorization.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Bing multi node parallelization or memory optimization.",
+      "Duration": 3,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Intel parallel studio EXE as a lot of new stuff for 2018 across all these languages get a free download at bitLY.com slash parallel studio EXE or certainly go in Google or Google with Bing for Intel parallel studio EXE and get started boosting your apps performance with smart parallel code with a lot less effort check him outbitly.com slash parallel studio EXE.",
+      "Duration": 30,
+      "Offset": 36
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Gary Nissenbaum from GD Nlaw.com GDNlaw.com you may remember Gary from show 601 where we talked about terms of service for developers. How are you Sir you're fast becoming our favorite lawyer on the show I am thrilled to be back. I had a terrific time being interviewed by your last time and I'm really looking forward to this one because I think it's a very topical, an important subject. Yeah, well, we're going to talk about GDP are the general.",
+      "Duration": 32,
+      "Offset": 76
+    },
+    {
+      "Sentence": "Regulations I was literally trying to work on this a little bit late on my own podcast site. Small business, a micro business. Even I put my cookie consent pop up there and looked at all. The different places where I stored data and I think I'm OK, but you know, I'm not a big company. I don't have the time where the lawyers, frankly to read all the paperwork seems kind of weird that this is even affecting me.",
+      "Duration": 30,
+      "Offset": 110
+    },
+    {
+      "Sentence": "Not only that, but when you say you don't have the lawyers to do this my question would be are you talking about American lawyers or referring to European lawyers and if you're not if you're not referring to European lawyers, then how do you know you're complying with the European law?",
+      "Duration": 19,
+      "Offset": 141
+    },
+    {
+      "Sentence": "And that's part of what I want to discuss today, which is a terrific very important principle, which is maintaining privacy of data. I believe in at 100%. I'm a big civil libertarian but the implementation is lacking. The 4 thought of how to do it without unintended consequences seems to have been lacking.",
+      "Duration": 24,
+      "Offset": 162
+    },
+    {
+      "Sentence": "No there's a lot to be just a lot to dig into here, but let's start at the beginning. What is it? What is the general data protection regulations and how does it affect? What America does well the general the data protection regulations that we're talking about is the culmination of series of proposals and directives and regulations that have gone on since around 2002 and they all stem from the basic thrust that.",
+      "Duration": 32,
+      "Offset": 187
+    },
+    {
+      "Sentence": "Tienes want to protect the collection of data the storage of data and the use of data and they want to do that for the people that the European Union protects and that is citizens of those countries.",
+      "Duration": 18,
+      "Offset": 220
+    },
+    {
+      "Sentence": "The issue that we're going to discuss today is that?",
+      "Duration": 4,
+      "Offset": 239
+    },
+    {
+      "Sentence": "European users don't just access web sites in those countries. So to the extent that they are accessing an American website and to the extent that the American website is not compliant. There is a strong argument that the American website is a is in violation with all the attendant implications that that brings in terms of fines and other sorts of things doesn't that imply that.",
+      "Duration": 31,
+      "Offset": 244
+    },
+    {
+      "Sentence": "Twin I mean, there's 200 something plus countries in the world and if any, European decides to swing by you know a website in Djibouti.",
+      "Duration": 7,
+      "Offset": 275
+    },
+    {
+      "Sentence": "Now there are going to be a subject to laws of Europe. Let's I'll double down on that.",
+      "Duration": 5,
+      "Offset": 284
+    },
+    {
+      "Sentence": "It implies that any country.",
+      "Duration": 2,
+      "Offset": 290
+    },
+    {
+      "Sentence": "That has users of the Internet can create a more stringent law than even the Europeans.",
+      "Duration": 7,
+      "Offset": 293
+    },
+    {
+      "Sentence": "And then on the basis of that become the Preeminent regulatory body of the world. BIH cause it's a race to who can be the most restrictive because the most restrictive is whatever one needs to comply with so if Tanzania decides that it is going to be the most restrictive country in terms of the laws. The privacy regulations and frankly other regulations that that that relate to Internet use of their citizens.",
+      "Duration": 29,
+      "Offset": 302
+    },
+    {
+      "Sentence": "Theoretically all websites around the world have to be concerned about that be cause.",
+      "Duration": 6,
+      "Offset": 332
+    },
+    {
+      "Sentence": "There are users they could that could be accessing their website from Tanzania. They wouldn't even know it. I said, so let me see if I can parse that though, so you're saying that the idea that Europe as an entity could create a thing as broad reaching and as you know this is a broad reaching as the GDPR that opens up a precedent that anyone else could go and do the same thing that then it would affect all of us.",
+      "Duration": 26,
+      "Offset": 340
+    },
+    {
+      "Sentence": "That's right and when you find borders to something that doesn't have borders and the reason that's exactly right and the reason that that is so critical is that the entire Canon of American law going all the way back to the founding of the country.",
+      "Duration": 18,
+      "Offset": 366
+    },
+    {
+      "Sentence": "Is that our courts are the prime prime movers on statements of law that if you have a lawsuit and you litigate it in a trial level court and you don't like the result you can take your appeal. But at the final analysis when you've exhausted your appeals that is the law that is what has to be complied with, but what we're seeing here is a sea change in how laws.",
+      "Duration": 31,
+      "Offset": 386
+    },
+    {
+      "Sentence": "Forced and the primacy of Law Becaus, you could theoretically have a situation where a digital company is in a lawsuit. The lawsuit goes all the way up to the United States Supreme Court. The United States Supreme Court finds in favor of one party or the other.",
+      "Duration": 15,
+      "Offset": 418
+    },
+    {
+      "Sentence": "But that's not the final answer that that even though the Supreme Court is said that the activity is allowed that privacy of American citizens is not being infringed upon based Apon First Amendment protections, and other sorts of statutory protections. You could still have a whole regime of laws from outside the borders. The United States. That would still apply to the same activity that the Supreme Court is just said. You could engage in.",
+      "Duration": 32,
+      "Offset": 434
+    },
+    {
+      "Sentence": "Not to put too fine, a point on, it, but then what legal basis does the EU have to levy fines or sanctions against a US company that doesn't have any jurisdictional presents or Nexus in the EU. The company is entering into the jurisdiction of that European country by virtue of providing services to its citizens, so if I let's say for example, and this is a real a real example that this is a municipality in America that is letting.",
+      "Duration": 30,
+      "Offset": 467
+    },
+    {
+      "Sentence": "Is pay their water bill completely utterly legitimately us only?",
+      "Duration": 4,
+      "Offset": 498
+    },
+    {
+      "Sentence": "Now a US person is in Europe on vacation. They can't pay their water bill. It's more along the lines of the example. I would give similar to where you're going is someone in the EU owns American property so they need to pay their water bill, but there are citizen of that country. There, an investor they have a vacation home here. The fact is that they are accessing this website that normally would think Americans would be accessing but this is a very legitimate reason why someone from Europe would be accessing that website.",
+      "Duration": 34,
+      "Offset": 503
+    },
+    {
+      "Sentence": "So that you could say that the GDP hard does apply to that. You just turn that on its head very nicely. That was a very judo flip. It's my job because I'm like wow. You're absolutely right well. Then it's like well. We all agree privacy is good, but you know this seems very heavy handed way to do things and I'm afraid I don't know what I'm storing now in on a blog comment or something like that something what I think of as being harmless.",
+      "Duration": 30,
+      "Offset": 538
+    },
+    {
+      "Sentence": "And let you know, let's talk about this you're you're forcing companies that don't have the capital to really go into this kind of depth about European law to comply with that European law, so essentially people are flying blind. Let me let me bring this down to the practical. In terms of my clients and in terms of people that I've seen in other situations that are not my clients very few businesses.",
+      "Duration": 30,
+      "Offset": 569
+    },
+    {
+      "Sentence": "Actually, having the opt in pop up on that home page. And there's a reason. It's not just that it's difficult to implement cause. Frankly, you know in WordPress. It's not not that difficult to implement it's more that when you have that opt in nobody goes to your website that you will have a tremendous drop in visitors. People don't want to deal with you. They don't. They want to go to the next website where there's no option because they don't know what they're opting into so.",
+      "Duration": 30,
+      "Offset": 600
+    },
+    {
+      "Sentence": "The interesting another interesting part of this is that the very thing that the European Union is trying to say which is we don't realize what we are sharing and how our information is being shared and where how it's being stored. The fact that it's not being stored with complete security. Therefore, there would need to be an OPT in that's the very reason that people are not staying on that website an moving on because they don't want to deal with the issue.",
+      "Duration": 30,
+      "Offset": 632
+    },
+    {
+      "Sentence": "Essence it's our limited attention span the fact that we're not digging down as consumers and I'm probably guilty of this as anybody when I go on a website and I just am viewing things casually why am I opting into anything, it always gives me a sense of somehow agreeing to something that I don't understand and I don't know why they're asking me and I have a lot of questions. So the consumer who is using the Internet is not really on the same wavelength as the regulators in the EU.",
+      "Duration": 31,
+      "Offset": 662
+    },
+    {
+      "Sentence": "Additionally, I'm noticing more and more there was the move towards an active opt in which is simply the act of pushing OK versus hitting the back button. Now I'm hearing interpretations where I have arrived at a website. I've received no cookies. But if I click any link. I have implicitly opted in by simply moving forward. That's something that I don't think I could explain to non technical parent look at Cambridge. Analytica look what happened in 2016. The idea that you would go on Facebook.",
+      "Duration": 31,
+      "Offset": 694
+    },
+    {
+      "Sentence": "Your friends of your friends.",
+      "Duration": 2,
+      "Offset": 726
+    },
+    {
+      "Sentence": "Their information is now available, becaus you completed a survey that did not disclose what that it was actually not so much a survey as a means into your private data.",
+      "Duration": 12,
+      "Offset": 730
+    },
+    {
+      "Sentence": "So the point I'm making is we have 2 irreconcilable principles and they're both good principles. The privacy of this data is really, really important people have to know that no ones opening their mail essentially you know, but but on the other hand, the sophistication and frankly, the attention span of the casual user is just not correlated.",
+      "Duration": 30,
+      "Offset": 743
+    },
+    {
+      "Sentence": "Portion to the complex nature of what you're giving up when you're on the Internet. So there is this disconnect between something an activity that you're doing. That seems to be innocuous and innocent and that you're in control of an then whether you actually are in control of it and then how you reconcile those 2 things without becoming overly regulatory and overly complex right and if you think about just simply the act of being on the Internet.",
+      "Duration": 30,
+      "Offset": 774
+    },
+    {
+      "Sentence": "To give your IP address away, which is enough to get very likely to hear municipality if not, your neighborhood without even using any JavaScript also simply visiting a site is giving information logging an IP address. I assume is a problem. If I am a site owner if I'm logging IP addresses. I'm indirectly logging where you are do is that allowed if I don't keep track of who you are well. Yeah, that's the whole point is that?",
+      "Duration": 30,
+      "Offset": 805
+    },
+    {
+      "Sentence": "Sorts of activities are impacted by these regulations and then let me just take it to another level becaus.",
+      "Duration": 8,
+      "Offset": 836
+    },
+    {
+      "Sentence": "The states of the United States are passing their own privacy laws and regulations that are in parallel to the GDPR, meaning California just passed a digital privacy law and it was fascinating to look at how that all went down the state Legislature in California really was in opposition.",
+      "Duration": 31,
+      "Offset": 845
+    },
+    {
+      "Sentence": "First.",
+      "Duration": 0,
+      "Offset": 878
+    },
+    {
+      "Sentence": "But then what came out was that there was going to be a referendum on it, and what the legislators realized was that if the referendum pass there'd be no way to hone this and correct any unintended consequences and amended and sort of make it do what they wanted to do so. They felt they were boxed in politically and they passed it and it's not going to go into effect for a couple of years until 2020, I understand that.",
+      "Duration": 31,
+      "Offset": 879
+    },
+    {
+      "Sentence": "Larger point is that they're going to need to look at this law, which which has been passed in relation to European law, which is regulating some of the same things but not all the same things so there are differences and then look at that in relation to other states that are similarly passing privacy regulations related to Internet use, so now you have a patchwork of not just countries, but states in the United States all sort of doing the same thing.",
+      "Duration": 32,
+      "Offset": 911
+    },
+    {
+      "Sentence": "I'm so chaotic that an ecommerce website much less a developer who is working under a master services agreement and all the rest of that doesn't know what to do they don't know where to turn they don't know how to comply.",
+      "Duration": 13,
+      "Offset": 943
+    },
+    {
+      "Sentence": "Yeah, I'm hearing questions online that are difficult for anyone to parse an example was we talked about opting in but certainly a big part of the GDPR is the right to be forgotten right. The explicit opt out. So let's say for example, I'm encrypting all the data. That's being kept of my users and then you've decided to opt out. You invoke your right to be forgotten if I delete the encryption key.",
+      "Duration": 28,
+      "Offset": 958
+    },
+    {
+      "Sentence": "But your data exists on disk in some format.",
+      "Duration": 3,
+      "Offset": 987
+    },
+    {
+      "Sentence": "But it cannot be accessed have I deleted you or not, that these are technical architecture questions that? How could anyone know that it would really just be your as a lawyer's interpretation of the law wouldn't let me give you my take on that in my experience with that our firm. We do a huge amount of ecommerce work and work with digital clients and one of the things that comes up a great deal.",
+      "Duration": 27,
+      "Offset": 991
+    },
+    {
+      "Sentence": "Is uhm newspapers in the United States major publications that are refusing to takedown articles that are incorrect about my clients so I get people. Contacting me asking me to as a last resort 'cause. They've tried for years to get this stuff down. They they can't get a job. They go on job interviews. Somebody goes on. Google put their name. In it finds out that they did. These horrible things they assaulted somebody there were involved in summer, but none of it's true, it was just.",
+      "Duration": 30,
+      "Offset": 1019
+    },
+    {
+      "Sentence": "Reporting in the heat of a confrontation of some type. They didn't do anything and the newspaper. Literally refuses to take it down. Even if it's incorrect so you have a situation where the newspaper is asserting its First Amendment right first remember to the United States Constitution. The Supreme Court will normally back that up and then that newspaper now has to decide not so much whether they want to take it down be cause this person has a right to be.",
+      "Duration": 31,
+      "Offset": 1050
+    },
+    {
+      "Sentence": "Causes erroneous article that's not the issue. The issue is, they want to keep it up, but now they're being forced to take it down by a lot of another country so it becomes highly complicated, and and it's just not the way these decisions should be made. They should be made on the merits of somebody deserves to be forgotten. You should have a dialogue with the newspaper and the newspaper should be reasonable and there should be some kind of compromise of some level even even just a second article or something or correction.",
+      "Duration": 30,
+      "Offset": 1082
+    },
+    {
+      "Sentence": "But that's not what's going on? What's going on is where you're talking about, which is at a digital level, they may delete the article.",
+      "Duration": 6,
+      "Offset": 1113
+    },
+    {
+      "Sentence": "Well, deleting the article comes.",
+      "Duration": 2,
+      "Offset": 1121
+    },
+    {
+      "Sentence": "Very close to modifying the historical record, you know it gets very close to exactly what you don't want to have in a democracy that that prizes civil liberties so? How do you balance all of that and that's really the question then definitely unintended consequence at that echo echo through for many years any friends. This is Scott. You know, listening to podcasts is a great way to keep up to date on technology since we're always learning is software people.",
+      "Duration": 31,
+      "Offset": 1124
+    },
+    {
+      "Sentence": "Will find a job by listening to a podcast you check out our new sponsorhired.com that'SHIRED.com slash Hansel minutes on hired.com software. Engineers can get interview requests from companies that want to hire you each offer will have the salary in the equity up front, you can view those interview requests and accept reject change the offer before even talking to a company. It's a great way to find out what's out there and maybe make a move there. Working with over 6000 companies from startups to large companies from 14 major tech hubs throughout North America and Europe.",
+      "Duration": 32,
+      "Offset": 1156
+    },
+    {
+      "Sentence": "Great about this is it's totally free for software engineers and if you get a job throughhigher.com. They ordinarily give you a 300. Thank you bonus. But if you use our special link they'll double that bonus you will actually get paid $600 when you accept that job now. If you're not looking for a job. But you know, someone who is refer them to hire.com slash Hansel minutes and they'll give you elite bonus of $1337 bonus when they accept a job so check amounthired.com slash Hansel minutes.",
+      "Duration": 30,
+      "Offset": 1190
+    },
+    {
+      "Sentence": "What's the size of companies like in my day job. I work at Microsoft and it's big enough that it has a whole. GDPR Department and it's not a temporary thing anymore, like it's full time, making sure that people don't do the wrong thing, which is good from a privacy perspective and in my side job. I have a podcast in a blog and there are a million or millions of little small developers that have no idea if they're going to get nailed am I going to lose my house.",
+      "Duration": 31,
+      "Offset": 1221
+    },
+    {
+      "Sentence": "One comes and says, I want to be forgotten off of your blog and I don't have a way to solve that well. You're absolutely right. The first day that the GDPR was in force. There were complaints filed against a bunch of these very large companies. Facebook is an obvious example $664,000 was the equivalent of that fine in dollars based upon what happened with Cambridge Analytica.",
+      "Duration": 30,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "You know you're talking about Google being fined for abusing its mobile software monopoly $5.1 Billion. They got a $2.7 Billion fine for prior year for abusing it search monopoly. So my point is all these big companies are getting find enormous amounts of money, but they're not missing a beat the fines are not destroying them. Their findings are not putting them out of business, whereas someone like you're describing someone such as yourself operating something.",
+      "Duration": 31,
+      "Offset": 1284
+    },
+    {
+      "Sentence": "Phone you know if you even get a modest fine that can shut you down so there is a disk proportionality of impact.",
+      "Duration": 10,
+      "Offset": 1316
+    },
+    {
+      "Sentence": "The fact that these finds are large is not the issue. The issue is the proportionality of the fine to the ability to pay and one of the wonderful things about the Internet about about the Web is that anybody can just throw up a website with very little capital and just go. It's not the same kind of infrastructure that has to be paid for when you have a brick and mortar business. The way it used to be, but but if by.",
+      "Duration": 30,
+      "Offset": 1328
+    },
+    {
+      "Sentence": "Your going right into a sand trap and you're going to be bankrupted by some kind of crazy fine that you never anticipated. That's a problem and and it's an unintended consequences of all this and I also want to, if I may just sort of get to another level on this issue.",
+      "Duration": 19,
+      "Offset": 1358
+    },
+    {
+      "Sentence": "Cause when you think about it. The other countries are getting involved in this regulation of privacy on the Internet. Various states such as California and others are getting involved, but someone's missing. Someone's missing from the discussion. Well, the United States. Government, the federal government and I will tell you that my view is that to some extent, one extent or another.",
+      "Duration": 28,
+      "Offset": 1379
+    },
+    {
+      "Sentence": "And I guess historians looking back on this period of history, will give us the answer. We don't know it completely right now.",
+      "Duration": 6,
+      "Offset": 1408
+    },
+    {
+      "Sentence": "To what extent are now the reason for all this chaos.",
+      "Duration": 2,
+      "Offset": 1415
+    },
+    {
+      "Sentence": "And the reason for all these questions is that our federal government, meaning our Congress has not taken up the issue of digital privacy in a robust way.",
+      "Duration": 10,
+      "Offset": 1418
+    },
+    {
+      "Sentence": "Congress defunded its own office of technology years and years ago that would have been the place to get the kind of advice. They need to deal with this, they had Mark Zuckerberg, testifying, but in the questions. They were they were really showing a lack of understanding of what Facebook does so my point is that passed in the past. These issues that were broad that related to the entire United States that states were disagreeing with one another.",
+      "Duration": 30,
+      "Offset": 1430
+    },
+    {
+      "Sentence": "The idea was that each state was sort of a laboratory of democracy. That's what it was called and then together they would all go up to the Supreme Court. There would be a decision that it would they would go to their to their congressmen and congresswomen and they would ask them to pass a law and there would be a national consensus that would be created through preemption.",
+      "Duration": 21,
+      "Offset": 1461
+    },
+    {
+      "Sentence": "Of state law federal law primacy over state law that's not happening. That's not even on the radar right now, so far as I know and because of that. We're all left to her own devices, there to to sort of sum it up. My opinion is there should have been much more robust negotiations between the American government and the European Union so that the implementation of this was not going to be this disruptive.",
+      "Duration": 31,
+      "Offset": 1483
+    },
+    {
+      "Sentence": "Many questions number 2, there should the federal government should have been helping small businesses and medium sized businesses to understand their obligations. An make it reasonable and assist. I'm not talking about handouts. I'm talking about information places to call right now. We're all on our own and number 3. I do believe states should be able to put in place privacy regulations and laws. Of course, that is something the state should be able to do, but there should also be an overarching.",
+      "Duration": 30,
+      "Offset": 1516
+    },
+    {
+      "Sentence": "The government is organizing this so that business has predictability and simplicity because if you don't have that the very unknown becomes a drag on Commerce and just to give a little bit of context for folks who might not have it in 1972. The Office of Technology Assessment was created was defunded in 1995 and interestingly enough in June of 2018. It was attempted to put in an amendment to reinstate.",
+      "Duration": 31,
+      "Offset": 1547
+    },
+    {
+      "Sentence": "Defunct office and that was voted down along party lines in that Office of technology are totally right about that and that Office of Technology Assessment was meant to deal with the future. It was put in place decades ago. With the understanding that they knew this is where things were headed but they didn't know exactly how it was going to go. But the one thing they did know was that Congress would need to have objective advice from its own body that they would they would.",
+      "Duration": 31,
+      "Offset": 1579
+    },
+    {
+      "Sentence": "Phone people to look at this not lobbyists, you know, not people with an agenda. But their own people sort of like the office of Management and budget and things like that with the government advises itself.",
+      "Duration": 12,
+      "Offset": 1611
+    },
+    {
+      "Sentence": "And they defended it so I've got 2 questions here. The first one, is what small or medium sized business do about this.",
+      "Duration": 9,
+      "Offset": 1624
+    },
+    {
+      "Sentence": "And should they do what major US news sites are doing thousands of US news sites have simply punted. I know that we think of news sites is being large, businesses, but they're surprisingly small businesses and a number of them have just said forget it. We don't really want to serve the European community. And if you come in will just.",
+      "Duration": 17,
+      "Offset": 1634
+    },
+    {
+      "Sentence": "We won't even do anything with GDPR will simply ignore the problem and block you entirely.",
+      "Duration": 5,
+      "Offset": 1653
+    },
+    {
+      "Sentence": "Right and that that is a major problem an I would argue that that those news sites are really doing a disservice to their readers.",
+      "Duration": 11,
+      "Offset": 1659
+    },
+    {
+      "Sentence": "Let's start with what shouldn't be happening and then talk about what should the businesses from what I can tell from people I see from clients. I see from people who are just in this area. I will tell you that there is a patchwork of solutions and the patchwork generally is inadequate.",
+      "Duration": 23,
+      "Offset": 1671
+    },
+    {
+      "Sentence": "You have people with consent banners and opt out as well as Optins and not making a distinction between them. They have something called nuke button to let you reject everything basically and then all sorts of banners and other things that you do so essentially it's such a panoply of so-called solutions that's really solving nothing so.",
+      "Duration": 30,
+      "Offset": 1695
+    },
+    {
+      "Sentence": "Is you shouldn't is an old saying you don't want to react? What you want to do is respond so the first thing is, don't just do something to do something.",
+      "Duration": 13,
+      "Offset": 1725
+    },
+    {
+      "Sentence": "Number 2 I think that there should be collaboration with the developers with the outside vendors with people who are putting up the content you know the idea of just assessing liability and figuring that they'll be a lawsuit someday if there's a problem and let the judge or jury figure it out is not really a solution. I think that there has to be a collaborative approach within the company with its own vendors with its own developers where everyone's talking to one another.",
+      "Duration": 30,
+      "Offset": 1739
+    },
+    {
+      "Sentence": "Sound pretty straightforward, but I will tell you that the CEO of the company is getting advice from the accounting firm from the internal marketing people and from the developer and it's all disjointed there should be a collaboration among all of them, they should all be talking together and coming up with something that works for the company and complies with the law, which then leads me to the final point.",
+      "Duration": 23,
+      "Offset": 1771
+    },
+    {
+      "Sentence": "Which is I think that you need a lawyer that is sort of in this world that understands it becaus the decision on what to do is going to be fairly nuanced and you know that that is a problem and certainly it is another layer of responsibility. Another layer of expense and I'm not minimizing that I understand the problem.",
+      "Duration": 24,
+      "Offset": 1795
+    },
+    {
+      "Sentence": "If you aren't bring all the players together and having them collaborate to come up with some kind of unifying solution which I'll be it will be an inadequate one be cause. We don't know all the answers. Yet you're making the situation worse by just reacting and just doing something to do it. So it sounds like those of us that have small businesses. We can do. The popups do the privacy policy. Make sure that people have the right to withdraw the water, the right to.",
+      "Duration": 31,
+      "Offset": 1821
+    },
+    {
+      "Sentence": "They removed all of the things that you know the basics, but that really should be looked at by someone who has experience in the space. I think it has to be and at the end of the day.",
+      "Duration": 11,
+      "Offset": 1853
+    },
+    {
+      "Sentence": "We have to have a commercial maturity about this and what I mean by that is. It's not about setting people up to blame. Later on if it goes wrong. That's a simplistic and frankly, not constructive way of doing business in my opinion, you know the clients. I work with generally don't do that. You know, we tell our clients that we know this area. We know what we think you should be doing were aware of the laws.",
+      "Duration": 30,
+      "Offset": 1865
+    },
+    {
+      "Sentence": "At a certain level.",
+      "Duration": 1,
+      "Offset": 1896
+    },
+    {
+      "Sentence": "There is always going to be a leap of faith as to how a regulator or how law enforcement in this country or any other country would see something especially if the complaint comes not not this month becomes you know 2 years from now and they just has to be an understanding that ultimately the client needs to make the decision but it has to be based upon facts. They have to understand the situation, which means that business people need to immerse themselves.",
+      "Duration": 30,
+      "Offset": 1898
+    },
+    {
+      "Sentence": "Standing of the law in the regulations are dealing with, and they can't just I abdicate that to their professionals. One of the one of the things we try to do is bring our clients in and not not talk down to them, not just say look where the lawyers. We know the law. Just do it our way if you don't want to do it our way well. Good luck that's not how we do it. We explain all these things and to some extent, we give them a level of instruction that you wouldn't even see in a law school in terms of the specifics of the law on the regulations so that they?",
+      "Duration": 32,
+      "Offset": 1929
+    },
+    {
+      "Sentence": "Thing is they need the tools to make the decisions because ultimately there are the ones that are going to be dealing with the consequences to their business. And so the real answer here is that if anyone assumes that there is a simple way of handling this.",
+      "Duration": 16,
+      "Offset": 1962
+    },
+    {
+      "Sentence": "There probably wrong.",
+      "Duration": 1,
+      "Offset": 1980
+    },
+    {
+      "Sentence": "It is complicated and you just have to live with that because that's the world we're in.",
+      "Duration": 4,
+      "Offset": 1982
+    },
+    {
+      "Sentence": "Well, I appreciate you taking the time to chat with us today. Thank you. This was absolutely wonderful and I'm glad we, we spoke about all these issues and if anybody wants to contact me a emails probably best GD N at GDNlaw.com. Gary David Nissenbaum. GD N at GDNlaw.com and you know, I just like I like it. Last time I was on your listeners gave me terrific feedback and I just like to hear what people think so. I'm interested. We appreciate that there are some of the best listeners out there and I appreciate them a lot.",
+      "Duration": 33,
+      "Offset": 1987
+    },
+    {
+      "Sentence": "This has been another episode of Hansel notes and we'll see you again next week.",
+      "Duration": 7,
+      "Offset": 2021
+    }
+  ]
+}

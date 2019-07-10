@@ -1,0 +1,448 @@
+{
+  "id": "395175bc-67ac-4dc8-9803-d2ea6756a0e9",
+  "Title": "Tips for Teaching Programming with Dr. Neil Brown",
+  "PublishDate": "2018-06-14",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/82e34a0d.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 9
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users.",
+      "Duration": 3,
+      "Offset": 41
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with doctor Neil Brown. He's a research fellow at King's College in London. How are you Sir? I'm fine thank you? How are you? I'm lovely Anne? I am always excited to talk about teaching programming and you recently published a paper in the computational biology paper. On 10 quick tips for teaching programming, which almost sounds like a fun blog. Post and not a formal paper as a title, yeah, it's.",
+      "Duration": 31,
+      "Offset": 58
+    },
+    {
+      "Sentence": "To write a sort of summary paper, so none of this is particularly are our own research. But just to try and write a summary for a general audience of how to how to teach programming.",
+      "Duration": 9,
+      "Offset": 90
+    },
+    {
+      "Sentence": "And this is a kind of a summary of research around the space of educational psychology like how people's brains absorb how teachers should teach how children learn a subject specific activities. Yeah, that's right So what important sort of result from from education is that each discipline is sort of learned in a domain specific way so there's a bunch of General Education, or sort of teaching tips, but a lot of the ones that.",
+      "Duration": 30,
+      "Offset": 100
+    },
+    {
+      "Sentence": "Domain specific so how you teach mathematics is different than how you teach programming is different than how you teach science and computing doesn't really have a longer history as some of the other subjects. So we wanted to try and get together. Some of the tips that people have researched and have shown work to try and sort of educate some of the computing teachers out there.",
+      "Duration": 19,
+      "Offset": 131
+    },
+    {
+      "Sentence": "Is there one way or 1 more correct way to teach something because it seems like there's we've learned about different learning styles. Acoustic learners and visual learners and kinesthetic learners? How can we say this is the right way to teach programming so interestingly the learning styles thing is generally not being supported by research so that one has actually been found to be reliable, but more generally that there isn't usually a correct.",
+      "Duration": 31,
+      "Offset": 151
+    },
+    {
+      "Sentence": "You are great way to teach it also that comes down to percentages to some extent, you know this seems to be reasonably effective. This may be slightly less effective. There aren't that many techniques so the sort of horrific Lee ineffective and they generally are in use in practical settings. So we're not out to say this is the one way to teach but we want to say This has been found to be affective. Maybe you should consider it in your context if that makes sense.",
+      "Duration": 26,
+      "Offset": 183
+    },
+    {
+      "Sentence": "I see so this isn't a list of Commandments is really not a list of directives and tips mostly consider this there's evidence that supports it teaches. We talked to teachers. They don't like anyone coming in, saying This is how you must do it. They want to sort of have ideas that they can weave into their own teaching. Maybe they've got students where pair programming. Not groups or pad out very well and so they want to drop that tip. Maybe they've got a setting where they think it would work really well so it's up to them to.",
+      "Duration": 32,
+      "Offset": 210
+    },
+    {
+      "Sentence": "Practice.",
+      "Duration": 0,
+      "Offset": 243
+    },
+    {
+      "Sentence": "The first tip and I think one of the one that hits the hardest is that you say remember there's no geek gene because in this in this world right now in 2018. We're trying to foster an inclusive environment, where it's not just kind of Old White dudes doing computing and just as I mentioned before about about learning styles. It intuitively feels like. That is a thing and you said that the research doesn't support it.",
+      "Duration": 30,
+      "Offset": 244
+    },
+    {
+      "Sentence": "True it if Lee does feel like some people are geeks and you're saying the research doesn't show that yes, this long being this idea in computing education of a bimodal distribution that you've got the people who get low marks and just don't get it. So the people who got high marks and do get it. And I've done some programming teaching myself with the past and you know you see some people who are struggling and it's very tempting to just basically give up on them and say they're just not going to get it well. The person next to them for some reason just seems to be flying and you like yeah.",
+      "Duration": 30,
+      "Offset": 275
+    },
+    {
+      "Sentence": "And what the research seems to suggest is there isn't actually is bigger differences people sink and there's a sort of interaction with teacher belief so people who think that way that I do you do get it or you? Don't get it? They'll tend to lend less support for the ones who don't get it. 'cause you know it. It is more frustrating to teach somebody who's struggling with the subject is kind of more rewarding if some of these really leaping on themselves, but they don't actually need the teaching so much the ones who need the teaching of the ones who are doing worse So what the researchers suggest is if you.",
+      "Duration": 30,
+      "Offset": 306
+    },
+    {
+      "Sentence": "If you think they're not going to make it. You maybe give up on them a bit more. And perhaps encourage more of this sort of bimodal distribution, but it's really not as wide a separation as as people seem to think.",
+      "Duration": 10,
+      "Offset": 337
+    },
+    {
+      "Sentence": "Interesting in the back in the 90s. There was a controversy when a Barbie doll came out where you pull the string on Barbies Barbies back, and Barbie said math is hard and when someone gets that in their head early on.",
+      "Duration": 14,
+      "Offset": 349
+    },
+    {
+      "Sentence": "Math is hard, then they've decided it is like for example, I did poorly in calculus.",
+      "Duration": 4,
+      "Offset": 364
+    },
+    {
+      "Sentence": "And I'm starting to realize with you know the hindsight behind me that they had built up calculus is being the most scary thing. It was the peak of my high school career and hope you survive calculus. I think that if I had been told from age 10 that it was going to be a great fun positive thing it might have changed my attitude.",
+      "Duration": 20,
+      "Offset": 370
+    },
+    {
+      "Sentence": "Yeah, and I think people can get early impressions of the subject that will make a big difference if they think all this is hard or this is very intricate technical or this is difficult. These various more social teaching tips that we perhaps didn't include here, but Greg Wilson, who's my coauthor is sort of fan of them. People saying things like oh just do this. He recommends banning the word just because it makes it sound like it's so simple? Why didn't you just do that. But the language can make a difference so rather than try and.",
+      "Duration": 31,
+      "Offset": 391
+    },
+    {
+      "Sentence": "These people for not understanding the early concepts just teach them the early concepts and support them. In what they're doing don't make them feel sort of small Italy. They don't immediately take to it.",
+      "Duration": 10,
+      "Offset": 424
+    },
+    {
+      "Sentence": "I appreciate that you said that because I've treated just before and it seems like just an well actually seem to be like the words of the day right now? Is is so, so often, someone will say why didn't you just do whatever kind of obscure bubble sort and then it's like wow. There's so much to unpack in that one sentence where you minimize me told me I was a dumb and then told me something I don't understand to use instead just really is. The evil in teaching. I find myself, saying just but where do you put this little thought into somebody's mind?",
+      "Duration": 34,
+      "Offset": 435
+    },
+    {
+      "Sentence": "Say it then, when you do, find yourself, saying it, you actually sort of reconsider or am I doing that, saying, You know it's hard to change your speech and it's hard to sort of rule out doing things like that. But if you can just be a little bit more aware of it. It just helps just yeah, exactly does it matter, though, if I was talking with my wife about my son is struggling with some aspects of math right now, we're struggling because he's lazy, he's not.",
+      "Duration": 30,
+      "Offset": 470
+    },
+    {
+      "Sentence": "Basically, sloppy's being sloppy and in order to save 5 minutes or in order so he can play like he he rushes through it, and then of course, we have to go over his test which takes double the time so we're trying to explain to him if you put 5 minutes more checking of your work. Then you will save yourself like an hour of going over this later and we were trying to figure how to phrase it an we are going back and forth about how how gentle we should be how encouraging we should be versus how.",
+      "Duration": 29,
+      "Offset": 500
+    },
+    {
+      "Sentence": "Crisp we have to be like you need to, you need to focus on this. You need tough love as they say how important is the language that we use to encourage someone and make them successful. Yeah, there have been some bits of research suggested it can be make a difference and I think it often makes a difference. If people are more nervous to begin with about perhaps if there in a course for example, about taking the course, so there may be that sort of minorities or a little bit more nervous about whether they fit in so there more easily put off.",
+      "Duration": 30,
+      "Offset": 531
+    },
+    {
+      "Sentence": "Sort of language issues, whereas people who maybe have some natural confidence and think they're going to get it. It may be doesn't make that much difference to them. So you just have to judge a person by person basis. I think is this a person who I'm really going to knock if I give them some tough love or is it someone who's overconfidence and you just say you've got to sort this out and you can just say something quite Frank to them and they'll take it on board.",
+      "Duration": 25,
+      "Offset": 562
+    },
+    {
+      "Sentence": "Yeah, that's a good point in Alaska, the last thing we want to do is push someone out of the industry or out of interest within a topic by being too much tough love. But at the same time that does require work. It is a challenge. Yeah, that's come up recently with some of these discussions about stackoverflow as to whether you know what kind of attitudes that promotes to people that people on there can sometimes be quite dismissive or couple across a bit more confrontational than they mean too. And for some people that's fine, they love it.",
+      "Duration": 31,
+      "Offset": 588
+    },
+    {
+      "Sentence": "The uh you know, those are happy with that and for other people. It really puts them off and the problem with the Internet is when you write a public post have no idea who's on the other end, reading it so it's quite difficult to pitch.",
+      "Duration": 10,
+      "Offset": 620
+    },
+    {
+      "Sentence": "Picture sort of tone right, I think.",
+      "Duration": 2,
+      "Offset": 632
+    },
+    {
+      "Sentence": "Yeah, it absolutely is and one person might say well, yeah, you know go and do the work learn it suck it up. Another person might say yeah, and that was the stackoverflow post. It made me realize that people in computing are not nice and I'm going to do another whole industry quit.",
+      "Duration": 15,
+      "Offset": 635
+    },
+    {
+      "Sentence": "Yeah, you also propose that peer instruction, not just teacher to student but one on one tutoring of course, certainly if the teacher can focus on the student entirely that would be great, but an opportunity. There is to take the other students and pair them up. Inappropriate probably at levels of skill, and they can push each other forward part of this comes for sort of modern interest in really scaling up education, especially a few years ago. Mooks were thought to be the answer. You know how do you scale up education will you?",
+      "Duration": 31,
+      "Offset": 652
+    },
+    {
+      "Sentence": "The materials and then you just have these sort of thousands and thousands of learners reading materials and sort of operating on them independently that seemed to produce sort of require high dropout rates. So there's a question of whether that's maybe ideal we get this even instead of traditional higher education. You might have a lecture Theatre of 200/300 students in some place and how could you scale that obviously you can have one lecturer standing at the front talking to the mall. But they can't give individualized feedback to 300 students.",
+      "Duration": 31,
+      "Offset": 684
+    },
+    {
+      "Sentence": "The lecture so peer instruction was an idea to try and make it a bit more interactive in a bit more scalable that you enjoyed these people into maybe groups of 3? Who are sitting next to each other. You perhaps ask them a question like his his piece of C code? What's it. Going to produce said. You have a particular sort of tricky one with corner case so that people might get it wrong, they might get it right. You then get people to predict the answer and following the prediction you get them to discuss with their neighbors.",
+      "Duration": 30,
+      "Offset": 716
+    },
+    {
+      "Sentence": "Prediction obviously it works best if they've made different predictions and to discuss and talk among themselves about why they might be right or wrong and in that way you get individualized feedback on your misconceptions.",
+      "Duration": 11,
+      "Offset": 748
+    },
+    {
+      "Sentence": "The inner room potentially of any size because you've got people talking to each other and trying to work. Through it together. So it's quite an interesting idea on how to sort of scale up learning attic.",
+      "Duration": 10,
+      "Offset": 760
+    },
+    {
+      "Sentence": "And just for people who may have missed it at the beginning of that paragraph. You said move massively open online courses. MOOC this idea that we can somehow let everyone learn if they just go online join these massive online courses, which are fairly homogeneous in the way that they teach mean you're in a browser already you're online already you're not really getting one on one experience, but it was an attempt to get scale learning in the computer science realm. Yes, yeah, I think it's fair to say they haven't.",
+      "Duration": 33,
+      "Offset": 771
+    },
+    {
+      "Sentence": "They were overhyped to begin with. I think they potentially have a role, but there was a sort of thought that they would completely replace universities and obviously I'm biased. I work at a University but I think that's not going to happen. I think there will be a space for sort of more informal learning along the lines of these books for more formal learning still.",
+      "Duration": 20,
+      "Offset": 806
+    },
+    {
+      "Sentence": "One of the things that I found the most useful about formal learning about sitting down and like taking an electrical engineering class and building a clock from scratch using and gates and or gates and you know that kind of stuff was it helped me get a sense of the big picture. But I'm afraid I realized that as a programmer in my forties. I have the benefit of history, behind me, I've seen.",
+      "Duration": 25,
+      "Offset": 827
+    },
+    {
+      "Sentence": "You know, Moore's law build layers on top of layers. I've gone from C to C plus plus to C Sharp and have done Java as I move my way up the stack. There's a new generation of developer out there who thinks that JavaScript is the metal and their coating on the metal at the low at the lowest level of JavaScript, but they've got 3 virtual machines between them in the actual metal is that OK. My just crusty old programmer that I feel that people should learn the whole stack or is there some.",
+      "Duration": 30,
+      "Offset": 853
+    },
+    {
+      "Sentence": "The mental model that the people should have to be an effective development. Yeah, I think is still an open question it. It comes to an issue in research. That's called the Notional Machine, which is any programmer who's writing a program needs to be able to basically model in their head? What's going to happen when the program runs so that you have the code and then you've got this notional machine in your minds that you're essentially using to run the code and obviously problems arise. If your notional machine has a mismatch to the actual.",
+      "Duration": 30,
+      "Offset": 884
+    },
+    {
+      "Sentence": "Gene and perhaps early on that can come down to semantics that you don't realize exactly what the instruction will do, I think it often crops up in professional programming in relation to things like performance, where the people have got an idea of what might be quick or what might be slow in their sort of Notional machine and whether that actually matches towards quick or slow in the real machine.",
+      "Duration": 23,
+      "Offset": 915
+    },
+    {
+      "Sentence": "Yeah, that brings up that idea of assumptions right and like at the beginning of our stay our conversation. I made a couple of assumption. You said well the research doesn't support that I can make all kinds of assumptions about performance about memory about disk. I could build an entire system and then realize Oh my discs or slower than I thought they were, and that assumption is now the base of a House of Cards for my entire. We see this in some villainous. Sometimes are very prevalent. What is that people come in with notions about for example.",
+      "Duration": 30,
+      "Offset": 941
+    },
+    {
+      "Sentence": "You write a for loop in C and you've got the I plus plus at the end. You know, I hear sometimes from our students, although plus plus I is quicker or like I plus plus is quicker than I plus equals one these sort of very fine grained differences. These days with a modern compiler. There's not going to be a difference between any of those, 3 variants, but they have this notion machine. That's actually a mismatch for the modern machine and I think this is starting to come to the fore more and more now with see even.",
+      "Duration": 31,
+      "Offset": 972
+    },
+    {
+      "Sentence": "Covers bear battle, they're realizing actually the sea. Notional machine doesn't correspond to what your processor is doing. You know very much at all things like the Spectre and meltdown bug related to how the processor actually works. But that's nowhere near most peoples see Notional Machine, which they sing covers bare metal.",
+      "Duration": 18,
+      "Offset": 1004
+    },
+    {
+      "Sentence": "That's really interesting I mean, I think that the Spectre and meltdown bug was a shake up of the entire world's sense event of their notional machine. We all thought it worked. This way, but then I assume you had the same experience I did wear a couple of days after you kind of absorb the bug and slept on the bug. You thought to yourself. Oh, how could this have ever worked of course. This is it's a huge problem like when we finally grokked? What was going on, I could feel it in my chest and like Oh No.",
+      "Duration": 31,
+      "Offset": 1024
+    },
+    {
+      "Sentence": "No one think about this because we just had a different idea in our head about what the machine was doing.",
+      "Duration": 5,
+      "Offset": 1056
+    },
+    {
+      "Sentence": "Yeah, I think so.",
+      "Duration": 1,
+      "Offset": 1062
+    },
+    {
+      "Sentence": "Hey friends this is Scott and I've got a word from a new sponsor in a really cool sponsor. In fact that I used myself. They're seek that'SSEQ and you can check them out at getseek.net that's GTSEQ.net seek is the easiest way for your team to capture and search and visualize structured log events, you probably do logging. Maybe you have a node app or anASP.net core app move beyond text files check out structured logging it.",
+      "Duration": 30,
+      "Offset": 1064
+    },
+    {
+      "Sentence": "Which individual property values as well as the text it's associated with each event they get sent across the network to seek which then displays them and makes them searchable. It's really easy to get started. You can probably instrument your application. If you're already using logging in just minutes just gotta get seek that'SGETSEQ.net you install the seek server. It's a Windows service and then it listens and handles all the logging whether you're using node JS and the bunion logging library or maybe you use Cera log on?",
+      "Duration": 30,
+      "Offset": 1095
+    },
+    {
+      "Sentence": "UsedASP.net core is built in logging seek is there for whatever you want to usewetherby.net or node or python or Java. It's a really great product and I encourage you to check them out and support them, the way that they support us here at Hansel minutes.",
+      "Duration": 14,
+      "Offset": 1127
+    },
+    {
+      "Sentence": "And so relating to your sort of earlier question of do you need to know the full stack. I think if you've got a solid emotional machine for Java scripts then you don't need to know what's going on underneath you know, I have?",
+      "Duration": 11,
+      "Offset": 1142
+    },
+    {
+      "Sentence": "A reasonably sort of Classic Notional Machine, the SCS cover of what's going on, but II don't really understand what's going on? When you get down to the register renaming unit or whatever and it's the job of the people on the layers beneath me to try and insulate me from that one thing we find in programming education is a lot of the teachers often have this sort of full stack view of what's going on that they're doing Java, but they know how the Java maps into assembly code and they feel like their students must also gain this knowledge.",
+      "Duration": 30,
+      "Offset": 1154
+    },
+    {
+      "Sentence": "But this sort of still an open question to some extent are with the students don't need any of that knowledge as long as they have a solid notion machine of their high level language. It's fine and I think we're sort of a certain point in computing's chronology where a lot of the teachers are of the age that they have this kind of full stack notion machine 'cause. They started with a more bare metal languages and a lot of the learners coming in are just learning the high level languages and is it an issue I suspect.",
+      "Duration": 27,
+      "Offset": 1186
+    },
+    {
+      "Sentence": "But cracks show through at points in the abstraction, but I think generally it's probably not an issue. If people just haven't accurate. Notional machine of the high level languages. I think that's a really good kind of gut check for me because I'm so excited about the full stack that I'm excited to pour 25 years of software history into a 15 year old mind.",
+      "Duration": 23,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "But ultimately, they just want to make you know, some text flash on the screen. It's OK that their metal is different than my metal.",
+      "Duration": 7,
+      "Offset": 1238
+    },
+    {
+      "Sentence": "Yeah, then what am I salute little hobby horse issues is whether we should teach binary or not so it is generally thought to be. You know a core part of computing sort of Binary and how the bits work and all that sort of thing, but actually if you're building in your mind JavaScript Notional Machine.",
+      "Duration": 18,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "You probably don't need any binary at all. You just need to know that it will store the numbers. You might need to know for example, floating point representations at issues around sort of precision in numbers, but actually sort of getting down to kind of I don't know choose compliment sings and what happens if you end with a bit mask like a lot of high level programming. These days doesn't really need that and people want to teach sort of say, 15 year old learners and they're like, Oh, we know we, we should really do binary 'cause. It's a fundamental concept of computing and it is something that's quite distinct to computing.",
+      "Duration": 32,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "Couple of programmer I wouldn't say that actually binary was kind of top of the list of things you need to know when I first got a car my father insisted that I would not be allowed to drive the car until I learn to change the oil.",
+      "Duration": 13,
+      "Offset": 1299
+    },
+    {
+      "Sentence": "Of course after the fact I learned that you can pay someone to do that for you. And while someone may judge me for my inability to change a tire. There's also people that will do that for you as well. None of which takes away from the joy of driving the car.",
+      "Duration": 15,
+      "Offset": 1313
+    },
+    {
+      "Sentence": "Yeah, I think generally societal progress has to come from people specializing no one could know all things and so, yeah, I'm happy to pay someone to maintain the car. I have no idea about it, but I've specialized in computing. So you know, I learn my wage and pay him. The money to do what he specialized in and to some extent of computing is now large enough that nobody can understand all of what's going on in computing. You can't be an AI expert at a full stack. Experts in the process of design experts and the user interface expert.",
+      "Duration": 30,
+      "Offset": 1329
+    },
+    {
+      "Sentence": "Flies in the particular subfield and I think that's fine and we shouldn't say that everyone needs to understand everything because it's just sort of untenable and I think that the implied value judgments that currently the implicit value judgments rather than go go with that. We need to be careful that as teachers. We don't make anyone feel bad about that, like you don't know binary or like you just said. For example, that you not necessarily totally familiar with the registers and stuff work and my knee jerk was like but it got a PhD you probably don't have a PhD in how registers next CPU work and that's OK.",
+      "Duration": 32,
+      "Offset": 1360
+    },
+    {
+      "Sentence": "Yeah, and I think that's another thing that can put people off is you get this sort of gatekeeping effect where people like how if you don't know X you don't really know programming. If you don't understand what pointers is doing under this you don't really understand programming, but again, you could build a JavaScript notional machine without fully understanding pointers or pointer arithmetic or any of that sort of thing I understand also that you believe that the way that I learned which is slides in powerpoint's is really the worst possible way to learn how to code that.",
+      "Duration": 31,
+      "Offset": 1393
+    },
+    {
+      "Sentence": "Have the instructor write the code on the on the screen almost like mob programming, yeah, so this. This is particularly for houses of teach and learn programming, but there was a study that looked at.",
+      "Duration": 13,
+      "Offset": 1426
+    },
+    {
+      "Sentence": "So that learners experience in lectures and they you know a real novice would come to a computing lecture. There sit down the lecture would show a slide with code on it, that show another slide with code on it, and from the sort of viewers perspective. All this code is perfect, basically get the impression that the person must have written this code perfect. First time that they can just submit it up out of their mind just as easily as they click on the next slide button and they don't get any sense of process or the struggles that go with that process or anything like that whereas.",
+      "Duration": 30,
+      "Offset": 1439
+    },
+    {
+      "Sentence": "You do live coding on the screen, then often you kind of make you know, but you made. Typing mistakes as in physical typing, not types that makes sense keyboard mistakes. So you make keyboard mistakes. You maybe if you sort of do longer examples. You'll screw something up in the middle and you'll be like. Oh, what happened. There was that error and actually seeing somebody go through the process of making errors and tracking down errors is very useful for them to learn. It's OK to make errors. Here's what you do about it.",
+      "Duration": 30,
+      "Offset": 1470
+    },
+    {
+      "Sentence": "This is sort of weird effect where actually the more practiced and smooth, you are as a programmer. Probably the worse. You are at trying to do sort of live coding to teach because you don't make mistakes. I have this workshop that I do some of our software and I've done it so many times. I could do it without making any mistakes and that's actually not very useful because seeing the mistakes is an important part of sort of the teaching process. Yeah, the as I said the senior developers really have just failed a lot more than you have.",
+      "Duration": 30,
+      "Offset": 1502
+    },
+    {
+      "Sentence": "He really senior developers fail very, very fast fail fast fail, often and if you can shorten the what I call them. But we at Microsoft called the developers inner loop. The shorter that loop can be the better if your loop when you're a beginner might be an hour before you realize you've made a mistake. But if you can do that. In minutes or seconds, failing as quickly as possible going to make you very successful.",
+      "Duration": 25,
+      "Offset": 1533
+    },
+    {
+      "Sentence": "Yeah, and that's something we've actually looked at in the design of some of our beginners IDs because we've seen behaviors where learners will write a long bit of code. Maybe 20 lines, which is a beginner is a really big program. There were at 20 lines of code, which is often got syntax mistakes and conceptual mistakes and whatever in it, and then they hit the compile button or if you don't Adamic language, you know run button.",
+      "Duration": 25,
+      "Offset": 1559
+    },
+    {
+      "Sentence": "Ads they just get hit with a wall of mistakes and so one thing we looked at doing was can, we switch to sort of more professional ID style error, highlighting as you go is that a better sort of feedback loop instinctively. You think it probably is because the shorter feedback loop as you say generally that seems to workout better for people when learning things and you also say that people spend too much time typing in Boilerplate code. If I'm trying to say hello world? Why am I typing library import statements and curly braces and namespaces and stuff.",
+      "Duration": 33,
+      "Offset": 1585
+    },
+    {
+      "Sentence": "Live coding doesn't have to start with a blank screen.",
+      "Duration": 2,
+      "Offset": 1619
+    },
+    {
+      "Sentence": "Yeah, exactly the sort of what are the conceptions is that you you must understand everything that you type in everything that you interact with people have always criticize Java for its public static void main that doesn't really make any sense to beginners, but lot of languages and a lot of frameworks. You often have to have some code that the beginner won't understand and you could either struggle against the Tide and try and explain every single piece in that file before you get going or you just accept.",
+      "Duration": 30,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "You understand all of it. Some of it's going to be boilerplate gives them the boiler plate so they don't have to look at it and then just focusing on what you actually want them to write and is better if you can hide it behind a software library or framework so that they don't see this extra code. But sometimes you actually have to just put it in the file that their their editing, but it's all about, you know computer science is about abstraction. You try and abstract away all the bits. They don't need to know so that you can focus on the bits that they do need to know it's what we do with libraries and it's no surprise if we also do it with teaching.",
+      "Duration": 31,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "Public static void main is awful if you think about like let's learn how to program. We're going to say hello world, public static void main well now. Here's 4 concepts that you need to learn deeply about before we can say hello world.",
+      "Duration": 12,
+      "Offset": 1686
+    },
+    {
+      "Sentence": "Yeah, so the better thing to do is just say OK ignore that bit that's just gotta be there. Let's type. The code in between the curly brackets here and you know that you're typing. One line to say hello world, simpler one of your tips is that when teaching we should use authentic tasks and I took that to mean like real and to matter to the student of the kid if they're a teenager. They might be more excited about listing out MP threes or looking at SoundCloud or talking to something like that and not interested in making.",
+      "Duration": 31,
+      "Offset": 1699
+    },
+    {
+      "Sentence": "Curves and drawing spider crafts.",
+      "Duration": 1,
+      "Offset": 1731
+    },
+    {
+      "Sentence": "Yeah, yeah, they suffered a balance between what you can do in a small amount of code with a small amount of concepts versus sort of trying to make it really engaging and interesting but historically programming used a lot of examples. I remember in the 80s or so it was kind of printing numbers, or printing. Prime numbers or a lot of 'cause. All you had was like the console to print out too. And so those examples are quite sort of try they don't encourage a lot of experimentation.",
+      "Duration": 32,
+      "Offset": 1733
+    },
+    {
+      "Sentence": "The mathematically minded all the numerical ones will generally be a turnoff so more interesting more engaged examples of better. There's some one idea in computing education of media computation, which is trying to compute with sound and images so that you get a good sort of quick idea of whether your code worked if you try and turn your image upside down. You'll see whether you managed it successfully or not, and it may be makes this sort of more interesting task than these frigeri tasks.",
+      "Duration": 30,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "Yeah, I think that it's important to point out that not every bit of context is appropriate for everyone. There is cultural reasons to pick one over another there's generational things if I were teaching a room full of seniors that we might pick a different context in for teaching a room full of 6 year olds. Yeah, you'll never satisfy everybody with one example. So Steve Variety is good if you've got them for the long term and just trying to sort of use the domain to.",
+      "Duration": 32,
+      "Offset": 1797
+    },
+    {
+      "Sentence": "Poland and engage as many people as you can.",
+      "Duration": 2,
+      "Offset": 1831
+    },
+    {
+      "Sentence": "And the kind of the final tip at least we haven't gone through all 10 and I'll have links to this of course in the in the show. Notes is you shouldn't just code. You want to break things down. There's syntax or semantics is algorithms. Coding isn't just kind of rote memorization and slap in the keyboard. Yeah, this, this idea of Parsons problems, which is where you give people preformed lines of codes. But you get them to organize it into the right order and the right scopes. So it's sort of like a kind of rearrangement puzzle.",
+      "Duration": 33,
+      "Offset": 1834
+    },
+    {
+      "Sentence": "Programming puzzle the issue if you just get them to.",
+      "Duration": 3,
+      "Offset": 1868
+    },
+    {
+      "Sentence": "To code from nothing is it requires a lot of sort of memorizing the commands and it could be quite intimidating there are other ways to learn programming concepts and learned code other than just bashing it all out yourself. Whether that sort of code reading tasks code manipulation tasks. There's a wider variety. If you could just be a little bit more imaginative about what you're doing. You said Parsons. PARSON problems so this is where I would give you say 3 or 4 lines of code in the wrong order and I would put them together in the right order?",
+      "Duration": 31,
+      "Offset": 1872
+    },
+    {
+      "Sentence": "Threat.",
+      "Duration": 0,
+      "Offset": 1904
+    },
+    {
+      "Sentence": "Interesting and that's kind of like a multiple choice but it's much more complicated because it has his order matters. Yes, yeah, so people learn things like the variable declaration has to go before the variable use if you're doing language where you require declarations or these lines must go in the F for others outside the if it's useful if you're really at the beginning.",
+      "Duration": 23,
+      "Offset": 1906
+    },
+    {
+      "Sentence": "So other than your paper, which I've included a link to what are some other resources that we can leave people with if they are out there either teaching programming or maybe they're just going to user groups and trying to teach some subject to their peers. Meiko will sit on the paper. Greg Wilson has done a lot with software carpentry? Which of these schemes to try and teach people? How to program and I think they're particularly interested in sort of not data scientists, but sort of just scientists.",
+      "Duration": 31,
+      "Offset": 1929
+    },
+    {
+      "Sentence": "Maybe need to do some programming as part of their analysis, maybe to do some data tidy up or.",
+      "Duration": 5,
+      "Offset": 1962
+    },
+    {
+      "Sentence": "To use a particular our library on what they're doing, and don't really know much programming, so they're like these sort of adult learners, but need to just get to grips with bits of it to learn how to program so software carpentry's got a lot of interesting resource is on especially so teaching adults or or people who don't want to become full-time programmers. But they need a bit of programming to get on with what they're doing.",
+      "Duration": 23,
+      "Offset": 1968
+    },
+    {
+      "Sentence": "But then then I like that actually uh such software -carpentry.org and I like the the analogy implied analogy there because my dad is a formal woodworker in a craft person, but sometimes I just want to cut a piece of wood finding the right balance between how deep do. I want to go. You don't necessarily have to learn computer science to put up WordPress site, yeah, exactly at a lot of people they DD, so this little bits of programs to baby read into CSV and manipulate a string and write it out again. They don't need to be sat down and told OK.",
+      "Duration": 31,
+      "Offset": 1992
+    },
+    {
+      "Sentence": "Sort of the history of object orientation and how the register renaming unit works and all the rest of it. They just need a little bit to get on with what they're doing, and it's OK if they don't understand the full thing if they're just writing a bit of code to do a job very cool well. Thanks so much for taking the time to chat with us today. So gave you been great. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 27,
+      "Offset": 2025
+    }
+  ]
+}

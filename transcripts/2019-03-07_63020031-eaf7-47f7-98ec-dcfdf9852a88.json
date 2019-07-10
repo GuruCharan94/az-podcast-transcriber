@@ -1,0 +1,438 @@
+{
+  "id": "63020031-eaf7-47f7-98ec-dcfdf9852a88",
+  "Title": "How galaxies evolve with Dr. Molly Peeples",
+  "PublishDate": "2019-03-07",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/5bf2430a.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Today's show is sponsored by Datadog at cloud scale monitoring platform built by engineers for engineers get end to end visibility into the health and performance of your infrastructure and applications use their log patterns to view an investigate unusual trends in logs and explore. This service map to understand the hidden relationships between your services. You can start a free 14 day trial of data dog and get a free T shirt to learn more go to bitLY.com slash DATA dog shirt that's bitLY.com.",
+      "Duration": 32,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Bug shirt?",
+      "Duration": 8,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Doctor Mollie peoples. She is a associate astronomer at the Space Telescope Science Institute and she's astronomy, Ali on Twitter. How are you? I'm doing great? How are you?",
+      "Duration": 14,
+      "Offset": 46
+    },
+    {
+      "Sentence": "You doing all kinds of stuff and I'm just enjoying reading about it. I started at Molly. Dot science kudos for the dots science top level domain that's pretty amazing. Yes, very nice very nice.",
+      "Duration": 10,
+      "Offset": 61
+    },
+    {
+      "Sentence": "And I just got lost in the all the stuff on line that you're doing around that that interface of theory and data and we are working on Hubble right now. Yes, so how does that work this was launched in 1990. This is how old now? This is a 30 year old telescope? We are coming up on the 28th 29th birthday of it April.",
+      "Duration": 25,
+      "Offset": 72
+    },
+    {
+      "Sentence": "Yeah, it's still going strong. The last servicing mission was in 2009, where they installed to do instruments. An repaired 2 others, and we're still getting ground baking science from it really seriously like this is not to put too fine. A point on it, but my Apple Watch has more processing power does it not so how is this old thing still producing amazing stuff? Is it is. It really about the physicality of the mirrors and the telescope itself and not about the processing power.",
+      "Duration": 32,
+      "Offset": 99
+    },
+    {
+      "Sentence": "That's the main thing you know, we do the most of the processing of the data here on the ground. So the 2 main things are that it is the Hubble Space Telescope. So it's in space above the atmosphere of the earth and so it's able. It doesn't have to look through all of the air. That's in the atmosphere and so can get. Amazingly Chris Pictures and the part that I find particularly relevant for my science is a lot of my science requires the ultraviolet.",
+      "Duration": 30,
+      "Offset": 132
+    },
+    {
+      "Sentence": "You can either have UV astronomy from the ground or life on Earth. So we put argue the instruments up in space.",
+      "Duration": 6,
+      "Offset": 163
+    },
+    {
+      "Sentence": "OK, so then if the atmosphere. The atmosphere of the Earth is absorbing or blocking all these different wavelengths is the Hubble above it all or above the important parts. It's above most of it hubbles in a very weird orbit because it had to be accessible by the space shuttle in order to do these servicing missions. So it's above the vast majority of the atmosphere, but there is still little little wisps of it up there, which is why.",
+      "Duration": 31,
+      "Offset": 171
+    },
+    {
+      "Sentence": "Search stories and some current ones now are going out to beyond the orbit of the moon where you really don't have to worry about anything from the Earth's atmosphere anymore. But it's hard to get too. If you want to fix OK well, 150 miles up is a nontrivial amount of way up in it, yeah, but I mean. That's closer. I'm sitting here in Baltimore. That's closer than I am to Boston right now, so no that's a good point close of anything that is closer than you think So. What is it sending down in what way?",
+      "Duration": 30,
+      "Offset": 203
+    },
+    {
+      "Sentence": "A stream of text that we can listen to can someone with a software defined radio or their own thing as it passes by can, we catch? What Hubble spitting out. I'm not actually sure I know I'm pretty sure it goes through the deep space network. But I'm not actually sure the details of like how the raw packets are sit down. They're definitely different levels and then they get repackaged. The Goddard Space Flight Center and sent to Space Telescope for final.",
+      "Duration": 30,
+      "Offset": 235
+    },
+    {
+      "Sentence": "OK, so this is the deep space network is this worldwide network of like catching everything that's coming back from space and then processing it and then when you wake up and go to work in the morning. How do you consume this data do you go to a website or is it sitting in a file somewhere so I basically don't consume the data 'cause I'm primarily a theorist, but the way that one would do it is. It takes very few hours to go from the data being taken on orbit to being delivered to the online archives.",
+      "Duration": 32,
+      "Offset": 266
+    },
+    {
+      "Sentence": "Here at Space Telescope.",
+      "Duration": 1,
+      "Offset": 299
+    },
+    {
+      "Sentence": "It's called mast used to be the Multi Mission Archive for space telescopes. But we renamed it the Mikulski Archive for space telescopes because Senator Mikulski was such a huge advocate for the Hubble Space Telescope or the idea of democratizing science through archived data and yeah, it can take just a few hours to go from having the data. Just be taken and it's online ready to be downloaded and looked at that's really interesting that makes me realize though, that this isn't like hidden from us.",
+      "Duration": 30,
+      "Offset": 301
+    },
+    {
+      "Sentence": "Data if your enthusiasm if you're listening to this podcast. You don't have to have special top secret access. This is just science and it's out there for people to consume. Yeah, it's all out there just going to mass STSCI dot. EDU most of the data. We have is from Hubble. But there are many other space telescopes. We even have some data from ground based observatories that are there can be quick look pages and ways to easily access it and we also do a lot of developing of tools for people to.",
+      "Duration": 31,
+      "Offset": 332
+    },
+    {
+      "Sentence": "Download the data to be able to process that data and analyze it to try to lower the bar for access for people now when I ask the question about how you consume that you said that you're a theorist, but you kind of also you live between that world of theory in that world of data. Maybe you can help me understand the roles of people that what do you do as a theorist and how does that relate to someone who might be consuming the raw data and where does that interface, yeah, so I mean, the easy reason why I got into theory originally is.",
+      "Duration": 30,
+      "Offset": 364
+    },
+    {
+      "Sentence": "Most just trying to be of course requires going to physical telescope and staying up all night and so I joke that I like sleeping at night which is why I like either theory or my telescopes to be in space.",
+      "Duration": 11,
+      "Offset": 395
+    },
+    {
+      "Sentence": "But what I do is run uhm simulations of the universe and where I actually know what's going on so for example, if you take a picture of a Galaxy with Hubble beautiful and but it's also a huge mess and you want to know things like how quickly is this Galaxy, forming stars? How far away is this Galaxy.",
+      "Duration": 30,
+      "Offset": 407
+    },
+    {
+      "Sentence": "How old is this Galaxy uh? How much gas does this Galaxy have things like that and instead what you get are a bunch of photons that have different wave links and different positions on your detector and somehow. You want to answer all of those questions based on that distribution of light, whereas if I make a simulation I know.",
+      "Duration": 24,
+      "Offset": 438
+    },
+    {
+      "Sentence": "To start with our priore, I know I could just measure in the simulation well. I just want this many stars in the last mini million years and therefore this is the rate. I'm forming stars at, I can draw sphere around my Galaxy and say uh. This is how much gas is in there. This is how many stars are in there, So what I like to do is create synthetic data from the simulations that look as much like the real data as possible that I can then treat.",
+      "Duration": 31,
+      "Offset": 463
+    },
+    {
+      "Sentence": "The real data and used to interpret the real data so I can for example, say.",
+      "Duration": 5,
+      "Offset": 495
+    },
+    {
+      "Sentence": "If I make this measurement on the real data am I actually measuring what I think I'm measuring is there a bias or systematic in that measurement that I'm not aware of and if I get the measurement out from the simulation that I know is the underlying physical conditions. It's a lot easier to believe that measurement on the real data.",
+      "Duration": 19,
+      "Offset": 502
+    },
+    {
+      "Sentence": "Does in forgive my ignorance ahead of time? I bend it basically everything that I'm going to ask but how does one avoid a kind of scientific confirmation bias? Where you convince yourself that something is so by working backwards you just always questioning your assumptions.",
+      "Duration": 16,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Yeah, I'm definitely uh it's so one of the ways that people will often use simulations is to say, well. If I measure the same thing like say the same distribution of Galaxy Masses in this simulation as I'm measuring the observations, then that must mean that whatever physical models. I have in this simulation are correct.",
+      "Duration": 21,
+      "Offset": 539
+    },
+    {
+      "Sentence": "Um that's where you can definitely run into confirmation bias and I have.",
+      "Duration": 4,
+      "Offset": 561
+    },
+    {
+      "Sentence": "Definitely seen claims out there in the literature that you know say, Oh, I made this you know, we got this scaling relation correct these Galaxy properties correct and therefore our models are correct and you look at their models and you're like, Yes, but your models are unphysical in the following 5 ways what I prefer to do is turn. The problem look at it from the other side and say, well, if I'm able to make a universe that's close to realistic.",
+      "Duration": 30,
+      "Offset": 566
+    },
+    {
+      "Sentence": "You may not be perfect in the following 27 ways, but it's close enough to realistic that the data. Have you know that the statistical properties of the data are close enough that I can use it to test my measurement methods or inform my measurement methods on the real data, then that means that I can actually go out and make those measurements on the real data and learn about the real universe that way. OK are these are these presume. These are tiny universes or these universes that you are simulating their limited only by your compute in memory.",
+      "Duration": 32,
+      "Offset": 597
+    },
+    {
+      "Sentence": "Limited by my computer in memory and hard drive space, yeah, so there are 2 kinds that we do for these kind of cosmological scale simulations. One is you pick. Some volume that's got hundreds. Thousands of galaxies in it, and you start with the universe, was very, very young and you let it evolve. Hopefully, for 13 or 14,000,000,000 years until it gets too today or you say, Oh,",
+      "Duration": 30,
+      "Offset": 630
+    },
+    {
+      "Sentence": "Chase horoscope that's launching in a few years, is going to be really good at looking at the early universe and you know that just happens to only be a few billion years. You know, so it's a short amount of time that you have to let the computation run for or there. You make like a statistical measurement of all the galaxies everywhere in this volume the tradeoff. There is that what you probably have not resolved. Those galaxies very well so 'cause you're spreading the computation computational power out.",
+      "Duration": 30,
+      "Offset": 661
+    },
+    {
+      "Sentence": "Or in the whole volume so you could do statistical things. But they may or may not actually be based on that kind of data the other thing you can do is say well.",
+      "Duration": 10,
+      "Offset": 692
+    },
+    {
+      "Sentence": "There's this one Galaxy that I really want to track its evolution for and so I'm going to embed it in a full Cos magical volume and get like the large scale gravity and large filled out gas flows that matter for the evolution of this one Galaxy and then I'm going to.",
+      "Duration": 15,
+      "Offset": 703
+    },
+    {
+      "Sentence": "Pour all of my computational resources into really, really, really resolving the small scale structure of what that Galaxy is doing through time, so I've been mostly doing the latter but.",
+      "Duration": 12,
+      "Offset": 719
+    },
+    {
+      "Sentence": "The general game is you kind of do both and then you figure out what the differences are and try to bridge the gap to get the full statistical volume, so this. This analogy may not work. But it feels to me like it's the Cosmo logical equivalent of if a Galaxy falls in the Woods does it make a sound you're focusing on the one you're looking at and the ones that you're not looking at. You kind of elide or you yadda yadda yadda over those things, yeah, and it's basically because gravity is really nice like that.",
+      "Duration": 30,
+      "Offset": 732
+    },
+    {
+      "Sentence": "On large scales if you're very far away from something you don't care about the small scale structure of what that thing is doing gravitationally. You just care about what the center of Mass that that thing is doing so, you can resolve it in these we call them zooms when you're zooming in on a single Galaxy stuff that is very, very far away from that Galaxy. You don't have to add much computational power to in order to get the relevant parts of it from it, correct OK. So just like in a video game when you get closer to something that's far away.",
+      "Duration": 32,
+      "Offset": 763
+    },
+    {
+      "Sentence": "Just get more and more and more resolved and you start to Karen by observing them you care more and that forces it to resolve itself interesting and how big are these things are we talking about talk about it in the sense of compute and memory and where you find that you are limited. Yeah, so they kind of range a lot, so actually the outputs that are refined everywhere. Large volume try to get the hundreds and thousands of galaxies. We have a bunch that we've been trying to move over from.",
+      "Duration": 32,
+      "Offset": 796
+    },
+    {
+      "Sentence": "Bluewater supercomputer to here in both trying to copy those over from Illinois here impulse to Baltimore and they're like 130.",
+      "Duration": 13,
+      "Offset": 829
+    },
+    {
+      "Sentence": "The bytes each which doesn't sound like much, but we have a few 100 of them so I mean, I think the total volume that we have that one is about a petabyte so we won't be able to keep all of the data and so we have to kind of figure out like right? Which of these outputs are actually important? Do we actually want to keep long-term so I think we're going to probably just keep like maybe about 100 terabytes of it. The smaller versions that we have again can really depend on how you do the resolution.",
+      "Duration": 30,
+      "Offset": 843
+    },
+    {
+      "Sentence": "Think about it is for every say parcel of gas in the volume. You have a 3 D position a 3 D velocity. A something this tracking its composition. Basically, you have like a temperature and enerji so at the very least. You have and I'm probably missing one of the relevant parameters. You have 8 parameters that you're trying to keep 2.",
+      "Duration": 30,
+      "Offset": 874
+    },
+    {
+      "Sentence": "Double or float precision, so multiply a lot and if you've got.",
+      "Duration": 6,
+      "Offset": 904
+    },
+    {
+      "Sentence": "End of the 8 resolution elements you're easily running 25 gigabytes per output. For those so the zooms can be a lot smaller, but they're still pretty meaty and so, if you're trying to do analysis on them. You really want a large ram machine and I'm looking at the blue waters website here and just to give folks that may not be familiar. A little bit of context. It says more than a petabyte and a half of memory 25 petabytes of disk storage.",
+      "Duration": 30,
+      "Offset": 911
+    },
+    {
+      "Sentence": "100 petabytes of tape storage and this is just from a website, a couple years old. So who knows if it's been beefed up since then, is this is not just a fire up a few virtual machines in the cloud type of a problem that we're trying to solve here, yeah, and blue waters was actually slated to go offline in March. They've already got it sold its on its way out, we actually got an email this week, saying that they're going to keep it plugged in until December, which is very exciting, but it's definitely kind of the older older generation.",
+      "Duration": 30,
+      "Offset": 942
+    },
+    {
+      "Sentence": "Right yeah.",
+      "Duration": 1,
+      "Offset": 973
+    },
+    {
+      "Sentence": "So this is something that's quite a few years old, and now you're moving on to the next giant supercomputer, yeah, and Unfortunately the the newer versions that are being made. They really like Pudding lots and lots of cores on a single node and so for a fixed amount of memory per node. You end up with a lot less memory per core, which makes a very inefficient for these kinds of simulations, which is very sad. So you care about more is about holding all these things in memory and processing on it, you're less interested in the.",
+      "Duration": 33,
+      "Offset": 975
+    },
+    {
+      "Sentence": "Well, no, the parallelism is very important, but just with the given the architecture that is out there. We usually end up memory limited so for example, the computer that I used the most is nasa's pleiades computer and it's got a bunch of different nodes to choose from, but it'll be about 128 gigabytes per node. So maybe 4 to 5 gigabytes per core so depending whether not you have the hyperthreading on.",
+      "Duration": 31,
+      "Offset": 1009
+    },
+    {
+      "Sentence": "Take.",
+      "Duration": 0,
+      "Offset": 1041
+    },
+    {
+      "Sentence": "A 28 to 32 course the new Stampede 2 machine that's at the Texas Computing Center.",
+      "Duration": 10,
+      "Offset": 1042
+    },
+    {
+      "Sentence": "They have these nodes that are 68 cores per node and only have 96 gigabytes per node. So the ramp are core is like ridiculously small and so you have to use a whole bunch of nodes in order to get up to the number of cores that you need to do the calculation in order to still have everything in memory and it all gets shot very quickly.",
+      "Duration": 22,
+      "Offset": 1053
+    },
+    {
+      "Sentence": "Yeah, I'm looking at the I'm looking at the pleiades website and the Stampede website and it's very interesting. It's all about tradeoffs like one of them has a quarter petabyte of memory and one of them got upwards of a petabyte of memory. But then fewer cores and you go back and forth once got a half million cores. One has a quarter million, which ones. The right for your problem, yeah, and a lot of it is also for a given piece of code how well does it actually scale too lots and lots of cores so.",
+      "Duration": 30,
+      "Offset": 1076
+    },
+    {
+      "Sentence": "Code that I actually used for my simulations is called Enzo and it was originally written in 1996 and this is definitely the power open source programming. It's one of the few.",
+      "Duration": 13,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "Cosmo logical simulation codes that still going strong because many people have contributed to the code base over the years, but it just has a fundamental limitation that it just does not scale well to more than about a thousand cores and so the main developers of that code have completely started from scratch hired an actual computer scientists. Who knows how to write code and rewritten it in a language that's going to be better for scaling it to more code corps.",
+      "Duration": 32,
+      "Offset": 1122
+    },
+    {
+      "Sentence": "That, it will actually be able to scale perfectly up to something the size of a blue waters, which will be very, very exciting, so that means that at a fixed resolution an amount of computing power you can do. That same thing. But over a much, much, much larger volume? What is the name of the next thing beyond those are going to be in so version 2 or something else. It's going to be in Zoe or is for exascale. It was called in soapy for awhile, but it became more ambitious as we went from petascale Texas get well. Yeah.",
+      "Duration": 31,
+      "Offset": 1155
+    },
+    {
+      "Sentence": "This thing is a software engineer to hear about these entire worlds. An entire projects that people depend on and they use every day and these problems that you're trying to solve well. A lot of us are just out here trying to get JavaScript to work on our shopping carts just puts everything into perspective.",
+      "Duration": 14,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "Hey folks, you're a very good developer probably regardless you do right bugs. That's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that costed and fix it without delay century. It's a name so common that they have to include the top level domain in their advertising to make sure you remember it.",
+      "Duration": 30,
+      "Offset": 1201
+    },
+    {
+      "Sentence": "Free dot IO that century dot IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix. It together visits entry dot IO? What I'm looking at some papers that you've written and some spaces that you explore and I'm trying to understand what the galactic collected circum Galactic Medium is.",
+      "Duration": 31,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "Sir collector meeting was awesome. It's like the most awesome thing. You've never heard of yeah, so the way that Galaxy forms so Galaxy like our Milky Way. Right basically what galaxies do is they turn gas into stars and then stars like to blow up when they die. They return a lot of that material back to the Galaxy. That's the basic thing that Galaxy spend all their time doing making stars and stars dying and blowing up now.",
+      "Duration": 30,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "This is of that is one they have to get the gas from somewhere. They just don't have it to start with and 2 when these huge explosions goaf that material is usually not gravitationally bound to the Galaxy. It's not going to stay in the Galaxy. It's going to go outside of the Galaxy.",
+      "Duration": 17,
+      "Offset": 1296
+    },
+    {
+      "Sentence": "So the circuit Galactic Medium is what we call all of the.",
+      "Duration": 5,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "A gas that is roughly gravitationally bound to the dark matter. Halo that the Galaxy resides in but is not in the Galactic Disk itself, it so it's not where the stars are so to give you a sense of scale. We in the earth or about 8 kilo parsecs away from the center of our Galaxy. Kiloparsec is a thousand parsecs a parsec is 3.2 light years, the radius.",
+      "Duration": 30,
+      "Offset": 1319
+    },
+    {
+      "Sentence": "The dark matter Halo that we're living in is 300 kiloparsecs. So our Galaxy is a very, very, very small fraction volumetrically of this entire volume so the 2 things that we've known for a long time are that one. Most of the gas that you would expect to be at this dark matter. Halo is not in the galaxies that galaxies are very inefficient at turning all of the gas that's in the Halo into stars.",
+      "Duration": 30,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "Hang on the Mass, the Galaxy can be like from only 5 to 20% of that entire materials inside the Galaxy.",
+      "Duration": 6,
+      "Offset": 1381
+    },
+    {
+      "Sentence": "And.",
+      "Duration": 0,
+      "Offset": 1388
+    },
+    {
+      "Sentence": "To this is what I find much more interesting so all of the elements on the periodic table that are heavier than helium were made in the death of a star so all of the oxygen you're breathing right now, all of the carbon that's at your body, etc was born in the death of a star so that idea that idea that we're all just stardust that is like a real thing, that's not just the thing we stayed to be romantic. That's very literal. Yes, no it's like super super literal.",
+      "Duration": 30,
+      "Offset": 1389
+    },
+    {
+      "Sentence": "But the part that's really exciting about that right is definitionally stars are in galaxies, so stars die when they're in galaxies, so all of the heavy materials.",
+      "Duration": 9,
+      "Offset": 1421
+    },
+    {
+      "Sentence": "You would expect to be in the galaxies, but if you actually do the math and you do the accounting the budgeting you say, well.",
+      "Duration": 7,
+      "Offset": 1431
+    },
+    {
+      "Sentence": "How many medals have I made? How many medals do I have astronomers are lazy and so called everything heavier than helium medals? How many these heavy elements. Do I have? How many? How many are still in the galaxies only about 20 to 25%.",
+      "Duration": 13,
+      "Offset": 1439
+    },
+    {
+      "Sentence": "Of them are still in the galaxies and so the exciting thing that we've been able to do with one of the ultraviolet spectrographs on Hubbell in the last 10 years is actually point to where.",
+      "Duration": 14,
+      "Offset": 1452
+    },
+    {
+      "Sentence": "Most of this gas and most of these heavy elements are in the circum. Galactic medium outside of the galaxies and it's very difficult to do because this gas is very, very, very, very, very, very diffuse so it does not generally emit light to give you an idea of how diffuse it is. Imagine a one meter. Cube space would be like one Atom in that oh well. That would be hard to see if I'm sitting in front of it exactly.",
+      "Duration": 30,
+      "Offset": 1467
+    },
+    {
+      "Sentence": "But luckily space is really big and so, if you've got a huge path link to look for what we can look do is look at the signatures of background light. That's passing through it, and look at characteristic absorption of that background light to measure and quantify where this material is so that's 1 of the reasons that we use a lot of the synthetic data because the direct measurements are so difficult in the 1st place that the simulations in the synthetic data can really help us.",
+      "Duration": 30,
+      "Offset": 1498
+    },
+    {
+      "Sentence": "How to interpret those data in terms of the underlying physical properties? How often there's a one of your main tweets or your pin tweets is talking about going back and forth in slack with some of your colleagues and going. Oh my goodness look at this holy crap. Holy crap that happens in the movies like every 20 minutes like you know the astronomer that they always the president always calls to come and talk to the aliens usually gets to cool. Discovery several times are you going. Big days days thing. Oh my goodness. Holy crap or is it weeks. How often do you get those like Oh my goodness? We just discovered this or we just found?",
+      "Duration": 35,
+      "Offset": 1529
+    },
+    {
+      "Sentence": "Just confirm this, I would say it depends on how excitable like well positive feedback is always good, though, yeah, it is so the thing that I am I group have been doing in the last 2 years. That's very novel is usually in the simulations. What people will do is they'll put their computational power in the very dense regions so in the Galaxy is where the stars are actually forming.",
+      "Duration": 29,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "And that makes sense if the observations, you're trying to compare 2 are the pictures of the galaxies. The properties of the galaxies. The things that are easy to measure and what we were coming to realize was well. Most of the volume and most of the material is not in those very dense regions. And that a lot of the activity. That's happening is happening in these very low density regions that are further out and so we",
+      "Duration": 27,
+      "Offset": 1595
+    },
+    {
+      "Sentence": "Um created some new techniques for adding.",
+      "Duration": 2,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "Sorry improving the spatial resolution in this very low density regime.",
+      "Duration": 4,
+      "Offset": 1627
+    },
+    {
+      "Sentence": "We were uh you know every time we look at these simulations. We see something new because we're using this new technique that can get very every time, yeah, so every time we actually have a new plot that we make from those we get very excited and from the observation. Ull POV if you're used to just looking at.",
+      "Duration": 21,
+      "Offset": 1632
+    },
+    {
+      "Sentence": "Uh you know little squiggly lines from a spectrograph and then using your imagination to interpret what's going on in these large scale cosmic bubbles. It could be exciting to actually see those happening, you know in an animated GIF on slack. It seems like the cosmological equivalent of like if someone giving you like 5 pixels and then someone goes enhance and then you can see the license plate and you're like, Oh my goodness. It's amazing, but you're actually doing that you're really pulling.",
+      "Duration": 31,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "The analogy that my one of my colleagues uses it's like.",
+      "Duration": 6,
+      "Offset": 1687
+    },
+    {
+      "Sentence": "Uh putting on a pair of reading glasses, but the actual the words that you're looking at had changed wo.",
+      "Duration": 6,
+      "Offset": 1694
+    },
+    {
+      "Sentence": "OK, so you have this picture that you expect at low resolution. But when you actually allow the physics. That's happening at the smaller scales to do its thing. Then you know the whole picture changes, which is very exciting, but I mean, these take many easily 10 times longer to run than some of the more standard simulations. So we understand why people haven't really tried to do this before we joke sometime.",
+      "Duration": 29,
+      "Offset": 1702
+    },
+    {
+      "Sentence": "Programmers that you know, there's a lot of time, where we just like go to lunch and come back to see if the compile has finished when you run simulations like? How much of it is just like hanging out waiting for the thing to go and like these things taking months or how long does it take for the oh all of it, I mean? I have some runs that I started back in May that I really hope have made it.",
+      "Duration": 22,
+      "Offset": 1733
+    },
+    {
+      "Sentence": "14,000,000,000 years of cosmic history, maybe by this May.",
+      "Duration": 4,
+      "Offset": 1756
+    },
+    {
+      "Sentence": "Maybe not they take months and months and months. Yeah, what, if you forget Have. You ever been like that run is done? What was I doing? So I've haven't have not ever had that happen. Uh the Super computers are very good at emailing you in your job is finished. And so you kind of get in this pattern of ladies that.",
+      "Duration": 19,
+      "Offset": 1761
+    },
+    {
+      "Sentence": "Longest wall clock time you're allowed is 5 days so you get very used to every 5 days, logging and resubmitting all your jobs going away again and I've got my notice scripts. They back up automatically so I don't even have to do that manually anymore. My favorite, there was a simulation that when we were just starting on the on this project. We asked a colleague to run for us and.",
+      "Duration": 22,
+      "Offset": 1782
+    },
+    {
+      "Sentence": "Like 2 years later we were like you don't want it would be really nice. If we had a simulation that whatever and he's like I ran that it generated a petabyte of data would you like it?",
+      "Duration": 11,
+      "Offset": 1804
+    },
+    {
+      "Sentence": "And we were like yes.",
+      "Duration": 1,
+      "Offset": 1816
+    },
+    {
+      "Sentence": "'cause you know it had taken over a year to run and we were the ones running it. So we completely forgot about it. Oh my goodness. Yeah, I've had a number of things like that where it will come out of nowhere and like Oh wow. What was I thinking? Where did I put my keys kind of equivalent. Oh my goodness, so people can check you out at Molly Dot Science and you're talking about science and life on Twitter as well and as well on your on your website. You've got videos of public talks your writing and all these different kinds of things that you're doing as well as.",
+      "Duration": 31,
+      "Offset": 1819
+    },
+    {
+      "Sentence": "You did, Hubble Hangouts for awhile as well, where you were talking publicly about how the science gets done. Yeah, fantastic well thanks. So much for chatting with me today. Thank you so much for inviting me. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 19,
+      "Offset": 1851
+    }
+  ]
+}

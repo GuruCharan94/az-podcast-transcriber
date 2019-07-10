@@ -1,0 +1,403 @@
+{
+  "id": "16f839ad-e87c-4db5-80c3-f47c0e918bac",
+  "Title": "A love letter to language (and programming) with Eva Ferreira",
+  "PublishDate": "2019-03-14",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/f7edba1f.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Successful software starts at reagan.com Reagan APMprovides.net application performance monitoring, unlike anything. You've experienced before offering greater clarity around how your software is performing for your customers more than any other APM provider.",
+      "Duration": 14,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Easily detect and diagnose issues impacting end users and monitor every part of your stack in one powerful solution. You can monitor unlimited hosts enjoy richer trace data and call stack information and unblock those hard to solve performance bottlenecks that affect your web and mobile apps.",
+      "Duration": 16,
+      "Offset": 15
+    },
+    {
+      "Sentence": "It's time to get back to building great software instead of fighting. It start your journey to better software quality and try Ray Gun Free at reagan.com that'SRAYGUN.com today?",
+      "Duration": 18,
+      "Offset": 32
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another excellent instruments and today I'm talking to David Ferreira from Glenside. They started you know, she is a professor at the University. She's the organizers CSS S confirmation. Tina, a Google Dev expert and a front end developer. How are you hi? How are you? I am very well and I'm happy to be chatting with you from so far away thanks for coming on the show. I'm checking out, the website for CSS S confAR.com. This was the event that you organized in.",
+      "Duration": 31,
+      "Offset": 57
+    },
+    {
+      "Sentence": "Of last year. How did it go he went great they have almost 410 days and it was an amazing above with a lot of people coming from abroad, even from different countries in in Latin America. So it was really nice. And when you put on an event like this, you're doing, it as a non profit, but I think sometimes what does the customer think or what is the user think is the community think that you're going to get rich and famous because you made a conference.",
+      "Duration": 30,
+      "Offset": 88
+    },
+    {
+      "Sentence": "Probably yes, um there, not many people who think that way. But since Alex in Argentina. We don't have many of these events is really difficult to explain to the people? What goes behind doors. When we make it sometimes. Yeah, people might think that we want to make money out of it on, especially since we actually charge a ticket because that's what we need to actually run it so there is kind of a misconception, sometimes about.",
+      "Duration": 30,
+      "Offset": 120
+    },
+    {
+      "Sentence": "Fit conferences on how you kind of prove that it is actually no profit so you have to prove that it's non profit. An I've notice that some conferences do a better job than others about letting the community know when conferences by the community and for the community. You actually published a by the numbers post where you explained everything from how many tickets you sold. How many tickets you gave away and even some context about Argentina's.",
+      "Duration": 30,
+      "Offset": 151
+    },
+    {
+      "Sentence": "Yes, we felt like there was a need an for us to publish that because he is the second time we may see a scarf and we didn't do that in the first edition because we were like overwhelmed for like how much work. We had but when we start planning the second edition that just at the very beginning. We actually said to ourselves right. We should release the numbers because after all, we have nothing to hide and it will also explain.",
+      "Duration": 30,
+      "Offset": 182
+    },
+    {
+      "Sentence": "The value of the ticket for the people who are from Windows Cyrus and also from the people who are from United States or Europe, where you have a very different price. So we'll get to do be able to explain through all those numbers. What is going on in in some economy in some country a higher Comerica great a band with the priorities right adversity community without like Expending, a lot.",
+      "Duration": 30,
+      "Offset": 213
+    },
+    {
+      "Sentence": "Connection to show it to the people on people really. Appreciate it hot. I wonderful feedback and this was 9 months worth of planning so you started planning in December of 2017 and the conference took place in August and there's a couple things that are worth pointing out there. You make the comment that the monthly salary of a web developer in Argentina might be $1000. Yes, usually they employees don't really.",
+      "Duration": 30,
+      "Offset": 244
+    },
+    {
+      "Sentence": "Ticket for I mean?",
+      "Duration": 1,
+      "Offset": 275
+    },
+    {
+      "Sentence": "The employers don't really better take a friend boy, he's so he's out of the money of of the people to attend without really sell tickets. The companies we sell tickets to people so it's all of them from buckets an economy situation in the country is pretty bothers last year. It was 50% inflation, so planning have an actually saving money for an event is really complicated for the people in an everyday basis and you also pointed out something really interesting, which I did not even consider.",
+      "Duration": 33,
+      "Offset": 277
+    },
+    {
+      "Sentence": "The US dollar at the beginning of your planning was one US dollar was about 19 Argentinian pesos and then just 9 months later. It was basically doubled that which must make it very hard to budget for an event yes, and in fact, we are used to dollar going up. But we can plan for the letter going up a little bit in December really huge amounts of inflation.",
+      "Duration": 30,
+      "Offset": 311
+    },
+    {
+      "Sentence": "You are so hard because we actually made a mistake of saving the money from the ticket sales in pesos. You don't do that in Argentina. You don't say money pestles because then you will lose a lot, so we have an issue with with the conference that we lose a lot of money in the middle because of that.",
+      "Duration": 17,
+      "Offset": 342
+    },
+    {
+      "Sentence": "Oh, you mean you put them like in the bank in the wrong currency, so that when the currency fluctuated you had less money. The next day exactly. Yes, there was anything issue. After all, along the expenses. The flights, the hotel reservations. They are all actually in dollars.",
+      "Duration": 18,
+      "Offset": 360
+    },
+    {
+      "Sentence": "That's a good point now all the while, you're also trying to get sponsors. So you had Mozilla and Google and data art all helping you sponsor flights, hotel nights and you had a clever idea that maybe they would not give you the money directly.",
+      "Duration": 16,
+      "Offset": 380
+    },
+    {
+      "Sentence": "Yes, and that was really great because we never want to go through the hassle of like taxis on on that and after all, we wanted with money from responses? What should be able to make the event. So we propose to their sponsors. Hey can can you cover this flight? Do we're glad to do that? There were really excited that we were able to provide the transparency in that way as well, not.",
+      "Duration": 29,
+      "Offset": 397
+    },
+    {
+      "Sentence": "But then we giving us money, but actually then Bailey for the expenses itself, so it was really good and we had really good feedback from his sponsors as well. There's a really smart thing to do and I was really impressed about the level of transparency. I feel like every conference should do this people are my put this a link in the shownotes, but people can go and see exactly what you paid for the venue. How much you paid for communication and talking to the people who came was paying for speakers to come and.",
+      "Duration": 30,
+      "Offset": 427
+    },
+    {
+      "Sentence": "Everything like you even put in like their hotel. How much breakfast who is business class. If you even bought them Argentinian chocolates and you kept track of all of these costs and it was really cool that you put that on the thing and then you, said that we have about $331 left, which is not exact but close like close. It took a lot of time. But I think Emily have more conferences will actually work towards that well. That's openness and trying to spend a little bit of time.",
+      "Duration": 30,
+      "Offset": 458
+    },
+    {
+      "Sentence": "Most uh things open to the community, so it's easier to understand the effort got goes behind that.",
+      "Duration": 6,
+      "Offset": 490
+    },
+    {
+      "Sentence": "So it sounds like it was a great conference. But it's a huge amount of work and it's still a nonprofit so will you do it again this year?",
+      "Duration": 7,
+      "Offset": 497
+    },
+    {
+      "Sentence": "No, we need to to take some time when it's asleep but next year in 2020. We plan to be back.",
+      "Duration": 8,
+      "Offset": 505
+    },
+    {
+      "Sentence": "Yeah, that's great, yeah, I think that when we the public or the community attends a conference. We appreciate all of your work. But I don't think we really understand the amount of effort. That's put into something you could spend all year, organizing a conference. It's exhausting yes and he's also really stressful I mean?",
+      "Duration": 18,
+      "Offset": 514
+    },
+    {
+      "Sentence": "I something you have it a product of $20,000 on your shoulders on so much work and there's so many people involved and it has to go right, it doesn't have to go wrong.",
+      "Duration": 15,
+      "Offset": 533
+    },
+    {
+      "Sentence": "Yeah, that's extremely stressful so not only do you organize the conference like this, but you also are a professor at the National Technological University in Argentina? Yes, yes, I have enough for a couple of years and what are you teaching we had to change front end developer on a little bit of back end right now so it's pretty nice.",
+      "Duration": 21,
+      "Offset": 550
+    },
+    {
+      "Sentence": "How much challenge do you have when you're teaching web development to students that may have different levels of English proficiency?",
+      "Duration": 7,
+      "Offset": 572
+    },
+    {
+      "Sentence": "Is a lot of challenge because on one hand and you had to suppose that OK this? Is people who are already in University so you have, like, this kind of Sue position in your head that they will have a good level of English because they reach University. But the truth is that it doesn't happen everywhere. Our language is Spanish at the same time, if you go to public television you turn on the television.",
+      "Duration": 30,
+      "Offset": 581
+    },
+    {
+      "Sentence": "What are non public channels and you put a movie that will be in Spanish if you actually end up like even watching friends TV show in a Spanish so if someone gets to University that doesn't really mean they have a good level of English.",
+      "Duration": 16,
+      "Offset": 612
+    },
+    {
+      "Sentence": "And a hard thing is that you have such a different priority of levels of English in a purse of 2030 people. There is really, really hard to know how much resources in English. You can actually give them without being unfair to a lot of them.",
+      "Duration": 19,
+      "Offset": 629
+    },
+    {
+      "Sentence": "How do you deal with that because someone's skill level or someone's let's just say their talent their ability their inherent ability to be good at web development. It doesn't necessarily need to be attached to their English ability. There's lots of developers that are amazing developers. But they don't have fluent English. Yes, it should never be a barrier, but it is mainly because.",
+      "Duration": 26,
+      "Offset": 649
+    },
+    {
+      "Sentence": "The majority of intermediate to advanced content of what development teaching at the question of the stuff is in English is not a Spanish is not in Portuguese in English, so that is a big issue. What I usually try to do, but it's not a solution. Sadly is to try to give them something from perhaps MDM maxilla developed network because they have, I got a lot of correct articles with good translation.",
+      "Duration": 31,
+      "Offset": 676
+    },
+    {
+      "Sentence": "An even though sometimes he added the Spanish version is a little out of date. But at least you can show them OK. If you don't get everything that is going on, you, also have this website that will be able to help you.",
+      "Duration": 11,
+      "Offset": 708
+    },
+    {
+      "Sentence": "So do you think that the the right thing for people who are listening like we have our people who are listening to this podcast. My Spanish is not very good, there for this podcast is in English. What do you tell the listener should they all go and make advanced technical content in their local late native language to help people or should we have everyone learn English and improve their English? What's the solution.",
+      "Duration": 24,
+      "Offset": 720
+    },
+    {
+      "Sentence": "I think that language shouldn't be a barrier on I think that shouldn't be a barrier for getting a rice at your shop. So I believe that on 1 side way really they need content here in in around languages because of trying to bring down that barrier. But at the same time, we also need content in order language is simply because if it's a cultural thing as well.",
+      "Duration": 30,
+      "Offset": 745
+    },
+    {
+      "Sentence": "And showing reading books in Spanish. I am sure it just because you know that's my language and I get along with really well. My jokes are way better in a Spanish that whether you're in English. So I guess is also about a spread in our culture and being proud of the languages, we speak.",
+      "Duration": 18,
+      "Offset": 776
+    },
+    {
+      "Sentence": "Yeah, I think that's a good point. I think that you know, there's the joke about. But, perhaps you've heard this right if you are trilingual then you might be a European or if you're bilingual, you speak 2 languages. If you're mono lingual you're American. I think we just assume that everyone should learn English and then we think that maybe a computer translation is an OK solution. But I think if it's not a good solution? Is it now and I have it ready saddest story about computer sensation.",
+      "Duration": 33,
+      "Offset": 795
+    },
+    {
+      "Sentence": "Did you get one day had University and I have one student who had good translate. The extension in the browser installed so he went intogithub.com and he click on the translate bottom so all the website and that in a Spanish and funnily enough, not only the website got translating but also the code samples so suddenly that poor student thought that git add.",
+      "Duration": 30,
+      "Offset": 828
+    },
+    {
+      "Sentence": "Actually get Agregar and he end up writing get agregar with Spanish version in the console and that didn't work and couldn't understand why so automatic translation. No no it doesn't really work. Oh, that's awful. Yeah, I mean, if you're mixing code. Ann you're mixing pros those things are going to get translated you're going to lose keywords, you're going to lose context and even if we think we're being helpful. By doing automatic translations often we're just going to confuse the issue for people.",
+      "Duration": 31,
+      "Offset": 859
+    },
+    {
+      "Sentence": "You're really careful and try to test it and be really sure that he actually works folks. You're a very good developer probably regardless you do right bugs. That's unavoidable? What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that costed and fix it without delay.",
+      "Duration": 30,
+      "Offset": 891
+    },
+    {
+      "Sentence": "The name so common that they have to include the top level domain in their advertising to make sure you remember it century dot. IO that century dot. IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix. It together visits entry dot. IO now you can given talks in multiple languages all over South America, all over the world. You've switched kind of smoothly between languages.",
+      "Duration": 32,
+      "Offset": 922
+    },
+    {
+      "Sentence": "Try to give advanced talks to him to make sure that there's more advanced content or you focus more on beginner talks to get more people involved in web development. It also depends on on the target on the audience and where I am at speaking if I'm speaking at a conference or a meet up. I usually give advance content because the audience would understand that. But if I'm teaching. I just begin with a basic level because's by my students will understand.",
+      "Duration": 32,
+      "Offset": 955
+    },
+    {
+      "Sentence": "If it makes really.",
+      "Duration": 1,
+      "Offset": 988
+    },
+    {
+      "Sentence": "Do you uh your English? Is fantastic so compliments on that I'm curious though? What do you think about the fact that there's probably a lot of people out there who have great information but because they don't have fluent English that they are afraid to present? How do we get people to present in their native language? Do videos? Do workshops because I want to get that information outside into the world. You know put that good information out. So other people can learn from them test something so important.",
+      "Duration": 29,
+      "Offset": 991
+    },
+    {
+      "Sentence": "And I heard it a lot like people are kind of a shame of the way they speak of maybe off their accent and they they don't want to.",
+      "Duration": 8,
+      "Offset": 1021
+    },
+    {
+      "Sentence": "But they are free people with my fat left them and honestly know where I mean, you speak more than one language. You should be proud of yourself. It doesn't matter if you have a little bit of a Saint and it's a real thing, people have actually talk to me about that and the terminal. I don't really feel like giving a talk in international conference because my English is not good enough so you also have a focus on Accessibility and I know we've talked a little bit about language and how languages are thing that keeps.",
+      "Duration": 30,
+      "Offset": 1030
+    },
+    {
+      "Sentence": "Keeps the web from being accessible to people. But what are some other things that you're excited about on front end development to make the web more accessible?",
+      "Duration": 7,
+      "Offset": 1062
+    },
+    {
+      "Sentence": "Well, access, we need something that had begun working on like 2 years ago, very kind of recently. I think they got side by side because it's it's a way of opening up the knowledge of the web of the Internet to to more people. This shouldn't be is is another battery order wish you let's just put down help people actually get the information without any issues.",
+      "Duration": 27,
+      "Offset": 1070
+    },
+    {
+      "Sentence": "You gave a talk and I'll put a link in the shownotes called the C is for Accessibility. What is the see? What do you mean by that the C is for Accessibility it really that choke we make him people who like CFS we actually began sentence he saying the Sea East for SK the stylish is by which totally changed. That and the Seas for cats. So this is for Accessibility is a really, really bad joke about it talk of how CSS S.",
+      "Duration": 30,
+      "Offset": 1098
+    },
+    {
+      "Sentence": "Accessibility it does because people have so much power in their CSS S. It's one of the main tools that they have available but a lot of people don't realize how CSS S can impact contrast and visibility and sudo elements. CSS assist that asked staying on access ability that everything is about HTML and shove. A script and it is about that, but also a display. Non will make a disaster if we don't do it right in Accessibility.",
+      "Duration": 30,
+      "Offset": 1129
+    },
+    {
+      "Sentence": "In your talk on Accessibility about hiding about visually hidden and semantically hidden. Maybe you can explain the difference between those things. Yes, when you visually hide something you are actually highlighted only from what we can consider the sighted user, but you are actually providing that content to the screen reader user for example, they skip navigation links. Skip navigation links or something that you put at the top of your website.",
+      "Duration": 31,
+      "Offset": 1160
+    },
+    {
+      "Sentence": "They use about uses keyboard navigation doesn't have to go through all the menu. If they want to get to the concert so they just click on a skip navigation and jump into the main concept. That's great for non sighted users, but also for people who prefer giver navigation. So you can visually hide it from common users an activate it and make it visible for keyboard navigation on focus so that would be.",
+      "Duration": 30,
+      "Offset": 1192
+    },
+    {
+      "Sentence": "It's official here and um semantical human will be something like.",
+      "Duration": 5,
+      "Offset": 1223
+    },
+    {
+      "Sentence": "Perhaps hiding the content an from the user who is not cited an showing it for the user who can actually see that let's see and use case for that with me. Maybe an this is gonna be a pretty serious case. But if you have an image on that image is not really important. So you just hide it from the non sighted user so they don't waste their time.",
+      "Duration": 30,
+      "Offset": 1230
+    },
+    {
+      "Sentence": "To the other kind of user and that makes sense. Actually, like I have had times where I put an image in but it might not be an image that is really deserves an alt tag. It doesn't add any semantic value. So I might want to like I don't want to hide information, but at the same time, I don't want to waste their time.",
+      "Duration": 18,
+      "Offset": 1261
+    },
+    {
+      "Sentence": "Yeah, interesting and a lot of those things are again coming down to empathy. You have to remember that people view or see the web differently as a sighted user. I don't think I've ever seen. Skip to main content. But a non sighted user sees that all the time everyday yeah. Any something so important. Because when you start like practicing with a screen reader or some with Kiefer navigation, you suddenly beyond, to realize.",
+      "Duration": 31,
+      "Offset": 1280
+    },
+    {
+      "Sentence": "I know and I can beat your browser web without a skip to navigation links because he had just got to go through each one of the links in the navigation with your turf giver and you're gonna spend like half an hour present 70. You finally get to the content you also point out that the visual presentation or the order the way that we see the order of something sometimes because of the way we've coded the website isn't the necessarily the Dom order and that can be confusing to a screen reader, yes because you can actually change.",
+      "Duration": 30,
+      "Offset": 1312
+    },
+    {
+      "Sentence": "Or their filaments with with they sold their property in CSS S and that will alter only the visual part, but it won't algorithm order so if you tougher it, perhaps if you are excited user who cannot use your hands really well and use the keyboard. Then the navigation will go perhaps the other way around an is not necessarily wrong, but it is confusing.",
+      "Duration": 24,
+      "Offset": 1343
+    },
+    {
+      "Sentence": "And I think that if you had a form that had that problem. I know that a non sighted user would use their keyboard and they could find themselves bouncing around the form and not understanding what's going on. Because the order is not the same? Yes. So is this something that this seems overwhelming as a person who is a kind of a full stack developer. It seems like you would really need a dedicated team or a dedicated person to keep track of all these different things. I know I'm going to get it wrong if I if I don't have a dedicated team for Accessibility, yeah, I mean?",
+      "Duration": 31,
+      "Offset": 1369
+    },
+    {
+      "Sentence": "Chinese I think it's almost like compulsory, if we can't. I mean, if you can afford it. You actually have a dedicated team and if you are in a small company. Hopefully you will hire a front end developer with us not only do you like Pre Act, but also Accessibility do you find that this is something you focus on like exclusively or are you just have a giant list of stuff that you have to get done on the front end and you do the best you can and just continuous improvement.",
+      "Duration": 30,
+      "Offset": 1401
+    },
+    {
+      "Sentence": "I do try to do the better I can in everything that I'm thrown out, but I do focus on Accessibility and I also tried to do educate my my team work in in the company. I work on Accessibility, so in the end II try not to be the only person who can solve Accessibility issues. One of the things that I like about your talks in the things that I think make your talks special, and will have links of course to the videos of your talks in both English and Spanish.",
+      "Duration": 30,
+      "Offset": 1432
+    },
+    {
+      "Sentence": "Only do live coding, which I love to do, I do a live coding in my talks. But I think that you also put things in context. In historical context? How important is it for new developers in the developers that you teach at the University that they understand the history of why something is a certain way to show it to know why things are the way they are so I think it comes like natural that I actually tried to explain the history of.",
+      "Duration": 30,
+      "Offset": 1462
+    },
+    {
+      "Sentence": "Habit is this thing happening II do the same when I teach and I don't think there's really a reason. More than I like to do that II like to know why this is happening. So I liked explaining it II. Just hope people would enjoy the history of of things as much as I do overwhelming amount of things to know if you think about like someone starting today, if someone this morning anywhere in the world.",
+      "Duration": 30,
+      "Offset": 1493
+    },
+    {
+      "Sentence": "Erica maybe somewhere, so I'm going to be a web developer.",
+      "Duration": 2,
+      "Offset": 1524
+    },
+    {
+      "Sentence": "There's so much to know there's the history, there is maybe they need to know under certain amount of English? Where do you send people? How do you even start on day one of class one class one in the course that I teach at University is actually completely theorical and not practical class because I just begin talking about the history of.",
+      "Duration": 30,
+      "Offset": 1527
+    },
+    {
+      "Sentence": "Uh how how for example, speed connections actually improved websites thing that's the way of of again and is trying to understand how we got here in kind of mess. We have right now with so many technologies and at the same time, it just right to really teach good basis and then give good resources to the students and they can keep researching after the course if they want to and they can actually make themselves.",
+      "Duration": 30,
+      "Offset": 1558
+    },
+    {
+      "Sentence": "In a certain area.",
+      "Duration": 1,
+      "Offset": 1590
+    },
+    {
+      "Sentence": "In your blog posts an in your demos you use a lot of code pen you like have nice clean HTML and nice clean CSS S and when I learned when I was teaching at University many years ago. View source was a big part of my life and sometimes I see something amazing and I do a view source and I'm sad, but it's a mess. I think that pretty good.",
+      "Duration": 30,
+      "Offset": 1592
+    },
+    {
+      "Sentence": "Taking it too far I really began like you we can like.",
+      "Duration": 3,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "Expect element on and view source and try to understand how something is made, and it's really sad when you cannot do this anymore because everything is kind of compressed in the psych off maybe.",
+      "Duration": 12,
+      "Offset": 1628
+    },
+    {
+      "Sentence": "F*** kilobyte of of of goal so I had no other really like that. Yeah, it's extremely frustrating. I even when I'm doing and inspect element. I feel like I'm digging through a bunch of Devs. Get things out of the way 'cause. I really want to see how they built this. The Web somehow became a thing that we decompiler uncompiled and as opposed to learn from yeah, yes.",
+      "Duration": 25,
+      "Offset": 1640
+    },
+    {
+      "Sentence": "Yeah, that's overwhelming another thing to point out that last year, you put out an SVG animation with Java script class at Pluralsight. How have you found learning and how people learn because you? Do videos you speak at a conference you do a plural sight and then you, also do University classes. Which of those as you found the most effective way for someone to learn web development. I'm a strong believer of people having different ways of learning like.",
+      "Duration": 30,
+      "Offset": 1667
+    },
+    {
+      "Sentence": "I learn a lot with someone teaching me, I can person. Maybe I don't learn anything. If I want to really become programming. I don't really get anything. I really better reading books. So I believe that the best way for me is having someone to teach me in front of me, but it differs a lot in depending on the person and I guess does the same most important thing because if we can provide content on learning tools in those different ways.",
+      "Duration": 30,
+      "Offset": 1698
+    },
+    {
+      "Sentence": "For people to learn Molly silly like OK, you feel. Like Yeah, you feeling better by rating. Then this is a book. If you learn better by press an A class with the person in front of you. You can do that as well. Yeah, you've got a great blog post on your kind of tips and tricks clues on how to teach and learn web design and the first thing that you say is, don't say something is obvious. 'cause it's really only obvious to you. That's not really.",
+      "Duration": 30,
+      "Offset": 1729
+    },
+    {
+      "Sentence": "Sometimes in in learning because we are barely used to like writing code on it works, and thus it. But for someone who has actually beginner. It come is so overwhelming so many tools so many.",
+      "Duration": 15,
+      "Offset": 1759
+    },
+    {
+      "Sentence": "Cold sad and perhaps not even the code in the language so we had to be really careful with with your language and 20 years. Davis words in each situation to avoid making someone feel like their stupid when they're not they're just learning and when you pick that correct word. I assume that you're teaching in Spanish at the University in Argentina. But you're bouncing back and forth between English and Spanish. How much time do you spend defining English words or giving?",
+      "Duration": 30,
+      "Offset": 1775
+    },
+    {
+      "Sentence": "Know, which word is the correct word to use as you are really being bilingual, 'cause you're teaching them another language. CSS S or HTML. I don't think this is my answer to that is probably no good answer? Is there at the proper question, and I find myself. Many many times, saying they were in the wrong language like a lot and embarrassingly amount of times well. I'm certainly not want to speak because I gave this, I did this whole interview with you in in English or low center.",
+      "Duration": 31,
+      "Offset": 1807
+    },
+    {
+      "Sentence": "Well, thank you so much for chatting with me today. Thank you for having me. I'm going to put links to all the show. Notes so you can go and see. Eva's website see the videos and the slides of the different talks achieves given and you can certainly follow her on Twitter.",
+      "Duration": 11,
+      "Offset": 1839
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 8,
+      "Offset": 1852
+    },
+    {
+      "Sentence": "I.",
+      "Duration": 1,
+      "Offset": 1861
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "id": "529479f1-f943-4f1a-bffc-975937d7c5a9",
+  "Title": "Sean Valentine on Hidden Geniuses and parenting in a digital age",
+  "PublishDate": "2019-04-18",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/81ffbc24.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends I want to thank our sponsor, Reagan are you struggling to replicate the bugs and performance issues that your customers are reporting plug Ray gun into your web and mobile applications right now and diagnose problems. In minutes rather than hours. Kiss goodbye having to dig through log files and relying on frustrated users to report issues make your software development life so much easier using rayguns error crash in performance monitoring tools. Every software team can create flawless software experiences for their customers with Reagan try it free.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Or agun.com that'SRAYGUN.com.",
+      "Duration": 11,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Cancer Medicine. Today I'm talking with Sean Valentine from the hidden genius project? How are you Sir? I'm doing well hi Scott? How are you? I'm pretty good? I'm just raising these children raising these boys trying to get them to get their heads screwed on straight as soon as your done send me the book so that I can use that playbook to increase my chances of success as well. I'm telling you these children are driving me.",
+      "Duration": 30,
+      "Offset": 44
+    },
+    {
+      "Sentence": "It's there in that tween place where 111 and one is 13 and they both have it all figured out and they don't even just don't even need me right like as if you know there. The first people who were 12 and 13 years old. That is exactly. That's perfect that is. It is the first time that a 13 year old in 2011 year old have ever existed and they came fully formed ready to go. He wants to get his own apartment. And just drive away right now, I had a young man at 17. Tell me recently that he's living.",
+      "Duration": 30,
+      "Offset": 76
+    },
+    {
+      "Sentence": "Best time of his life like This Is It. This is like if he doesn't take advantage of the moment right now. Then everything else is over. I almost cried. I literally just like drop the tear right there. That's adorable that is adorable isn't it so you're dealing with children with all due respect to children. I'm sure some of them are older. All the time. Tell me about the hidden genius project well. The Hidden Genius Project trains and mentors blackmail youth, and technology creation, much preneurship and leadership skills to transform their lives and communities.",
+      "Duration": 32,
+      "Offset": 107
+    },
+    {
+      "Sentence": "Since 2012, where Oakland based organization with a second sight enrichment, but our demographic typically blackmail youth, and the ages high school age is rising freshman to rising juniors. So I see a spectrum of 13 year olds to 1819 year old, then again, they all most, if not all believe that this is this is it and how many of them come with it all figured out and they just tolerate you.",
+      "Duration": 31,
+      "Offset": 140
+    },
+    {
+      "Sentence": "People are really excited about this and getting involved in both stem and also technology. It's funny. We just completed our seventh.",
+      "Duration": 7,
+      "Offset": 172
+    },
+    {
+      "Sentence": "27th annual interview Dayan every year, the students become more and more engaged and excited about stem related topics about the space in general, so you have a mixed bag of folks. We generally you know really want to get in. They probably built their own computers or wanting to and then you definitely have some folks were dragged in by their moms pulling on their earlobes, and making forcing their hand.",
+      "Duration": 30,
+      "Offset": 181
+    },
+    {
+      "Sentence": "So those moms because they definitely have the best intentions for those young men. Yeah, we're trying to find that balance at raising our young men to figure out like pushing hard enough that they know there's pressure to achieve but also finding that internal internal pressure that internal thing that tells you that you need to wake up and make it happen today and we're fighting with right now, it's social media. It's Tech, it's video games. It's very screens that I think will be there bridge to achievement is the screen that is holding them back.",
+      "Duration": 30,
+      "Offset": 212
+    },
+    {
+      "Sentence": "Exactly I also believe that just just seeing where where we are in terms of as a mentor at the hidden genius project. We have this unique view of get this viewpoint of this from the students who they are who they want to be who did who do they think they are and the relationship between them in their parents. You spoke on things such as video games and social media.",
+      "Duration": 30,
+      "Offset": 243
+    },
+    {
+      "Sentence": "That screen is you know, stopping the thing that should propel them is stopping them. But I think that one thing where it should start is just the engagement peace with parents whether it's healthy conversations or I find that some parents are afraid of technology and because it's not a part of their generation. They just shun everything that has to do with technology and so I always want to say that it's a 50 fifty St where we as parents.",
+      "Duration": 30,
+      "Offset": 274
+    },
+    {
+      "Sentence": "I have to work towards meeting this.",
+      "Duration": 2,
+      "Offset": 305
+    },
+    {
+      "Sentence": "Students or or the teens halfway just to kind of get a better understanding of where they are, and so we can help them navigate those spaces like we said earlier in the conversation. They believe that this is the first time that life has happened when they became 12 and they believe that there's no connection point between the adults and where they are. It's like you didn't have Internet when you when you were a child so you don't you can't possibly know anything right like.",
+      "Duration": 26,
+      "Offset": 308
+    },
+    {
+      "Sentence": "Google is really God in and as long as you just met Google then and you don't have a relationship with Google. Then you know your word isn't anything and so taking a step toward those young those young people can kind of I think it should be the best start for us as parents meeting. Those those those young people halfway. Because 'cause honestly do not know any better. I think the challenging part is that social media is happening so fast.",
+      "Duration": 31,
+      "Offset": 335
+    },
+    {
+      "Sentence": "Us as adults to say that we have it all figured out and that they should listen to us is challenging right like we do, we know best? I think we know best? We definitely have NFS? But I could be wrong. I'm confident in that part and that's again going back to showing up where where the kids are and learning as much as possible. Because then you can kind of see through the information that they are receiving and kind of help them vet out what's real information and what's healthy to pick up and.",
+      "Duration": 30,
+      "Offset": 367
+    },
+    {
+      "Sentence": "Not so healthy and that should be put down and how they decide that like if it's is this in all things in moderation type of a situation like this so many times. We tell kids know and that's got great on them. It's going to wear on them to be told no so often.",
+      "Duration": 16,
+      "Offset": 398
+    },
+    {
+      "Sentence": "Total E and sometimes it, I'd have to admit it can be our inability to hold some enerji left by the end of the day and give enough to fully explain explain the know you know students and youth are sponges and they're excited about learning and they want to learn everything and who are we to set limitations on their ability to grasp information.",
+      "Duration": 25,
+      "Offset": 415
+    },
+    {
+      "Sentence": "Right yeah, I'm always, I always like to uh. Bring up this experience for a young teacher. I believe it was Alabama, an no it was New Orleans and she taught a class and they told her that you know the class was reading at this certain level and she mixed up their reading level with it. IQ scores and taught the students at like.",
+      "Duration": 27,
+      "Offset": 441
+    },
+    {
+      "Sentence": "At a high level, you know, maybe 2 or 3 levels above what they were scheduled to that scheduled but appropriated this appropriate learning level and the teacher ended up teaching up 2 or 3 levels above that and have no idea that you know, some of the students were told that they had maybe a disability here or challenge there and ended up the students were took on to that level and ran with it and so with that being said, like you know, sometimes we set limitations on.",
+      "Duration": 31,
+      "Offset": 469
+    },
+    {
+      "Sentence": "Far the our kids can go and we need to kind of break out of those restrictions, too, not challenge them, but to uplift them and bring him up so that they confident with asking us questions to your point about the knows everyone gets tired of no and so you do definitely want to always encourage them to be able to come to you and not just the here to know, but to learn from you and know that you're a resource well and then also that we're all just figuring this out as a group.",
+      "Duration": 30,
+      "Offset": 501
+    },
+    {
+      "Sentence": "Right and that is a challenging part, though, because there's the strategy of I'm trying to be your friend, which is usually my parenting strategy and then there's my wife, who explicitly starts almost every day with I am not your friend you probably experienced both of these styles of parenting you know what I mean, Hey, buddy, I'm your buddy. I'm in friend. Tell me about how's it going? It's going? Certainly the para? Who says Mom said no.",
+      "Duration": 31,
+      "Offset": 531
+    },
+    {
+      "Sentence": "But it's not up to me. Mom says no. It's going to be no yeah, yeah, yeah. I definitely in moderation. An setting the expectations right so it's not that you know, there won't be negative outcomes. It's let's explore. Let's talk about why and let's let everyone walk away, and rationale for the decision that we made there's not assume that they have logical can they process and that high level and I think that?",
+      "Duration": 30,
+      "Offset": 564
+    },
+    {
+      "Sentence": "With certain conversations, it's just takes us to be more patient as parents and a lot of the work life balance again for us, it could be a lot of different things. But if we start with patients they want to understand some things. It will be beyond them. But there is there are analogies. There's a lot of Harry Potter metaphors and things that we can come up with to bring him up to speed.",
+      "Duration": 26,
+      "Offset": 595
+    },
+    {
+      "Sentence": "You know, I have this joke where I asked my kids to listen a little quicker. So I don't have to slow down and then that they can catch up. But honestly, honestly right, but again, finding that healthy space there will always be competing interests right because, as a parent. We believe that we know what's best for the students or our students are our children. An they believe that there are other avenues and options that parents haven't even grasp hold up yet because a lot of.",
+      "Duration": 30,
+      "Offset": 622
+    },
+    {
+      "Sentence": "Like you said the social media is so innovating and it's so changing it's it's moving, it's going in so many different different directions. At one time it's it's hard to keep up with, but again establishing healthy relationships with our students and our children would be the best way forward. Yeah, I'm trying to get them to understand the number one thing that comes up with my sons is the like. I know you don't like this, but I am on your side, like if you could just take every decision that I offer you with a little grain of salt and remind yourself that.",
+      "Duration": 30,
+      "Offset": 653
+    },
+    {
+      "Sentence": "Not trying to like hurt me, I'm not trying to cause any trouble here.",
+      "Duration": 3,
+      "Offset": 684
+    },
+    {
+      "Sentence": "I'm just trying to keep you alive for as long as possible until you get out. The door and then you can get your own place right. I want you to be happy and healthy that is always the goal like you know that I'm still at that tween phase where it's like you're ruining everything at whatever decision I made was the wrong one. But I think you guys. Can I get a little benefit of the doubt here right like playing video games for 8 hours straight is just not healthy. This is not only like I understand you're trying to get your feet get coins up.",
+      "Duration": 30,
+      "Offset": 688
+    },
+    {
+      "Sentence": "This is real life this is my loins. This is real life, I went and bought a game console. An sports game recently years ago, I played the game and I was able to play it enough to where I was able to earn enough to buy what I needed now. You have to spend it has to be 4 to 8 hours a day on a game just to compete design and get your coins up and so that you can have all of these different things. It was used to be that the student the children wanted.",
+      "Duration": 30,
+      "Offset": 719
+    },
+    {
+      "Sentence": "You know the Jordans on their own feet right or or you know you have a 15 year old trying to get a tattoo. But now on a video game. I have to give you some money so that you could buy things on the game and by that. I want to virtual Jordan's right if I have real kicks and virtual kick in several pairs. Several pairs who needs several outfits in skins on it game. This is incredible. This is incredible. But dad I won't be cool.",
+      "Duration": 30,
+      "Offset": 750
+    },
+    {
+      "Sentence": "After opening the game up. I have students all the time and they are engaging and I had to open it up to understand what was at stake here. 'cause years ago. All I had to do was be cool at school right. I just had to make it through school but now it's I need to be cool on my social media. I need to be cool at school and in this virtual space on the game as well, and not just one game. But all of the game. The trendy games right now, so that's an issue.",
+      "Duration": 32,
+      "Offset": 781
+    },
+    {
+      "Sentence": "Do an issue and you know with you now have talked about addictions prior but you can see where you know, these things are setting our children up for tough issues that can come up later on in life. One of the things that I've been trying to do is use. These experiences when they explore something online to pivot to a larger discussion about like economics, so like for example, my 11 year old yesterday came to me because he felt pressured to buy some coins in this game.",
+      "Duration": 30,
+      "Offset": 814
+    },
+    {
+      "Sentence": "OK and I was like why is it because it's 2 for one tickets 2 for one or it's 30% off right? Is it going to cost 30% more tomorrow. And it took about an hour of chatting with him before he figured out that you know that they can just arbitrarily raise the price is 30% and then give you a 30% coupon so you feel special.",
+      "Duration": 20,
+      "Offset": 845
+    },
+    {
+      "Sentence": "So we had all these examples, we started figuring this out like you know the Bed Bath and beyond coupon for 20% as like you know, everything there is 20% more expensive than it needs to be.",
+      "Duration": 9,
+      "Offset": 866
+    },
+    {
+      "Sentence": "In his brain just went like oh like they can just do that. Like Yeah, why not? They can just make a Big Mac and be twice as much and then they give you 50% off coupon and then suddenly, you feel special so we had the larger conversation about economics. Unfortunately, at the very end, he said.",
+      "Duration": 13,
+      "Offset": 876
+    },
+    {
+      "Sentence": "But I still want the coins. The Fallacy of Thrift. If I remember any fallacy from my economics class in undergrad. The Fallacy of thrift stands out stood out to me on the idea that give you all the sales. You come in believing that you're going to Costco. This exact one. You go to Costco. You have your items that you think you're going to buy and you come out and you spent way more than you actually thought or intended and that's it.",
+      "Duration": 27,
+      "Offset": 890
+    },
+    {
+      "Sentence": "Actaeon Zen database is the best in class single secure scalable architecture for edge data management. It's the perfect solution for software developers who want dedicated application data management and deliver business critical products and services in 2. OT and low it environments. Customizable installation self tuning Seamless backward compatibility minimal memory requirements and exceptionally low support requirements and better performance than most alternatives like SQL Lite all means that you can deliver applications to customers at scale.",
+      "Duration": 30,
+      "Offset": 918
+    },
+    {
+      "Sentence": "Wide range of platforms with direct access from C plus plus python. Another popular languages. Zens simple set of API significantly expands the pools of developers capable of building their next business. Critical application on Actaeon. Zen try today at actaeon.com slash then that's a seeTEN.com slash xen. So here's a funny thing we are back. This is the first Hansel minutes in 700 episodes.",
+      "Duration": 29,
+      "Offset": 950
+    },
+    {
+      "Sentence": "Where we each had to go and do stuff with our kids and come back and do the second part which is beautiful because we're talking about kids and raising kids so I went to do Taekwondo? What did you do? We had it. We had to split my daughter? Did does track and my son. Plays AAU basketball. Fantastic so we're back like 7 hours later. It went OK. I'm having a situation where the 11 year old, loves Thai Kwando and the 13 year old, was like.",
+      "Duration": 31,
+      "Offset": 980
+    },
+    {
+      "Sentence": "Off one of my fingers do, I still have to do. Thai kwando like that's a little aggressive man. Like Yes, is the answer to that and I would rather that you not you off your finger. I don't know where he got it in his head rather that I rather you not do that. 'cause there's some other things that we might need that finger for besides besides Taekwondo. I'm pretty sure I'm feeling really, really are yes. We had to split my daughter, she tried to do tried basketball, she tried ballet.",
+      "Duration": 30,
+      "Offset": 1012
+    },
+    {
+      "Sentence": "Say hip hop dance, she did it a few things listen, she's only sticks.",
+      "Duration": 6,
+      "Offset": 1044
+    },
+    {
+      "Sentence": "Oh, how she's always active at 6. That's great very but now she's she's running track. She's doing. The 400 in the long jump and we're really excited for sure, she went to 6.",
+      "Duration": 11,
+      "Offset": 1051
+    },
+    {
+      "Sentence": "Turn a 6:33 today and that's a 48. I think that's 1200 1200. She ran a mile during the mile today. So it's a last for 6 year old running amount. That's amazing. I couldn't run an errand right now. I'm doing Taekwondo and all these forgive me. If anyone who's listening does type window or whatever, but",
+      "Duration": 24,
+      "Offset": 1063
+    },
+    {
+      "Sentence": "Uh I have not stretched probably in the last 20 years and they're trying to get me to kick like yeah, I can kick my hand and they hold their hand 6 feet up in the air and I'm like I don't think that's going to happen. It's not gonna happen. I'm more of a slap fighter.",
+      "Duration": 13,
+      "Offset": 1088
+    },
+    {
+      "Sentence": "Tell me more you know, like like stop with the kicking and they just like it's move. My hands really fast and it's like you know, I mean, like if there's a problem like I don't know where I'm going to have a problem. I mean, I'm grown. But if there's a problem. You know at the club. Wherever I'm at lap, you and I will run. I'ma give you all these flaps you go and get him fasting or get fast laps right like Bruce Lee speed slap and then run and you're going to remember the the back of my head because.",
+      "Duration": 30,
+      "Offset": 1102
+    },
+    {
+      "Sentence": "All your so is this a balance for me, it's a balance. I know we work in the tech space and we have kids an and I love the balance. I want them to feel the realities of life and I get caught up in in a virtual space is it do you find I know I find they need? Is it is it? Is it helpful to create the balance by taking them out and bring your hands dirty. I think it's more than helpful. I think it's.",
+      "Duration": 30,
+      "Offset": 1133
+    },
+    {
+      "Sentence": "The essential I mean, I actually felt pretty good after the Taekwondo today because I'm the only dad like not to put too fine. A point on it, but there's all the dads and moms are lined up on these chairs on the side and I'm the only one who is literally like a bunch of 6 year olds a bunch of 15 year olds and me, and my sons and I'm the adult and the 3 black belt teachers were like pulled me aside and they were like I think it's great. You're doing this with your kids. I just don't want to sit there and check my phone for an hour just didn't seem like the right thing to do.",
+      "Duration": 30,
+      "Offset": 1164
+    },
+    {
+      "Sentence": "Besides this way right, I see. I see Anna I am the same where I'm I'm almost to work. I'm almost worse because I'm too involved like I'm at the practice. I'm telling the coach where play to run. I'm horrible. I'm horrible so now. I just stand outside the door and watch. But I understand II've seen whisper. The plays under your under your voice. Yes, you know myself with cynomys like ducking me through that little small slider window like my dad is out there. No.",
+      "Duration": 30,
+      "Offset": 1194
+    },
+    {
+      "Sentence": "Is the balance? Is certainly a balance and as we? Were talking about earlier right meeting our children where they are right where there were there showing the excitement and then the balance. I know and I hate to chime away at at work, but at the hidden genius project. We have a partner team.",
+      "Duration": 22,
+      "Offset": 1225
+    },
+    {
+      "Sentence": "An and through that partnership were able to teach sports coding.",
+      "Duration": 4,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "And it's remarkable to take the passions of sports right and match. It with the intersectionality between that and technology right coding does not have to be a lonely thing. It can be a team thing pair programming mob programming have the whole group work on it as a team. It can be competitive team programming. It can be a joyous thing just like any team sport and we talk about that and we talk about like school in how students learn it's funny the first pycon.",
+      "Duration": 30,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "When did our students were asked.",
+      "Duration": 2,
+      "Offset": 1285
+    },
+    {
+      "Sentence": "How do they feel about you know?",
+      "Duration": 2,
+      "Offset": 1288
+    },
+    {
+      "Sentence": "Coding in these in silos or something to that effect that had the connotation where you know the students were confused because the question meant that coding meant working by yourself.",
+      "Duration": 13,
+      "Offset": 1292
+    },
+    {
+      "Sentence": "An Oh no right and so they were like no that's not what we do, we work in teams. We've learned in teams we failed in teams?",
+      "Duration": 8,
+      "Offset": 1305
+    },
+    {
+      "Sentence": "An an and this is what the coding is the community and in that Pike on that was that was a resounding a buzz let the community of it. Everybody can come in plug in and and what you want it to be and who you want it to be as long as you were sharing an open to the space and an open to sharing ideas and it was like the magic and my students are students bought into that magic and it's funny because school right is so like.",
+      "Duration": 31,
+      "Offset": 1314
+    },
+    {
+      "Sentence": "You know, so grade schools are doing it well are showing how working in community and in groups? How how much more productive. An engaging and the learning outcomes around it are that much higher. When you promote that and so you know, we going back to the Thai Kwando, you go back to the community that even though you know the parents are in outside you know, there's still this sense of community and this is why we bring our kids to these extra curricular activities not only.",
+      "Duration": 31,
+      "Offset": 1346
+    },
+    {
+      "Sentence": "Quick way to put him to bed once we get home right. But outside of that, like you're building this community. You're being diligent. You have to overcome a lot of things, even our inability to reach our toes. But we're going to work at it or go workout. Does got right and showing our kids that you can be resilient and not in the other part is being able to fail in front of'em right 'cause you're not going to be able to do that move that the black belt does but.",
+      "Duration": 30,
+      "Offset": 1379
+    },
+    {
+      "Sentence": "That we can work our 2 and accomplish our goals and setting those examples do you hear that right there I heard that? What was that that is my sons upstairs each other right now that's not being out there practicing. I hope it's practicing no ones. No ones yelling you're certainly getting your moneys worth I'm I don't know. I do think about the foundation of the house at some point like there will be some kind of depreciation fault in what is?",
+      "Duration": 30,
+      "Offset": 1410
+    },
+    {
+      "Sentence": "It is being done to my house right now.",
+      "Duration": 1,
+      "Offset": 1441
+    },
+    {
+      "Sentence": "You know one of the things that I was thinking about was that thinking about the way that you're teaching technology to the young man at at the hidden genius project. I wonder what in 10 years. When maybe the 16 year olds are 26 and there's doing their first start up and they're making their next Facebook or the next Snapchat. Will they be a different kind of developer. They won't be necessarily the same kind of the myth of the singular developer that John Carmack or the Zuckerberg all alone.",
+      "Duration": 30,
+      "Offset": 1443
+    },
+    {
+      "Sentence": "I'm coding, maybe you're going to create a new generation of people who work as a team where communication is as important as this myth of being a genius hiding out in the closet with the pizza coding. The next great thing, and it's so part of the culture. We talk about being culture, responsive and you're raising 2 young black male boys as well. And so you see that there's a lot of things missing in certain aspects of these children's lives and and within the black community.",
+      "Duration": 30,
+      "Offset": 1474
+    },
+    {
+      "Sentence": "The culture piece in a community peace is strong and has been missing for so long and not not missing just not highlighted and brought to a focal point, as a value. Add to folks lives and so this idea of creating a coding community is so natch is so much more natural for these young men and for the community itself. But in particular. These young men and make ability strong bonds and that's what you'll see within we'll see in the next 10 years because we're already seeing it now.",
+      "Duration": 32,
+      "Offset": 1505
+    },
+    {
+      "Sentence": "This is out in theater in colleges in Louisiana. I got we got 2. Xavier for instance, and they're reaching out to geniuses up in New Hampshire at Dartmouth, right and their work and collaborate on projects together when you build from the foundation you build the students up like this, they'll tend to do business like this and it will spill over in their lives in our mission. Our mission statement.",
+      "Duration": 23,
+      "Offset": 1538
+    },
+    {
+      "Sentence": "Includes not only to change themselves with chains their communities and and we are working diligently to again to create this foundational piece where everything they're doing is within community. They start today, but unity in community. They end the day in community and we keep him engaged in that way so that it's a healthy habit that when they create these businesses. These businesses will be created with these similar foundations and healthy happens.",
+      "Duration": 30,
+      "Offset": 1562
+    },
+    {
+      "Sentence": "And I appreciate that about that is that when I was coming up with it being high school or then in University. No one ever sat down and talk to me about personal networking. They never talk about personal networking in the context of building ones own community. They talked about it in a more kind of for lack of a better word kind of slimy Glengarry Glen. Ross kind of 1980s build your network so you can be a better salesperson type of a thing and I recently saw this video from a gentleman. Watson, who put together a YouTube and I'll put it in the show notes called?",
+      "Duration": 32,
+      "Offset": 1593
+    },
+    {
+      "Sentence": "Personal ecosystem right when you build a community you're building an ecosystem of people that you can call upon for support for forwarding that next resume or for plugging you in with the next person who's going to move to the next rung in the ladder of your life and that such a more positive way of thinking about things rather than teaching people how to network and it's so important. The earlier you build that network and that community, the better. We were talking or designing a product for geniuses now.",
+      "Duration": 30,
+      "Offset": 1626
+    },
+    {
+      "Sentence": "You know to help them build their academic networks and so there's a lot of noise on today's social media tools that, like the name of the Snapchats and Instagrams where you know, there's a lot more entertainment and the students ability to kind of filter out and get to the meat of it would be so difficult so how can we bring? How can we bring them together using technology in a space that's healthy and so we thought to create our own and so we started building our own platform, so that the geniuses can communicate with each other.",
+      "Duration": 32,
+      "Offset": 1657
+    },
+    {
+      "Sentence": "Each other for academic support, if I wanted to get some you know, some hacks on one at a new games like I know that I can call I can call on this network of folks. But if it's about that calculus homework as well. I can call on a network of people that can support. They all going to take these classes right similar classes from the high school through Postmates secondary matriculation. They're going to be similarities are going to be same classes. There's gonna be the same homework. There's going to be the same hurdles and.",
+      "Duration": 30,
+      "Offset": 1690
+    },
+    {
+      "Sentence": "Bing that network that academic network early that strong an encouraging them to utilize utilize that network has been like one of the strongest calling cards of the year for us and building upon that it's going to be interesting to see how this this tool. Turns out how they use it. It really I would say it is just been in the last year or 2 of my life and my career, which is longer than the age of a lot of these young men.",
+      "Duration": 30,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "But I realized that having that community to call appan for mental health for wellness for just understanding to be able to say you know, I have an issue like you said whether it's calculus or whether it's a thing at work or both. Just bouncing an idea off somebody and if you don't have network you're not going to have the ability to manage stress and you're going to feel all alone and especially if you're entering something like technology. It can be a very isolating experience already so we don't want young people to feel alone and we need to make sure that we, as the.",
+      "Duration": 32,
+      "Offset": 1752
+    },
+    {
+      "Sentence": "Heads in the technology industry make them feel welcome when they do show up, yeah, and it's all it's all around. It's it's a balance right and it goes back to you getting getting in there and taking on that class to write me know where they are right so you can understand and not afraid to walk through those issues, as well. So you know as as parents and I definitely encourage you know, we do these play dates right, but we can always we can.",
+      "Duration": 30,
+      "Offset": 1784
+    },
+    {
+      "Sentence": "And promote these healthy habits and set set to set these these teens or any of these young people up for success as quickly as we can just understanding that even it's funny. We were talking about you know.",
+      "Duration": 16,
+      "Offset": 1815
+    },
+    {
+      "Sentence": "What are bat are bad experience in life and we all a lot of people are always promoting their trophies or the wards that have happened to alkyl aids and things that you know folks have celebrated about a person but a lot of times your mistakes can be supportive as well. You know it's a It's a way to to navigate through like what not to do and so, if like you said it's if you've just been taken advantage of your network. As of recently then you know it's very it would be very.",
+      "Duration": 30,
+      "Offset": 1833
+    },
+    {
+      "Sentence": "I want you to go ahead and promote your child to build an utile eyes and get good at following up with their network is keeping their network strong because it's ultimately what's going to be the Differentiator near please says. And I've talked to actually someone in my life recently encouraged me to think about the difference between being a networker or someone who kind of tends to their own garden their personal ecosystem versus being a transactional Networker, which I think is really easy to get into.",
+      "Duration": 30,
+      "Offset": 1864
+    },
+    {
+      "Sentence": "Habit of just calling on people when you need them as opposed to being genuine and checking in on people when you have to talk to so and so in awhile. I want to actually check on them and see how they're doing, and see if I can lift him up in some positive way without actually having anything underneath that this is this is true. This is true. This is very true. One of our first field trips at in the program has been one of my favorite and we had one of our corporate partners. Google and I have a great friend over there, let Shana Simmons, who puts on this.",
+      "Duration": 30,
+      "Offset": 1895
+    },
+    {
+      "Sentence": "On networking resume building and you know just a follow up in the power of the follow-up. Oman and the personal note in their personal note, not not not email is great. But if you've ever sent a card Have. You ever like? When's the last time we had hard. Thank you so this is the thing where my wife makes me a better person, she is all about the personal note. She's probably right in 45 handwritten thank you. Notes a week and she's got me in that same habit just.",
+      "Duration": 30,
+      "Offset": 1926
+    },
+    {
+      "Sentence": "Any mails great even a text, but a personalized text. You know what that just write that just an imperfect animated GIF or that handwritten note or that I appreciate you.",
+      "Duration": 8,
+      "Offset": 1957
+    },
+    {
+      "Sentence": "Uh it goes so far and not just because we're trying to work. The network because we genuinely care about other humans because you genuinely care so far, but we've got so far away from it that it's become this thing that folks have used as a transactional type. I correctly if we get back to making it or something that's regular something that's part of like habitual then it can be utilized where it's true value again again all these things.",
+      "Duration": 30,
+      "Offset": 1966
+    },
+    {
+      "Sentence": "Like a truck trying to figure out how to give.",
+      "Duration": 2,
+      "Offset": 1997
+    },
+    {
+      "Sentence": "Everything to these young people as quickly as possible so that they can you know start on that path but you know something is a stick and will be praying and again I'll keep waiting for your book to come out so that I can travel. Yeah, I will eventually get shamed into writing my book. One of the things also that I appreciate about what you're trying to do is set people up for success. You're doing, it in a positive way you've served over 3500 students since 2012.",
+      "Duration": 30,
+      "Offset": 2000
+    },
+    {
+      "Sentence": "100,000 hours of training people can check it out at hidden geniusproject.org. They can donate if they're in and around the Bay, they can get involved. They could send geniuses your way they can become a partner. They can volunteer I can check it all out at hidden geniusproject.org and then you can also hit us on the social media ingenious pro hidden genius. Pro fantastic well. Thanks a lot Sean Valentine for this fantastic 2 part.",
+      "Duration": 30,
+      "Offset": 2031
+    },
+    {
+      "Sentence": "Handsome minutes. I appreciate the work that you're doing, and thanks for hanging out with me today. Thank you so much guys been a blast. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 10,
+      "Offset": 2062
+    }
+  ]
+}

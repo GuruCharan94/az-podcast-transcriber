@@ -1,0 +1,368 @@
+{
+  "id": "59bf8621-3705-47ce-9736-f9c2f6794bc6",
+  "Title": "Mr. Robot Disassembled with Ryan Kazanciyan",
+  "PublishDate": "2018-02-16",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/f52475af.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Ryan Kazanjian. He's the chief security architect at tanium? How are you Sir doing great thanks glad to be on you know this is exciting for me because you not only are the chief security architect at a security firm but also for a time worked as a technical consultant alongside the writers of Mr. Robot? How long did you do that a little over 2 years? I joined during the pre production phase of season 2?",
+      "Duration": 32,
+      "Offset": 41
+    },
+    {
+      "Sentence": "So it's in to the production efforts there and then continue to work with the team through shots for a few different scenes. In Season 2 and then when season 3, started which was pre production work and writers room sessions. I think we're in see late 2016 actually was much more involved from the inception stages of the storylines and how technology wove into them during the start of the planning phases for season 3 continue to work with the writers and production team all the way through.",
+      "Duration": 31,
+      "Offset": 74
+    },
+    {
+      "Sentence": "The production of the shots. We conceived and even helped out on set. With some of the filming scenes that we had thought through earlier on so that lasted all the way until about Midsummer through 2017 when we wrapped up and stuff started to air.",
+      "Duration": 15,
+      "Offset": 105
+    },
+    {
+      "Sentence": "Nice I worked as a technical consultant on a movie very early on in my job was primarily to go through this script and I was told make sure none of the technical stuff would make the writers looks stupid. It sounds like your involvement is much deeper than that simplistic work that I did.",
+      "Duration": 17,
+      "Offset": 122
+    },
+    {
+      "Sentence": "So it's really a function of the show creators and especially Cora Donna, the writer and producer that I worked most closely with really having that attention and care for detail when I joined in part way through season 2. A lot of the storylines and seeds had already written and so a lot of my role is what you kind of describe there where it was about executing the on screen details to fit the scene and making a few tweaks and changes around the edges, so that everything stayed accurate. But yeah, when season 3 rolled around.",
+      "Duration": 31,
+      "Offset": 140
+    },
+    {
+      "Sentence": "A great time getting to sit back and think a little bit about how technology and some real world tax could actually fit in shape the direction of the narrative that the writers and show creator Sam Esmail. We're going for and so that gave me a really cool opportunity to have a bit more insight and influence into the direction of the season.",
+      "Duration": 20,
+      "Offset": 173
+    },
+    {
+      "Sentence": "Are you like me in that over the last 20 years of watching movies and TV? You've been disappointed in the quality of the Tech.",
+      "Duration": 7,
+      "Offset": 194
+    },
+    {
+      "Sentence": "Yeah, absolutely and I say that as someone who grew up watching and chuckling at movies like hackers who depicted computer hacking and technology on screen and some ridiculous ways. And you had exceptions to the norm right like I also grew up watching war games, which for all of the things that were kind of outlandish about the storyline. There were little bits and pieces of technology would see in it, that were realistic and cool so like I remember seeing an acoustic coupler.",
+      "Duration": 30,
+      "Offset": 203
+    },
+    {
+      "Sentence": "Movie and then I think in sneakers and that was the thing where before there were modems that plugs into the phone line. You literally put the handset on this device and it would play the modem tones through the receiver of the handset and so you know, those movies like kind of gave me a glimpse of that world and did at least a fairly good job depicting parts of it. Accurately then you go to hackers and movies like scorpion. It just went completely in the opposite direction and a lot of those movies in the 90s just captured hacking in a ridiculous way and that.",
+      "Duration": 31,
+      "Offset": 234
+    },
+    {
+      "Sentence": "I continued through to most of the movies and TV shows over the past decade or so, yeah, the juxtaposition between the 2 kind of 2 people on one keyboard. NCIS kind of style of hacking, which is painful to the kind of minority report like trying to give you a sense of moving your hands in waving as being legitimate hacking to the other side of the spectrum, which is real legitimate use of real hacks on.",
+      "Duration": 30,
+      "Offset": 266
+    },
+    {
+      "Sentence": "It makes me feel like the only thing preventing us from getting that level of narrative is just for lack of a better word organizational. Willpower someone enabled Cora Donna and folks. Mr. Robot to hire you and to do it for real. Yeah, I think the prevailing assumption for so long had been that anything realistic in terms of depicting technology and computers, let alone hacking in the entertaining medium was always going to be just intrinsically boring and it's true that like no matter.",
+      "Duration": 30,
+      "Offset": 297
+    },
+    {
+      "Sentence": "Holistic you make a scene there needs to be something relateable that anyone watching can grasp onto and understand the motivations of the characters and why the scenes important? What's going on? And so you can't lose that but I think Mr. Robot and salmon core and the rest of the production team realize that by making it realistic. They didn't have to lose that they still could make incredibly compelling and relateable narrative. They can make scenes exciting and they could layer it so that.",
+      "Duration": 31,
+      "Offset": 328
+    },
+    {
+      "Sentence": "Full viewer could watch and enjoy it and understand the outlines of what's going on. But if you were really technical and if you were for example, a security practitioner or one of our fans that likes to freeze frame and analyze every little bit of everything on screen. You had a lot more that you could even enjoy and then that even goes a layer deeper with the alternate reality game that the show has so that's sort of layered approach where no matter what your level of experience is there something you can get out of it and more technically are the kind of deeper appreciation you can get for some of it.",
+      "Duration": 32,
+      "Offset": 360
+    },
+    {
+      "Sentence": "What made the show successful and inspired some of the fans that it's got I think that's a tall order, though to say like for example, my wife is a nurse and she can't watch ER or the good doctor or any of these shows because it just cause uh sort of rolled her eyes back in her head. So far that you can't even stand it and understand like pilots that watch shows where there's an airplane being flown. They can't handle it as well. But you're saying that to be able to actually hold up to people who are screenshotting, it in discussing it on Reddit. That's a tall order.",
+      "Duration": 30,
+      "Offset": 393
+    },
+    {
+      "Sentence": "It is and it's also a continuous source of stress for us. I mean, especially in season 3, where I was a lot more involved in pretty much every onscreen depiction of hacking or use of a security or computing tool for shots that pressure as we were creating it was is it going to stand up to that scrutiny and we always have to make certain adaptations and take creative license to make things fit in the show. And so we really worked hard to minimize those wherever possible and.",
+      "Duration": 30,
+      "Offset": 424
+    },
+    {
+      "Sentence": "Make sure that we could hold up to that audience 'cause in the end. That's the most critical group. But there are also the most passionate fans of the show and the most vocal in supporting it and so getting it right for that group. Even if it is a minority of the viewers has always been really important, and it's been really tremendously, gratifying to see how the security community, which is an incredibly critical group. I mean by virtue of the work that we do in this industry to get them behind it.",
+      "Duration": 30,
+      "Offset": 456
+    },
+    {
+      "Sentence": "I think we're really proud of now, and they seem to be generally pretty positive. It makes me think about the computer people myself included tend to be the most well actually people ever I could imagine that you might be afraid that you're going to put a great episode out there and then a medium post tearing apart your work appears the next day well. The funding is had a series of medium posts called Mr. Robot disassembled this past season, where I kind of provided behind the scenes of how koreni created all the hacks in each episode and.",
+      "Duration": 32,
+      "Offset": 486
+    },
+    {
+      "Sentence": "And sometimes some of the things that went on before and afterwards and the way we planned it or even designed it. That didn't end up making its way on the screen, and for every time I post. One of those have great comments and feedbacks and messages from people who were domain. Experts in this specific areas of security that we are highlighting and whatever that scene might be and they're the ones who definitely notice well. Why did you do this instead of that or was this a mistake or intentional and but it was always with like positive sort of appreciation that look like.",
+      "Duration": 30,
+      "Offset": 520
+    },
+    {
+      "Sentence": "The TV show everything can't be and in real time, but getting that sort of feedback means people are paying attention and care and that was really fun. That's nice. One of the things that I've noticed is on TV shows. In general is that people always seem to use IP addresses that are out of range as soon as an IP address is greater than 255. You go OK well. That's just like when they dial. A number and it's 555 something something something that's just their way of saying Hey, we're in a movie, but",
+      "Duration": 30,
+      "Offset": 550
+    },
+    {
+      "Sentence": "IP addresses in Mr. Robot all resolved to something.",
+      "Duration": 3,
+      "Offset": 581
+    },
+    {
+      "Sentence": "Yeah, that was credit to core long before I got involved in realizing that there was a tremendous opportunity to not just do that for realism sake, but to then start to build in this alternate reality game and the way the RG works is just about any IP address that you see on screen phone numbers email addresses QR codes. All are sort of hidden glimpses at this story behind the story that you can follow online. If you go to an IP address there might be a puzzle or a sort of.",
+      "Duration": 31,
+      "Offset": 585
+    },
+    {
+      "Sentence": "Hacking challenge that's inspired by something from the episode. If you message one of the email addresses. You might get a response back and that sort of puzzle world drives a tremendously passionate following Mr. Robot Air G fans who spend lots of time on discord and on Reddit talking about the puzzles working their way through and core has another separate team that he had worked with that, really did a tremendous job of building out that side of the universe and making it a really interesting compliments to what's on screen.",
+      "Duration": 30,
+      "Offset": 618
+    },
+    {
+      "Sentence": "So how are the the augmented reality game screens? Why couldn't you use those in the show for example, I visited 1922 51682, 42? Which is got the evil Corp background. It's got a whole shell. I mean, it's a very nice. Similac room of what happened on screen and I can actually follow and type in what Elliot typed on the show could you use them at the same time that could you use that for the for the show or did you have to mark those up differently?",
+      "Duration": 30,
+      "Offset": 649
+    },
+    {
+      "Sentence": "It depended some of the RG sites are actually designed around the mockups that were made for scenes where the same sort of thing is apparent in the episode. There are steps in the ARG that go outside or beyond, the scope of what you ever see in any of the episodes and so those were done separately. But yeah, there were more than a few cases where the same things that were used to design. What was shown on screen ended up being used. There the way it worked is after writing out in designing the scenes.",
+      "Duration": 30,
+      "Offset": 680
+    },
+    {
+      "Sentence": "In virtual machines actually set up the software. We're going to show to function almost as if it was an actual operator hands on keyboard and so for example, there's an episode where Elliotts using volatility, which is a memory forensics tool to look at some malware. That's infected his laptop and he's actually when we created that I was actually using volatility with the memory image that I captured from alinac system that was actually infected by me with.",
+      "Duration": 30,
+      "Offset": 711
+    },
+    {
+      "Sentence": "Where I was seeking to emulate and so all of the screens that we put together for every single shot are produced like that. I try to mimic as much of it in a real system as possible. I take lots of screenshots lot of copying and pasting so that the text can be provided to the design folks and then core works with the animator that show uses to turn that into what's actually a flash animation. One of the last places on earth? Where Flash is still used and the flash animation is actually what gets played in real time.",
+      "Duration": 31,
+      "Offset": 742
+    },
+    {
+      "Sentence": "As the actors are interacting with their computers to pretend as if they're actually typing so they're typing. The keys and it's actually advancing an animation of what we designed and kind of pre recorded that was my next question how they sync up their keystrokes. So it's like hackertyper.com, where they hit the keystroke and it moves you forward one keystrokes. They really can't type them incorrectly.",
+      "Duration": 22,
+      "Offset": 774
+    },
+    {
+      "Sentence": "Yeah, that's exactly right. It's essentially allowing the actor not have to worry about the hitting the right keys or even necessarily the precise timing of everything it allows it to auto advance in a way. It also ends up looking a lot better like if you ever see something where they have green screened in a computer screen. It always looks a little bit off like the lighting and the style whereas actually filming the screen. Displaying the contents looks a lot better. The flip side of this because that means that when we do production.",
+      "Duration": 30,
+      "Offset": 797
+    },
+    {
+      "Sentence": "To be done before they film and so I remember during production seen season week after week, core would email me with the chunks of the script that we had work done before it said. Hey remember when we had come up with this scene like 3 months ago were going to be filming. These 10 blocks in the next week. So I need all of these ready, a week in advance of the animators can create it and so that's sort of scheduling in blocks meant a really intense couple of months of pudding those shots together in batches.",
+      "Duration": 31,
+      "Offset": 828
+    },
+    {
+      "Sentence": "Ready for when cameras rolled well and you were doing all of this work with Mr. Robot independent of your day job at anytime at the security firm. Yeah, that's right. This was sort of my second night job so night owl. So after dinner. I'm almost always tending to some work, especially since I live on the East Coast in the DC area. But my companies based out in the Bay Area. So I'm up late as it is and then on top of that, yeah during.",
+      "Duration": 30,
+      "Offset": 860
+    },
+    {
+      "Sentence": "Work usually late at night. I'd start getting to working on that and then on weekends as well. But it was a lot of fun. It kind of scratched an itch that's very different than my day job. But at the same time, I look at it as complementary because my day job has me doing a lot of work thinking about defending against attackers and buying what I learned in my past life to building defenses and helping companies detect and respond to attacks and working on the show.",
+      "Duration": 30,
+      "Offset": 891
+    },
+    {
+      "Sentence": "Me back in the mindset of how I first got involved with security, which is thinking about how to break security controls and hack in and so keeping that sort of offensive cited mind of your brain working is really productive. I think insecurity. You can't just be pure defense or pure offense. You need to have sort of balance working the show gave me that yen in the Yang well and in the first episode of season 3. Even though your job at 10 AM is your day job. You were able to work 10 AM software.",
+      "Duration": 30,
+      "Offset": 922
+    },
+    {
+      "Sentence": "Because it was a natural opportunity for Elliot to put a firmware Patch on a UPS.",
+      "Duration": 4,
+      "Offset": 953
+    },
+    {
+      "Sentence": "Yeah, that it's actually in the second episode of season 3, there's this opening montage of Elliot at work and Evil Corp and ended up being really, really fun scene. Where in like the first 6 or so minutes of the episode. It's just really fast, cutting and there's about. I think 4 or 5 different shots that we worked on and one of them is a glimpse, Itanium and it was fun opportunity to actually take some of the software that I work with every day and have a role in helping create an?",
+      "Duration": 30,
+      "Offset": 959
+    },
+    {
+      "Sentence": "And actually inserting it into the show in a spot where it made sense, which is yeah, as you said deploying a Patch to a bunch of Linux servers that were then managing uninterruptible power supply devices. It wasn't it attempts to give tanium a gratuitous plug. It was just a natural, yeah, but what I actually tried to do throughout the season and even in the prior season was also not just OK stadium, but also showcase like a lot of the great open source software.",
+      "Duration": 30,
+      "Offset": 990
+    },
+    {
+      "Sentence": "Security researchers that I admire and respect and have followed for a long time built so we have many cats in there. We have elastic search in there. We have volatility framework as I mentioned earlier. It was really fun to just think about all the tools that I love using or have learned so much from and think about how to weave them into a show in a way that would both fit the story and also give the creators of those tools from deserve. It recognition for their work. Did you I remember when the people that worked on the tool for?",
+      "Duration": 30,
+      "Offset": 1021
+    },
+    {
+      "Sentence": "Saw Trinity in the matrix using their tool and there, a lot of the screenshots on Twitter, like Oh my God. This just happened. Did you give people a heads up in the open source community that you were going to do this, or did you just wait for the tweets to happen, the night after the show aired generally. I gave folks a heads up there. A few cases where I just in the crazy schedule of things forgot to do so, but yeah, I did give a few folks advance notice like right before to say. Hey, you may want to watch. Tonight's episode and make sure to check out minutes, 34, you made.",
+      "Duration": 32,
+      "Offset": 1052
+    },
+    {
+      "Sentence": "Yeah, that was a lot of fun that's awesome. One of the things that I think also makes the use of software compelling piece of drama on Mr. Robot more so than I think other other shows that try to use computers in a dramatic sense is the idea that Elliot is almost always interacting with hardware in some way whether he's working on Linux machines. That talk to UPS is or the early episodes when he's using Raspberry. Pis is that because of any concerns. You have around. I OT or just because there's such a proliferation of hardware that.",
+      "Duration": 33,
+      "Offset": 1085
+    },
+    {
+      "Sentence": "I can change the world alongside the software that runs it.",
+      "Duration": 2,
+      "Offset": 1119
+    },
+    {
+      "Sentence": "So, too, we've actually tried to just have a really wide variety of the types of hacks that Elliot and others perform in the show and you know if we just did exclusively like enterprise. OS Windows style hacks that be really dull kezele end up looking kind of the same at a certain layer and so weaving in attacks that have kinetic potential like the UPS stuff. Some things that are IOT based like the car hacks and season one.",
+      "Duration": 32,
+      "Offset": 1123
+    },
+    {
+      "Sentence": "Alright and even in season 3 when we have some social engineering like with the on star hack where Irving calls up the emergency support number so that he can pretend that he's law enforcement and get an OnStar engine cut off to the vehicle. That's chasing them all of that is an attempt to introduce as much variety as possible in stacks and it's another fun way that need for a creative and exciting story pushes us so.",
+      "Duration": 30,
+      "Offset": 1156
+    },
+    {
+      "Sentence": "Car heck, I just mentioned the on star one came from in the writers room. You know request to figure out a way to have an automotive hack that would allow Irving to lose their tail and what we didn't want to do is kind of Hollywood nonsense hack or just magically at that moment. He has the right tools to remotely hack and stop a car over the air 'cause that just to simply does not exist in a way that would be believable and so.",
+      "Duration": 28,
+      "Offset": 1187
+    },
+    {
+      "Sentence": "When you're posed with a challenge like that, as writers and consultants for the show. We think about OK well. You know how do we meet this in the middle and create something that's fun and exciting, but still has enough basis. In reality and that actually drives a lot of variety and I think some of the interesting and creative hacks that have made their way into the show. One of the hex that took me like cooking it back like I had to pause and just think hard about that was the one where the FBI is looking at Elliot system, they're doing remote access in.",
+      "Duration": 33,
+      "Offset": 1216
+    },
+    {
+      "Sentence": "Templar and this is try to give you a compliment for a simpler technical expert would have said. Oh yeah, they're running. VNC RDP or there, sending screenshots with PN GS of what's going on in the screen? Can you maybe explain? What you ended up doing a bleeding edge hack to allow someone to see Elliott's machine remotely, yeah, so that was based on research called a monitor. Darkly, which was presented at Blackhat and Defcon in 2015 or 2016, I think.",
+      "Duration": 30,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "The basis of it basically involves finding that the display controller hardware that is present in millions and millions of monitors is vulnerable to a hardware layer attack whereby basically implanting a device into the display port and USB interfaces. I believe you could essentially manipulate. The contents of the screen, and or read the contents of pixels on the screen. We took a bit of creative license and adapting the.",
+      "Duration": 32,
+      "Offset": 1280
+    },
+    {
+      "Sentence": "That could be performed and combined to the hardware implant with like a small cellular enabled PC on a stick so that the images could be transmitted to a FBI receiver. But yeah, that wasn't that was driven by one. They need to show something cool, but 2. We also had a storyline reason where it needed to be a hardware implant rather than a software implant and so we got to thinking well. Do we have a hidden camera in the room that didn't workout.",
+      "Duration": 30,
+      "Offset": 1313
+    },
+    {
+      "Sentence": "Something in one of his devices key logger no that wouldn't work well what about in the monitor that was kind of the thought process that let us down that path if you ever bumped into a story requirement, where I accidentally didn't exist and you had to really make something fictional.",
+      "Duration": 15,
+      "Offset": 1344
+    },
+    {
+      "Sentence": "We've almost always found a way the the on star hack. I mentioned earlier with stopping the car was one of those were at first read were like when are we going to make this work and then corrine? I went back and forth in a few different ideas with Sam Esmail and eventually landed on Irving doing that social engineering call to OnStar, which I was worried about how it will be received, but we actually found documentation.",
+      "Duration": 30,
+      "Offset": 1360
+    },
+    {
+      "Sentence": "Call used in terms of making the phone call talking with the emergency reps. The sequence of things that happens when you ask for ignition cut off the confirmation light blinking of the brake lights and we replicated that on the scene and so we made it work and it was well received. There were some others where likewise we made adaptations the UPS hack that starts in season 2 and then continues on of course at the season 3 was one with firm basis in reality, there have been.",
+      "Duration": 30,
+      "Offset": 1391
+    },
+    {
+      "Sentence": "Facts like that where the use of or the bypass if digital signature validation allowed for malicious firmware to be introduced into industrial control devices. There was a hack of the Ukrainian power grid. A couple of years ago, where that was one of the techniques used. There have been data center explosions caused by leaking batteries. One of the other consultants first provided that bit of inspiration when the UPS hack was introduced in season 2 so.",
+      "Duration": 27,
+      "Offset": 1422
+    },
+    {
+      "Sentence": "There, like I said there's there's always been ways to we have enough reality and to take an initial concept, and run with it in a way that we all found acceptable myself and the people who listened to the show. Here are largely application developers and I think that's probably fair to say that security folks would feel that most application developers are blissfully ignorant of a lot of stuff you know, we do our best to avoid SQL injection and kind of the basic stuff but I always hear from the most paranoid security people like if you really knew.",
+      "Duration": 31,
+      "Offset": 1450
+    },
+    {
+      "Sentence": "Run out there, you'd never never sleep. I'm curious on a personal note like is that is that true is there. Can you even walk through your house without feeling like you're looking for exploits in your fridge?",
+      "Duration": 11,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "You know, I'm I'm jaded at this point after being in the security industry as a practitioner for 14 or 15 years now. I just intrinsically assume that just about anything can or will be broken at some point and I mean, the headlines in the news week after week, kind of bear that out, if it's not a retailer being hacked and losing millions of credit cards. It's a healthcare company being hacked and losing a ton of patient data.",
+      "Duration": 30,
+      "Offset": 1495
+    },
+    {
+      "Sentence": "Or it's an industrial control system being hacked because something was exposed to the Internet in a way that it should have been and so I think that general awareness is not just limited to security practitioners anymore because enough of these make the headlines week after week were in an interesting place where there are in some places better security technologies that have ever existed like often will say that the computer in your pocket if you have an iOS device for example, is many, many.",
+      "Duration": 30,
+      "Offset": 1527
+    },
+    {
+      "Sentence": "More secure than any general computing device that we've previously engineered and so we've clearly come along way in learning? How to build secure things. The problem is that while that may be the case. The rate at which other computing devices that don't have that degree of due diligence into their engineering an are thrown online at incredible pace. Just vastly out seeds exceeds. Rather, the pace with which we can continue to build and design and enforce good security practices.",
+      "Duration": 31,
+      "Offset": 1557
+    },
+    {
+      "Sentence": "The scale at which that's happening is is frankly, terrifying, but will probably continue to inspire really entertaining fiction. I hope so. I'm curious, though without getting too much of the specifics are trying to pick on iPhones versus whoever but is it because of smart people at Apple designed the iPhone to be more secure or is it because of the walled garden that lives within versus all the different Kickstarter things where someone decides to make a light bulb that runs a version of Lennox and then puts the.",
+      "Duration": 30,
+      "Offset": 1589
+    },
+    {
+      "Sentence": "Device out there in the world and then goes out of business is this a matter of the architecture of the iPhone or a focused way of securing that Apple is applied to it well. I think the architecture comes from that focus and there's obviously a business focus. Also in having a walled garden, but I think iOS and on the Google side Chrome. OS are examples of operating systems where security begins at the hardware layer of trust that.",
+      "Duration": 30,
+      "Offset": 1621
+    },
+    {
+      "Sentence": "They did from the software and the underlying operating system that alone is a very different design. Decision then kind of the way general purpose computers and PC's that we grew up with work and.",
+      "Duration": 13,
+      "Offset": 1652
+    },
+    {
+      "Sentence": "From that point every time the system is opened up a little bit more to allow for applications to run to allow those applications to share data with one another to add extensions. They're all being added incrementally after a lot of scrutiny about how to make sure they still work with that underlying foundation of security, the operating system was initially designed for the device was initially designed for and so kind of the opposite approach of starting with something that's completely open and unrestricted and then trying to cordon off activity.",
+      "Duration": 32,
+      "Offset": 1665
+    },
+    {
+      "Sentence": "And if the ongoing struggle of enterprises now with your classic windows and Linux PC's and I mean, even we see that with OS X on the desktop where taking an open operating system and then constraining and securing it as far more difficult than starting with something very closed off at the hardware layer. Even and then, adding incremental features to make it do more things and it seems like also even really, really closed systems like the Nintendo switch as an example.",
+      "Duration": 30,
+      "Offset": 1699
+    },
+    {
+      "Sentence": "To make the Nintendo switch able to get onto a captive portal into on to hotel Wi-Fi. They needed a web browser. They put in web kit and the first exploits end up being that exploiting that that crack in the door. Yeah, exactly I'm glad you brought that up. I'm also in my limited spare time a gamer and I haven't left my Nintendo switch. I wish it had access to game saves in the cloud and the reason that it doesn't have game saves in the cloud is because of concerns over.",
+      "Duration": 30,
+      "Offset": 1729
+    },
+    {
+      "Sentence": "Which they can be used to load malicious code and that's been a pathway for hacking gaming devices in the past and so obviously intended was trying to I'm sure engineer around that carefully but you know the same thing goes with like the iPhone. For example, I was pretty early adopter of the iPhone and I remember there was early early days where it didn't have an App Store and everyone was kind of just amazed that they could even release device without supporting apps and sure enough, they incrementally added the feature when they were comfortable doing so in a way that.",
+      "Duration": 33,
+      "Offset": 1761
+    },
+    {
+      "Sentence": "Turn of course, conveniently also way they could monetize really nicely, so the same thing. I suspect will happen with the switching game saves and again when you incrementally add features after pudding the engineering thought and How do I do that securely you just end up with a much different products then when you take the opposite tack.",
+      "Duration": 18,
+      "Offset": 1794
+    },
+    {
+      "Sentence": "I sure hope they fix that soon because I've got like 85 hours into Xenoblade and I'm I swear if I freaking lose that save I'm going to be pretty sad.",
+      "Duration": 7,
+      "Offset": 1814
+    },
+    {
+      "Sentence": "Yeah, I don't know what I do if I lost my breath of the wild save. After all those hours. So my last question is how close is is company reality like if you look at the company that you work for Tanium is that company similar to the security and endpoint systems management companies that you see in shows like Mr. Robot.",
+      "Duration": 18,
+      "Offset": 1821
+    },
+    {
+      "Sentence": "So it's interesting because we joke at work that evil Corp would be a great real world customer for the technology titanium because we really specialize in doing security and operations at massive scale at environments that sometimes have hundreds of thousands of computers. The kind of flip side of that is in the entertainment world and even in Mr. Robot, the sort of day-to-day functions of it pops like patching systems.",
+      "Duration": 30,
+      "Offset": 1841
+    },
+    {
+      "Sentence": "Not really something that is terribly exciting and so you know, we have that glimpse of that in that one episode of Mr. Robot, but then most of where interest in television and media round computer security isn't showing the hacking or showing people catching and detecting and stopping the hacking. We do plenty of that itanium, but from a software perspective. In other words, equipping companies to fish for themselves and detecting responding to attacks and so depicting that in a show is hard because it's really like internal operations and internal security function.",
+      "Duration": 32,
+      "Offset": 1871
+    },
+    {
+      "Sentence": "The other company that I kind of Analogize to my past life is all safe in the beginning of Mr. Robot. That's where Elliot works and that's a lot like my prior employer. I used to work at Mandiant, which is now part of fire I and that's a consulting firm. That does incident response work and so having worked with a lot of other consulting firms. That sort of day-to-day job of having a fire alarm from a customer and having to respond to a breach and investigate.",
+      "Duration": 30,
+      "Offset": 1905
+    },
+    {
+      "Sentence": "Is something that is really compelling to see on screen? I think Mr. Robot did a great job in season one of kind of capturing that little bit of industry, yeah, I think again the cool thing is.",
+      "Duration": 13,
+      "Offset": 1935
+    },
+    {
+      "Sentence": "More and more people touch technology as part of their day jobs than ever before. And so just as you have as you mentioned before shows that highlight bits of the medical industry like hospital dramas and shows that illustrate bits of legal industry like the myriad of courtroom dramas. I think you're going to continue to see more and more shows that show bits of what it is to be a day in the life of people involved with technology in the corporate world. That's going to be true from a consulting perspective or internal like it pops and security.",
+      "Duration": 30,
+      "Offset": 1950
+    },
+    {
+      "Sentence": "Very cool well thanks so much Ryan 'cause Ansehen for chatting with me. Today I really. Appreciate it no problem. Thank you. Scott is great to talk to you. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 11,
+      "Offset": 1981
+    }
+  ]
+}

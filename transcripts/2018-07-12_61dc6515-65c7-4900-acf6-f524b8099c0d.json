@@ -1,0 +1,453 @@
+{
+  "id": "61dc6515-65c7-4900-acf6-f524b8099c0d",
+  "Title": "Web Accessibility and a focused on A11Y with Nicolas Steenhout",
+  "PublishDate": "2018-07-12",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/9412dd5c.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 8
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users.",
+      "Duration": 7,
+      "Offset": 41
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes today. I'm talking with Nick Steinhaus from. I NCL dot CA and the Accessibility rules podcast? How are you Sir? I'm doing pretty good Scotts yourself? I'm lovely and thanks for chatting with me today you are a speaker in a trainer, and consultant on web Accessibility, and disability and you're actually a francophone aswell bilingual do you podcast in both English and French?",
+      "Duration": 30,
+      "Offset": 53
+    },
+    {
+      "Sentence": "So I started podcasting in English, but I'm actually preparing a couple episode in French for ready for the best idee 14th of July, coming up in a couple months. Alright, Europe in Canada. Montreal alright cool, so one of the things that I wanted to talk with you today about is I noticed in April end of April that the web content Accessibility guidelines. WCAG is at a proposed recommendation.",
+      "Duration": 31,
+      "Offset": 84
+    },
+    {
+      "Sentence": "There was a content Accessibility guidelines 2 that was, I want to say 2008 did. We just go from 2 to 2.1. It took 10 years to do it. That's right? It took 10 years to get there and it took quite a long time to go from one to 2 as well. But things are pretty much on the ball now, so we're going to see a more rapid iteration in as much that the W 3 C does not do anything quickly because their standards and it's important to get it right, but.",
+      "Duration": 32,
+      "Offset": 116
+    },
+    {
+      "Sentence": "Yeah, we're moving ahead with 2.1 I.",
+      "Duration": 3,
+      "Offset": 149
+    },
+    {
+      "Sentence": "Have it on good authority that is going to be a proposed recommendation in June, so as of next month. That's good not to put too fine. A point on it, but I'm going to go out on a limb and say that it's a lot's happened in 10 years? Why is this not 3.0?",
+      "Duration": 16,
+      "Offset": 153
+    },
+    {
+      "Sentence": "Because they're working on silver, which is actually going away from the denomination of web content Accessibility guidelines. It's actually going to be called just the Accessibility guidelines, so the code name is silver since Accessibility guidelines is AG, which is on the periodic table, reflecting the name of silver, so they needed to get something in between to be able to address some of the issues.",
+      "Duration": 30,
+      "Offset": 171
+    },
+    {
+      "Sentence": "2 point hold that aren't addressed around cognitive disabilities around.",
+      "Duration": 7,
+      "Offset": 201
+    },
+    {
+      "Sentence": "Low vision issues and a few other things that we had realized as experts that weren't working, quite as expected in 2.0. I see OK so let me see if I can paraphrase if I understand this so 2.1 is is a revision or a refinement of 2.0, which was well thought of and been around for awhile so even though it's 10 years. It's a good thing that we're kind of tightening the screws on WCAG 2.0.",
+      "Duration": 30,
+      "Offset": 210
+    },
+    {
+      "Sentence": "The the element for silver is AG, so then that would explain why it's codenamed silver and then that's going to be the next generation. The next the future of web Accessibility. That's correct. It's important to understand that the upcoming 2.1 are not actually eliminating everything in 2.0, is kind of add on so there's a series of success criteria's that are going to be added to the guidelines, but they're not.",
+      "Duration": 30,
+      "Offset": 241
+    },
+    {
+      "Sentence": "What was there in the past so it's it's extending and improving? What's already there who are these guidelines for are they for me and the listener? Who are web developers or they for the browser makers. The short answer is yes, there for everybody out there. The browser makers need to understand what's happening out there because they may need to understand how to implement some of the things under the hood but?",
+      "Duration": 30,
+      "Offset": 272
+    },
+    {
+      "Sentence": "It really primarily domain thing I think it's mostly about the developers and business owners out there that want to make.",
+      "Duration": 9,
+      "Offset": 303
+    },
+    {
+      "Sentence": "Their site or web based apps accessible for people with disabilities. It's really kind of like a blueprint of things that we need to do to make sure that the site works for everyone, regardless of Technology. Assistive technology, etc. There is a word or phrase that you put in there. Just a moment ago. Success criteria that's a very important phrase. It's kind of the thing that informs the entire Working Group Yeah.",
+      "Duration": 30,
+      "Offset": 313
+    },
+    {
+      "Sentence": "Content access ability guidelines are broken down into different different elements and first. There's 4 principles those are.",
+      "Duration": 9,
+      "Offset": 344
+    },
+    {
+      "Sentence": "Elements must be perceivable operable understandable and robust.",
+      "Duration": 4,
+      "Offset": 355
+    },
+    {
+      "Sentence": "Based on those 4 principle, then we have 12 guidelines an each guidelines is broken down into a success criteria so we may have things for example, success criteria 1.1, .1, is non text content. That's basically the success criteria that explains that if you have an image. We have to have alternate information about it for screen reader users basically.",
+      "Duration": 27,
+      "Offset": 361
+    },
+    {
+      "Sentence": "Of course, if there's information about the image for screen reader users suddenly there's information for search engine crawlers because an image is not normally going to give very much information to Google or Bing or other search engines so.",
+      "Duration": 17,
+      "Offset": 389
+    },
+    {
+      "Sentence": "These success criteria's are there to help us understand what we need to do to make a page or not accessible.",
+      "Duration": 7,
+      "Offset": 407
+    },
+    {
+      "Sentence": "OK and then this breaks down these 4 principles of Accessibility into like a little bit more detail so for example, the first one perceivable.",
+      "Duration": 8,
+      "Offset": 415
+    },
+    {
+      "Sentence": "Says it can't be invisible to all of the senses, the user has to have some way to get that information. That's from now. Most people I would say most kind of what is the term if someone is not disabled or not differently abled we don't say normal regular typical? What is the right phrase into disability community. We often jokingly say instead of able bodied will say there temporarily able body because at some point in our lives. We all acquire some form of disability whether it's.",
+      "Duration": 31,
+      "Offset": 424
+    },
+    {
+      "Sentence": "Parent a situational impairment or permanent one, but I think that people without disabilities. Able bodied people. I think these classifications ultimately are not particularly useful because we obviously the concept of Accessibility is to help people with disabilities. But these things help. Everyone it really comes down to usability for example, there is a success Criterion.",
+      "Duration": 31,
+      "Offset": 456
+    },
+    {
+      "Sentence": "That is about color contrast, so you have to make sure that the text has enough contrast against this background. And if I'm going to the specific for small text, which is smaller than 18 point, the color contrast ratio must be 4.5 to one so it's got to have a fair amount of contrast, so if you're thinking great text on gray background. It's not going to meet that success criteria from an Accessibility perspective, but if you go out.",
+      "Duration": 31,
+      "Offset": 488
+    },
+    {
+      "Sentence": "I decide that has great text on gray background on your phone and you're in full sun chances. Are you gonna be able to see and make sense of what's on the page anyways so.",
+      "Duration": 9,
+      "Offset": 520
+    },
+    {
+      "Sentence": "We're looking at tying things.",
+      "Duration": 1,
+      "Offset": 531
+    },
+    {
+      "Sentence": "That help.",
+      "Duration": 0,
+      "Offset": 533
+    },
+    {
+      "Sentence": "People with disabilities that also help everybody else, you know that is a really like if anyone gets a message out of this podcast in my opinion, I think it would be that this isn't about web developers who are listening to the show thinking. Here's some extra markup that I put in my website. So 1% of my users that aren't me can use my website. It's really here's a set of best practices that are going to make the web available to everyone.",
+      "Duration": 30,
+      "Offset": 535
+    },
+    {
+      "Sentence": "People who are typically abled and much better for people who are differently, abled is that fair to say. Yeah, that's that's fair to say that there's all kinds of examples like that. One of the things that we recommend is used plain English. When you write on your site. Assuming your site is in English right so plain language. And that's really good for people that have maybe cognitive impairments or learning disabilities like dyslexia, but it's also really good for.",
+      "Duration": 30,
+      "Offset": 566
+    },
+    {
+      "Sentence": "Engines, like Google Translate it's also very good for people that have maybe a situational impairment as let's say your mother of a young baby. It's 4 AM your baby is not doing too well and you're juggling on the one hand, the baby in your left arm and you're trying to look up information on your phone on the right arm.",
+      "Duration": 22,
+      "Offset": 597
+    },
+    {
+      "Sentence": "If things are written clearly and succinctly you're going to be able to get the information much easier so there's.",
+      "Duration": 7,
+      "Offset": 621
+    },
+    {
+      "Sentence": "There's all kinds of information of.",
+      "Duration": 2,
+      "Offset": 629
+    },
+    {
+      "Sentence": "Not information, but of concepts like that that.",
+      "Duration": 2,
+      "Offset": 632
+    },
+    {
+      "Sentence": "We're primarily for people with disabilities and kind of carryover into a wider audience. Usability Yeah, I notice that there's a bunch of really great features on my iPhone for you, that you can allows you to use the iPhone with one hand. I don't typically use it with one hand but again, you have groceries in one hand and then you are situationally differently abled and suddenly you're going to want to be able to use those features and I just use them without thinking. I don't think of them as Accessibility features and that's that's really useful. Incidentally, while we're talking about Accessibility feature on the iPhone and that applies to other.",
+      "Duration": 35,
+      "Offset": 635
+    },
+    {
+      "Sentence": "Android as well and a lot of these.",
+      "Duration": 3,
+      "Offset": 671
+    },
+    {
+      "Sentence": "Technology that's we're using now without even really thinking about it actually started as assistive technology. So one of the one of the primary example. I gave in my talk about the evolution of Assistive Technologies is the keyboard keyboard as we know it is pretty much a devolution from a handsome bald typewriter that started in the 18 hundreds where directora school for the deaf wanted.",
+      "Duration": 30,
+      "Offset": 675
+    },
+    {
+      "Sentence": "Is deaf students to be able to write and interact with people as fast as people? Were talking and from there? It evolved so we were using today a product that was initially conceived for people with disabilities if we're talking about.",
+      "Duration": 14,
+      "Offset": 706
+    },
+    {
+      "Sentence": "Siri the assistant is also an evolution of that there's all kinds of things that we use in pretty much every day that started their life as product design for people with disabilities and lo and behold. It's actually really useful for everyone, yeah, and in fact, if you take the series in the Cortana is in the Alexis of the world. They they are often faster and more convenient. I'm still trying to convince my spouse that talking to Siri to search the Web is faster than using her thumbs so sometimes we have.",
+      "Duration": 34,
+      "Offset": 721
+    },
+    {
+      "Sentence": "Places to see who can find the information quicker and usually asking a digital assistant is is a better way than just tapping it out, yeah, and the funny thing is, is that you know, these products that came into everyday use for us are suddenly going through that circle again of being even more useful for people with different disabilities. There was a bunch of noise happening a few weeks ago, maybe even a month ago about how.",
+      "Duration": 30,
+      "Offset": 757
+    },
+    {
+      "Sentence": "Are blind really are appreciating the ability to use Alexa for all kinds of things so it's the circle. You know something comes for people with disabilities. It goes into wide use for everyday use. And then there's refinements on that and end it helps people with disabilities and even more one of the things that I've been really happy. About is there's there are people who like closed captioning and there are people who need close captioning. I don't know if it's because I'm getting older, but my wife and I always watch television.",
+      "Duration": 32,
+      "Offset": 788
+    },
+    {
+      "Sentence": "On somehow I make it, I don't know it's simultaneously makes my hearing better and worse. But I never miss a word because I've got the words on Yeah. Of course now. I can't watch a show without the captioning because I feel like I'm missing something but I've notice that the rise of Twitter, is that all videos have captioning at the bottom and you have, like, those news videos that you can watch a video with audio muted in line like at DMV or something.",
+      "Duration": 30,
+      "Offset": 821
+    },
+    {
+      "Sentence": "Yeah, I really enjoy that I think that's a benefit for everybody, yeah, and it's also useful captioning is useful if you're.",
+      "Duration": 7,
+      "Offset": 851
+    },
+    {
+      "Sentence": "Trying to find out information about something other you find a tutorial on YouTube, you're in a cubical large room with?",
+      "Duration": 10,
+      "Offset": 860
+    },
+    {
+      "Sentence": "Dozens of people you don't want everybody to listen in as to what you're doing. You don't want to disturb their ability to work or get on calls so suddenly captions are very helpful, there as well, yeah, and that's 1 of the reasons that this podcast has partnered with a company called gretaGRETTA.com. So we have captioning and transcripts for all the episodes of Hansel minutes and I've also got captioning on my other podcast.",
+      "Duration": 29,
+      "Offset": 871
+    },
+    {
+      "Sentence": "And that works great not just for people who with a hearing disability, but with people who are learning English. They can read and listen. Along yes, I've been pushing so hard for everybody that I know that podcasts provide transcripts because it makes a big difference for as you say people that are not necessarily native English speakers if someone is looking for information.",
+      "Duration": 23,
+      "Offset": 901
+    },
+    {
+      "Sentence": "It's often faster for them to read the transcript faster than they can sit through a half hour show. It's also a question of making things, accessible for people that aren't able to listen to the show. But there was a case study done by by NPR when they decided to put their transcript on every single show for This American Life. They saw a whole bunch of benefits. Suddenly, they had more search engine results. They had more people coming to the show, they had more people download the show.",
+      "Duration": 32,
+      "Offset": 925
+    },
+    {
+      "Sentence": "And they realized they had an indexed transcript of every single show they had so they could find information quite easily about what was on the show 5 years ago, or 7 years ago.",
+      "Duration": 10,
+      "Offset": 959
+    },
+    {
+      "Sentence": "Absolutely.",
+      "Duration": 0,
+      "Offset": 970
+    },
+    {
+      "Sentence": "Hey folks, I want to take a moment to thank our sponsors and remind you that when you support them You're supporting Hansel minutes because they make this show possible.",
+      "Duration": 8,
+      "Offset": 972
+    },
+    {
+      "Sentence": "Innovative developers help improve the lives of millions of small businesses in accounts that use QuickBooks worldwide. Your app could make the difference that helps them work smarter an put more money in their pocket enter into it developer from tech tools to growing your customer base to helping you get funding into it developer helps you rap go from concept to company. Find out more at into it. Dot me slash code that'SINTU it dot me.",
+      "Duration": 31,
+      "Offset": 981
+    },
+    {
+      "Sentence": "It seems like there is also AA use for AI here. If you mentioned before at the very beginning thinking about images right now on Twitter if I tweet an image right underneath the image. There's a click that says add description. So it's basically making the alt tag. A very natural thing to type but barring typing that myself manually. I think that either now or in the future will be able to have a eyes that can say. Yeah, this is a picture of a red lunch box sitting on a table.",
+      "Duration": 30,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "That can be described even if a human didn't do it. AI is the future of many Accessibility features on YouTube. Right now they have auto caption and not 100% accurate. In fact, it might be 85% accurate and if you're missing that one crucial word in 10. It can be aggravating. But things are getting better. Facebook has already started in implementing auto captions for photos an?",
+      "Duration": 31,
+      "Offset": 1044
+    },
+    {
+      "Sentence": "It's not perfect, but it's a lot better than it was a few years ago and the more things go. The more data. AI is going to have to be able to Paris. This information and make it more usable for people with disabilities. So I definitely think AI is going to have a huge part to play inaccessibility in future now. You are you are physically disabled. You're in a wheelchair does that affect your browsing now it has no direct effect on my.",
+      "Duration": 30,
+      "Offset": 1076
+    },
+    {
+      "Sentence": "As a wheelchair user I do have a bit of arthritis in my hands, so that can sometimes impact. My ability to use a mouse and 2 years ago, I was very silly and I ended up breaking. Both my wrists. So instead of being able to type any words per minute was stuck with a very uncomfortable type put 2 fingers kind of situation. So I ended up having to use assistive technology like dragon dictate to to interact with my computer so that.",
+      "Duration": 31,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "That was interesting because.",
+      "Duration": 1,
+      "Offset": 1139
+    },
+    {
+      "Sentence": "As a wheelchair user I had one view of Accessibility, but suddenly becoming more or differently disabled in another range. I had to re adapt myself too.",
+      "Duration": 11,
+      "Offset": 1142
+    },
+    {
+      "Sentence": "To interacting with my technology that must have been like emotionally a very strange feeling because you have one disability. You feel like you're a sympathetic as one could be. You understand disability. You're dealing with ramps all day. Then you break your wrists and then you're like, Oh, crap is this what it's like for people with quote Unquote with uh with a disability like that is, it affecting their day-to-day work and in such a fundamental way like suddenly my brain can't get the keys.",
+      "Duration": 29,
+      "Offset": 1154
+    },
+    {
+      "Sentence": "Get the information into the computer as fast as before, did that without a shock to the system.",
+      "Duration": 4,
+      "Offset": 1184
+    },
+    {
+      "Sentence": "It was not a shocking that way the shock for me was really.",
+      "Duration": 5,
+      "Offset": 1189
+    },
+    {
+      "Sentence": "This discovery that the assistive technology you really have to learn and there's learning curves. An you know for example, I was using dragon dictate? Which.",
+      "Duration": 10,
+      "Offset": 1195
+    },
+    {
+      "Sentence": "Is a really powerful piece of software that works best on windows in English?",
+      "Duration": 5,
+      "Offset": 1207
+    },
+    {
+      "Sentence": "I am a Mac user so I was trying to use it on the Mac. And that was complicated and I could not use the French version of it on a Mac at all because that's just really not friendly. So basically I discovered that the best piece of assistive technology forced me into.",
+      "Duration": 19,
+      "Offset": 1213
+    },
+    {
+      "Sentence": "Sing a different platform altogether, too if I wanted to be performance. So there's this realization that for example, someone who's blind who may have been using jaws. The screen reader called jazz for 15 years may not have an option to actually switch to a different browser or a different platform because there assistive technology works best this optimized best for certain browser on a certain platform.",
+      "Duration": 30,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "You mentioned that there there is combinations that are not official but they are kind of like the defecto combination of this browser on this platform in this language is going to give someone with a certain disability. The most success and if they change one piece of that. They're going to bump into issues. All the time. Yeah, that is frustrating. I'm looking at this list of success criteria the ones that are new to the WC AG orientation.",
+      "Duration": 30,
+      "Offset": 1263
+    },
+    {
+      "Sentence": "Sing one because I realized that 10 years ago. We weren't necessarily thinking about you know portrait versus landscape. Yeah, do you know? Why orientation is so important? I think for me? It's when I'm in bed? I want Netflix to be one way and I've got my head the other way, but I honestly don't know yeah.",
+      "Duration": 17,
+      "Offset": 1295
+    },
+    {
+      "Sentence": "A lot of people that have mobility impairments whether they're quadriplegic or have cerebral policy or something like that will actually Mount their device whether it's a phone or an iPad on their wheelchair and they can't actually change the orientation of their device easily so if your site is coded that it's only going to work on portrait or only going to work in landscape suddenly these people may not have.",
+      "Duration": 30,
+      "Offset": 1312
+    },
+    {
+      "Sentence": "Actually use your interface that see this is the thing about Accessibility. I think that people who do not have any major disabilities need to think about is you might not be able to even consider like? Why would that matter and then once you learn your like oh of course, every one of these success criteria everyone of these Accessibility things. Once you get it. You immediately go. Of course, absolutely this is important. This is important. That's right? That's amazing so these.",
+      "Duration": 30,
+      "Offset": 1343
+    },
+    {
+      "Sentence": "There's a bunch of things like you know a dozen and a half that are being added. Many of them are like we said refinements but also new things were orientation came up and then also like motion actuations. Another interesting one there. I have applications on my iPhone that require you to shake the phone. Yeah, that seems to be a new thing shake the phone for feedback not everybody can do that. That's definitely someone else might be shaking all the time because it there.",
+      "Duration": 30,
+      "Offset": 1374
+    },
+    {
+      "Sentence": "Are they sending feedback constantly they're not so you need to be able to think about that? When you go and just throw in a feature like shape for feedback? Yeah.",
+      "Duration": 7,
+      "Offset": 1405
+    },
+    {
+      "Sentence": "That's a tough one so these success criteria. You set are for both the browser manufacturers an for the developers is there a tool that I can run is there. One tool that I can run on like for example, my podcast site. That's going to tell me that I'm OK or will. I never be 100%. You know accessible. The first thing to realize is that Accessibility is not a checklist and that well. We have all these success criteria. It's very unlikely that all of them will apply to your site or your app.",
+      "Duration": 31,
+      "Offset": 1414
+    },
+    {
+      "Sentence": "The other thing is that while there are excess ability testing tools out there that runs somewhat automatically. They're not going to catch every problem out there and some of these tools will even say. Hey actually you have to manually review. These items, so with that caveat. There's there's 2 tools that I think.",
+      "Duration": 24,
+      "Offset": 1446
+    },
+    {
+      "Sentence": "Developers can can really use and rely on one is called the axe Accessibility plugin. KSI is by Deke TEQUE and it's available as a plugin for Chrome or Firefox, an it's through the inspector tools and it will actually scan your page and pick up potential Accessibility issues. The other one is more of an API driven system, which is.",
+      "Duration": 31,
+      "Offset": 1471
+    },
+    {
+      "Sentence": "It's called tenant dot IO TENON Dot. IO and that's a really powerful tool that will do the same thing. It's going to scan.",
+      "Duration": 10,
+      "Offset": 1503
+    },
+    {
+      "Sentence": "Your entire site if you want to have the entire side scanned and it's going to give potential issues. These automated testing tool at the moment our own testing against awake out 2.0 because it's not quite yet. A guideline that is ready for prime time. The 2.1 however, that said if you're coding. You really want to future proof your site and your application so you should look at using 2.1.",
+      "Duration": 28,
+      "Offset": 1514
+    },
+    {
+      "Sentence": "So yeah, automated tools are great to get a feel for what's going on a page or site to get pulse as to what's happening.",
+      "Duration": 9,
+      "Offset": 1543
+    },
+    {
+      "Sentence": "And to get an idea but there's nothing that's going to beach manual assessment by someone who's actually used to do that and then the ultimate is to actually do user testing? What people who are actually people with disabilities, so I've been doing web Accessibility for 23 years now.",
+      "Duration": 23,
+      "Offset": 1553
+    },
+    {
+      "Sentence": "And when I do an audit invariably there's always one person that uses the web in a way that I didn't expect or will because of their combination of exist if technology will find stuff that isn't quite what I expected, so user testing, which real people with disabilities is definitely something you should do at the end of the process. How far can, we take it, though we want to include everybody, but as they say on the Internet long tail is long. You can hit 80%, 90%, 99 percent.",
+      "Duration": 31,
+      "Offset": 1578
+    },
+    {
+      "Sentence": "Has different abilities. We talked about all the different abilities and disabilities that we haven't thought about that one. It's not my disability until it is if I bring in blind people for testing depth testing, etc. Will I ever be finished. You said it's not a checklist. But when do I know when to stop. Yeah, you know, there's always edge cases and one of the things that I've heard over and over the last 2 decades of doing assess abilities.",
+      "Duration": 30,
+      "Offset": 1610
+    },
+    {
+      "Sentence": "I can't code for the person who's deaf blind and paralyzed from neck down and of course, that that's you know a rare situation. What I tell people is code to the standard make sure that things are meeting W cag level AA as much as possible and throw in as many success criteria from level Triple A As you can and you're going to be doing good and then if you have someone who comes to you and say, Hey, I can't use your side because.",
+      "Duration": 30,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "Then you can look at how you can implement that but bottom line is you want to put in maybe 20% of your effort to get 80 percent of the way to Accessibility get those low hanging fruits that are actually typically fairly easy to meet if you follow the guidelines and you'll be in good spot. That's a good point. It's also worth pointing out that it needs to be more than just a casual googling for Accessibility, Checker running.",
+      "Duration": 30,
+      "Offset": 1673
+    },
+    {
+      "Sentence": "Check it like I just went to a random place and I typed in hanselminutes.com and it says no known problems. I could go and say, I'm good, but then I also went and looked at the axe tool that you pointed me too. And it gave me 41 violations with 86 needs review and then I went to 10 and which is a different tool by a different company and it said there were 4 issues. So here's 3 different tools that I've used one says 41 says nearly 86 but 41 or definite violations and one said none so.",
+      "Duration": 30,
+      "Offset": 1704
+    },
+    {
+      "Sentence": "On Who you ask I either have no work to do or weeks of work to do so. I need to put some thought into that. Yeah, I think it's a fair assumption that if you have a tool that says you have no Accessibility issue. You can completely forget that tool because unless you have done a lot of work to make sure that there are no Accessibility issues. There will be there will be issues, but comparing X 210 and they have different rules. They check for different things and different levels of.",
+      "Duration": 30,
+      "Offset": 1735
+    },
+    {
+      "Sentence": "So you have to do a bit of a balancing act. But if you have questions go on Twitter and use the # a 11 Y and ask away or there's a there's an Accessibility slack channel that you can use where people are very happy to share knowledge. So when in doubt ask the experts so Accessibility is often abbreviated as the non acronym. But a new meronym a 11 Y where the number 11 is the number of letters.",
+      "Duration": 32,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "And that is also one of the titles of your podcast. It's a 11 Yrules.com you been doing this for a while. Now, with conversations around web Accessibility, with a lot of different guests. Both abled and disabled. Yes, it's been fantastic. I wanted I've been doing Accessibility for so long and met so many people and suddenly I realized I don't know these people. I don't know what they really think we share technical tidbits and all that, but",
+      "Duration": 30,
+      "Offset": 1799
+    },
+    {
+      "Sentence": "All these people better and then I thought well surely. I'm not the only one in the community that wants to do that. So I thought. Let's do a podcast and suddenly it's been really interesting because I speak to a wide range of people and I pretty much ask the same based questions and from there. The conversations really expands into weird and wonderful and fantastic.",
+      "Duration": 24,
+      "Offset": 1830
+    },
+    {
+      "Sentence": "Areas where I'm getting to think about my own area of expertise differently, and had something like 2324 guests so far. I always ask? How do you define Accessibility an out of 23 guests 24 guests I've had?",
+      "Duration": 19,
+      "Offset": 1855
+    },
+    {
+      "Sentence": "24 different answers, it all revolves around the same thing, but everybody has a little bit of a closer definition or or something that they really care about that. They want to try involved in that so it's really kind of fascinating just briefly. I have also an enough shoot of that the neccessary rules sound bites where I do short segments 5 to 10 minutes with people with disabilities, where I ask them what's your impairment? What's your barrier and what do you want.",
+      "Duration": 30,
+      "Offset": 1875
+    },
+    {
+      "Sentence": "And developers to know so that that's a good way to to hear it in their own words as to why these things are important that is actually a very clever way to make a 30 or 40 minute long podcast also accessible to people who maybe don't have the time or the patience. You can go to a 11 Yrules.com right at the top there click on sound bites. You get 5 minutes on how does ADHD affect a web person? How does a screen reader work? What is speech recognition or color blindness?",
+      "Duration": 31,
+      "Offset": 1906
+    },
+    {
+      "Sentence": "Clever way to make your podcast, even more accessible. Thank you well thanks. So much for chatting with me. Today is been a pleasure. Thanks for having me on. We're going to have links to all the different things. We talked about like 10 and I owe an axe and on and on as well as Jozan. The very important. WCAG 2.1 rules as well as links to Nicks podcast. The A 11 Y rules podcast. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 30,
+      "Offset": 1938
+    }
+  ]
+}

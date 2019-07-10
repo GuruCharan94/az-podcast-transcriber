@@ -1,0 +1,448 @@
+{
+  "id": "947f3350-36d0-4d44-9308-524ee1c0b4ff",
+  "Title": "From F# to JavaScript and beyond with Fable and Alfonso Garcia-Caro",
+  "PublishDate": "2018-01-26",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/221fe798.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Alfonso Garcia car. Oh, he works on fable? How are you Sir? I am fine thanks thanks a lot bye in vitamins growth? Yeah, so you are part of the F sharp ecosystem, but also part of the JavaScript ecosystem and you work on something called Fable. An F Sharp to JavaScript compiler. That's pretty amazing. Actually, it's not that.",
+      "Duration": 31,
+      "Offset": 40
+    },
+    {
+      "Sentence": "Right it's quite simple, but Uh Yeah, it's it's a way to uh. I was trying to find a way to to combine these 2 ecosystems that I really likethe.net and Fr. An JavaScript so I just started this breaking and then the community had a very good response on a lot of people were helping so we got to this point.",
+      "Duration": 21,
+      "Offset": 72
+    },
+    {
+      "Sentence": "So it sounds amazing to me just because I think that even after all these years of developing software when I see a compiler or a transpiler or any kind of transformative technology. It seems impossible and amazing to me that you could take something like F Sharp and turn it into JavaScript, but you're saying no problem. Not a big deal. Of course, these requires a lot of work and special is not the.",
+      "Duration": 30,
+      "Offset": 94
+    },
+    {
+      "Sentence": "I look at the source code in a fable is actually is not so many files is uh. The core is like less than 10 files there big files is around 1000 lines, but they're not that many an we can do that because thanks to all their brakes. Like the F sharp compiler itself, which exposes all the fic and it's kind of similar to Rosslyn. So it's really easy to manipulate the AC. I don't need to worry about parsing that there so or type checking anything.",
+      "Duration": 30,
+      "Offset": 125
+    },
+    {
+      "Sentence": "We have these other pregnant JavaScript ecosystem. There is a table that is currently use but most of the JavaScript developers so they can use modern JavaScript, but they still compile to all JavaScript is compatible with both browsers like Internet Explorer or something like that.",
+      "Duration": 16,
+      "Offset": 156
+    },
+    {
+      "Sentence": "And uh and um fables kind of a bridge between the F sharp compiler. An table so I can. I don't have to worry about either party in the effort S or generating actual the JavaScript text. I can just generate AST that's abstract syntax tree sorry for people who don't know their crying. Babel will take care of. Jesse rates in the JavaScript for me, so that's that's all the Magic lies in it.",
+      "Duration": 30,
+      "Offset": 173
+    },
+    {
+      "Sentence": "So let me parse what you said a little bit because there was a lot of good information there, but it was a little bit. Dense there was a lot of stuff there, so you said. AST an abstract syntax tree. I think when people naively think about compilation. They think about like you said parsing text. So fable doesn't have to do any manual text parsing at all is that correct. Yes, that's correct because all the works already done by the Sr compiler OK, so then the input.",
+      "Duration": 30,
+      "Offset": 205
+    },
+    {
+      "Sentence": "Fable is that abstract syntax tree and that's just like a Dom for your code. Yes, something similar. Yeah, pretty this are very good and I was here.",
+      "Duration": 9,
+      "Offset": 236
+    },
+    {
+      "Sentence": "OK so you've got this syntax tree that represents the intent of your code. Isaiah Damodar Document Object Model 'cause. We used to have a thing called the code Dom but the idea is it's a data structure in memory that represents the code.",
+      "Duration": 14,
+      "Offset": 247
+    },
+    {
+      "Sentence": "Like all the way compiled or on its way to being compiled. Yeah, basically the Sr compiler. That takes this AST or code zone and it converts. It converts it to IL so intermediate language for the compiling to the net bytecode, but I can sneak in in this step. Now, instead of trying to compile to ILI just can actually convert this AFC too. I know I think that.",
+      "Duration": 30,
+      "Offset": 262
+    },
+    {
+      "Sentence": "The same and uh and people will take care of converting these ASD to actual JavaScript code because as you for people that know a bit of the descriptive system. There are actually many targets for JavaScript so you can target to modern JavaScript. You can target to JavaScript which is compatible with Ecma script 5 are now trying to cover everything is very difficult. But if Babel all does all this work for us. That's really useful.",
+      "Duration": 29,
+      "Offset": 293
+    },
+    {
+      "Sentence": "So Babel is at BABEL Babel, JS dot IO and this is basically a thing that let's you take kind of like next generation or modern JavaScript and compile it to whatever your browser supports so you say something like let foo equals zero and it will go and it will write whatever var equals or whatever the appropriate. JavaScript is and you say there's multiple targets. Yeah, because for example, you can decide if you have modern upon you only want to.",
+      "Duration": 32,
+      "Offset": 323
+    },
+    {
+      "Sentence": "Modern browsers like Chrome or Firefox or Microsoft Edge, you can just.",
+      "Duration": 6,
+      "Offset": 356
+    },
+    {
+      "Sentence": "Decided to target to modern JavaScript so you can have the for example, classes that are now modern JavaScript has classes and if you want to have them in your final code. You can have them that if you want to be competitive with as many processes possible. You can just compile these classes to all JavaScript that are using just functions on the prototype inheritance so this also possible.",
+      "Duration": 24,
+      "Offset": 363
+    },
+    {
+      "Sentence": "Where does babel sit as it relates to type script 'cause Babel is a transpiler and typescript is a transpiler and a type. Checker yeah, actually it's very simple as you say it perfectly so basically mostly the difference is just manipulating the syntax of the language but typoscript. Also at the type checking so it's really nice experience for specially for C sharp developer to.",
+      "Duration": 31,
+      "Offset": 388
+    },
+    {
+      "Sentence": "Trying to do some JavaScript, but I think actually the the last version of Babel is going to be compatible with typescript so you'll be able to to. I don't know about type checking part. I don't know how they're going to do it, but I think with Babel 7. It's going to be impossible to to compile Java script directly to JavaScript.",
+      "Duration": 21,
+      "Offset": 421
+    },
+    {
+      "Sentence": "That's nice so that means that you choosing to build fable on top of Babel was a smart decision and you are set up for the future. Yeah, actually was I wasn't actually start at the beginning, I was trying to decide between Babel and type of script that the time. Typoscript now didn't download to generate JavaScript directly from an AC so I had to first print typescript code and then.",
+      "Duration": 30,
+      "Offset": 443
+    },
+    {
+      "Sentence": "And also the AFC of Babel is really simple you can go to the specs on and it's very easy to model from F sharp so that's it was freezing approach time and it was working fine and also their baseball team was really good and really responsive every time that when we need some help so.",
+      "Duration": 22,
+      "Offset": 474
+    },
+    {
+      "Sentence": "What's a nice is a very good decision or not one of the guidelines for fable is just trying to be a bridge between these 2 ecosystems and don't try to hide JavaScript because sometimes there are some tools that are trying to compile to JavaScript that they tried to hide all of JavaScript to developers because sometimes a bit the scary for them. But in our case. We don't want to hide anything and with I think that there are actually very good development tools for JavaScript like.",
+      "Duration": 30,
+      "Offset": 497
+    },
+    {
+      "Sentence": "With Buck and we try to integrate them. So to take all the benefits of JavaScript element right now, so Babel is written itself with node right and Fable is written in what in if they will have some favorites in the F sharp but he also when you are running fable compiler. Usually, you run to process at the same time super sizes, so you run the?",
+      "Duration": 30,
+      "Offset": 529
+    },
+    {
+      "Sentence": "For process that is running a fable and you also run a JavaScript process. In not usually that runs the babel part of this going to convert the AFC to JavaScript and also usually you're running webpack, which is going to take all the code and put in single file and now all that kind of stuff and especially so for example, we can do hot model replacement, which is basically hott overloading your web page so.",
+      "Duration": 31,
+      "Offset": 559
+    },
+    {
+      "Sentence": "Working just modify something your card. And you don't have to do anything that several compilers waiting there and uh detect the change and uh it can. Refresh the webpage for you. This actually don't buy webpack, but thanks to the integration. We can do this we can get very, very close to the same experiences JavaScript developer has nowadays.",
+      "Duration": 22,
+      "Offset": 591
+    },
+    {
+      "Sentence": "Wow, I want to come back to that, so I'm not going to forget that, but I want to understand what is fable passing data around? Is this going just different is text files. The integration point? Yeah, it's very takes well. Not very offensive thing is just Jason files so I've just if you want to the Fable Ripper. You'll see that the baby. Leah Theseus Model with with classes and then these classes are converted to JSON.",
+      "Duration": 30,
+      "Offset": 615
+    },
+    {
+      "Sentence": "We're using an AT Super Server at the moment because I thought that maybe this could be very lightweight, and fast, an this communicating with.",
+      "Duration": 9,
+      "Offset": 646
+    },
+    {
+      "Sentence": "Uh with a Fable Order, which is kind of the Web plug plug in to communicate with a fable server failed in an then yet. Jason files that are been passed through the 2 processes.",
+      "Duration": 14,
+      "Offset": 656
+    },
+    {
+      "Sentence": "So I'm looking at Fable FABLE dot io, slash ripple.",
+      "Duration": 5,
+      "Offset": 672
+    },
+    {
+      "Sentence": "REPL&I've got up here and I'm looking at for example, basic canvas an here you're basically writing C to draw something in an HTML 5 canvas and one of the things that is kind of surprising or but interesting is all of the lines where you say fill style and fill rectangle there really close to JavaScript already. I guess it's there's only so many ways that an object with a method with parameters can be passed in.",
+      "Duration": 30,
+      "Offset": 678
+    },
+    {
+      "Sentence": "Yeah, that thanks to the we have to also binding so one of the things I was for example, a tapestry was really a big inspiration for me when I when this NFI Belan. I wanted to have something similar that is that is, you have all the power of the Fr language, but at the same time, you I wanted developer to be very close to JavaScript and native browser. APIs or even know DPS if you're writing on node application.",
+      "Duration": 30,
+      "Offset": 709
+    },
+    {
+      "Sentence": "This case are you weird. We just took them. Uh the browser. API declarations from Tabor script and we have a tool which called TS to fable that you can find the NPM.",
+      "Duration": 14,
+      "Offset": 741
+    },
+    {
+      "Sentence": "On uh this tool can convert a tapestry declaration files into Fr compiler. Fable compile Sr files an this what you are going to use too.",
+      "Duration": 12,
+      "Offset": 756
+    },
+    {
+      "Sentence": "To to interact in a very in a very similar way to what you will be doing with normal JavaScript.",
+      "Duration": 9,
+      "Offset": 769
+    },
+    {
+      "Sentence": "How compatible is this does this mean that I can take a huge code base of existing F sharp code and convert it to JavaScript or does this just mean that I can express JavaScript constructs in F Sharp language of choice, not not everything is supported so because for example, the BCL is is really, really big so it's very difficult to support everything an you can go to the if you go to fable dot IO again.",
+      "Duration": 32,
+      "Offset": 780
+    },
+    {
+      "Sentence": "Actually, we forgot to uh to add a link from the rebel to the home side. But if you were there, you go to go to a dogs.",
+      "Duration": 8,
+      "Offset": 813
+    },
+    {
+      "Sentence": "An uh uh they need the docs you see, there are not many dogs. I wanted to have very few not really big so to make sure that people will read them. But if you go to the section call Fr language LeBron compatibility.",
+      "Duration": 16,
+      "Offset": 823
+    },
+    {
+      "Sentence": "You can see, there what is supported from the Sr language from the F sharp core library andalso.net BCL base class library so you see that some of the basic collections or primitive types are supported.",
+      "Duration": 16,
+      "Offset": 840
+    },
+    {
+      "Sentence": "And uh when possible we try to compile them directly to native JavaScript system types or for example, integers or floats deconvert directly to JavaScript number, yeah, so it. It depends if this code base F code base only uses things that are really compatible with table. You will be able to compile it with JavaScript, but if it uses something that is not.",
+      "Duration": 30,
+      "Offset": 857
+    },
+    {
+      "Sentence": "A system that are y'all something like this, There is not compatible with Fable. It will fail becaus favor doesn't know how to translate these to JavaScript.",
+      "Duration": 9,
+      "Offset": 889
+    },
+    {
+      "Sentence": "OK, that makes sense so let me see if I can paraphrase so that I understand so if I'm using you know system dot date time it will end up being a JavaScript date. And if I'm using chars and strings and ints. It'll map to the appropriate JavaScript thing. But if I go and do something like system dot drawing certainly that's not going to work. It's not going to magically turn into a canvas. No this actually when I was working before fable there was a very cool break that was called the final script.",
+      "Duration": 29,
+      "Offset": 899
+    },
+    {
+      "Sentence": "And Uh, I was contributing for to that party as well, and uh one of the things I tried to do it was some kind of replacement also for the symbol drawing better.",
+      "Duration": 10,
+      "Offset": 929
+    },
+    {
+      "Sentence": "But yeah, I can try yet for for fable. I think something now library. F sharper oriented for campus will be very nice but we don't have it yet. Although we have something for Pixie, which is also elaborate to render with campus or using also web DL.",
+      "Duration": 19,
+      "Offset": 940
+    },
+    {
+      "Sentence": "And uh and I think if you go to fable dot io, slash samples.",
+      "Duration": 6,
+      "Offset": 960
+    },
+    {
+      "Sentence": "Hyphen fixing.",
+      "Duration": 1,
+      "Offset": 968
+    },
+    {
+      "Sentence": "You can see some of the examples, we have.",
+      "Duration": 2,
+      "Offset": 970
+    },
+    {
+      "Sentence": "So when you go down to fable slash samples. There's a thing called this samples browser and pixie what you're saying Pixie is PXI. Pixi JS that's a 2 GA. 2 D Webgl application. So you can see like moving things around and there's even a great example of Mario Super Mario running around and jumping up and down and there's an example that gets into an interesting question about a thing called Elm.",
+      "Duration": 30,
+      "Offset": 973
+    },
+    {
+      "Sentence": "Yes, for people who are not familiar with all of these different words. It can be a little overwhelming because here we are a few minutes into a podcast and now we're talking about Fable and pixie in Elma Nell Mission cetera, etc. So yeah, there are many things. This is there are many things. So F sharp code goes into Fable Fable uses babel. I keep wanting to save Babble, but using be able to turn that into modern JavaScript and then how is Elmore elements? What is that and why is that so inspirational to the F Sharp Community?",
+      "Duration": 33,
+      "Offset": 1004
+    },
+    {
+      "Sentence": "So enemies are different languages also unlike which is compiling to JavaScript. It's it's similar to F Sharp. It's a completely different language because it's not obviously it's not it's notthat.net language and it's only it's only compiling to JavaScript at the moment I think one of the interesting thing of Elm is that it comes with the texture. Built in which is called also the Elm architecture and it's really nice and.",
+      "Duration": 30,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "I didn't I didn't uh discover the architecture myself. It was, it's it's not exactly is the model view updates. Not exactly only Ellen but but it's element popularized the architecture in an another author Jean he created fable elements which is basically.",
+      "Duration": 25,
+      "Offset": 1070
+    },
+    {
+      "Sentence": "Taking this architecture on all the advantages to fable so it's I think it's really good that we can use if Shar, an we can take II don't want to reinvent the wheel and I want to make everything fable way or something like that. And if something is working like in this case, the architecture and really happy to take it and still if you may an use it and I don't know I'll try to Spain uh very quickly.",
+      "Duration": 31,
+      "Offset": 1096
+    },
+    {
+      "Sentence": "So uhm that check trouble if you want to know more about it. We have a fable L miss you can from the samples processor you can see maybe from the?",
+      "Duration": 11,
+      "Offset": 1128
+    },
+    {
+      "Sentence": "I seen from the home page. So I will go ahead and put links to all of the things we've talked about in the show. Notes so yeah, you can just make a Google. Search for favored enemies or just go directly to the Elm Lang. When I was going to say was I find so interesting about this is your use an analogy. I use a lot. You're snapping LEGO pieces together very nicely because you're trying to avoid reinventing a rewriting the wheel.",
+      "Duration": 31,
+      "Offset": 1140
+    },
+    {
+      "Sentence": "Really, I think it's nice. I mean, there's so many projects try to write stuff over again from scratch. And here you're saying it's just not necessary no no. I'm not. I'm not. I don't want to be the inventor. Anything and uh. Yeah, it's just a just starting. This sprite because II like the S are very much and I wanted to see how it could be applied to JavaScript ecosystem an if you also Fr is a very nice feed because it has the speed of a scripting language.",
+      "Duration": 30,
+      "Offset": 1172
+    },
+    {
+      "Sentence": "Well, she has this uh module system, which is uh. It fits very well with modern JavaScript models. So I just wanted to apply. But I don't want to say that I know everything and I know how to write the perfect way application. So I'm also learning on the waist on when the people start to contribute and I also learning a lot from the community that are.",
+      "Duration": 30,
+      "Offset": 1204
+    },
+    {
+      "Sentence": "Then this thing like Elvis and uh and now we have also Fulmer, which is.",
+      "Duration": 4,
+      "Offset": 1234
+    },
+    {
+      "Sentence": "Uh rubber or billions to Boomer, which is a CSS framework very similar to put a strap sorry again. I'm just reading all the names, but bull missed you on a?",
+      "Duration": 13,
+      "Offset": 1240
+    },
+    {
+      "Sentence": "Bulma.",
+      "Duration": 1,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "BULMA Bulma and that that's buma dot IO framework for a flex box. It's similar, but it has no JavaScript so it's very easy to combine it with other JavaScript frameworks. An full map, which is the same just starting with F it's on library created with Maxine Module, an he's.",
+      "Duration": 25,
+      "Offset": 1256
+    },
+    {
+      "Sentence": "It's a It's a It's really come.",
+      "Duration": 3,
+      "Offset": 1282
+    },
+    {
+      "Sentence": "It's really fitting very well when you're writing RR fable application with using the fable enemies and also react. Yeah, it's it's very difficult to see with the display without the code and it just recommend everybody to have a look at the samples an give you that we have the ripple Unfortunately at the moment. The ripple cannot load library. So the only examples. We have in the report is about. Yeah, like throwing the campus or things like this.",
+      "Duration": 31,
+      "Offset": 1286
+    },
+    {
+      "Sentence": "We are trying to implement this a library, loading feature so, so people can try them out.",
+      "Duration": 6,
+      "Offset": 1318
+    },
+    {
+      "Sentence": "And also we are working uh this we are entering the third year for Fable. An we're I'm hoping that this consolidation here for Fable and we're just focusing more the developer experience because it's true that I got some feedback from people that I think is happening. Now then I'm talking. I'm saying many words that it can be concerned.",
+      "Duration": 25,
+      "Offset": 1326
+    },
+    {
+      "Sentence": "For in for people that are not used to JavaScript ecosystem. So it's a bit difficult, some effort with the workers. They told me that it's a bit difficult because fable requires at the beginning bit of knowledge of the JavaScript code system so we want to automatize things we have array. This good step because we'reusing.net SDK templates. So if you go to fable dot IO and you go to the get started section.",
+      "Duration": 30,
+      "Offset": 1352
+    },
+    {
+      "Sentence": "Uh you know very fewer steps in on a couple of minutes, you can have a table app running.",
+      "Duration": 7,
+      "Offset": 1383
+    },
+    {
+      "Sentence": "So, but uh we can, we want to still improve this experience, so it's it's easier for developers to start without having to know about web back. For example, which can be a bit down teen at the beginning because it has some complicated configuration files, but but yeah, we're building on isis, tag and also on the server side of course. We have these swap or than your giraffe server that is usingASP.net core in the background so.",
+      "Duration": 30,
+      "Offset": 1391
+    },
+    {
+      "Sentence": "I think we're we're getting together a very nice stag to to create application. I'm doing. I'm a certain to use this stack myself for professional operates an it feels really nice. So I want to write more about this experience, I want all their developers to be able to share this.",
+      "Duration": 21,
+      "Offset": 1422
+    },
+    {
+      "Sentence": "Well, that's it. It's a huge amount of work and I think your point that you do have to know a little bit about the JavaScript ecosystem is true but you've you've made it very clean because all you need reallyis.net. SDK you need node. You need some package manager like yarn or NPM for your JavaScript and then F sharp as a really nice experience inside of VS code with thing called ionize, yeah, so you get a really nice experience.",
+      "Duration": 30,
+      "Offset": 1444
+    },
+    {
+      "Sentence": "Things me back to thing that you mentioned about Hotswapping. One of the nice things about Java script is that feeling that you make a change and you hit F 5 and things just update and I understand that F sharp can do something like that as well. If this hot module. Swapping yeah, I'm not even you don't even need to heat. The F 5. So, just hit the control. As so just save the file and the page will reload.",
+      "Duration": 30,
+      "Offset": 1475
+    },
+    {
+      "Sentence": "Because uh when you're using this a hot model replacement feature in CS injecting is something this something done by Webpack. So we had to do on I can do it myself, it was Maxim again make the fable compatible with hot module replacement and Webpack will inject the new code so this very good because especially when you have an application that you have some estate and you don't want to restart things again.",
+      "Duration": 31,
+      "Offset": 1506
+    },
+    {
+      "Sentence": "So you just inject the code and you can see the changes and but you don't have to. For example, you have your test in a formal formulary or something on you don't want to type everything again. So the changes will be seen without altering the state of the upper now and it's really, really very nice experience so for example, I'm working with a couple of monitors and I can just type and I see the changes happen in life on the other monitor and I don't even need to worry about changing the parament.",
+      "Duration": 30,
+      "Offset": 1539
+    },
+    {
+      "Sentence": "It's a It's really nice. Anna and also there are other tools for debugging like relax step tools. Even in spite of the name is there compatible with our frameworks, and also with elements framework. An you can just record all the states that you can just have a history of all the snapshots of the state. You have been doing it. Your application and go back time traveling in Europe and.",
+      "Duration": 28,
+      "Offset": 1571
+    },
+    {
+      "Sentence": "Now, yeah, sorry that uh it's it's difficult to explain the very quickly. But you can go through examples and the block posts and you can have a feeling of experience using this soldier. Yeah, I would not don't sell yourself short. It's always hard to explain such things on a podcast and I think you're doing a fine job. So when people plug all these things in it's a number of small.",
+      "Duration": 30,
+      "Offset": 1600
+    },
+    {
+      "Sentence": "Components and I know you've you've talked about how you leverage yarn, and you leverage babeland you leverage these different tools, so that that fable doesn't have to do more than it's kind of single responsibility, which is a very unixy perspective in a very clean way to do things. Let me ask you this, if someone who is a new developer comes to this and they see all of these different dependencies are there any risks? Is there anything that they could run into or have trouble with?",
+      "Duration": 31,
+      "Offset": 1631
+    },
+    {
+      "Sentence": "Because everything seems to be kind of zero point something version. You know, and I wonder if people might wonder if this is really something ready for production.",
+      "Duration": 8,
+      "Offset": 1663
+    },
+    {
+      "Sentence": "A yeah, I think definitely a fairly spray for production. They are if you're to the side you see uh the bottom of page? Is there samples of companies that are really using failing production. I use fable measured in a profession operates an and I think we use things that are really well supported on for example, we use them. The enemies architecture that has been proved by all the users and also has expired.",
+      "Duration": 31,
+      "Offset": 1673
+    },
+    {
+      "Sentence": "JavaScript framework that are very widely used nowadays like a redux for example.",
+      "Duration": 5,
+      "Offset": 1705
+    },
+    {
+      "Sentence": "Uh and we're using for the rendering. We're using mainly react that I probably don't have to talk about it because it's very famous this Facebook library now so.",
+      "Duration": 12,
+      "Offset": 1711
+    },
+    {
+      "Sentence": "So yeah, we don't we don't take so many dependencies is through the when you see NPM and you open the node modules folder is it looks like a like a lot of Dependencies, but are but it's actually salt tools that are really used by thousands of JavaScript developers and now they're really well supported on very well adjusted so we're just as they say standing on the shoulders of Giants so I don't like you.",
+      "Duration": 30,
+      "Offset": 1725
+    },
+    {
+      "Sentence": "But that Anna and we have also this because one of the contributors to Fable and ecosystem is Steven Format, which the author of packet, which is this package manager which is actually something that we use for fable. We use packet for the net. Nu get dependencies and John or NBN. But the committee usually use for the NPM dependencies important things that we use this lock file.",
+      "Duration": 32,
+      "Offset": 1755
+    },
+    {
+      "Sentence": "Uh we looked at the versions of all dependencies so it means that if you come back to an application 6 months later. You just install everything on the log file will solve exactly the same versions that you're using so even if the packages have been updated you are sure that this one breaker application.",
+      "Duration": 20,
+      "Offset": 1788
+    },
+    {
+      "Sentence": "It's in it is really I can say it is really easy to get started once youhave.net core and I used. I just installed yarn. All I had to do wassay.net new and install the fabled dot template. I dida.net new fable, etc, etc. And I'm actually sitting here talking to you. And while we're chatting. I've got localhost ad ad up and I can see my modules, getting built in the background. And I can update them and they're getting compiled and I'm already running this and it took me.",
+      "Duration": 30,
+      "Offset": 1810
+    },
+    {
+      "Sentence": "3 minutes to do so I would I would indefinitely encourage people to check it out. This is just going to Fable Dot. IO and going to getting started. It's a pretty great example of the net community, making something completely on their own that is really exceptional and it fits nicely with the JavaScript community. So this could be the bridge that the listeners are looking forward to bridge their love of net and their love of JavaScript, yeah, yeah? Absolutely. I think sometimes sometimes there is like this.",
+      "Duration": 31,
+      "Offset": 1841
+    },
+    {
+      "Sentence": "They they demote JavaScript on sometimes it seems that the reason I have at least compared to JavaScript is because people say that JavaScript is really bad and they don't want to use their script at some point they have to do some web front end development but I don't want to fail to be out of this street just like JavaScript. I like typescript an I think of course, you need to know.",
+      "Duration": 28,
+      "Offset": 1873
+    },
+    {
+      "Sentence": "The the weak points also strong points, but II like very much. These are development experience. Where are your Jesse detentions that happening in real time in your your code and your application so I want to have the experience and they want to fable users to have the same experience so it's really easy. We have to. If you also to documentation you see, there's documentation. There's a bit about the interaction with JavaScript.",
+      "Duration": 30,
+      "Offset": 1903
+    },
+    {
+      "Sentence": "One of the gallons of fabled design was to make really, really easy to to interact with the JavaScript. I can say that right now, it's even easier interacting from x-art with the JavaScript with favored that some things from F with C sharp even if they're both in the same net platform because we can. We are using this model JavaScript model so we can import anything any.",
+      "Duration": 30,
+      "Offset": 1933
+    },
+    {
+      "Sentence": "Have a script and you can, we can also export code from.",
+      "Duration": 3,
+      "Offset": 1965
+    },
+    {
+      "Sentence": "From F sharp so we have uh some example in this channel 9 interview that you can go from the federal dot IO site. We show an example of an application that we're importing JavaScript code and then we're exporting. This F code so the JavaScript and then we are sending the back and yeah, so it's very easy to see how easy is to interact with the JavaScript so if you need to use any Library of if you can get some code from stackoverflow in JavaScript something like that.",
+      "Duration": 31,
+      "Offset": 1969
+    },
+    {
+      "Sentence": "It's really a matter of seconds to just important to your after producing favored fantastic well. Thank you so much Alfonso Garcia Carlo for chatting with me today about Fable and the growing F Sharp and Java script community. Thank you so thanks a US card.",
+      "Duration": 16,
+      "Offset": 2001
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 4,
+      "Offset": 2019
+    }
+  ]
+}

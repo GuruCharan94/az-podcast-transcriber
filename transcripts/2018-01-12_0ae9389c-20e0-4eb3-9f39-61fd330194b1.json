@@ -1,0 +1,408 @@
+{
+  "id": "0ae9389c-20e0-4eb3-9f39-61fd330194b1",
+  "Title": "Staying Secure and \"Getting Pwned\" with Troy Hunt",
+  "PublishDate": "2018-01-12",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/157d04e3.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hi this is Scott I really appreciate our sponsors because they make the show possible today show is sponsored by Developer Express' become a UI superhero with Dev Express controls and libraries deliverelegant.net solutions that address customer needs today by leveraging your existing knowledge. You can build next generation touch enabled solutions for tomorrow. You can download your free 30 day trial at DX dot hanselminutes.com that's DX dot hanselminutes.com.",
+      "Duration": 31,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Troy Hunt security expert and also my friend, calling in from Australia? How are you Sir it good I might I am good you just if I understand correctly spoke to the United States Congress and you're not even from here. How did that happen and I was worried that found out it was an amazing thing actually so I had some folks from.",
+      "Duration": 30,
+      "Offset": 40
+    },
+    {
+      "Sentence": "So how cenergy committee a house energean, smitty rich Outback in about September wanting to talk about Equifax because that was a big news story they want to talk about how data breaches were happening so that they could then grill the CEO of Equifax which they did in Congress and then they popped up a little bit later and said Hey how about you hop over and chat about data breaches and what it means to our ability to do knowledge based authentication.",
+      "Duration": 25,
+      "Offset": 71
+    },
+    {
+      "Sentence": "Is that like I don't think that talking tech with? What I assume are highly nontechnical congresspeople. That sounds super exciting where they more or less for lack of a better word clever or educated about this, then you would thought they would be.",
+      "Duration": 15,
+      "Offset": 97
+    },
+    {
+      "Sentence": "You know it's interesting that the mechanics of the way it works is that the folks sitting there when you see a testimony in progress. The folks sitting there, asking questions. You know the important people in the suits there, asking questions that other people have prepared for them that their staffers have prepared for them and I didn't realize that until I went over there, so in one way it's a little bit hard to tell because of very insightful standing question codex mean written by someone else but then at the end of the day there. There being that the face of that question an having the sort of the discussion with you.",
+      "Duration": 30,
+      "Offset": 113
+    },
+    {
+      "Sentence": "To understand what they're talking about to be honest, everyone that I did speak to their both on camera on the record and afterwards as well.",
+      "Duration": 7,
+      "Offset": 144
+    },
+    {
+      "Sentence": "They were very switched on their genuinely interested and frankly everyone is just lovely oh. That's comforting to know he sound surprised right. I mean, I was good. There's a certain levels of levels of quality expectation and education in government right now. I think it looks. We just don't think I don't think about my member of Congress is being a cyber security expert and educated enough to help me so that's good that you're there to help them, yeah that and that's it.",
+      "Duration": 30,
+      "Offset": 152
+    },
+    {
+      "Sentence": "Maybe that was the takeaway is like this is important enough that they actually want to spend time talking about this and look. We all like to throw shade at governments all over the world and not just at your house as well and at the end of the day. These are people trying to do a job with a lot of issues on their plate and I'm just glad that they saw this one as being important enough so I have just gone to your website. The website that you're the most well known for certainly troyhunt.com is wealth of resource.",
+      "Duration": 30,
+      "Offset": 184
+    },
+    {
+      "Sentence": "Have I been pawned muchPWNED.com I put in my email address and it tells me that I'm poned on 17 breached sites. An one paste while you baiting Macon grants why that's bad and what's going on here? Yes, I have my bank. Pine is a data breach aggregation service. So when we have a data breach that occurs and.",
+      "Duration": 30,
+      "Offset": 215
+    },
+    {
+      "Sentence": "And I mean, it doesn't myself out daughter is picked up and it spread around the web as part of this big corpus of bridged accounts. I aggregate that and I put it in one place and I make it searchable so you can figure out your exposure. So you know when I look at my account. I'm in things like the LinkedIn data breach so LinkedIn had a data breach back in about 2012 the data popped up in 2016 and started circulating I grab that put it in the system. Everyone who subscribe to the service is a free subscription thing gets an email address says Hey, we just found you somewhere.",
+      "Duration": 30,
+      "Offset": 246
+    },
+    {
+      "Sentence": "Can come along later on and go? What is my exposure where have I been pound?",
+      "Duration": 4,
+      "Offset": 278
+    },
+    {
+      "Sentence": "And I'm in I'm in drop box. I'm in LinkedIn. I'm in Tumblr. But I don't know which password is taken So what do I do with this group like I know that we have all I'm surely you also have reused password once or twice in your life, yeah, yeah look. A man I have seen data pop up before I've seen my password. I just got on my God, was, I thinking? You know, we have all been there. The question about which password etc is interesting and.",
+      "Duration": 30,
+      "Offset": 283
+    },
+    {
+      "Sentence": "What's particular curious but have a ban pound is the way it drives awareness of the problems with things like passwords. So it's what I see happening the whole time, is oh load data into this system so I want to get an email and it'll be like LinkedIn and logo. Our man like I just realized that that LinkedIn password is the same one that I'm using everywhere else. And it's the same one that I'm using on my email address, which is the thing that people can get into and then reset all of my accounts, so you know like bad news all around so I love the fact that.",
+      "Duration": 30,
+      "Offset": 314
+    },
+    {
+      "Sentence": "Component is sort of the educational piece that hits home, like nothing else for your normal average everyday consumers. We can come there put their email address in and then suddenly realize just how risky it is to reuse credentials. It says 17 breach site. San one paste? What is a paste so paste is basically just a block of text? Which is dropped in a publicly accessible service like Pastebin, so there's Pastebin. There's another one called's Lexie. There's ghost being there's a bunch of these services which are.",
+      "Duration": 30,
+      "Offset": 345
+    },
+    {
+      "Sentence": "To share blocks of text?",
+      "Duration": 1,
+      "Offset": 376
+    },
+    {
+      "Sentence": "You and I might use that to share a code snippet or something with each other bad dudes often use that to dump a whole bunch of credentials from a data breach and very often actually we see Pastebin being used to put little samples of data breaches out there, so we like look. He is say 10000 records from a much larger bridge and it often becomes the Canary in the coal mine for when there is actually a data breach. So I draw data from a Twitter account called Dump Man, which goes and scraps Pastebin.",
+      "Duration": 31,
+      "Offset": 378
+    },
+    {
+      "Sentence": "Happens to establish what might be data breach like behavior for paste and when I find that I picked it up. I put it in a have a vampire Knight Center name out of any of my subscribers, we might be in there.",
+      "Duration": 10,
+      "Offset": 410
+    },
+    {
+      "Sentence": "Oh, OK, I'm looking at them on and it seems to be quite active, though I mean, it's seeing emails it might be 10 emails it might be 100 but it's happening every 1520 minutes. Yeah, look at it's nonstop and in fairness as well. Some of this stuff is not necessarily a data breach. There's logs in there. There's in some cases their source code repository's and stuff like that where there's just email addresses that have appeared in that block of text.",
+      "Duration": 24,
+      "Offset": 421
+    },
+    {
+      "Sentence": "But very frequently when you get through and look at that dump on account ego to a particular Pastebin. Lincoln here that's credentials. You know that's usernames and passwords. We see a really good example as I see Spotify stuff pop up there. The whole time, and this is not necessarily Spotify, having a data breach, but it's list of email addresses and passwords that work on Spotify, now because people raise their credentials. So someone will dump a bunch of them Pastebin and go Hey. Give me a slice of Bitcoin and I'll give you more.",
+      "Duration": 29,
+      "Offset": 447
+    },
+    {
+      "Sentence": "OK, How do you know you manually looking at these to you? How is this wired together? Is it just regular expressions and wishes?",
+      "Duration": 10,
+      "Offset": 478
+    },
+    {
+      "Sentence": "Yeah, pretty much let up and I'm sort of quite clear about that. So I've kind of diverged in 2 different directions here with vampires so there's the obviously the data breach side of it. So you mentioned linked in and drop box. These are major incidents Verifiable High degree of confidence. They legitimate tens. Hundreds of millions of accounts in there and then there's the Pastebin side of it, which is look at it's just a crawler that you know it's just going through indexing stuff if you find yourself in there because you search ever been point or we get a notification go and look at the?",
+      "Duration": 30,
+      "Offset": 489
+    },
+    {
+      "Sentence": "To figure out whether it's something you need to be worried about or not. I went looking for the pace that I'm found in and the website is down and now the domain has been taken over by someone that's not the paste person right so that's also possible so there's some arbitrary pie swear if I find stuff just laying around on the Internet that is paste like sometimes I'll drop in an arbitrary URL and that may be on a host name, which disappears at some time. And when you sort of think about the nature of some of this data.",
+      "Duration": 30,
+      "Offset": 520
+    },
+    {
+      "Sentence": "Like Yeah, I can see why that would get pulled off line, you know why that may not be there tomorrow. I'm looking at the very bottom of however, in pond and it says 4.8 billion accounts. Allen Iverson sign is not you know when I started this service, so this is back in December 23rd. I started it with the dobie data breach, which was about 150000000 accounts, and a few other really small ones, and also man. This is crazy. There's like 150000000 accounts in there and then.",
+      "Duration": 30,
+      "Offset": 552
+    },
+    {
+      "Sentence": "Only last year, so we're recording this at the end of 27 and it was only in about the middle of 2016 that I passed the first billion.",
+      "Duration": 8,
+      "Offset": 582
+    },
+    {
+      "Sentence": "And I remember because I was at NDC in Oslo and this was like part of the talkers like let's flip the switch and it's like do we celebrate or cry? Which is it 1,000,000,000. So I've gone in the space of just the last year of running it from 1,000,000,000 to 4.8 billion last year and a half.",
+      "Duration": 15,
+      "Offset": 591
+    },
+    {
+      "Sentence": "Which is just like I say this every day and it blows my mind that there is just so much data flying into this system.",
+      "Duration": 6,
+      "Offset": 607
+    },
+    {
+      "Sentence": "Who did you have experience in building a site that could handle that kind of Data 'cause? I assume that the scale needed to make have I been pound. It's not just scale on a person. You know traffic. Hitting it with the back end must be terabytes. I didn't have experience doing it on the cheap so my experience was when I still have a pain point up. I still had an architecture role in Pfizer. So I was like alright. We're building big systems and as a multibillion dollar company and there's",
+      "Duration": 30,
+      "Offset": 614
+    },
+    {
+      "Sentence": "Some money for things we need to do, and I started building have impound as we were really diving into Azure within the organization and I'm like in Alex just will do a hobby. Project play with the technology a little bit you know, see what it does.",
+      "Duration": 15,
+      "Offset": 645
+    },
+    {
+      "Sentence": "And for me that the challenges become? How do I create something that's getting bigger and bigger and bigger for the cheapest possible amount of money and tomatoes a bit of a game. You know it's a bit of fun so that was a new experience for Maine. Yeah, I even though I work for Microsoft in my day job and talk a little bit about Azure. I explained to people that I talk to that. I pay for my Azure sites, with my own money and you probably shouldn't trust a Microsoft engineer or anyone is trying to sell you something if they have free Azure time.",
+      "Duration": 31,
+      "Offset": 661
+    },
+    {
+      "Sentence": "'cause they're going to treat you differently, so I wrote a bunch of blog post called Penny pinching in the cloud. And if I can if I can run 20 websites on one small well. That's free free compute so we would assume you're not making money on having been Poland rather than giving talks about it. You want to make it as cheap as possible well. You know, I remember reading that series of you is actually and it was like that term and I think there's a little bit of the engineer and a switch is kind of like this is a challenge right like how big can I make this thing for how cheap?",
+      "Duration": 31,
+      "Offset": 693
+    },
+    {
+      "Sentence": "It's interesting the way have a vampire sort of evolved overtime. So one of the things that happen. Maybe better year into it is people said you should put her donations link. You know like you should let people give you money and then I'll sort of going well. Why would they? Give me money. It's free and people like that, and I seriously. They will so how can I put it put a donations thinking there an I thought you know, I don't want to be sort of sleazy about it. I'm not just going to go please. Give me money. I thought, what I'll do is I'll say look. I do this out of my own free time I pay for whatever costs etc.",
+      "Duration": 31,
+      "Offset": 725
+    },
+    {
+      "Sentence": "I spend a lot of time away from my family wouldn't it be nice. If you bought me a movie ticket. I'll take the kids to movie or you know it's been a long hard day had buy me beer and I put that on the donations page and it was just sort of I guess more interesting tangible stuff and I started getting a lot of donations for it. So you know to this day, I get donations. That certainly well and truly cover all the costs of it, which is which is actually surprising in fantastic.",
+      "Duration": 28,
+      "Offset": 757
+    },
+    {
+      "Sentence": "And then the other thing that's happened overtime as well as there's been more companies that have popped up and said look for example, where an identity theft company. In fact, I wrote about this at the time with Co popped up, said. We do identity theft monitoring we would really love to be able to access the starter because we have got 40000000 subscribers in the case of my life, who are the ones who wrote my life, said look we would love to be able to type in this data because we've got 40000000 people that we can reach and let now about these incidents.",
+      "Duration": 30,
+      "Offset": 786
+    },
+    {
+      "Sentence": "Oh, well. That's great like that expands the awareness.",
+      "Duration": 2,
+      "Offset": 817
+    },
+    {
+      "Sentence": "So when they popped up, I started making some information available to commercial subscribers and this is not you know you won't find a buy now link or anything on the site. It's not like go there and give me money do it couldn't do it without asking you now and that there's a few reasons for that, so one of the reasons is that in more recent times and this is partly an effort to keep cost down partly keep ethical use. I've made the service rate limited so you can only make one request that database every one and a half seconds. So basically the Max that a human would want to do on the interface.",
+      "Duration": 34,
+      "Offset": 821
+    },
+    {
+      "Sentence": "And that the other thing is I've always made sure that certain data breaches and never publicly. Accessable so for example, if you're a listener who was in the Ashley Madison Data Bridge. You will not be able to go to the front page and find actually Madison in the results. You will be able to go and subscribe to the notification service, which is free and you get an email with the verification token in it, and then you go after you've proven that you control the email and it will say here look. You're in Madison, so that's never been available there.",
+      "Duration": 31,
+      "Offset": 856
+    },
+    {
+      "Sentence": "The time as it's sort of unfolded there's been organizations that do things like provide beta based oil services in the security space so they'll say look where where security company. We have a bunch of organizations that use our services, they'd love to be able to access. This data on a domain level, so that's something that you can do for free on the public site. If you can control the domain and it's something that some subscribers get access to commercially if they've got customers that need this information, but can't necessarily prove their control the domain.",
+      "Duration": 30,
+      "Offset": 888
+    },
+    {
+      "Sentence": "Oh, OK did that change the way that you originally architected and scaled the site because I'm thinking, Naively had just hold 4,000,000,000 password accounts opponent accounts into a hash table and there, you go? I gotta website. But then if you're doing things by domain. If you're doing things with notifications that suddenly you're thinking about much more complicated site. So it boils down to the petitioning of it, so the underlying data structure for all of this is Azure Table Storage.",
+      "Duration": 32,
+      "Offset": 920
+    },
+    {
+      "Sentence": "That's what it was when I started back in the day, it still exactly the same structure today. Cosmos, a little bit more now but that's another discussion. But the way I designed the table storage is I said look what I'm going to do is this is just going to hold email addresses. This is all it is. I'm going to make every every partition. The name of the domain so there is a really, really big. Gmail dot competition and then the roki of every record is going to be the alias so that made things really, really super fast to look up by individual email address. 'cause we know exactly which petition to go.",
+      "Duration": 35,
+      "Offset": 953
+    },
+    {
+      "Sentence": "Actually, which row to go to and usually the look up's even amongst those 4.8 billion records a single digit milliseconds.",
+      "Duration": 6,
+      "Offset": 989
+    },
+    {
+      "Sentence": "But it also means that if I want to go and pull an entire domain. I just grab the petition. Now I can't really do that for Gmail. That's just too big. But for 99 point. X percent of domains. We can go look just return the whole partition for troyhunt.com or whatever it may be and even when there's hundreds of thousands of records in there that still works quite well OK. Let me pivot a little bit because, as I scroll through your blog, which is like.",
+      "Duration": 30,
+      "Offset": 996
+    },
+    {
+      "Sentence": "The pages of information on data breaches in HTTPS and your Pluralsight courses and all the different things. I get the same feeling that I get when I go to any one security site who is a security expert is I think to myself, we're all going to die. And it's probably probably my fault as a programmer. I'm trying to get a sense of how freaked out. I should be like, I read a blog post of yours on a thing that was a honeypot or something it was called a pineapple UEFI Pineapple.",
+      "Duration": 31,
+      "Offset": 1027
+    },
+    {
+      "Sentence": "Well, yeah, they kind of 2 different things like the Wi-Fi. Pineapple look at Sharon's listening and I don't know what this is just Google. My name and Wi-Fi. Pineapple and you'll see it, but it's a It's a rogue wireless access hotspot or can be a rogue wireless handless spot hotspot an all it is, is it a little device. You can buy uh for company called back 500 bucks for the Nano One, which is the cheap one, an UE Paravai US base. We can literally just plug it into a PC and then you can create your own hotspot and you might call it.",
+      "Duration": 30,
+      "Offset": 1059
+    },
+    {
+      "Sentence": "Your Wi-Fi and if you call it anything free people will connect to it. I gotta conferences. Sometimes part of the talk. I'll call it free NSA Wi-Fi and people will connect to it. 'cause they say free and then they go yet. That's it. I mean, like I'm sold.",
+      "Duration": 13,
+      "Offset": 1090
+    },
+    {
+      "Sentence": "And now you have traffic routed through a device that you control and then you could route that back out through your own Internet connection and the reason I show this device is that this allows us to have a discussion about man in the middle and why HTTPS are so important in a very impactful evidence based way so I've found this has been an awesome device for trying to get people realizing that that something like a man in the middle. It is not a hypothetical threat. It's not just like a nation state.",
+      "Duration": 30,
+      "Offset": 1104
+    },
+    {
+      "Sentence": "It's like yeah, someone bought one of the Internet for 100 Bucks and now they have your traffic so it's it's impactful that way is it. You say that HTTPS is so important. If even if I connect to your free NSA Wi-Fi? What can you Snoop about me? Can you get my exchange password? Can you get my Gmail passwords or can you not because there over HTTPS? Yeah, it's it's the lattice so anything that's entire encrypted connection is solid. Now there's lots of nuances here and in fact, I've I reckon this year. This is almost being the year of all the different things that spoken about where HTTPS has been the one.",
+      "Duration": 35,
+      "Offset": 1135
+    },
+    {
+      "Sentence": "Change so much and is also become so important.",
+      "Duration": 2,
+      "Offset": 1171
+    },
+    {
+      "Sentence": "So yeah, what's really critical here is that we're really rushing headlong into a secure by default. Internet and at the moment. We're still sort of in that Legacy Era of things defaulting to insecure and I'll give you a couple of examples. If you go as of today to CNN.com you'll see nothing in the address bar to indicate any sort of degree of insecurity. If you go to let's say troyhunt.com you'll see, there's a green padlock in this green text and it says secure.",
+      "Duration": 30,
+      "Offset": 1174
+    },
+    {
+      "Sentence": "Sing observation here is that security is a very explicit visual indicator and the only reason we know something is not secure is because it doesn't tell us that it is secure and it's almost like that. That is our default position. You get no security just the same way as if you typeCNN.com into the browser. It's going to make an HTTP request.",
+      "Duration": 20,
+      "Offset": 1205
+    },
+    {
+      "Sentence": "And at some point in time they'll go HTTPS and then it will manually 301 redirect and you'll get to get the this cure page. But it's still going to try and secure first and that look there. A mechanical reasons why it needs to do that as well. But it's just interesting the way it's been so insecure, but where we are today is now we're up to almost about 70% of all traffic on the web being served our HTTPS which is good and that last 30% gap is being closed really quickly, but the even myself as a fairly technical person, I still find certificate management.",
+      "Duration": 33,
+      "Offset": 1226
+    },
+    {
+      "Sentence": "Sometimes I forget when I need you know like I'll have an uh an obscure site or a small site that I run in the certificate will expire and I'll be like Oh, crap is not going to go and deal with it are those problems solved or being solved, so this is sort of getting us into the water. The barriers to HTTPS sort of round and the 2 barriers that I think are pretty closely linked here a cost and management effort. And if we scroll back. Let's just scroll back only 2 years.",
+      "Duration": 30,
+      "Offset": 1260
+    },
+    {
+      "Sentence": "Certificate you usually had to pay for it was usually about 70 Bucks, a year. There were some CS are you going. Get them for for free. If you're a not for profit and then you'd have to go and get the certificate and it might be in the wrong format and then you'd have to going download open. SSL and you'd have to recompile it with your sexy underwear life RDP into a Windows machine and set it up manually. It's horrible. I read a blog post a few years ago about how to get a free certificate on Azure website, and it was using a company called start com.",
+      "Duration": 30,
+      "Offset": 1291
+    },
+    {
+      "Sentence": "This was another story and the blog post was like here all the steps involved and people like this is really useful. Thank you for writing for me, so it's not for you. As for me. So I remember how to do it. When I have to come back and do it next year because it was so painful, it's funny. I think people who are in dire built in blogging for many, many years I think people. Forget we think that we are doing that for the people here, we're doing, it for ourselves to settle self interest.",
+      "Duration": 30,
+      "Offset": 1322
+    },
+    {
+      "Sentence": "All my blog posts army writing instructions that I will then go on for later. But Hey, this is the great thing to do because we have the same problems that everyone else has so look. I mean that was painful. The effort of that was hard and then we get to the cost side of things and you know if you had someone who was who was either a small shop or personal blogger or something like that a 70 Bucks, a year may not seem like much. But it is a financial barrier and people say, well, I don't want to pay 70 bucks a year.",
+      "Duration": 27,
+      "Offset": 1353
+    },
+    {
+      "Sentence": "So there's 2 things that have happened over that last couple of years that have really fundamentally change that. The management effort in the cost effort and probably the first one worth mentioning here is let's encrypt so let's encrypt is a free not for profit entity, which is backed by the likes of Mozilla FF and they make certificates available for free. And they do so in an automated fashion, which means that if you want to let's encrypt certificate on say Lennox box. If you can shell under that machine run a command. It will automatically verify that you can control the website that's on that box.",
+      "Duration": 33,
+      "Offset": 1382
+    },
+    {
+      "Sentence": "The certificate and then will set up a Cron job to go back and re knew that certificate every 3 months because they do 3 month certificates, so it's like run. This command, you done you know any just don't think about it again and there's nothing wrong with their certificates. Yeah, this is not like Oh, it's free. It's not as good as paying Komodo money or something like that. That's not how the mathematics works just destroy the market, then does that mean that there's just no market for anyone else? Well, this, though man this is going to get controversial now.",
+      "Duration": 31,
+      "Offset": 1416
+    },
+    {
+      "Sentence": "This has had a major impact on the market because if we go back only 2 years ago. Let's encrypt really only started issuing certificates to the general public in about April 2016, so go back to say into 20152 years before recording Komodo had. I think was about 40% of the market like a massive slice and then let's encrypt came along and people like Oh, you know this is cute will see how this goes maybe we don't really trust it. Fast forward through today, then our larger than Komodo in terms of the total number of certificates, they've issued.",
+      "Duration": 31,
+      "Offset": 1449
+    },
+    {
+      "Sentence": "That that that active today, which is which is in sign so it are now we've got. Let's encrypt becoming the big guys and this is having a really severe impact on the commercial CIS because they're going Hannah man. We used to make money out of this so that the discussion now has become really interesting where we're seeing the commercial folks try to move more towards commoditization models. I'm not choosing my words carefully here because you'll see why not?",
+      "Duration": 26,
+      "Offset": 1481
+    },
+    {
+      "Sentence": "They're trying to figure out why is like make money out of it and one of the ways that doing this? Is this saying you should not get a DV certificate. You should get an EV certificate and what they're saying here is if you go to a site like trying to calm you see a padlock and says secure and it says troyhunt.com be. You don't know whether that is a good site or a bad site or you know is it's the domain that you went to NFA. I remember I've quoted you actually one of my book. I was just going to say so. You wrote this epic tweet, which is something like.",
+      "Duration": 33,
+      "Offset": 1508
+    },
+    {
+      "Sentence": "So you're having a secure discussion. You could be having a discussion with site right so the value proposition of EV Certificate, an extended validation certificates is that if you gotta say have IBM pone you'll see it. Literally says have I been pound up in the address bar and then? It's got my name in brackets. So it's telling you that there is a legal entity called Haver Bent Pound and I just went and registered a cheap business name here in Australia and then who owns that legal entity if there is apparent which in this case is Maine.",
+      "Duration": 29,
+      "Offset": 1541
+    },
+    {
+      "Sentence": "And you can see that certificate and you can see that visual indicator and go OK will look. I know that this is the actual company site that I'm looking at the moment, so that's the way they are now trying to make their money.",
+      "Duration": 11,
+      "Offset": 1572
+    },
+    {
+      "Sentence": "So do like I'm looking on your side. It just says secure doesn't say Troy Hunt. But if I go to have I been pondit says have I been pawned Troy Hunt? It's It's longer. It's green. It's let's its indicates security and presume it trust.",
+      "Duration": 15,
+      "Offset": 1584
+    },
+    {
+      "Sentence": "Wealthy Anna this is where it gets really interesting and that he is a good game for the listeners as well. The commercial CA's will say you should have an EV because an EV does imply trust right. It will give people greater level of trust, they will respect your site more, they'll sign up more, they'll give you more money. Earlier, the other. Here's the problem. If this is the case. Then you would assume that big sites, would want to have AV but see how many of the world's top 10 largest websites have AV.",
+      "Duration": 31,
+      "Offset": 1601
+    },
+    {
+      "Sentence": "Example Facebook.",
+      "Duration": 0,
+      "Offset": 1633
+    },
+    {
+      "Sentence": "So that for the listens at home does Facebook ever Navy certificate without looking now, it doesn't worry about Google. No Google doesn't what about Amazon now. Amazon doesn't basically butter sides here New York Times nothing. I know right. It's like it just simply doesn't exist. But it does exist on some services. Some of the time so twitters are really good example. I put a tweet out. This would have been about the middle of the year so that look is an interesting. Here's the top 10 sites and I had a little screen cap of all the tabs and none of them had.",
+      "Duration": 31,
+      "Offset": 1635
+    },
+    {
+      "Sentence": "And one of them was Twitter that was the 10th largest site and then a whole bunch of people came back and said well hang on a second Twitter does heavy and here is a screencap and then this guy. Norway said Nana. Now it doesn't. Here's a screencap and what we actually discovered is that Twitter depending on where you are were serving up a Navy versus the DV certificate.",
+      "Duration": 19,
+      "Offset": 1667
+    },
+    {
+      "Sentence": "But here's the big insightful part of this.",
+      "Duration": 3,
+      "Offset": 1686
+    },
+    {
+      "Sentence": "I got all these different places where Twitter does and does not have a Navy certificate and I had never noticed and I look for this stuff right now, so I'm sort of going out if I don't know when it does or it doesn't and everyone listening doesn't know either. And I know you don't know because I asked. This question every time a day. Workshop then does it actually change your behavior in the absence of a Navy certificate because this is the argument right the CA is will say well. If you don't have an EV certificate people won't trust you as much.",
+      "Duration": 30,
+      "Offset": 1690
+    },
+    {
+      "Sentence": "Actually, no like it, frankly, we're doing a good job with people even look for the padlock.",
+      "Duration": 4,
+      "Offset": 1721
+    },
+    {
+      "Sentence": "It's interesting that you say that because I used to work in banking and you and I are talking and end of 2017 early 2018. I'm looking at a blog Post that I wrote in October of 2006. So we're talking 11 years ago when EV certificates were still coming out and it was a big deal. You had to actually go and visit the data center and be audited like it was hard to get one and say what you will about Internet Explorer. But they were trying to push these EV certificates, so much so that they would light up.",
+      "Duration": 32,
+      "Offset": 1726
+    },
+    {
+      "Sentence": "Top bar.",
+      "Duration": 1,
+      "Offset": 1760
+    },
+    {
+      "Sentence": "In bright green if there was an EV certificate.",
+      "Duration": 3,
+      "Offset": 1762
+    },
+    {
+      "Sentence": "And now here we are 11 years later, it's supposed to be a secure web and frankly, the green in Chrome here. You know could be kind of a gray black it doesn't really stand out if they really were serious. Why don't they light up the whole bar well part of the problem is not so much? What do you show in a Navy certificate is present but it's what do you show when it's not present because really what you're trying to say here is that if you go to a site and it doesn't have an EV certificate. You shouldn't trust it as much and this is again is one of these problems where you're trying to get people to change their behavior.",
+      "Duration": 33,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "Absence of some form of visual indicator.",
+      "Duration": 2,
+      "Offset": 1800
+    },
+    {
+      "Sentence": "And look at men we know how hard it is just getting users not to click through and ignore security warnings. You know like how much? How did you think it is to say Hey, when you go to a website and you don't see this thing you know, don't trust it and also we can't condition people to that because most of the websites out there and most of the world's largest websites don't have one anyway. It's funny that you mentioned that because I actually did a blog podcast. Rather, with Adrienne Porter felt who does the usability security for Chrome, she's a PhD in a security researcher?",
+      "Duration": 30,
+      "Offset": 1803
+    },
+    {
+      "Sentence": "Podcast with her episode 486 and she talked about doing all the user testing in AB testing to find out how can we keep people from clicking past those security warnings?",
+      "Duration": 11,
+      "Offset": 1835
+    },
+    {
+      "Sentence": "And she also told me something interesting do you know the number one cause of security warnings is?",
+      "Duration": 5,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "You're gonna love this it's people changing their clocks forward to try to get more coins and games like Candy Crush.",
+      "Duration": 8,
+      "Offset": 1852
+    },
+    {
+      "Sentence": "It is uh this is where we are, and this is where we are, which is tragic because they are at the end of our show that whether that is sad and I turned on, but I think that quick note is, though, that if you go to troyhunt.com you've got workshops and speaking you're all over the world and people can learn about security from you and because of things like this. I have a long and fruitful career ahead of me, so thank you. Everyone put in your clocks for the Candy Crush you will never not have a job. I'm looking at your upcoming events. You're in Australia are in London will be in London together in a couple of weeks.",
+      "Duration": 33,
+      "Offset": 1862
+    },
+    {
+      "Sentence": "And you're all over the world and I appreciate you and thanks so much for coming on the show good on you thanks inside. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 11,
+      "Offset": 1896
+    }
+  ]
+}

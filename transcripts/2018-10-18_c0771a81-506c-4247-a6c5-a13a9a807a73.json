@@ -1,0 +1,458 @@
+{
+  "id": "c0771a81-506c-4247-a6c5-a13a9a807a73",
+  "Title": "Finding Engineering teams that share your Key Values with Lynne Tye",
+  "PublishDate": "2018-10-18",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/7944301d.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends, we have a new sponsor today and I want to make sure that you support them because they make Hansel minutes possible. Raven DB it's a document database. That's non relational and fully transactional. It's available for Windows Anne Lennox with official client APIs for net. The JVM go. Ruby node JS and python. Raven DB is designed for high performance handling tens of thousands of requests even on a single node.",
+      "Duration": 26,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Raven DB is capable of on the fly. Optimization dynamic indexes and much more. It is a fully loaded GUI, which means it's simply to operate and you don't need arcane incantations on the command line. It just works. It's fast and it's right. Download your free community edition at ravenDB.net that'SRAVENDB.net. Hope you check it out.",
+      "Duration": 30,
+      "Offset": 27
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Linty from keyvalues.com. How are you so good I'm excited so you are an engineer you learn to code a couple years ago but before that, you were a PhD candidate with a background in neuroscience that is correct previous life of mine so you've done freelance web development and you also done neuroscience. So you kind of understand the tech mind as well as maybe how techies think strangely. I feel like in general, I've always been kind of.",
+      "Duration": 32,
+      "Offset": 65
+    },
+    {
+      "Sentence": "One to the types of people who were more classically stereotypically intertech, but, yeah, lots of weirdos in science and tech when we as weirdos in tech as we as techies try to find a place to be.",
+      "Duration": 15,
+      "Offset": 97
+    },
+    {
+      "Sentence": "We're forced to go to jobs boards and search with keywords and hopefully find our tribe. Yeah, I mean, I think a lot of people don't actually even try to find their tribe. That way because they know there's it's hard to do that.",
+      "Duration": 13,
+      "Offset": 113
+    },
+    {
+      "Sentence": "Such a good segue, yeah, I think about this all the time and I think the hardest part actually is wiggly when you're trying to find your tribe and you've already kind of set out on a path that it's heading in a way that is farther and farther from the place you actually like to be really hard to kind of correct and do like a complete 180 or hard turn looking on job boards, is certainly sometimes the last place you go well, what's what's a way to find out is it is. It just have as many interviews, as possible, because even those interviews come out really awkward.",
+      "Duration": 32,
+      "Offset": 128
+    },
+    {
+      "Sentence": "I guess there's like a few steps. I'm thinking like just in terms of like where do you want to do day today? And so like obviously so I think about this? A lot with key values 'cause it's very specific to finding an engineering job. But I mean, just since you talked about you know, I was previously a PhD candidate. I dropped out. That's very, very sad for my entire family. But I think just a bigger like a higher level of like what career do you want to do and what do you want to do day-to-day and like if you're doing if you're a web developer now like? What if you want to be.",
+      "Duration": 31,
+      "Offset": 160
+    },
+    {
+      "Sentence": "Paper or something like wildly different. I think that's something that actually probably for a lot of people does come from having lots of conversations, but also just trial and error and kind of I mean, yeah, there's no real shortcut to just the experience of knowing what you want and don't want what you like and what you don't like so it depends on what level you're talking about here right when people go to keyvalues.com. They see it says finding engineering team that shares your values and you pick some values here and the values are pretty diverse.",
+      "Duration": 30,
+      "Offset": 192
+    },
+    {
+      "Sentence": "Bing section but you're really to expressing like what you care about and you're hoping that that company also cared about that.",
+      "Duration": 7,
+      "Offset": 224
+    },
+    {
+      "Sentence": "There's places like yeah, we pair program you know, we do extreme programming or we have a high quality codebase. Those are all things that I could care about. But like I love some of these one of them is like light meetings like 3 value, which we as a company care about not doing a lot of meetings. Yeah.",
+      "Duration": 16,
+      "Offset": 232
+    },
+    {
+      "Sentence": "Yeah, no, I think there, it's a whole for me. The reason why I started. This is when I was looking for jobs. So yeah, as you mentioned I was a freelancer at some point I like maybe I should.",
+      "Duration": 10,
+      "Offset": 249
+    },
+    {
+      "Sentence": "Get a full time job and be a full time employee somewhere an when I sat down to look like I mean, you mentioned this job boards was one place. I went and they don't have anything like this like not at all. It's like? What tech stack do you work with? What job title might you want and like? What industry broad strokes like like education or health and those are like I mean that's nice to be able to filter. I think to some degree. But it's really more like? What is my day today? It doesn't matter if it's like my favorite industry using my favorite technology if I have meetings every day, I'm going to hate it so.",
+      "Duration": 32,
+      "Offset": 260
+    },
+    {
+      "Sentence": "This was kind of trying to talk to tons of people and just figuring out what are the actual things that make someone love their job or hate their job or make them start wondering if there are new jobs that they should consider an it's yeah, something is something like like meetings, is Totaly. Yeah, it's very real and I think that there's this term. We hear a lot in engineering, which is culture fit and sometimes I feel that that is abused that term culture. It is like Well, you know, Lynn's not really kind of like our kind of people like what does that even mean?",
+      "Duration": 33,
+      "Offset": 293
+    },
+    {
+      "Sentence": "It's like you're trying to quantify that and give it meaning.",
+      "Duration": 3,
+      "Offset": 327
+    },
+    {
+      "Sentence": "Yeah, I mean, I think for sure. I mean to be honest before I started key values. I didn't realize that the term culture fit is just totally rejected by a lot of people in the people space talent space definitely in the DN high space because it's something that you can kind of.",
+      "Duration": 16,
+      "Offset": 331
+    },
+    {
+      "Sentence": "For uh not valid reason say it's just not a good you're not a good culture fit and it's you know, yeah, it's an umbrella term that covers all good and bad things, but this is definitely it's not so much what I would call culture. If it is more just like value alignment. I think that people that you might not necessarily want to be friends with or live with or hang out outside on the weekends with, but they might be someone who really, really genuinely enjoyed working with you are compatible in that sense, and so I think it's.",
+      "Duration": 30,
+      "Offset": 349
+    },
+    {
+      "Sentence": "It's more.",
+      "Duration": 0,
+      "Offset": 380
+    },
+    {
+      "Sentence": "Yeah, I mean, it is fit, but I guess I'm moving away from that term as well. Well, I like that. I mean, like when you said value alignment like my first internal reaction was like that sounds like an MBA kind of suit type term like I would never say value alignment like casually at a dinner party, but at the same time that's precise. It is exactly what it is exactly what it is so I need to get over my suit term and they say. Yeah, I want their values to align.",
+      "Duration": 31,
+      "Offset": 382
+    },
+    {
+      "Sentence": "I always like to joke with my wife when you're trying to meet someone I've met my wife is you have emotional baggage right so you just want someone who's baggage matches your baggage pretty much actually. I never thought about it that way. But that's pretty accurate is just like do you care about the same things you know the simplest way of saying it the amount of going to gush a little bit the amount of work that has been put into these categories or these tags. I'm not really quite sure what you would call them these values really.",
+      "Duration": 33,
+      "Offset": 414
+    },
+    {
+      "Sentence": "Work is been put into the text behind them is huge do you have a background in in HR because you've really crushing no thank you. I do not have a background in HR or recruiting. I am as you said. I'm PhD dropout turned developer turned into yeah, whatever just trying to help other people navigate their job search and.",
+      "Duration": 30,
+      "Offset": 447
+    },
+    {
+      "Sentence": "Career also but no, I think it's I've always enjoyed writing so it's been nice to find an outlet for it. I think there was a good amount of writing in my research days. 'cause you know, obviously publish papers. But it's a different type of writing. It is a different kind of writing and there are terms here. So when you go to keyvalues.com you hover over them. There is AA tooltip popup that will give you even more context. So there's there's multiple layers to these things it's not just keywords right so if I go in.",
+      "Duration": 30,
+      "Offset": 478
+    },
+    {
+      "Sentence": "Over work life balance like we all know what that means but I can hover over it and then keyvalues.com will say like? What does keyvalues.com mean we mean it says engineers have the flexibility and freedom and support to be fulfilled and enjoy both their personal and professional lives that aligns with my understanding of what like work life balance means. Yeah, it's funny actually made those tooltips in the very beginning. I think before I'd even launched key values last year in September, but.",
+      "Duration": 30,
+      "Offset": 509
+    },
+    {
+      "Sentence": "Yeah, I feel like all these terms are very vague, and the whole point of looking at companies and how they define them is to dig into that work life balance is like could not have been a better example. I think it's like it's easy for us all agree like we all know what that is, and what that looks like. But it's actually really easy to be on the wrong page or on a different page. So something that I is like a perfect example. So I think a lot of people consider work life balance to be you work, 40 hours or less a week.",
+      "Duration": 31,
+      "Offset": 541
+    },
+    {
+      "Sentence": "Reasonable, 40, I think that's a fair statement. Yes, yeah, yeah, you're right. It's a little lower actually in other European countries. But for me. I actually would find it much easier to balance my life. If I worked longer, but had the ability to choose when and where I worked so like like a 9 to 5, where I have to be in at a certain place is like it feels oppressive for me and I don't know why that's I've no idea where that came from. I think it's just something about who I am.",
+      "Duration": 32,
+      "Offset": 573
+    },
+    {
+      "Sentence": "I was also drawn to science like you just go to the lab when you do and it doesn't matter. When and so it's definitely an easy trap for a candidate in a company to think they align and if you don't talk about what that actually looks like in means for each party. You can see how that would potentially be a disaster. But yes, I think kind of the goal is really to have companies and teams talk about what it means to them every company that I work with its.",
+      "Duration": 31,
+      "Offset": 606
+    },
+    {
+      "Sentence": "Like it happens every single time without fail, they'll say like you know, I mean, it's it's pretty standard. We do X and like well well well. That's not standard like a lot of companies don't do that. So it's funny to just kind of step back and think about how traditions or practices, or processes that you do at one company, maybe actually probably maybe one on one end of the spectrum and no other company does that, but if that's all you know it's easy to think that's standard and you've called out work life balance and separated it from things like flexible work arrangements with like you said it would be more.",
+      "Duration": 33,
+      "Offset": 638
+    },
+    {
+      "Sentence": "Or an additive characteristic on top of that, so flexible work arrangements flexibility in work hours and locations. Yeah, exactly. I think the work life balance, I mean, it's interesting. I mean, it's obvious to me 'cause I've looked at this, but a lot of companies will kind of, after talking about it with them feel much more comfortable choosing one or the other, though at first. They kind of just group them as one thing as being like. Yeah, we all have balanced lives, but that's just like 2 big so it's always it's my job to kind of dig and dig.",
+      "Duration": 31,
+      "Offset": 672
+    },
+    {
+      "Sentence": "And I appreciate that it also appears and this is me reading into a lot of this that. You are also catering this to people at all levels like I could see as a relatively senior engineer where I could go in there and I could say yeah, fast paced environment continues delivery continuous feedback. Awesome senior engineer, but you've got things like wears many hats like engineers have a broad set of responsibilities and can learn from other groups. You've got across Department collaboration where engineers work.",
+      "Duration": 32,
+      "Offset": 705
+    },
+    {
+      "Sentence": "The alongside their peers in other departments as well as internal mobility and promotes with from within which are all values that a junior or a starting engineer might care about. Yeah, it's funny, I think.",
+      "Duration": 14,
+      "Offset": 737
+    },
+    {
+      "Sentence": "You know, so I was, I in some ways still consider myself to be on the junior side when I started this so I created key values I was really thinking about the more.",
+      "Duration": 9,
+      "Offset": 752
+    },
+    {
+      "Sentence": "Like maybe mid levels to engineers and starting there, but I do think there's been self selection in terms of like who it resonates with and I think a lot of senior engineers actually because they've had 3 to 4 jobs already or and they've kind of learned the hard way what they like and don't like like this really speaks to them and then for Junior Engineers. Maybe I've notice not necessarily college grads. But people have changed careers like like me, someone who's already had work experience not necessarily.",
+      "Duration": 30,
+      "Offset": 762
+    },
+    {
+      "Sentence": "A software engineer, but they've had work experience enough to know what they like or don't like. And so it does cater to different levels of experience with with engineering, but I think it does speak to people who had more.",
+      "Duration": 13,
+      "Offset": 794
+    },
+    {
+      "Sentence": "More experienced. in terms of like working with different types of people under different structures at different companies size is all those things true you have to know what if you don't know what you don't know that can be challenging but if you have a general sense of like well I feel that this would be a good thing in my experience and pass jobs that's been a good thing I would be able to pick the values that I care about and now that I'm thinking about it actually don't know if that's a fair statement to make obviously there's people you can be young this could be your first job then you might know.",
+      "Duration": 30,
+      "Offset": 808
+    },
+    {
+      "Sentence": "I think there's definitely a trend where.",
+      "Duration": 1,
+      "Offset": 839
+    },
+    {
+      "Sentence": "People right out of college are oftentimes optimizing for company reputation and salary and that's Fair. But I think to be honest. I think that's what a lot of other job boards cater to and that was kind of where I saw that there was this gap. But yeah, actually it's funny. People people don't always walk with me to come. Along with this. Comparison of dating and job searching but there's a lot of there's a lot of parallels.",
+      "Duration": 31,
+      "Offset": 841
+    },
+    {
+      "Sentence": "But like when you're Young. You kind of like fantasize about dating, the most popular person in school and like that's what matters yeah, yeah. I think it's kind of similar when you get your first like you want to work at the Google's in the face books. 'cause your parents know about them, and your friends know about them, and you know, people recognize that name and I think it's just like your.",
+      "Duration": 18,
+      "Offset": 873
+    },
+    {
+      "Sentence": "I mean, then you have that experience and then you kind of learn and then you're like OK. That's not the most important thing that matters right and it's interesting because your values that you've chosen here show. In fact that you don't have anything of like getting paid the most or super popular company like those aren't values that one can even check. Yeah, it's probably when I first launched not having salary was by far the most popular request, but I think there's lots of other places that list that and that's pretty much the most important part of those job boards and those job sites.",
+      "Duration": 31,
+      "Offset": 893
+    },
+    {
+      "Sentence": "Yeah, there's plenty of tools that you've chosen actively not to touch that I have. Yeah, little little controversial for something. I don't know it's polarizing future opportunities, though, to keep things different. This is not just a regular old job board where I can go and put in and it's not a front end with text boxes over a SQL query where it's like if salary greater than and remote OK. This is not that job board right. It is not to be honest, I think it's.",
+      "Duration": 30,
+      "Offset": 925
+    },
+    {
+      "Sentence": "Like at least for how it is right now in 2018, like it is.",
+      "Duration": 3,
+      "Offset": 957
+    },
+    {
+      "Sentence": "You're if you're a software engineer you're going to make.",
+      "Duration": 2,
+      "Offset": 961
+    },
+    {
+      "Sentence": "Up decent salary like the idea. I mean, you can you definitely can you might not be your favorite job but you can definitely find one that will pay pretty well or very well or ridiculously well so I think.",
+      "Duration": 11,
+      "Offset": 964
+    },
+    {
+      "Sentence": "On the range of what salary can be that's just actually pretty narrow like you know, let's say it's anywhere. This is extremely anywhere from 50 K to 500 K and wide range wide range, but that's just one dimension right like I think everything else about how you work, who you're working with like why you work that way together. What opportunities are there like I think there's so much more there. That's kind of where I wanted to focus. It also appears that you force or you encourage maybe maybe forces in the right word.",
+      "Duration": 32,
+      "Offset": 977
+    },
+    {
+      "Sentence": "And up to write a nontrivial amount of pros like there's a lot here when they click. Yeah, we're good for junior at Junior Devs. They have to write something there's a lot of text like I'm looking at 56 pages of text about a company right now. Yeah, it's your right forces may be strong. But it is kind of true. I do this is like this is the part that's really interesting companies.",
+      "Duration": 23,
+      "Offset": 1010
+    },
+    {
+      "Sentence": "So there's many, many more companies that have submitted their values to key values and then they've been actually show and it's because when push comes to shove. I say like you chose your team is diverse great.",
+      "Duration": 13,
+      "Offset": 1035
+    },
+    {
+      "Sentence": "But like let's talk about it diverse in what way is it just on your engineering team is across your whole org like? What kind of like? Why is this important? How do you promote it when I start asking these questions people realize like maybe we're actually not that diverse and then discussion with the team when I work with them. They realize like maybe we're not actually quite ready to put this together, it seems like we're not on the same page about what we care about most and so there's much filtering as there is.",
+      "Duration": 30,
+      "Offset": 1049
+    },
+    {
+      "Sentence": "I definitely feel like my job is to ask all the questions that a candidate wants to ask but might not feel comfortable asking interesting.",
+      "Duration": 9,
+      "Offset": 1080
+    },
+    {
+      "Sentence": "Yeah, I mean, there's I think like for example, actually just work life balance and diversity. Those are 2 great examples where you might not feel.",
+      "Duration": 8,
+      "Offset": 1090
+    },
+    {
+      "Sentence": "Like you, you're worried about what?",
+      "Duration": 2,
+      "Offset": 1099
+    },
+    {
+      "Sentence": "My.",
+      "Duration": 0,
+      "Offset": 1103
+    },
+    {
+      "Sentence": "The interviewer interpret that question by May when you ask a question. There's always are often an implication if there's a question under the question yes. And if you are new in the biz or you don't want to get the answer. But at the same time you don't want it to spiral in a direction that you don't want to go that can be really challenging exactly and it's just you know you're in a vulnerable state when you're interviewing so I think you could really hard, yeah, yeah, you're being evaluated is just so.",
+      "Duration": 30,
+      "Offset": 1104
+    },
+    {
+      "Sentence": "It's really like I see it as my job is asking all those tough questions 'cause. I don't have it, you know, I can be much more blunt a big. Thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 13,
+      "Offset": 1135
+    },
+    {
+      "Sentence": "Progress software is the creator of the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 1149
+    },
+    {
+      "Sentence": "The documentation and a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 1183
+    },
+    {
+      "Sentence": "One of the sections of the keyvalues.com, but I enjoy the most that I almost feel like should be even more called out if I can give you actually live feedback. While we're doing a pocket is at the top of his culture queries up next to the top menu is like about blog and submit you click on culture queries and I'm just going to pick a couple things that I care about OK committed to personal growth promotes from within an will stay open source contributor and then I get see results and this isn't a list of companies.",
+      "Duration": 31,
+      "Offset": 1202
+    },
+    {
+      "Sentence": "List of questions for me to potentially ask at the job interview, so you're literally, giving me like I could print these out and like asked these questions you. Give me the questions and you. Tell me why I should in fact, ask those questions and this is I feel like a hidden valuable like a hidden but not in your face valuable part of your site. I was so impressed with this and that's 1 of the primary reasons that I wanted you on the show cool thanks. Yeah, you're right, I should probably highlight that more maybe you'll see some changes.",
+      "Duration": 30,
+      "Offset": 1233
+    },
+    {
+      "Sentence": "Yeah, I mean, I was just going to say that, like talking about how I ask the tough questions and I can ask questions more bluntly to the companies. I work with I mean, obviously there are people who.",
+      "Duration": 11,
+      "Offset": 1265
+    },
+    {
+      "Sentence": "It's true you shouldn't ask so bluntly and so I kind of wanted to just.",
+      "Duration": 3,
+      "Offset": 1277
+    },
+    {
+      "Sentence": "Create a resource that I would have.",
+      "Duration": 2,
+      "Offset": 1282
+    },
+    {
+      "Sentence": "Would have used and will continue to use if I ever. Look for jobs. You know in something that is kind of timeless. But just thinking about how to really get the answers your looking for and make sure to interview. The companies like interviews are 2 sided is a 2 way. St and I think so. Many people forget this and it's it's kind of in a way it's kind of your fault then if you end up at a company and you're not happy if you could have maybe asked a few questions during the interview process and flush those out, then.",
+      "Duration": 31,
+      "Offset": 1286
+    },
+    {
+      "Sentence": "Not taking that offer so yeah, it's so important. I also also remind people who are interviewing anytime. I give interviewing tips is that if at all possible try to make sure that you're interviewing the person who will be in fact, your boss is so often. They put us through a loop of people like here's a pile of 9 people who are going to interview you and then you'll meet your boss on like Dave 4 after you've gone through new employee that boss has to be part of your interview loop or you're going to have problems. Yes, I think that is very good advice and.",
+      "Duration": 31,
+      "Offset": 1318
+    },
+    {
+      "Sentence": "Pricing often that might happen, indeed so I've gone there and I've clicked on open source contributor and engage with community and I love this particular question here. You say how did your team come to use your current framework great great question. But then you explain why? Why would I phrase it like that, and phrasing matters and this is I think where you're a science background comes in.",
+      "Duration": 23,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "It's useful for something they engineers are defensive if you say? Why did you choose X justify angular those questions can be like an attack and they that could make your interview go South.",
+      "Duration": 11,
+      "Offset": 1375
+    },
+    {
+      "Sentence": "Yeah, II've actually heard I had a friend this one. This question actually came from a friend who was like yet don't ask it this way, 'cause I did, and I really insulted my interviewer. An yeah, you can imagine how the rest of the day went so.",
+      "Duration": 15,
+      "Offset": 1387
+    },
+    {
+      "Sentence": "I feel like there's a huge amount of work here on the one where I put in for junior Devs is this good for junior devs or does it promote from within you say did any of your senior engineers today start out as junior engineers? What a good sneaky question that's like a question grenade groupings like see what happens, yeah, I think all of these questions. I think the main thing is let me just take a step back. There's a lot of generic questions that you can ask and your interviewers have been asked them hundreds of times.",
+      "Duration": 31,
+      "Offset": 1403
+    },
+    {
+      "Sentence": "Like they basically open up their chest and they press play because they've answered that same question over and over and it's like you don't want a canned response like you don't want them to have rehearsed a response so I think a lot of the questions the way that the angle that I'm coming from is to ask something that specific enough and different enough that you're going to get a very authentic answer, 'cause your interview is answering it on the spot and so this is a great example of that. Yeah, it's true like if you have your company says that you promote.",
+      "Duration": 31,
+      "Offset": 1436
+    },
+    {
+      "Sentence": "Better have examples of it exactly and I like that, you are.",
+      "Duration": 5,
+      "Offset": 1468
+    },
+    {
+      "Sentence": "It's like if you ever see famous people like you know that people from like The Avengers movies and they're doing their junk. It right weather like there are standing in front of screen. Everyone's asking the same dumb questions about like what's it like to be Iron Man? Is it fun and then every once in awhile. The interviewer will ask a question and then the person who's answer to thousand dumb questions before it goes. I put a great question. They light up so you were saying, you can get the interviewer like really on your side by asking a thoughtful question.",
+      "Duration": 30,
+      "Offset": 1474
+    },
+    {
+      "Sentence": "So when I launched culture queries. I had like multiple people in the days following say like Oh, it came out perfect time and they asked you know they had interviews and that interviewers would respond like the feedback was like I was really impressed by your questions and it's like it's so true like you can make such a good impression by having thoughtful questions and you can be interviewing the company and you can actually have more information to make a good decision about whether or not to work there and so it's like everyone wins.",
+      "Duration": 30,
+      "Offset": 1504
+    },
+    {
+      "Sentence": "I'm sure people who are listening or annoyed licking a Scotsman gushing about this site well. You'll go check it out for yourself, maybe oh gosh as well, but surely you didn't write all of these yourself, you must have had a community that worked with you, or feedback or like this is an iterative process right update questions. Add new things and talk to people actually I wrote probably 98% of it. It just I just sat down and just like a full time job for a couple of weeks, but I definitely got help and guidance.",
+      "Duration": 30,
+      "Offset": 1536
+    },
+    {
+      "Sentence": "Sync.",
+      "Duration": 0,
+      "Offset": 1567
+    },
+    {
+      "Sentence": "Yeah, I mean to be fair. I think I've just been talking to a lot of interviewers. An engineers for the month, leading up to it that it kind of.",
+      "Duration": 6,
+      "Offset": 1569
+    },
+    {
+      "Sentence": "Maybe it was like my brain was ready for this, but I definitely got help from friends. Some help from friends. In other especially for spaces that I wasn't particularly well versed in like the diversity.",
+      "Duration": 13,
+      "Offset": 1577
+    },
+    {
+      "Sentence": "Anything around diversity inclusion even you know, even though I am a woman and apparently. I'm a person of color. I didn't know this until like this embarrassing, maybe to some, but I didn't actually know that I counted as that, like I'm just not well versed in that space so I definitely got some help there that's great, so you do the work is being put into this and then your course applying your thoughts and understanding around how neuroscience like when you talk to someone and you express something in a certain way. How will that person take that and as you bounce back and forth because, like you pointed out.",
+      "Duration": 31,
+      "Offset": 1591
+    },
+    {
+      "Sentence": "2 sided experience a job interview?",
+      "Duration": 2,
+      "Offset": 1623
+    },
+    {
+      "Sentence": "Yeah, it's funny II feel like neuroscience itself.",
+      "Duration": 4,
+      "Offset": 1626
+    },
+    {
+      "Sentence": "I'm not sure if that, maybe that was like 2 deep, but definitely in college. I took so psychology and other classes around.",
+      "Duration": 7,
+      "Offset": 1632
+    },
+    {
+      "Sentence": "What makes like showing vulnerability and showing interest in someone personally of course, those are just sounds obvious but people especially when you're nervous in an interview you choke up and forget about that.",
+      "Duration": 13,
+      "Offset": 1640
+    },
+    {
+      "Sentence": "But once you've important reminder, though like I think that we all go into interviews and job interviews and we've had for those of us who had dozens of them for lack of a better word. We go in on autopilot and taking a moment and reminding yourself of sure maybe this is obvious. Maybe it's not, but when you talk to people. It hits them a certain way it lands the way that you the words you choose land a certain way.",
+      "Duration": 25,
+      "Offset": 1654
+    },
+    {
+      "Sentence": "Yeah, I know that's so true. I forgot what that's like I mean for some people they do dozens of interviews, a week like effect your job is a hiring manager so you're right. It does do go on autopilot, but ultimately I mean?",
+      "Duration": 13,
+      "Offset": 1681
+    },
+    {
+      "Sentence": "We have a pretty limited time on Earth and.",
+      "Duration": 4,
+      "Offset": 1696
+    },
+    {
+      "Sentence": "Many of those are sleeping so just thinking about like what how you want to spend your waking hours.",
+      "Duration": 7,
+      "Offset": 1701
+    },
+    {
+      "Sentence": "It's I think everyone feels this way like you want to work with people. You're excited to work with and learn from and I think everyone really cares about this so.",
+      "Duration": 10,
+      "Offset": 1709
+    },
+    {
+      "Sentence": "Even though specially for software engineers like the technical interviews are so much about can you do the thing there's so much about like doing it side by side with people you like and can work with and can learn from and so I think there's.",
+      "Duration": 13,
+      "Offset": 1720
+    },
+    {
+      "Sentence": "Easy to forget about that second part I really like the way you phrased that though like there is there is the important can you do the thing that's above all you're going to come here? I'm going to give you money, you will pay the rent with your money as long as you do. The thing right. But this is less about doing the thing. But like while you're doing it. Will you enjoy it when you like the people will get you up in the morning will you be totally sad about getting up in the morning like those are really important aspects that's the values that you need to make sure it aligns with whether or not they use.",
+      "Duration": 31,
+      "Offset": 1734
+    },
+    {
+      "Sentence": "Rails or whether or not they have remote's or not are you going to enjoy doing this thing exactly and I think it's so the other thing that I've talked about with key values like there's this assumption that you had the luxury to choose.",
+      "Duration": 13,
+      "Offset": 1766
+    },
+    {
+      "Sentence": "And I know that it's like it could be frustrating to hear a very privileged person complain about how many options. They have and like you know. Boo hoo like what? What of the 5 great job offers do I choose from. It's so hard and I know that can be frustrating and annoying to hear but the truth is like a lot of us.",
+      "Duration": 17,
+      "Offset": 1781
+    },
+    {
+      "Sentence": "Have that luxury like you know, I think it's really your responsibility to exercise your privilege and make those decisions like no one like everything that you choose your the only one that has to live with it. So you better choose wisely and I think that's yeah, I mean, most of us have ability to a choose between employers but also just be able to choose doing something you. Love this is generational question like my parents will actually my parents were.",
+      "Duration": 30,
+      "Offset": 1798
+    },
+    {
+      "Sentence": "For fold their hearts and did what they wanted but I think there's definitely something there's a gap and nowadays. There's a lot of people who do have the ability to do what they love and they have that option. It's not just making sure that you.",
+      "Duration": 13,
+      "Offset": 1830
+    },
+    {
+      "Sentence": "Put pay the rent, and then make sure your kids get booed and then that's it. Like you really do have lots of choices for how you get that money and so I think it's important to be choosy. Well, hopefully for folks like you say we have. We all have various privileges of varying levels. But hopefully people will be able to take some of the culture queries. The interview questions and the resources that you put together at key values to enable them to ask the right questions and hopefully get that next big job and I appreciate you coming on the show today.",
+      "Duration": 26,
+      "Offset": 1844
+    },
+    {
+      "Sentence": "You know is so great. Thank you for having me this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 6,
+      "Offset": 1872
+    }
+  ]
+}

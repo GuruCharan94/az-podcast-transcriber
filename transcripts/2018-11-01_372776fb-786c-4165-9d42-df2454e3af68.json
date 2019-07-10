@@ -1,0 +1,428 @@
+{
+  "id": "372776fb-786c-4165-9d42-df2454e3af68",
+  "Title": "Designing for a Global Audience with Digital Nomad Jenny Shen",
+  "PublishDate": "2018-11-01",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/840bfd95.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey friends this is Scott. I want you to know how much I appreciate you as listeners and I hope you appreciate my sponsors because they make this show possible.",
+      "Duration": 7,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Ray gun provides full stack error crash and performance monitoring for tech teams whether you're a software engineer looking to diagnose and resolve issues with greater speed and accuracy or product manager drowning in bug reports or maybe you're just concerned you're losing customers to poor quality online experiences. Ray gun can provide you with the answers get full stack error an performance monitoring in one place. The next time you're struggling to replicate errors and performance issues in your code base think Reagan head over to reagan.com that'SRAYGUN.com.",
+      "Duration": 31,
+      "Offset": 8
+    },
+    {
+      "Sentence": "Running within minutes, and dramatically improve your online experiences of your users.",
+      "Duration": 8,
+      "Offset": 41
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode in Hansel minutes and today I'm talking with Jenny Shannon. She's calling from you in Holland right now. Yes, I am in Holland and you live there right now. I live in Amsterdam fantastic? How long have you been in Europe?",
+      "Duration": 14,
+      "Offset": 58
+    },
+    {
+      "Sentence": "I have lived in Amsterdam for about 3 years now and when I look on your website. It says that you are an independent UX and product designer, but you're Canadian and you've worked in many different countries. You traveled all over the globe. You're almost like a digital nomad exactly. That's aside tell other people. I'm a digital nomad? Did you decide that one day you said. I'm going to have a business. I'm going to be an independent and I will use my business to travel the world.",
+      "Duration": 28,
+      "Offset": 73
+    },
+    {
+      "Sentence": "Actually, it's more like it was a dream and he was a goal 'cause I've met uh what while I was in the intern. I met other peoples who do that. And I just thought it was such a cool career and I want to do that. In the future. So I kind of actively work towards getting to that goal and here I am.",
+      "Duration": 18,
+      "Offset": 102
+    },
+    {
+      "Sentence": "In Tastic, I'm looking at your about page and it's just full of international speaking and you're all over Europe and you're doing workshops. You seem like you're not just a UX and product person, but you are a global one. You focus on design for everybody and I think that a lot of us really just designed for our local local audience.",
+      "Duration": 19,
+      "Offset": 121
+    },
+    {
+      "Sentence": "Yeah, I think I am very lucky to have the opportunity to be able to move several countries and also have server client. Trust me to design for just more than their local country so I really love what I do. I've looking at an arm? Talk that you gave about building bridges, not walls and designing for users across cultures. It says that you traveled to nearly 50 countries lived in 6 and work with users from 27 that's basically.",
+      "Duration": 30,
+      "Offset": 141
+    },
+    {
+      "Sentence": "One it's almost everyone, yeah, yeah, so it is just kind of like what I've been doing for the past few years and lucky to be in this niche and I find it so interesting to design for international users localization like these this kind of cross cultural experiences user experience is really fascinates me now. I've done basic internationalization that's when you see like.",
+      "Duration": 30,
+      "Offset": 172
+    },
+    {
+      "Sentence": "Number 18 an which is you know like remembering the German words are longer, so making room for them and Chinese and Japanese kanji is smaller things will shape and layout differently, but when you're talking about UX design across different cultures. It's not just changing strings right now, it's not it's more like be aware of the not just the character laying the more about how this culture actually affect the user experience is an in my talk I give examples about.",
+      "Duration": 33,
+      "Offset": 204
+    },
+    {
+      "Sentence": "So the interface for the Netherlands and the neighbor. Germany can actually have a difference and then also interface in Japan or China like? How does that different from the interface of the West so those kind of examples where people don't really research or think about and I just talk about adding my talk understand that do you a reference yakap nielsens book international user interfaces and there's a great quote that says it's not simply enough to offer a product translated to 10 or 20 languages users want to product.",
+      "Duration": 34,
+      "Offset": 238
+    },
+    {
+      "Sentence": "Their cultural characteristics in business practices.",
+      "Duration": 2,
+      "Offset": 273
+    },
+    {
+      "Sentence": "Think I've just been changing strings in a text file all this time.",
+      "Duration": 3,
+      "Offset": 276
+    },
+    {
+      "Sentence": "II guess we to be for people don't really know there's not really like official courses that teach people how culture a f** user experiences. I also didn't. I also didn't learn that when I study interaction design. It was more like when I travel. And when I design for the local audience and I realize Hey, there's actually a big difference. So I wanted to reference that book, which is a by authors that most people in us know about to say that Hey.",
+      "Duration": 31,
+      "Offset": 281
+    },
+    {
+      "Sentence": "And that's very important that's kind of.",
+      "Duration": 1,
+      "Offset": 313
+    },
+    {
+      "Sentence": "Bring more awareness into that in a number of your blog posts and posts that you've pointed to you reference actual studies like these aren't necessarily opinions as they are like practical scientific studies or formal studies. For example, one professor, said that there's 6 aspects for cultural differences power distance power distance masculinity feminity individualism and.",
+      "Duration": 30,
+      "Offset": 315
+    },
+    {
+      "Sentence": "Certainty avoidance and setting a firm Orientation, an indulgence and then you call out one really interesting comparing Taiwan with the US? Yeah, yeah, so Indiana chart. You can actually see how in host data dimension the cultural dimensions, how the US is different from Taiwan, which is actually the country that I'm born in and it says here that in the US individualism is very important while in Taiwan.",
+      "Duration": 30,
+      "Offset": 346
+    },
+    {
+      "Sentence": "Orientation is important? What is long term orientation so long term orientation is how the user kind of perceive or changes are action in order to do stuff.",
+      "Duration": 12,
+      "Offset": 378
+    },
+    {
+      "Sentence": "In in order to do stuff that's more for long term purposes and usually link that to saving or instead of making short and decisions. People make long term decisions so that that can affect the user interface might be that.",
+      "Duration": 19,
+      "Offset": 390
+    },
+    {
+      "Sentence": "Price sensitivity or any sort of decisions related to shorten and Lanturn and Taiwanese users are more likely to choose it for the long term benefits instead of short-term like instead of instant gratification users.",
+      "Duration": 16,
+      "Offset": 411
+    },
+    {
+      "Sentence": "Where countries have high Lantern orientation scores tended choose it for the long term benefits interesting so like I literally you know a couple hours ago was looking at my banking on unlikemint.com, which is like an into it product and it's very much like my budget and my financial future and it is very individual focused but it's also trying to get me through budgeting for the next month. There's not a lot of how will my family be in 10 years type of planning.",
+      "Duration": 30,
+      "Offset": 428
+    },
+    {
+      "Sentence": "To line up exactly with what you were saying, it's designed for United States. Person yeah, so I don't design that much in Fintech, but I assume this is kind of my assumption that perhaps in Asia. The banking will kind of give a user yearly overview. Maybe there will be more services toward saving for their children, saving for their grandchildren. An more like long term investment plan is it just a guess but I'm trying to make make this make sense for.",
+      "Duration": 30,
+      "Offset": 460
+    },
+    {
+      "Sentence": "Who are trying to understand what the difference of long term and short term orientation right right? I think that the the point is that it's an educated guess to say that these are in fact, how different cultures. Juxtapose other different. It's clear that Taiwan is different from the US and how people go about and move about their lives and then if you compare Taiwan with another country or the us with another country you would see different axes. So it sounds like sometimes you would have to.",
+      "Duration": 30,
+      "Offset": 491
+    },
+    {
+      "Sentence": "Almost entirely different UX depending on what your your market is exactly. Yeah, you also talk about a map from Erin Mayer that talked about the axes between emotionally expressive versus an expressive and confrontational versus avoiding confrontation.",
+      "Duration": 18,
+      "Offset": 522
+    },
+    {
+      "Sentence": "Yep, so air mirrors our culture map is is a great book an it talks more about.",
+      "Duration": 4,
+      "Offset": 540
+    },
+    {
+      "Sentence": "We'll talk more about how culture effects. International teams more in a sense of teamwork and management instead of how they affect the interface.",
+      "Duration": 10,
+      "Offset": 547
+    },
+    {
+      "Sentence": "Oh, interesting so you are applying these workings, not just to the actual UX and the user interface, but also to the teams that you work with as you travel around the world exactly so recently. I work with international teams and they're distributed teams where there's members from the us from Hong Kong from Poland from UK and I have to pay attention to the subtle subtle deed where.",
+      "Duration": 26,
+      "Offset": 557
+    },
+    {
+      "Sentence": "Members of the UK are more a little bit more indirect so I have to be more careful when giving feedback to the designers in UK versus to my main clients in the US and they actually prefer, if I just talk about the design points. But in more of code and Co American way like you know the sandwich way of giving feedback it's like good not so good and good so I have kind of have to pay attention to the person's culture and how I could work with them more effectively.",
+      "Duration": 30,
+      "Offset": 584
+    },
+    {
+      "Sentence": "It is one when doing this kind of research or reading about this kind of research make sure that they're not picking a stereo type? How can one make a generalization and say? Yeah, that's generally true for example, this says that I'm just going to pick a country that people in Spain or more confrontational and more emotionally expressive than people from the US that doesn't feel like it's a bad thing. It's simply a statement of a generalized perspective. But if it goes too far. Then it's a stereo type of course, yeah that's a really good questions and I think that's something to be aware of and.",
+      "Duration": 34,
+      "Offset": 615
+    },
+    {
+      "Sentence": "Sometimes make mistakes in making stereotypes instead of more understanding about culture. So my understanding of how to not make serotype is to be aware of. For example, in the culture maps like Spanish could be more emotionally expressive, but does it mean that they are emotional does that mean that they are for example, linked to more negative. Adjective then that is more towards serial type and for example, is assuming that.",
+      "Duration": 31,
+      "Offset": 650
+    },
+    {
+      "Sentence": "Users will then do about this, then that could be a stereotype, but to use a more Journal statement that according to this data, according to air mayors chart and research because planets users are emotionally expressive so we should allow away for Spanish user to express themselves instead of trying to not let them connect to each other.",
+      "Duration": 24,
+      "Offset": 683
+    },
+    {
+      "Sentence": "Is this it doesn't make sense? Do you see? There is a difference right? It sounds like you know culture effects? How you feel about something like an error message about how you feel about an avatar? How you feel about the way a company talks to you like you gave an example of a project you work on it was for a Dutch company called travel bird where you change the layout of a form because of the Dutch is kind of pragmatic nature. Exactly yeah, so that was the example. I give for a Netherlands versus Germany.",
+      "Duration": 32,
+      "Offset": 708
+    },
+    {
+      "Sentence": "That's loss actually how being pragmatic and having high scores in Longton orientation can actually affect the interface and I assume that you can measure this right like like someone might be listening and feeling uncomfortable if there American or Dutch or Spanish, but at the same time, you can be test. These things can't. You yeah, so a lot of these changes are actually based on research. So we're not saying that every single dots user last discounts or every single German user needs.",
+      "Duration": 31,
+      "Offset": 741
+    },
+    {
+      "Sentence": "Worse sometimes culture is very brought an and there's also cases where people like me like can I be categorized as Taiwanese? Can I be categorized as Canadian? Not exactly because I have kind of multiple backgrounds. So there are cases where user does not identify with a culture and that's OK. We're just saying that when we AB test. When we have qualitative and Quantitative data. The results are we see is that this kind of pattern works.",
+      "Duration": 30,
+      "Offset": 773
+    },
+    {
+      "Sentence": "For people in this country or people off this culture, but not necessarily everyone OK. So again when you're designing you recognize that these are generalizations, but every culture is different and people across multiple cultures. So you have to be prepared to AB test and maybe be surprised exactly exactly so then if you are surprised with that. I assume it. You need to measure and be prepared to change quickly and don't want to make assumptions.",
+      "Duration": 27,
+      "Offset": 804
+    },
+    {
+      "Sentence": "Yeah, so that's kind of what I advocating the talk is that be prepared data users may not react well to UI UX pattern that I've been using for several years and be prepared to Amy tested and also 3 search? What works better for their users.",
+      "Duration": 16,
+      "Offset": 833
+    },
+    {
+      "Sentence": "A big thank you to our sponsors because they make this show possible and I hope that you support them the way they support us.",
+      "Duration": 5,
+      "Offset": 850
+    },
+    {
+      "Sentence": "Progress software is the creator the most comprehensive developer Toolkit for building modern apps on the market. Today, Telerik Dev craft with more than 1100 telerik.net and kendo. UI JavaScript components and controls you can easily build modern high performance web mobile and desktop apps as well as chat. Bots the tool set also includes reporting solutions. Automated testing and productivity tools and come to the range of support options. New this year is a free online training program for all license holders with this alongside thousands of demos and source code available.",
+      "Duration": 32,
+      "Offset": 857
+    },
+    {
+      "Sentence": "Connect documentation in a full assortment of Visual Studio templates. You'll be up and running with the Progress Telerik and kendo. UI controls in no time download a free 30 day trial today at telerik.com slash hanselman that'STLERIK.com hanselman.",
+      "Duration": 18,
+      "Offset": 890
+    },
+    {
+      "Sentence": "I mean, if someone is listening and saying wow. You know, I do business in 56 countries. I'm not going to make a custom site. Just for the Germans is it more about looking at specific touchpoints within their UX and modifying just those.",
+      "Duration": 13,
+      "Offset": 909
+    },
+    {
+      "Sentence": "So the difference of internationalization, So what you just described earlier. I 18 N versus localization. L 10 N is that internationalization kind of takes account of all the differences within the demographic study are going to target like Germany and multiple countries in Europe and coming out with a system that kind of.",
+      "Duration": 25,
+      "Offset": 924
+    },
+    {
+      "Sentence": "Is able to?",
+      "Duration": 1,
+      "Offset": 951
+    },
+    {
+      "Sentence": "Is able to satisfied and all end?",
+      "Duration": 2,
+      "Offset": 953
+    },
+    {
+      "Sentence": "And like for example, having good.",
+      "Duration": 2,
+      "Offset": 956
+    },
+    {
+      "Sentence": "Mayfield and Whatnot, but localization is specifically making a custom design for that particular country in order to achieve the pass effect, so whether to go with internationalization and localization is a business decision like Facebook for example, they are in drop box. They're going after internationalization because they know they want to target they want to serve all of the users in this world, but they are not going to make custom designs for.",
+      "Duration": 30,
+      "Offset": 959
+    },
+    {
+      "Sentence": "Around the world, but first above for other companies. They choose localization because they actually really want to target a few specific market and they want to maximize.",
+      "Duration": 12,
+      "Offset": 991
+    },
+    {
+      "Sentence": "Return on investment in those markets OK, so let me see if I understand that so internationalization is removing barriers to international deployment, making sure that the text is all local but localization is more adapting the product to the local target market. It's more specific than just swapping out the text.",
+      "Duration": 24,
+      "Offset": 1004
+    },
+    {
+      "Sentence": "Yeah, so II cannot speak more about internationalization because I don't study in that area before from what I understand it's about knowing knowing and studying for example, all of the addresses in the world and kind of coming up with a Journal address form that will suits every type of possible address for example, it could have 2 address lines instead of zip code equal use post tickle slash zip code slash whatever.",
+      "Duration": 30,
+      "Offset": 1029
+    },
+    {
+      "Sentence": "But they researcher makes sense for a lot of users across the world to me. That is internationalization, but localization is like the address in Indonesia, is like this. So when the user is coming for Indonesia. We use Indonesian address format. But when a user is American then we use American address formats OK that makes sense. So localization like if we look at the W3.org that W 3 C. They say that localization is that real comprehensive thinking of the way that you do things.",
+      "Duration": 33,
+      "Offset": 1060
+    },
+    {
+      "Sentence": "Focus on a given locale so I like that. You could just make a double text box and say, yeah type your address. It's fine will just put in his free text box, but Localize is going to require a lot more work. But it might also make a happier user. Yeah, to me. I feel like that's where I want to focus my efforts. I want to contribute to the happiness of the users filling out the form because of forms have been localized right when you point out something else, I found absolutely fascinating. I assumed that iconography and Emojis.",
+      "Duration": 30,
+      "Offset": 1093
+    },
+    {
+      "Sentence": "Somehow becoming a standard like for example, the hamburger menu. Like I figured I talked to my spouse and my children. They don't know it's called the hamburger menu. And they know that if you click 3 lines. Something happens, but did you point out that there's different icons in different countries like they don't use the hamburger menu as much in China. They use a different icon exactly so while the hamburger menu makes sent to us that working tag and those kind of live in a western society so in in my talk I point out that.",
+      "Duration": 32,
+      "Offset": 1125
+    },
+    {
+      "Sentence": "What's more common is a discover icon with with a compass image where users learn to click on it or tap on it to discover more options and that's more appropriate for the context of Asian society because people don't make the Association where 3 lines equals hamburger, but of course, there might be users in Asia, who are using a lot of worsen abs and then they they actually know the 3 lines equal to more options or the menu.",
+      "Duration": 32,
+      "Offset": 1158
+    },
+    {
+      "Sentence": "In China, specifically they don't use that interface pattern and you also point out kind of as a general generalization that typing Chinese takes a long time, so finding the perfect word or precise where it isn't as easy as browsing to the right location.",
+      "Duration": 16,
+      "Offset": 1191
+    },
+    {
+      "Sentence": "Yeah, so that's something where a design strategies at Mozilla has discover and as actually his assumption encoding his assumption right Grampa Toria. Yeah, that was from his research into why do the Mozilla Firefox homepage. Look different for the US and China and China where they use a more newspaper style dashboard looking homepage. Portal design compared to the US? Where is very minimal?",
+      "Duration": 30,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "There's only one call to action so.",
+      "Duration": 3,
+      "Offset": 1240
+    },
+    {
+      "Sentence": "This assumption was that.",
+      "Duration": 1,
+      "Offset": 1244
+    },
+    {
+      "Sentence": "Perhaps because typing Chinese we need to find the precise war and there's literally like thousands of war for just one pronunciation. It's could be easier. If we just allow the user to choose and click. Whatever they see interesting instead of asking the user to type in what they're looking for and I also feel like it might be related to the individualism cultural dimension because this is my assumption. Perhaps the western user want to determine they want to choose for themselves.",
+      "Duration": 30,
+      "Offset": 1246
+    },
+    {
+      "Sentence": "They are searching what is it that they're doing, but the Asian users perhaps they OK to be guided with options so that they can just click and browse instead of deciding for themselves? What is it that they want to search and not saying that Asian users don't search by this just kind of my educated guess right right. But it's also something that you can potentially back up with anecdotes and experience like for example, your point that, like Americans or western society likes a lot of whitespace in a big text box that kind of Google.",
+      "Duration": 31,
+      "Offset": 1277
+    },
+    {
+      "Sentence": "Which are being empty page with a picture while if you go to like Taobao? It's quite busy it's almost like Yahoo 10 years ago with a lot of text and a lot of it seems like a fair statement that the Chinese seem to appear to like a lot more text. A lot more information on the page or as a design style. Yeah, exactly and when I point out the 2 differences and people are actually a bit shocked that how is it that a lot of the interface in Asian society looks so to us cluttered?",
+      "Duration": 32,
+      "Offset": 1310
+    },
+    {
+      "Sentence": "Overwhelming that somebody's opinion, mostly from the western society, but to the Asian user. They actually comfortable with it because some people could think.",
+      "Duration": 10,
+      "Offset": 1342
+    },
+    {
+      "Sentence": "Well, if today, I see a blank page. How do I know where to start like? How do I know what to type like I rather just let you? Give me the options and I can just determine I can just know what are the top 5 news I must read today? What are the top 5 people I must follow so on and so forth that's really interesting because it's funny that we all think of the Internet is being this global thing and everything should be the same everywhere. But I'm sure that you shop, a Dutch furniture store and I would shop in American furniture store and we eat at different places.",
+      "Duration": 32,
+      "Offset": 1353
+    },
+    {
+      "Sentence": "The aesthetic of a Scandinavian furniture or interior designer is going to be fundamentally different from an American from a Japanese or Chinese? Why would they all want the same design on a website. Yeah, exactly. That's a very good point. I'm realizing now that it would also be very challenging. For Facebook to have an entirely different design. But at the same time now. I'm realizing I'm quite surprised that a Chinese Facebook was in China. It should be quite a bit busier if it was going to cater to their audience. It was going to be.",
+      "Duration": 30,
+      "Offset": 1386
+    },
+    {
+      "Sentence": "Sized versus what you pointed out is that it's really just internationalized. Yeah, exactly so it sounds like we should research. Those local UI patterns, an apply those and you put together a whole ton of information on on different medium posts and will make sure that we link all of this in the show. Notes you, also point out that when you're doing this research that creating a persona to describe who that local user that has value to like invent kind of a person and talk about.",
+      "Duration": 30,
+      "Offset": 1417
+    },
+    {
+      "Sentence": "Well, technically a persona. It is when somebody is inventing a persona. It supported persona. But in ideal UX process. The persona should actually be research invalidated because we could imagine what are South African user would do and feel and what's their goals and frustrations and needs but without actually validating. These is just kind of imaginary persona. That's probably going to steer's.",
+      "Duration": 31,
+      "Offset": 1448
+    },
+    {
+      "Sentence": "We're designing for serial types so while personas is a valuable tool in a UX process like I would advocate for validating and actually talking to these user to make sure that once assumption, an guesses are correct, OK, so make an assumption, but do it with research back, it up with research and thought as opposed to being lazy and coming up with just a stereotype and then assuming that that's how a Dutch person or Spanish person behaves online that's right.",
+      "Duration": 30,
+      "Offset": 1480
+    },
+    {
+      "Sentence": "And you're almost like creating characteristics card like a Dungeons and Dragons, where it's like this person values easy and fast and cheap and this person values. This this in the other thing. Yeah, it's it's funny now that you mention it in some personas. I do use sort of those kind of matrix do they value like do they value speed? Do they value like ease? Do they value like? What not and now that you mentioned? I think it's interesting if we could put cultural dimensions on it.",
+      "Duration": 31,
+      "Offset": 1511
+    },
+    {
+      "Sentence": "Do they value long-term decission do they value like family? Do they value. The collectivist as societies input.",
+      "Duration": 6,
+      "Offset": 1544
+    },
+    {
+      "Sentence": "That could actually affect the personas a lot and you also point out the importance of using diversity and inclusion in even you're creating of these persona faces you know it's really easy to go and search for a generic face and end up with quote unquote the default.",
+      "Duration": 19,
+      "Offset": 1552
+    },
+    {
+      "Sentence": "Yeah, so something that I encourage everyone to do encourage all the designers is too.",
+      "Duration": 6,
+      "Offset": 1572
+    },
+    {
+      "Sentence": "Is to look up multiple cultural faces and like diverse users if today? One is designing international product then make sure that the avatars are not just people of that demographic and not people of the same gender because I see actually a lot. I mean, it's a simple idea to simple thing to do. But when I go on gerbil or when I check someone else portfolio. I see all the avatars are just people of the same race people that look like they know each other so something that.",
+      "Duration": 31,
+      "Offset": 1580
+    },
+    {
+      "Sentence": "Design international product have to be aware when we put diverse avatars. Diverse faces in our product is more easier to imagine these users are using our product, so therefore, we kind of a little bit more aware of their needs. Compared to, if we just use avatars of the same same races say nationalities. I think those things seem kind of obvious to a certain kind of person but at the same time, if you don't see your face represented you can feel excluded.",
+      "Duration": 31,
+      "Offset": 1611
+    },
+    {
+      "Sentence": "Thing I noticed today actually my 13 year old just got his first phone and he's just begun to learn how to use the phone and text. His friends and I asked him in text? How do you like the phone and he texted me an emoji thumbs up and it was Brown 'cause my children are children are black and I said oh your thumbs up is a Brown finger. I said how did you figure that out, and says Oh, well it's my finger right?",
+      "Duration": 26,
+      "Offset": 1644
+    },
+    {
+      "Sentence": "So he didn't want it to be just a Peach colored finger or a yellow finger. Like The Simpsons and he did it entirely on his own and I thought that was cool. So he's quietly and on his own, without even thinking about it. Without you know, he's a little kid. He's not thinking about diversity and inclusion. He just wanted the thumbs up to look like his thumb, which I thought was pretty cool.",
+      "Duration": 20,
+      "Offset": 1671
+    },
+    {
+      "Sentence": "Yeah, that's that's thank you for sharing that that's really interesting like how to them is the default. It's not just like an extra option, but we think about other product. There are so many that Dome kind of cater to international audiences and we are experiencing frustration where they don't see their default. They don't see their finger color in there. Yeah, I think that you know, someone who is maybe not doesn't appreciate inclusivity or diversity in this. I don't worry about it just a finger right.",
+      "Duration": 31,
+      "Offset": 1692
+    },
+    {
+      "Sentence": "Looks like The Simpsons may not realize that without any coaching. Both my wife and my sons have just picked the one that looked like them, which I thought was interesting 'cause I never taught them that which which kind of made me happy because now he's going to grow up in a world where you can pick the avatar or the video game character that looks like him.",
+      "Duration": 25,
+      "Offset": 1724
+    },
+    {
+      "Sentence": "Yeah, that's great we have put together a whole series of links to all sorts of research and I'm going to include links to your medium posts in the show notes and I appreciate that in all of your writing you include a lot of links out. It sounds like people have a lot of research that they need to do to learn about this stuff.",
+      "Duration": 17,
+      "Offset": 1750
+    },
+    {
+      "Sentence": "Yeah, I think the research uh there's really a lot to do because I mean, I just designed for users of over 25 countries. But they're actually like something like 169 countries in the world and I think I'm not even doing enough. I'm not designing a lot of users in certain regions because I'm mostly approach by clients from certain countries like you can imagine so definitely there's there's a lot for us to do a lot to learn but then the resources in my talks and in my medium posts are.",
+      "Duration": 32,
+      "Offset": 1768
+    },
+    {
+      "Sentence": "It is and I understand that you also do do mentorship but of course, as you are an independent right now. You do card a little bit, for your mentoring mentoring services.",
+      "Duration": 12,
+      "Offset": 1802
+    },
+    {
+      "Sentence": "Yeah, I do so I've been mentoring kind of a part time for more than a year now and it's being really great to see how my minties of grow to learn to improve their portfolio get more confident in a job surgeon, even moving abroad to do what I have done before and yeah. It's being it's being really great to be a mentor actually so that's great. You're not just mentoring on product design and UX, but also on how to potentially be a digital Nomad.",
+      "Duration": 30,
+      "Offset": 1815
+    },
+    {
+      "Sentence": "It appears also that your mentor ship is quite formal you can set for 6 month plan. There's homework. That's tailored to their growth. It really inspires me to maybe make my mentor ship experiences more formal.",
+      "Duration": 12,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "I guess is up to the mentor because each person have a different teaching Staley. It used to be less formal than that, but then later, I realized after a year I was looking at.",
+      "Duration": 11,
+      "Offset": 1860
+    },
+    {
+      "Sentence": "Their goals and I half, I help have I contributed to their successes and I realized that for me like my teaching style. It will help if I would actually talk to them about their goals. Anna formula plan for them instead of there. They want to be proactive to ask me questions are they think about because the",
+      "Duration": 18,
+      "Offset": 1873
+    },
+    {
+      "Sentence": "The risk is that they don't know what they don't know. And if they don't know what they don't know that II should be the mentor should be to want to actually teach them them NTS what they actually should know so that's that's kind of why I personally have this more formal structure to approach his mentor ship. Current Tastic well. Thank you so much for chatting with me today.",
+      "Duration": 21,
+      "Offset": 1892
+    },
+    {
+      "Sentence": "Of course, it's been a pleasure, thanks, so much for having me. English yo so you can check out Jenny Shen at JENNYSHEN.com and make sure to scroll down to the bottom and subscribe to her design newsletter. You'll get a newsletter twice a month and you can learn all about what she's doing and where she's going. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 24,
+      "Offset": 1914
+    }
+  ]
+}

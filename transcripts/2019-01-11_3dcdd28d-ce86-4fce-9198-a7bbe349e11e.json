@@ -1,0 +1,473 @@
+{
+  "id": "3dcdd28d-ce86-4fce-9198-a7bbe349e11e",
+  "Title": "Episode 666 - Game Engine Black Book: Doom with Fabien Sanglard",
+  "PublishDate": "2019-01-11",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/06cd1db8.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks, you're a very good developer probably regardless you do right bugs. That's unavoidable. What is avoidable is wasting time trying to track down the cause of those bugs century dot IO provides full stack error tracking that let's you monitor and fix problems in real time you can see the severity in the scope of the error get immediate access to the stack trace connect the problem to the commit that caused it and fix it without delay century. It's a name so common that they have to include the top level domain in their advertising to make sure you remember it.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Free dot IO that century dot IO open source full stack web apps native apps mobile game. Smart oven, Mitts if you can program it. They can make it far easier to fix any errors. You encounter with it your code may be broken. Let's fix it together visit century dot IO.",
+      "Duration": 23,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking to Febian SoundCloud, who has written a wonderful book called the game engine. Black book for doom and I'm sitting here with this book in front of me filled with highlights. I've been reading. This book and highlighting so many pages and I'm so excited to chat with you today Sir. Thank you for having me this is such an interesting idea. You've written both the game engine black book for doom and then previously wrote 14.",
+      "Duration": 31,
+      "Offset": 64
+    },
+    {
+      "Sentence": "3 D&I was my wife saw me reading this yesterday and she said. Are you studying because she saw diagrams and photographs in full color and code and she thought I was studying for some kind of a test and I was telling her what a joy. It was to explore the last 25 years of doom.",
+      "Duration": 19,
+      "Offset": 96
+    },
+    {
+      "Sentence": "I'm glad I'm glad you enjoyed it at exactly. That's part of why I wrote it, part of it was a nostalgia, and allow people to leave again that error, so this is doom is 25 years old. This year is it on December tense of DC. I turn 25 years old. It was released on December 10th 1993 and you have written in over 400 page full color book as if I'm AA love letter.",
+      "Duration": 30,
+      "Offset": 116
+    },
+    {
+      "Sentence": "Good to doom to Carmack to the to everyone that worked on this project. It's it's extraordinary this must have taken a very long time.",
+      "Duration": 8,
+      "Offset": 147
+    },
+    {
+      "Sentence": "No actually this one this one went pretty fast. I wrote it pretty much in 6 months. Then I left it untouched for awhile, too, so I could proofread it with new eyes.",
+      "Duration": 12,
+      "Offset": 156
+    },
+    {
+      "Sentence": "And it was a pretty fast pace. It's a love letter. But it's also thank you. Later, for all, I've learned all I've been able to do with this source code and or what this game is brought to my life. That's amazing that you're saying it was a pretty quick right because I don't want people to think oh, he he wrote. This book in 6 months and it must a year. There's so much detail why was it easy to write was it just because it flowed out of you?",
+      "Duration": 30,
+      "Offset": 168
+    },
+    {
+      "Sentence": "And is that first of all I had all the tools really before that, I wrote a book about Wolfenstein. 3 D this one was a hell I give up 3 times over across 3 years trying to make it happen. It was very difficult this one. It was like really well set up framework and all of the content pretty much I had it in my head because I've been writing about doom. Some of the technique used in the game like binary space.",
+      "Duration": 31,
+      "Offset": 200
+    },
+    {
+      "Sentence": "Mapping.",
+      "Duration": 0,
+      "Offset": 232
+    },
+    {
+      "Sentence": "And all those things so it wasn't really, really hard and especially because it also followed the same structure as the first book, which is first has described the environment.",
+      "Duration": 12,
+      "Offset": 234
+    },
+    {
+      "Sentence": "The hardware.",
+      "Duration": 0,
+      "Offset": 247
+    },
+    {
+      "Sentence": "And then I described the team and the tools. They built and finally a diving to the code and the engine so.",
+      "Duration": 8,
+      "Offset": 248
+    },
+    {
+      "Sentence": "That was pretty easy in comparison to the previous one and you put together your own production pipeline because this is a self published book that you wrote in latex. Everything was right in by hand. We've lyrics. Sublime text editor and escape for the drawings. That's fantastic. One of the things that I was a little surprised about when I had my expectations. When I bought it was that there would be. I would be reading code within the first page, but interesting Lee.",
+      "Duration": 31,
+      "Offset": 257
+    },
+    {
+      "Sentence": "Most 100 pages of of context. This isn't a book about code. It's a book about history about teams about schedules. Yes, it's very important so that's something that was even more vivid when I wanted to talk about what French thing is that even though you are the source code if you don't know about what was the are where what was the constraint of the time. It's means almost nothing so that's why I spend a lot of time, describing everything.",
+      "Duration": 30,
+      "Offset": 289
+    },
+    {
+      "Sentence": "Without being too technical for example, the 46 was a new CPU at the time that was using a Cash Cash line, technology to make things faster and, if you're not aware of that when you ring. The dump source code anyway. Things organized the way they are. You don't really understand why it's done this way.",
+      "Duration": 18,
+      "Offset": 320
+    },
+    {
+      "Sentence": "That's so important to point out because people who were who may not have been around or been aware of this in 1989 to 1992. There was a lot of happening with floating point processors and the SX versus DX 46. The decisions that the doom team would have needed to make they could have found themselves without a processor to run their app. Or they would have made that would have targeted the wrong instruction set and put themselves in a bad situation? Absolutely. Yeah, I agree with that.",
+      "Duration": 30,
+      "Offset": 339
+    },
+    {
+      "Sentence": "It's even more important know a day where I feel like develop rise more and more remote from the hardware typically if you if you write something in Java script.",
+      "Duration": 10,
+      "Offset": 370
+    },
+    {
+      "Sentence": "Ann.",
+      "Duration": 0,
+      "Offset": 382
+    },
+    {
+      "Sentence": "On Chrome you're running inside a VM which is a process on top of an operating system.",
+      "Duration": 5,
+      "Offset": 383
+    },
+    {
+      "Sentence": "And even that is sometimes virtualized somehow and we're so far, remote that we don't really factor in the limitation sometime. We program and assume we have limited limitless resources like Infinity, P power infinite ram, whereas when you program in this error for doom and Wolfenstein. You had to have specific budget in terms of ram in terms of CPU cycle. You are willing to spend on different part of the rendering pipeline.",
+      "Duration": 30,
+      "Offset": 389
+    },
+    {
+      "Sentence": "Working within constraints is a very different type of programming thinking about memory, but not just that thinking about how many processor instructions thinking about ticks. They had the series of constraints that they decided upon they said. This has to work in 4. Megs of ram they had minimum specs one of the things I thought was interesting was you, said that there was a controversial decision about the number of ticks that they could work within that allowed them to achieve somethings, but also.",
+      "Duration": 30,
+      "Offset": 421
+    },
+    {
+      "Sentence": "Later, what was that controversial decision. Oso is a hardcoded frame rate at 35 Hertz. So later on, you late to a program that even if your machine can render 70 frames per second because the world only update at 35. Hertz you only TH E 35 movement. Purpose second so that solve a lot of their issues because you could play the game on any computer and at the same world.",
+      "Duration": 30,
+      "Offset": 452
+    },
+    {
+      "Sentence": "But later on when pension came out, which will most fast on machine. They could not really run at the full potential because they were limited.",
+      "Duration": 11,
+      "Offset": 483
+    },
+    {
+      "Sentence": "So the idea that you would somehow get a faster machine and get 4 times more frame rate or 4 times more? What something it didn't. It didn't scale in the way that we think of modern game engine, scaling in the sense of scaling up but it did scale down extraordinarily.",
+      "Duration": 14,
+      "Offset": 496
+    },
+    {
+      "Sentence": "It did scale down and it did scale, but to a certain extent because even when they released the game. No machine could run at 75. Hertz so must machine while running at 20. So later on pension where about to reach certify which was still very pleased pleasant visually. But even now, a day when you look at a model in games, you can have games running at thousand frames per second, but even the monitor.",
+      "Duration": 30,
+      "Offset": 511
+    },
+    {
+      "Sentence": "Hey, he's going to run at 60 or issue. Lucky 120, so you still have a limiting factor. That's right? That's right. One of the things I also thought was interesting and I love that you actually found Usenet posts from 1994 with people and you included there. Actually, males, arguing about whether or not doom ran faster with a floating point coprocessor on a 46 DX or an SX and there was a lot. Even then on the Internet. There's a lot of fake news no one.",
+      "Duration": 31,
+      "Offset": 542
+    },
+    {
+      "Sentence": "Would decide whether it was better with this processor better with that. One yeah, we don't mean he caught it fake news because it's intentional, it's representative of the error. I know how hard it was to access the information. John Carmack mentions. It later on in the book when he was doing computer graphics research. He has very, very little access to resources.",
+      "Duration": 27,
+      "Offset": 574
+    },
+    {
+      "Sentence": "And everything was limited back in the days we are almost the same age and maybe you try to program banking 90s. A compiler was a thousand or it was something really hard to access so information. Even the tooling was how to access.",
+      "Duration": 15,
+      "Offset": 602
+    },
+    {
+      "Sentence": "The idea that tooling was how to access it looks when you look at the historical context here. It almost makes me wonder how we got anything done you actually include a table of prices and you are kind enough to show us what it would cost to buy computers. Now, some of the workstations that they were using would be 12 or $15,000 today, but I can't imagine someone tolerating that kind of computer today.",
+      "Duration": 24,
+      "Offset": 618
+    },
+    {
+      "Sentence": "Well, you know, I'm pretty showing 20 years, people are going to say the same thing about now and it's true for all time periods. Some people would say, well, crazy to buy phones that are thousand dollars. Yet we still do. That's true. That's true. They were targeting ultimately to start the PC which was a business machine, so they had the challenge of graphics cards in a machine that was used to pushing text around to start pushing graphics around but they didn't develop on the PC right.",
+      "Duration": 29,
+      "Offset": 644
+    },
+    {
+      "Sentence": "No, they did not develop on the PC that was one of the big decision. They made at in software. They actually developed everything on next workstation, which was manufactured by next company created by Steve Jobs in 1989.",
+      "Duration": 16,
+      "Offset": 674
+    },
+    {
+      "Sentence": "And this was in a real workstation. This was a revolutionary computer. This is one of the computers that a lot of historians feel like it should have succeeded in taken over the world, but it it didn't even though it's you find it's it's influencing code. Even on the iPhone today well yeah. I actually security. I think it it failed and rightfully so because it was, I think it was overpriced operating system was gorgeous so many innovation.",
+      "Duration": 30,
+      "Offset": 691
+    },
+    {
+      "Sentence": "It worked very well and it still still works because it's at the heart of Micro S now.",
+      "Duration": 5,
+      "Offset": 723
+    },
+    {
+      "Sentence": "But.",
+      "Duration": 0,
+      "Offset": 729
+    },
+    {
+      "Sentence": "I think maybe Steve job in his quest for perfection. I think on this one. He probably took it too far, yeah, and 1212 thousand dollars in 1991, was a nontrivial amount of money for next cube, especially when you consider it could only render for colors actually it would only black white and 2 Shades of Grey.",
+      "Duration": 21,
+      "Offset": 731
+    },
+    {
+      "Sentence": "But it was so high resolution it was very high resolution but.",
+      "Duration": 4,
+      "Offset": 753
+    },
+    {
+      "Sentence": "I don't know I think it's very interesting the choice. They made so to write his book actually acquired an extra colour station really Oh, yeah, I wanted to experience. The real pipeline? How long it took to compile Ho. Oh, it was to cut on this machine an what surprise me that it's not actually able to run doom properly. If you start if you start doing on the next station. It's going to run attempt frames per second.",
+      "Duration": 31,
+      "Offset": 759
+    },
+    {
+      "Sentence": "So really what they got out of the next station was the stability of the text editor. The power of objective C because developing the tools was much faster, but it was at first sight. It's not obvious that it's going to be a machine done to develop first person shooter. I was impressed that you include some screenshots that are like you must have taken them yourself. That show the what it would have looked like to develop it on dos at 80 by 25.",
+      "Duration": 31,
+      "Offset": 791
+    },
+    {
+      "Sentence": "And then you put it next to what it looks like on next. It's it's almost as if they picked the next simply because they wanted to see more lines of code in the screen, which I know is an oversimplification to some extent. It's through the main reason to Comac mention is that he didn't crash all the time that reportedly would lose all his work several times a day.",
+      "Duration": 23,
+      "Offset": 823
+    },
+    {
+      "Sentence": "And back into the editor did not save automatically so imagine yourself working an algorithm for an hour and losing it all, I can see why they were motivated to change.",
+      "Duration": 11,
+      "Offset": 847
+    },
+    {
+      "Sentence": "Today's sponsor is tiny technologies if you're a developer who needs to build beautiful writing experiences for your end users then check out tiny you may recognize the name tiny mce is the rich. Text editing platform that helped launch and scale startups like medium and WordPress and it lasts in and it's used by thousands of businesses like IBM Adobe. Intel the NASDAQ Visa and the list goes on, then able 10000 active applications and host 1,000,000 users on the tiny cloud.",
+      "Duration": 30,
+      "Offset": 860
+    },
+    {
+      "Sentence": "They also recently launched a cloud asset management system called tiny drive and they will soon release of re architected you I called tiny. Mce 5 to meet the needs of today's content creators so go check out tiny dot cloud slash hanselman for a free 30 day trial of their premium offerings that's tiny dot cloud slash, Hanselmann so you describe in great detail. The pipeline here. It's interesting that they are building on a Motorola but they're targeting.",
+      "Duration": 30,
+      "Offset": 891
+    },
+    {
+      "Sentence": "So, there, even the endianness is different between the 2 processors.",
+      "Duration": 3,
+      "Offset": 922
+    },
+    {
+      "Sentence": "Yeah, everything was different on those you had access to the hardware on next year to use whatever frameworks were using you cannot access the screen directly.",
+      "Duration": 12,
+      "Offset": 926
+    },
+    {
+      "Sentence": "Same thing for the keyboard the timer is not the same. Everything is different that work to the advantage is in a long time because.",
+      "Duration": 8,
+      "Offset": 940
+    },
+    {
+      "Sentence": "Is it do we? Do me structure? Is that there is a call?",
+      "Duration": 3,
+      "Offset": 949
+    },
+    {
+      "Sentence": "Ann you have sub system, which are very cleanly layered there's there are no layer violations. So to get outta get in your to go through those subsides system. Everything is very clearly defined and that's why dum was so easy to port late around to his own platform because the only work you have to do is to rewrite. This tiny sub system and the remaining core remain unaffected. So it's very much an example of single responsibility principle.",
+      "Duration": 31,
+      "Offset": 953
+    },
+    {
+      "Sentence": "Yeah, it's interesting that on the first preface where you get there in John Carmack. His first sentence is that doom was almost or effectively the perfect. The perfect game, and I thought to myself that's a little bit egotistical, but then you read the book and you go well. It kind of was the perfect schedule perfect storm. The whole team came together to make something that while it shipped with a bug or 2 has held up 25 years later as really just the perfect game, I agree with that.",
+      "Duration": 30,
+      "Offset": 985
+    },
+    {
+      "Sentence": "It's showing up evention, Romero over it any incentive you that the game turned out exactly the way you want it.",
+      "Duration": 9,
+      "Offset": 1015
+    },
+    {
+      "Sentence": "And the game felt very solid very fast. The engine was yeah, close to perfection. I would say to me. It's the best games ever produced. I wonder if people today if my kids if people who are in their twenties or people who are younger than doom is what they will experience that will cause them to have that kind of visceral feeling in their chest like Oh my goodness like when I saw Wolfenstein. You could have knocked me over with a feather.",
+      "Duration": 31,
+      "Offset": 1026
+    },
+    {
+      "Sentence": "Boom that the walls were not just square. I mean, it was so unbelievable. We hadn't seen anything like it. What is the next thing for that went in 2020 or 2025 that's going to knock over my son or my daughter with feather. I'm not show is going to be based on technology. I think a lot of good games. The design is much more important now. I think we're reaching a point where the graphic is not really improving anymore. Maybe it will come to VR.",
+      "Duration": 30,
+      "Offset": 1058
+    },
+    {
+      "Sentence": "Yeah, I have a hard time with VR because I get motion sickness. Yeah, it's really hard to tell where it's going to go.",
+      "Duration": 5,
+      "Offset": 1089
+    },
+    {
+      "Sentence": "Uh what's remarkable, though, is that do mistela enjoyable nowaday. The technologies obsolete. But the gameplay. Still, there are still a faced paced game with a lot of secret and that's the genius of the design of the game and you spend some time talking about how they designed the levels. How much work was put into it. And if you look at the amount of work spent on doom dot EXE versus the wad files, the where's all the data files it really is.",
+      "Duration": 30,
+      "Offset": 1095
+    },
+    {
+      "Sentence": "First example of an engine with that, you could then create unlimited content with no before finished and it was already an engine. It was just much harder to access. I don't think they were as open as they wear with Wolf when they saw it. Thanh made with well fenced in. They intentionally created an archive format which would be easy to modify if any internals press release.",
+      "Duration": 30,
+      "Offset": 1126
+    },
+    {
+      "Sentence": "Open game where they will publish the specs of the asset format.",
+      "Duration": 5,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "And they publish the source code just a few years later for years after it came out. This is so innovative. These are the kinds of things people do now. In 20 in the 2010 to 2015 to be doing that 25 years ago to be that progressive and thoughtful with your code with your assets and with your data format is extraordinary that was extraordinary and to me. That's the true spirit of people who love programming. You share what you know, and you just keep it for yourself.",
+      "Duration": 30,
+      "Offset": 1163
+    },
+    {
+      "Sentence": "There is a general mckinneys holidays when he was writing their plans. He was often quoting the right thing to do, which come from a book hackers.",
+      "Duration": 11,
+      "Offset": 1195
+    },
+    {
+      "Sentence": "And releasing the source code to the horror people loved it was really the right thing to do is somewhere in the middle of the book when we start talking about the 3 D renderer. You make that kind of comment that.",
+      "Duration": 11,
+      "Offset": 1206
+    },
+    {
+      "Sentence": "They had a contract to while they were in the middle of making doom. They're going to go in Port Wolfenstein, 2 Super Nintendo, which is a very, very small underpowered machine and they kind of forgot about it and then they went oh crap. The deadline is soon. We need to do that, so they stop working on doom. They run over start working on this. Ness and realize that their original algorithms are not going to cut it and you had made the comment about how now we just go on Google or stackoverflow back then you have to.",
+      "Duration": 30,
+      "Offset": 1218
+    },
+    {
+      "Sentence": "Research papers and have them delivered and get copies of papers to figure out if there's a solution to your technical problem.",
+      "Duration": 6,
+      "Offset": 1249
+    },
+    {
+      "Sentence": "Yeah, and in this occurrence actually it's not even in a book. I think we found a solution. It was on a VHS recording of some graphic computer graphics convention or something like that, so he was watching. Bruce Bruce Nailers. Talk some conference and then ordered his Bell Labs Paper and learned about BSP's maybe you could speak a little bit about what BSP is and why it's so significant so BSB spends for Buneary Space Partition.",
+      "Duration": 30,
+      "Offset": 1256
+    },
+    {
+      "Sentence": "A very efficient way to sort the world, so once you. You preprocess the world and you're going to repeatedly slice it in half until everything is convex, meaning that from any point you can see every other point in this area and once you have that it's very easy to render back to front or front to back.",
+      "Duration": 26,
+      "Offset": 1288
+    },
+    {
+      "Sentence": "And that's that was the key of the entire engine.",
+      "Duration": 3,
+      "Offset": 1315
+    },
+    {
+      "Sentence": "So everything is convex so nothing is open ended enough. Everything folds in on itself as opposed to opens out and then you drop everything up in the level you actually have wonderful graphics, where you show the progression from the level editor until the convex Leafs to show the creation of the first episode in the first map and why that's so important. I was actually able to explain it to my. Technical spouse who is not a programmer and they had no trouble understanding why that was an important.",
+      "Duration": 30,
+      "Offset": 1320
+    },
+    {
+      "Sentence": "And.",
+      "Duration": 0,
+      "Offset": 1351
+    },
+    {
+      "Sentence": "Well, that's that's the goal off of the book when I first got into computer graphics. I had a very hard time too.",
+      "Duration": 6,
+      "Offset": 1351
+    },
+    {
+      "Sentence": "To understand BSP zhan Oak trees and all those complicated barbaric technique.",
+      "Duration": 6,
+      "Offset": 1359
+    },
+    {
+      "Sentence": "Uhm so yeah, I think, to some extent, I wrote the book. I wish I could have just purchased.",
+      "Duration": 7,
+      "Offset": 1366
+    },
+    {
+      "Sentence": "It's interesting that this is so important, it really comes down to that constraint that we talked about at the beginning. It takes 11 minutes to go and process. All of this ahead of time for the 30 maps of doom, so they're basically you know their pre chewing their food, so that the end users computer doesn't have to do all of that chewing itself, yeah, so this pre processing was quite knowing for designers because we've all of in stains they would.",
+      "Duration": 26,
+      "Offset": 1374
+    },
+    {
+      "Sentence": "Uh they would just draw the map and instantly jump into the game to see how it worked, and all of the sedans. I had a delay between the time they finish the map and they could actually test. It so and that became even worse with quick they kept on adding more and more pre processing. But that was the only way seemingly to make it work. They also were very innovative in their use of subpixels had that been used before this time.",
+      "Duration": 30,
+      "Offset": 1401
+    },
+    {
+      "Sentence": "It had been used, according to John Carmack, it was not widely used if any, one of the things that John Carmack says that I thought was so funny was that because he was effectively disconnected right. The Internet was was Fido net and compu serve an email between universities at the time you couldn't just go and Google something that he would find himself all alone working in an vacuum, he would create something like LZW compression and then discover.",
+      "Duration": 30,
+      "Offset": 1432
+    },
+    {
+      "Sentence": "Well, that was also created by this person in this person this person. Yeah, I think that's illustrate how silly patterns. Are you can, we discover something dependently. We've actually stealing it for somebody.",
+      "Duration": 14,
+      "Offset": 1463
+    },
+    {
+      "Sentence": "Yeah, the the first example of course, being the light bulb where it's the person that got their first, who gets all the glory and the other one is forgotten to history. Yeah, sadly. I also appreciated that this book was very inclusive in that it didn't force me to think about math. I didn't really get into equations and tell about 200 pages in and even then, they were they were somewhat straightforward to understand I was worried there going to be a lot of math.",
+      "Duration": 28,
+      "Offset": 1479
+    },
+    {
+      "Sentence": "Yeah, so that's because my brain is allergic to mathematic. I wish it wasn't. I try to build up the strength education in France is very strongly focused on mathematic and it was a difficult time for me and I tried to explain things with drawings because, as soon as I see a mathematic formula. I try to step back and I wish it wasn't that way. But I believe there are many people like me, so maybe.",
+      "Duration": 33,
+      "Offset": 1508
+    },
+    {
+      "Sentence": "Like the book well, I'm one of them and I appreciate that as well. So do you think that this is an important book for young people to read for people who are you? Who just pick up unreal and then make a game. You know, and don't think about the shoulders of Giants there standing on I think I think people just want to make a game that is a bit of of using their time, depending on Rio. That's reason why this book exists. The main reason is that when I wanted to preserve history.",
+      "Duration": 30,
+      "Offset": 1542
+    },
+    {
+      "Sentence": "People to be able to go to the gym source code and understand everything with the context. The second is that I wanted to make sure I understood the curve very well in the best way to.",
+      "Duration": 11,
+      "Offset": 1574
+    },
+    {
+      "Sentence": "Make sure you understand something while you try to explain it to somebody and the selfish reason was that I wanted to write a book.",
+      "Duration": 7,
+      "Offset": 1586
+    },
+    {
+      "Sentence": "Uh.",
+      "Duration": 0,
+      "Offset": 1594
+    },
+    {
+      "Sentence": "For people who are in the game industry as I mentioned earlier what they can get from this book is dispirited text to achieve greatness and it's not a secret. It's just a lot of our work and be helpful and believing in yourself. One of the fun things that I liked particularly about the book was that as I get towards the end and I'm wondering where you're going with this and we get into great graphics and you talk about high and low detail mode, then you spend a really a nontrivial amount of time talking about the ports.",
+      "Duration": 31,
+      "Offset": 1596
+    },
+    {
+      "Sentence": "The PC version succeeds they spend basically 3 years, porting it to 6 major systems from the Jaguar to the Super Nintendo and like you point out doom runs on watch is it runs anywhere like it's almost the first thing you port when you make a new machine, yeah, so originally I was not going to talk about the console port. I just and then I started to look into it and every single port has a very interesting story. The Jaguar is very was done by.",
+      "Duration": 30,
+      "Offset": 1628
+    },
+    {
+      "Sentence": "And they've Taylor so it's interesting to see how they work together but then later on, you can see the 3 D apart, which was a complete failure to see all the back story that went to do it or the PlayStation Port Switch.",
+      "Duration": 16,
+      "Offset": 1659
+    },
+    {
+      "Sentence": "Nearly was a disaster they made it to turn it around and make it the best butt ever. The history of each part was so rich and the hardware was so interesting that I found it. It had to be in a book. Yeah, I mean, just as I've learned how they go and render this 2.5. Not quite 3 D but 2.5 D world. I'm starting to understand how everything is thought about then suddenly, we're talking about triangles and doing things a totally different way 'cause they rewrote the engine.",
+      "Duration": 30,
+      "Offset": 1676
+    },
+    {
+      "Sentence": "Different systems because that's how the game, the hardware makers insisted that they do it on different different systems.",
+      "Duration": 6,
+      "Offset": 1707
+    },
+    {
+      "Sentence": "Yeah, to me that the most physically fascinating, um port is probably the Jaguar. It was it's without being 2 technique called you have 2 different CPUs and they have different architecture that mean if you build to compile it for the Motorola. CPU 68,000 and then you want to use the other CPU. You need to use another instruction sets. So essentially the compiler. Part of the game for one CPU part again for.",
+      "Duration": 32,
+      "Offset": 1714
+    },
+    {
+      "Sentence": "And they were loading the instruction at runtime and there were streaming they were streaming it. They broke down the rendition rendering engine.",
+      "Duration": 9,
+      "Offset": 1747
+    },
+    {
+      "Sentence": "In 7 parts and then they were streaming it as the frame was being rendered to me. That's mind blowing what they managed to achieve the other Jaguar in 1993, was, I mean, 64 bit in a commercial system was just unheard of at this point, yeah to me, it felt like it was a fake news that time because 64 bit system, where handheld off at the time and I think they played on the world a little bit when.",
+      "Duration": 30,
+      "Offset": 1756
+    },
+    {
+      "Sentence": "The bus was 64, there and the GPU were 64 but the rest of it was 16 and sometimes 8, so maybe that's why they broke the Beat War because people may finally realize a silly it was. I really do encourage people to check the book out and pick this up. It is one of those books like you say in the book. In fact that you wanted to be a kind of book that would be me. D that you could hold in one hand and have some tea and your other hand, and just sit there and explore.",
+      "Duration": 31,
+      "Offset": 1787
+    },
+    {
+      "Sentence": "That you spent almost 100 pages in just appendix. I got to the end and I said. Oh, I'm not even at the end. There's still there's appendices. There's dot plans. There's the original press releases. There's interviews. I mean, even the appendices are almost a book in themselves, yeah again. It was to give people more context. The press release. So Tom Harward. This press reason January 1993, when they had nothing is improvised texture. Mappings improvise diminished lighting. They provide a bunch of stuff that they hadn't done and.",
+      "Duration": 32,
+      "Offset": 1820
+    },
+    {
+      "Sentence": "The world most of them interviews are also very interesting and it just gives a lot of Contexts. Maybe I'm very detail oriented. That's why I wrote 400 pages about doom. But every time somebody explain something to me hours and myself ice cream question about why is it done this way and it's always a matter of context? Well, I appreciate you coming on the show and giving us even more context.",
+      "Duration": 27,
+      "Offset": 1853
+    },
+    {
+      "Sentence": "Thank you for inviting me, fantastic, I'm going to include links to all of this and this show notes and I really encourage you that a check out the game engine black book. You can find links to Amazon in Google books about Fabian's website. You can find it at Amazon or your local bookstore. It is a joy and I would really encourage you to check out the physical version of the book, it might cost more than the PDF but it's just a gorgeous every pages got some color or some screenshot or some photograph. It's a wonderful piece of history, thanks so much.",
+      "Duration": 30,
+      "Offset": 1882
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 6,
+      "Offset": 1913
+    },
+    {
+      "Sentence": "In fact,",
+      "Duration": 3,
+      "Offset": 1926
+    }
+  ]
+}

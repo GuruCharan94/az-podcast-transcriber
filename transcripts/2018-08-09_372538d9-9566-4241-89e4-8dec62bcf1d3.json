@@ -1,0 +1,368 @@
+{
+  "id": "372538d9-9566-4241-89e4-8dec62bcf1d3",
+  "Title": "Teaching Programming to kids (and everyone else) with Ben Wheeler",
+  "PublishDate": "2018-08-09",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/4ed7551e.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by Datadog. The cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure and Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which to identify anomalies and collaborate with your team to troubleshoot and fix issues fast? I'd like you to try it yourself by starting a free 14 day trial. Today listeners of this podcast will also get a free data dog T-shirt get started at bitLY.com slash DATA dog shirt.",
+      "Duration": 18,
+      "Offset": 31
+    },
+    {
+      "Sentence": "That's bitLY.com slash DATA dog shirt.",
+      "Duration": 2,
+      "Offset": 51
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another episode of Hansel minutes and today I'm talking with Ben Wheeler is a teacher and a developer who has taught both kids and teachers? How to code? How are you Sir? I doing well today thanks so much Scott I'm excited to be here? Yeah, I'm excited to talk to you. You know a whole bunch of stuff about scratch and pretty soon. You'll be working on scratch, is that right, yeah, well. I think of myself very much as a beginner and I really encourage a lot of the teachers that I work with out there an parents to not worry about being an expert so I guess I do.",
+      "Duration": 30,
+      "Offset": 67
+    },
+    {
+      "Sentence": "But really there's tons of kids out there who you scratch every day, you probably know more than I do. But you're going to be working, at the MIT media lab on scratch so there's some kind of bona fides that you get for doing that, yeah well. I'm going to be a beginner at doing that for them for awhile too. And that's a mentality that I really try to encourage in the students. I teach in in my daughters of going into these new situations and starting at the beginning and learning from there. That's a really important perspective. I think I've always used the term.",
+      "Duration": 30,
+      "Offset": 98
+    },
+    {
+      "Sentence": "Channel amateur you know, I mean, I'm learning everyday I just do it professionally, but it doesn't mean I have any idea what I'm doing it's funny. I just came today from Staten Island. I visited a school where there were some teachers who had taken a workshop. I had done in February and they had done scratch for the first time in February and I got to see them doing it with their third graders today and also doing some robotics and then we met afterwards to talk about it and they were talking with such excited enerji about how much they love being beginners.",
+      "Duration": 30,
+      "Offset": 129
+    },
+    {
+      "Sentence": "It was really amazing they said, You know it's funny. We've been teaching for 30 years and we sort of thought. There was nothing left for us to learn and now we're doing this thing and we feel like we're really not that good at it yet, but it's actually really exciting to be in that state and to be exploring with the kids definitely to not lose that sense of freshness. I mean, I've been in software 25 years professionally in 35. If you count since I was a little kid and I'm still finding myself couple times a week, looking at something on code pen, saying how did they?",
+      "Duration": 30,
+      "Offset": 160
+    },
+    {
+      "Sentence": "It is insane Oh my gosh, absolutely I've been coding for 30 years and I still I mean, all the time I was seeing things that people do and I'm thinking, Oh my gosh. I wish I made that? How did they do it? I don't know if you know Nikki case no JavaScript online sort of interactive storyteller but Nikki case does stuff with Java script. That is so brilliant. It makes me feel like the first time I ever saw program running on the computer.",
+      "Duration": 30,
+      "Offset": 192
+    },
+    {
+      "Sentence": "Put links in the show notes so that people can see that so here we are too old people on a podcast with the weight of history, and I was looking at God of War, 5 earlier just just staring at it just staring at the graphics of the thing and I ended up watching a 20 minute video about how when he hits like a tree with his axe how they make the axe stop. But the bones in his arm keep moving so that it's not it's not.",
+      "Duration": 30,
+      "Offset": 223
+    },
+    {
+      "Sentence": "Nation of him swinging his arm it's literally the physics of. He hit the thing and then his shoulder and his elbow and his muscles kind of go jiggly because that's what happens to your arm when you hit something with the next and I thought that was just so fascinating and then I'm realizing that I'm trying to teach my 10 year old how to do hello world at at the text. The text level at a console am I teaching my child computers wrong. Now it's so funny that you bring that up that's something I think about all the time and it's really a constant dynamic in my work with kids.",
+      "Duration": 30,
+      "Offset": 254
+    },
+    {
+      "Sentence": "And in the teaching that I do to teacher is because when I was a kid. There wasn't that big a difference between the program that you could make in a couple days as an amateur programmer who just learned last week and the sort of professional code. That's running on the computer it might be something like Oregon Trail and that might be impressive, but really if you learned everything that you could for a year, you could make Oregon Trail back then. And then there were lots of programs that were really just sort of text simulators. I remember there is really popular one.",
+      "Duration": 31,
+      "Offset": 285
+    },
+    {
+      "Sentence": "In high school that kids would just play on their Texas Instruments calculators that was text based and that was fun and catchy and you could make those kind of simulators lemonade stand launching a starship and how much fuel. You have to put in to get it to get to escape velocity and you could write those in text in our and have people be playing them that day on the same machine and the distance between.",
+      "Duration": 30,
+      "Offset": 318
+    },
+    {
+      "Sentence": "Execution and how proud you'd be was very short and now it's a tricky thing because when I show kids intro, decoding apps on a tablet that are very flashy looking a lot of times. Those flashy looking ones don't actually get very deep into the programming from a creative perspective at all, and then vice first. The programs that do actually give them near Infinite. Expressive power whether they are text based programs or a block based program like scratch.",
+      "Duration": 30,
+      "Offset": 349
+    },
+    {
+      "Sentence": "Flexible creativity those don't initially seem as impressive that graphics seemed simpler because it's not it's not doing as much for you. It's waiting for you to invent things and it's tricky it means. I think that you need to show students. Some of the end product so that they can make with this kind of power and then almost rewind. From there and say OK. Let's look at this impressive scratch program an let's look inside and look at the code.",
+      "Duration": 27,
+      "Offset": 381
+    },
+    {
+      "Sentence": "All that code looks a little overwhelming and hard to understand now. Let's rewind and let's just look at a few of those blocks at once and I find that it really helps to illustrate that connection so that students are saying oh right. I'm at the beginning of a process that can lead there. It does make you wonder, though, have we made such a stack of stuff that's so high. It was so many layers of abstraction are we asking a lot of them to say now work hard for 2 years.",
+      "Duration": 31,
+      "Offset": 408
+    },
+    {
+      "Sentence": "4 years or 5 years right like there's always the talk about how old you have to be before you're a senior engineer. You know, and like Oh, the young people today. They want to be senior engineers in a week.",
+      "Duration": 8,
+      "Offset": 440
+    },
+    {
+      "Sentence": "We build such a large stack. I don't even know where to start. Yeah, I mean, I find this as a programmer because In addition to my teaching. I'm a professional programmer and I've programmed in a lot of different capacities for a lot of different companies and clients and it's harder and harder to keep up really. I feel like you know, I don't want to name particular past years, but when I was in college say still felt like you could pretty much know everything as a programmer and of course, that wasn't quite true.",
+      "Duration": 30,
+      "Offset": 449
+    },
+    {
+      "Sentence": "You could you know be reasonably caught up with AI was at and you could be reasonably caught up with, we're kind of flashy front end. HTML interfaces were that just had a touch of JavaScript. You could be reasonably caught up with high efficiency code. That's really getting close to the metal and it feels like that stuff, with the broadening of the field there's been this sort of enforced specialization where now I feel like I've had to just kind of let go of some domains that I used to be.",
+      "Duration": 32,
+      "Offset": 480
+    },
+    {
+      "Sentence": "Upon and you know just knowing something like react or angular or vue or these frameworks that have tremendous power to make these interfaces that we couldn't have dreamed a few years ago. But that takes so much constant not just learning a particular language like JavaScript, but then learning these ever evolving and ever changing conventions. I mean, I've I've been sort of steadily learning react.",
+      "Duration": 30,
+      "Offset": 513
+    },
+    {
+      "Sentence": "For the last 2 years and I feel like it's like trying to catch a jellyfish like it's always squirming you know by the time you learn one version of redox. Now there's this new version that's the planting it and everybody's using this different set of Plugins and now it's webpack. It's no longer grunt or gulp or it's harder and harder to keep up and that is a real challenge of the field doesn't lead that we should teach the kids. The fundamentals like there's always going to be a new wrench or a new screwdriver, but if you look at the.",
+      "Duration": 30,
+      "Offset": 544
+    },
+    {
+      "Sentence": "Carpentry you should be OK so then.",
+      "Duration": 1,
+      "Offset": 576
+    },
+    {
+      "Sentence": "Doesn't it? Follow then we should teach the low level stuff in the historical context of computer science? Yeah. I mean, historical context is really interesting and I think it's somewhat a separate question in some ways, but I really think it's incumbent on us? Who are working to push computer science. Education forward to really emphasize that it's thinking of a computer scientist in the process of debugging and iterative development. Those are the things that I really think we need to make sure kids.",
+      "Duration": 31,
+      "Offset": 578
+    },
+    {
+      "Sentence": "Sperian's doing and a lot of people who don't know as much about computer science, they're thinking of it.",
+      "Duration": 5,
+      "Offset": 610
+    },
+    {
+      "Sentence": "From a vocational perspective, which is totally reasonable that they want the kids to know things that are going to be practical immediately and that are going to lead into jobs whether it's a job in computer science or it's just knowing about how computer science works and being able to apply that to their work in lots of other domains and that's totally reasonable and sometimes I feel the urge to resist it and to say absolutely but in order to be able to guide them selves towards wherever the particular technologies are.",
+      "Duration": 30,
+      "Offset": 616
+    },
+    {
+      "Sentence": "High school in 10 years or however long we need to make sure that they have the ability and the experience sort of learning? How to learn and learning how to work through computer science kinds of problems and to think the way that you have to in computer science because it's it's a different kind of thinking just like visual art is a different kind of thinking than math or then music and English vocabulary. They all sort of used somewhat different, but overlapping parts of our minds.",
+      "Duration": 32,
+      "Offset": 648
+    },
+    {
+      "Sentence": "One on the show recently told me to try to avoid using the term squishy or Softs kills because it diminishes. The real science behind those things you know, we've heard that terms like IQ and EQ emotional quotient. But I still find myself coming back to trying to figure out a word to describe those kinds of things and someone who has been programming for so long. It's so hard to define what feels like you use the term jellyfish?",
+      "Duration": 30,
+      "Offset": 681
+    },
+    {
+      "Sentence": "How do we teach people how to think there's science behind that though right in the in the educational psychology world? Yeah, I mean, there's a lot of different kinds of science that come to bear you can bring to bear from different angles. I mean, there's a lot of research around learning how to learn and I'm forgetting the name of this wonderful professor.",
+      "Duration": 24,
+      "Offset": 712
+    },
+    {
+      "Sentence": "US women, I was just listening interview with her on the Ferneham Street podcast and she's the author of this book learning? How to learn and she runs an online course called learning how to learn and she does a lot of Distilling in summarizing research into Barbara Oakley? Yes, that might be benched. She talks a lot about what we've learned about the processes of going from familiarity to proficiency in different areas, and she's really thinking about that from the perspective of say college student who's.",
+      "Duration": 31,
+      "Offset": 737
+    },
+    {
+      "Sentence": "To really learn a lot of history that they're going to use on their test and in a paper and refer to in future years, and how just reading and even reading and rereading and underlining those things that we think of as kind of active attentive reading those things alone don't quite make the information stick in your mind. You have to run into a problem with it and have a moment of not being able to solve it and then push your brain to dig deep and find the information so if you're learning about the Spanish Armada.",
+      "Duration": 32,
+      "Offset": 768
+    },
+    {
+      "Sentence": "Or whatever it is, you have to have some moment where someone saying and what was the greatest crisis that faced Spain in the 16th century and you have to think gosh? What was the biggest crisis. Oh yeah, yeah, yeah, yeah, yeah. Yeah, the crash of the Spanish Armada in what year 1588 and when you have that problem and then you work through it all of a sudden the pathways are lit up and they're connecting in this new way and that situation.",
+      "Duration": 30,
+      "Offset": 801
+    },
+    {
+      "Sentence": "I described is almost more of a sort of a memorization example. But I think it really translates broadly into all kinds of ways that you learn how to think in computer science. I think a lot of that is learning how to hit a wall with a bug, which happens over and over for everybody who does programming. You hit a bug and you think this is impossible. There's no way this is going to make sense something is going wrong. I'm looking at the code wrong. It's This is a bug that will never be understood.",
+      "Duration": 30,
+      "Offset": 832
+    },
+    {
+      "Sentence": "Ways if you persist it always eventually is and I can't tell you how many times. I mean, hundreds of times I've had that experience and it's only having had it dozens and dozens of times before that, I can tell myself remember. Ben you're going to get through this bug and you're going to figure it out. So what's the next step and what's the next an students really need to have that experience because it's very different. I think in a lot of ways than the kind of.",
+      "Duration": 25,
+      "Offset": 863
+    },
+    {
+      "Sentence": "School work that we are asked to do in other ways schoolwork. That's perfectly worthwhile. It just doesn't involve that absolutely getting stuck and having no idea how to proceed. A lot of the time we have so much experience ramping up math slowly and steadily and that doesn't mean that people don't feel totally left behind sometimes. But when they're totally left behind often they don't necessarily have a way to get past if you haven't learned long division.",
+      "Duration": 30,
+      "Offset": 890
+    },
+    {
+      "Sentence": "Long division problem I mean, you're not going to invent long division on the spot using somebody elses terminology so what's kind of amazing about computer science that can apply to students experience in other areas as well? Is this idea that you have an algorithm and you have an approach and maybe your code has an algorithm. That's not quite working and you have to go and change it and maybe sometimes you have an algorithm. That's not quite working for doing a homework assignment or for learning a particular concept.",
+      "Duration": 30,
+      "Offset": 920
+    },
+    {
+      "Sentence": "Back and revise that but there's always a way to revise the algorithm in question, so that you can proceed definitely. I feel also that understanding that there's no black boxes in computers, that there's always a way to kind of crack it open and look underneath if something goes wrong right. Yeah, if the website doesn't look right. Once you know that F 12 tools exist. You can do that. And if you you can see the HTTP on the wire, but I think people get stuck where they don't know that.",
+      "Duration": 31,
+      "Offset": 951
+    },
+    {
+      "Sentence": "GDP is a thing because they learn in a boot camp and they learn CSS in HTML and don't understand the network so that the network exists. They type Google. They had entering a miracle happens absolutely and those practical techniques of debugging. I think it's so important to really focus on those when they come up in class. That's actually something that we come back to again and again in the training sessions that I've run with the New York City public school teachers.",
+      "Duration": 28,
+      "Offset": 983
+    },
+    {
+      "Sentence": "We talk about how inevitably when you're teaching technology you run into bugs that get in the way of the lesson that you were going to do with my problem or I mean, just today. A teacher was using dash and dot robots from wonder labs and always Bluetooth. There's going to be some kind of problem things always go wrong with Bluetooth, but instead of thinking of that as a reason why you shouldn't even try the lesson in the 1st place. This is not going to be perfect.",
+      "Duration": 30,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "Creating the teachers when that happens get everyone's attention together and say OK. What's our plan? How are we going to debug this because sometimes I feel like the worst thing I can do in my moments as a teacher. When I'm in a rush is I think I just have to turn this off and on again and I just take it out of a student's hand and I just do it and if my best moments. I tell myself, no wait even if the only thing this student comes away with today is realizing that then the all knowing teacher.",
+      "Duration": 30,
+      "Offset": 1044
+    },
+    {
+      "Sentence": "Answer to that question and sat down with me and we made a list of things that we're going to try and we tried. Each thing on that list an even if it ends up not working.",
+      "Duration": 10,
+      "Offset": 1076
+    },
+    {
+      "Sentence": "Just that experience of saying all right. We have this black box problem where this thing just simply isn't working, but that's not the end of the story. That's the beginning of the story for us. And there's actually something that we can learn every time something goes wrong, so in my classes with students. I use a phrase. It's sort of a catch phrase of the class, which is cool malfunction.",
+      "Duration": 21,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "And we've had a lot of cool malfunctions. A lot of short circuits. Some batteries that start to have smoke come out of them. I was trying to explain to my non technical spouse.",
+      "Duration": 13,
+      "Offset": 1109
+    },
+    {
+      "Sentence": "Well, there seems to be a thing where every time I go on a business trip. Something in the house breaks. It just seemed time. It's Murphy's law of the person that travels for work and every time I leave. It's probably I have to get a certain number of miles away before the something in the house breaks and now with all the voice activated devices that I dare not speak their name and IOT stuff. I left last week. It was a light bulb. I left the DVR broke and she calls me and says how can I fix X?",
+      "Duration": 30,
+      "Offset": 1123
+    },
+    {
+      "Sentence": "I have no idea I really, truly have no so I just walk her through the checklist turn it off does it have an IP address reboot. The router you know those kinds of things? Why have we put a barrier between?",
+      "Duration": 13,
+      "Offset": 1154
+    },
+    {
+      "Sentence": "US the techies and the normals even in the labeling of them just now in that sentence such that they feel that they can't experiment or turn things off or poke black boxes, we really need to breakthrough. That yeah, you know, there's there's the book Zen and the art of motorcycle maintenance and I often think back to that because that book opens with this episode where the author is taking a trip with friends and.",
+      "Duration": 26,
+      "Offset": 1167
+    },
+    {
+      "Sentence": "He's on a motorcycle that has a million things wrong with that and it's far from state of the art. But he's taking that thing apart and put it back together. Dozens of times and so when things inevitably go wrong. It's not a crisis, but his friend who bought a beautiful state of the art motorcycle. The first time something's not working. He's gotta just wheel it to the garage and wait for somebody else to solve the problem for him and the author presents this is sort of.",
+      "Duration": 31,
+      "Offset": 1195
+    },
+    {
+      "Sentence": "Philosophical difference to some degree, but it's also it's really a statement on the direction that things are going and you look at at vehicles cars. I mean, my parents and their friends used to do a little bit of tinkering with their VW bugs in the 60s and a lot of the time they could fix things but now it is more and more in a car is run by a computer that you just don't have access to theirs even laws real active legal debates.",
+      "Duration": 30,
+      "Offset": 1226
+    },
+    {
+      "Sentence": "Electronic Frontier Foundation taking a big active voice because there's laws that make it illegal literally illegal for you to open up certain types of computers and modify them and have them? Do what you want instead of what the company has decided Hey friends. This is Scott. You know, listening to podcasts is a great way to keep up to date on technology since we're always learning is software people and you can also find a job by listening to a podcast if you check out our new sponsorhired.com that'SHIRED.com slash.",
+      "Duration": 34,
+      "Offset": 1258
+    },
+    {
+      "Sentence": "On hired com software, engineers can get interview requests from companies that want to hire you each offer will have the salary in the equity up front, you can view those interview requests and accept reject change the offer before even talking to a company is a great way to find out what's out there and maybe make a move there. Working with over 6000 companies from startups to large companies from 14 major tech hubs throughout North America and Europe. What's great about this? Is it's totally free for software engineers and if you get a job throughhigher.com.",
+      "Duration": 30,
+      "Offset": 1293
+    },
+    {
+      "Sentence": "Only give you with $300. Thank you bonus, but if you use our special link they'll double that bonus you will actually get paid $600 when you accept that job now. If you're not looking for a job. But you know, someone who is refer them to hire.com slash Hansel minutes and they'll give you elite bonus of $1337 bonus when they accept a job so check him out at hired.com slash Hansel minutes.",
+      "Duration": 24,
+      "Offset": 1324
+    },
+    {
+      "Sentence": "Do you think that I would I wrote a blog post a while back called is technology, killing curiosity and I'm wondering if the ease of access to the sum of all human knowledge may have make my 10 year old less impressed. You know when we do hello world in a loop. Yeah, you know that such a great point because their ties back to the concept of how impressive things are today. You look at legend of Zelda breath of the wild and it's literally awe inspiring.",
+      "Duration": 32,
+      "Offset": 1349
+    },
+    {
+      "Sentence": "The product of tens of thousands of hours of human effort and me or my class. We're never going to make something that can approach that in a lot of ways, but at the same time, there are technologies that still very much are low fi that do inspire awe and you look at at fiction writing for example, my daughter is are big fans of plenty of flashy apps, but they also really like.",
+      "Duration": 30,
+      "Offset": 1383
+    },
+    {
+      "Sentence": "'cause it still has the power to give them experiences that most movies and TV shows don't often get get close to matching and they like the Harry Potter movies, but they don't stop reading the Harry Potter books. And so I take some hope in that that even though we have this magic access to information and 2 things that are dazzling that it hasn't meant the end of that, Curiosity even though it can be quite a lot.",
+      "Duration": 30,
+      "Offset": 1413
+    },
+    {
+      "Sentence": "And with it, yeah, I'm really trying to push my kids also in other ways and media. I was trying to get them to watch.",
+      "Duration": 6,
+      "Offset": 1445
+    },
+    {
+      "Sentence": "Uh what was it Buffy the Vampire Slayer. This is classic literature right now, the television equivalent or was the other one. Smallville and my 12 year old got like 3 episodes in and he says. I couldn't do it. The graphics are so bad. I don't know whether he means the special effects with the fact that it's 4 by 3, but it's like recorded on VHS tape. But he called it the graphics and I was like, yeah, with the story. You know it. Reminds me of when my parents tried to get me to watch black and white films and say like but it's so good you have to.",
+      "Duration": 35,
+      "Offset": 1452
+    },
+    {
+      "Sentence": "II feel like we can do that with Raspberry pies in our dinos and still forced them that there's joy in blinking an LED.",
+      "Duration": 8,
+      "Offset": 1488
+    },
+    {
+      "Sentence": "Yeah, there is a lot of joy in that I've just been doing a little bit of micro bit with with my daughter is mostly and there is still an excitement of wow. Here's this thing circuitry. I can see and I'm deciding what it's going to do and then it's doing it and that does still have some magic even though it's just a few blinking LEDs. But just about the movies and TV shows. I mean that's something I've really definitely encountered that with my daughters. I love movies.",
+      "Duration": 31,
+      "Offset": 1497
+    },
+    {
+      "Sentence": "Sometimes it's been a success when I've tried to introduce my daughters to movies that I really think they love and sometimes it's not. I try to get to watch adventures in babysitting and it just found it too. Slow yeah, Yeah, but something just that will make your mind like I just recently watched Cobra Kai. Not it, but not appropriate for kids. But appropriate for people who like Karate Kid. So I headed it's fantastic, so I had the kids watch. Karate kid and they didn't get it. Why didn't. They get it. It turns out that the protagonist the problem the crisis.",
+      "Duration": 33,
+      "Offset": 1529
+    },
+    {
+      "Sentence": "Am a there's a zero tolerance bully situation at like every school now. I'm not saying building doesn't happen, but it doesn't happen in that way that it did in the 90s where like from from pretty in pink to The Breakfast Club. That's all bullies bullies bullies bullies bullies in like 5 minutes into Karate Kid. They were like oh? Where is the principle the Prince would have stopped at a second ago that's so funny you mention it just the other day my daughters were kind of asking me about bullies and again. It's not that there aren't power dynamics and cool kids in their class.",
+      "Duration": 31,
+      "Offset": 1564
+    },
+    {
+      "Sentence": "Kids, who are too rough, sometimes, but you're right there in first grade and third grade and bullying. Just isn't really something that they've run into yet. There's nobody who is at the bottom of the pecking order and sometimes in my stories of my childhood, I've talked about that. There was a kid who was having a hard time and people were picking on him and they sort of don't quite know what I mean, and that's not to say that they don't sometimes feel like one member of the friend group.",
+      "Duration": 30,
+      "Offset": 1596
+    },
+    {
+      "Sentence": "Is not getting her her fair share but that dynamic doesn't seem like it's a problem anymore. And I guess. There's a lot. That's really wonderful about that. Sometimes I do wonder if.",
+      "Duration": 12,
+      "Offset": 1628
+    },
+    {
+      "Sentence": "We as adults are managing so much for kids that they are not having the chance to discover and work through some of those problems. Yeah, that's true and to be clear before we get letters or tweets. We do recognize that bullying is a huge problem, particularly if you are under represented group or if you are LGBTQ, but I think it is pointing out that it is changed in some fundamental measurable way since the since the 90s and I'm just using Karate Kid as an example. One thing I want to pop back to talking about the.",
+      "Duration": 31,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "Is my kids learned on scratch they learned their first programming language? I would say was scratch? Can scratch talk to our dinos and leads in flash things I've never really felt like there was an attachment between this draggy droppy for loop thing that makes a cat spin and the physical world, yeah, so the answer is sort of. There's a website called Scratch X and it's not advertised very much by scratch, it's considered experimental.",
+      "Duration": 30,
+      "Offset": 1673
+    },
+    {
+      "Sentence": "There are a lot of different extensions that different people have written for scratch that all generally involve fork of the scratch code to add this extension code in and then a plug in for a browser like Chrome, so that the scratch code and the web page. Can connect to the computer and the computer zone. USB connection or whatever it is maybe Bluetooth to be able to communicate to the device so.",
+      "Duration": 31,
+      "Offset": 1704
+    },
+    {
+      "Sentence": "That stuff out there, it's still mostly in an experimental state and I think it's gotten the furthest along with LEGO. We do, which is one step simpler than the Lego Mindstorms Robotics Environment and that we do stuff is really wonderful. It's I have seen a lot of student creativity with it and like I said, before part of the scratch teams excitement with this new version of scratch.",
+      "Duration": 30,
+      "Offset": 1736
+    },
+    {
+      "Sentence": ".0. That's coming out this August is that there's a whole long list of applications that are going to be built that connect to scratch and provide this kind of bridge so one very big ones is lego mindstorms. EV 3 is or if or whatever it's called, is going to have scratch 3 component. I'm not sure exactly what the date is that the plan that's good to know I mean, I feel like.",
+      "Duration": 30,
+      "Offset": 1768
+    },
+    {
+      "Sentence": "Getting you know, fixing that or you know, making that happen would definitely open up world that would be even more interesting like the Internet of things as it relates to scratch would be definitely powerful, yeah, and I don't know how much you've played around with different robotics. The dash and dot robots. For example, which are really wonderful. The kids light right up when they see them and they immediately want to touch them and press the buttons that explore them and control them and if you use their kind of block based programming environment, it's based on?",
+      "Duration": 30,
+      "Offset": 1799
+    },
+    {
+      "Sentence": "There's a lot of cool stuff there, but there's also stuff that I feel sometimes like I wish was there. That's missing and scratch connecting to more and more of these robots. I think is really exciting because as these students that I was working with today for example, who were using dash and dot. They're getting very familiar with scratch in their third grade class and if they could use that knowledge and translate that even more directly and be able to use the events.",
+      "Duration": 31,
+      "Offset": 1830
+    },
+    {
+      "Sentence": "You know the wind background clicked kinds of things, so that they could be programming more in depth. Even then, they were able to do with somewhat more limited set of blocks that are available. Now I just think it would be sort of a win for everybody, all around. Yeah, absolutely and it's going to be nice to have you as it were on the inside working with the MIT media lab to make scratch even better. Yeah, I mean just about to begin and I'm hoping that I can dive in and contribute that's fantastic.",
+      "Duration": 30,
+      "Offset": 1862
+    },
+    {
+      "Sentence": "You can check you out at adaanleo.com. This is a nonprofit you have. Yeah, it's the kids technology after school and weekend program that I've been teaching kids through for several years very cool. I have technology and education newsletter called robot owl. That yeah, I've been writing about these issues and making recommendations and talking about what teachers are telling me in the field and so it's basically for teachers and parents and anybody who wants to spark.",
+      "Duration": 32,
+      "Offset": 1893
+    },
+    {
+      "Sentence": "And kids and in all this sort of thing innovation and technology and creativity.",
+      "Duration": 4,
+      "Offset": 1926
+    },
+    {
+      "Sentence": "So that's Robot Owl Dot Co Alright and I will put links to robot owl to your own website at techno -social.com as well as Aiden Leo and all of the different robots and things and scratch a microbe it and all of these links have been collecting and I will all be in the show. Notes so be sure to check those out and follow been on Twitter fantastic great talking to Scott and I'm excited for this kind of creative message to go out there? Absolutely. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 31,
+      "Offset": 1931
+    },
+    {
+      "Sentence": "Open.",
+      "Duration": 2,
+      "Offset": 1964
+    }
+  ]
+}

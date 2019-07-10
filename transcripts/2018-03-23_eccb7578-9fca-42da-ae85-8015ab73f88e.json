@@ -1,0 +1,493 @@
+{
+  "id": "eccb7578-9fca-42da-ae85-8015ab73f88e",
+  "Title": "F# and the functional SAFE Stack with Krzysztof Cieślak",
+  "PublishDate": "2018-03-23",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/a2828832.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by Datadog to cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which to identify anomalies and collaborate with your team to troubleshoot and fix issues fast? I'd like you to try it yourself by starting a free 14 day trial. Today listeners of this podcast will also get a free data dog T-shirt get started at bitLY.com slash DATA dog shirt. That's bitLY.com slash DATA dog shirt.",
+      "Duration": 22,
+      "Offset": 31
+    },
+    {
+      "Sentence": "Hi friends, this is Scott Hanselman. This is another episode of Hansel minutes. Today I'm talking with Christoph Cheslock, who it works on the safe stack SAFE? How are you? I'm fine thanks for having me? Yeah, no worries so this we've heard about the lamp stack Linux and Apache and what is the safe stack so safe stock is similar technology stack?",
+      "Duration": 30,
+      "Offset": 64
+    },
+    {
+      "Sentence": "Just built from the abstract technologies and F Sharp isa.net functional first programming language and on our web page. We have this cell speech? Which says basically safest and to end functional florist stock for cloud ready web development that focus on typesafe programming and that's like a lot of buzzwords and I guess we can go.",
+      "Duration": 24,
+      "Offset": 95
+    },
+    {
+      "Sentence": "Deeper into that in a moment well the if someone is listening to this show. They may be AC programmer and they probably just load up visual studio go file new project and they probably useASP.net MVC so they are familiar with the model. View controller, but there's some people will change that they'll use open source software and add to it, but I think there are a group of people that accept the defaults and I think that.",
+      "Duration": 30,
+      "Offset": 121
+    },
+    {
+      "Sentence": "Stack is great because it's none of the defaults isn't it. Yeah, it's like it's all the parts well all the parts ordered an Azure? Which is I in our safe acronym is like open source technology built by an absolute community. So maybe I will go like letter by letter and say what? What are the technologies we use so as is swaf it'SF sharp web library back end web library and?",
+      "Duration": 30,
+      "Offset": 152
+    },
+    {
+      "Sentence": "Web server, which is by the clear whatever whatever everything you need to put on the back and then a is Azure. For the hosting because, like, we live inthe.net world and Azure is great fit for thehosting.net applications.",
+      "Duration": 14,
+      "Offset": 183
+    },
+    {
+      "Sentence": "Now we have FF is Anna Fable Fable is after up to JavaScript compiler. And I know that you had episode with our funds. A couple of weeks ago, who created fable so that's great technology that enables us to write abstract code and run. This F sharp code in the browser and then he is Elm ish.",
+      "Duration": 24,
+      "Offset": 198
+    },
+    {
+      "Sentence": "Elvis is a abstract employment fable abstract implementation of so-called Elm Architecture and that's like just.",
+      "Duration": 7,
+      "Offset": 223
+    },
+    {
+      "Sentence": "Not going to deep into details but that's just UI library, we use, and we recommend for everyone. Because like we, we think that it's good UI that way to build us in the browser OK. So let's take into these a little bit at a time so suave is a lightweight Nonblocking Web Server isn't kestrel a Web Server to yes. Indeed, customer is also lightweight Nonblocking Web server, which is really good that.",
+      "Duration": 30,
+      "Offset": 231
+    },
+    {
+      "Sentence": "Let's swap was created before the there was even idea for the Castro or maybe maybe maybe not. But it's like I don't know that I don't know the dates is like older technologiesand.net core and the Castro so it's been around for a couple of years right now, so that's why we use that but also.",
+      "Duration": 21,
+      "Offset": 262
+    },
+    {
+      "Sentence": "Extra community created another great project called giraffe, which is implementation of same programming model as in swerve just on top of kestrel andISP.net core so you can take your?",
+      "Duration": 15,
+      "Offset": 283
+    },
+    {
+      "Sentence": "Basically, similar helper functions and similar building blocks that you use in Swaf and put them on top of the of theSP.net core if you prefer to ink?",
+      "Duration": 10,
+      "Offset": 299
+    },
+    {
+      "Sentence": "Ah, OK.",
+      "Duration": 1,
+      "Offset": 311
+    },
+    {
+      "Sentence": "Now swab to suave use lib UV underneath it or what is the socket library? Yeah, I believe that for delay knock city asleep UV OK so giraffe is again functional web framework for F sharp developer build on top of Kestrel. Could I have the safe stack or the I don't know what it would be gaf gaff stack. Could I swap them out or is it not quite as easy as swapping yet totally could swap those things out.",
+      "Duration": 32,
+      "Offset": 313
+    },
+    {
+      "Sentence": "You can swap probably every part of safe stack. If you if you want. Just like with lump stuck. People were swapping like P meant like either PHP or python or battle. Whatever people wanted to use with safe stack. You can you can do for the first letter you can do swap photograph for the you can do Azure or maybe you want to do hosting on AWS and then for the front end things.",
+      "Duration": 30,
+      "Offset": 347
+    },
+    {
+      "Sentence": "Using.",
+      "Duration": 0,
+      "Offset": 377
+    },
+    {
+      "Sentence": "Fable as an abstract way. But as well. You can use something else. If you prefer to write normal JavaScript. What do you think's going on in the community that's so exciting that gives us so many choices like I think it's great now like we went from having only IS to choose from.",
+      "Duration": 19,
+      "Offset": 379
+    },
+    {
+      "Sentence": "And now we've got all these different things like it doesn't have to be just kestrel or just suave or just draft like it's so cool that we have choices now and I want like the corporate developer to know that it's good to have choices like there is it doesn't have to be a winner.",
+      "Duration": 16,
+      "Offset": 399
+    },
+    {
+      "Sentence": "I think that uh well. There are 2 sides of this question first of all if we talk just about after a community of shop community was always focused bit more on the open source side of things and like abstract compiler was open source before the.",
+      "Duration": 19,
+      "Offset": 416
+    },
+    {
+      "Sentence": "C sharp compiler was open source there was abstracts of the foundation was created before the Nets of to the foundation so after always was this pushing forward boundary of open sourcein.net ecosystem and answering on the other part aboutgeneral.net ecosystem and some more choices in in that I think that with this whole change of Microsoft. Being more friendly to open source in general. It just encourages people to build cool stuff under that and.",
+      "Duration": 31,
+      "Offset": 436
+    },
+    {
+      "Sentence": "Build cost costafund.net other people are starting to use it and we have this nice phrasing ecosystem. Where do you think that the F sharp community was so open source like from the beginning because it was in the early 2000 tens. It's it's been years and years and years. The F sharp community been pushing open source right 2005 was when F sharp came out. Yes, and even back then. In 20051, abstract came out the effort compiler was released.",
+      "Duration": 31,
+      "Offset": 468
+    },
+    {
+      "Sentence": "So if its source code so that was like in 2005. You could download source code of abstract compiler and compile that and that was like something that no other Microsoft product did back Dana.",
+      "Duration": 14,
+      "Offset": 500
+    },
+    {
+      "Sentence": "I think that's a lot of lot of this boost towards open source was caused first of all thanks to Don Syme, who was designer of the language and who really understood how.",
+      "Duration": 12,
+      "Offset": 515
+    },
+    {
+      "Sentence": "How much importance community can have and and because he had also some different backgrounds thanonly.net he he has seen how how it works out in other ecosystems. Other thing is the lot of people were really excited about after but Microsoft support for F Sharp was not always.",
+      "Duration": 21,
+      "Offset": 528
+    },
+    {
+      "Sentence": "So good as for C Sharp, a visual basic and people were kinda forced into building their own tours their own ecosystem and that's why that's how how it started and and I joined I joined after commit a bit later than that and that was like doing open source was just default default behavior when I've started doing F sharp so people. I knew from the Internet and people who II've seen under conferences and I've met them personally.",
+      "Duration": 30,
+      "Offset": 550
+    },
+    {
+      "Sentence": "Open a service so when I've joined the community. It was like not remove. Oh, I guess that's how after people are all sent and that's what we do, yeah that's a really good point. I think that there's a couple things there to parse first that Don Syme was out of Microsoft Research. So kind of F sharp kind of like snuck out of research because it's like. Hey look at this cool research thing that we're doing well. The product people at Microsoft were off trying to focus on products while done was just.",
+      "Duration": 31,
+      "Offset": 581
+    },
+    {
+      "Sentence": "Something you know that was cool and amazing and like you, said open source by default andwhile.net core is open source by default now you've got a 10 year.",
+      "Duration": 11,
+      "Offset": 613
+    },
+    {
+      "Sentence": "Can you jump start with F sharp right? That everything's been open by default as a community for a decade or longer.",
+      "Duration": 6,
+      "Offset": 625
+    },
+    {
+      "Sentence": "Yes, in didn'T&I really believe that's like one of the huge parts of abstract success and in comparison to some other languages that we have on the one hand, we have this drunk into industrial ready ecosystemof.net and and in general, Microsoft Stack, but but then at the same time, we have all many great people, doing doing their own things open source things and community supporting this open source fix.",
+      "Duration": 31,
+      "Offset": 632
+    },
+    {
+      "Sentence": "That's really great and helpful for just creating reach across someone where people can choose whatever fits then it. Yeah, exactly an answer. The really good point. I would say, and maybe you would agree. F sharp really was about choice from the beginning because in 2005 unit and have to use visual studio use Emacs if it makes you happy like they had support for editors years and years before other before C Sharp and Omni Sharp happened you've got.",
+      "Duration": 30,
+      "Offset": 664
+    },
+    {
+      "Sentence": "For vim and Emacs in sublime and you know, I am tide for Adam and visual studio code like any editor anywhere at all. You can do, do this and also didn't have sharp start supporting mono very early. Yes, I figured out that like backward just couple of years after the first release of after up there was huge. Effort also from community to support F Sharp to mono and like Dave Thomas, who is like after up MVP and worked for.",
+      "Duration": 30,
+      "Offset": 695
+    },
+    {
+      "Sentence": "With a marine for awhile did great great job of purporting absorbed to the mono and also to the iOS and all these different devices that submarine supports let's give it a little bit and explain to me. The relationship between suave and Elm ish like? What is the responsibility of each of those 2 pieces, so esentially swap is our back end usually we?",
+      "Duration": 30,
+      "Offset": 726
+    },
+    {
+      "Sentence": "Suggest people tried just some kind of API's like rest, APIs with it.",
+      "Duration": 7,
+      "Offset": 758
+    },
+    {
+      "Sentence": "And then fable and talmage our Department responsible for doing the the why in the browser. So they are responsible for creating single page. Applications that looks nice. And tend to have like all the farmers and tent and all the stuff. So basically's wife is a Buck and and then fable and Amish is a front end of of of our stock. I say reduces suave something that has views like MVC or swab primarily about web APIs.",
+      "Duration": 30,
+      "Offset": 767
+    },
+    {
+      "Sentence": "Swaf can do views like MVC, but from what I've notice tin both like my open source journey and and like mark my commercial projects. People usually use suave as just API as a way to just host an API endpoints. So just sort of some data in JSON or XML and then build client side views client side applications on top of that OK so then element is the.",
+      "Duration": 30,
+      "Offset": 798
+    },
+    {
+      "Sentence": "And it's the abstraction that you need to do. Your not model. View controller, but model view. Update style the way that the Elm people do it, yes, indeed the.",
+      "Duration": 10,
+      "Offset": 829
+    },
+    {
+      "Sentence": "I guess the the whole pattern was known for awhile and like she said. It's model. View update but everyone calls it L miss because probably the almost one of the?",
+      "Duration": 13,
+      "Offset": 840
+    },
+    {
+      "Sentence": "First really successful implementations of this pattern. I know that nowadays if you do modern JavaScript with react JS and redux. JS you basically implement the same model. View update pattern. Justin bit more complex why but also, if you do some maybe desktop applications using?",
+      "Duration": 22,
+      "Offset": 854
+    },
+    {
+      "Sentence": "Reactive extensions the resulted code can look really similar to the The Model View update pattern. So maybe going a bit more into this model. View update the pattern is super simple model is just a simple client type that class that represents the state of your application, then view is function that takes existing model that takes a message some.",
+      "Duration": 30,
+      "Offset": 877
+    },
+    {
+      "Sentence": "Open senior application and produces knew model.",
+      "Duration": 3,
+      "Offset": 909
+    },
+    {
+      "Sentence": "Representing new state of your application.",
+      "Duration": 2,
+      "Offset": 913
+    },
+    {
+      "Sentence": "And that was update and the view view is basically also simple function that takes model. Current State of your application and print out. Some HTML or whatever or whatever a rendering, Hughes in case of Elm ease in Fable. We use usually react as a rendering engine so we built also on the.",
+      "Duration": 23,
+      "Offset": 916
+    },
+    {
+      "Sentence": "Industrial ready and battle tested solution from Facebook.",
+      "Duration": 4,
+      "Offset": 941
+    },
+    {
+      "Sentence": "Hey friends, a quick word from our sponsor progress. Telerik wants to send someone to the build conference so they're having a contest step. One is to sign up to learn about the new innovative modern. UI tools that they will be announcing it built and by registering you'll be entered to win a full conference pasta. Microsoft build plus a $500 travel stipend. They're also giving away 3 Telerik. Dev craft UI licenses. All you have to do is register at build contest dot prop.",
+      "Duration": 30,
+      "Offset": 947
+    },
+    {
+      "Sentence": "TWOP dot me that's build contest dot prop dot me.",
+      "Duration": 5,
+      "Offset": 978
+    },
+    {
+      "Sentence": "Progress offers the leading platform for developing and deploying mission critical business applications and they are the creator of the award winningtelerik.net and kendo. UI JavaScript user interface controls. They have reporting solutions in productivity tools and all the tools that developers need to build high performance. Modern apps with outstanding you. I go now to build contest dot prop dot me that'SPWOP dot me and sign up to win.",
+      "Duration": 26,
+      "Offset": 984
+    },
+    {
+      "Sentence": "OK so let me see if I understand this because because web applications that interact with humans go through state. They have to go through multiple states like you're in the login state or you're in the creating objects state that state is a part of human's life, but in F Sharp.",
+      "Duration": 20,
+      "Offset": 1013
+    },
+    {
+      "Sentence": "You know you're not just assigning variables and changing state. You have to create these immutable things right this year, moving through these different states you're finding a balance.",
+      "Duration": 9,
+      "Offset": 1034
+    },
+    {
+      "Sentence": "Between the state of the UI and state as it is represented in F Sharp and model view. Update means that the model keeps changing in new instances of the model kind of March forward Zach correct yes.",
+      "Duration": 13,
+      "Offset": 1044
+    },
+    {
+      "Sentence": "That's basically the the really good description of the pattern was really nice about about elements implementation in Fable and what's really nice also about element implement original element. Implementation is that both those implementations, basically hide the fact that you have some mutable state under the hood because well as you said the applications are mutable the browser like dumb the model is mutable so.",
+      "Duration": 30,
+      "Offset": 1057
+    },
+    {
+      "Sentence": "These are just mutable applications and we kinda cannot work around that, but we can hide this mutable state under the framework that we built and L Miches. This this framework that that we use that from POV of abstract developer. Both view and update functions are just pure functions that just takes 11 data and Outputs. Some other data don't perform really side effects.",
+      "Duration": 31,
+      "Offset": 1088
+    },
+    {
+      "Sentence": "So don't do some magical stuff and don't mutate mutate some global variables or anything like that and the Hall.",
+      "Duration": 8,
+      "Offset": 1120
+    },
+    {
+      "Sentence": "Rendering views and and charging your legal state of application that saved someone is handled by by both Elm ish and react. JS I say OK so if you if you want to hurt yourself. You could potentially hurt yourself by writing your own JavaScript, but can you write a safe application and Elvis application only with F sharp never writing any custom JavaScript of your own?",
+      "Duration": 25,
+      "Offset": 1130
+    },
+    {
+      "Sentence": "Yes.",
+      "Duration": 0,
+      "Offset": 1156
+    },
+    {
+      "Sentence": "Yes, basically from POV of normal user that just do a simple single page application. You just create new new applicationfrom.net new template and then you write plain abstract functions and that's all that's all you need.",
+      "Duration": 18,
+      "Offset": 1157
+    },
+    {
+      "Sentence": "Wow, when I hear as a you know, maybe I'm not in F sharp developer. I'm just learning. But when I hear about things that compile to JavaScript and I think I'm also speaking for the listener.",
+      "Duration": 12,
+      "Offset": 1176
+    },
+    {
+      "Sentence": "I think.",
+      "Duration": 0,
+      "Offset": 1189
+    },
+    {
+      "Sentence": "Do I want to bet my company on a thing that compiles to JavaScript because I think we have an image in our mind that it's going to compile too weird. JavaScript you know like unreadable JavaScript first of all.",
+      "Duration": 17,
+      "Offset": 1190
+    },
+    {
+      "Sentence": "You want to give you probably are using typescript or something like that, so you are already using some compilation to JavaScript even even even even if you write JavaScript you really often do some JavaScript JavaScript compilation with Bible and Bible is a tool that enables you to write knew modern is JavaScript and compile it to play in all the boring JavaScript that supported by all our browsers.",
+      "Duration": 30,
+      "Offset": 1208
+    },
+    {
+      "Sentence": "That's that's 2nd thing and the first thing fable actually uses Bible under the hood. I think that have found that talked a bit about that on the other podcast, but basically what fable does is it doesn't manually outputs JavaScript code as a text, but instead it takes F sharp abstract syntax tree put transforms this abstract abstract syntax tree into the abstract syntax tree that Bible understands and feeds it to Bible and then Bible is responsible for.",
+      "Duration": 31,
+      "Offset": 1239
+    },
+    {
+      "Sentence": "Have a script and Bible is really popular tall in JavaScript ecosystem. So it's really battle tested and really powerful and one of the things they focus on's Bible project and Pebble communities, outputing nice readable JavaScript code that can be visited the barked inside the browser and 2 and with all tools that JavaScript ecosystem has so in case of this stack.",
+      "Duration": 30,
+      "Offset": 1271
+    },
+    {
+      "Sentence": "It's really a problem, just like it's not a problem in case of typescript. There is a very, very good explanation and it's really great. People should check out that show and they should also check out fable FABLE dot IO? What's nice is that you can go up there and compile in the browser. So I'm actually I've got F sharp on the left here and I can hit Alt enter it will. Show me the code on the right and if you line, it up like it's really close like it's you can see it. It's not like it's compiling into unreadable assembly language you know it's.",
+      "Duration": 32,
+      "Offset": 1302
+    },
+    {
+      "Sentence": "Quite amazing you get to write the language that makes you happy and then create the language that runs in the browser. It's pretty extraordinary.",
+      "Duration": 7,
+      "Offset": 1336
+    },
+    {
+      "Sentence": "Yes, and it's really important advantage of Fable in general in comparison to some other choices in compile to JavaScript ecosystem because it enables us to do really deep integration with existing JavaScript tooling because we output JavaScript. That's understood by normal JavaScript tools like Webpack and stuff like that. That's a very good point, so if I let me ask you this, then let's talk about integration.",
+      "Duration": 30,
+      "Offset": 1344
+    },
+    {
+      "Sentence": "Company that has some existing intellectual property in JavaScript Anne. Maybe I have some existing net. DLL's that are in C sharp or VB and I'm looking at the safe stack. I can combine my F sharp libraries with my C Sharp libraries and buy Fable with existing Java script that I have.",
+      "Duration": 19,
+      "Offset": 1375
+    },
+    {
+      "Sentence": "Yes, indeed combining F Sharp and C Sharp is pretty straightforward. It's just normal deal. Other reference or normal project reference normal new get package depending on how you how you do it in your company for the integration between fable so F stop running in the browser and Java script because modern JavaScript has this functionality of modules and all NPM packages and stuff are following one convention.",
+      "Duration": 32,
+      "Offset": 1395
+    },
+    {
+      "Sentence": "Do do things and how to pack things you can say something like I want to import just one function from this file and say it like in abstract file say I require function called do something from file ABC. Dot JS and Webpack will put it together and you will just use your JavaScript in this from abstract becaus under the hood.",
+      "Duration": 30,
+      "Offset": 1428
+    },
+    {
+      "Sentence": "Just compared to normal JavaScript require a statement and normal JavaScript quite a statement. I arrow compiled by by Webpack and bundled together and all magic is done. So yes, you can easily just use. Both C sharp from after on the back end and JavaScript on the with from F sharp on the front end, which is strained eyes in one in one of the demos. We have somewhere we are building application using both typescript and.",
+      "Duration": 31,
+      "Offset": 1459
+    },
+    {
+      "Sentence": "Foul and all that link is working together, so the watch mode. We have so this automatically compilation. We do change in the in the typed root file. We save types typescript file. Everything is re compiled and automatically refreshed in the browser. We do change in abstract file and the same happened essendant you can add it. Both typescript JavaScript and abstract Bible code at the same time, and have this nice developer experience, I do want to point out also, if you look at the safe stack home page.",
+      "Duration": 33,
+      "Offset": 1491
+    },
+    {
+      "Sentence": "Way down it says retrofit your existing stack. It's got some really good examples that I was impressed with where it says oh already using Web API. That's cool use use the use these parts of this safe stack or if you want to write your own sequel. That's cool. You don't have to you don't have to pick the whole stack. You pick the piece that you already you want to and then you plug it into the code you already have which is pretty sweet.",
+      "Duration": 22,
+      "Offset": 1525
+    },
+    {
+      "Sentence": "Yes, and and again, I think that's that's something really important for us because not every product is Greenfield Project, not not every company is willing to bet on 4 different technologies that they don't know. Maybe they want to risk unjust front enter or something so.",
+      "Duration": 18,
+      "Offset": 1549
+    },
+    {
+      "Sentence": "It's not like that, we try to sell save as a do safe don't do anything else and and just use the technologies. We suggest we really believe into this integration with existing ecosystems and people can set this up on their machines really easily without like it won't hurt your machine like when hooked upthe.net CLI safe template. So now I can say net new safe.",
+      "Duration": 29,
+      "Offset": 1568
+    },
+    {
+      "Sentence": "And it just kind of it's just another template that sits alongside the other thing so I can be playing with the safe stack. While I'm doing my C sharp in my regular job so safe can kind of sneak into my life and until maybe I'm using it completely.",
+      "Duration": 14,
+      "Offset": 1599
+    },
+    {
+      "Sentence": "Yes, I'm just leave for the for the front end part. You need also to have some other dependencies like node and NPM or yarn, but I think nowadays that's not really like dangerous dependency and a lot of people have it installed under machines, so mentoring yarn for the JavaScript and ultimately the table underneath.",
+      "Duration": 21,
+      "Offset": 1614
+    },
+    {
+      "Sentence": "Yes, indeed one other thing that I think is worth pointing out that I was really surprised about is the demo that you've got of the safe stack as it applies to react native so now you're using F Sharp to write a mobile application. Yes, that's really great.",
+      "Duration": 17,
+      "Offset": 1636
+    },
+    {
+      "Sentence": "Yeah, and and that's works for just fine. It's using react native as you said. So again has this bottle test at technology from Facebook and we just simply compile to the reaction. I different then a react native tooling does its magic to compile for the Android and iOS devices. So this is really great. What's also really important when when we talk about these different compilation target is that you can.",
+      "Duration": 30,
+      "Offset": 1655
+    },
+    {
+      "Sentence": "Sarah your domain of your your code between all those targets so I know companies that have basically same code. Same domain running in the browser in the on the mobile applications on the back end and also on the Azure functions. For example, so this enables people to be highly productive because really often when you do those different different applications different client client applications you need to.",
+      "Duration": 30,
+      "Offset": 1687
+    },
+    {
+      "Sentence": "I will be cause. Oh, the browser is written in JavaScript and and desktop application is written in C sharp in example and we fable and with safe stack. In general, you can easily share your code across the across the different clients and different parts of the stack. The most impressive thing that of all of this that. I think is how clean the module replacement is I know that you use webpack for that.",
+      "Duration": 31,
+      "Offset": 1718
+    },
+    {
+      "Sentence": "I think it's worth giving the people who are listening a task you should go and check out the safe bookstore. Maybe you can explain how this works because I'm looking at this animation where you know, someone has localhost 8080, up, and they make a change to some F sharp code not a CSS HTML not some HTML and they hit refresh. But they literally change. F sharp hit save and the web page changes, but doesn't lose state? How is that possible?",
+      "Duration": 29,
+      "Offset": 1750
+    },
+    {
+      "Sentence": "That's basically some Webpack Magic, but because the client code using L Mish is really structured and works with this.",
+      "Duration": 13,
+      "Offset": 1780
+    },
+    {
+      "Sentence": "Messages that just change state, it's really easy to basically the correct current state of your application is just set of messages that mutates the state so it's really easy for a web bug to just oh. This is this is this list of the messages that happened. This actions that modify the state we shouldn't touch that and then we can. Refresh the rest of the code so that's really nice. It's actually from what I've had. I'm not super experienced like reactant reduce developer but from what I've heard.",
+      "Duration": 33,
+      "Offset": 1794
+    },
+    {
+      "Sentence": "Module replacement is actually working better in Talmage, then it works, originally in react rodox even even Facebook. Facebook under web page has this information that oh we have this hot module replacement. But it usually causes. Some problems and that it might not be super perfect in case of Amish applications. It's just what exactly it's like amazing and it gives really, really nice and totally different experience of editing applications because.",
+      "Duration": 30,
+      "Offset": 1828
+    },
+    {
+      "Sentence": "Don't need to repeat all actions to bring you to old state. Yeah, it's really interesting. It took me a moment to figure out what was going on, but you're actually running 2 different web servers at the same time right you're running the net watch on your application for things like your unit test which then launches your server, but then you've got a webpack. Dev server that Fable supports on another port and these things happen automatically so you're running 2 things at the same time, one to run your app and want to support your development.",
+      "Duration": 31,
+      "Offset": 1860
+    },
+    {
+      "Sentence": "Yes, indeed of like most of the configure of course, it requires some configuration, but most of the configuration is done automatically when you create the applicationwith.net new sifet employed so basically when youcreate.net new save you should have all these things ready toward account and just press F 5 in Visual Studio Code and it will start everything and it will just work. Yeah, once I had yarn an node.",
+      "Duration": 30,
+      "Offset": 1892
+    },
+    {
+      "Sentence": "Yarn is an NPM package manager installed Sogno di installed yarn, I put on net. SDK I ended up using packet and.",
+      "Duration": 10,
+      "Offset": 1923
+    },
+    {
+      "Sentence": "And it just worked any of course I could even use Docker for my deployment at the end. I think it took me 15 minutes to get that working and it was really amazing.",
+      "Duration": 9,
+      "Offset": 1934
+    },
+    {
+      "Sentence": "Yeah, so I'm just happy to hear that that you had really good experience with that and I really think that there actually. Still, some places in the whole, especially on the fable site where the developer experience can be might better and does like huge, huge effort right now right now is made to make some things bit better because as we as we are talking here, you need to have some knowledge about this weird JavaScript.",
+      "Duration": 31,
+      "Offset": 1944
+    },
+    {
+      "Sentence": "I'm talking about so you need to understand that oh you are using react for the rendering engine and it has some some features and send some stuff happens, because of that and then then you have to use this web back thing for this hot module replacement and while it is configured.",
+      "Duration": 18,
+      "Offset": 1976
+    },
+    {
+      "Sentence": "When it stops working, he probablynormal.net developer or someone who haven't played with the front end stack so far. You don't know what's going on so we kind of like especially Alfonso is working on making all this stuff that's nicer. There is some magic. But the nice thing about it is that it's magic open source all the way down so as long as you understand the stack. You'll have a good experience yes and it.",
+      "Duration": 30,
+      "Offset": 1996
+    },
+    {
+      "Sentence": "Also, one more thing probably another important thing I want to mention is that the size stock has it's not only like those couple of libraries put together but we actually provide a couple of companies provide commercial support for this tax so if any company is interested in.",
+      "Duration": 17,
+      "Offset": 2026
+    },
+    {
+      "Sentence": "Having some commercial support because I totally understand that not everyone wants to just buy into this open source stuck not having any quaranti sent not having any help order dinner asking questions on GitHub so if any company Anthony and anyone has this need to have.",
+      "Duration": 20,
+      "Offset": 2045
+    },
+    {
+      "Sentence": "Formal commercial support for such applications. There are a couple of companies that that provides that and I think that's also really important from just after a community POV because after a community for a lot of time had this draws this opinion about F sharp community. It's just bunch of those crazy open source hipster someday. They just do those stuff for fun and no one is using these commercially and tent sites also showing that.",
+      "Duration": 29,
+      "Offset": 2067
+    },
+    {
+      "Sentence": "That there are some companies that work on that and provide support with F Serpent this stuck in particular.",
+      "Duration": 7,
+      "Offset": 2097
+    },
+    {
+      "Sentence": "That is a very good point and if you go to safe hyphen. Stack dot GitHub Dot. IO you can see that there is not only a rich community, but there's companies like Lambda factory in compensation lit in others, and others. So just like when you use open source like node you call node source with the safe stack. There is a community of people put in this stuff into production who can help you commercially and make you successful. I really appreciate you chatting with me today fax. It was great experience for me and I'm glad happy happy happy, too, happy to shut up.",
+      "Duration": 31,
+      "Offset": 2105
+    },
+    {
+      "Sentence": "F sharp stuff, fantastic this has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 11,
+      "Offset": 2137
+    },
+    {
+      "Sentence": "F***",
+      "Duration": 1,
+      "Offset": 2150
+    }
+  ]
+}

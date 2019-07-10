@@ -1,0 +1,328 @@
+{
+  "id": "17d17ea9-0542-4ce9-8644-10b276a4033a",
+  "Title": "Better Allies and Better Hiring with Karen Catlin",
+  "PublishDate": "2018-12-28",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/28417fe7.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks, I hope you're enjoying this podcast. You know, I've done over 650 podcast. So I must enjoy doing it. And I hope you enjoy listening. But if you enjoy stories about the people behind the technology you use you should also check out the greater than code podcast. They focus on the human side of software development. They've got stories of inclusivity in Accessibility from the people. You don't normally hear from search for greater than code in your favorite podcast app or check out greater thancode.com.",
+      "Duration": 34,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman was another episode of Hansel minutes and today I'm talking with Karen cabin to new book out called better allies. You can check it out betterallies.com. She most recently served as a vice president in the office of the CTO at Adobe Systems and it's been in tech for awhile? How are you I am so well. Thank you for having me this is so exciting I'm happy to chat with you. I've actually read one of your other books, which was called present a techies guide to public speaking and I had your coauthor Pournima via Shankar on the show in show.",
+      "Duration": 30,
+      "Offset": 43
+    },
+    {
+      "Sentence": "And one so people should check out that show as well. Yeah, thanks. Yeah, present a techie. Skype public speaking is all about leveling up your skills around giving presentations or giving talks externally super important for our careers in Tech and so thanks for the shout out. An I would definitely encourage your readers to check it out. Yeah, absolutely and now you've got another book and it's focused not just on hiring and retaining a workforce, but keeping them and make sure that they don't walk out the door. Exactly yeah that's what better allies is all about.",
+      "Duration": 30,
+      "Offset": 74
+    },
+    {
+      "Sentence": "Pretty much every day, simple actions anyone can take to create a more inclusive and engaging workplace where really anyone can do their best work and everyone is just thriving and there's a great buzz about the workplace, so that's the focus of my second. Book Yes, and as you mentioned there's a whole chapter on hiring and casting as wide a net as possible in the hiring process. There's supposedly a text shortage out there an in researching this. I went and I Googled text shortage and I got an interesting reply I got.",
+      "Duration": 31,
+      "Offset": 105
+    },
+    {
+      "Sentence": "Results the first one was the tech talent shortage is a lie and then the next one was the tech talent shortage is even larger than you thought so now. I don't know are we are. We do not have enough techies to hire yeah, well so first of all think about your experience at Microsoft and for your listeners wherever they are their experience hiring. I think that most people probably think it's pretty hard to higher tech talent these days. I'm certainly I'm in Silicon Valley and there's such a shortage in it's hard to hire the right talent, so just.",
+      "Duration": 30,
+      "Offset": 137
+    },
+    {
+      "Sentence": "Italy I think that the tech talent shortages alive, not a lie and and as I've done research, to on there definitely different studies that show up and catch my eye. One is last summer. I was reading something on LinkedIn and they were reporting that by 2020, which is only like a year and a half away. Maybe going to round up to 2 years, but by 2020, there's going to be over a million tech jobs that are going unfilled because the talent isn't there and then I've also known.",
+      "Duration": 31,
+      "Offset": 168
+    },
+    {
+      "Sentence": "Website for chief security officers reported that by 2021, there's going to be 3.5 million cyber security jobs that are going unfilled so I think that there's probably even if you think that those statistics are may be exaggerated or not quite accurate. There's still something there and we don't have enough talent to fill all these tech roles that we need in our companies and frankly to solve problems around the world that we know need solving.",
+      "Duration": 30,
+      "Offset": 200
+    },
+    {
+      "Sentence": "And we can look at it as a gap in that there aren't enough people to hire but we can also think about the people who have talent right now might want to develop their talent internally and stay at the company and move into a different job. That's up into diagonally within their company. Oh absolutely and I certainly hope that our tech companies are investing in their talent. They have that they want to keep growing that I mean face it, tech move so quickly and if you rely on the skills. You have last year. They're not going to be the skills you need next year.",
+      "Duration": 31,
+      "Offset": 231
+    },
+    {
+      "Sentence": "I hope that the companies are investing in talent, but it probably is not happening at the right pace. Definitely no it doesn't. I recently had someone who's a friend of mine leave leave the company and on the way out in the kind of like final email. She was a black woman in Tech, she said. You meaning you the tech industry are spending so much time trying to get us to come work at your company that you're not putting any work into having a stay at your company that idea of knots.",
+      "Duration": 30,
+      "Offset": 263
+    },
+    {
+      "Sentence": "Attention but having so many recruiters running out there looking for, for talent really hippie. Yes, Oh my gosh. Retention is so critical and you mentioned she's a woman is that did I hear that right. This friend of yours. Yet happen to be black women in Tech, a black woman in tech even more elusive. I'll call it because if you look at the statistics that are being reported. The demographics that get reported in various diversity reports we definitely see that there's hardly any people of color.",
+      "Duration": 30,
+      "Offset": 294
+    },
+    {
+      "Sentence": "And so I know that that hiring those people. There's a lot of focus on bringing people of color of tech as well as the people from other under represented groups into our tech companies. But if we're not retaining them what I mean? How shortsighted is that and you kind of have to think about what are our budgets that we give to the recruiting team to hire these talent versus the budget were giving to whether it's learning and development or other activities to create the really inclusive environments, where people feel like this is awesome, and I want to be here and by the way. I want all my friends to come work here, too. This is such a great place.",
+      "Duration": 31,
+      "Offset": 325
+    },
+    {
+      "Sentence": "Making the right investment there and I kind of think not that one story. You shared underscores that but it's really why I wrote my book. I wrote this book better allies because I really do want everyone to realize there are things that we can be doing to create these workplaces. This culture where people feel that I can thrive here and I am thriving and I'm doing amazing work and it's fun and it's just like it's the place. I want to be and I don't want to leave there.",
+      "Duration": 30,
+      "Offset": 357
+    },
+    {
+      "Sentence": "Shelter that have that reputation, but I think there are few and far between.",
+      "Duration": 4,
+      "Offset": 388
+    },
+    {
+      "Sentence": "What do you say to people who might have made it this far into the podcast or heard stuff like this before were saying well. I just want to do good work like this isn't about gender. This isn't about race. Let's just you know the code compiled let's check it. In Yeah, so cool the code compiler checking in.",
+      "Duration": 16,
+      "Offset": 393
+    },
+    {
+      "Sentence": "That's great, but is it the right solution is it the right solution for the customer needs on there so many stories about technology gone wrong. There Haps because a diverse group of people were not coming up with a solution. Their stories about you want to, well share one or 2 quickly like the early airbag technology. For example, it was built by a team of all men who use the standard height and weight of an average adult male to build the early air bags, and the tragic story there is that?",
+      "Duration": 31,
+      "Offset": 411
+    },
+    {
+      "Sentence": "For biotics were deployed into cars and as they diploid and accidents. They worked really well for the men who are the standard height and weight. But the tragedy is they were killing women and children.",
+      "Duration": 12,
+      "Offset": 443
+    },
+    {
+      "Sentence": "OK, so you kind of wonder well if there had been some women involved in that engineering team coming up with the first air bags, would the same solution have been put into place or would have a better solution have been pointed out you don't we don't know we can't go back and redo history. But that's just one example. Another example is more recently is the Apple Health Tracker. You know when it was first announced the Apple Health Tracker. It was, I think the marketing was all the health metrics. You ever need tracker available now in our health tracker.",
+      "Duration": 32,
+      "Offset": 456
+    },
+    {
+      "Sentence": "She need except they forgot one in which one they forgot. It's the one that women have been tracking since the dawn of to every for every production calendar. They forgot to include that and so half of the population that was using the Apple Health Tracker could not track. The most fundamental of health metrics. Now I don't know what the demographics were of that team that was creating a health tracker, but again, I kind of wonder like if there were more women involved wouldn't that be the first thing they'd think about in terms of the health metric I don't know.",
+      "Duration": 31,
+      "Offset": 489
+    },
+    {
+      "Sentence": "That is really interesting because there's so much more though. If you think about what it means to how wide is you're not going to be. I'll give you 2 very, very brief stories. My boss runs a huge team at Microsoft and visual studio. But he happens to be one of the few for whatever reason, people that has red green colorblind so inevitably. He's the one that finds the problems with our colors and icons and and UX ranch. Red green issues Grey Grey. Refactor isn't quite as exciting as Red Green Refactor.",
+      "Duration": 30,
+      "Offset": 521
+    },
+    {
+      "Sentence": "Thank goodness you have you have him on board? Yeah, and the other one was on the Apple health early early versions of Apple health? I was putting my blood sugar in with my continuous meter every 5 minutes. But the database didn't think to scale that far. You couldn't do that. It was too but was too much too much data with data. Yeah, so diversity is diversity of thought diversity of background. It's medical it's veterans. It's always like. Yeah, it's that diversity of experience life experiences as well as personal needs that all comes together. I think to create.",
+      "Duration": 32,
+      "Offset": 552
+    },
+    {
+      "Sentence": "Vibrant product development team is solving the right problems. Yeah, what do you do if you have a small team but if you have 4 or 5 people and you don't want it to look like the Power Rangers. I've talked about artificial diversity. We don't want to make a team of Power, Rangers, where there's 5 people. One of each type because eh it's artificial and it's not the effective team. It's just an attractive team well. Or maybe it is an effective team. I don't know it could very well be the right team for your needs yet. The important thing and I must admit I'm not a fan of quotas person to.",
+      "Duration": 34,
+      "Offset": 586
+    },
+    {
+      "Sentence": "Some idealized power Ranger team as I've never heard it talked about that way. But I love that that's not what I'm all about. I'm about if you are building a team? Why not cast the widest net possible castanet that is going to be broad so that you get a variety of talent coming in to the interview process so that you are evaluating a variety of candidates and that you're choosing the right person for the team for your needs? Why not cast the widest. Burnett possible that makes me that's a good point, so this isn't about.",
+      "Duration": 30,
+      "Offset": 621
+    },
+    {
+      "Sentence": "Getting as many people into the interview door as possible. You know if your interview 3 people and it's all 50 year old guys. Maybe interview 6 people right exactly and not just getting them in the door. But then interviewing them in an appropriate way that is objective that is not biased and when you actually make them the offer. How can you do that in an unbiased way and how can you on board them so that they feel Hey? I was hired because of what I'm bringing here and not because I'm the token somebody at the token person of color, the token woman.",
+      "Duration": 32,
+      "Offset": 652
+    },
+    {
+      "Sentence": "The bar for me because I've got what it takes so it's the whole process. The whole pipeline of how we hire and interview attract campus interview and then hire them, we breakdown. Some specifics for example, II hear a lot about whiteboard interviews and people are still doing interviews, where they say here go and sort this, or do a bubble sort in C on a white board, which is not something you'd ever do in your job. But something that we apparently ask people to do interviews. I know I know and.",
+      "Duration": 30,
+      "Offset": 686
+    },
+    {
+      "Sentence": "I do think that it is a much better better better best practice to have a realistic interview to have an interview that mimics what? What the life is going to be like once they walk in the door, so if it is the kind of thing that you are whiteboard coding every day and you're doing that in a team that's fine to have that be part of your interview process, but chances are as you said it's not it's just this artificial thing we've done. Maybe it's because we were put through that ringer when we got our jobs. So we're going to pass that along to somebody else, right pay it forward. Maybe it's because we don't know what else to do.",
+      "Duration": 32,
+      "Offset": 716
+    },
+    {
+      "Sentence": "Yeah, another thing that we do, and I think it's just because of habit is leading up to the whole interview process. When we're writing job descriptions I mean? How many times have you written a job descriptor. I've done this many times but you kind of copy and paste the last one the last one might say open source experienced nice to have and Bachelors degree or equivalent in computer science and and and and write Copy and paste.",
+      "Duration": 26,
+      "Offset": 749
+    },
+    {
+      "Sentence": "And it turns out that as a result, we end up having a lot of extraneous requirements in our job listing extraneous requires in terms of do you really need a college degree to be a software engineer? Well, I haven't have a computer science degree? I love the training. I got but the bootcamp grads or years of experience might surpass that or might be the equivalent so ask yourself. With every requirement your pudding in a job listing would I say no to the best candidate ever who came through the door.",
+      "Duration": 30,
+      "Offset": 776
+    },
+    {
+      "Sentence": "Have that college degree right and if the answer is you know, I sort of soften that requirement. I'd waive that requirement, then why even put it there in the 1st place open source experience. The same thing. Yes, there are some jobs that absolutely require you work in open source and so of course, that would be a valid requirement, but so many of our engineering jobs don't really require open source experience. It's to serve a way for us to vet a candidate mean go check out their contributions the code they forked.",
+      "Duration": 30,
+      "Offset": 808
+    },
+    {
+      "Sentence": "See what they've done GitHub, but it really doesn't tie to the job per se. So why put in there, if it's really not a requirement and in fact, in my book. I talk about why not? Try to just have 5 requirements for any job that your listing really narrow down what you're asking for what you're looking for to 5 and 5 is kind of an artificial number could be 6 or 7 doesn't really matter but but try to minimize it and the reason to do this? Is there are studies. In fact, there's this famous.",
+      "Duration": 31,
+      "Offset": 838
+    },
+    {
+      "Sentence": "The internal study from years ago that studied the promotion velocity for women and men at the company and they found that women applied for a promotion internally when they had about 100% of the requirements for the job. They applied only if they could say to every single requirement. Yep, Yep, Yep, Yep, Yep all the way down.",
+      "Duration": 18,
+      "Offset": 870
+    },
+    {
+      "Sentence": "The contrast men internally applied for these promotions when they had that 60% when they had 60% of the requirements and they kind of probably thought in their head. I've got enough. I've got more than half. I could go for this promotion now in that study. It's kind of infamous it was an internal study. It hasn't been published externally. But the studies been repeated by other researchers and they're finding very similar things that women will apply for things when they they know they can do the job 100% of the time they've got all the things they're looking for.",
+      "Duration": 31,
+      "Offset": 890
+    },
+    {
+      "Sentence": "You know will apply when they've got most of them. It's so it. You don't want to believe these things they are true, it's literally yesterday. I was having dinner with my niece. She's an accountant, she's just discovered at her job that she's underpaid. She's the lowest paid of the accounts that are there. She was recently looking around at job at job listings and she just exactly describe what you describe she was looking at the list of things you could do in, she had.",
+      "Duration": 32,
+      "Offset": 922
+    },
+    {
+      "Sentence": "I can do all of this, she basically didn't realize she was as competent as she was until she found a job description that described her job exactly and she had previously felt like well. I'm never going to ask them for more money because if I would never be able to find another job. But then she realized wait a second. I can do this. I could find another job. So now she's going to go and ask for her, her raise an I encouraged her to not ask as arrays. I encouraged her to ask as a correction correction.",
+      "Duration": 30,
+      "Offset": 955
+    },
+    {
+      "Sentence": "That's great advice. I love that and it's it's just so interesting. I love hearing. These anecdotal examples of this in the wild. So to speak in real life because it does happen and the research backs it up so a best practice then to attract more women and to cast that wider net is really simplify your job descriptions to the bare minimum to this things that you absolutely are going to be interviewing for and that you require for the job and leave out all those nice to haves.",
+      "Duration": 30,
+      "Offset": 986
+    },
+    {
+      "Sentence": "Descriptions it becomes so long there almost is longer than your resume. I've seen pay page. Long job descriptions someone recently showed me a job description that asked for a Masters degree in lieu of experience and I thought that was an interesting and weird way to do things they said. Well, we want you to have 5 or 10 years experience or a Masters degree not sure those are interchangeable.",
+      "Duration": 21,
+      "Offset": 1017
+    },
+    {
+      "Sentence": "Uh I don't, either it. I don't know what they were thinking. But perhaps they had a method to their madness there. Yeah, don't know, don't know.",
+      "Duration": 7,
+      "Offset": 1039
+    },
+    {
+      "Sentence": "Interesting OK, so you said. You need to give fair interviews. Yes. Can we talk about that please.",
+      "Duration": 6,
+      "Offset": 1047
+    },
+    {
+      "Sentence": "Hey friends this is Scott but this is an advertisement. I just wanted to take a moment in the middle of the podcast here to ask you to help me grow the show. When you visit our sponsors. You help me out. You help me in my spare time build this show and tell people about it, but I really need from you is that you tell people about the show. I love when I see tweets from you. When you tweet our guests when you talk about this show. This anything you can do to tell your friends, family, relatives coworkers colleagues.",
+      "Duration": 30,
+      "Offset": 1056
+    },
+    {
+      "Sentence": "That be great if you have an idea for someone who should be on the show. Let me know, and above all review. The show review, it on your blog review, it on iTunes review, it on Google player stitch or wherever you can because telling people about this show. Let's me continue to do this show with over 600 episodes thanks a lot.",
+      "Duration": 18,
+      "Offset": 1086
+    },
+    {
+      "Sentence": "So quick story about how things sometimes are not fair well years and years ago early in my career. I think I had about 6 years of experience at the time I had been working as a software engineer and I actually was married my husband, Tim and I had met at work and we had almost identical resumes. We had gone to the same school got the same computer science degree worked at the same company right out of school using the same technologies the same frameworks.",
+      "Duration": 30,
+      "Offset": 1107
+    },
+    {
+      "Sentence": "Our resumes were almost identical and we decided we were going to move to Silicon Valley. We were living in England at the time we were moving to Silicon Valley and we applied to a few places and found one company very large tech company that was building out a team and they were hiring a handful software engineers and we said perfect. Let's apply. We've worked together before when it be fun to do that again. So we applied and we both got interviews on the same day we were seated in side-by-side conference rooms.",
+      "Duration": 30,
+      "Offset": 1137
+    },
+    {
+      "Sentence": "The interview team talked to me one person talk to me and then for half an hour and then move next door and interviewed my husband and it went back and forth like that all day, it was a pretty exhausting day.",
+      "Duration": 10,
+      "Offset": 1169
+    },
+    {
+      "Sentence": "At the end of the day when my husband and I were driving back to our hotel room. We started comparing notes like how you do? How do you think it got went you know those types of things an I remember him telling me like Karen that was the hardest interview I've ever had. They asked such tough questions. I don't know how I did that type of thing and I remember thinking that was the easiest interview I've ever had. They didn't ask me any tough technical questions that they were so superficial they skirted.",
+      "Duration": 30,
+      "Offset": 1181
+    },
+    {
+      "Sentence": "Just the level of my experience.",
+      "Duration": 1,
+      "Offset": 1211
+    },
+    {
+      "Sentence": "And I realized what happen is they lowered the bar for me. They didn't think that I as a woman had the same technical chops is my husband and they ask different questions. Even though we were back to back side by side and the interesting thing is that company ended up making both of us offers and I decided to say no because I didn't want to join a team that lowered the bar for me during the interview process like what would it be like if I actually joined the team? What was",
+      "Duration": 30,
+      "Offset": 1214
+    },
+    {
+      "Sentence": "Work assignment be that I got or the credibility. I'd get in a team meeting or stand up right. I just didn't think it was going to be there, so that's 1 example of how the hiring process. The interview process itself can be very biased. So the best practice to contrast that into approach it differently is to make sure we really have objective criteria that we are interviewing against perhaps even having very structured interview tactics where there are questions.",
+      "Duration": 30,
+      "Offset": 1245
+    },
+    {
+      "Sentence": "Find upfront ahead of time that you're going to be asking each candidate consistently and some rubric for measuring the answers measuring those responses so that the bias can be taken out as much as possible so that's for example, how bias creeps into the interview process. I think I think that last bit. We should kind of double click on a minute because I think that's really, really functionally practical advice that someone who's listening can use like right away right down. Some questions talk about them as a group.",
+      "Duration": 31,
+      "Offset": 1275
+    },
+    {
+      "Sentence": "That yeah will have an interview. We can interview can go and wide reaching different directions. But these are the 15 questions that we're going to ask everyone they are good, solid tech questions. They're unbiased. They're not trivia. They're not writing a bubble sort on a white board. They are representative of the kind of stuff that this person is going to do every day right. They aren't your favorite movie. They aren't like whatever I mean, it's focused on the business in the business needs, yeah, yeah definitely.",
+      "Duration": 30,
+      "Offset": 1307
+    },
+    {
+      "Sentence": "But I would love your listeners to ask if they is add a question so number 16 to that list of 15 ask the question how have you contributed to a diverse and inclusive workplace?",
+      "Duration": 11,
+      "Offset": 1338
+    },
+    {
+      "Sentence": "Just ask the question would you do if some people would just stared into the middle distance and didn't have an answer to that, but then you know you know, and you can decide if this is important to you. But if it's an import if it's important for you to be hiring. People who are going to add to the inclusivity of the environment, even if they are part of the majority now as white man. If you're looking for people who are going to make your workplace even more inclusive. Why not start when they're walking through the door and ask that question if you don't care. I don't ask it. But if they stare into the distance and that's going to be very telling.",
+      "Duration": 30,
+      "Offset": 1350
+    },
+    {
+      "Sentence": "I think that one of the things that helps me as a white guy think about things is. I really call out the difference between diverse which is a thing, which is maybe The? Who and inclusive which is the how we did a Thanksgiving meal recently. And we had some people come who were vegetarian. Inclusive behavior was making sure that they had vegetarian food to eat right? We weren't trying to put together together a diverse Thanksgiving.",
+      "Duration": 30,
+      "Offset": 1381
+    },
+    {
+      "Sentence": "Inclusive one otherwise we'd have our guests, literally just eating stuffing oh. Gosh, we put sausage in our stuffing that wouldn't work very well anyway. Yes, I work so that would be a problem. If you problem here, we go put it? What a great creative thought. I don't know I love that I love that an inclusive.",
+      "Duration": 19,
+      "Offset": 1413
+    },
+    {
+      "Sentence": "Is the how in the diverse is The? Who that's great so simple and so, so telling? Yeah. You have a section on performance feedback and this has been a problem amongst my manager Friends of people not feeling that their performance feedback was was fair getting feedback and then talking to appear and then finding out they were given entirely different feedback even though they were doing the same jobs. How do you keep feedback private while still making it fared everyone? Yeah, I don't know.",
+      "Duration": 30,
+      "Offset": 1433
+    },
+    {
+      "Sentence": "That is the concern that I have in terms of private feedback. It's more that there's research showing.",
+      "Duration": 8,
+      "Offset": 1464
+    },
+    {
+      "Sentence": "That we tend not to give difficult feedback constructive feedback into the feedback that helps us really learn and grow. We tend not to give that difficult feedback to people who are different than us. Whether that is a cross gender lines or race lines or some other demographic line. We hold ourselves back. Here's why as person who's white. I am white I might not want to give that really tough feedback to a person of color on my staff because I might think.",
+      "Duration": 31,
+      "Offset": 1473
+    },
+    {
+      "Sentence": "Going to think I'm racist if I give them if I chilled real tough here and I'm giving them these this feedback. They're going to think I'm racist for a man he might not give feedback to a woman because he might think she's kinda think I'm sexist if I give her this feedback so it's just easier to hold back and there's research that shores this up and improves it out. Stanford's Clayman Institute did research study of reviewing thousands and thousands of written annual performance reviews from tech companies and this is what they ended up finding is that the difficult feedback went more too.",
+      "Duration": 31,
+      "Offset": 1505
+    },
+    {
+      "Sentence": "In women women just in get as much because.",
+      "Duration": 2,
+      "Offset": 1536
+    },
+    {
+      "Sentence": "Again, because chances are their bosses am and that's how it works in Tech. The other thing they found is that the length of the performance reviews was different men got longer just longer more words in their performance reviews. So there is more more feedback given and also the third thing is that men were men were more likely to get feedback about a skill they needed to learn that would further their career tech skill in particular, so the feedback. We're giving I think that's where the equitable part is this let's make sure that we are writing performance.",
+      "Duration": 33,
+      "Offset": 1540
+    },
+    {
+      "Sentence": "Same length that we are for every reviewer, giving we're making sure that we're giving tangible ideas of tools techniques job skills that people should be learning to further their career and that when we do have difficult feedback. We're not holding it back. That's really significant and I think that there are very likely people who are listening who disagree with aspects of this and they should kind of go back to the science and go back to the work that has been done in this space that is fact based and say.",
+      "Duration": 30,
+      "Offset": 1574
+    },
+    {
+      "Sentence": "The facts are that these are how people are people feel this way. People perceive this way. People are receiving reviews of this such and such a length and if you go back to the original thing. You said about interviewing have specific questions that represent what they're going to be doing on the job. You can apply that to performance feedback are you giving them feedback on what their job is exactly like its objective criteria. It's a way of measuring people objectively to help prevent the bias from creeping it. We all have bias. It's OK, but we can put these.",
+      "Duration": 30,
+      "Offset": 1605
+    },
+    {
+      "Sentence": "In place to help prevent that bias from affecting creating an inclusive workplace from affecting people's careers. So the book is coming next month. I think January 2019. That's right? That's right. I hope at the beginning of the month. But cross let's cross our fingers. There are few things still to be worked out, but we are on track for January 2019. Yeah, super excited to get it out there and if you don't mind I'll get myself a shout out, people can go to betterallies.com and sign up to be alerted.",
+      "Duration": 30,
+      "Offset": 1636
+    },
+    {
+      "Sentence": "They read more about it, I also have a newsletter. That's weekly called 5 ally actions where I share 5. Like simple everyday things. People can do in a workplace to create a more inclusive culture, so just a little dose of inspiration every Friday. So you can sign up for that newsletter also I'm on my website, betterallies.com, and then I want to give you a shout out and say go to betterallies.com slash about in your bio. There's a bunch of great URLs that people should follow there's of course, the link to your.",
+      "Duration": 30,
+      "Offset": 1667
+    },
+    {
+      "Sentence": "Is that you commented on there's your Twitter? Handle better allies but also your Ted X talk on women in Tech. The missing force. This idea that we've got 50% of the population. Just there waiting to be hired. Let's get them involved. There's a group of people that we can call upon and then the reminder of course, your book with pointing out called a techies guide to public speaking present. She was an episode 501 and that's another great book that they can buy from you. Yeah, thank you so much. Thanks for all those shout outs are really appreciate it. I appreciate you thanks for chatting with me today.",
+      "Duration": 32,
+      "Offset": 1698
+    },
+    {
+      "Sentence": "My pleasure, it was so fun. Scott thank you. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 7,
+      "Offset": 1731
+    }
+  ]
+}

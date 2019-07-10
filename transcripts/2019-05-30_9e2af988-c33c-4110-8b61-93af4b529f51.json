@@ -1,0 +1,353 @@
+{
+  "id": "9e2af988-c33c-4110-8b61-93af4b529f51",
+  "Title": "The magic of Software Defined Radio with Ben Hilburn",
+  "PublishDate": "2019-05-30",
+  "PodcastURL": "https://cdn.simplecast.com/audio/248323/24832310-78fe-4898-91be-6db33696c4ba/e4c1da04-6db3-4320-9e63-e2bce55ea477/cb1146c1_tc.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "As a software engineer chances are you've crossed paths with mongo DB at some point with your building an app for millions of users or just figuring out your side, hustle is the most popular non relational database. Mongo DB is intuitive and incredibly easy for development teams to use now with Mongo. DB Atlas you can take advantage of Mongo. DB's flexible document data model as a fully automated cloud service.",
+      "Duration": 23,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Mongo DB Atlas handles all the costly database operations in admin test that you'd rather not spend time on like security high availability data recovery monitoring and elastic scaling try Mongo. DB Atlas for free today visit. WWW dot mongoDB.com slash cloud to learn more that's mongoDB.com slash cloud.",
+      "Duration": 30,
+      "Offset": 24
+    },
+    {
+      "Sentence": "Hi this is Scott Hanselman. This is another absurd, handsome anything today. I'm talking with Benny Melbourne with the president of the canoe radio project and we are both very excited about software defined radio and you found me 'cause I was geeking out about how great it is yeah. I spend a lot of time. Geeking out about software radio on Twitter. So I was very excited to see you do the same. Yeah, whenever someone discovers a new kind of I'm calling it a new hello world because we spend. All this time teaching people how to do hello world by them out Pudding.",
+      "Duration": 30,
+      "Offset": 61
+    },
+    {
+      "Sentence": "Just to a console and then we wonder why you know why is this 13 year old child not excited about software? We just said Hello World in a console isn't that enough for you so now. I'm thinking. Maybe I can teach them by plucking signals off of the electromagnetic spectrum. It really is. An incredible demonstration of technology and something like when you do it, you immediately feel a huge sense of achievement. So I have to go and talk with you a bunch of kids tomorrow. I'm going to 50 kids between 11 and 15.",
+      "Duration": 31,
+      "Offset": 92
+    },
+    {
+      "Sentence": "And I think they have probably talked about the electromagnetic spectrum or at least they talked about visible light and I wanted to understand that so there's this spectrum. This electromagnetic waves in this wide range of frequencies and on the one end, you get frequencies that turn you into the Hulk in the other other endure what looking at like I don't know black holes that we talked about. This spectrum and what's in there. Right yeah, so she said less romantic spectrum varies from what we would call zero Hertz would call.",
+      "Duration": 31,
+      "Offset": 124
+    },
+    {
+      "Sentence": "Times all the way up to, I mean, there's no no end to it right, but to give you some example optical light is in the hundreds of terahertz, whereas broadcast FM radio that you would listen to in your car for example, is in the high tens low hundreds of megahertz so several orders of magnitude below that so it's really just this huge range and it contains everything from the emissions from black holes, too.",
+      "Duration": 33,
+      "Offset": 156
+    },
+    {
+      "Sentence": "Car stereo receives is Wi-Fi and there is gluten is yes, so for the tech focused out there. It's called the ESM bands and those are what that means is those are bands that you're allowed to transmit in without having a license, so most bands are protected so Verizon for example, has to sit tell the FCC. Hey, we're going to put up a cellular base station and we're going to transmit in this band and we expect all of our users to be at.",
+      "Duration": 30,
+      "Offset": 191
+    },
+    {
+      "Sentence": "And then take your license for that, well, obviously you Scott Hanselman did not ask the FCC for a license to operate your Wi-Fi router and that's because your Wi-Fi router works in this unlicensed. Isn band right now, the Wi-Fi is typically around 2.4. Giga Hertz or 5.8 Giga Hertz, which are 2 of the most widely used. Isn bands and so this is effectively real estate right. Let me just like we have the world and they always say they always my dad always says you know invest in land because they're not making anymore of it.",
+      "Duration": 30,
+      "Offset": 221
+    },
+    {
+      "Sentence": "More of this really no so for decades, and LM decades for a couple of decades now sort of the wireless world is been freaking out about what's called the spectrum crunch? Which is or spectrum scarcity? Which everyone is running out of spectrum right so the problem with extreme different. Let me know if I sort of dive way too deep here. I'll stop you because I'm alright now. I'm right there with you, but I get the idea that there's this range right and I know that there's a lot of stuff that I'm thinking about like what's the ipv 6.",
+      "Duration": 31,
+      "Offset": 253
+    },
+    {
+      "Sentence": "Make spectrum were about to run out of IP addresses. Let's fix it. We run out of light so the first thing to understand is why the frequency matters and it's because different frequencies have different characteristics in terms of propagation and what I mean by that is when you emit a signal at a certain frequency how it gets from where you transmit it to receiver somewhere else is very different depending on the frequency at which it exists so as an example.",
+      "Duration": 31,
+      "Offset": 285
+    },
+    {
+      "Sentence": "What we would consider to be a relatively low frequency say 10 megahertz that those low frequencies can actually very, very long distances, so sometimes you hear about amateur radio operators who bouncing signals off of the moon and then to get them to the other side of the world to talk to somebody on the opposite side of the world. You can do that with low frequencies. You cannot do that with much higher frequencies because there's higher frequencies experience what we call attenuation.",
+      "Duration": 30,
+      "Offset": 317
+    },
+    {
+      "Sentence": "Los power loss in the signal as it as it moves through space well. I just had a moment so I have a 2.4 Giga Hertz and a 5 Giga Hertz. SSID Wi-Fi Channel, and 2 gig 2.4 is not super high bandwidth. But it definitely goes out into my backyard and the 5 Giga Hertz. One is really, really great and high speed but barely makes it to the window. That's exactly right that's exactly what you're seeing is.",
+      "Duration": 30,
+      "Offset": 348
+    },
+    {
+      "Sentence": ".8 Giga Hertz band twice twice the frequency of 2 point of your 2.4 giga. Hertz band and it does not propagate as far and So what we've seen is with our existing technology. We are constrained to within a certain band of wireless frequencies that are consumer electronic devices can work at so for this comes there's 2 ways to get more spectrum. Obviously, we can't invent more spectrum.",
+      "Duration": 31,
+      "Offset": 379
+    },
+    {
+      "Sentence": "You know it exists. You can't make anymore. You can't make it more numbers. But you can add a lot of decimal points exactly right so it's a fundamental property of physics. Actually, it's one of the 4 fundamental forces of the universe. So 2 ways to get more spectrum is you either use what we have access to more efficiently or we go up in frequency, so both of those are technology problems and it's everything from.",
+      "Duration": 31,
+      "Offset": 411
+    },
+    {
+      "Sentence": "Assessors and more accurate, but we call analog to digital converters or digital analog converters so they're able to pluck it out at a more fine grain like tweezers. That's exactly right all the way up to applying artificial intelligence. For example, to figure out how can I more effectively share this spectrum with another user interesting it makes me think about how I just recently upgraded from 100, Mbit to Gigabit Ethernet, but it's still going over the same. Coex cable and that's the same. Coex cable that just brought me like.",
+      "Duration": 31,
+      "Offset": 443
+    },
+    {
+      "Sentence": "Analog TV 20 years ago, or 30 years ago and I'm trying to understand the cables. The same cable. It's still the same thing, but they showed a lot more information in that little pipe. Yeah, what's really cool is all of the physical concepts. That sort of define? How your wireless signal works like your wireless Wi-Fi. Signal is the same thing in that twisted pair koax there. All this week. All of that RF actually RF being radio frequency so.",
+      "Duration": 31,
+      "Offset": 475
+    },
+    {
+      "Sentence": "The Internet connection, you're getting through your cable is an RF technology and your Wi-Fi. Router is also an RF technology just that. One happens to be wired and what happens to be wireless really OK, so these are all just vibrations of the electromagnetic radiation whether it be through the air or physically on piece of wire that's exactly right in vibrations is a good fairly good approximation. Deeper dive would be a magnetic field. Induces an electric field, which induces a magnetic field.",
+      "Duration": 32,
+      "Offset": 507
+    },
+    {
+      "Sentence": "The vibrations are waves, yeah, indeed now when you look at this at least when we look at this in school during the 10 minutes that they talked to us about this in high school. They always like to talk about the visible visible spectrum and depending on what bar chart. They ended up showing you they look how small it is look. This is visible physical and this is all the other stuff. Can I take a software defined radio and see light or does an SDR only allow me to see certain parts of this spectrum?",
+      "Duration": 30,
+      "Offset": 540
+    },
+    {
+      "Sentence": "So it would certainly be possible for someone to build a software defined radio that worked at optical frequencies. That kind of that kind of exists in the form of fiber optic transmissions. For example, but typically when we talk about SDR. We're talking about commercial off the shelf software radio products, which are usually between 6. Giga Hertz and below where optical light again is at hundreds of terahertz so you can.",
+      "Duration": 30,
+      "Offset": 572
+    },
+    {
+      "Sentence": "It's been 20 or $25 and you know by owed low-cost software radio receiver. You're not going to find something like that. That works at optical frequencies. So I went went to Amazon and I bought one for $19 and it's so small it basically just looks like an antenna and a USB thing like it's almost so small that it feels like. There's just nothing in it, but error but then, when I looked for software defined radio. I found ones that were $300 box is 500 boxes.",
+      "Duration": 30,
+      "Offset": 603
+    },
+    {
+      "Sentence": "Those of complexity? What is the difference between the $19 one or the one that just fits into like it's in the USB stick. It still itself, yeah, so there are probably know exactly the device. We're talking about and kind of to your point you can buy software radios that are $20 and you can buy software radios that are in the millions of dollars and the difference is really in the pure fundamental radio capability that provides so.",
+      "Duration": 30,
+      "Offset": 634
+    },
+    {
+      "Sentence": "Have for example, is receive only they cannot transmit it is a single antenna only so you can't benefit from multiple antennas or multiple channels. The device you have. I believe is probably an 8 bit ADC? What we mean by that is the analog to digital converter that is listening to the lecture. Magnetic wave that hits your antenna and turning it into a voltage right so a digital number that represents a voltage so we're going from analog information to digital bits.",
+      "Duration": 30,
+      "Offset": 665
+    },
+    {
+      "Sentence": "Only represent that voltage with 8 bits of precision whereas if you were to spend a lot more money on a radio. You might get something that's producing that number with 24 bits of precision and there's all kinds of power amplifiers. And that sort of thing that go into making the difference between a $20 receiver and 100 thousand dollar receiver. I see OK. So then I go and get I was listening to the news like the National Public Radio and with 8 bits.",
+      "Duration": 30,
+      "Offset": 696
+    },
+    {
+      "Sentence": "Go and get what 250 not number from zero to 255 effectively and with 24 bit you know, we're going off into space. We have just incredible amounts of 16000000.",
+      "Duration": 11,
+      "Offset": 727
+    },
+    {
+      "Sentence": "The range is insane from an unsigned integer perspective, yeah, jealous impairment increased that's exactly right and so that directly impacts. The type of information you're able to reconstruct so if you think about so let's think about your voice so let's say Scott I'm going to take your voice and I'm going to quanta ties it with that what I mean by that is. I'm going to take your voice and define digital values that describe your voice. So when you speak really lowly. I'm going to say that's 10 when you speak really high.",
+      "Duration": 30,
+      "Offset": 739
+    },
+    {
+      "Sentence": "255 right being giving giving myself 8 bits here, so but obviously your real voice is a continuous function right there's not these individual steps between levels so there's lots of information here because I can't accurately represent the entire range of your voice, but let's say I take that from 8 bits to 10 bits. Now I have a thousand 24 levels. Now I can represent more information and so that same concept applies to communication systems.",
+      "Duration": 30,
+      "Offset": 770
+    },
+    {
+      "Sentence": "So you mentioned that the radio is small. It's receive only but still with this little $20 thing I was able to do a whole lot. Now I did find that when I tried to listen to quote unquote. The radio and by that. I mean, FM radio. I did have to kind of move it around. It felt like the old days where I was holding the antenna up in the air to make sure I got a good signal. I wasn't picking up kind of like a lot without having to do a little bit of work that's just based on the size of the antenna so there's a lot of factors at play there, and I'm not exaggerating when I say.",
+      "Duration": 31,
+      "Offset": 802
+    },
+    {
+      "Sentence": "Many graduate theses and dissertations have been written about this topic, and so that's everything from radio signal is transmitted. There's not a single path that it takes to a receiver right. It's bouncing off buildings and it's moving through trees and it gets slow down going through windows so depending on how you move your antenna or around the signals that are incident upon your antenna vary widely and.",
+      "Duration": 30,
+      "Offset": 834
+    },
+    {
+      "Sentence": "Is even more affected by the frequency at which operating because the wavelength of very high frequency signal and by wavelength? I mean, radio signals is are moving through space. They actually can be they have some amount of wavelength before the period repeats itself.",
+      "Duration": 21,
+      "Offset": 865
+    },
+    {
+      "Sentence": "So if you think about it really high signal you can think of it as like scribbling really, really quickly up and down, whereas a low frequency signal is sort of going up and down really slowly as it's going through space and so as you move your aunt owner around you're going to see different parts of a very high frequency signal differently than you would see parts of a very low frequency signal so there's just there's so much complexity to something as simple as just moving your antenna around and seeing how it affects the reception of the signal that you care about it's interesting I was driving.",
+      "Duration": 30,
+      "Offset": 887
+    },
+    {
+      "Sentence": "In Seattle and I was using my GPS and I'm in downtown Seattle. And if you've been down there. You know that the streets are quite narrow in the buildings are quite tall and I'm driving and doing my thing and suddenly on the GPS my car moved over 2 streets and I was like I guess I'm not where I thought I was is are the is the signal the frequency of the GPS bouncing off buildings and it just bounced in a different way and I found myself elsewhere, yeah, so it's funny because.",
+      "Duration": 31,
+      "Offset": 918
+    },
+    {
+      "Sentence": "Way that that particular what we would call waveform is designed is not terribly robust to working well in urban environments. It doesn't do well going through buildings. It bounces in weird ways, it doesn't propagate through a concrete so that's why you when you're in a parking garage. You get that GPS signal last message from your phone. So and that's exactly what you described is exactly right we would call that multipath where the GPS signal is bouncing off the urban environment and.",
+      "Duration": 32,
+      "Offset": 950
+    },
+    {
+      "Sentence": "Receiving confuses the radio it decodes the information and just says OK well. You know, I'm doing the best I can, but you're not actually getting what you should be right and of course, you're picking it up from multiple satellites. So it's probably internally voting on what it thinks is going on. And when they when they all agree. It gives you a general sense of where you are when they all disagree. It's like. Good luck finding a way around Seattle. GPS is inherently the way that GPS works is actually a time time based system right the GPS satellites. All they're doing is broadcasting their time.",
+      "Duration": 34,
+      "Offset": 983
+    },
+    {
+      "Sentence": "This time so when you get into scenarios like that. You know it. Sort of falls apart quickly your code is powerful and so are you and when you consider the reach of your code. It's clear that to deliver quality code you must also deliver secure code. So where can you start a first step is educating yourself on basic secure coding principles and beginning to put these principles into practice everyday veracode secure coding tool kit is your go to resource for all your secure coding needs.",
+      "Duration": 29,
+      "Offset": 1017
+    },
+    {
+      "Sentence": "The benefits of the toolkit include learning best practices for secure coding understanding how to secure your DevOps environments and learning to combat the most common software vulnerabilities stay secure and download this valuable asset today. At veracode.com tool kit. That's vracode.com slash toolkit. So I've got this, this little little radio and I can go and install the software for and there's lots of different pieces of software for it.",
+      "Duration": 32,
+      "Offset": 1047
+    },
+    {
+      "Sentence": "Go and explore this a lot of them will find or think that they have to pay that to buy a package for this. But they don't necessarily have to buy a package once they've got their radio. Yeah, that's right so the software radio community has really grown up around open source open source software. I realize that it can feel silly to talk about software radio in using software with it versus the hardware device itself. It's probably worth real quickly just clarifying that by.",
+      "Duration": 31,
+      "Offset": 1081
+    },
+    {
+      "Sentence": "So we mean a hardware device that is controlled in used by software OK, so there's no nob on my device. That's right so the way I like to describe this. I realize I'm sort of deviating from your question a little note, please, but my favorite analogy for this is if you sort of think back to the way. Computers were when they were first created in the forties in the 1940s. Where in order to represent some computation.",
+      "Duration": 32,
+      "Offset": 1113
+    },
+    {
+      "Sentence": "Programmer would literally flip switches and plug wires into various ports to create an electrical circuit that represented the math that needed to get done right, and that has as computing has evolved we're at the point now where instead of having algorithms defined in hardware. We have general purpose processors that we then tell what to do with software.",
+      "Duration": 28,
+      "Offset": 1146
+    },
+    {
+      "Sentence": "And that's exactly the same thing that happened with software radio so many decades ago. You would build a piece of our and elect an electrical circuit that did some radio function and it would do that. One radio function well. Now we build general purpose radio hardware. An we tell it what to do and interact with it through software now. I'm just exploring this space so from my things that I was most interested over 2 things and I thought they were kind of My 2 fun Hello Worlds, the first one was to just listen to the radio to plug it in and put in like my favorite radio station at 91.5.",
+      "Duration": 35,
+      "Offset": 1175
+    },
+    {
+      "Sentence": "Def megahertz right that's where FM is that's right and then I can see it.",
+      "Duration": 4,
+      "Offset": 1210
+    },
+    {
+      "Sentence": "And what was interesting so nice. I did that I'm here in Portland. So 91.5 is National Public Radio. I could see the neighbor stations for the first time in my life, literally next door. Like I know that their next door. I intellectualize that their next door. But seeing the kind of the Bell curve and then an empty space and then the other stations. One of them was rock music and one of them was jazz and they looked different like I didn't listen to them, but I could tell that that's the rock station.",
+      "Duration": 27,
+      "Offset": 1215
+    },
+    {
+      "Sentence": "Yeah, that is so we in the radio community, especially in the open source world we generally consider building an FM radio receiver to be our equivalent of a hello world, good you did, exactly what exactly what we would have told you had you asked us and yeah, exactly what you're describing So what you're describing is visualizing the frequency domain right 'cause? What you saw is not how not how signal quote Unquote look in the error indeed.",
+      "Duration": 30,
+      "Offset": 1244
+    },
+    {
+      "Sentence": "So what you were looking at was visualization of the power and the Electromatic. Magnetic spectrum across different frequencies. And so you can see exactly describe those radio stations positioned around and you know the power level is going up and down in frequency as your receiver saw saw things happening and what's amazing about that to me is.",
+      "Duration": 23,
+      "Offset": 1275
+    },
+    {
+      "Sentence": "I actually Richard Richard Feynman's really great talk about just how incredible Electromatic Spectrum is because it's just everywhere. It permeates everything. It's kind of like the force. It is absolutely everywhere. All the time and things are bouncing everywhere and the air around. You is filled with information and you normally as a human. We do not have the sensors quote Unquote to be able to observe that but using this software radio technology and open source software.",
+      "Duration": 31,
+      "Offset": 1299
+    },
+    {
+      "Sentence": "To observe it and interact with it actually manipulate one of the 4 fundamental forces of the universe and it's just incredible. I think why do people not to get too off topic but why do people worry about whether it be the microwave oven in the 80s it was I stayed with the microwave the microwave will give you cancer or don't put the cell phone to your head. There are dangerous electromagnetic frequencies, but are not the ones that we spend time in.",
+      "Duration": 24,
+      "Offset": 1331
+    },
+    {
+      "Sentence": "And hold near our heads and sleep next to ones that are probably not going to kill us. So this is this is the realm of much all kinds of conspiracy theories and real science and pseudoscience unfinished studies. The scientifically scientifically accepted health. Health studies about this and the key thing is all other frequencies that were interacting with.",
+      "Duration": 30,
+      "Offset": 1357
+    },
+    {
+      "Sentence": "Rather, all the frequencies that we sort of blindly transmit out into the open like FM broadcast radio and Wi-Fi. That sort of thing. Those are that's non ionizing radiation So what we care about in terms of Health is ionizing radiation? What we mean by that is ionizing radiation is radiation that when it hits the atoms in your body it can affect the electrons of those atoms that requires a certain energy level.",
+      "Duration": 30,
+      "Offset": 1387
+    },
+    {
+      "Sentence": "In that radiation and so all of the signals that we're talking about don't have that energy level. They can't, they can't affect the atoms in your body?",
+      "Duration": 8,
+      "Offset": 1419
+    },
+    {
+      "Sentence": "So when we say ionization to use an analogy, but oversimplifying it's like. These are ones that are energetic enough to cause trouble and these ones are ones that just really just passing through and honestly whether you decide to have Wi-Fi on your house or not you're going to have these things running through your body all the time anyway. So yeah, that's what you just said, is how I wished I had described it.",
+      "Duration": 21,
+      "Offset": 1428
+    },
+    {
+      "Sentence": "Now the next step was I was at 91.5 megahertz and then I have an insulin pump and I wrote an article about this and there's also a wonderful article that I'll make sure I put in the show. Notes by Peach swam who used a software defined radio to decode what was happening at 915 megahertz, which happens to be where my insulin pump does its radio frequency communication? What I haven't succeeded in doing this, but I want to figure out.",
+      "Duration": 31,
+      "Offset": 1450
+    },
+    {
+      "Sentence": "The ones and zeros off of that.",
+      "Duration": 2,
+      "Offset": 1482
+    },
+    {
+      "Sentence": "Why are basically see the packets going by I've got it to the point where I plug the software defined radio in I can initiate communication with the insulin pump. I can see lights blinking on the pump, and I can see the frequencies and the powers change at that frequency, but I don't know how to get from there to ones and zeros? What's that leap, yeah, so that's a really cool question. I'll also go ahead and take the second point out that 915 megahertz is the third most popular I SM band.",
+      "Duration": 30,
+      "Offset": 1485
+    },
+    {
+      "Sentence": "Hertz band like I felt offended by my garage door is there, too, which was surprising. That's right. It's also where if you remember back in the 90s and early 00s. Everyone had wireless handheld landline phones and that's where those phones operating. I remember those are so bad. He did not work well but to answer your actual question so what's interesting about what you just described is there actually 2 fundamentally different radio technologies, So what I mean by that.",
+      "Duration": 30,
+      "Offset": 1516
+    },
+    {
+      "Sentence": "Having a split between analog modulation and digital modulation. So when you did. You listen to your FM broadcast radio that your hello world? What that signal is? What FM radio? Is frequency modulation and to give the sort of the simplest response if you think about you know when you talk you see a wave that represents your voice and if I'm loud it's really tall.",
+      "Duration": 31,
+      "Offset": 1548
+    },
+    {
+      "Sentence": "So what analog modulation czar is they don't attempt to turn that into ones, and zeros. It just takes that raw signal. That represents information in this case your voice? What we call mixes which basically means put it up at a certain frequency, so it takes your voice, which is at hundreds of kilohertz multiplies it up to 91.5 megahertz and transmits it so there is no digital information. It actually is your voice.",
+      "Duration": 30,
+      "Offset": 1579
+    },
+    {
+      "Sentence": "Multiply, it up so it's such a high frequency. You can't quote unquote listen to it without a radio what you described though at the insulin pump and I have to say. I have no familiarity with the particular device. You're talking about. But assuming it's a digital modulation. That's entirely different So what it's doing is it's taking the information. It wants to transmit and it actually is looking at it in terms of ones and zeros turning that into packets.",
+      "Duration": 30,
+      "Offset": 1610
+    },
+    {
+      "Sentence": "Then modulating those packets and transmitting them so when you listen to an analog modulation. You don't ever have to only reason you would put it into ones, and zeros really so that you could do something with it on your computer. But if you had the right equipment and you could actually just go basically directly from antenna to speaker because there are there is no ones and zeros computation necessary my radio is not making a wave file out of bits. It's going analog and it's like there's no conversion here listen to it versus making it.",
+      "Duration": 30,
+      "Offset": 1641
+    },
+    {
+      "Sentence": "Yeah, you certainly can do that, but your your your insulin pump for example, that actually is working with digital information and suddenly there's more complexity right so now now we care about things like how big is a packet? What is the header information on this on this packet? What if one of the bits gets flipped through the air do? I have error correction so that I'm robust to that right, so all these additional layers of complexity as we sort of.",
+      "Duration": 30,
+      "Offset": 1672
+    },
+    {
+      "Sentence": "Advance that modulation, yeah, it's really fascinating so if I can if I can paraphrase what you're saying and then add on how the insulin pump works when I'm doing.",
+      "Duration": 9,
+      "Offset": 1703
+    },
+    {
+      "Sentence": "Listening to the radio like you said it's analog and there's amplitude there with the power is giving me information, but not turning it into a number, but with the insulin pump. They're using what's called frequency shift keying so rather than going.",
+      "Duration": 12,
+      "Offset": 1712
+    },
+    {
+      "Sentence": "And again over simplifying up and down. It's going kind of left and right. It's like OK. I'm going to stand a little bit to the left that will be zeroing in a little bit to the right that will be one.",
+      "Duration": 8,
+      "Offset": 1726
+    },
+    {
+      "Sentence": "And it's dancing around that center frequency expressing the higher frequency as a one in the lower frequency is a zero and then to go and solve the problem of did. I miss something it actually encodes a bit one bit with 2 bits. It uses thing called Manchester Encoding. So these are all ways to work around it sounds to me like.",
+      "Duration": 19,
+      "Offset": 1734
+    },
+    {
+      "Sentence": "Basically, this electromagnetic spectrum wasn't designed to shove bits around so we're going to figure out how to put them in envelopes and put them in Preambles and put them in headers and shove them through this force. This fundamental forces of the universe. That's exactly right, yeah, so working at RF which working at radio frequency whether it's wired or wireless now. Wired channels tend to be a lot easier to deal with, but there's.",
+      "Duration": 27,
+      "Offset": 1754
+    },
+    {
+      "Sentence": "There's a very hard right. It's kind of funny is a more sort of a longer than I've been in this field, the more incredible that is to me that any of this works at all times described all computers. This sort of all the time and you learn about like one more thing. It's like one more thing that these radios have to deal with to get a bit from the transmitter receiver like how how did anyone ever make this work and that's exactly right every single impairment?",
+      "Duration": 30,
+      "Offset": 1783
+    },
+    {
+      "Sentence": "To be dealt with in some way for communicate communication system to work, so people should go to Amazon whether you're an adult or a kid or an adult who has a kid or knows a kid and get start with a kit get an SD radio get an SDR but they're very expensive there super fun to play with you can start at New Radio GNuradio.org and also it's worth pointing out that you're having a conference in Alabama in September. So September 16th through the 20th and 2019. The Canoe Radio Conference is happening. Yes, that's right so we have a?",
+      "Duration": 32,
+      "Offset": 1814
+    },
+    {
+      "Sentence": "The conference we've been doing it since 2011, so this will be our ninth year and it's been really incredible. When we first started out, we were 40 people sort of crammed into a classroom at U Penn and now we have several 100 that come together every year from all over the world and it's everyone from a hobbyist or student just learning just learning about radio or they're just interested in hardware or interest in math or physics, all the way up to people who who?",
+      "Duration": 32,
+      "Offset": 1846
+    },
+    {
+      "Sentence": "These radios for decades, as we were really incredible array of people. It's incredible place to meet the community and learn fantastic and also as you as you famously said that of of the 4 fundamental forces of the universe. Weak nuclear force gravity strong nuclear force and electromagnetic only one is safe to manipulate from home. So we should all get an SDR and get involved in a software defined radio. Yeah, I community is very welcoming and software radio can be overwhelming.",
+      "Duration": 30,
+      "Offset": 1879
+    },
+    {
+      "Sentence": "There's so much to it, but it's also incredibly rewarding and there's many people all over the world that all want to figure out this together and do cool things well. Thank you so much. Ben Hilburn for chatting with me today. Yeah, this has been really great, thanks for having me Scott.",
+      "Duration": 18,
+      "Offset": 1911
+    },
+    {
+      "Sentence": "This has been another episode of Hansel minutes, Henry see you again next week.",
+      "Duration": 4,
+      "Offset": 1930
+    }
+  ]
+}

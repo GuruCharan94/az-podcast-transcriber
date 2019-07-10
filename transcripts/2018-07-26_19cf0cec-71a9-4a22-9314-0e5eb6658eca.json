@@ -1,0 +1,398 @@
+{
+  "id": "19cf0cec-71a9-4a22-9314-0e5eb6658eca",
+  "Title": "Blazor brings .NET to Web Assembly with Steve Sanderson",
+  "PublishDate": "2018-07-26",
+  "PodcastURL": "https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/9f1b3df1.mp3",
+  "TranscriptionSegments": [
+    {
+      "Sentence": "Hey folks today's episode was sponsored by data dog. It's a cloud scale monitoring and Analytics. Platform data dog was built to bring clarity to complex. Dynamic applications in the cloud on premises in containers or wherever they run with beautiful dashboards distributed tracing and Seamless integrations with more than 200 technologies, including Azure in Docker and pager duty. Datadog provides deep end, to end visibility into the health and performance of modern apps visualize key metrics.",
+      "Duration": 30,
+      "Offset": 0
+    },
+    {
+      "Sentence": "Which to identify anomalies and collaborate with your team to troubleshoot and fix issues fast? I'd like you to try it yourself by starting a free 14 day trial. Today listeners of this podcast will also get a free data dog T shirt.",
+      "Duration": 14,
+      "Offset": 31
+    },
+    {
+      "Sentence": "It started at bitLY.com slash DATA dog shirt.",
+      "Duration": 4,
+      "Offset": 46
+    },
+    {
+      "Sentence": "That's bitLY.com slash DATA dog shirt.",
+      "Duration": 9,
+      "Offset": 51
+    },
+    {
+      "Sentence": "By this Scott Hanselman This is another episode in Hansel minutes and today I'm talking with Steve Sanderson. He's a senior software engineer in theASP.net team at Microsoft Full disclosure. I also work on theASP.net team, although Steven. I don't work directly together, we have known each other for a long time and he worked on wrote knockout JS which you may have used in the earlier days of JavaScript and doesn't knockout power. A lot of the Azure portal. Yeah, it does, yeah, it's been used since the third iteration of the Azure portal, which has been around for a few years now, it's the current iteration.",
+      "Duration": 34,
+      "Offset": 67
+    },
+    {
+      "Sentence": "So I'm pretty certain it's the biggest knockout application in the world. It said hundreds of developers working on it, and it's still holding together so yes. That's pretty cool. That's kind of feel good and that certainly is proof that you can ship software and put it into production so today. We're going to talk about blazer. BLAZ or but what is blazer blazer its experimental project that we're doing with in the ASP net team to think about.",
+      "Duration": 30,
+      "Offset": 102
+    },
+    {
+      "Sentence": "The future of Donna as a client side web application platform could be because this year. The Web Assembly. Standard is now available in all mainstream browsers and that creates some pretty exciting new possibilities for how you can write software and deliver it through a browser and so we got thinking can, we",
+      "Duration": 26,
+      "Offset": 133
+    },
+    {
+      "Sentence": "Dot net on Web Assembly and if we could what sort of applications would people right what would the programming model look like could this be really productive. What sort of tooling would we do around this you know how could the the whole conceptof.net application development be reborn for the browser. You know, obviously silverlight existed, few years ago and was an exampleof.net in the browser. But that was based on Plugins, now plugins are not really viable in the modern world, but web assembly is very viable whether some of these.",
+      "Duration": 30,
+      "Offset": 160
+    },
+    {
+      "Sentence": "Of delivering all kinds of applications that are not written with JavaScript into a browser. And so we're excited about the possibility ofdoing.net development. That way and Blazer is an attempt to build an application framework that uses those technologies and at this stage. It's not a committed product. But we are very much hoping some of us on the team are very much hoping that it will become eventually a committed product that people will be able to buildproduction.net applications with so there's a lot. I want to.",
+      "Duration": 31,
+      "Offset": 192
+    },
+    {
+      "Sentence": "Apart, there, so let's let me kind of breakdown a couple of precise questions. So I can get an understanding here so back in the day when you wanted to do something that browser didn't support when you wanted to run native code or you want to run your own stuff or just generally break the rule you would install a plug-in and wasn't there a thing called Ms API or like the Netscape way of attaching native things to browsers. Yeah, that's why plugins have been around for longer than I've been doing any software development like looking through.",
+      "Duration": 30,
+      "Offset": 224
+    },
+    {
+      "Sentence": "Except for sure.",
+      "Duration": 1,
+      "Offset": 254
+    },
+    {
+      "Sentence": "But they were not really viable as of the whole move to mobile's some people claim. The Apple is largely responsible for killing Plugins because they you know, Steve Jobs was so adamant that flash was never going to run on I OS and their mechanism for ensuring that was to not have any way of doing Plugins and.",
+      "Duration": 23,
+      "Offset": 257
+    },
+    {
+      "Sentence": "Given that you know, considering how many people have iOS mobile devices. It it's not really viable to ship a product that depends on that and I don't know if that, really is. The thing that shifted the industry, but a lot of people claim AT and. In any case, the net result of whatever's happened is that modern browsers don't allow plugins of that kind anymore, well and then there's another security concerns is the plugin doesn't run necessarily in a sandbox in a formal sandbox, they mean they were.",
+      "Duration": 31,
+      "Offset": 281
+    },
+    {
+      "Sentence": "In process DLL's that ran within a process that was managed by the browser. But there was always this idea of native code that could do evil things. Yeah, I know that was a concern. Yeah, I mean, the minute you install a plug-in you're trusting a third party to protect your machine against running third party code and it's very, very hard problem to solve and browser makers spend a huge proportion of their time trying to keep this sandbox robust and when you start bringing third parties plugins into it.",
+      "Duration": 30,
+      "Offset": 313
+    },
+    {
+      "Sentence": "Is very, very difficult to guarantee that security and nothing can practice the security didn't turn out to be that solid so the other thing was that brow when our browser didn't do what we wanted it to do, we used. We like the not. The browser people. We the community used. Plugins as a way to make our own virtual machines like we had flash. We had Java. We had silverlight all as a way to.",
+      "Duration": 28,
+      "Offset": 343
+    },
+    {
+      "Sentence": "Break out of that sandbox for lack of a better word, and then build on top of that and have plugins of their own. You could almost look at it as a flash file as a plug into the flash plugin as a plug into the web itself. We were building ecosystems on top of plugins that were themselves virtual machines, yeah, So what is web assembly then is web assembly a solution to the plugin problem or something more yeah, so web assembly is not a way of changing the sandbox that the code.",
+      "Duration": 32,
+      "Offset": 372
+    },
+    {
+      "Sentence": "A lot of people when they first hear about web assembly developers immediately run around with their arms and their shouting. I is going to cause terrible security issues because people are running machine code inside a web page and we can't protect ourselves against that but that's not what it is, and that's not a problem that is triggered by Web Assembly. Anything that is running under website. Please within the same browser sandbox So what assembly actually is is a specification for a bytecode format.",
+      "Duration": 30,
+      "Offset": 406
+    },
+    {
+      "Sentence": "It's a format for machine instructions. That's quite a low level format, hence the name web assembly, it's not.",
+      "Duration": 8,
+      "Offset": 437
+    },
+    {
+      "Sentence": "Regular assembly is not X 86 machine code, or or any other specific instruction. Shack set that runs directly on the CPU but rather is an instruction set that's more like the instructions for the Java virtual machine, or the Microsoft intermediate languagefor.net. So it's more high level low level language that makes sense.",
+      "Duration": 23,
+      "Offset": 446
+    },
+    {
+      "Sentence": "And then the browser is going to take that and it's going to execute it and it does so by just in time, compiling that to the real machine code format of whatever machine. It's actually running on in exactly the same way that is for JavaScript. So when the browser downloads. Normal JavaScript file. It can interpret it and stepping over each of the instructions in the original JavaScript text format and to some extent browsers do that, but browsers also just in time compile parts of the JavaScript.",
+      "Duration": 31,
+      "Offset": 470
+    },
+    {
+      "Sentence": "Performance to machine code and they do that, after having run certain verification checks to make sure that the code is definitely only going to do things that are absolutely known to be safe and then they have this process for generating machine code. Days definitely known to not step outside the sandbox in any way, at all, so that works well as a way of speeding up JavaScript, but I suppose of number of years back. People got this idea of well.",
+      "Duration": 28,
+      "Offset": 502
+    },
+    {
+      "Sentence": "We're going to jet compile this stuff anyway. Why are we starting from JavaScript which is a super high level language in its expressed in this very inefficient human readable text format? What if we had a more low level bytecode format that expressed just a smaller set of instructions and we expressed in an efficient binary format and then we use the same rules to jet compile to Sam box compliant code could we then compile to that bytecode format from other languages.",
+      "Duration": 31,
+      "Offset": 531
+    },
+    {
+      "Sentence": "We take some C code and compile that to the Web Assembly bytecode format and then the browser. In turn receives that and executes much, much faster than you would normally be able to execute a high level language because it's starting with low level back code format which jet compiles to machine code and then that can hopefully execute very fast, while still being within the same security sandbox that JavaScript runs in is web assembly like assembly in that it's moving things around registers and doing low level things on a virtual CPU.",
+      "Duration": 34,
+      "Offset": 563
+    },
+    {
+      "Sentence": "Basically Yep so if anyone's seen MSIL the assembly formatfor.net is extremely similar to that is also a stack based virtual machine, so if you read the code, which you hopefully never need to do. But if for whatever reason you do end up reading. Some web assembly compiled code. You'll see that most of what it's doing is pushing stuff into a stack and pop in stuff for stack and then doing instructions that operate on the top items from a stack. So to add 2 numbers together, it's going to have one instruction that.",
+      "Duration": 32,
+      "Offset": 599
+    },
+    {
+      "Sentence": "Number onto a stack the second number that pushes the second number onto the stack and then it will call the add instruction, which adds together. The top 2 numbers on the stack and adds the result onto the stack and then you have another instruction that gets it off the stack. And so on, so that's just what it keeps doing all the time and from that basic primitive you can build up normal logic that you implement in high level languages, OK, so we don't have to worry about the sandbox and we know that the browsers JavaScript kind of universe has been hardened because JavaScript is taken such a.",
+      "Duration": 34,
+      "Offset": 632
+    },
+    {
+      "Sentence": "A front seat in the last few years that everyone is focusing on it, so we're building on top of a thing. That's already well thought of an already well well managed but how many layers like? How many how they say it's turtles. All the way down. You're saying we're going to take C Sharp and compile it and IL and put that into a DLL and then run that on a virtual machine, which runs in a browser, which is its own like do. We worry about layers or do we revel in the idea that we? Don't have to think about the underlying computer anymore.",
+      "Duration": 30,
+      "Offset": 667
+    },
+    {
+      "Sentence": "Yeah, well, I guess there's pros and cons when you have more abstraction that often creates a high level program environment that can make developers more productive, but at the same time, you have to balance that against the need for runtime performance. And so web assembly is an attempt to create the right level of abstraction where you can compile from an arbitrarily high level language to some instruction set that itself can be executed very efficiently. So yes, there's quite a lot of levels involved but.",
+      "Duration": 31,
+      "Offset": 698
+    },
+    {
+      "Sentence": "When you get to ever sembly bytecode, you're only one jet compile step away from native machine code and the idea is that the specific web assembly instructions that exist can be modeled very efficiently on the kind of CPUs that exist today, so generally people claim that web assembly code is more or less equivalent to native performance so if you have some C code that you compile to regular machine code and execute it directly or you compile it to web assembly and run it under a browser.",
+      "Duration": 31,
+      "Offset": 731
+    },
+    {
+      "Sentence": "The performance is going to be more or less comparible. Not exactly equal maybe there's going to be a factor of 2 difference, or something like that. But when we're talking about a single constant factor like that's probably not going to change the kind of software that you right if it was orders of magnitude difference, then that would be a big deal. But a smallish factor like that. You can still write the same kind of code so when we take it even higher level, thinglike.net and compile it. There's 2 different ways.",
+      "Duration": 30,
+      "Offset": 762
+    },
+    {
+      "Sentence": "Cutethat.net code the most obvious way that people usually assume that we're doing is that we takethe.net code and we convert it into Web Assembly and that's the end and that would probably produce the most efficient runtime performance that we could get but that's not what we're doing right now in blazer in blazer. We are runningthe.net code on an interpreter, which is itself implemented in Web Assembly and the reason we're doing that.",
+      "Duration": 31,
+      "Offset": 793
+    },
+    {
+      "Sentence": "It produces a very, very nice development experience because it means that you write your C sharp code and you can compile it to normal.net assemblies using yournormal.net build process, which is very fast. Even a moderate sized application can be built in like one second more or less. And then every time you make that change. You do your once I can build you. Refresh in the browser and you carry on, and you get a very nice fluid development experience, but eventually when you want to go into production.",
+      "Duration": 31,
+      "Offset": 825
+    },
+    {
+      "Sentence": "Worth going through a bigger build process where you actually compile all the way to web assembly code and and that's a thing that we haven't implemented yet in blazer, but we do have an actual plan for doing that and that's underway so that should produce better performance at the cost of spending more time building your application. Let me back up a couple of steps just to make sure that I understood something and that the audience understood it as well. When I was describing kind of the conceptual.",
+      "Duration": 31,
+      "Offset": 857
+    },
+    {
+      "Sentence": "Back as being deep an implying that there is possibly concerns or you know unspecified concerns around per for whatever.",
+      "Duration": 9,
+      "Offset": 889
+    },
+    {
+      "Sentence": "I felt like what you said really explained a lot to me like just just because the conceptual. Stack is quote Unquote 10. Deep doesn't necessarily mean that that is representative of a call stack. Nor is it representative of 10 X performance like you just said. We're going to collapse. This all the way down to machine code and it's going to get executed pretty darn close to the metal and that conceptual stack was there for a number of reasons, but not not at runtime effectively. Yeah, that's right, yeah, and my hope is that?",
+      "Duration": 29,
+      "Offset": 899
+    },
+    {
+      "Sentence": "Most developers who are writing logic in C Sharp are not really thinking about anything apart from the C Sharp logic. That's the thing that you focus on you know roughly what the performance characteristics of different C Sharp Code is and that it will be reflected in the The reality of your application. You don't have some new special rules for the fact that it's on web assembly. It 'cause the actual eventual set of instructions that the CPU is executing is not that different from what it would have been undernormal.net desktop.",
+      "Duration": 30,
+      "Offset": 929
+    },
+    {
+      "Sentence": "OK, so then that gets to the you know at this point in the podcast. There may be someone who made it this far who's like, Yeah, but why don't you just lose genuine learn JavaScript? Why are you doing this and it seems like the answer is because see makes us happy andbecause.net is an enjoyable environment and maybe this could be something that net developers would enjoy doing and be productive. Doing yeah that's right? That's right and I personally aspire to see the day when web development expands beyond its current scope.",
+      "Duration": 30,
+      "Offset": 959
+    },
+    {
+      "Sentence": "I think web development is certainly come a long way over the last 15 years or so, but it's still a very constraining kind of development environment software developers building web. Applications are much, much more limited in their choices of a technology than developers building desktop apps on mobile apps or games or embedded software all these different areas of software give you the flexibility to use a really wide range of languages and tool chains and teams pick the ones that are.",
+      "Duration": 30,
+      "Offset": 990
+    },
+    {
+      "Sentence": "With the problems they're solving for the particular development culture that they want to be part of whether it's functional programming or scientific programming or really low level programming for embedded devices or whatever people pick. What is best for them and that's good and healthy and mature but web development has always liked that a little bit because we've been so constrained over basically everything has to be JavaScript for us to be something that compiles to JavaScript and has more or less the same semantics as it so I hope that.",
+      "Duration": 30,
+      "Offset": 1022
+    },
+    {
+      "Sentence": "As a discipline will be able to grow up and mature a little bit and give teams much why different set of choices that meet their needs in specific ways andso.net I hope is just one of the forerunners of that.",
+      "Duration": 14,
+      "Offset": 1053
+    },
+    {
+      "Sentence": "Yeah, and I we hear a lot about browser. Mono culture and we're getting into language. Mono culture with web assembly. We could have go and rust in C. Sharp all running in the same application and interoperate interoperate interrupting in our operating with JavaScript as as that service bus. Yeah, that's right. Yeah, I know some people will hear that and they'll think Oh my goodness. I'm now supposed to learn 10 new languages. This is going to be a nightmare, and I can somewhat sympathize with that perspective but.",
+      "Duration": 30,
+      "Offset": 1068
+    },
+    {
+      "Sentence": "Wow, what developers building mobile apps or scientific apps or machine learning apps that run across Cloud Services. They don't really complain that there are too many languages. That's not really a thing that software developers do normally. They find things that work well for them and become good. Aaron and establish their career within a particular technology area and I hope that that would be the case for web developers well. Not that it just becomes this nightmarish mishmash of.",
+      "Duration": 30,
+      "Offset": 1098
+    },
+    {
+      "Sentence": "Which is that you meant to know and I don't see any reason why it would be you know web development can become like other aspects of software development.",
+      "Duration": 6,
+      "Offset": 1130
+    },
+    {
+      "Sentence": "Hey friends this is Scott you know, listening to podcasts is a great way to keep up to date on technology since we're always learning is software people and you can also find a job by listening to a podcast. If you check out our new sponsorhired.com that'SHIRED.com slash Hansel minutes on higher.com software. Engineers can get interview requests from companies that want to hire you each offer will have the salary in the equity up front, you can view those interview requests and accept reject change the offer before even talking to a company is a great way to find out what's out there.",
+      "Duration": 32,
+      "Offset": 1137
+    },
+    {
+      "Sentence": "Remove there working with over 6000 companies from startups to large companies from 14 major tech hubs throughout North America and Europe. What's great about this? Is it's totally free for software engineers and if you get a job to hire.com they ordinarily give you a 300. Thank you bonus. But if you use our special link they'll double that bonus you will actually get paid $600 when you accept that job now if you're not looking for a job. But you know, someone who is refer them to hire.com slash Hansel minutes and they'll give you elite bonus of 1000.",
+      "Duration": 32,
+      "Offset": 1169
+    },
+    {
+      "Sentence": "$7 bonus when they accept a job so check him out at hired.com slash Hansel minutes.",
+      "Duration": 6,
+      "Offset": 1202
+    },
+    {
+      "Sentence": "Now recently in the last fewyears.net went from being a thing that runs on windows to being a thing that runs everywhere. And it seems like there are multiple instancesof.net. Yeah, wherethe.net framework isA.net and the core CLRis.net and Mono is around there as well, and some people in the past may have felt like mono like wasn't a thing that was going to be around for a long time, but they've been quietly in very strongly like improving.",
+      "Duration": 31,
+      "Offset": 1209
+    },
+    {
+      "Sentence": "It's a very competent runtime. It's not a toy. It's not buggy. It's really solid. Yeah, that's right. Yeah, there was a time when people thought Mono was this sort of.",
+      "Duration": 11,
+      "Offset": 1241
+    },
+    {
+      "Sentence": "Semi capable way of running Espina on a Linux server and that was kind of the only application that anyone had in mind, and then they tried and they found that things were complicated and they would say, Oh, just under it, and so some developers of end up getting stuck in this idea that that's all that Mono is but in fact, like you say Mono is really expanded to become very competent runtime that runs on the widest range of devices of any ofthe.net runtimes.",
+      "Duration": 30,
+      "Offset": 1254
+    },
+    {
+      "Sentence": "Mono is the runtime for the unity game engine which runs some of the most demanding high performance low level and generally complex logic. There is and it has to run on a wide range of devices that you know the performance is super critical and Mono has been very successful in that unity. A particular iOS and Android and speaking of mobile apps unity is also the Microsoft support runtime for for general native.",
+      "Duration": 31,
+      "Offset": 1284
+    },
+    {
+      "Sentence": "Not game so zamarin which is part of Microsoft users mono as its runtime for delivering native mobile applications and yeah, like you say it's it's very robust these days. It's very complete in its support for the net. API surface and generally part of Microsoft. It solid and it's going well. Yeah, the way I've been describing it and you can correct me. If I'm wrong is that core CLR runs on a half dozen Lennox is an MC.",
+      "Duration": 31,
+      "Offset": 1316
+    },
+    {
+      "Sentence": "And it's really focused on that server side work load that micro service, but Mono is just very portable C code. It's very compiles anywhere. I've seen versions of Mono compiled for like the Nintendo Wii or you know like if it is the most portable of the Nets. Yeah, that's absolutely right, yeah, so as such. Did you then compile it into web assembly and is that? What's coming down. I'm running mono as a net in my browser compiled into web assembly, yeah that's right, yeah, so.",
+      "Duration": 31,
+      "Offset": 1348
+    },
+    {
+      "Sentence": "The runtime that's behind blazer applications and the reason why we are going with Mono is that it is like you say the most portable ofthe.net runtimes and the one that was most ready to be compiled to web assembly. Now I didn't do that myself and no one on the laser team did it, but this is something that the mono group has committed to delivering they've decided that Mono is going to ship on web assembly.",
+      "Duration": 30,
+      "Offset": 1380
+    },
+    {
+      "Sentence": "Well decision that they've made about making their runtime available in dependently of blazer or any specific application. Stack and they've got lots of reasons for wanting to do that. But one of them is related to gaming again like, I just mentioned mono being the unity runtime. Unity also pass shipped the ability to compile to web assembly for a while and they've done that based on their own their own separate mechanism forcompiling.net.",
+      "Duration": 30,
+      "Offset": 1411
+    },
+    {
+      "Sentence": "Web assembly are but mono since that her is going to officially support web assembly is going to provide it at a different way of doing that that is significantly simpler and then there is potentially lots of other reasons why Mario wants to target running in the browser for applications in general. So yeah, that definitely makes sense for why we would choose moneros. The runtime for that. The other most likely option. I suppose would be core RT which is adifferent.net runtime that is designed.",
+      "Duration": 31,
+      "Offset": 1442
+    },
+    {
+      "Sentence": "Bing earth running on low resource embedded devices and maybe one day blazer might run Koratty as well. But it's not particularly close right now because Koratty is as much less complete developed web assembly support.",
+      "Duration": 17,
+      "Offset": 1475
+    },
+    {
+      "Sentence": "What if I have a browser that doesn't support web assembly but it does support JavaScript? Is it will be possible to run blazerand.net on that. Yeah, it is yeah, so one of the very nice features about how web assembly was designed and probably reflects the decade of experience that we've finally gotten designing you web specifications is that web assembly is designed to be easily able to fall back on regular JavaScript.",
+      "Duration": 30,
+      "Offset": 1493
+    },
+    {
+      "Sentence": "Web assembly is a bytecode format like I've said, and if your browser doesn't know how to support it directly. It's possible to polyfill it so you can have a relatively small bit of JavaScript that knows how to execute web assembly. So it's acting like an interpreter over the Web Assembly, but there's an even more direct way of running web assembly, which is the way that the Web Assembly compilation toolchain itself works so most.",
+      "Duration": 31,
+      "Offset": 1523
+    },
+    {
+      "Sentence": "And when people create web assembly binary files at the moment they do so using a compiler called Emscripten and that is part of the clang toolchain now clang is very widely used system for representing applications such that they can be compiled to different target architectures. So you could take some code. That's written in C plus plus or rust or swift and compile it to clang intermediate representation, which is.",
+      "Duration": 31,
+      "Offset": 1555
+    },
+    {
+      "Sentence": "Virtual machine byte code format called LLVM and once you've got the LLVM Bitcode. You can compile that out for lots of different target architectures like X 86 or are more Mac or all kinds of other things like that, and the Emscripten Toolchain, which what that actually does is it takes input in this LLVM intermediate representation and writes that out, as web assembly, so that's really a hidden internal part of the.",
+      "Duration": 30,
+      "Offset": 1587
+    },
+    {
+      "Sentence": "Process but one cool thing that it can do is as well as producing web assembly. Binary is it can produce JavaScript files dot JS files that just run in any browser without needing any special web assembly support so it's just a different compilation target format. A lot people have said JavaScript is the assembly language of the web and I think Scott you are one of the first people who popularized that thing and that is literally the case for an script.",
+      "Duration": 30,
+      "Offset": 1617
+    },
+    {
+      "Sentence": "Is JavaScript being a target output format for LLVM bytecode and so in the case of the blazer specifically we have got 2 versions of the mono runtime that are embedded into your application. We've got a Web Assembly version of it and we've gotten some JS version. SMJS is the plain JavaScript representation of the web assembly output and So what we do when your application is starting up. We just do the classic thing. Gov feature detection. We dissect whether the browser currently.",
+      "Duration": 30,
+      "Offset": 1649
+    },
+    {
+      "Sentence": "Sports Web Assembly if it does will load the Mono Web Assembly runtime and if it doesn't will load the mono as some jazz from time and then your application just carries on and works and everything is the same. The only thing that's really different is performance and there's a fairly substantial performance gap probably at least about 5 times performance difference between the web assembly in the JavaScript versions of the runtime. But you know your application still works even if the browser doesn't support web assembly.",
+      "Duration": 27,
+      "Offset": 1680
+    },
+    {
+      "Sentence": "You seethe.net standard is an agreement a list of APIs that are a way for you to say, Oh, my runtime. My netis.net standard compliant and can run all these kinds of things, but underneath when youwrite.net code. We P invoke we platform invoke into native stuff. So I can just arbitrarily call a function on a DLL and make my computer beep. Ify some C Sharp code to load up win 32 whatever dot DLL and called.",
+      "Duration": 30,
+      "Offset": 1708
+    },
+    {
+      "Sentence": "And then upload that into blazer yet what's going to happen, it's not going to work that special. I'm not certain, I can. Guess precisely what the error message is going to be, it would probably be something like file not found which it seems a bit surprising, but I think something like what would happen is thatthe.net runtime would say, Oh, you've got. AP invoke to a particular DLL and then it's going to go out to the file system and try and find that DLL but because it's running within the browser sandbox what it's going to see is not really the files that are on disc but?",
+      "Duration": 31,
+      "Offset": 1739
+    },
+    {
+      "Sentence": "Virtual file system that an Atom Scriptum creates at runtime and it will look for your DLL there and it's obviously not going to be there and so it's going to fail at that point.",
+      "Duration": 9,
+      "Offset": 1771
+    },
+    {
+      "Sentence": "I see so if I write portable code if I write code that doesn't have a lot of native bindings that isn't Lennox specific that isn't windows specific like business logic code, or calculations and stuff like that. It's going to work great yet and if we up level. It Blazer is also a framework to design. You eyes but it's not like silver light. You're not painting buttons and stuff, you're on the web. So you just do web stuff. We just write HTML. Yeah, that's right, yeah, so blazer is trying to provide.net.",
+      "Duration": 32,
+      "Offset": 1781
+    },
+    {
+      "Sentence": "Not in your application logic and conventions around structuring application that are productive and tired with what C sharp developers expect but blazer is not trying to replace the actual UI presentation layer within the browser so blazer applications still use HTML and CSS S and maybe 5 years ago, or 10 years ago. At least that might have been a dubious choice but I think over recent years, CSS S has become pretty effective.",
+      "Duration": 30,
+      "Offset": 1814
+    },
+    {
+      "Sentence": "Then teen typical application. UI is things like Flexbox and CSS grid and all that kind of stuff as largely illuminated the sense that CSS S is like suitability and now CSS S is generally a very productive way of representing application us and HTML obviously going with that, so we didn't feel there was any need to try and replace HTML and CSS S and certainly when we talk to developers. Although there's a passionate minority. You do want us to get rid of CSS S certainly the majority feel pretty happy with that.",
+      "Duration": 31,
+      "Offset": 1845
+    },
+    {
+      "Sentence": "I'm just excited aboutusing.net to replace the logic that they would otherwise have written in JavaScript.",
+      "Duration": 6,
+      "Offset": 1877
+    },
+    {
+      "Sentence": "How opinionated is blazer is it opinionated to the point where you would just use blazer by itself or would you use blazer with react or with angular or with knockout you definitely shouldn't have to use a different JavaScript UI library, like angular react on account. Blazar provides all of the stuff that you would need from your single page. Application frameworks, so blazer. Applications are written with a combination of C Sharp and razor files now razor.",
+      "Duration": 30,
+      "Offset": 1884
+    },
+    {
+      "Sentence": "Listeners will know about but for anyone who isn't razor is a syntax for generating HTML from the middle of C Sharp logic. So it's somewhat akin to. I don't know. Let's say JSX from react developers or or angular templates, but really it very closely matches. What C sharp developers are looking for it's pretty well established that acts so in blazer each one of your razor files is a component a component in the same sense that you have angular components or react components or knockout components so.",
+      "Duration": 32,
+      "Offset": 1914
+    },
+    {
+      "Sentence": "Contained bit of user interface and you can structure your whole application out of a collection of components. You can do all kinds of things with them like pass parameters in and get call backs from them and derive subclasses of them and all that kind of stuff, so components are a very flexible patent for building an application and our intention is that Blazer provides all of the infrastructure that you're going to need so as well as components related infrastructure like routing and validation and just all those kind of details, so.",
+      "Duration": 31,
+      "Offset": 1947
+    },
+    {
+      "Sentence": "You don't need to deal with the mismatch of trying to write say a react application. But in C sharp because there be all kinds of reasons why that would be messy and difficult and it would be difficult to represent all of the kind of semantics that react expects within see. We don't want. That kind of awkward mismatch, so we've created an application framework. That's really tailored to see as a language so as of the time of this recording. This is an experiment in that you are.",
+      "Duration": 30,
+      "Offset": 1979
+    },
+    {
+      "Sentence": "Collecting feedback or hoping that the bosses at Microsoft will say this is a great idea. And then put a team on it. Yeah, exactly both of those things so I'm hoping that we're coming up to close to our experimental phase and we might be able to make some announcements about that. But those decisions have not been made yet to my knowledge is looking good, though. We've had some very, very positive response from the community. We've collected lots of data about how great people, say it is.",
+      "Duration": 30,
+      "Offset": 2010
+    },
+    {
+      "Sentence": "Fairly optimistic there will be able to build a product out of this and depending on one people listening to this podcast. Hopefully there might be some news about that, but not as of the date of recording and people can check this out. I think the website is blaze or BLA zedor.net and it's pretty easy to get started. It works works anywhere works on Linux and windows and Mac and you just do it in Visual Studio code. I suppose a or do you need visual studio proper? Well, that's 1 of the things that we definitely want to?",
+      "Duration": 31,
+      "Offset": 2041
+    },
+    {
+      "Sentence": "If we build this into a real product at the moment, the best tooling is definitely in Visual Studio on windows and we start there because we had a lot of expertise with doing razor. There razor support in VS code in general is a bit limited right now, but it's definitely our hope that we would bring a complete tooling story. Cross platform with VS code is not there. Today, very cool very cool well. I wish you all the best I think it's pretty exciting project and I've presented at local user groups and stuff, so I'm going to do my best to go out and spread the word.",
+      "Duration": 30,
+      "Offset": 2074
+    },
+    {
+      "Sentence": "Check it out at playsor.net thanks, so much. This has been another episode of Hansel minutes and we'll see you again next week.",
+      "Duration": 10,
+      "Offset": 2105
+    },
+    {
+      "Sentence": "Weather.",
+      "Duration": 1,
+      "Offset": 2130
+    }
+  ]
+}
